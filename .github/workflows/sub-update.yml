@@ -13,10 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Checkout branch1
+      - name: Checkout sub
         run: |
           git fetch origin
-          git checkout branch1
+          git checkout sub
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -58,4 +58,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add -A
           git commit -m "Auto commit changes from GitHub Action" || echo "No changes to commit"
-          git push origin branch1
+          git push origin sub
