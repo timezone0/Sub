@@ -1,0 +1,568 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🏳️‍🌈 剩余流量：111.05 GB", type: "ss", server: "hzyd.sevenka.top", port: 33054, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🏴‍☠️ 距离下次重置剩余：24 天", type: "ss", server: "hzyd.sevenka.top", port: 33054, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🏴‍☠️ 套餐到期：2025-07-20", type: "ss", server: "hzyd.sevenka.top", port: 33054, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🏴‍☠️ 防失联hd.m2cloud.sbs", type: "ss", server: "hzyd.sevenka.top", port: 33054, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🏴‍☠️ 官网ht.idsduf.com", type: "ss", server: "hzyd.sevenka.top", port: 33054, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🏴‍☠️ 群:t.me/m2cloudvpn", type: "ss", server: "hzyd.sevenka.top", port: 21258, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇭🇰 香港1-视频", type: "ss", server: "hzyd.sevenka.top", port: 33054, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇭🇰 香港2-视频", type: "ss", server: "gdyd.sevenka.top", port: 17998, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇭🇰 香港3-IPv6", type: "ss", server: "hzyd.sevenka.top", port: 21258, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇭🇰 香港4-IPv6", type: "ss", server: "gdyd.sevenka.top", port: 21259, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇭🇰 香港5-IPv6", type: "ss", server: "hzyd.sevenka.top", port: 36921, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇭🇰 香港6-IPv6", type: "ss", server: "gdyd.sevenka.top", port: 36923, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇸🇬 新加坡1-IPv6", type: "ss", server: "hzyd.sevenka.top", port: 33783, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇸🇬 新加坡2-IPv6", type: "ss", server: "gdyd.sevenka.top", port: 53023, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇸🇬 新加坡3", type: "ss", server: "hzyd.sevenka.top", port: 32224, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇸🇬 新加坡4", type: "ss", server: "gdyd.sevenka.top", port: 14359, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇯🇵 日本1-IPv6", type: "ss", server: "hzyd.sevenka.top", port: 44879, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇯🇵 日本2-IPv6", type: "ss", server: "gdyd.sevenka.top", port: 44476, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇯🇵 日本3-东京", type: "ss", server: "hzyd.sevenka.top", port: 46635, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇯🇵 日本4-东京", type: "ss", server: "gdyd.sevenka.top", port: 53537, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇳 台湾1-IPv6-优化", type: "ss", server: "hzyd.sevenka.top", port: 10782, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇳 台湾2-IPv6-优化", type: "ss", server: "gdyd.sevenka.top", port: 38191, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇳 台湾3", type: "ss", server: "hzyd.sevenka.top", port: 29853, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇳 台湾4", type: "ss", server: "gdyd.sevenka.top", port: 40395, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇳 台湾5-优化", type: "ss", server: "hzyd.sevenka.top", port: 40043, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇳 台湾6-优化", type: "ss", server: "gdyd.sevenka.top", port: 25845, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇰🇷 韩国1", type: "ss", server: "hzyd.sevenka.top", port: 10415, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇰🇷 韩国2", type: "ss", server: "gdyd.sevenka.top", port: 24395, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇺🇸 美国1-IPv6", type: "ss", server: "hzyd.sevenka.top", port: 17773, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇺🇸 美国2-IPv6", type: "ss", server: "gdyd.sevenka.top", port: 17778, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇺🇸 美国3", type: "ss", server: "hzyd.sevenka.top", port: 36075, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇺🇸 美国4", type: "ss", server: "gdyd.sevenka.top", port: 45712, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇲🇾 马来西亚", type: "ss", server: "hzyd.sevenka.top", port: 58579, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇹🇭 泰国", type: "ss", server: "hzyd.sevenka.top", port: 37827, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇻🇳 越南", type: "ss", server: "hzyd.sevenka.top", port: 10301, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇻🇳 越南2", type: "ss", server: "hzyd.sevenka.top", port: 29418, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇵🇭 菲律宾", type: "ss", server: "hzyd.sevenka.top", port: 23331, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇲🇲 缅甸", type: "ss", server: "hzyd.sevenka.top", port: 12665, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇰🇭 柬埔寨", type: "ss", server: "hzyd.sevenka.top", port: 50317, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇮🇩 印尼", type: "ss", server: "hzyd.sevenka.top", port: 18322, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇦🇺 澳大利亚", type: "ss", server: "hzyd.sevenka.top", port: 10981, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇦🇪 阿联酋", type: "ss", server: "hzyd.sevenka.top", port: 39005, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇮🇳 印度1", type: "ss", server: "hzyd.sevenka.top", port: 38827, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇩🇪 德国1", type: "ss", server: "hzyd.sevenka.top", port: 54488, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇺🇦 乌克兰", type: "ss", server: "hzyd.sevenka.top", port: 57595, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇿🇦 南非", type: "ss", server: "hzyd.sevenka.top", port: 46307, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇬🇧 英国", type: "ss", server: "hzyd.sevenka.top", port: 36351, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇷🇺 俄罗斯", type: "ss", server: "hzyd.sevenka.top", port: 46511, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇮🇸 冰岛", type: "ss", server: "hzyd.sevenka.top", port: 16799, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇮🇹 意大利", type: "ss", server: "hzyd.sevenka.top", port: 41488, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇫🇷 法国1", type: "ss", server: "hzyd.sevenka.top", port: 43133, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇨🇦 加拿大", type: "ss", server: "hzyd.sevenka.top", port: 20957, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇳🇱 荷兰", type: "ss", server: "hzyd.sevenka.top", port: 14219, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇵🇱 波兰", type: "ss", server: "hzyd.sevenka.top", port: 48181, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇪🇸 西班牙", type: "ss", server: "hzyd.sevenka.top", port: 36712, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇧🇷 巴西", type: "ss", server: "hzyd.sevenka.top", port: 22314, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇳🇬 尼日利亚", type: "ss", server: "hzyd.sevenka.top", port: 25076, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇹🇷 土耳其", type: "ss", server: "hzyd.sevenka.top", port: 25211, cipher: "chacha20-ietf-poly1305", password: "410c9ebd-7e86-4009-9727-94c286dee02b", udp: true}
+- {name: "🇸🇱 香港-HY2应急线路", server: "hy2hk.maocf1.top", port: 20906, sni: "hy2hg.maocf1.top", up: 5000, down: 5000, skip-cert-verify: true, type: "hysteria2", password: "410c9ebd-7e86-4009-9727-94c286dee02b"}
+- {name: "🇨🇳 台湾-HY2", server: "cntw.3668989.xyz", port: 30132, sni: "hy2tw.maocf1.top", up: 5000, down: 5000, skip-cert-verify: true, type: "hysteria2", password: "410c9ebd-7e86-4009-9727-94c286dee02b"}
+- {name: "🇸🇬 新加坡-HY2", server: "hy2sg.maocf1.top", port: 20084, sni: "hy2sg.maocf1.top", up: 5000, down: 5000, skip-cert-verify: true, type: "hysteria2", password: "410c9ebd-7e86-4009-9727-94c286dee02b"}
+- {name: "🇺🇸 美国-HY2", server: "usahy2.maocf1.top", port: 20403, sni: "usahy2.maocf1.top", up: 5000, down: 5000, skip-cert-verify: true, type: "hysteria2", password: "410c9ebd-7e86-4009-9727-94c286dee02b"}
+- {name: "🇯🇵 日本-HY2", server: "hy2jp.maocf1.top", port: 20402, sni: "hy2jp.maocf1.top", up: 5000, down: 5000, skip-cert-verify: true, type: "hysteria2", password: "410c9ebd-7e86-4009-9727-94c286dee02b"}
+- {name: "🇺🇸 美国3-直连", type: "vmess", server: "m2bba1.maocf1.top", port: 2052, uuid: "410c9ebd-7e86-4009-9727-94c286dee02b", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "lswjs.maocf1.top"}}}
+- {name: "🇺🇸 美国4-直连", type: "vmess", server: "m2bba2.maocf1.top", port: 2052, uuid: "410c9ebd-7e86-4009-9727-94c286dee02b", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "lswjs.maocf1.top"}}}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🏳️‍🌈 剩余流量：111.05 GB"
+  - "🏴‍☠️ 距离下次重置剩余：24 天"
+  - "🏴‍☠️ 套餐到期：2025-07-20"
+  - "🏴‍☠️ 防失联hd.m2cloud.sbs"
+  - "🏴‍☠️ 官网ht.idsduf.com"
+  - "🏴‍☠️ 群:t.me/m2cloudvpn"
+  - "🇭🇰 香港1-视频"
+  - "🇭🇰 香港2-视频"
+  - "🇭🇰 香港3-IPv6"
+  - "🇭🇰 香港4-IPv6"
+  - "🇭🇰 香港5-IPv6"
+  - "🇭🇰 香港6-IPv6"
+  - "🇸🇬 新加坡1-IPv6"
+  - "🇸🇬 新加坡2-IPv6"
+  - "🇸🇬 新加坡3"
+  - "🇸🇬 新加坡4"
+  - "🇯🇵 日本1-IPv6"
+  - "🇯🇵 日本2-IPv6"
+  - "🇯🇵 日本3-东京"
+  - "🇯🇵 日本4-东京"
+  - "🇨🇳 台湾1-IPv6-优化"
+  - "🇨🇳 台湾2-IPv6-优化"
+  - "🇨🇳 台湾3"
+  - "🇨🇳 台湾4"
+  - "🇨🇳 台湾5-优化"
+  - "🇨🇳 台湾6-优化"
+  - "🇰🇷 韩国1"
+  - "🇰🇷 韩国2"
+  - "🇺🇸 美国1-IPv6"
+  - "🇺🇸 美国2-IPv6"
+  - "🇺🇸 美国3"
+  - "🇺🇸 美国4"
+  - "🇲🇾 马来西亚"
+  - "🇹🇭 泰国"
+  - "🇻🇳 越南"
+  - "🇻🇳 越南2"
+  - "🇵🇭 菲律宾"
+  - "🇲🇲 缅甸"
+  - "🇰🇭 柬埔寨"
+  - "🇮🇩 印尼"
+  - "🇦🇺 澳大利亚"
+  - "🇦🇪 阿联酋"
+  - "🇮🇳 印度1"
+  - "🇩🇪 德国1"
+  - "🇺🇦 乌克兰"
+  - "🇿🇦 南非"
+  - "🇬🇧 英国"
+  - "🇷🇺 俄罗斯"
+  - "🇮🇸 冰岛"
+  - "🇮🇹 意大利"
+  - "🇫🇷 法国1"
+  - "🇨🇦 加拿大"
+  - "🇳🇱 荷兰"
+  - "🇵🇱 波兰"
+  - "🇪🇸 西班牙"
+  - "🇧🇷 巴西"
+  - "🇳🇬 尼日利亚"
+  - "🇹🇷 土耳其"
+  - "🇸🇱 香港-HY2应急线路"
+  - "🇨🇳 台湾-HY2"
+  - "🇸🇬 新加坡-HY2"
+  - "🇺🇸 美国-HY2"
+  - "🇯🇵 日本-HY2"
+  - "🇺🇸 美国3-直连"
+  - "🇺🇸 美国4-直连"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🏳️‍🌈 剩余流量：111.05 GB"
+  - "🏴‍☠️ 距离下次重置剩余：24 天"
+  - "🏴‍☠️ 套餐到期：2025-07-20"
+  - "🏴‍☠️ 防失联hd.m2cloud.sbs"
+  - "🏴‍☠️ 官网ht.idsduf.com"
+  - "🏴‍☠️ 群:t.me/m2cloudvpn"
+  - "🇭🇰 香港1-视频"
+  - "🇭🇰 香港2-视频"
+  - "🇭🇰 香港3-IPv6"
+  - "🇭🇰 香港4-IPv6"
+  - "🇭🇰 香港5-IPv6"
+  - "🇭🇰 香港6-IPv6"
+  - "🇸🇬 新加坡1-IPv6"
+  - "🇸🇬 新加坡2-IPv6"
+  - "🇸🇬 新加坡3"
+  - "🇸🇬 新加坡4"
+  - "🇯🇵 日本1-IPv6"
+  - "🇯🇵 日本2-IPv6"
+  - "🇯🇵 日本3-东京"
+  - "🇯🇵 日本4-东京"
+  - "🇨🇳 台湾1-IPv6-优化"
+  - "🇨🇳 台湾2-IPv6-优化"
+  - "🇨🇳 台湾3"
+  - "🇨🇳 台湾4"
+  - "🇨🇳 台湾5-优化"
+  - "🇨🇳 台湾6-优化"
+  - "🇰🇷 韩国1"
+  - "🇰🇷 韩国2"
+  - "🇺🇸 美国1-IPv6"
+  - "🇺🇸 美国2-IPv6"
+  - "🇺🇸 美国3"
+  - "🇺🇸 美国4"
+  - "🇲🇾 马来西亚"
+  - "🇹🇭 泰国"
+  - "🇻🇳 越南"
+  - "🇻🇳 越南2"
+  - "🇵🇭 菲律宾"
+  - "🇲🇲 缅甸"
+  - "🇰🇭 柬埔寨"
+  - "🇮🇩 印尼"
+  - "🇦🇺 澳大利亚"
+  - "🇦🇪 阿联酋"
+  - "🇮🇳 印度1"
+  - "🇩🇪 德国1"
+  - "🇺🇦 乌克兰"
+  - "🇿🇦 南非"
+  - "🇬🇧 英国"
+  - "🇷🇺 俄罗斯"
+  - "🇮🇸 冰岛"
+  - "🇮🇹 意大利"
+  - "🇫🇷 法国1"
+  - "🇨🇦 加拿大"
+  - "🇳🇱 荷兰"
+  - "🇵🇱 波兰"
+  - "🇪🇸 西班牙"
+  - "🇧🇷 巴西"
+  - "🇳🇬 尼日利亚"
+  - "🇹🇷 土耳其"
+  - "🇸🇱 香港-HY2应急线路"
+  - "🇨🇳 台湾-HY2"
+  - "🇸🇬 新加坡-HY2"
+  - "🇺🇸 美国-HY2"
+  - "🇯🇵 日本-HY2"
+  - "🇺🇸 美国3-直连"
+  - "🇺🇸 美国4-直连"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🏳️‍🌈 剩余流量：111.05 GB"
+  - "🏴‍☠️ 距离下次重置剩余：24 天"
+  - "🏴‍☠️ 套餐到期：2025-07-20"
+  - "🏴‍☠️ 防失联hd.m2cloud.sbs"
+  - "🏴‍☠️ 官网ht.idsduf.com"
+  - "🏴‍☠️ 群:t.me/m2cloudvpn"
+  - "🇭🇰 香港1-视频"
+  - "🇭🇰 香港2-视频"
+  - "🇭🇰 香港3-IPv6"
+  - "🇭🇰 香港4-IPv6"
+  - "🇭🇰 香港5-IPv6"
+  - "🇭🇰 香港6-IPv6"
+  - "🇸🇬 新加坡1-IPv6"
+  - "🇸🇬 新加坡2-IPv6"
+  - "🇸🇬 新加坡3"
+  - "🇸🇬 新加坡4"
+  - "🇯🇵 日本1-IPv6"
+  - "🇯🇵 日本2-IPv6"
+  - "🇯🇵 日本3-东京"
+  - "🇯🇵 日本4-东京"
+  - "🇨🇳 台湾1-IPv6-优化"
+  - "🇨🇳 台湾2-IPv6-优化"
+  - "🇨🇳 台湾3"
+  - "🇨🇳 台湾4"
+  - "🇨🇳 台湾5-优化"
+  - "🇨🇳 台湾6-优化"
+  - "🇰🇷 韩国1"
+  - "🇰🇷 韩国2"
+  - "🇺🇸 美国1-IPv6"
+  - "🇺🇸 美国2-IPv6"
+  - "🇺🇸 美国3"
+  - "🇺🇸 美国4"
+  - "🇲🇾 马来西亚"
+  - "🇹🇭 泰国"
+  - "🇻🇳 越南"
+  - "🇻🇳 越南2"
+  - "🇵🇭 菲律宾"
+  - "🇲🇲 缅甸"
+  - "🇰🇭 柬埔寨"
+  - "🇮🇩 印尼"
+  - "🇦🇺 澳大利亚"
+  - "🇦🇪 阿联酋"
+  - "🇮🇳 印度1"
+  - "🇩🇪 德国1"
+  - "🇺🇦 乌克兰"
+  - "🇿🇦 南非"
+  - "🇬🇧 英国"
+  - "🇷🇺 俄罗斯"
+  - "🇮🇸 冰岛"
+  - "🇮🇹 意大利"
+  - "🇫🇷 法国1"
+  - "🇨🇦 加拿大"
+  - "🇳🇱 荷兰"
+  - "🇵🇱 波兰"
+  - "🇪🇸 西班牙"
+  - "🇧🇷 巴西"
+  - "🇳🇬 尼日利亚"
+  - "🇹🇷 土耳其"
+  - "🇸🇱 香港-HY2应急线路"
+  - "🇨🇳 台湾-HY2"
+  - "🇸🇬 新加坡-HY2"
+  - "🇺🇸 美国-HY2"
+  - "🇯🇵 日本-HY2"
+  - "🇺🇸 美国3-直连"
+  - "🇺🇸 美国4-直连"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🏳️‍🌈 剩余流量：111.05 GB"
+  - "🏴‍☠️ 距离下次重置剩余：24 天"
+  - "🏴‍☠️ 套餐到期：2025-07-20"
+  - "🏴‍☠️ 防失联hd.m2cloud.sbs"
+  - "🏴‍☠️ 官网ht.idsduf.com"
+  - "🏴‍☠️ 群:t.me/m2cloudvpn"
+  - "🇭🇰 香港1-视频"
+  - "🇭🇰 香港2-视频"
+  - "🇭🇰 香港3-IPv6"
+  - "🇭🇰 香港4-IPv6"
+  - "🇭🇰 香港5-IPv6"
+  - "🇭🇰 香港6-IPv6"
+  - "🇸🇬 新加坡1-IPv6"
+  - "🇸🇬 新加坡2-IPv6"
+  - "🇸🇬 新加坡3"
+  - "🇸🇬 新加坡4"
+  - "🇯🇵 日本1-IPv6"
+  - "🇯🇵 日本2-IPv6"
+  - "🇯🇵 日本3-东京"
+  - "🇯🇵 日本4-东京"
+  - "🇨🇳 台湾1-IPv6-优化"
+  - "🇨🇳 台湾2-IPv6-优化"
+  - "🇨🇳 台湾3"
+  - "🇨🇳 台湾4"
+  - "🇨🇳 台湾5-优化"
+  - "🇨🇳 台湾6-优化"
+  - "🇰🇷 韩国1"
+  - "🇰🇷 韩国2"
+  - "🇺🇸 美国1-IPv6"
+  - "🇺🇸 美国2-IPv6"
+  - "🇺🇸 美国3"
+  - "🇺🇸 美国4"
+  - "🇲🇾 马来西亚"
+  - "🇹🇭 泰国"
+  - "🇻🇳 越南"
+  - "🇻🇳 越南2"
+  - "🇵🇭 菲律宾"
+  - "🇲🇲 缅甸"
+  - "🇰🇭 柬埔寨"
+  - "🇮🇩 印尼"
+  - "🇦🇺 澳大利亚"
+  - "🇦🇪 阿联酋"
+  - "🇮🇳 印度1"
+  - "🇩🇪 德国1"
+  - "🇺🇦 乌克兰"
+  - "🇿🇦 南非"
+  - "🇬🇧 英国"
+  - "🇷🇺 俄罗斯"
+  - "🇮🇸 冰岛"
+  - "🇮🇹 意大利"
+  - "🇫🇷 法国1"
+  - "🇨🇦 加拿大"
+  - "🇳🇱 荷兰"
+  - "🇵🇱 波兰"
+  - "🇪🇸 西班牙"
+  - "🇧🇷 巴西"
+  - "🇳🇬 尼日利亚"
+  - "🇹🇷 土耳其"
+  - "🇸🇱 香港-HY2应急线路"
+  - "🇨🇳 台湾-HY2"
+  - "🇸🇬 新加坡-HY2"
+  - "🇺🇸 美国-HY2"
+  - "🇯🇵 日本-HY2"
+  - "🇺🇸 美国3-直连"
+  - "🇺🇸 美国4-直连"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🏳️‍🌈 剩余流量：111.05 GB"
+  - "🏴‍☠️ 距离下次重置剩余：24 天"
+  - "🏴‍☠️ 套餐到期：2025-07-20"
+  - "🏴‍☠️ 防失联hd.m2cloud.sbs"
+  - "🏴‍☠️ 官网ht.idsduf.com"
+  - "🏴‍☠️ 群:t.me/m2cloudvpn"
+  - "🇭🇰 香港1-视频"
+  - "🇭🇰 香港2-视频"
+  - "🇭🇰 香港3-IPv6"
+  - "🇭🇰 香港4-IPv6"
+  - "🇭🇰 香港5-IPv6"
+  - "🇭🇰 香港6-IPv6"
+  - "🇸🇬 新加坡1-IPv6"
+  - "🇸🇬 新加坡2-IPv6"
+  - "🇸🇬 新加坡3"
+  - "🇸🇬 新加坡4"
+  - "🇯🇵 日本1-IPv6"
+  - "🇯🇵 日本2-IPv6"
+  - "🇯🇵 日本3-东京"
+  - "🇯🇵 日本4-东京"
+  - "🇨🇳 台湾1-IPv6-优化"
+  - "🇨🇳 台湾2-IPv6-优化"
+  - "🇨🇳 台湾3"
+  - "🇨🇳 台湾4"
+  - "🇨🇳 台湾5-优化"
+  - "🇨🇳 台湾6-优化"
+  - "🇰🇷 韩国1"
+  - "🇰🇷 韩国2"
+  - "🇺🇸 美国1-IPv6"
+  - "🇺🇸 美国2-IPv6"
+  - "🇺🇸 美国3"
+  - "🇺🇸 美国4"
+  - "🇲🇾 马来西亚"
+  - "🇹🇭 泰国"
+  - "🇻🇳 越南"
+  - "🇻🇳 越南2"
+  - "🇵🇭 菲律宾"
+  - "🇲🇲 缅甸"
+  - "🇰🇭 柬埔寨"
+  - "🇮🇩 印尼"
+  - "🇦🇺 澳大利亚"
+  - "🇦🇪 阿联酋"
+  - "🇮🇳 印度1"
+  - "🇩🇪 德国1"
+  - "🇺🇦 乌克兰"
+  - "🇿🇦 南非"
+  - "🇬🇧 英国"
+  - "🇷🇺 俄罗斯"
+  - "🇮🇸 冰岛"
+  - "🇮🇹 意大利"
+  - "🇫🇷 法国1"
+  - "🇨🇦 加拿大"
+  - "🇳🇱 荷兰"
+  - "🇵🇱 波兰"
+  - "🇪🇸 西班牙"
+  - "🇧🇷 巴西"
+  - "🇳🇬 尼日利亚"
+  - "🇹🇷 土耳其"
+  - "🇸🇱 香港-HY2应急线路"
+  - "🇨🇳 台湾-HY2"
+  - "🇸🇬 新加坡-HY2"
+  - "🇺🇸 美国-HY2"
+  - "🇯🇵 日本-HY2"
+  - "🇺🇸 美国3-直连"
+  - "🇺🇸 美国4-直连"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🏳️‍🌈 剩余流量：111.05 GB"
+  - "🏴‍☠️ 距离下次重置剩余：24 天"
+  - "🏴‍☠️ 套餐到期：2025-07-20"
+  - "🏴‍☠️ 防失联hd.m2cloud.sbs"
+  - "🏴‍☠️ 官网ht.idsduf.com"
+  - "🏴‍☠️ 群:t.me/m2cloudvpn"
+  - "🇭🇰 香港1-视频"
+  - "🇭🇰 香港2-视频"
+  - "🇭🇰 香港3-IPv6"
+  - "🇭🇰 香港4-IPv6"
+  - "🇭🇰 香港5-IPv6"
+  - "🇭🇰 香港6-IPv6"
+  - "🇸🇬 新加坡1-IPv6"
+  - "🇸🇬 新加坡2-IPv6"
+  - "🇸🇬 新加坡3"
+  - "🇸🇬 新加坡4"
+  - "🇯🇵 日本1-IPv6"
+  - "🇯🇵 日本2-IPv6"
+  - "🇯🇵 日本3-东京"
+  - "🇯🇵 日本4-东京"
+  - "🇨🇳 台湾1-IPv6-优化"
+  - "🇨🇳 台湾2-IPv6-优化"
+  - "🇨🇳 台湾3"
+  - "🇨🇳 台湾4"
+  - "🇨🇳 台湾5-优化"
+  - "🇨🇳 台湾6-优化"
+  - "🇰🇷 韩国1"
+  - "🇰🇷 韩国2"
+  - "🇺🇸 美国1-IPv6"
+  - "🇺🇸 美国2-IPv6"
+  - "🇺🇸 美国3"
+  - "🇺🇸 美国4"
+  - "🇲🇾 马来西亚"
+  - "🇹🇭 泰国"
+  - "🇻🇳 越南"
+  - "🇻🇳 越南2"
+  - "🇵🇭 菲律宾"
+  - "🇲🇲 缅甸"
+  - "🇰🇭 柬埔寨"
+  - "🇮🇩 印尼"
+  - "🇦🇺 澳大利亚"
+  - "🇦🇪 阿联酋"
+  - "🇮🇳 印度1"
+  - "🇩🇪 德国1"
+  - "🇺🇦 乌克兰"
+  - "🇿🇦 南非"
+  - "🇬🇧 英国"
+  - "🇷🇺 俄罗斯"
+  - "🇮🇸 冰岛"
+  - "🇮🇹 意大利"
+  - "🇫🇷 法国1"
+  - "🇨🇦 加拿大"
+  - "🇳🇱 荷兰"
+  - "🇵🇱 波兰"
+  - "🇪🇸 西班牙"
+  - "🇧🇷 巴西"
+  - "🇳🇬 尼日利亚"
+  - "🇹🇷 土耳其"
+  - "🇸🇱 香港-HY2应急线路"
+  - "🇨🇳 台湾-HY2"
+  - "🇸🇬 新加坡-HY2"
+  - "🇺🇸 美国-HY2"
+  - "🇯🇵 日本-HY2"
+  - "🇺🇸 美国3-直连"
+  - "🇺🇸 美国4-直连"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

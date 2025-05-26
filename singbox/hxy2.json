@@ -1,0 +1,1521 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🏳️‍🌈 剩余流量：554.06 GB",
+        "🏴‍☠️ 距离下次重置剩余：29 天",
+        "🏴‍☠️ 套餐到期：2026-10-25",
+        "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+        "🏴‍☠️ 🔗 节点异常请刷新订阅",
+        "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+        "🇭🇰 香港中转",
+        "🇭🇰 香港中转 - 江苏",
+        "🇭🇰 香港中转 - 广州",
+        "🇨🇳 台湾中转",
+        "🇨🇳 台湾中转 - 江苏",
+        "🇨🇳 台湾中转 - 广州",
+        "🇸🇬 新加坡中转",
+        "🇸🇬 新加坡中转 - 江苏",
+        "🇸🇬 新加坡中转 - 广州",
+        "🇯🇵 日本中转1-家宽",
+        "🇯🇵 日本中转2-家宽",
+        "🇯🇵 日本中转",
+        "🇯🇵 日本中转 - 广州",
+        "🇯🇵 日本中转 - 江苏",
+        "🇺🇸 美国中转",
+        "🇺🇸 美国中转 - 广州",
+        "🇺🇸 美国中转 - 江苏",
+        "🇺🇸 美国中转原生",
+        "🇭🇰 香港直连1 - 0.5倍率",
+        "🇭🇰 香港直连2 - 0.5倍率",
+        "🇨🇳 台湾直连1 - 0.5倍率",
+        "🇨🇳 台湾直连2 - 0.5倍率",
+        "🇸🇬 新加坡直连1 - 0.5倍率",
+        "🇸🇬 新加坡直连2 - 0.5倍率",
+        "🇯🇵 日本直连1 - 0.5倍率",
+        "🇯🇵 日本直连2 - 0.5倍率",
+        "🇺🇸 美国直连1 - 0.5倍率",
+        "🇺🇸 美国直连2 - 0.5倍率",
+        "🇭🇰 香港 IPV6",
+        "🇨🇳 台湾 IPV6",
+        "🇸🇬 新加坡 IPV6",
+        "🇯🇵 日本 IPV6",
+        "🇺🇸 美国 IPV6",
+        "🇰🇷 韩国",
+        "🇰🇷 韩国-首尔",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇳🇱 荷兰",
+        "🇮🇳 印度-西部",
+        "🇨🇱 智利",
+        "🇧🇷 巴西",
+        "🇪🇸 西班牙",
+        "🇨🇭 瑞士",
+        "🇸🇪 瑞典",
+        "🇲🇽 墨西哥",
+        "🇨🇦 加拿大",
+        "🇦🇺 澳大利亚",
+        "🇦🇪 迪拜",
+        "🇿🇦 南非",
+        "🇸🇦 沙特阿拉伯",
+        "🇨🇴 哥伦比亚",
+        "🇮🇱 以色列",
+        "🇻🇳 越南",
+        "🇹🇭 泰国",
+        "🇲🇾 马来西亚",
+        "🇷🇺 莫斯科",
+        "🇵🇭 菲律宾",
+        "🇳🇬 尼日利亚",
+        "🇮🇩 印度尼西亚",
+        "🇹🇷 土耳其"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🏳️‍🌈 剩余流量：554.06 GB",
+        "🏴‍☠️ 距离下次重置剩余：29 天",
+        "🏴‍☠️ 套餐到期：2026-10-25",
+        "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+        "🏴‍☠️ 🔗 节点异常请刷新订阅",
+        "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+        "🇭🇰 香港中转",
+        "🇭🇰 香港中转 - 江苏",
+        "🇭🇰 香港中转 - 广州",
+        "🇨🇳 台湾中转",
+        "🇨🇳 台湾中转 - 江苏",
+        "🇨🇳 台湾中转 - 广州",
+        "🇸🇬 新加坡中转",
+        "🇸🇬 新加坡中转 - 江苏",
+        "🇸🇬 新加坡中转 - 广州",
+        "🇯🇵 日本中转1-家宽",
+        "🇯🇵 日本中转2-家宽",
+        "🇯🇵 日本中转",
+        "🇯🇵 日本中转 - 广州",
+        "🇯🇵 日本中转 - 江苏",
+        "🇺🇸 美国中转",
+        "🇺🇸 美国中转 - 广州",
+        "🇺🇸 美国中转 - 江苏",
+        "🇺🇸 美国中转原生",
+        "🇭🇰 香港直连1 - 0.5倍率",
+        "🇭🇰 香港直连2 - 0.5倍率",
+        "🇨🇳 台湾直连1 - 0.5倍率",
+        "🇨🇳 台湾直连2 - 0.5倍率",
+        "🇸🇬 新加坡直连1 - 0.5倍率",
+        "🇸🇬 新加坡直连2 - 0.5倍率",
+        "🇯🇵 日本直连1 - 0.5倍率",
+        "🇯🇵 日本直连2 - 0.5倍率",
+        "🇺🇸 美国直连1 - 0.5倍率",
+        "🇺🇸 美国直连2 - 0.5倍率",
+        "🇭🇰 香港 IPV6",
+        "🇨🇳 台湾 IPV6",
+        "🇸🇬 新加坡 IPV6",
+        "🇯🇵 日本 IPV6",
+        "🇺🇸 美国 IPV6",
+        "🇰🇷 韩国",
+        "🇰🇷 韩国-首尔",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇳🇱 荷兰",
+        "🇮🇳 印度-西部",
+        "🇨🇱 智利",
+        "🇧🇷 巴西",
+        "🇪🇸 西班牙",
+        "🇨🇭 瑞士",
+        "🇸🇪 瑞典",
+        "🇲🇽 墨西哥",
+        "🇨🇦 加拿大",
+        "🇦🇺 澳大利亚",
+        "🇦🇪 迪拜",
+        "🇿🇦 南非",
+        "🇸🇦 沙特阿拉伯",
+        "🇨🇴 哥伦比亚",
+        "🇮🇱 以色列",
+        "🇻🇳 越南",
+        "🇹🇭 泰国",
+        "🇲🇾 马来西亚",
+        "🇷🇺 莫斯科",
+        "🇵🇭 菲律宾",
+        "🇳🇬 尼日利亚",
+        "🇮🇩 印度尼西亚",
+        "🇹🇷 土耳其"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🏳️‍🌈 剩余流量：554.06 GB",
+        "🏴‍☠️ 距离下次重置剩余：29 天",
+        "🏴‍☠️ 套餐到期：2026-10-25",
+        "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+        "🏴‍☠️ 🔗 节点异常请刷新订阅",
+        "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+        "🇭🇰 香港中转",
+        "🇭🇰 香港中转 - 江苏",
+        "🇭🇰 香港中转 - 广州",
+        "🇨🇳 台湾中转",
+        "🇨🇳 台湾中转 - 江苏",
+        "🇨🇳 台湾中转 - 广州",
+        "🇸🇬 新加坡中转",
+        "🇸🇬 新加坡中转 - 江苏",
+        "🇸🇬 新加坡中转 - 广州",
+        "🇯🇵 日本中转1-家宽",
+        "🇯🇵 日本中转2-家宽",
+        "🇯🇵 日本中转",
+        "🇯🇵 日本中转 - 广州",
+        "🇯🇵 日本中转 - 江苏",
+        "🇺🇸 美国中转",
+        "🇺🇸 美国中转 - 广州",
+        "🇺🇸 美国中转 - 江苏",
+        "🇺🇸 美国中转原生",
+        "🇭🇰 香港直连1 - 0.5倍率",
+        "🇭🇰 香港直连2 - 0.5倍率",
+        "🇨🇳 台湾直连1 - 0.5倍率",
+        "🇨🇳 台湾直连2 - 0.5倍率",
+        "🇸🇬 新加坡直连1 - 0.5倍率",
+        "🇸🇬 新加坡直连2 - 0.5倍率",
+        "🇯🇵 日本直连1 - 0.5倍率",
+        "🇯🇵 日本直连2 - 0.5倍率",
+        "🇺🇸 美国直连1 - 0.5倍率",
+        "🇺🇸 美国直连2 - 0.5倍率",
+        "🇭🇰 香港 IPV6",
+        "🇨🇳 台湾 IPV6",
+        "🇸🇬 新加坡 IPV6",
+        "🇯🇵 日本 IPV6",
+        "🇺🇸 美国 IPV6",
+        "🇰🇷 韩国",
+        "🇰🇷 韩国-首尔",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇳🇱 荷兰",
+        "🇮🇳 印度-西部",
+        "🇨🇱 智利",
+        "🇧🇷 巴西",
+        "🇪🇸 西班牙",
+        "🇨🇭 瑞士",
+        "🇸🇪 瑞典",
+        "🇲🇽 墨西哥",
+        "🇨🇦 加拿大",
+        "🇦🇺 澳大利亚",
+        "🇦🇪 迪拜",
+        "🇿🇦 南非",
+        "🇸🇦 沙特阿拉伯",
+        "🇨🇴 哥伦比亚",
+        "🇮🇱 以色列",
+        "🇻🇳 越南",
+        "🇹🇭 泰国",
+        "🇲🇾 马来西亚",
+        "🇷🇺 莫斯科",
+        "🇵🇭 菲律宾",
+        "🇳🇬 尼日利亚",
+        "🇮🇩 印度尼西亚",
+        "🇹🇷 土耳其"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🏳️‍🌈 剩余流量：554.06 GB",
+        "🏴‍☠️ 距离下次重置剩余：29 天",
+        "🏴‍☠️ 套餐到期：2026-10-25",
+        "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+        "🏴‍☠️ 🔗 节点异常请刷新订阅",
+        "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+        "🇭🇰 香港中转",
+        "🇭🇰 香港中转 - 江苏",
+        "🇭🇰 香港中转 - 广州",
+        "🇨🇳 台湾中转",
+        "🇨🇳 台湾中转 - 江苏",
+        "🇨🇳 台湾中转 - 广州",
+        "🇸🇬 新加坡中转",
+        "🇸🇬 新加坡中转 - 江苏",
+        "🇸🇬 新加坡中转 - 广州",
+        "🇯🇵 日本中转1-家宽",
+        "🇯🇵 日本中转2-家宽",
+        "🇯🇵 日本中转",
+        "🇯🇵 日本中转 - 广州",
+        "🇯🇵 日本中转 - 江苏",
+        "🇺🇸 美国中转",
+        "🇺🇸 美国中转 - 广州",
+        "🇺🇸 美国中转 - 江苏",
+        "🇺🇸 美国中转原生",
+        "🇭🇰 香港直连1 - 0.5倍率",
+        "🇭🇰 香港直连2 - 0.5倍率",
+        "🇨🇳 台湾直连1 - 0.5倍率",
+        "🇨🇳 台湾直连2 - 0.5倍率",
+        "🇸🇬 新加坡直连1 - 0.5倍率",
+        "🇸🇬 新加坡直连2 - 0.5倍率",
+        "🇯🇵 日本直连1 - 0.5倍率",
+        "🇯🇵 日本直连2 - 0.5倍率",
+        "🇺🇸 美国直连1 - 0.5倍率",
+        "🇺🇸 美国直连2 - 0.5倍率",
+        "🇭🇰 香港 IPV6",
+        "🇨🇳 台湾 IPV6",
+        "🇸🇬 新加坡 IPV6",
+        "🇯🇵 日本 IPV6",
+        "🇺🇸 美国 IPV6",
+        "🇰🇷 韩国",
+        "🇰🇷 韩国-首尔",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇳🇱 荷兰",
+        "🇮🇳 印度-西部",
+        "🇨🇱 智利",
+        "🇧🇷 巴西",
+        "🇪🇸 西班牙",
+        "🇨🇭 瑞士",
+        "🇸🇪 瑞典",
+        "🇲🇽 墨西哥",
+        "🇨🇦 加拿大",
+        "🇦🇺 澳大利亚",
+        "🇦🇪 迪拜",
+        "🇿🇦 南非",
+        "🇸🇦 沙特阿拉伯",
+        "🇨🇴 哥伦比亚",
+        "🇮🇱 以色列",
+        "🇻🇳 越南",
+        "🇹🇭 泰国",
+        "🇲🇾 马来西亚",
+        "🇷🇺 莫斯科",
+        "🇵🇭 菲律宾",
+        "🇳🇬 尼日利亚",
+        "🇮🇩 印度尼西亚",
+        "🇹🇷 土耳其"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🏳️‍🌈 剩余流量：554.06 GB",
+        "🏴‍☠️ 距离下次重置剩余：29 天",
+        "🏴‍☠️ 套餐到期：2026-10-25",
+        "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+        "🏴‍☠️ 🔗 节点异常请刷新订阅",
+        "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+        "🇭🇰 香港中转",
+        "🇭🇰 香港中转 - 江苏",
+        "🇭🇰 香港中转 - 广州",
+        "🇨🇳 台湾中转",
+        "🇨🇳 台湾中转 - 江苏",
+        "🇨🇳 台湾中转 - 广州",
+        "🇸🇬 新加坡中转",
+        "🇸🇬 新加坡中转 - 江苏",
+        "🇸🇬 新加坡中转 - 广州",
+        "🇯🇵 日本中转1-家宽",
+        "🇯🇵 日本中转2-家宽",
+        "🇯🇵 日本中转",
+        "🇯🇵 日本中转 - 广州",
+        "🇯🇵 日本中转 - 江苏",
+        "🇺🇸 美国中转",
+        "🇺🇸 美国中转 - 广州",
+        "🇺🇸 美国中转 - 江苏",
+        "🇺🇸 美国中转原生",
+        "🇭🇰 香港直连1 - 0.5倍率",
+        "🇭🇰 香港直连2 - 0.5倍率",
+        "🇨🇳 台湾直连1 - 0.5倍率",
+        "🇨🇳 台湾直连2 - 0.5倍率",
+        "🇸🇬 新加坡直连1 - 0.5倍率",
+        "🇸🇬 新加坡直连2 - 0.5倍率",
+        "🇯🇵 日本直连1 - 0.5倍率",
+        "🇯🇵 日本直连2 - 0.5倍率",
+        "🇺🇸 美国直连1 - 0.5倍率",
+        "🇺🇸 美国直连2 - 0.5倍率",
+        "🇭🇰 香港 IPV6",
+        "🇨🇳 台湾 IPV6",
+        "🇸🇬 新加坡 IPV6",
+        "🇯🇵 日本 IPV6",
+        "🇺🇸 美国 IPV6",
+        "🇰🇷 韩国",
+        "🇰🇷 韩国-首尔",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇳🇱 荷兰",
+        "🇮🇳 印度-西部",
+        "🇨🇱 智利",
+        "🇧🇷 巴西",
+        "🇪🇸 西班牙",
+        "🇨🇭 瑞士",
+        "🇸🇪 瑞典",
+        "🇲🇽 墨西哥",
+        "🇨🇦 加拿大",
+        "🇦🇺 澳大利亚",
+        "🇦🇪 迪拜",
+        "🇿🇦 南非",
+        "🇸🇦 沙特阿拉伯",
+        "🇨🇴 哥伦比亚",
+        "🇮🇱 以色列",
+        "🇻🇳 越南",
+        "🇹🇭 泰国",
+        "🇲🇾 马来西亚",
+        "🇷🇺 莫斯科",
+        "🇵🇭 菲律宾",
+        "🇳🇬 尼日利亚",
+        "🇮🇩 印度尼西亚",
+        "🇹🇷 土耳其"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🏳️‍🌈 剩余流量：554.06 GB",
+        "🏴‍☠️ 距离下次重置剩余：29 天",
+        "🏴‍☠️ 套餐到期：2026-10-25",
+        "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+        "🏴‍☠️ 🔗 节点异常请刷新订阅",
+        "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+        "🇭🇰 香港中转",
+        "🇭🇰 香港中转 - 江苏",
+        "🇭🇰 香港中转 - 广州",
+        "🇨🇳 台湾中转",
+        "🇨🇳 台湾中转 - 江苏",
+        "🇨🇳 台湾中转 - 广州",
+        "🇸🇬 新加坡中转",
+        "🇸🇬 新加坡中转 - 江苏",
+        "🇸🇬 新加坡中转 - 广州",
+        "🇯🇵 日本中转1-家宽",
+        "🇯🇵 日本中转2-家宽",
+        "🇯🇵 日本中转",
+        "🇯🇵 日本中转 - 广州",
+        "🇯🇵 日本中转 - 江苏",
+        "🇺🇸 美国中转",
+        "🇺🇸 美国中转 - 广州",
+        "🇺🇸 美国中转 - 江苏",
+        "🇺🇸 美国中转原生",
+        "🇭🇰 香港直连1 - 0.5倍率",
+        "🇭🇰 香港直连2 - 0.5倍率",
+        "🇨🇳 台湾直连1 - 0.5倍率",
+        "🇨🇳 台湾直连2 - 0.5倍率",
+        "🇸🇬 新加坡直连1 - 0.5倍率",
+        "🇸🇬 新加坡直连2 - 0.5倍率",
+        "🇯🇵 日本直连1 - 0.5倍率",
+        "🇯🇵 日本直连2 - 0.5倍率",
+        "🇺🇸 美国直连1 - 0.5倍率",
+        "🇺🇸 美国直连2 - 0.5倍率",
+        "🇭🇰 香港 IPV6",
+        "🇨🇳 台湾 IPV6",
+        "🇸🇬 新加坡 IPV6",
+        "🇯🇵 日本 IPV6",
+        "🇺🇸 美国 IPV6",
+        "🇰🇷 韩国",
+        "🇰🇷 韩国-首尔",
+        "🇩🇪 德国",
+        "🇫🇷 法国",
+        "🇬🇧 英国",
+        "🇳🇱 荷兰",
+        "🇮🇳 印度-西部",
+        "🇨🇱 智利",
+        "🇧🇷 巴西",
+        "🇪🇸 西班牙",
+        "🇨🇭 瑞士",
+        "🇸🇪 瑞典",
+        "🇲🇽 墨西哥",
+        "🇨🇦 加拿大",
+        "🇦🇺 澳大利亚",
+        "🇦🇪 迪拜",
+        "🇿🇦 南非",
+        "🇸🇦 沙特阿拉伯",
+        "🇨🇴 哥伦比亚",
+        "🇮🇱 以色列",
+        "🇻🇳 越南",
+        "🇹🇭 泰国",
+        "🇲🇾 马来西亚",
+        "🇷🇺 莫斯科",
+        "🇵🇭 菲律宾",
+        "🇳🇬 尼日利亚",
+        "🇮🇩 印度尼西亚",
+        "🇹🇷 土耳其"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🏳️‍🌈 剩余流量：554.06 GB",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 距离下次重置剩余：29 天",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 套餐到期：2026-10-25",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 🏘️ 官网：hongxingdl.club",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 🔗 节点异常请刷新订阅",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 🙂刷新失败请到官网重新导入(需重登账号)",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港中转",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港中转 - 江苏",
+      "type": "trojan",
+      "server": "js-12f83a8c.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港中转 - 广州",
+      "type": "trojan",
+      "server": "gz-43e866.kaiqsz.com",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾中转",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 42765,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾中转 - 江苏",
+      "type": "trojan",
+      "server": "js-12f83a8c.kaiqsz.com",
+      "server_port": 42765,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾中转 - 广州",
+      "type": "trojan",
+      "server": "gz-43e866.kaiqsz.com",
+      "server_port": 42765,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡中转",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 48291,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡中转 - 江苏",
+      "type": "trojan",
+      "server": "js-12f83a8c.kaiqsz.com",
+      "server_port": 18489,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡中转 - 广州",
+      "type": "trojan",
+      "server": "gz-43e866.kaiqsz.com",
+      "server_port": 18489,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本中转1-家宽",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 49921,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本中转2-家宽",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 49921,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本中转",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 28713,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本中转 - 广州",
+      "type": "trojan",
+      "server": "gz-43e866.kaiqsz.com",
+      "server_port": 28713,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本中转 - 江苏",
+      "type": "trojan",
+      "server": "js-12f83a8c.kaiqsz.com",
+      "server_port": 28713,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国中转",
+      "type": "trojan",
+      "server": "wb.kaiqsz.com",
+      "server_port": 21489,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国中转 - 广州",
+      "type": "trojan",
+      "server": "gz-43e866.kaiqsz.com",
+      "server_port": 21489,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国中转 - 江苏",
+      "type": "trojan",
+      "server": "js-12f83a8c.kaiqsz.com",
+      "server_port": 21489,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国中转原生",
+      "type": "trojan",
+      "server": "nbae7a7.kaiqsz.com",
+      "server_port": 53547,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港直连1 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 20461,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇭🇰 香港直连2 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 20461,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇨🇳 台湾直连1 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 48597,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇨🇳 台湾直连2 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 48597,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇸🇬 新加坡直连1 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 31183,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇸🇬 新加坡直连2 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 31183,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇯🇵 日本直连1 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 17371,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇯🇵 日本直连2 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 17371,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇺🇸 美国直连1 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 56449,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇺🇸 美国直连2 - 0.5倍率",
+      "type": "hysteria2",
+      "server": "hxzlaws.80-25-lyy.com",
+      "server_port": 56449,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "up_mbps": 10000,
+      "down_mbps": 10000
+    },
+    {
+      "tag": "🇭🇰 香港 IPV6",
+      "type": "trojan",
+      "server": "ipv6.hongxingdl.vip",
+      "server_port": 12221,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 IPV6",
+      "type": "trojan",
+      "server": "ipv6.hongxingdl.vip",
+      "server_port": 42765,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 IPV6",
+      "type": "trojan",
+      "server": "ipv6.hongxingdl.vip",
+      "server_port": 48291,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 IPV6",
+      "type": "trojan",
+      "server": "ipv6.hongxingdl.vip",
+      "server_port": 28713,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz1.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 IPV6",
+      "type": "trojan",
+      "server": "ipv6.hongxingdl.vip",
+      "server_port": 21489,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 39593,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国-首尔",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 51075,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz10.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇩🇪 德国",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 21463,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz12.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇫🇷 法国",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 52508,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz12.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇬🇧 英国",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 59358,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz11.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇳🇱 荷兰",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 23852,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz13.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度-西部",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 33243,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz13.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇱 智利",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 44134,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz10.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇧🇷 巴西",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 28499,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz10.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇪🇸 西班牙",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 34249,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz12.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇭 瑞士",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 50140,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz11.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇪 瑞典",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 59225,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz12.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇲🇽 墨西哥",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 14571,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz13.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 50121,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz13.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇦🇺 澳大利亚",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 50757,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz14.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇦🇪 迪拜",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 47621,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz10.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇿🇦 南非",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 53759,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz11.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇦 沙特阿拉伯",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 56072,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz11.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇴 哥伦比亚",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 25118,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz10.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇱 以色列",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 44650,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz14.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇻🇳 越南",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 59009,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz14.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇹🇭 泰国",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 43855,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz14.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇲🇾 马来西亚",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 30383,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz14.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇷🇺 莫斯科",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 16783,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz15.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇵🇭 菲律宾",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 58947,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz15.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇳🇬 尼日利亚",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 34183,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz16.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇩 印度尼西亚",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 27056,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz16.redapricotcloud.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇹🇷 土耳其",
+      "type": "trojan",
+      "server": "lm.kaiqsz.com",
+      "server_port": 49596,
+      "password": "52aef76f-0dee-4814-b3e8-3b682d4b74aa",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz16.redapricotcloud.com",
+        "insecure": true
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
