@@ -10,52 +10,52 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout sub branch
         uses: actions/checkout@v4
+        with:
+          ref: sub
 
-      - name: Checkout sub
-        run: |
-          git fetch origin
-          git checkout sub
-
-      - name: Set up Python
+      - name: Set up Python 3.13
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
-      
-      - name: Set up Node.js
+
+      - name: Set up Node.js 24
         uses: actions/setup-node@v4
         with:
-          node-version: '24.0.1'
-      
-      - name: Run SubStore
+          node-version: "24.0.1"
+
+      - name: Run SubStore server
         run: |
           mkdir -p substore
           cd substore
           curl -OL "${{ vars.SUBSTORE_URL }}"
           ls
           node "${{ vars.SUBSTORE }}" &
+          sleep 2
 
-      - name: Run scripts
-        run: |
-          bash run_scripts.sh
-          
+      - name: Run processing scripts
+        run: bash run_scripts.sh
+
       - name: Clean up substore folder
         run: |
           pkill -f "node ${{ vars.SUBSTORE }}" || true
-          #rm -rf substore
           rm -f substore/root.json substore/"${{ vars.SUBSTORE }}"
           ls substore
-    
-      - name: Commit changes if any
+
+      - name: Commit and push changes (if any)
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@github.com"
           git add -A
-          git commit -m "Auto commit changes from GitHub Action" || echo "No changes to commit"
-          git push origin sub
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto commit changes from GitHub Action"
+            git push origin sub
+          else
+            echo "No changes to commit."
+          fi
