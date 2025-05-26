@@ -1,0 +1,351 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇯🇵 日本东京4", server: "154.85.19.63", port: 55759, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇮🇳 印度海得拉巴", server: "144.24.153.219", port: 55435, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇦🇺 澳大利亚悉尼", server: "159.13.34.59", port: 55061, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇭🇰 香港2", server: "89.185.27.133", port: 55136, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇯🇵 日本东京2", server: "154.85.18.233", port: 55926, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇦🇪 阿联酋迪拜", server: "139.185.36.59", port: 55534, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇺🇸 美国芝加哥2", server: "172.245.234.211", port: 55644, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇺🇸 美国纽约", server: "23.95.75.173", port: 55991, type: "hysteria2", password: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", auth: "1126cd77-cae6-4c30-b53e-c5ca5a17c323", skip-cert-verify: true}
+- {name: "🇪🇨 JP-AWS-EC2", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", skip-cert-verify: true}
+- {name: "🇨🇳 CN", server: "120.233.128.68", port: 39001, type: "trojan", password: "b6200af42ccadea353f5b5856dd20d70", skip-cert-verify: true}
+- {name: "🇸🇬 SGP-Hy2-1", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", skip-cert-verify: true}
+- {name: "🇭🇰 Claw-HK-12.6", server: "8.210.184.183", port: 6116, type: "hysteria2", password: "DRAAoEbDU6dRMrVKMNKEvhBrAY", auth: "DRAAoEbDU6dRMrVKMNKEvhBrAY", skip-cert-verify: true}
+- {name: "🇯🇵 JP-KDDI-2", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", skip-cert-verify: true}
+- {name: "🇭🇰 [ss]香港1[中转]", server: "pic.aibox.tv", port: 10888, type: "ss", cipher: "chacha20-ietf-poly1305", password: "36c9fb47-8ad3-4059-bd8b-eefde9e68bcb"}
+- {name: "🇭🇰 [ss]香港2[中转]", server: "pic.aibox.tv", port: 10999, type: "ss", cipher: "chacha20-ietf-poly1305", password: "36c9fb47-8ad3-4059-bd8b-eefde9e68bcb"}
+- {name: "🏴‍☠️ 节点分享@iamdt002", server: "nc.ct.xiaomi-api.xyz", port: 19552, type: "trojan", password: "9b531eaa-ec0e-4c28-81db-9e08a110d4b1", skip-cert-verify: true, sni: "nc.ct.xiaomi-api.xyz"}
+- {name: "🇺🇸 US-Hy2-2", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", skip-cert-verify: true}
+- {name: "🇩🇪 DE-1", server: "3.120.153.207", port: 32816, type: "hysteria2", password: "0I8k2r7DPbQQsR1buvf8FaWF4U", auth: "0I8k2r7DPbQQsR1buvf8FaWF4U", skip-cert-verify: true}
+- {name: "🇺🇸 US-Hy2-1", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", skip-cert-verify: true}
+- {name: "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini", server: "64.181.207.162", port: 47262, type: "hysteria2", password: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", auth: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", skip-cert-verify: true}
+- {name: "🇩🇪 DE-2", server: "3.122.115.64", port: 22024, type: "hysteria2", password: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", auth: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", skip-cert-verify: true}
+- {name: "🇸🇬 SGP-Hy2-2", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", skip-cert-verify: true}
+- {name: "🇭🇰 香港(IPv6)-Aelen提供", server: "yba.aelen.ggff.net", port: 47116, type: "hysteria2", password: "231nXZsmfn", auth: "231nXZsmfn", skip-cert-verify: true, sni: "yba.aelen.ggff.net"}
+- {name: "🇭🇰 HK-Acck hysteria2-Aelen提供", server: "45.196.219.107", port: 38601, type: "hysteria2", password: "c0ace9a5-1266-48a8-b02c-681f21c8d5b0", auth: "c0ace9a5-1266-48a8-b02c-681f21c8d5b0", skip-cert-verify: true}
+- {name: "🇭🇰 HK-HY2", server: "2401:b60:5:7801:aa3b:4fd1:2b6f:fbab", port: 2096, type: "hysteria2", password: "4376c0b7-06c1-36b7-bd87-1448b3664c18", auth: "4376c0b7-06c1-36b7-bd87-1448b3664c18", skip-cert-verify: true, alpn: ["h3"]}
+- {name: "🇸🇬 新加坡2", server: "sg.yiliujichang.com", port: 46626, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "sg.yiliujichang.com"}
+- {name: "🇸🇬 新加坡1", server: "sg.yiliujichang.com", port: 44628, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "sg.yiliujichang.com"}
+- {name: "🇯🇵 日本2", server: "jp.yiliujichang.com", port: 45904, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "jp.yiliujichang.com"}
+- {name: "🇯🇵 日本1", server: "jp.yiliujichang.com", port: 48027, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "jp.yiliujichang.com"}
+- {name: "🇩🇪 德国1", server: "de.yiliujichang.com", port: 48239, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "de.yiliujichang.com"}
+- {name: "🇮🇳 印度2", server: "in.yiliujichang.com", port: 44316, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "in.yiliujichang.com"}
+- {name: "🇮🇳 印度1", server: "in.yiliujichang.com", port: 43814, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "in.yiliujichang.com"}
+- {name: "🇺🇸 美国2", server: "us.yiliujichang.com", port: 42963, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "us.yiliujichang.com"}
+- {name: "🇩🇪 德国2", server: "de.yiliujichang.com", port: 44167, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "de.yiliujichang.com"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇯🇵 日本东京4"
+  - "🇮🇳 印度海得拉巴"
+  - "🇦🇺 澳大利亚悉尼"
+  - "🇭🇰 香港2"
+  - "🇯🇵 日本东京2"
+  - "🇦🇪 阿联酋迪拜"
+  - "🇺🇸 美国芝加哥2"
+  - "🇺🇸 美国纽约"
+  - "🇪🇨 JP-AWS-EC2"
+  - "🇨🇳 CN"
+  - "🇸🇬 SGP-Hy2-1"
+  - "🇭🇰 Claw-HK-12.6"
+  - "🇯🇵 JP-KDDI-2"
+  - "🇭🇰 [ss]香港1[中转]"
+  - "🇭🇰 [ss]香港2[中转]"
+  - "🏴‍☠️ 节点分享@iamdt002"
+  - "🇺🇸 US-Hy2-2"
+  - "🇩🇪 DE-1"
+  - "🇺🇸 US-Hy2-1"
+  - "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini"
+  - "🇩🇪 DE-2"
+  - "🇸🇬 SGP-Hy2-2"
+  - "🇭🇰 香港(IPv6)-Aelen提供"
+  - "🇭🇰 HK-Acck hysteria2-Aelen提供"
+  - "🇭🇰 HK-HY2"
+  - "🇸🇬 新加坡2"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本2"
+  - "🇯🇵 日本1"
+  - "🇩🇪 德国1"
+  - "🇮🇳 印度2"
+  - "🇮🇳 印度1"
+  - "🇺🇸 美国2"
+  - "🇩🇪 德国2"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇯🇵 日本东京4"
+  - "🇮🇳 印度海得拉巴"
+  - "🇦🇺 澳大利亚悉尼"
+  - "🇭🇰 香港2"
+  - "🇯🇵 日本东京2"
+  - "🇦🇪 阿联酋迪拜"
+  - "🇺🇸 美国芝加哥2"
+  - "🇺🇸 美国纽约"
+  - "🇪🇨 JP-AWS-EC2"
+  - "🇨🇳 CN"
+  - "🇸🇬 SGP-Hy2-1"
+  - "🇭🇰 Claw-HK-12.6"
+  - "🇯🇵 JP-KDDI-2"
+  - "🇭🇰 [ss]香港1[中转]"
+  - "🇭🇰 [ss]香港2[中转]"
+  - "🏴‍☠️ 节点分享@iamdt002"
+  - "🇺🇸 US-Hy2-2"
+  - "🇩🇪 DE-1"
+  - "🇺🇸 US-Hy2-1"
+  - "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini"
+  - "🇩🇪 DE-2"
+  - "🇸🇬 SGP-Hy2-2"
+  - "🇭🇰 香港(IPv6)-Aelen提供"
+  - "🇭🇰 HK-Acck hysteria2-Aelen提供"
+  - "🇭🇰 HK-HY2"
+  - "🇸🇬 新加坡2"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本2"
+  - "🇯🇵 日本1"
+  - "🇩🇪 德国1"
+  - "🇮🇳 印度2"
+  - "🇮🇳 印度1"
+  - "🇺🇸 美国2"
+  - "🇩🇪 德国2"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本东京4"
+  - "🇮🇳 印度海得拉巴"
+  - "🇦🇺 澳大利亚悉尼"
+  - "🇭🇰 香港2"
+  - "🇯🇵 日本东京2"
+  - "🇦🇪 阿联酋迪拜"
+  - "🇺🇸 美国芝加哥2"
+  - "🇺🇸 美国纽约"
+  - "🇪🇨 JP-AWS-EC2"
+  - "🇨🇳 CN"
+  - "🇸🇬 SGP-Hy2-1"
+  - "🇭🇰 Claw-HK-12.6"
+  - "🇯🇵 JP-KDDI-2"
+  - "🇭🇰 [ss]香港1[中转]"
+  - "🇭🇰 [ss]香港2[中转]"
+  - "🏴‍☠️ 节点分享@iamdt002"
+  - "🇺🇸 US-Hy2-2"
+  - "🇩🇪 DE-1"
+  - "🇺🇸 US-Hy2-1"
+  - "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini"
+  - "🇩🇪 DE-2"
+  - "🇸🇬 SGP-Hy2-2"
+  - "🇭🇰 香港(IPv6)-Aelen提供"
+  - "🇭🇰 HK-Acck hysteria2-Aelen提供"
+  - "🇭🇰 HK-HY2"
+  - "🇸🇬 新加坡2"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本2"
+  - "🇯🇵 日本1"
+  - "🇩🇪 德国1"
+  - "🇮🇳 印度2"
+  - "🇮🇳 印度1"
+  - "🇺🇸 美国2"
+  - "🇩🇪 德国2"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本东京4"
+  - "🇮🇳 印度海得拉巴"
+  - "🇦🇺 澳大利亚悉尼"
+  - "🇭🇰 香港2"
+  - "🇯🇵 日本东京2"
+  - "🇦🇪 阿联酋迪拜"
+  - "🇺🇸 美国芝加哥2"
+  - "🇺🇸 美国纽约"
+  - "🇪🇨 JP-AWS-EC2"
+  - "🇨🇳 CN"
+  - "🇸🇬 SGP-Hy2-1"
+  - "🇭🇰 Claw-HK-12.6"
+  - "🇯🇵 JP-KDDI-2"
+  - "🇭🇰 [ss]香港1[中转]"
+  - "🇭🇰 [ss]香港2[中转]"
+  - "🏴‍☠️ 节点分享@iamdt002"
+  - "🇺🇸 US-Hy2-2"
+  - "🇩🇪 DE-1"
+  - "🇺🇸 US-Hy2-1"
+  - "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini"
+  - "🇩🇪 DE-2"
+  - "🇸🇬 SGP-Hy2-2"
+  - "🇭🇰 香港(IPv6)-Aelen提供"
+  - "🇭🇰 HK-Acck hysteria2-Aelen提供"
+  - "🇭🇰 HK-HY2"
+  - "🇸🇬 新加坡2"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本2"
+  - "🇯🇵 日本1"
+  - "🇩🇪 德国1"
+  - "🇮🇳 印度2"
+  - "🇮🇳 印度1"
+  - "🇺🇸 美国2"
+  - "🇩🇪 德国2"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本东京4"
+  - "🇮🇳 印度海得拉巴"
+  - "🇦🇺 澳大利亚悉尼"
+  - "🇭🇰 香港2"
+  - "🇯🇵 日本东京2"
+  - "🇦🇪 阿联酋迪拜"
+  - "🇺🇸 美国芝加哥2"
+  - "🇺🇸 美国纽约"
+  - "🇪🇨 JP-AWS-EC2"
+  - "🇨🇳 CN"
+  - "🇸🇬 SGP-Hy2-1"
+  - "🇭🇰 Claw-HK-12.6"
+  - "🇯🇵 JP-KDDI-2"
+  - "🇭🇰 [ss]香港1[中转]"
+  - "🇭🇰 [ss]香港2[中转]"
+  - "🏴‍☠️ 节点分享@iamdt002"
+  - "🇺🇸 US-Hy2-2"
+  - "🇩🇪 DE-1"
+  - "🇺🇸 US-Hy2-1"
+  - "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini"
+  - "🇩🇪 DE-2"
+  - "🇸🇬 SGP-Hy2-2"
+  - "🇭🇰 香港(IPv6)-Aelen提供"
+  - "🇭🇰 HK-Acck hysteria2-Aelen提供"
+  - "🇭🇰 HK-HY2"
+  - "🇸🇬 新加坡2"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本2"
+  - "🇯🇵 日本1"
+  - "🇩🇪 德国1"
+  - "🇮🇳 印度2"
+  - "🇮🇳 印度1"
+  - "🇺🇸 美国2"
+  - "🇩🇪 德国2"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇯🇵 日本东京4"
+  - "🇮🇳 印度海得拉巴"
+  - "🇦🇺 澳大利亚悉尼"
+  - "🇭🇰 香港2"
+  - "🇯🇵 日本东京2"
+  - "🇦🇪 阿联酋迪拜"
+  - "🇺🇸 美国芝加哥2"
+  - "🇺🇸 美国纽约"
+  - "🇪🇨 JP-AWS-EC2"
+  - "🇨🇳 CN"
+  - "🇸🇬 SGP-Hy2-1"
+  - "🇭🇰 Claw-HK-12.6"
+  - "🇯🇵 JP-KDDI-2"
+  - "🇭🇰 [ss]香港1[中转]"
+  - "🇭🇰 [ss]香港2[中转]"
+  - "🏴‍☠️ 节点分享@iamdt002"
+  - "🇺🇸 US-Hy2-2"
+  - "🇩🇪 DE-1"
+  - "🇺🇸 US-Hy2-1"
+  - "🇺🇸 美国14 | ⬇️ 1.9MB/s|23%|Netflix|Openai|Gemini"
+  - "🇩🇪 DE-2"
+  - "🇸🇬 SGP-Hy2-2"
+  - "🇭🇰 香港(IPv6)-Aelen提供"
+  - "🇭🇰 HK-Acck hysteria2-Aelen提供"
+  - "🇭🇰 HK-HY2"
+  - "🇸🇬 新加坡2"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本2"
+  - "🇯🇵 日本1"
+  - "🇩🇪 德国1"
+  - "🇮🇳 印度2"
+  - "🇮🇳 印度1"
+  - "🇺🇸 美国2"
+  - "🇩🇪 德国2"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

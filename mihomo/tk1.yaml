@@ -1,0 +1,484 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇺🇸 5-25🍶@xkmfjd_", type: "ss", server: "198.98.60.202", port: 2022, tls: false, password: "f5f0a3e8fa07b2e2", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇱🇺 5-25🍶@xkmfjd_", type: "ss", server: "107.189.6.201", port: 2025, tls: false, password: "2e1f9c8d0d4f7988", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__1", type: "ss", server: "103.115.18.246", port: 2029, tls: false, password: "b8ef46fefc3cac36", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇪🇸 5-25🍶@xkmfjd_", type: "ss", server: "212.192.15.60", port: 2015, tls: false, password: "11c1fb7f9eb013b1", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd_", type: "ss", server: "185.22.153.235", port: 2019, tls: false, password: "e04ae67d4e4cd165", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__1", type: "ss", server: "176.32.35.68", port: 2022, tls: false, password: "4194ce5b1f36f660", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__2", type: "ss", server: "185.22.153.67", port: 2029, tls: false, password: "b55c7e84afdd52cb", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__3", type: "ss", server: "185.22.154.123", port: 2015, tls: false, password: "ae627920168c1cce", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__2", type: "ss", server: "194.87.196.7", port: 2029, tls: false, password: "1aa23ecefeba6669", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__3", type: "ss", server: "103.115.17.16", port: 2015, tls: false, password: "6757ff937ec4d0de", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__4", type: "ss", server: "195.133.5.185", port: 2023, tls: false, password: "7f20be91749b5874", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__5", type: "ss", server: "195.58.49.92", port: 2015, tls: false, password: "560b7d65c1f4b12a", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__6", type: "ss", server: "195.133.5.176", port: 2022, tls: false, password: "d7a15f7a4c806a33", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__10", type: "vmess", server: "104.21.96.1", port: 2053, uuid: "996016f7-da89-45f1-b3b4-555bc799ed86", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "rak2d1.777269.xyz"}
+- {name: "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1", type: "trojan", server: "bats-paper-chump.stark-industries.solutions", port: 443, password: "e6a2e741-0fce-440b-910c-b81325e2263a", sni: "bats-paper-chump.stark-industries.solutions", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2", type: "trojan", server: "strut-brisk-scope.stark-industries.solutions", port: 443, password: "e6a2e741-0fce-440b-910c-b81325e2263a", sni: "strut-brisk-scope.stark-industries.solutions", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__11", type: "vmess", server: "172.67.154.84", port: 443, uuid: "e537f2f5-2a0c-4f59-92c9-832ca6433bf3", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "irvideo.cfd"}
+- {name: "🇩🇪 5-25🍶@xkmfjd_", type: "ss", server: "45.87.175.166", port: 8080, tls: false, password: "cvII85TrW6n0OGyfpHVS1u", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__12", type: "vmess", server: "172.67.136.233", port: 443, uuid: "3f638f34-8dba-4186-bc43-2716a7ddd4be", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "az05.beyondy.cfd"}
+- {name: "🇦🇿 5-25🍶@xkmfjd_", type: "vmess", server: "5.10.247.159", port: 443, uuid: "164a6ad0-476a-4bae-b78f-a3d37cf0f414", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "th.lzj520hxw.dpdns.org"}
+- {name: "🇰🇷 5-25🍶@xkmfjd_", type: "ss", server: "3.35.217.147", port: 443, tls: false, password: "yijian0503", ip-version: "dual", cipher: "aes-256-cfb"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__13", type: "trojan", server: "104.21.46.90", port: 443, network: "ws", password: "ac5b2e52-435b-4461-a99c-1317ab0e2889", sni: "DddVfGty.frEeVpnAtM.dpdNS.oRG", skip-cert-verify: false, ws-opts: {path: "/HmfeUdLKf899DmZDo0oju2st1", headers: {}}, ip-version: "dual"}
+- {name: "🇧🇪 5-25🍶@xkmfjd_", type: "ss", server: "57.128.190.171", port: 11259, tls: false, password: "f9d73c84e32a10f3", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__14", type: "trojan", server: "138.197.5.103", port: 443, password: "xxoo", sni: "us.blazeppn.info", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__15", type: "vmess", server: "us01.sh-cloudflare.sbs", port: 8443, uuid: "2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "us01.sh-cloudflare.sbs"}
+- {name: "🇮🇷 5-25🍶@xkmfjd_", type: "vmess", server: "194.5.178.70", port: 44264, uuid: "ee7156f5-c594-4d7f-9e25-5de014059c85", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🇸🇪 5-25🍶@xkmfjd_", type: "vmess", server: "185.146.173.25", port: 80, uuid: "27ee8047-5da9-4433-8c85-45f5feb1967f", network: "ws", tls: false, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}}
+- {name: "🇸🇪 5-25🍶@xkmfjd__1", type: "vmess", server: "185.146.173.25", port: 80, uuid: "27ee8047-5da9-4433-8c85-45f5feb1967f", network: "ws", tls: false, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}}
+- {name: "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3", type: "trojan", server: "chop-wrist-bud.stark-industries.solutions", port: 443, password: "3482c71a-d01c-4ae5-b454-fa8cb3785f66", sni: "chop-wrist-bud.stark-industries.solutions", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🇨🇳 5-25🍶@xkmfjd_", type: "vmess", server: "43.247.135.192", port: 19504, uuid: "1322968d-536f-4dd4-8cea-fee6c04e2d97", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4", type: "trojan", server: "bring-glove-shine.stark-industries.solutions", port: 443, password: "e6a2e741-0fce-440b-910c-b81325e2263a", sni: "bring-glove-shine.stark-industries.solutions", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__18", type: "vmess", server: "www.visa.com.tw", port: 443, uuid: "d0eb0f6f-68a8-4ece-c33f-73c5d71ac3a3", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "www.visa.com.tw"}
+- {name: "🇩🇪 5-25🍶@xkmfjd__2", type: "vmess", server: "132.145.232.171", port: 443, uuid: "9b456c2a-f2c1-45e1-87a9-b7628b04bb24", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "beyonddsz.cfd"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__19", type: "trojan", server: "104.21.57.88", port: 443, network: "ws", password: "072f4db4-d89d-420d-9d9e-045ed8d5c9cc", sni: "10tyu.iran.pp.ua", skip-cert-verify: false, ws-opts: {path: "/VEP415T5mby2DulPWRIwOavJd", headers: {}}, ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__20", type: "trojan", server: "94.131.20.3", port: 443, password: "e6a2e741-0fce-440b-910c-b81325e2263a", sni: "cache-giver-wife.stark-industries.solutions", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__21", type: "trojan", server: "94.131.20.3", port: 443, password: "3482c71a-d01c-4ae5-b454-fa8cb3785f66", sni: "chop-wrist-bud.stark-industries.solutions", skip-cert-verify: false, client-fingerprint: "chrome", ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__22", type: "ss", server: "149.28.255.6", port: 816, tls: false, password: "GyZ5Xo0ht41vYmW3H4", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__24", type: "vmess", server: "cloudgetservice.mcloudservice.site", port: 443, uuid: "2c329585-67a8-498b-8d38-176dac806bc7", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__29", type: "hysteria2", server: "40.233.70.163", port: 45979, password: "cfe032e4-1bc3-454f-9d09-301b0aea08ff", sni: "www.bing.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__30", type: "hysteria2", server: "129.153.59.124", port: 54530, password: "862e90e1-2f26-4506-b8b9-0adf20da05fc", sni: "www.bing.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__31", type: "hysteria2", server: "sinavm.ru", port: 8080, password: "Bia-SiNAVM-Telegram-SiNAVM-Bia-SiNAVM", sni: "sinavm.ru", obfs: "salamander", obfs-password: "Bia-Telegram__SiNAVM-SiNAVM__Bia__SiNAVM", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__9", type: "hysteria2", server: "hy2.694463.xyz", port: 30033, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__10", type: "hysteria2", server: "46.17.41.5", port: 12904, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇷🇺 5-25🍶@xkmfjd__11", type: "hysteria", server: "176.32.35.226", port: 62003, sni: "apple.com", alpn: ["h3"], up: "11", down: "55", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
+- {name: "🇨🇳 5-25🍶@xkmfjd__1", type: "vmess", server: "81477d67-swkhs0-swp71a-25xl.hgc1.tcpbbr.net", port: 8080, uuid: "7ddc7156-57be-11ee-9acd-f23c9164ca5d", network: "ws", tls: false, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "81477d67-swkhs0-swp71a-25xl.hgc1.tcpbbr.net"}, path: "/"}}
+- {name: "🇺🇸 5-25🍶@xkmfjd__40", type: "ss", server: "65.20.88.54", port: 14567, tls: false, password: "31Zf8O2s", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇩🇪 5-25🍶@xkmfjd__3", type: "trojan", server: "nextstepcareer.online", port: 443, password: "4732adfa16c6450bbef87264e41332db", sni: "nextstepcareer.online", skip-cert-verify: true, ip-version: "dual"}
+- {name: "🇩🇪 5-25🍶@xkmfjd__4", type: "trojan", server: "165.22.74.230", port: 443, password: "4732adfa16c6450bbef87264e41332db", sni: "nextstepcareer.online", skip-cert-verify: true, ip-version: "dual"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__53", type: "hysteria2", server: "51.159.111.32", port: 31180, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇫🇷 5-25🍶@xkmfjd__3", type: "hysteria", server: "195.154.200.178", port: 46938, sni: "apple.com", alpn: ["h3"], up: "11", down: "55", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__54", type: "hysteria", server: "51.159.226.1", port: 14241, sni: "apple.com", alpn: ["h3"], up: "100", down: "100", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
+- {name: "🇫🇷 5-25🍶@xkmfjd__4", type: "hysteria", server: "195.154.200.40", port: 15010, sni: "apple.com", alpn: ["h3"], up: "100", down: "100", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
+- {name: "🇺🇸 5-25🍶@xkmfjd__56", type: "vmess", server: "cloudgetservice.mcloudservice.site", port: 443, uuid: "37f464cb-b826-4278-9bf8-11bdf1ec892b", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "Fra-Vp-123.BLaZECLOUD.Site"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇺🇸 5-25🍶@xkmfjd_"
+  - "🇱🇺 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__1"
+  - "🇪🇸 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd__1"
+  - "🇷🇺 5-25🍶@xkmfjd__2"
+  - "🇷🇺 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__3"
+  - "🇷🇺 5-25🍶@xkmfjd__4"
+  - "🇷🇺 5-25🍶@xkmfjd__5"
+  - "🇷🇺 5-25🍶@xkmfjd__6"
+  - "🇺🇸 5-25🍶@xkmfjd__10"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2"
+  - "🇺🇸 5-25🍶@xkmfjd__11"
+  - "🇩🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__12"
+  - "🇦🇿 5-25🍶@xkmfjd_"
+  - "🇰🇷 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__13"
+  - "🇧🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__14"
+  - "🇺🇸 5-25🍶@xkmfjd__15"
+  - "🇮🇷 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd__1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3"
+  - "🇨🇳 5-25🍶@xkmfjd_"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4"
+  - "🇺🇸 5-25🍶@xkmfjd__18"
+  - "🇩🇪 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__19"
+  - "🇺🇸 5-25🍶@xkmfjd__20"
+  - "🇺🇸 5-25🍶@xkmfjd__21"
+  - "🇺🇸 5-25🍶@xkmfjd__22"
+  - "🇺🇸 5-25🍶@xkmfjd__24"
+  - "🇺🇸 5-25🍶@xkmfjd__29"
+  - "🇺🇸 5-25🍶@xkmfjd__30"
+  - "🇺🇸 5-25🍶@xkmfjd__31"
+  - "🇷🇺 5-25🍶@xkmfjd__9"
+  - "🇷🇺 5-25🍶@xkmfjd__10"
+  - "🇷🇺 5-25🍶@xkmfjd__11"
+  - "🇨🇳 5-25🍶@xkmfjd__1"
+  - "🇺🇸 5-25🍶@xkmfjd__40"
+  - "🇩🇪 5-25🍶@xkmfjd__3"
+  - "🇩🇪 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__53"
+  - "🇫🇷 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__54"
+  - "🇫🇷 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__56"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇺🇸 5-25🍶@xkmfjd_"
+  - "🇱🇺 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__1"
+  - "🇪🇸 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd__1"
+  - "🇷🇺 5-25🍶@xkmfjd__2"
+  - "🇷🇺 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__3"
+  - "🇷🇺 5-25🍶@xkmfjd__4"
+  - "🇷🇺 5-25🍶@xkmfjd__5"
+  - "🇷🇺 5-25🍶@xkmfjd__6"
+  - "🇺🇸 5-25🍶@xkmfjd__10"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2"
+  - "🇺🇸 5-25🍶@xkmfjd__11"
+  - "🇩🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__12"
+  - "🇦🇿 5-25🍶@xkmfjd_"
+  - "🇰🇷 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__13"
+  - "🇧🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__14"
+  - "🇺🇸 5-25🍶@xkmfjd__15"
+  - "🇮🇷 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd__1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3"
+  - "🇨🇳 5-25🍶@xkmfjd_"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4"
+  - "🇺🇸 5-25🍶@xkmfjd__18"
+  - "🇩🇪 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__19"
+  - "🇺🇸 5-25🍶@xkmfjd__20"
+  - "🇺🇸 5-25🍶@xkmfjd__21"
+  - "🇺🇸 5-25🍶@xkmfjd__22"
+  - "🇺🇸 5-25🍶@xkmfjd__24"
+  - "🇺🇸 5-25🍶@xkmfjd__29"
+  - "🇺🇸 5-25🍶@xkmfjd__30"
+  - "🇺🇸 5-25🍶@xkmfjd__31"
+  - "🇷🇺 5-25🍶@xkmfjd__9"
+  - "🇷🇺 5-25🍶@xkmfjd__10"
+  - "🇷🇺 5-25🍶@xkmfjd__11"
+  - "🇨🇳 5-25🍶@xkmfjd__1"
+  - "🇺🇸 5-25🍶@xkmfjd__40"
+  - "🇩🇪 5-25🍶@xkmfjd__3"
+  - "🇩🇪 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__53"
+  - "🇫🇷 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__54"
+  - "🇫🇷 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__56"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇺🇸 5-25🍶@xkmfjd_"
+  - "🇱🇺 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__1"
+  - "🇪🇸 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd__1"
+  - "🇷🇺 5-25🍶@xkmfjd__2"
+  - "🇷🇺 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__3"
+  - "🇷🇺 5-25🍶@xkmfjd__4"
+  - "🇷🇺 5-25🍶@xkmfjd__5"
+  - "🇷🇺 5-25🍶@xkmfjd__6"
+  - "🇺🇸 5-25🍶@xkmfjd__10"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2"
+  - "🇺🇸 5-25🍶@xkmfjd__11"
+  - "🇩🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__12"
+  - "🇦🇿 5-25🍶@xkmfjd_"
+  - "🇰🇷 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__13"
+  - "🇧🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__14"
+  - "🇺🇸 5-25🍶@xkmfjd__15"
+  - "🇮🇷 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd__1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3"
+  - "🇨🇳 5-25🍶@xkmfjd_"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4"
+  - "🇺🇸 5-25🍶@xkmfjd__18"
+  - "🇩🇪 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__19"
+  - "🇺🇸 5-25🍶@xkmfjd__20"
+  - "🇺🇸 5-25🍶@xkmfjd__21"
+  - "🇺🇸 5-25🍶@xkmfjd__22"
+  - "🇺🇸 5-25🍶@xkmfjd__24"
+  - "🇺🇸 5-25🍶@xkmfjd__29"
+  - "🇺🇸 5-25🍶@xkmfjd__30"
+  - "🇺🇸 5-25🍶@xkmfjd__31"
+  - "🇷🇺 5-25🍶@xkmfjd__9"
+  - "🇷🇺 5-25🍶@xkmfjd__10"
+  - "🇷🇺 5-25🍶@xkmfjd__11"
+  - "🇨🇳 5-25🍶@xkmfjd__1"
+  - "🇺🇸 5-25🍶@xkmfjd__40"
+  - "🇩🇪 5-25🍶@xkmfjd__3"
+  - "🇩🇪 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__53"
+  - "🇫🇷 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__54"
+  - "🇫🇷 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__56"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 5-25🍶@xkmfjd_"
+  - "🇱🇺 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__1"
+  - "🇪🇸 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd__1"
+  - "🇷🇺 5-25🍶@xkmfjd__2"
+  - "🇷🇺 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__3"
+  - "🇷🇺 5-25🍶@xkmfjd__4"
+  - "🇷🇺 5-25🍶@xkmfjd__5"
+  - "🇷🇺 5-25🍶@xkmfjd__6"
+  - "🇺🇸 5-25🍶@xkmfjd__10"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2"
+  - "🇺🇸 5-25🍶@xkmfjd__11"
+  - "🇩🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__12"
+  - "🇦🇿 5-25🍶@xkmfjd_"
+  - "🇰🇷 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__13"
+  - "🇧🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__14"
+  - "🇺🇸 5-25🍶@xkmfjd__15"
+  - "🇮🇷 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd__1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3"
+  - "🇨🇳 5-25🍶@xkmfjd_"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4"
+  - "🇺🇸 5-25🍶@xkmfjd__18"
+  - "🇩🇪 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__19"
+  - "🇺🇸 5-25🍶@xkmfjd__20"
+  - "🇺🇸 5-25🍶@xkmfjd__21"
+  - "🇺🇸 5-25🍶@xkmfjd__22"
+  - "🇺🇸 5-25🍶@xkmfjd__24"
+  - "🇺🇸 5-25🍶@xkmfjd__29"
+  - "🇺🇸 5-25🍶@xkmfjd__30"
+  - "🇺🇸 5-25🍶@xkmfjd__31"
+  - "🇷🇺 5-25🍶@xkmfjd__9"
+  - "🇷🇺 5-25🍶@xkmfjd__10"
+  - "🇷🇺 5-25🍶@xkmfjd__11"
+  - "🇨🇳 5-25🍶@xkmfjd__1"
+  - "🇺🇸 5-25🍶@xkmfjd__40"
+  - "🇩🇪 5-25🍶@xkmfjd__3"
+  - "🇩🇪 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__53"
+  - "🇫🇷 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__54"
+  - "🇫🇷 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__56"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 5-25🍶@xkmfjd_"
+  - "🇱🇺 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__1"
+  - "🇪🇸 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd__1"
+  - "🇷🇺 5-25🍶@xkmfjd__2"
+  - "🇷🇺 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__3"
+  - "🇷🇺 5-25🍶@xkmfjd__4"
+  - "🇷🇺 5-25🍶@xkmfjd__5"
+  - "🇷🇺 5-25🍶@xkmfjd__6"
+  - "🇺🇸 5-25🍶@xkmfjd__10"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2"
+  - "🇺🇸 5-25🍶@xkmfjd__11"
+  - "🇩🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__12"
+  - "🇦🇿 5-25🍶@xkmfjd_"
+  - "🇰🇷 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__13"
+  - "🇧🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__14"
+  - "🇺🇸 5-25🍶@xkmfjd__15"
+  - "🇮🇷 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd__1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3"
+  - "🇨🇳 5-25🍶@xkmfjd_"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4"
+  - "🇺🇸 5-25🍶@xkmfjd__18"
+  - "🇩🇪 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__19"
+  - "🇺🇸 5-25🍶@xkmfjd__20"
+  - "🇺🇸 5-25🍶@xkmfjd__21"
+  - "🇺🇸 5-25🍶@xkmfjd__22"
+  - "🇺🇸 5-25🍶@xkmfjd__24"
+  - "🇺🇸 5-25🍶@xkmfjd__29"
+  - "🇺🇸 5-25🍶@xkmfjd__30"
+  - "🇺🇸 5-25🍶@xkmfjd__31"
+  - "🇷🇺 5-25🍶@xkmfjd__9"
+  - "🇷🇺 5-25🍶@xkmfjd__10"
+  - "🇷🇺 5-25🍶@xkmfjd__11"
+  - "🇨🇳 5-25🍶@xkmfjd__1"
+  - "🇺🇸 5-25🍶@xkmfjd__40"
+  - "🇩🇪 5-25🍶@xkmfjd__3"
+  - "🇩🇪 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__53"
+  - "🇫🇷 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__54"
+  - "🇫🇷 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__56"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇺🇸 5-25🍶@xkmfjd_"
+  - "🇱🇺 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__1"
+  - "🇪🇸 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd_"
+  - "🇷🇺 5-25🍶@xkmfjd__1"
+  - "🇷🇺 5-25🍶@xkmfjd__2"
+  - "🇷🇺 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__3"
+  - "🇷🇺 5-25🍶@xkmfjd__4"
+  - "🇷🇺 5-25🍶@xkmfjd__5"
+  - "🇷🇺 5-25🍶@xkmfjd__6"
+  - "🇺🇸 5-25🍶@xkmfjd__10"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_2"
+  - "🇺🇸 5-25🍶@xkmfjd__11"
+  - "🇩🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__12"
+  - "🇦🇿 5-25🍶@xkmfjd_"
+  - "🇰🇷 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__13"
+  - "🇧🇪 5-25🍶@xkmfjd_"
+  - "🇺🇸 5-25🍶@xkmfjd__14"
+  - "🇺🇸 5-25🍶@xkmfjd__15"
+  - "🇮🇷 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd_"
+  - "🇸🇪 5-25🍶@xkmfjd__1"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_3"
+  - "🇨🇳 5-25🍶@xkmfjd_"
+  - "🏴‍☠️ 5-25🍶@xkmfjd_🏳️_4"
+  - "🇺🇸 5-25🍶@xkmfjd__18"
+  - "🇩🇪 5-25🍶@xkmfjd__2"
+  - "🇺🇸 5-25🍶@xkmfjd__19"
+  - "🇺🇸 5-25🍶@xkmfjd__20"
+  - "🇺🇸 5-25🍶@xkmfjd__21"
+  - "🇺🇸 5-25🍶@xkmfjd__22"
+  - "🇺🇸 5-25🍶@xkmfjd__24"
+  - "🇺🇸 5-25🍶@xkmfjd__29"
+  - "🇺🇸 5-25🍶@xkmfjd__30"
+  - "🇺🇸 5-25🍶@xkmfjd__31"
+  - "🇷🇺 5-25🍶@xkmfjd__9"
+  - "🇷🇺 5-25🍶@xkmfjd__10"
+  - "🇷🇺 5-25🍶@xkmfjd__11"
+  - "🇨🇳 5-25🍶@xkmfjd__1"
+  - "🇺🇸 5-25🍶@xkmfjd__40"
+  - "🇩🇪 5-25🍶@xkmfjd__3"
+  - "🇩🇪 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__53"
+  - "🇫🇷 5-25🍶@xkmfjd__3"
+  - "🇺🇸 5-25🍶@xkmfjd__54"
+  - "🇫🇷 5-25🍶@xkmfjd__4"
+  - "🇺🇸 5-25🍶@xkmfjd__56"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

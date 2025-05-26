@@ -1,0 +1,708 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇯🇵 免费-日本1-Ver.6", type: "vmess", server: "o259j-g05.jp01-0986-vm0.entry.fr0307a.art", port: 21585, cipher: "auto", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, tls: true, client-fingerprint: "chrome", servername: "o259j-g05.jp01-0986-vm0.entry.fr0307a.art"}
+- {name: "🇯🇵 免费-日本3-Ver.6", type: "vmess", server: "8mpql-g05.jp03-7d22-vm0.entry.fr0307a.art", port: 21585, cipher: "auto", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, tls: true, client-fingerprint: "chrome", servername: "8mpql-g05.jp03-7d22-vm0.entry.fr0307a.art"}
+- {name: "🇯🇵 免费-日本4-Ver.7", type: "vmess", server: "9tez3-g05.jp04-3771-vm0.entry.fr0307a.art", port: 448, cipher: "auto", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, tls: false, client-fingerprint: "chrome"}
+- {name: "🇯🇵 免费-日本5-Ver.8", type: "vmess", server: "5e0tx-g05.jp05-6786-vm0.entry.fr0307a.art", port: 46486, cipher: "auto", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, tls: false, client-fingerprint: "chrome"}
+- {name: "🇯🇵 免费-日本6-Ver.7", type: "vmess", server: "dqga4-g05.jp06-7c5a-vm0.entry.fr0307a.art", port: 28787, cipher: "auto", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, tls: true, client-fingerprint: "chrome", servername: "dqga4-g05.jp06-7c5a-vm0.entry.fr0307a.art"}
+- {name: "🇯🇵 免费-日本7-Ver.1", type: "vmess", server: "5r15p-g05.jp07-1f28-vm0.entry.fr0307a.art", port: 28787, cipher: "auto", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, tls: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇷🇺 俄罗斯1 | ⬇️ 7.5MB/s|50%", server: "hy2.694463.xyz", port: 30033, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇷🇺 俄罗斯2 | ⬇️ 7.2MB/s|Youtube", server: "45.135.134.33", port: 10297, password: "6c7a6a6a-6a6a-4000-8000-000000000002", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇷🇺 俄罗斯3 | ⬇️ 5.4MB/s|50%", server: "46.17.41.5", port: 12904, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇨🇦 加拿大3 | ⬇️ 4.1MB/s|61%|Disney", server: "103.160.204.40", port: 8443, uuid: "d6b8011a-c725-435a-9fec-bf6d3530392c", tls: true, client-fingerprint: "randomized", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vle.amclubsapp.dpdns.org"}, path: "/?ed=2560&PROT_TYPE=vless"}, servername: "vle.amclubsapp.dpdns.org"}
+- {type: "vless", name: "🇮🇳 印度1 | ⬇️ 6.0MB/s|Disney|Openai", server: "108.165.216.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇮🇳 印度2 | ⬇️ 4.7MB/s|58%|Disney|Openai", server: "216.116.134.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇮🇳 印度3 | ⬇️ 6.3MB/s|58%|Netflix|Disney|Youtube|Openai", server: "194.76.18.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国10 | ⬇️ 7.9MB/s|19%|Disney|Openai|Gemini", server: "185.176.24.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国11 | ⬇️ 4.1MB/s|19%|Disney|Openai", server: "154.197.64.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "36.151.251.62", type: "trojan", password: "RlzoEILU", server: "36.151.251.62", port: 33019, name: "🇩🇪 德国13 | ⬇️ 7.2MB/s|Youtube|Openai", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国15 | ⬇️ 5.8MB/s|19%|Netflix|Disney|Youtube|Openai", server: "135.84.65.11", port: 80, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国16 | ⬇️ 5.8MB/s|22%|Openai", server: "aether.rosha-studio.ir", port: 22000, uuid: "f93a6388-c998-4864-8eb7-c61de4754aca", tls: true, flow: "", client-fingerprint: "random", skip-cert-verify: true, reality-opts: {public-key: "f8YkaG5qTpO4VrwZAXriDsuhM_OB1vEtcq_XQ3Y040A", short-id: "a14a0330c8ede1cd"}, network: "grpc", grpc-opts: {grpc-service-name: "Tok"}, servername: "refersion.com"}
+- {type: "vless", name: "🇩🇪 德国17 | ⬇️ 6.4MB/s|22%|Disney|Openai", server: "192.65.217.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国18 | ⬇️ 4.4MB/s|30%|Disney|Openai", server: "141.11.203.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国19 | ⬇️ 8.0MB/s|22%|Disney|Openai", server: "104.129.164.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国2 | ⬇️ 4.8MB/s|Disney|Youtube", server: "156.238.18.118", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国20 | ⬇️ 6.6MB/s|22%|Netflix|Disney|Youtube|Openai", server: "192.200.160.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国21 | ⬇️ 5.2MB/s|22%|Disney|Openai", server: "45.80.111.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国22 | ⬇️ 4.5MB/s|19%|Disney|Openai", server: "89.116.46.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国23 | ⬇️ 6.0MB/s|22%|Disney|Openai", server: "156.238.18.127", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国24 | ⬇️ 13.8MB/s|19%|Openai", server: "zmaoz.faculty.ucdavis.edu", port: 80, uuid: "c6ebff0f-7786-4bff-bdfc-d0557bf4b152", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "foffmelo.com"}, path: "/olem/ws?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国28 | ⬇️ 4.5MB/s|30%|Netflix|Youtube|Openai", server: "dlhost.10dar15.ir", port: 443, uuid: "d90a7b46-65e5-49c3-b245-afbca72ee39d", tls: true, flow: "", client-fingerprint: "chrome", alpn: ["h2"], skip-cert-verify: true, reality-opts: {public-key: "Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw", short-id: "05a6d4aa5e314637"}, network: "grpc", grpc-opts: {grpc-service-name: "yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP"}, servername: "stackoverflow.com"}
+- {type: "vless", name: "🇩🇪 德国29 | ⬇️ 6.3MB/s|19%|Disney|Openai", server: "185.162.230.6", port: 80, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国30 | ⬇️ 5.5MB/s|30%|Openai", server: "hajlab.ucdavis.edu", port: 80, uuid: "a2ac3fd1-bb9c-4672-8e4a-2a0859d98175", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "joinxvproxybedee.ir"}, path: "/@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国8 | ⬇️ 4.5MB/s|Openai", server: "162.55.185.143", port: 22000, uuid: "f93a6388-c998-4864-8eb7-c61de4754aca", tls: true, flow: "", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "f8YkaG5qTpO4VrwZAXriDsuhM_OB1vEtcq_XQ3Y040A", short-id: "a14a0330c8ede1cd"}, network: "grpc", grpc-opts: {grpc-service-name: "Tok"}, servername: "refersion.com"}
+- {skip-cert-verify: true, sni: "cdn.egvra.cn", type: "trojan", password: "RlzoEILU", server: "36.156.102.123", port: 17166, name: "🇸🇬 新加坡1 | ⬇️ 14.2MB/s|Youtube|Openai", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇸🇬 新加坡2 | ⬇️ 4.6MB/s|Youtube|Openai", server: "141.193.213.20", port: 80, uuid: "438f9559-1671-45cf-9d2c-338fe6766acf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "14.sahanwickramasinghe.shop"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇸🇬 新加坡4 | ⬇️ 6.6MB/s|Youtube|Openai", server: "support.zoom.us", port: 80, uuid: "438f9559-1671-45cf-9d2c-338fe6766acf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "14.sahanwickramasinghe.shop"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "hysteria", name: "🇫🇷 法国10 | ⬇️ 5.3MB/s|0%|Youtube|Openai", server: "195.154.200.178", port: 46938, skip-cert-verify: true, auth-str: "dongtaiwang.com", up: "11", down: "55", alpn: ["h3"], sni: "apple.com", protocol: "udp", client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇫🇷 法国5 | ⬇️ 6.0MB/s|Youtube|Openai", server: "51.159.111.32", port: 31180, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇫🇷 法国7 | ⬇️ 4.9MB/s|63%|Openai", server: "104.19.222.79", port: 2096, uuid: "2404f667-5969-4883-a71a-ea2e0db2d25b", tls: true, client-fingerprint: "chrome", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "wwwspeedtestnetwhiteberinsistomd6625996s30.pirwebhost.ir"}, path: "/"}, servername: "wwwspeedtestnetwhiteberinsistomd6625996s30.pirwebhost.ir"}
+- {type: "vless", name: "🇫🇷 法国9 | ⬇️ 4.4MB/s|15%|Openai", server: "51.158.213.119", port: 24957, uuid: "ef1fdecb-e56f-4996-9b6a-da7ddb7f7c8d", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "Ok7Mg4VmHT4Typ9HydPSmHI55BgLONFk5ppLGiL8n1A", short-id: "4b4d9d72"}, network: "tcp", servername: "www.yahoo.com"}
+- {type: "hysteria2", name: "🇺🇸 美国1 | ⬇️ 7.9MB/s|46%|Openai", server: "108.181.5.130", port: 57773, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国10 | ⬇️ 4.3MB/s|Openai", server: "172.67.175.139", port: 443, uuid: "0a23af3f-3f9b-4333-ae89-796f7fe2f9ce", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "s859886xyzxs.859886.xyz"}, path: "/25Rajr8UdFGa29fCwxS"}, servername: "S859886xYZXs.859886.xYz"}
+- {type: "vless", name: "🇺🇸 美国13 | ⬇️ 4.0MB/s|Openai", server: "104.21.83.113", port: 443, uuid: "0a23af3f-3f9b-4333-ae89-796f7fe2f9ce", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "s859886xyzxs.859886.xyz"}, path: "/25Rajr8UdFGa29fCwxS"}, servername: "S859886xYZXs.859886.xYz"}
+- {type: "hysteria2", name: "🇺🇸 美国14 | ⬇️ 5.6MB/s|Disney|Openai|Gemini", server: "us3.dexlos.com", port: 5280, password: "48173CB0-68B5-4CAB-9587-FB7CCDE206A7", sni: "us3.dexlos.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国15 | ⬇️ 5.4MB/s|Netflix|Disney|Openai", server: "104.24.174.133", port: 2096, uuid: "9431a0a9-3ead-4255-af11-faddffeff062", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "www.pjw5.top"}, path: "/?ed=2560"}, servername: "www.pjw5.top"}
+- {type: "hysteria2", name: "🇺🇸 美国16 | ⬇️ 6.3MB/s|Netflix|Openai", server: "sj-arm.nfsn666.gq", port: 8888, password: "nfsn666", sni: "sj-arm.nfsn666.gq", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国17 | ⬇️ 6.0MB/s|Netflix|Disney|Openai", server: "192.9.129.48", port: 8888, password: "nfsn666", sni: "sj-arm.nfsn666.gq", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国18 | ⬇️ 5.3MB/s|30%|Openai", server: "104.21.82.14", port: 443, uuid: "e74d7639-3755-4624-b770-efa6e7ec09a8", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "m3sdf.777259.xyz"}, path: "/Bt93qlsreYHzV5Ii9WW"}, servername: "M3SDf.777259.xyz"}
+- {type: "vless", name: "🇺🇸 美国19 | ⬇️ 4.9MB/s|33%|Openai", server: "172.67.144.126", port: 443, uuid: "4e41764d-ac31-43f5-8e9b-231ddf252d1f", tls: true, alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "899.288288.shop"}, path: "/wAlPWPCQWnsVcNgLsMVz"}, client-fingerprint: "chrome", servername: "899.288288.shoP"}
+- {type: "hysteria2", name: "🇺🇸 美国2 | ⬇️ 5.0MB/s|19%|Disney|Openai|Gemini", server: "64.181.207.162", port: 47262, password: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国20 | ⬇️ 7.8MB/s|0%|Disney|Openai", server: "104.16.23.144", port: 443, uuid: "67fa5212-9ce6-4a2c-b57d-7b15c5ac3b6e", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "free.5niu.xyz"}, path: "/?ed=2560"}, servername: "free.5niu.xyz"}
+- {type: "vless", name: "🇺🇸 美国21 | ⬇️ 5.5MB/s|0%|Netflix|Disney|Openai", server: "190.93.246.56", port: 2053, uuid: "057f3046-26d4-4f92-9046-df8f8cf3bb6e", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ezdriv-server.help"}, path: "/?ed=2560"}, servername: "ezdriv-server.help"}
+- {type: "vless", name: "🇺🇸 美国22 | ⬇️ 5.3MB/s|0%|Netflix|Disney|Openai", server: "188.114.96.20", port: 2083, uuid: "9431a0a9-3ead-4255-af11-faddffeff062", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "www.pjw5.top"}, path: "/?ed=2560"}, servername: "www.pjw5.top"}
+- {type: "vless", name: "🇺🇸 美国23 | ⬇️ 6.3MB/s|0%|Netflix|Disney|Openai", server: "103.21.244.165", port: 443, uuid: "ad32ab40-a469-4ce6-a1da-63c6cae6c546", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "qifei.876566.xyz"}, path: "/?ed=2560"}, servername: "qifei.876566.xyz"}
+- {type: "vless", name: "🇺🇸 美国24 | ⬇️ 4.7MB/s|29%|Openai", server: "172.67.133.248", port: 443, uuid: "43324bdf-a0e8-4f6f-8bdc-5482db82fd0f", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ccav.890604.filegear-sg.me"}, path: "/h1iXYtqUZkDQMvgKagyIefJfM0OQ"}, servername: "CCAv.890604.FILEgEaR-sG.Me"}
+- {type: "hysteria2", name: "🇺🇸 美国28 | ⬇️ 5.1MB/s|29%|Openai|Gemini", server: "qyhg.qy1357.top", port: 30003, password: "3b4dd604-5a29-4d9d-8e0b-74f337c9ffbc", sni: "qyhg.qy1357.top", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国29 | ⬇️ 10.6MB/s|25%|Openai", type: "vmess", server: "tk.hzlt.tkddns.xyz", port: 22641, cipher: "auto", uuid: "98e96c9f-4bb3-39d4-9a2c-fac04257f7c7", alterId: 2, tls: true, network: "ws", ws-opts: {path: "/", headers: {}}, client-fingerprint: "chrome", servername: "zxjp-a.tkong.cc"}
+- {skip-cert-verify: true, sni: "cdn.egvra.cn", type: "trojan", password: "RlzoEILU", server: "36.151.251.62", port: 3330, name: "🇺🇸 美国3 | ⬇️ 9.4MB/s|Openai|Gemini", client-fingerprint: "chrome"}
+- {type: "ss", server: "34.217.14.49", port: 443, cipher: "aes-256-cfb", password: "awsps0501", name: "🇺🇸 美国30 | ⬇️ 4.4MB/s|31%|Openai|Gemini", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国32 | ⬇️ 5.4MB/s|0%|Netflix|Disney|Youtube|Openai", server: "176.105.253.98", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "edccn.ambercc.filegear-sg.me"}, path: "/?ed=2560&proxyip=ts.hpc.tw"}, client-fingerprint: "chrome", servername: "edccn.ambercc.filegear-sg.me"}
+- {type: "hysteria2", name: "🇺🇸 美国33 | ⬇️ 9.5MB/s|46%|Netflix|Disney|Openai", server: "108.181.23.255", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国34 | ⬇️ 4.9MB/s|58%|Netflix|Disney|Openai", server: "sj-arm.nfsn666.gq", port: 8443, uuid: "06121b89-607b-44c9-9c01-cc2fc6a7321d", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "4Qekb9y1dqO8hvRzVSGeSRNyhko_gqpeWD94zrLCvjs", short-id: "5488b0e7"}, network: "tcp", servername: "www.yahoo.com"}
+- {type: "vless", name: "🇺🇸 美国35 | ⬇️ 4.8MB/s|0%|Disney|Openai|Gemini", server: "172.67.79.244", port: 2053, uuid: "908fe4f8-eb66-42eb-bd97-8d88be7f0ac4", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "txmt.conetcdata.dpdns.org"}, path: "/?ed=2560"}, servername: "txmt.conetcdata.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国36 | ⬇️ 8.7MB/s|0%|Disney|Youtube|Openai", server: "162.159.152.81", port: 8443, uuid: "908fe4f8-eb66-42eb-bd97-8d88be7f0ac4", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "txmt.conetcdata.dpdns.org"}, path: "/?ed=2560"}, servername: "txmt.conetcdata.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国37 | ⬇️ 4.2MB/s|0%|Netflix|Disney|Openai", server: "104.24.147.218", port: 443, uuid: "7be8c1f3-3d79-44d4-800a-5e417817b6ab", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "xw0083.dpdns.org"}, path: "/?ed=2560"}, servername: "xw0083.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国39 | ⬇️ 6.2MB/s|58%|Openai|Gemini", server: "148.135.106.248", port: 18454, uuid: "2c66c3e9-56b6-4401-e2b5-ea6f872e7a59", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "zedwareoracle.lzj520hxw.dpdns.org"}, path: "/by-zedware-network/"}, client-fingerprint: "chrome", servername: "zedwareoracle.lzj520hxw.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国4 | ⬇️ 6.2MB/s|100%|Disney|Openai", server: "104.21.48.1", port: 443, uuid: "84831b86-5c76-4173-bdf1-02fa3ed78a32", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "cccvvvb.999161.xyz"}, path: "/F7H3XudlllLXkT65VUAi1psm38Tz"}, servername: "CCCVVVB.999161.xYz"}
+- {type: "vless", name: "🇺🇸 美国40 | ⬇️ 5.5MB/s|33%|Openai", server: "104.21.81.192", port: 443, uuid: "508a5202-d450-42d2-a74c-9326dcda8b63", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "sssdecvbnh.999156.xyz"}, path: "/prUFeqTNsRZbl4sVHqtMKS"}, servername: "sssdeCVBnh.999156.XYz"}
+- {type: "vless", name: "🇺🇸 美国41 | ⬇️ 5.8MB/s|0%|Netflix|Disney|Openai", server: "5.10.244.109", port: 443, uuid: "e3820a55-ff58-4e42-ac82-df9a9376e699", tls: true, client-fingerprint: "chrome", alpn: ["h3%2Ch2%2Chttp%2F1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "madcity2.777999.lol"}, path: "/?ed=2560"}, servername: "madcity2.777999.lol"}
+- {type: "vless", name: "🇺🇸 美国48 | ⬇️ 7.8MB/s|0%|Disney|Openai", server: "195.245.221.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国49 | ⬇️ 6.6MB/s|0%|Disney|Openai|Gemini", server: "104.17.25.48", port: 2053, uuid: "908fe4f8-eb66-42eb-bd97-8d88be7f0ac4", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "txmt.conetcdata.dpdns.org"}, path: "/?ed=2560"}, servername: "txmt.conetcdata.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国5 | ⬇️ 5.9MB/s|Disney|Openai", server: "103.21.244.19", port: 443, uuid: "67fa5212-9ce6-4a2c-b57d-7b15c5ac3b6e", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "free.5niu.xyz"}, path: "/?ed=2560"}, servername: "free.5niu.xyz"}
+- {type: "vless", name: "🇺🇸 美国50 | ⬇️ 4.4MB/s|0%|Disney|Youtube|Openai", server: "104.16.110.236", port: 443, uuid: "9631d4cc-c5ef-4569-8968-6a1227cdecfa", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "520588.xyz"}, path: "/?ed=2560"}, servername: "520588.xyz"}
+- {type: "vless", name: "🇺🇸 美国51 | ⬇️ 5.7MB/s|0%|Disney|Openai|Gemini", server: "104.16.38.27", port: 443, uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "yg.bantony199.top"}, path: "/?ed=2560"}, servername: "yg.bantony199.top"}
+- {type: "vless", name: "🇺🇸 美国53 | ⬇️ 5.8MB/s|0%|Disney|Openai", server: "172.67.193.74", port: 2053, uuid: "908fe4f8-eb66-42eb-bd97-8d88be7f0ac4", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "txmt.conetcdata.dpdns.org"}, path: "/?ed=2560"}, servername: "txmt.conetcdata.dpdns.org"}
+- {skip-cert-verify: true, sni: "f5e8c4c2-swq1s0-t1nwsn-1la2q.cu.plebai.net", type: "trojan", password: "431026c8-7397-11ed-a8bf-f23c91cfbbc9", server: "f5e8c4c2-swq1s0-t1nwsn-1la2q.cu.plebai.net", port: 15229, name: "🇺🇸 美国54 | ⬇️ 4.3MB/s|43%|Openai|Gemini", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国57 | ⬇️ 5.1MB/s|33%|Openai", type: "vmess", server: "9uyiopsdfh.iran.pp.ua", port: 443, cipher: "auto", uuid: "906ba92f-ef96-4133-8eee-f33202a5a721", alterId: 0, tls: true, network: "ws", ws-opts: {path: "/DAxJddOdTd5pVam9w", headers: {Host: "9uyiopsdfh.iran.pp.ua"}}, client-fingerprint: "chrome", servername: "9uyiopsdfh.iran.pp.ua"}
+- {type: "vless", name: "🇺🇸 美国59 | ⬇️ 5.3MB/s|30%|Openai|Gemini", server: "104.21.7.147", port: 443, uuid: "08355b07-1f90-4225-a420-6373c2e1c059", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "m12wert.huangshang.dpdns.org"}, path: "/vaETNuCIptYKnk9eiIGVIW"}, servername: "m12wErT.HuangSHAnG.dpDNS.Org"}
+- {type: "vless", name: "🇺🇸 美国6 | ⬇️ 5.5MB/s|Disney|Openai", server: "103.21.244.239", port: 443, uuid: "67fa5212-9ce6-4a2c-b57d-7b15c5ac3b6e", tls: true, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "free.5niu.xyz"}, path: "/?ed=2560"}, servername: "free.5niu.xyz"}
+- {type: "vless", name: "🇺🇸 美国62 | ⬇️ 4.6MB/s|100%|Openai", server: "15.204.150.39", port: 443, uuid: "e20ebe01-1815-4c09-8e77-fb2f168263ce", tls: true, client-fingerprint: "chrome", skip-cert-verify: true, network: "tcp", servername: "147135001178.sec22org.com"}
+- {type: "vless", name: "🇺🇸 美国67 | ⬇️ 4.2MB/s|0%|Disney|Openai", server: "141.193.213.19", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国68 | ⬇️ 5.7MB/s|0%|Disney|Youtube|Openai", server: "141.193.213.76", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国9 | ⬇️ 4.4MB/s|Netflix|Openai", server: "104.21.75.75", port: 443, uuid: "d6f051d2-b704-4434-a4b9-872037153372", tls: true, client-fingerprint: "chrome", alpn: ["http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "mnbvc.857856.xyz"}, path: "/aNjfTh80CxZmq1LOYwi"}, servername: "MnBVc.857856.XyZ"}
+- {name: "🇫🇮 芬兰1 | ⬇️ 4.8MB/s|20%|Youtube|Openai", type: "vmess", server: "185.146.173.25", port: 80, cipher: "auto", uuid: "27ee8047-5da9-4433-8c85-45f5feb1967f", alterId: 0, tls: false, network: "ws", ws-opts: {path: "/d3d3LmlyYW5ob3N0LmNvbQ==", headers: {Host: "google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir."}}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇬🇧 英国1 | ⬇️ 4.5MB/s|63%|Openai", server: "whatismyipaddress.com", port: 2096, uuid: "2404f667-5969-4883-a71a-ea2e0db2d25b", tls: true, client-fingerprint: "chrome", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "wwwspeedtestnetwhiteberinsistomd6625996s13.opswebhosting.ir"}, path: "/"}, servername: "wwwspeedtestnetwhiteberinsistomd6625996s13.opswebhosting.ir"}
+- {type: "vless", name: "🇬🇧 英国2 | ⬇️ 5.6MB/s|100%|Openai", server: "104.19.54.50", port: 8880, uuid: "13118a5b-8e07-409c-a244-98c6f828ac44", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "V2rayArgoN.elmahstyle.xyz."}, path: "/@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN----@V2rayArgoN?ed=2048"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇬🇧 英国5 | ⬇️ 6.3MB/s|63%|Youtube|Openai", server: "151.101.194.228", port: 80, uuid: "2404f667-5969-4883-a71a-ea2e0db2d25b", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v08.networkpro.net"}, path: "/?ed=2048"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇬🇧 英国9 | ⬇️ 4.9MB/s|0%|Netflix|Disney|Openai", server: "ns7.esfahansiman.com", port: 2030, uuid: "e66070a9-049f-42ce-9e14-9752141c3be4", tls: true, flow: "", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E", short-id: "7fe29733"}, network: "grpc", grpc-opts: {grpc-service-name: "CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config"}, servername: "refersion.com"}
+- {skip-cert-verify: true, sni: "36.151.251.61", type: "trojan", password: "RlzoEILU", server: "36.151.251.61", port: 33097, name: "🇳🇱 荷兰1 | ⬇️ 9.1MB/s|Youtube|Openai", client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "36.151.251.61", type: "trojan", password: "RlzoEILU", server: "36.151.251.61", port: 16641, name: "🇳🇱 荷兰2 | ⬇️ 4.3MB/s|0%|Netflix|Disney|Openai", client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "cdn.egvra.cn", type: "trojan", password: "RlzoEILU", server: "36.151.251.62", port: 28548, name: "🇰🇷 韩国1 | ⬇️ 5.9MB/s|0%|Youtube|Openai", client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "cdn.egvra.cn", type: "trojan", password: "RlzoEILU", server: "36.151.251.59", port: 44907, name: "🇰🇷 韩国2 | ⬇️ 7.1MB/s|Youtube|Openai|Gemini", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇰🇷 韩国4 | ⬇️ 11.5MB/s|58%|Netflix|Disney|Youtube|Openai|Gemini", server: "162.159.129.11", port: 2053, uuid: "d6b8011a-c725-435a-9fec-bf6d3530392c", tls: true, client-fingerprint: "randomized", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vle.amclubsapp.dpdns.org"}, path: "/?ed=2560&PROT_TYPE=vless"}, servername: "vle.amclubsapp.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国5 | ⬇️ 5.9MB/s|58%|Netflix|Disney|Openai", server: "nikon.ns.cloudflare.com", port: 443, uuid: "ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "dk.youlingkais.filegear-sg.me"}, path: "/?ed=2560"}, client-fingerprint: "chrome", servername: "dk.youlingkais.filegear-sg.me"}
+- {type: "vless", name: "🇰🇷 韩国6 | ⬇️ 7.4MB/s|Disney", server: "icook.tw", port: 443, uuid: "ffe171e8-cb29-4d8e-b2b2-c57ebcb1d3cb", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "dk.youlingkais.filegear-sg.me"}, path: "/?ed=2560"}, client-fingerprint: "chrome", servername: "dk.youlingkais.filegear-sg.me"}
+- {type: "vless", name: "🇰🇷 韩国8 | ⬇️ 5.0MB/s|58%|Disney|Openai", server: "45.149.12.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇰🇷 韩国9 | ⬇️ 5.8MB/s|58%|Disney|Openai", server: "185.162.231.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "36.156.102.124", type: "trojan", password: "RlzoEILU", server: "36.156.102.124", port: 15624, name: "🇭🇰 香港1 | ⬇️ 8.3MB/s|1%|Netflix|Disney|Youtube", client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "cdn.egvra.cn", type: "trojan", password: "RlzoEILU", server: "36.151.251.60", port: 28296, name: "🇭🇰 香港11 | ⬇️ 15.6MB/s|Netflix|Youtube", client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "cdn.egvra.cn", type: "trojan", password: "RlzoEILU", server: "36.156.102.124", port: 45569, name: "🇭🇰 香港12 | ⬇️ 8.8MB/s|1%|Netflix|Disney|Youtube", client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "36.156.102.123", type: "trojan", password: "RlzoEILU", server: "36.156.102.123", port: 50723, name: "🇭🇰 香港2 | ⬇️ 8.3MB/s|1%|Netflix|Youtube", client-fingerprint: "chrome"}
+- {type: "ss", server: "212.113.102.159", port: 1080, cipher: "chacha20-ietf-poly1305", password: "A7aN5Xww&S*LnBrbCS6qZMDiq&18sjEb!YUT5T2BRqjk28Zbp7a#KTGV6LPhYT$N", name: "🇸🇪 🌀其他2-SE | ⬇️ 4.3MB/s|20%|Youtube|Openai", client-fingerprint: "chrome"}
+- {name: "🇲🇾 🌀其他3-MY | ⬇️ 4.1MB/s|0%|Netflix|Openai|Gemini", type: "vmess", server: "103.62.52.253", port: 51506, cipher: "auto", uuid: "dbfdf977-141c-45e8-ae4f-fbadd4db5cb3", alterId: 0, tls: false, client-fingerprint: "chrome"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+  - "🇷🇺 俄罗斯1 | ⬇️ 7.5MB/s|50%"
+  - "🇷🇺 俄罗斯2 | ⬇️ 7.2MB/s|Youtube"
+  - "🇷🇺 俄罗斯3 | ⬇️ 5.4MB/s|50%"
+  - "🇨🇦 加拿大3 | ⬇️ 4.1MB/s|61%|Disney"
+  - "🇮🇳 印度1 | ⬇️ 6.0MB/s|Disney|Openai"
+  - "🇮🇳 印度2 | ⬇️ 4.7MB/s|58%|Disney|Openai"
+  - "🇮🇳 印度3 | ⬇️ 6.3MB/s|58%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国10 | ⬇️ 7.9MB/s|19%|Disney|Openai|Gemini"
+  - "🇩🇪 德国11 | ⬇️ 4.1MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国13 | ⬇️ 7.2MB/s|Youtube|Openai"
+  - "🇩🇪 德国15 | ⬇️ 5.8MB/s|19%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国16 | ⬇️ 5.8MB/s|22%|Openai"
+  - "🇩🇪 德国17 | ⬇️ 6.4MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国18 | ⬇️ 4.4MB/s|30%|Disney|Openai"
+  - "🇩🇪 德国19 | ⬇️ 8.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国2 | ⬇️ 4.8MB/s|Disney|Youtube"
+  - "🇩🇪 德国20 | ⬇️ 6.6MB/s|22%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国21 | ⬇️ 5.2MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国22 | ⬇️ 4.5MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国23 | ⬇️ 6.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国24 | ⬇️ 13.8MB/s|19%|Openai"
+  - "🇩🇪 德国28 | ⬇️ 4.5MB/s|30%|Netflix|Youtube|Openai"
+  - "🇩🇪 德国29 | ⬇️ 6.3MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国30 | ⬇️ 5.5MB/s|30%|Openai"
+  - "🇩🇪 德国8 | ⬇️ 4.5MB/s|Openai"
+  - "🇸🇬 新加坡1 | ⬇️ 14.2MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡2 | ⬇️ 4.6MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡4 | ⬇️ 6.6MB/s|Youtube|Openai"
+  - "🇫🇷 法国10 | ⬇️ 5.3MB/s|0%|Youtube|Openai"
+  - "🇫🇷 法国5 | ⬇️ 6.0MB/s|Youtube|Openai"
+  - "🇫🇷 法国7 | ⬇️ 4.9MB/s|63%|Openai"
+  - "🇫🇷 法国9 | ⬇️ 4.4MB/s|15%|Openai"
+  - "🇺🇸 美国1 | ⬇️ 7.9MB/s|46%|Openai"
+  - "🇺🇸 美国10 | ⬇️ 4.3MB/s|Openai"
+  - "🇺🇸 美国13 | ⬇️ 4.0MB/s|Openai"
+  - "🇺🇸 美国14 | ⬇️ 5.6MB/s|Disney|Openai|Gemini"
+  - "🇺🇸 美国15 | ⬇️ 5.4MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国16 | ⬇️ 6.3MB/s|Netflix|Openai"
+  - "🇺🇸 美国17 | ⬇️ 6.0MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国18 | ⬇️ 5.3MB/s|30%|Openai"
+  - "🇺🇸 美国19 | ⬇️ 4.9MB/s|33%|Openai"
+  - "🇺🇸 美国2 | ⬇️ 5.0MB/s|19%|Disney|Openai|Gemini"
+  - "🇺🇸 美国20 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国21 | ⬇️ 5.5MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国22 | ⬇️ 5.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国23 | ⬇️ 6.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国24 | ⬇️ 4.7MB/s|29%|Openai"
+  - "🇺🇸 美国28 | ⬇️ 5.1MB/s|29%|Openai|Gemini"
+  - "🇺🇸 美国29 | ⬇️ 10.6MB/s|25%|Openai"
+  - "🇺🇸 美国3 | ⬇️ 9.4MB/s|Openai|Gemini"
+  - "🇺🇸 美国30 | ⬇️ 4.4MB/s|31%|Openai|Gemini"
+  - "🇺🇸 美国32 | ⬇️ 5.4MB/s|0%|Netflix|Disney|Youtube|Openai"
+  - "🇺🇸 美国33 | ⬇️ 9.5MB/s|46%|Netflix|Disney|Openai"
+  - "🇺🇸 美国34 | ⬇️ 4.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇺🇸 美国35 | ⬇️ 4.8MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国36 | ⬇️ 8.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国37 | ⬇️ 4.2MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国39 | ⬇️ 6.2MB/s|58%|Openai|Gemini"
+  - "🇺🇸 美国4 | ⬇️ 6.2MB/s|100%|Disney|Openai"
+  - "🇺🇸 美国40 | ⬇️ 5.5MB/s|33%|Openai"
+  - "🇺🇸 美国41 | ⬇️ 5.8MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国48 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国49 | ⬇️ 6.6MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国5 | ⬇️ 5.9MB/s|Disney|Openai"
+  - "🇺🇸 美国50 | ⬇️ 4.4MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国51 | ⬇️ 5.7MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国53 | ⬇️ 5.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国54 | ⬇️ 4.3MB/s|43%|Openai|Gemini"
+  - "🇺🇸 美国57 | ⬇️ 5.1MB/s|33%|Openai"
+  - "🇺🇸 美国59 | ⬇️ 5.3MB/s|30%|Openai|Gemini"
+  - "🇺🇸 美国6 | ⬇️ 5.5MB/s|Disney|Openai"
+  - "🇺🇸 美国62 | ⬇️ 4.6MB/s|100%|Openai"
+  - "🇺🇸 美国67 | ⬇️ 4.2MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国68 | ⬇️ 5.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国9 | ⬇️ 4.4MB/s|Netflix|Openai"
+  - "🇫🇮 芬兰1 | ⬇️ 4.8MB/s|20%|Youtube|Openai"
+  - "🇬🇧 英国1 | ⬇️ 4.5MB/s|63%|Openai"
+  - "🇬🇧 英国2 | ⬇️ 5.6MB/s|100%|Openai"
+  - "🇬🇧 英国5 | ⬇️ 6.3MB/s|63%|Youtube|Openai"
+  - "🇬🇧 英国9 | ⬇️ 4.9MB/s|0%|Netflix|Disney|Openai"
+  - "🇳🇱 荷兰1 | ⬇️ 9.1MB/s|Youtube|Openai"
+  - "🇳🇱 荷兰2 | ⬇️ 4.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国1 | ⬇️ 5.9MB/s|0%|Youtube|Openai"
+  - "🇰🇷 韩国2 | ⬇️ 7.1MB/s|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国4 | ⬇️ 11.5MB/s|58%|Netflix|Disney|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国5 | ⬇️ 5.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国6 | ⬇️ 7.4MB/s|Disney"
+  - "🇰🇷 韩国8 | ⬇️ 5.0MB/s|58%|Disney|Openai"
+  - "🇰🇷 韩国9 | ⬇️ 5.8MB/s|58%|Disney|Openai"
+  - "🇭🇰 香港1 | ⬇️ 8.3MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港11 | ⬇️ 15.6MB/s|Netflix|Youtube"
+  - "🇭🇰 香港12 | ⬇️ 8.8MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港2 | ⬇️ 8.3MB/s|1%|Netflix|Youtube"
+  - "🇸🇪 🌀其他2-SE | ⬇️ 4.3MB/s|20%|Youtube|Openai"
+  - "🇲🇾 🌀其他3-MY | ⬇️ 4.1MB/s|0%|Netflix|Openai|Gemini"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+  - "🇷🇺 俄罗斯1 | ⬇️ 7.5MB/s|50%"
+  - "🇷🇺 俄罗斯2 | ⬇️ 7.2MB/s|Youtube"
+  - "🇷🇺 俄罗斯3 | ⬇️ 5.4MB/s|50%"
+  - "🇨🇦 加拿大3 | ⬇️ 4.1MB/s|61%|Disney"
+  - "🇮🇳 印度1 | ⬇️ 6.0MB/s|Disney|Openai"
+  - "🇮🇳 印度2 | ⬇️ 4.7MB/s|58%|Disney|Openai"
+  - "🇮🇳 印度3 | ⬇️ 6.3MB/s|58%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国10 | ⬇️ 7.9MB/s|19%|Disney|Openai|Gemini"
+  - "🇩🇪 德国11 | ⬇️ 4.1MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国13 | ⬇️ 7.2MB/s|Youtube|Openai"
+  - "🇩🇪 德国15 | ⬇️ 5.8MB/s|19%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国16 | ⬇️ 5.8MB/s|22%|Openai"
+  - "🇩🇪 德国17 | ⬇️ 6.4MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国18 | ⬇️ 4.4MB/s|30%|Disney|Openai"
+  - "🇩🇪 德国19 | ⬇️ 8.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国2 | ⬇️ 4.8MB/s|Disney|Youtube"
+  - "🇩🇪 德国20 | ⬇️ 6.6MB/s|22%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国21 | ⬇️ 5.2MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国22 | ⬇️ 4.5MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国23 | ⬇️ 6.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国24 | ⬇️ 13.8MB/s|19%|Openai"
+  - "🇩🇪 德国28 | ⬇️ 4.5MB/s|30%|Netflix|Youtube|Openai"
+  - "🇩🇪 德国29 | ⬇️ 6.3MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国30 | ⬇️ 5.5MB/s|30%|Openai"
+  - "🇩🇪 德国8 | ⬇️ 4.5MB/s|Openai"
+  - "🇸🇬 新加坡1 | ⬇️ 14.2MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡2 | ⬇️ 4.6MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡4 | ⬇️ 6.6MB/s|Youtube|Openai"
+  - "🇫🇷 法国10 | ⬇️ 5.3MB/s|0%|Youtube|Openai"
+  - "🇫🇷 法国5 | ⬇️ 6.0MB/s|Youtube|Openai"
+  - "🇫🇷 法国7 | ⬇️ 4.9MB/s|63%|Openai"
+  - "🇫🇷 法国9 | ⬇️ 4.4MB/s|15%|Openai"
+  - "🇺🇸 美国1 | ⬇️ 7.9MB/s|46%|Openai"
+  - "🇺🇸 美国10 | ⬇️ 4.3MB/s|Openai"
+  - "🇺🇸 美国13 | ⬇️ 4.0MB/s|Openai"
+  - "🇺🇸 美国14 | ⬇️ 5.6MB/s|Disney|Openai|Gemini"
+  - "🇺🇸 美国15 | ⬇️ 5.4MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国16 | ⬇️ 6.3MB/s|Netflix|Openai"
+  - "🇺🇸 美国17 | ⬇️ 6.0MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国18 | ⬇️ 5.3MB/s|30%|Openai"
+  - "🇺🇸 美国19 | ⬇️ 4.9MB/s|33%|Openai"
+  - "🇺🇸 美国2 | ⬇️ 5.0MB/s|19%|Disney|Openai|Gemini"
+  - "🇺🇸 美国20 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国21 | ⬇️ 5.5MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国22 | ⬇️ 5.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国23 | ⬇️ 6.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国24 | ⬇️ 4.7MB/s|29%|Openai"
+  - "🇺🇸 美国28 | ⬇️ 5.1MB/s|29%|Openai|Gemini"
+  - "🇺🇸 美国29 | ⬇️ 10.6MB/s|25%|Openai"
+  - "🇺🇸 美国3 | ⬇️ 9.4MB/s|Openai|Gemini"
+  - "🇺🇸 美国30 | ⬇️ 4.4MB/s|31%|Openai|Gemini"
+  - "🇺🇸 美国32 | ⬇️ 5.4MB/s|0%|Netflix|Disney|Youtube|Openai"
+  - "🇺🇸 美国33 | ⬇️ 9.5MB/s|46%|Netflix|Disney|Openai"
+  - "🇺🇸 美国34 | ⬇️ 4.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇺🇸 美国35 | ⬇️ 4.8MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国36 | ⬇️ 8.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国37 | ⬇️ 4.2MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国39 | ⬇️ 6.2MB/s|58%|Openai|Gemini"
+  - "🇺🇸 美国4 | ⬇️ 6.2MB/s|100%|Disney|Openai"
+  - "🇺🇸 美国40 | ⬇️ 5.5MB/s|33%|Openai"
+  - "🇺🇸 美国41 | ⬇️ 5.8MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国48 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国49 | ⬇️ 6.6MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国5 | ⬇️ 5.9MB/s|Disney|Openai"
+  - "🇺🇸 美国50 | ⬇️ 4.4MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国51 | ⬇️ 5.7MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国53 | ⬇️ 5.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国54 | ⬇️ 4.3MB/s|43%|Openai|Gemini"
+  - "🇺🇸 美国57 | ⬇️ 5.1MB/s|33%|Openai"
+  - "🇺🇸 美国59 | ⬇️ 5.3MB/s|30%|Openai|Gemini"
+  - "🇺🇸 美国6 | ⬇️ 5.5MB/s|Disney|Openai"
+  - "🇺🇸 美国62 | ⬇️ 4.6MB/s|100%|Openai"
+  - "🇺🇸 美国67 | ⬇️ 4.2MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国68 | ⬇️ 5.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国9 | ⬇️ 4.4MB/s|Netflix|Openai"
+  - "🇫🇮 芬兰1 | ⬇️ 4.8MB/s|20%|Youtube|Openai"
+  - "🇬🇧 英国1 | ⬇️ 4.5MB/s|63%|Openai"
+  - "🇬🇧 英国2 | ⬇️ 5.6MB/s|100%|Openai"
+  - "🇬🇧 英国5 | ⬇️ 6.3MB/s|63%|Youtube|Openai"
+  - "🇬🇧 英国9 | ⬇️ 4.9MB/s|0%|Netflix|Disney|Openai"
+  - "🇳🇱 荷兰1 | ⬇️ 9.1MB/s|Youtube|Openai"
+  - "🇳🇱 荷兰2 | ⬇️ 4.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国1 | ⬇️ 5.9MB/s|0%|Youtube|Openai"
+  - "🇰🇷 韩国2 | ⬇️ 7.1MB/s|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国4 | ⬇️ 11.5MB/s|58%|Netflix|Disney|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国5 | ⬇️ 5.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国6 | ⬇️ 7.4MB/s|Disney"
+  - "🇰🇷 韩国8 | ⬇️ 5.0MB/s|58%|Disney|Openai"
+  - "🇰🇷 韩国9 | ⬇️ 5.8MB/s|58%|Disney|Openai"
+  - "🇭🇰 香港1 | ⬇️ 8.3MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港11 | ⬇️ 15.6MB/s|Netflix|Youtube"
+  - "🇭🇰 香港12 | ⬇️ 8.8MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港2 | ⬇️ 8.3MB/s|1%|Netflix|Youtube"
+  - "🇸🇪 🌀其他2-SE | ⬇️ 4.3MB/s|20%|Youtube|Openai"
+  - "🇲🇾 🌀其他3-MY | ⬇️ 4.1MB/s|0%|Netflix|Openai|Gemini"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+  - "🇷🇺 俄罗斯1 | ⬇️ 7.5MB/s|50%"
+  - "🇷🇺 俄罗斯2 | ⬇️ 7.2MB/s|Youtube"
+  - "🇷🇺 俄罗斯3 | ⬇️ 5.4MB/s|50%"
+  - "🇨🇦 加拿大3 | ⬇️ 4.1MB/s|61%|Disney"
+  - "🇮🇳 印度1 | ⬇️ 6.0MB/s|Disney|Openai"
+  - "🇮🇳 印度2 | ⬇️ 4.7MB/s|58%|Disney|Openai"
+  - "🇮🇳 印度3 | ⬇️ 6.3MB/s|58%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国10 | ⬇️ 7.9MB/s|19%|Disney|Openai|Gemini"
+  - "🇩🇪 德国11 | ⬇️ 4.1MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国13 | ⬇️ 7.2MB/s|Youtube|Openai"
+  - "🇩🇪 德国15 | ⬇️ 5.8MB/s|19%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国16 | ⬇️ 5.8MB/s|22%|Openai"
+  - "🇩🇪 德国17 | ⬇️ 6.4MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国18 | ⬇️ 4.4MB/s|30%|Disney|Openai"
+  - "🇩🇪 德国19 | ⬇️ 8.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国2 | ⬇️ 4.8MB/s|Disney|Youtube"
+  - "🇩🇪 德国20 | ⬇️ 6.6MB/s|22%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国21 | ⬇️ 5.2MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国22 | ⬇️ 4.5MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国23 | ⬇️ 6.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国24 | ⬇️ 13.8MB/s|19%|Openai"
+  - "🇩🇪 德国28 | ⬇️ 4.5MB/s|30%|Netflix|Youtube|Openai"
+  - "🇩🇪 德国29 | ⬇️ 6.3MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国30 | ⬇️ 5.5MB/s|30%|Openai"
+  - "🇩🇪 德国8 | ⬇️ 4.5MB/s|Openai"
+  - "🇸🇬 新加坡1 | ⬇️ 14.2MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡2 | ⬇️ 4.6MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡4 | ⬇️ 6.6MB/s|Youtube|Openai"
+  - "🇫🇷 法国10 | ⬇️ 5.3MB/s|0%|Youtube|Openai"
+  - "🇫🇷 法国5 | ⬇️ 6.0MB/s|Youtube|Openai"
+  - "🇫🇷 法国7 | ⬇️ 4.9MB/s|63%|Openai"
+  - "🇫🇷 法国9 | ⬇️ 4.4MB/s|15%|Openai"
+  - "🇺🇸 美国1 | ⬇️ 7.9MB/s|46%|Openai"
+  - "🇺🇸 美国10 | ⬇️ 4.3MB/s|Openai"
+  - "🇺🇸 美国13 | ⬇️ 4.0MB/s|Openai"
+  - "🇺🇸 美国14 | ⬇️ 5.6MB/s|Disney|Openai|Gemini"
+  - "🇺🇸 美国15 | ⬇️ 5.4MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国16 | ⬇️ 6.3MB/s|Netflix|Openai"
+  - "🇺🇸 美国17 | ⬇️ 6.0MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国18 | ⬇️ 5.3MB/s|30%|Openai"
+  - "🇺🇸 美国19 | ⬇️ 4.9MB/s|33%|Openai"
+  - "🇺🇸 美国2 | ⬇️ 5.0MB/s|19%|Disney|Openai|Gemini"
+  - "🇺🇸 美国20 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国21 | ⬇️ 5.5MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国22 | ⬇️ 5.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国23 | ⬇️ 6.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国24 | ⬇️ 4.7MB/s|29%|Openai"
+  - "🇺🇸 美国28 | ⬇️ 5.1MB/s|29%|Openai|Gemini"
+  - "🇺🇸 美国29 | ⬇️ 10.6MB/s|25%|Openai"
+  - "🇺🇸 美国3 | ⬇️ 9.4MB/s|Openai|Gemini"
+  - "🇺🇸 美国30 | ⬇️ 4.4MB/s|31%|Openai|Gemini"
+  - "🇺🇸 美国32 | ⬇️ 5.4MB/s|0%|Netflix|Disney|Youtube|Openai"
+  - "🇺🇸 美国33 | ⬇️ 9.5MB/s|46%|Netflix|Disney|Openai"
+  - "🇺🇸 美国34 | ⬇️ 4.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇺🇸 美国35 | ⬇️ 4.8MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国36 | ⬇️ 8.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国37 | ⬇️ 4.2MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国39 | ⬇️ 6.2MB/s|58%|Openai|Gemini"
+  - "🇺🇸 美国4 | ⬇️ 6.2MB/s|100%|Disney|Openai"
+  - "🇺🇸 美国40 | ⬇️ 5.5MB/s|33%|Openai"
+  - "🇺🇸 美国41 | ⬇️ 5.8MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国48 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国49 | ⬇️ 6.6MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国5 | ⬇️ 5.9MB/s|Disney|Openai"
+  - "🇺🇸 美国50 | ⬇️ 4.4MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国51 | ⬇️ 5.7MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国53 | ⬇️ 5.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国54 | ⬇️ 4.3MB/s|43%|Openai|Gemini"
+  - "🇺🇸 美国57 | ⬇️ 5.1MB/s|33%|Openai"
+  - "🇺🇸 美国59 | ⬇️ 5.3MB/s|30%|Openai|Gemini"
+  - "🇺🇸 美国6 | ⬇️ 5.5MB/s|Disney|Openai"
+  - "🇺🇸 美国62 | ⬇️ 4.6MB/s|100%|Openai"
+  - "🇺🇸 美国67 | ⬇️ 4.2MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国68 | ⬇️ 5.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国9 | ⬇️ 4.4MB/s|Netflix|Openai"
+  - "🇫🇮 芬兰1 | ⬇️ 4.8MB/s|20%|Youtube|Openai"
+  - "🇬🇧 英国1 | ⬇️ 4.5MB/s|63%|Openai"
+  - "🇬🇧 英国2 | ⬇️ 5.6MB/s|100%|Openai"
+  - "🇬🇧 英国5 | ⬇️ 6.3MB/s|63%|Youtube|Openai"
+  - "🇬🇧 英国9 | ⬇️ 4.9MB/s|0%|Netflix|Disney|Openai"
+  - "🇳🇱 荷兰1 | ⬇️ 9.1MB/s|Youtube|Openai"
+  - "🇳🇱 荷兰2 | ⬇️ 4.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国1 | ⬇️ 5.9MB/s|0%|Youtube|Openai"
+  - "🇰🇷 韩国2 | ⬇️ 7.1MB/s|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国4 | ⬇️ 11.5MB/s|58%|Netflix|Disney|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国5 | ⬇️ 5.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国6 | ⬇️ 7.4MB/s|Disney"
+  - "🇰🇷 韩国8 | ⬇️ 5.0MB/s|58%|Disney|Openai"
+  - "🇰🇷 韩国9 | ⬇️ 5.8MB/s|58%|Disney|Openai"
+  - "🇭🇰 香港1 | ⬇️ 8.3MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港11 | ⬇️ 15.6MB/s|Netflix|Youtube"
+  - "🇭🇰 香港12 | ⬇️ 8.8MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港2 | ⬇️ 8.3MB/s|1%|Netflix|Youtube"
+  - "🇸🇪 🌀其他2-SE | ⬇️ 4.3MB/s|20%|Youtube|Openai"
+  - "🇲🇾 🌀其他3-MY | ⬇️ 4.1MB/s|0%|Netflix|Openai|Gemini"
+- name: "TG"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+  - "🇷🇺 俄罗斯1 | ⬇️ 7.5MB/s|50%"
+  - "🇷🇺 俄罗斯2 | ⬇️ 7.2MB/s|Youtube"
+  - "🇷🇺 俄罗斯3 | ⬇️ 5.4MB/s|50%"
+  - "🇨🇦 加拿大3 | ⬇️ 4.1MB/s|61%|Disney"
+  - "🇮🇳 印度1 | ⬇️ 6.0MB/s|Disney|Openai"
+  - "🇮🇳 印度2 | ⬇️ 4.7MB/s|58%|Disney|Openai"
+  - "🇮🇳 印度3 | ⬇️ 6.3MB/s|58%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国10 | ⬇️ 7.9MB/s|19%|Disney|Openai|Gemini"
+  - "🇩🇪 德国11 | ⬇️ 4.1MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国13 | ⬇️ 7.2MB/s|Youtube|Openai"
+  - "🇩🇪 德国15 | ⬇️ 5.8MB/s|19%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国16 | ⬇️ 5.8MB/s|22%|Openai"
+  - "🇩🇪 德国17 | ⬇️ 6.4MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国18 | ⬇️ 4.4MB/s|30%|Disney|Openai"
+  - "🇩🇪 德国19 | ⬇️ 8.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国2 | ⬇️ 4.8MB/s|Disney|Youtube"
+  - "🇩🇪 德国20 | ⬇️ 6.6MB/s|22%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国21 | ⬇️ 5.2MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国22 | ⬇️ 4.5MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国23 | ⬇️ 6.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国24 | ⬇️ 13.8MB/s|19%|Openai"
+  - "🇩🇪 德国28 | ⬇️ 4.5MB/s|30%|Netflix|Youtube|Openai"
+  - "🇩🇪 德国29 | ⬇️ 6.3MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国30 | ⬇️ 5.5MB/s|30%|Openai"
+  - "🇩🇪 德国8 | ⬇️ 4.5MB/s|Openai"
+  - "🇸🇬 新加坡1 | ⬇️ 14.2MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡2 | ⬇️ 4.6MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡4 | ⬇️ 6.6MB/s|Youtube|Openai"
+  - "🇫🇷 法国10 | ⬇️ 5.3MB/s|0%|Youtube|Openai"
+  - "🇫🇷 法国5 | ⬇️ 6.0MB/s|Youtube|Openai"
+  - "🇫🇷 法国7 | ⬇️ 4.9MB/s|63%|Openai"
+  - "🇫🇷 法国9 | ⬇️ 4.4MB/s|15%|Openai"
+  - "🇺🇸 美国1 | ⬇️ 7.9MB/s|46%|Openai"
+  - "🇺🇸 美国10 | ⬇️ 4.3MB/s|Openai"
+  - "🇺🇸 美国13 | ⬇️ 4.0MB/s|Openai"
+  - "🇺🇸 美国14 | ⬇️ 5.6MB/s|Disney|Openai|Gemini"
+  - "🇺🇸 美国15 | ⬇️ 5.4MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国16 | ⬇️ 6.3MB/s|Netflix|Openai"
+  - "🇺🇸 美国17 | ⬇️ 6.0MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国18 | ⬇️ 5.3MB/s|30%|Openai"
+  - "🇺🇸 美国19 | ⬇️ 4.9MB/s|33%|Openai"
+  - "🇺🇸 美国2 | ⬇️ 5.0MB/s|19%|Disney|Openai|Gemini"
+  - "🇺🇸 美国20 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国21 | ⬇️ 5.5MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国22 | ⬇️ 5.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国23 | ⬇️ 6.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国24 | ⬇️ 4.7MB/s|29%|Openai"
+  - "🇺🇸 美国28 | ⬇️ 5.1MB/s|29%|Openai|Gemini"
+  - "🇺🇸 美国29 | ⬇️ 10.6MB/s|25%|Openai"
+  - "🇺🇸 美国3 | ⬇️ 9.4MB/s|Openai|Gemini"
+  - "🇺🇸 美国30 | ⬇️ 4.4MB/s|31%|Openai|Gemini"
+  - "🇺🇸 美国32 | ⬇️ 5.4MB/s|0%|Netflix|Disney|Youtube|Openai"
+  - "🇺🇸 美国33 | ⬇️ 9.5MB/s|46%|Netflix|Disney|Openai"
+  - "🇺🇸 美国34 | ⬇️ 4.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇺🇸 美国35 | ⬇️ 4.8MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国36 | ⬇️ 8.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国37 | ⬇️ 4.2MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国39 | ⬇️ 6.2MB/s|58%|Openai|Gemini"
+  - "🇺🇸 美国4 | ⬇️ 6.2MB/s|100%|Disney|Openai"
+  - "🇺🇸 美国40 | ⬇️ 5.5MB/s|33%|Openai"
+  - "🇺🇸 美国41 | ⬇️ 5.8MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国48 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国49 | ⬇️ 6.6MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国5 | ⬇️ 5.9MB/s|Disney|Openai"
+  - "🇺🇸 美国50 | ⬇️ 4.4MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国51 | ⬇️ 5.7MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国53 | ⬇️ 5.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国54 | ⬇️ 4.3MB/s|43%|Openai|Gemini"
+  - "🇺🇸 美国57 | ⬇️ 5.1MB/s|33%|Openai"
+  - "🇺🇸 美国59 | ⬇️ 5.3MB/s|30%|Openai|Gemini"
+  - "🇺🇸 美国6 | ⬇️ 5.5MB/s|Disney|Openai"
+  - "🇺🇸 美国62 | ⬇️ 4.6MB/s|100%|Openai"
+  - "🇺🇸 美国67 | ⬇️ 4.2MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国68 | ⬇️ 5.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国9 | ⬇️ 4.4MB/s|Netflix|Openai"
+  - "🇫🇮 芬兰1 | ⬇️ 4.8MB/s|20%|Youtube|Openai"
+  - "🇬🇧 英国1 | ⬇️ 4.5MB/s|63%|Openai"
+  - "🇬🇧 英国2 | ⬇️ 5.6MB/s|100%|Openai"
+  - "🇬🇧 英国5 | ⬇️ 6.3MB/s|63%|Youtube|Openai"
+  - "🇬🇧 英国9 | ⬇️ 4.9MB/s|0%|Netflix|Disney|Openai"
+  - "🇳🇱 荷兰1 | ⬇️ 9.1MB/s|Youtube|Openai"
+  - "🇳🇱 荷兰2 | ⬇️ 4.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国1 | ⬇️ 5.9MB/s|0%|Youtube|Openai"
+  - "🇰🇷 韩国2 | ⬇️ 7.1MB/s|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国4 | ⬇️ 11.5MB/s|58%|Netflix|Disney|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国5 | ⬇️ 5.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国6 | ⬇️ 7.4MB/s|Disney"
+  - "🇰🇷 韩国8 | ⬇️ 5.0MB/s|58%|Disney|Openai"
+  - "🇰🇷 韩国9 | ⬇️ 5.8MB/s|58%|Disney|Openai"
+  - "🇭🇰 香港1 | ⬇️ 8.3MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港11 | ⬇️ 15.6MB/s|Netflix|Youtube"
+  - "🇭🇰 香港12 | ⬇️ 8.8MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港2 | ⬇️ 8.3MB/s|1%|Netflix|Youtube"
+  - "🇸🇪 🌀其他2-SE | ⬇️ 4.3MB/s|20%|Youtube|Openai"
+  - "🇲🇾 🌀其他3-MY | ⬇️ 4.1MB/s|0%|Netflix|Openai|Gemini"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+  - "🇷🇺 俄罗斯1 | ⬇️ 7.5MB/s|50%"
+  - "🇷🇺 俄罗斯2 | ⬇️ 7.2MB/s|Youtube"
+  - "🇷🇺 俄罗斯3 | ⬇️ 5.4MB/s|50%"
+  - "🇨🇦 加拿大3 | ⬇️ 4.1MB/s|61%|Disney"
+  - "🇮🇳 印度1 | ⬇️ 6.0MB/s|Disney|Openai"
+  - "🇮🇳 印度2 | ⬇️ 4.7MB/s|58%|Disney|Openai"
+  - "🇮🇳 印度3 | ⬇️ 6.3MB/s|58%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国10 | ⬇️ 7.9MB/s|19%|Disney|Openai|Gemini"
+  - "🇩🇪 德国11 | ⬇️ 4.1MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国13 | ⬇️ 7.2MB/s|Youtube|Openai"
+  - "🇩🇪 德国15 | ⬇️ 5.8MB/s|19%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国16 | ⬇️ 5.8MB/s|22%|Openai"
+  - "🇩🇪 德国17 | ⬇️ 6.4MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国18 | ⬇️ 4.4MB/s|30%|Disney|Openai"
+  - "🇩🇪 德国19 | ⬇️ 8.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国2 | ⬇️ 4.8MB/s|Disney|Youtube"
+  - "🇩🇪 德国20 | ⬇️ 6.6MB/s|22%|Netflix|Disney|Youtube|Openai"
+  - "🇩🇪 德国21 | ⬇️ 5.2MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国22 | ⬇️ 4.5MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国23 | ⬇️ 6.0MB/s|22%|Disney|Openai"
+  - "🇩🇪 德国24 | ⬇️ 13.8MB/s|19%|Openai"
+  - "🇩🇪 德国28 | ⬇️ 4.5MB/s|30%|Netflix|Youtube|Openai"
+  - "🇩🇪 德国29 | ⬇️ 6.3MB/s|19%|Disney|Openai"
+  - "🇩🇪 德国30 | ⬇️ 5.5MB/s|30%|Openai"
+  - "🇩🇪 德国8 | ⬇️ 4.5MB/s|Openai"
+  - "🇸🇬 新加坡1 | ⬇️ 14.2MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡2 | ⬇️ 4.6MB/s|Youtube|Openai"
+  - "🇸🇬 新加坡4 | ⬇️ 6.6MB/s|Youtube|Openai"
+  - "🇫🇷 法国10 | ⬇️ 5.3MB/s|0%|Youtube|Openai"
+  - "🇫🇷 法国5 | ⬇️ 6.0MB/s|Youtube|Openai"
+  - "🇫🇷 法国7 | ⬇️ 4.9MB/s|63%|Openai"
+  - "🇫🇷 法国9 | ⬇️ 4.4MB/s|15%|Openai"
+  - "🇺🇸 美国1 | ⬇️ 7.9MB/s|46%|Openai"
+  - "🇺🇸 美国10 | ⬇️ 4.3MB/s|Openai"
+  - "🇺🇸 美国13 | ⬇️ 4.0MB/s|Openai"
+  - "🇺🇸 美国14 | ⬇️ 5.6MB/s|Disney|Openai|Gemini"
+  - "🇺🇸 美国15 | ⬇️ 5.4MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国16 | ⬇️ 6.3MB/s|Netflix|Openai"
+  - "🇺🇸 美国17 | ⬇️ 6.0MB/s|Netflix|Disney|Openai"
+  - "🇺🇸 美国18 | ⬇️ 5.3MB/s|30%|Openai"
+  - "🇺🇸 美国19 | ⬇️ 4.9MB/s|33%|Openai"
+  - "🇺🇸 美国2 | ⬇️ 5.0MB/s|19%|Disney|Openai|Gemini"
+  - "🇺🇸 美国20 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国21 | ⬇️ 5.5MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国22 | ⬇️ 5.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国23 | ⬇️ 6.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国24 | ⬇️ 4.7MB/s|29%|Openai"
+  - "🇺🇸 美国28 | ⬇️ 5.1MB/s|29%|Openai|Gemini"
+  - "🇺🇸 美国29 | ⬇️ 10.6MB/s|25%|Openai"
+  - "🇺🇸 美国3 | ⬇️ 9.4MB/s|Openai|Gemini"
+  - "🇺🇸 美国30 | ⬇️ 4.4MB/s|31%|Openai|Gemini"
+  - "🇺🇸 美国32 | ⬇️ 5.4MB/s|0%|Netflix|Disney|Youtube|Openai"
+  - "🇺🇸 美国33 | ⬇️ 9.5MB/s|46%|Netflix|Disney|Openai"
+  - "🇺🇸 美国34 | ⬇️ 4.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇺🇸 美国35 | ⬇️ 4.8MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国36 | ⬇️ 8.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国37 | ⬇️ 4.2MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国39 | ⬇️ 6.2MB/s|58%|Openai|Gemini"
+  - "🇺🇸 美国4 | ⬇️ 6.2MB/s|100%|Disney|Openai"
+  - "🇺🇸 美国40 | ⬇️ 5.5MB/s|33%|Openai"
+  - "🇺🇸 美国41 | ⬇️ 5.8MB/s|0%|Netflix|Disney|Openai"
+  - "🇺🇸 美国48 | ⬇️ 7.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国49 | ⬇️ 6.6MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国5 | ⬇️ 5.9MB/s|Disney|Openai"
+  - "🇺🇸 美国50 | ⬇️ 4.4MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国51 | ⬇️ 5.7MB/s|0%|Disney|Openai|Gemini"
+  - "🇺🇸 美国53 | ⬇️ 5.8MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国54 | ⬇️ 4.3MB/s|43%|Openai|Gemini"
+  - "🇺🇸 美国57 | ⬇️ 5.1MB/s|33%|Openai"
+  - "🇺🇸 美国59 | ⬇️ 5.3MB/s|30%|Openai|Gemini"
+  - "🇺🇸 美国6 | ⬇️ 5.5MB/s|Disney|Openai"
+  - "🇺🇸 美国62 | ⬇️ 4.6MB/s|100%|Openai"
+  - "🇺🇸 美国67 | ⬇️ 4.2MB/s|0%|Disney|Openai"
+  - "🇺🇸 美国68 | ⬇️ 5.7MB/s|0%|Disney|Youtube|Openai"
+  - "🇺🇸 美国9 | ⬇️ 4.4MB/s|Netflix|Openai"
+  - "🇫🇮 芬兰1 | ⬇️ 4.8MB/s|20%|Youtube|Openai"
+  - "🇬🇧 英国1 | ⬇️ 4.5MB/s|63%|Openai"
+  - "🇬🇧 英国2 | ⬇️ 5.6MB/s|100%|Openai"
+  - "🇬🇧 英国5 | ⬇️ 6.3MB/s|63%|Youtube|Openai"
+  - "🇬🇧 英国9 | ⬇️ 4.9MB/s|0%|Netflix|Disney|Openai"
+  - "🇳🇱 荷兰1 | ⬇️ 9.1MB/s|Youtube|Openai"
+  - "🇳🇱 荷兰2 | ⬇️ 4.3MB/s|0%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国1 | ⬇️ 5.9MB/s|0%|Youtube|Openai"
+  - "🇰🇷 韩国2 | ⬇️ 7.1MB/s|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国4 | ⬇️ 11.5MB/s|58%|Netflix|Disney|Youtube|Openai|Gemini"
+  - "🇰🇷 韩国5 | ⬇️ 5.9MB/s|58%|Netflix|Disney|Openai"
+  - "🇰🇷 韩国6 | ⬇️ 7.4MB/s|Disney"
+  - "🇰🇷 韩国8 | ⬇️ 5.0MB/s|58%|Disney|Openai"
+  - "🇰🇷 韩国9 | ⬇️ 5.8MB/s|58%|Disney|Openai"
+  - "🇭🇰 香港1 | ⬇️ 8.3MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港11 | ⬇️ 15.6MB/s|Netflix|Youtube"
+  - "🇭🇰 香港12 | ⬇️ 8.8MB/s|1%|Netflix|Disney|Youtube"
+  - "🇭🇰 香港2 | ⬇️ 8.3MB/s|1%|Netflix|Youtube"
+  - "🇸🇪 🌀其他2-SE | ⬇️ 4.3MB/s|20%|Youtube|Openai"
+  - "🇲🇾 🌀其他3-MY | ⬇️ 4.1MB/s|0%|Netflix|Openai|Gemini"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,TELEGRAM,TG"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TG"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

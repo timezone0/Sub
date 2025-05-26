@@ -1,0 +1,647 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🏴‍☠️ tg频道:@ripaojiedian",
+        "🇭🇰 香港|@ripaojiedian",
+        "🇭🇰 香港2|@ripaojiedian",
+        "🇭🇰 香港3|@ripaojiedian",
+        "🇭🇰 香港4|@ripaojiedian",
+        "🇭🇰 香港6|@ripaojiedian",
+        "🇭🇰 香港7|@ripaojiedian",
+        "🇯🇵 日本|@ripaojiedian",
+        "🇯🇵 日本2|@ripaojiedian",
+        "🇯🇵 日本3|@ripaojiedian",
+        "🇰🇷 韩国|@ripaojiedian",
+        "🇰🇷 韩国2|@ripaojiedian",
+        "🇸🇬 新加坡|@ripaojiedian",
+        "🇸🇬 新加坡2|@ripaojiedian",
+        "🇸🇬 新加坡3|@ripaojiedian",
+        "🇸🇬 新加坡4|@ripaojiedian",
+        "🇸🇬 新加坡5|@ripaojiedian",
+        "🇺🇸 美国2|@ripaojiedian",
+        "🇺🇸 美国|@ripaojiedian",
+        "🇺🇸 美国3|@ripaojiedian",
+        "🇻🇳 越南|@ripaojiedian"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🏴‍☠️ tg频道:@ripaojiedian",
+        "🇭🇰 香港|@ripaojiedian",
+        "🇭🇰 香港2|@ripaojiedian",
+        "🇭🇰 香港3|@ripaojiedian",
+        "🇭🇰 香港4|@ripaojiedian",
+        "🇭🇰 香港6|@ripaojiedian",
+        "🇭🇰 香港7|@ripaojiedian",
+        "🇯🇵 日本|@ripaojiedian",
+        "🇯🇵 日本2|@ripaojiedian",
+        "🇯🇵 日本3|@ripaojiedian",
+        "🇰🇷 韩国|@ripaojiedian",
+        "🇰🇷 韩国2|@ripaojiedian",
+        "🇸🇬 新加坡|@ripaojiedian",
+        "🇸🇬 新加坡2|@ripaojiedian",
+        "🇸🇬 新加坡3|@ripaojiedian",
+        "🇸🇬 新加坡4|@ripaojiedian",
+        "🇸🇬 新加坡5|@ripaojiedian",
+        "🇺🇸 美国2|@ripaojiedian",
+        "🇺🇸 美国|@ripaojiedian",
+        "🇺🇸 美国3|@ripaojiedian",
+        "🇻🇳 越南|@ripaojiedian"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🏴‍☠️ tg频道:@ripaojiedian",
+        "🇭🇰 香港|@ripaojiedian",
+        "🇭🇰 香港2|@ripaojiedian",
+        "🇭🇰 香港3|@ripaojiedian",
+        "🇭🇰 香港4|@ripaojiedian",
+        "🇭🇰 香港6|@ripaojiedian",
+        "🇭🇰 香港7|@ripaojiedian",
+        "🇯🇵 日本|@ripaojiedian",
+        "🇯🇵 日本2|@ripaojiedian",
+        "🇯🇵 日本3|@ripaojiedian",
+        "🇰🇷 韩国|@ripaojiedian",
+        "🇰🇷 韩国2|@ripaojiedian",
+        "🇸🇬 新加坡|@ripaojiedian",
+        "🇸🇬 新加坡2|@ripaojiedian",
+        "🇸🇬 新加坡3|@ripaojiedian",
+        "🇸🇬 新加坡4|@ripaojiedian",
+        "🇸🇬 新加坡5|@ripaojiedian",
+        "🇺🇸 美国2|@ripaojiedian",
+        "🇺🇸 美国|@ripaojiedian",
+        "🇺🇸 美国3|@ripaojiedian",
+        "🇻🇳 越南|@ripaojiedian"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🏴‍☠️ tg频道:@ripaojiedian",
+        "🇭🇰 香港|@ripaojiedian",
+        "🇭🇰 香港2|@ripaojiedian",
+        "🇭🇰 香港3|@ripaojiedian",
+        "🇭🇰 香港4|@ripaojiedian",
+        "🇭🇰 香港6|@ripaojiedian",
+        "🇭🇰 香港7|@ripaojiedian",
+        "🇯🇵 日本|@ripaojiedian",
+        "🇯🇵 日本2|@ripaojiedian",
+        "🇯🇵 日本3|@ripaojiedian",
+        "🇰🇷 韩国|@ripaojiedian",
+        "🇰🇷 韩国2|@ripaojiedian",
+        "🇸🇬 新加坡|@ripaojiedian",
+        "🇸🇬 新加坡2|@ripaojiedian",
+        "🇸🇬 新加坡3|@ripaojiedian",
+        "🇸🇬 新加坡4|@ripaojiedian",
+        "🇸🇬 新加坡5|@ripaojiedian",
+        "🇺🇸 美国2|@ripaojiedian",
+        "🇺🇸 美国|@ripaojiedian",
+        "🇺🇸 美国3|@ripaojiedian",
+        "🇻🇳 越南|@ripaojiedian"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🏴‍☠️ tg频道:@ripaojiedian",
+        "🇭🇰 香港|@ripaojiedian",
+        "🇭🇰 香港2|@ripaojiedian",
+        "🇭🇰 香港3|@ripaojiedian",
+        "🇭🇰 香港4|@ripaojiedian",
+        "🇭🇰 香港6|@ripaojiedian",
+        "🇭🇰 香港7|@ripaojiedian",
+        "🇯🇵 日本|@ripaojiedian",
+        "🇯🇵 日本2|@ripaojiedian",
+        "🇯🇵 日本3|@ripaojiedian",
+        "🇰🇷 韩国|@ripaojiedian",
+        "🇰🇷 韩国2|@ripaojiedian",
+        "🇸🇬 新加坡|@ripaojiedian",
+        "🇸🇬 新加坡2|@ripaojiedian",
+        "🇸🇬 新加坡3|@ripaojiedian",
+        "🇸🇬 新加坡4|@ripaojiedian",
+        "🇸🇬 新加坡5|@ripaojiedian",
+        "🇺🇸 美国2|@ripaojiedian",
+        "🇺🇸 美国|@ripaojiedian",
+        "🇺🇸 美国3|@ripaojiedian",
+        "🇻🇳 越南|@ripaojiedian"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🏴‍☠️ tg频道:@ripaojiedian",
+        "🇭🇰 香港|@ripaojiedian",
+        "🇭🇰 香港2|@ripaojiedian",
+        "🇭🇰 香港3|@ripaojiedian",
+        "🇭🇰 香港4|@ripaojiedian",
+        "🇭🇰 香港6|@ripaojiedian",
+        "🇭🇰 香港7|@ripaojiedian",
+        "🇯🇵 日本|@ripaojiedian",
+        "🇯🇵 日本2|@ripaojiedian",
+        "🇯🇵 日本3|@ripaojiedian",
+        "🇰🇷 韩国|@ripaojiedian",
+        "🇰🇷 韩国2|@ripaojiedian",
+        "🇸🇬 新加坡|@ripaojiedian",
+        "🇸🇬 新加坡2|@ripaojiedian",
+        "🇸🇬 新加坡3|@ripaojiedian",
+        "🇸🇬 新加坡4|@ripaojiedian",
+        "🇸🇬 新加坡5|@ripaojiedian",
+        "🇺🇸 美国2|@ripaojiedian",
+        "🇺🇸 美国|@ripaojiedian",
+        "🇺🇸 美国3|@ripaojiedian",
+        "🇻🇳 越南|@ripaojiedian"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🏴‍☠️ tg频道:@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "54.248.176.238",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "awsps0501"
+    },
+    {
+      "tag": "🇭🇰 香港|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "8tv68qhq.slashdevslashnetslashtun.net",
+      "server_port": 15010,
+      "method": "aes-256-gcm",
+      "password": "ENYGONDU94UW1G6X"
+    },
+    {
+      "tag": "🇭🇰 香港2|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "hkkh11v1.xpmc.cc",
+      "server_port": 40527,
+      "method": "chacha20-ietf-poly1305",
+      "password": "91a41f4e02dc",
+      "plugin": "v2ray-plugin",
+      "multiplex": {
+        "enabled": true
+      },
+      "plugin_opts": "mode=websocket;host=hkkh11v1.xpmc.cc;path=/utvbnrzejpmt;tls;skip-cert-verify=false"
+    },
+    {
+      "tag": "🇭🇰 香港3|@ripaojiedian",
+      "type": "vmess",
+      "server": "120.198.71.216",
+      "server_port": 35921,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "tag": "🇭🇰 香港4|@ripaojiedian",
+      "type": "vmess",
+      "server": "43.247.135.192",
+      "server_port": 19504,
+      "uuid": "1322968d-536f-4dd4-8cea-fee6c04e2d97",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇭🇰 香港6|@ripaojiedian",
+      "type": "vmess",
+      "server": "v9.heduian.link",
+      "server_port": 30809,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "baidu.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港7|@ripaojiedian",
+      "type": "vmess",
+      "server": "v9.heduian.link",
+      "server_port": 30809,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "baidu.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "cn01.efan8867801.xyz",
+      "server_port": 8766,
+      "method": "rc4-md5",
+      "password": "efanccyun",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=202505251086349-rPj9lOAxlj.download.microsoft.com"
+    },
+    {
+      "tag": "🇯🇵 日本2|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "103.140.136.76",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "04e28ee6e6b0",
+      "plugin": "v2ray-plugin",
+      "multiplex": {
+        "enabled": true
+      },
+      "plugin_opts": "mode=websocket;host=jp1v9.8vote.cn;path=/qfrjtumkddnc;tls;skip-cert-verify=false"
+    },
+    {
+      "tag": "🇯🇵 日本3|@ripaojiedian",
+      "type": "vmess",
+      "server": "183.237.84.53",
+      "server_port": 55002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "tag": "🇰🇷 韩国|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "p231.panda004.net",
+      "server_port": 11389,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "tag": "🇰🇷 韩国2|@ripaojiedian",
+      "type": "trojan",
+      "server": "36.151.251.59",
+      "server_port": 44907,
+      "password": "RlzoEILU",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.egvra.cn",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡|@ripaojiedian",
+      "type": "vmess",
+      "server": "v12.heduian.link",
+      "server_port": 30812,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocbc.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡2|@ripaojiedian",
+      "type": "vmess",
+      "server": "183.236.51.38",
+      "server_port": 49121,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 64
+    },
+    {
+      "tag": "🇸🇬 新加坡3|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "ti3hyra4.slashdevslashnetslashtun.net",
+      "server_port": 16002,
+      "method": "aes-256-gcm",
+      "password": "0JR5J197C0KDI6O5"
+    },
+    {
+      "tag": "🇸🇬 新加坡4|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "18.140.199.169",
+      "server_port": 9898,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1a17b19d-4896-4531-af79-6e91d8ef8228"
+    },
+    {
+      "tag": "🇸🇬 新加坡5|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "8tv68qhq.slashdevslashnetslashtun.net",
+      "server_port": 16014,
+      "method": "aes-256-gcm",
+      "password": "FXLEJQN4Y4G6ZUHJ"
+    },
+    {
+      "tag": "🇺🇸 美国2|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "cn01.efan8867801.xyz",
+      "server_port": 8774,
+      "method": "rc4-md5",
+      "password": "efanccyun",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=202505251086349-rPj9lOAxlj.download.microsoft.com"
+    },
+    {
+      "tag": "🇺🇸 美国|@ripaojiedian",
+      "type": "vmess",
+      "server": "v32.heduian.link",
+      "server_port": 30832,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "baidu.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国3|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "120.233.147.197",
+      "server_port": 23340,
+      "method": "chacha20-ietf-poly1305",
+      "password": "0fbed6c9-0fb4-4ec3-8582-f569f8d773d5"
+    },
+    {
+      "tag": "🇻🇳 越南|@ripaojiedian",
+      "type": "shadowsocks",
+      "server": "103.186.154.38",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}

@@ -1,0 +1,161 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private,googlefcm:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🏳️‍🌈 剩余流量：164.24 GB", server: "yd1.laibajc.top", port: 47219, udp: true, skip-cert-verify: true, sni: "yd1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🏴‍☠️ 距离下次重置剩余：13 天", server: "yd1.laibajc.top", port: 47219, udp: true, skip-cert-verify: true, sni: "yd1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🏴‍☠️ 套餐到期：2025-05-26", server: "yd1.laibajc.top", port: 47219, udp: true, skip-cert-verify: true, sni: "yd1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇮🇳 印度1", server: "yd1.laibajc.top", port: 47219, udp: true, skip-cert-verify: true, sni: "yd1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇸🇬 新加坡2", server: "xjp2.laibajc.top", port: 47217, udp: true, skip-cert-verify: true, sni: "xjp2.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇺🇸 us美国2", server: "us4.laibajc.top", port: 47218, udp: true, skip-cert-verify: true, sni: "us4.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇺🇸 us美国1-多机负载", server: "us1.laibajc.top", port: 47210, udp: true, skip-cert-verify: true, sni: "us1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇸🇬 新加坡1", server: "us2.laibajc.top", port: 47211, udp: true, skip-cert-verify: true, sni: "us2.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇯🇵 日本1", server: "us3.laibajc.top", port: 47212, udp: true, skip-cert-verify: true, sni: "us3.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇦🇺 de澳大利亚1", server: "de1.laibajc.top", port: 47213, udp: true, skip-cert-verify: true, sni: "de1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇨🇳 tw台湾1", server: "tw1.laibajc.top", port: 47214, udp: true, skip-cert-verify: true, sni: "tw1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇷🇺 俄罗斯1", server: "els.laibajc.top", port: 47215, udp: true, skip-cert-verify: true, sni: "els.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+- {name: "🇭🇰 香港1", server: "hk1.laibajc.top", port: 47216, udp: true, skip-cert-verify: true, sni: "hk1.laibajc.top", type: "hysteria2", password: "64caa53b-b269-43ba-935e-050b68f2329d"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🏳️‍🌈 剩余流量：164.24 GB"
+  - "🏴‍☠️ 距离下次重置剩余：13 天"
+  - "🏴‍☠️ 套餐到期：2025-05-26"
+  - "🇮🇳 印度1"
+  - "🇸🇬 新加坡2"
+  - "🇺🇸 us美国2"
+  - "🇺🇸 us美国1-多机负载"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本1"
+  - "🇦🇺 de澳大利亚1"
+  - "🇨🇳 tw台湾1"
+  - "🇷🇺 俄罗斯1"
+  - "🇭🇰 香港1"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🏳️‍🌈 剩余流量：164.24 GB"
+  - "🏴‍☠️ 距离下次重置剩余：13 天"
+  - "🏴‍☠️ 套餐到期：2025-05-26"
+  - "🇮🇳 印度1"
+  - "🇸🇬 新加坡2"
+  - "🇺🇸 us美国2"
+  - "🇺🇸 us美国1-多机负载"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本1"
+  - "🇦🇺 de澳大利亚1"
+  - "🇨🇳 tw台湾1"
+  - "🇷🇺 俄罗斯1"
+  - "🇭🇰 香港1"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "🏳️‍🌈 剩余流量：164.24 GB"
+  - "🏴‍☠️ 距离下次重置剩余：13 天"
+  - "🏴‍☠️ 套餐到期：2025-05-26"
+  - "🇮🇳 印度1"
+  - "🇸🇬 新加坡2"
+  - "🇺🇸 us美国2"
+  - "🇺🇸 us美国1-多机负载"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本1"
+  - "🇦🇺 de澳大利亚1"
+  - "🇨🇳 tw台湾1"
+  - "🇷🇺 俄罗斯1"
+  - "🇭🇰 香港1"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "🏳️‍🌈 剩余流量：164.24 GB"
+  - "🏴‍☠️ 距离下次重置剩余：13 天"
+  - "🏴‍☠️ 套餐到期：2025-05-26"
+  - "🇮🇳 印度1"
+  - "🇸🇬 新加坡2"
+  - "🇺🇸 us美国2"
+  - "🇺🇸 us美国1-多机负载"
+  - "🇸🇬 新加坡1"
+  - "🇯🇵 日本1"
+  - "🇦🇺 de澳大利亚1"
+  - "🇨🇳 tw台湾1"
+  - "🇷🇺 俄罗斯1"
+  - "🇭🇰 香港1"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,DIRECT"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

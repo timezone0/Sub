@@ -1,0 +1,572 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇺🇸 _CN_中国->_US_美国",
+        "🏴‍☠️ 未知",
+        "🇺🇸 _US_美国",
+        "🏴‍☠️ 未知_1",
+        "🏴‍☠️ 未知_2",
+        "🇺🇸 _CN_中国->_US_美国_1",
+        "🏴‍☠️ 未知_3",
+        "🏴‍☠️ 未知_4",
+        "🇰🇷 _KR_韩国",
+        "🇺🇸 _US_美国_1",
+        "🏴‍☠️ 未知_5",
+        "🇺🇸 _US_美国_2",
+        "🇩🇰 _DK_丹麦->_US_美国",
+        "🇺🇸 _CN_中国->_US_美国_2",
+        "🇷🇺 _RU_俄罗斯"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🇺🇸 _CN_中国->_US_美国",
+        "🏴‍☠️ 未知",
+        "🇺🇸 _US_美国",
+        "🏴‍☠️ 未知_1",
+        "🏴‍☠️ 未知_2",
+        "🇺🇸 _CN_中国->_US_美国_1",
+        "🏴‍☠️ 未知_3",
+        "🏴‍☠️ 未知_4",
+        "🇰🇷 _KR_韩国",
+        "🇺🇸 _US_美国_1",
+        "🏴‍☠️ 未知_5",
+        "🇺🇸 _US_美国_2",
+        "🇩🇰 _DK_丹麦->_US_美国",
+        "🇺🇸 _CN_中国->_US_美国_2",
+        "🇷🇺 _RU_俄罗斯"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇺🇸 _CN_中国->_US_美国",
+        "🏴‍☠️ 未知",
+        "🇺🇸 _US_美国",
+        "🏴‍☠️ 未知_1",
+        "🏴‍☠️ 未知_2",
+        "🇺🇸 _CN_中国->_US_美国_1",
+        "🏴‍☠️ 未知_3",
+        "🏴‍☠️ 未知_4",
+        "🇰🇷 _KR_韩国",
+        "🇺🇸 _US_美国_1",
+        "🏴‍☠️ 未知_5",
+        "🇺🇸 _US_美国_2",
+        "🇩🇰 _DK_丹麦->_US_美国",
+        "🇺🇸 _CN_中国->_US_美国_2",
+        "🇷🇺 _RU_俄罗斯"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇺🇸 _CN_中国->_US_美国",
+        "🏴‍☠️ 未知",
+        "🇺🇸 _US_美国",
+        "🏴‍☠️ 未知_1",
+        "🏴‍☠️ 未知_2",
+        "🇺🇸 _CN_中国->_US_美国_1",
+        "🏴‍☠️ 未知_3",
+        "🏴‍☠️ 未知_4",
+        "🇰🇷 _KR_韩国",
+        "🇺🇸 _US_美国_1",
+        "🏴‍☠️ 未知_5",
+        "🇺🇸 _US_美国_2",
+        "🇩🇰 _DK_丹麦->_US_美国",
+        "🇺🇸 _CN_中国->_US_美国_2",
+        "🇷🇺 _RU_俄罗斯"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇺🇸 _CN_中国->_US_美国",
+        "🏴‍☠️ 未知",
+        "🇺🇸 _US_美国",
+        "🏴‍☠️ 未知_1",
+        "🏴‍☠️ 未知_2",
+        "🇺🇸 _CN_中国->_US_美国_1",
+        "🏴‍☠️ 未知_3",
+        "🏴‍☠️ 未知_4",
+        "🇰🇷 _KR_韩国",
+        "🇺🇸 _US_美国_1",
+        "🏴‍☠️ 未知_5",
+        "🇺🇸 _US_美国_2",
+        "🇩🇰 _DK_丹麦->_US_美国",
+        "🇺🇸 _CN_中国->_US_美国_2",
+        "🇷🇺 _RU_俄罗斯"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇺🇸 _CN_中国->_US_美国",
+        "🏴‍☠️ 未知",
+        "🇺🇸 _US_美国",
+        "🏴‍☠️ 未知_1",
+        "🏴‍☠️ 未知_2",
+        "🇺🇸 _CN_中国->_US_美国_1",
+        "🏴‍☠️ 未知_3",
+        "🏴‍☠️ 未知_4",
+        "🇰🇷 _KR_韩国",
+        "🇺🇸 _US_美国_1",
+        "🏴‍☠️ 未知_5",
+        "🇺🇸 _US_美国_2",
+        "🇩🇰 _DK_丹麦->_US_美国",
+        "🇺🇸 _CN_中国->_US_美国_2",
+        "🇷🇺 _RU_俄罗斯"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🇺🇸 _CN_中国->_US_美国",
+      "type": "vmess",
+      "server": "v29.heduian.link",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocbc.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 未知",
+      "type": "trojan",
+      "server": "cache-giver-wife.stark-industries.solutions",
+      "server_port": 443,
+      "password": "e6a2e741-0fce-440b-910c-b81325e2263a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cache-giver-wife.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 _US_美国",
+      "type": "shadowsocks",
+      "server": "34.215.48.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "awsps0501"
+    },
+    {
+      "tag": "🏴‍☠️ 未知_1",
+      "type": "trojan",
+      "server": "bring-glove-shine.stark-industries.solutions",
+      "server_port": 443,
+      "password": "e6a2e741-0fce-440b-910c-b81325e2263a",
+      "tls": {
+        "enabled": true,
+        "server_name": "bring-glove-shine.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 未知_2",
+      "type": "trojan",
+      "server": "strut-brisk-scope.stark-industries.solutions",
+      "server_port": 443,
+      "password": "e6a2e741-0fce-440b-910c-b81325e2263a",
+      "tls": {
+        "enabled": true,
+        "server_name": "strut-brisk-scope.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 _CN_中国->_US_美国_1",
+      "type": "vmess",
+      "server": "v5.heduian.link",
+      "server_port": 30805,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "v5.heduian.link"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 未知_3",
+      "type": "trojan",
+      "server": "chop-wrist-bud.stark-industries.solutions",
+      "server_port": 443,
+      "password": "3482c71a-d01c-4ae5-b454-fa8cb3785f66",
+      "tls": {
+        "enabled": true,
+        "server_name": "chop-wrist-bud.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 未知_4",
+      "type": "trojan",
+      "server": "guy-trace-lyric.stark-industries.solutions",
+      "server_port": 443,
+      "password": "3482c71a-d01c-4ae5-b454-fa8cb3785f66",
+      "tls": {
+        "enabled": true,
+        "server_name": "guy-trace-lyric.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇰🇷 _KR_韩国",
+      "type": "shadowsocks",
+      "server": "154.223.16.212",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇺🇸 _US_美国_1",
+      "type": "trojan",
+      "server": "94.131.20.3",
+      "server_port": 443,
+      "password": "3482c71a-d01c-4ae5-b454-fa8cb3785f66",
+      "tls": {
+        "enabled": true,
+        "server_name": "chop-wrist-bud.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🏴‍☠️ 未知_5",
+      "type": "trojan",
+      "server": "bats-paper-chump.stark-industries.solutions",
+      "server_port": 443,
+      "password": "e6a2e741-0fce-440b-910c-b81325e2263a",
+      "tls": {
+        "enabled": true,
+        "server_name": "bats-paper-chump.stark-industries.solutions",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 _US_美国_2",
+      "type": "trojan",
+      "server": "172.67.181.193",
+      "server_port": 443,
+      "password": "c8eac4b7-95ba-4ce0-920d-c3279eb3b391",
+      "tls": {
+        "enabled": true,
+        "server_name": "EEeEee4.hUAngSHANG2030.dPdNS.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "EEeEee4.hUAngSHANG2030.dPdNS.org"
+        },
+        "path": "/ptGwaGzcA4KNAXX"
+      }
+    },
+    {
+      "tag": "🇩🇰 _DK_丹麦->_US_美国",
+      "type": "vmess",
+      "server": "csgo.com",
+      "server_port": 2086,
+      "uuid": "c21b972a-bc92-4f8c-8e6a-6868001f7f88",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ustoucjjnid18sj6us.lovebaipiao.com"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 _CN_中国->_US_美国_2",
+      "type": "trojan",
+      "server": "d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net",
+      "server_port": 15229,
+      "password": "b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇷🇺 _RU_俄罗斯",
+      "type": "shadowsocks",
+      "server": "185.231.233.112",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}

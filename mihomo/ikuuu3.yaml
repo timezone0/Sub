@@ -1,0 +1,162 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇯🇵 免费-日本1-Ver.6", server: "rlatw-g05.jp01-0986-vm0.entry.fr0307a.art", port: 21585, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: false, udp: true, servername: "rlatw-g05.jp01-0986-vm0.entry.fr0307a.art"}
+- {name: "🇯🇵 免费-日本2-Ver.7", server: "j2b4n-g05.jp02-9a99-vm0.entry.fr0307a.art", port: 11777, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇯🇵 免费-日本3-Ver.6", server: "fjekq-g05.jp03-7d22-vm0.entry.fr0307a.art", port: 21585, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: false, udp: true, servername: "fjekq-g05.jp03-7d22-vm0.entry.fr0307a.art"}
+- {name: "🇯🇵 免费-日本4-Ver.7", server: "zu4jg-g05.jp04-3771-vm0.entry.fr0307a.art", port: 448, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇯🇵 免费-日本5-Ver.8", server: "4icpk-g05.jp05-6786-vm0.entry.fr0307a.art", port: 46486, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇯🇵 免费-日本6-Ver.7", server: "gy22j-g05.jp06-7c5a-vm0.entry.fr0307a.art", port: 28787, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: false, udp: true, servername: "gy22j-g05.jp06-7c5a-vm0.entry.fr0307a.art"}
+- {name: "🇯🇵 免费-日本7-Ver.1", server: "2z6j0-g05.jp07-1f28-vm0.entry.fr0307a.art", port: 28787, type: "vmess", uuid: "3e7347c1-83dc-3ceb-9e07-d4484c056d32", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本2-Ver.7"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本2-Ver.7"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本2-Ver.7"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本2-Ver.7"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本2-Ver.7"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇯🇵 免费-日本1-Ver.6"
+  - "🇯🇵 免费-日本2-Ver.7"
+  - "🇯🇵 免费-日本3-Ver.6"
+  - "🇯🇵 免费-日本4-Ver.7"
+  - "🇯🇵 免费-日本5-Ver.8"
+  - "🇯🇵 免费-日本6-Ver.7"
+  - "🇯🇵 免费-日本7-Ver.1"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

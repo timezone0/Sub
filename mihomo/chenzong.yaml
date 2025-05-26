@@ -1,0 +1,160 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🏴‍☠️ 免费节点群：t.me/ccdjbQaQ", server: "35.75.160.251", port: 443, type: "vless", uuid: "f4522b1a-7cc2-4d4b-84c5-357242e052bb", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "jd.chenchuanjin.sbs"}}, servername: "jd.chenchuanjin.sbs"}
+- {name: "🇯🇵 日本亚马逊/不要测速！", server: "35.75.160.251", port: 443, type: "vless", uuid: "f4522b1a-7cc2-4d4b-84c5-357242e052bb", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "jd.chenchuanjin.sbs"}}, servername: "jd.chenchuanjin.sbs"}
+- {name: "🇸🇬 新加坡/不要测速！", server: "3.0.39.179", port: 443, type: "vless", uuid: "f4522b1a-7cc2-4d4b-84c5-357242e052bb", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "jd.chenchuanjin.sbs"}}, servername: "jd.chenchuanjin.sbs"}
+- {name: "🇺🇸 美国", server: "xui.chenchuanjin.sbs", port: 52338, type: "vless", uuid: "7ee5f5fd-fb1a-4630-8d35-d41e073b46d3", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "v8cRa28zpycKEwMHDLgdUmH1748iOHALOCAjRabj0ys", short-id: "9c221325"}, client-fingerprint: "chrome", network: "tcp", servername: "www.yahoo.com"}
+- {name: "🇭🇰 香港", server: "xg2.31427397.xyz", port: 443, type: "vless", uuid: "7bd9ff37-f419-4470-c645-428e237a22f6", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xg2.31427397.xyz"}}, servername: "xg2.31427397.xyz"}
+- {name: "🇯🇵 日本", server: "riben2.31427397.xyz", port: 443, type: "vless", uuid: "b5f3ea41-78d3-454a-bd4d-292e5636783e", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "riben2.31427397.xyz"}}, servername: "riben2.31427397.xyz"}
+- {name: "🇯🇵 日本cf反代", server: "74.82.194.233", port: 443, type: "vless", uuid: "b5f3ea41-78d3-454a-bd4d-292e5636783e", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "riben2.31427397.xyz"}}, servername: "riben2.31427397.xyz"}
+- {name: "🇮🇹 意大利", server: "ydl.31427397.xyz", port: 16638, type: "vless", uuid: "8e4ece90-97ab-4a6d-8099-22f4e4d0c751", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "pM83R4Rm57yjD-EHSUBRI690nwVmPR0UF5PjzGGr_xw", short-id: "4873b39f"}, client-fingerprint: "chrome", network: "tcp", servername: "www.yahoo.com"}
+- {name: "🇸🇬 SG_t.me/ccdjbQaQ", server: "52.76.137.189", port: 443, type: "vless", uuid: "63601f9f-7c67-4952-919a-1ef802b5a7ec", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "steep.skyfigure.top"}}, servername: "steep.skyfigure.top"}
+- {name: "🇺🇸 US_t.me/ccdjbQaQ", server: "47.245.105.192", port: 443, type: "vless", uuid: "1a79d43f-b41c-496b-a241-dcbeefa81f0e", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "0926.qiang2000.link"}}, servername: "0926.qiang2000.link"}
+- {name: "🇰🇷 KR_t.me/ccdjbQaQ", server: "14.52.132.109", port: 50000, type: "vless", uuid: "63601f9f-7c67-4952-919a-1ef802b5a7ec", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "steep.skyfigure.top"}}, servername: "steep.skyfigure.top"}
+- {name: "🇺🇸 Madcity-US 02", server: "104.18.148.234", port: 443, type: "vless", uuid: "d69b938c-cbf4-4b61-aa97-e5762c304a25", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "madcity2.777999.lol"}}, servername: "madcity2.777999.lol"}
+- {name: "🇻🇳 [Hy2]越南01youtube免广告", server: "vn1.xiaoliyu.us", port: 30220, type: "hysteria2", password: "ab4c9bf8-6bed-4dac-ba4e-461d8f589eda", auth: "ab4c9bf8-6bed-4dac-ba4e-461d8f589eda", sni: "vn1.xiaoliyu.us", skip-cert-verify: true}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🏴‍☠️ 免费节点群：t.me/ccdjbQaQ"
+  - "🇯🇵 日本亚马逊/不要测速！"
+  - "🇸🇬 新加坡/不要测速！"
+  - "🇺🇸 美国"
+  - "🇭🇰 香港"
+  - "🇯🇵 日本"
+  - "🇯🇵 日本cf反代"
+  - "🇮🇹 意大利"
+  - "🇸🇬 SG_t.me/ccdjbQaQ"
+  - "🇺🇸 US_t.me/ccdjbQaQ"
+  - "🇰🇷 KR_t.me/ccdjbQaQ"
+  - "🇺🇸 Madcity-US 02"
+  - "🇻🇳 [Hy2]越南01youtube免广告"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🏴‍☠️ 免费节点群：t.me/ccdjbQaQ"
+  - "🇯🇵 日本亚马逊/不要测速！"
+  - "🇸🇬 新加坡/不要测速！"
+  - "🇺🇸 美国"
+  - "🇭🇰 香港"
+  - "🇯🇵 日本"
+  - "🇯🇵 日本cf反代"
+  - "🇮🇹 意大利"
+  - "🇸🇬 SG_t.me/ccdjbQaQ"
+  - "🇺🇸 US_t.me/ccdjbQaQ"
+  - "🇰🇷 KR_t.me/ccdjbQaQ"
+  - "🇺🇸 Madcity-US 02"
+  - "🇻🇳 [Hy2]越南01youtube免广告"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "🏴‍☠️ 免费节点群：t.me/ccdjbQaQ"
+  - "🇯🇵 日本亚马逊/不要测速！"
+  - "🇸🇬 新加坡/不要测速！"
+  - "🇺🇸 美国"
+  - "🇭🇰 香港"
+  - "🇯🇵 日本"
+  - "🇯🇵 日本cf反代"
+  - "🇮🇹 意大利"
+  - "🇸🇬 SG_t.me/ccdjbQaQ"
+  - "🇺🇸 US_t.me/ccdjbQaQ"
+  - "🇰🇷 KR_t.me/ccdjbQaQ"
+  - "🇺🇸 Madcity-US 02"
+  - "🇻🇳 [Hy2]越南01youtube免广告"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "🏴‍☠️ 免费节点群：t.me/ccdjbQaQ"
+  - "🇯🇵 日本亚马逊/不要测速！"
+  - "🇸🇬 新加坡/不要测速！"
+  - "🇺🇸 美国"
+  - "🇭🇰 香港"
+  - "🇯🇵 日本"
+  - "🇯🇵 日本cf反代"
+  - "🇮🇹 意大利"
+  - "🇸🇬 SG_t.me/ccdjbQaQ"
+  - "🇺🇸 US_t.me/ccdjbQaQ"
+  - "🇰🇷 KR_t.me/ccdjbQaQ"
+  - "🇺🇸 Madcity-US 02"
+  - "🇻🇳 [Hy2]越南01youtube免广告"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

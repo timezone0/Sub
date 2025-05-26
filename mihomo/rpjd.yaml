@@ -1,0 +1,260 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🏴‍☠️ tg频道:@ripaojiedian", server: "54.248.176.238", port: 443, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "awsps0501", tfo: false}
+- {name: "🇭🇰 香港|@ripaojiedian", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15010, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "ENYGONDU94UW1G6X", tfo: false}
+- {name: "🇭🇰 香港2|@ripaojiedian", server: "hkkh11v1.xpmc.cc", port: 40527, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "91a41f4e02dc", tfo: false, plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "hkkh11v1.xpmc.cc", path: "/utvbnrzejpmt", tls: true, mux: true, skip-cert-verify: false}}
+- {name: "🇭🇰 香港3|@ripaojiedian", server: "120.198.71.216", port: 35921, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇭🇰 香港4|@ripaojiedian", server: "43.247.135.192", port: 19504, client-fingerprint: "chrome", type: "vmess", uuid: "1322968d-536f-4dd4-8cea-fee6c04e2d97", alterId: 0, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇭🇰 香港6|@ripaojiedian", server: "v9.heduian.link", port: 30809, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇭🇰 香港7|@ripaojiedian", server: "v9.heduian.link", port: 30809, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇯🇵 日本|@ripaojiedian", server: "cn01.efan8867801.xyz", port: 8766, client-fingerprint: "chrome", type: "ss", cipher: "rc4-md5", password: "efanccyun", tfo: false, plugin: "obfs", plugin-opts: {mode: "http", host: "202505251086349-rPj9lOAxlj.download.microsoft.com"}}
+- {name: "🇯🇵 日本2|@ripaojiedian", server: "103.140.136.76", port: 443, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "04e28ee6e6b0", tfo: false, plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "jp1v9.8vote.cn", path: "/qfrjtumkddnc", tls: true, mux: true, skip-cert-verify: false}}
+- {name: "🇯🇵 日本3|@ripaojiedian", server: "183.237.84.53", port: 55002, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇰🇷 韩国|@ripaojiedian", server: "p231.panda004.net", port: 11389, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: false}
+- {name: "🇰🇷 韩国2|@ripaojiedian", server: "36.151.251.59", port: 44907, client-fingerprint: "chrome", type: "trojan", password: "RlzoEILU", sni: "cdn.egvra.cn", skip-cert-verify: false}
+- {name: "🇸🇬 新加坡|@ripaojiedian", server: "v12.heduian.link", port: 30812, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇸🇬 新加坡2|@ripaojiedian", server: "183.236.51.38", port: 49121, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇸🇬 新加坡3|@ripaojiedian", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16002, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "0JR5J197C0KDI6O5", tfo: false}
+- {name: "🇸🇬 新加坡4|@ripaojiedian", server: "18.140.199.169", port: 9898, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "1a17b19d-4896-4531-af79-6e91d8ef8228", tfo: false}
+- {name: "🇸🇬 新加坡5|@ripaojiedian", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 16014, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "FXLEJQN4Y4G6ZUHJ", tfo: false}
+- {name: "🇺🇸 美国2|@ripaojiedian", server: "cn01.efan8867801.xyz", port: 8774, client-fingerprint: "chrome", type: "ss", cipher: "rc4-md5", password: "efanccyun", tfo: false, plugin: "obfs", plugin-opts: {mode: "http", host: "202505251086349-rPj9lOAxlj.download.microsoft.com"}}
+- {name: "🇺🇸 美国|@ripaojiedian", server: "v32.heduian.link", port: 30832, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国3|@ripaojiedian", server: "120.233.147.197", port: 23340, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "0fbed6c9-0fb4-4ec3-8582-f569f8d773d5", tfo: false}
+- {name: "🇻🇳 越南|@ripaojiedian", server: "103.186.154.38", port: 38388, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", tfo: false}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🏴‍☠️ tg频道:@ripaojiedian"
+  - "🇭🇰 香港|@ripaojiedian"
+  - "🇭🇰 香港2|@ripaojiedian"
+  - "🇭🇰 香港3|@ripaojiedian"
+  - "🇭🇰 香港4|@ripaojiedian"
+  - "🇭🇰 香港6|@ripaojiedian"
+  - "🇭🇰 香港7|@ripaojiedian"
+  - "🇯🇵 日本|@ripaojiedian"
+  - "🇯🇵 日本2|@ripaojiedian"
+  - "🇯🇵 日本3|@ripaojiedian"
+  - "🇰🇷 韩国|@ripaojiedian"
+  - "🇰🇷 韩国2|@ripaojiedian"
+  - "🇸🇬 新加坡|@ripaojiedian"
+  - "🇸🇬 新加坡2|@ripaojiedian"
+  - "🇸🇬 新加坡3|@ripaojiedian"
+  - "🇸🇬 新加坡4|@ripaojiedian"
+  - "🇸🇬 新加坡5|@ripaojiedian"
+  - "🇺🇸 美国2|@ripaojiedian"
+  - "🇺🇸 美国|@ripaojiedian"
+  - "🇺🇸 美国3|@ripaojiedian"
+  - "🇻🇳 越南|@ripaojiedian"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🏴‍☠️ tg频道:@ripaojiedian"
+  - "🇭🇰 香港|@ripaojiedian"
+  - "🇭🇰 香港2|@ripaojiedian"
+  - "🇭🇰 香港3|@ripaojiedian"
+  - "🇭🇰 香港4|@ripaojiedian"
+  - "🇭🇰 香港6|@ripaojiedian"
+  - "🇭🇰 香港7|@ripaojiedian"
+  - "🇯🇵 日本|@ripaojiedian"
+  - "🇯🇵 日本2|@ripaojiedian"
+  - "🇯🇵 日本3|@ripaojiedian"
+  - "🇰🇷 韩国|@ripaojiedian"
+  - "🇰🇷 韩国2|@ripaojiedian"
+  - "🇸🇬 新加坡|@ripaojiedian"
+  - "🇸🇬 新加坡2|@ripaojiedian"
+  - "🇸🇬 新加坡3|@ripaojiedian"
+  - "🇸🇬 新加坡4|@ripaojiedian"
+  - "🇸🇬 新加坡5|@ripaojiedian"
+  - "🇺🇸 美国2|@ripaojiedian"
+  - "🇺🇸 美国|@ripaojiedian"
+  - "🇺🇸 美国3|@ripaojiedian"
+  - "🇻🇳 越南|@ripaojiedian"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🏴‍☠️ tg频道:@ripaojiedian"
+  - "🇭🇰 香港|@ripaojiedian"
+  - "🇭🇰 香港2|@ripaojiedian"
+  - "🇭🇰 香港3|@ripaojiedian"
+  - "🇭🇰 香港4|@ripaojiedian"
+  - "🇭🇰 香港6|@ripaojiedian"
+  - "🇭🇰 香港7|@ripaojiedian"
+  - "🇯🇵 日本|@ripaojiedian"
+  - "🇯🇵 日本2|@ripaojiedian"
+  - "🇯🇵 日本3|@ripaojiedian"
+  - "🇰🇷 韩国|@ripaojiedian"
+  - "🇰🇷 韩国2|@ripaojiedian"
+  - "🇸🇬 新加坡|@ripaojiedian"
+  - "🇸🇬 新加坡2|@ripaojiedian"
+  - "🇸🇬 新加坡3|@ripaojiedian"
+  - "🇸🇬 新加坡4|@ripaojiedian"
+  - "🇸🇬 新加坡5|@ripaojiedian"
+  - "🇺🇸 美国2|@ripaojiedian"
+  - "🇺🇸 美国|@ripaojiedian"
+  - "🇺🇸 美国3|@ripaojiedian"
+  - "🇻🇳 越南|@ripaojiedian"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🏴‍☠️ tg频道:@ripaojiedian"
+  - "🇭🇰 香港|@ripaojiedian"
+  - "🇭🇰 香港2|@ripaojiedian"
+  - "🇭🇰 香港3|@ripaojiedian"
+  - "🇭🇰 香港4|@ripaojiedian"
+  - "🇭🇰 香港6|@ripaojiedian"
+  - "🇭🇰 香港7|@ripaojiedian"
+  - "🇯🇵 日本|@ripaojiedian"
+  - "🇯🇵 日本2|@ripaojiedian"
+  - "🇯🇵 日本3|@ripaojiedian"
+  - "🇰🇷 韩国|@ripaojiedian"
+  - "🇰🇷 韩国2|@ripaojiedian"
+  - "🇸🇬 新加坡|@ripaojiedian"
+  - "🇸🇬 新加坡2|@ripaojiedian"
+  - "🇸🇬 新加坡3|@ripaojiedian"
+  - "🇸🇬 新加坡4|@ripaojiedian"
+  - "🇸🇬 新加坡5|@ripaojiedian"
+  - "🇺🇸 美国2|@ripaojiedian"
+  - "🇺🇸 美国|@ripaojiedian"
+  - "🇺🇸 美国3|@ripaojiedian"
+  - "🇻🇳 越南|@ripaojiedian"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🏴‍☠️ tg频道:@ripaojiedian"
+  - "🇭🇰 香港|@ripaojiedian"
+  - "🇭🇰 香港2|@ripaojiedian"
+  - "🇭🇰 香港3|@ripaojiedian"
+  - "🇭🇰 香港4|@ripaojiedian"
+  - "🇭🇰 香港6|@ripaojiedian"
+  - "🇭🇰 香港7|@ripaojiedian"
+  - "🇯🇵 日本|@ripaojiedian"
+  - "🇯🇵 日本2|@ripaojiedian"
+  - "🇯🇵 日本3|@ripaojiedian"
+  - "🇰🇷 韩国|@ripaojiedian"
+  - "🇰🇷 韩国2|@ripaojiedian"
+  - "🇸🇬 新加坡|@ripaojiedian"
+  - "🇸🇬 新加坡2|@ripaojiedian"
+  - "🇸🇬 新加坡3|@ripaojiedian"
+  - "🇸🇬 新加坡4|@ripaojiedian"
+  - "🇸🇬 新加坡5|@ripaojiedian"
+  - "🇺🇸 美国2|@ripaojiedian"
+  - "🇺🇸 美国|@ripaojiedian"
+  - "🇺🇸 美国3|@ripaojiedian"
+  - "🇻🇳 越南|@ripaojiedian"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🏴‍☠️ tg频道:@ripaojiedian"
+  - "🇭🇰 香港|@ripaojiedian"
+  - "🇭🇰 香港2|@ripaojiedian"
+  - "🇭🇰 香港3|@ripaojiedian"
+  - "🇭🇰 香港4|@ripaojiedian"
+  - "🇭🇰 香港6|@ripaojiedian"
+  - "🇭🇰 香港7|@ripaojiedian"
+  - "🇯🇵 日本|@ripaojiedian"
+  - "🇯🇵 日本2|@ripaojiedian"
+  - "🇯🇵 日本3|@ripaojiedian"
+  - "🇰🇷 韩国|@ripaojiedian"
+  - "🇰🇷 韩国2|@ripaojiedian"
+  - "🇸🇬 新加坡|@ripaojiedian"
+  - "🇸🇬 新加坡2|@ripaojiedian"
+  - "🇸🇬 新加坡3|@ripaojiedian"
+  - "🇸🇬 新加坡4|@ripaojiedian"
+  - "🇸🇬 新加坡5|@ripaojiedian"
+  - "🇺🇸 美国2|@ripaojiedian"
+  - "🇺🇸 美国|@ripaojiedian"
+  - "🇺🇸 美国3|@ripaojiedian"
+  - "🇻🇳 越南|@ripaojiedian"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"
