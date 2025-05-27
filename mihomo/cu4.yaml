@@ -108,6 +108,12 @@ proxies:
 - {name: "🇭🇰 HK-HY2", server: "2401:b60:5:7801:aa3b:4fd1:2b6f:fbab", port: 2096, type: "hysteria2", password: "4376c0b7-06c1-36b7-bd87-1448b3664c18", auth: "4376c0b7-06c1-36b7-bd87-1448b3664c18", skip-cert-verify: true, alpn: ["h3"]}
 - {name: "🇮🇳 印度2", server: "in.yiliujichang.com", port: 40098, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "in.yiliujichang.com"}
 - {name: "🇺🇸 美国2", server: "us.yiliujichang.com", port: 46571, type: "hysteria2", password: "acb84f53-5fae-4127-8499-9330ea8a9ef9", auth: "acb84f53-5fae-4127-8499-9330ea8a9ef9", skip-cert-verify: true, sni: "us.yiliujichang.com"}
+- {name: "🏴‍☠️ CF_V8_usa.visa.com_443", server: "usa.visa.com", port: 443, type: "vless", uuid: "67c662fa-cd6a-474a-b55f-d50dc0a7e210", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "iamdt.pages.dev"}}, servername: "iamdt.pages.dev"}
+- {name: "🇲🇲 CF_V9_myanmar.visa.com_8443", server: "myanmar.visa.com", port: 8443, type: "vless", uuid: "67c662fa-cd6a-474a-b55f-d50dc0a7e210", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "iamdt.pages.dev"}}, servername: "iamdt.pages.dev"}
+- {name: "🏴‍☠️ CF_V10_www.visa.com.tw_2053", server: "www.visa.com.tw", port: 2053, type: "vless", uuid: "67c662fa-cd6a-474a-b55f-d50dc0a7e210", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "iamdt.pages.dev"}}, servername: "iamdt.pages.dev"}
+- {name: "🏴‍☠️ CF_V11_www.visaeurope.ch_2083", server: "www.visaeurope.ch", port: 2083, type: "vless", uuid: "67c662fa-cd6a-474a-b55f-d50dc0a7e210", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "iamdt.pages.dev"}}, servername: "iamdt.pages.dev"}
+- {name: "🏴‍☠️ CF_V12_www.visa.com.br_2087", server: "www.visa.com.br", port: 2087, type: "vless", uuid: "67c662fa-cd6a-474a-b55f-d50dc0a7e210", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "iamdt.pages.dev"}}, servername: "iamdt.pages.dev"}
+- {name: "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096", server: "www.visasoutheasteurope.com", port: 2096, type: "vless", uuid: "67c662fa-cd6a-474a-b55f-d50dc0a7e210", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "iamdt.pages.dev"}}, servername: "iamdt.pages.dev"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -158,6 +164,12 @@ proxy-groups:
   - "🇭🇰 HK-HY2"
   - "🇮🇳 印度2"
   - "🇺🇸 美国2"
+  - "🏴‍☠️ CF_V8_usa.visa.com_443"
+  - "🇲🇲 CF_V9_myanmar.visa.com_8443"
+  - "🏴‍☠️ CF_V10_www.visa.com.tw_2053"
+  - "🏴‍☠️ CF_V11_www.visaeurope.ch_2083"
+  - "🏴‍☠️ CF_V12_www.visa.com.br_2087"
+  - "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -209,6 +221,12 @@ proxy-groups:
   - "🇭🇰 HK-HY2"
   - "🇮🇳 印度2"
   - "🇺🇸 美国2"
+  - "🏴‍☠️ CF_V8_usa.visa.com_443"
+  - "🇲🇲 CF_V9_myanmar.visa.com_8443"
+  - "🏴‍☠️ CF_V10_www.visa.com.tw_2053"
+  - "🏴‍☠️ CF_V11_www.visaeurope.ch_2083"
+  - "🏴‍☠️ CF_V12_www.visa.com.br_2087"
+  - "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096"
 - name: "AI"
   type: "select"
   proxies:
@@ -258,6 +276,12 @@ proxy-groups:
   - "🇭🇰 HK-HY2"
   - "🇮🇳 印度2"
   - "🇺🇸 美国2"
+  - "🏴‍☠️ CF_V8_usa.visa.com_443"
+  - "🇲🇲 CF_V9_myanmar.visa.com_8443"
+  - "🏴‍☠️ CF_V10_www.visa.com.tw_2053"
+  - "🏴‍☠️ CF_V11_www.visaeurope.ch_2083"
+  - "🏴‍☠️ CF_V12_www.visa.com.br_2087"
+  - "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -308,6 +332,12 @@ proxy-groups:
   - "🇭🇰 HK-HY2"
   - "🇮🇳 印度2"
   - "🇺🇸 美国2"
+  - "🏴‍☠️ CF_V8_usa.visa.com_443"
+  - "🇲🇲 CF_V9_myanmar.visa.com_8443"
+  - "🏴‍☠️ CF_V10_www.visa.com.tw_2053"
+  - "🏴‍☠️ CF_V11_www.visaeurope.ch_2083"
+  - "🏴‍☠️ CF_V12_www.visa.com.br_2087"
+  - "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -358,6 +388,12 @@ proxy-groups:
   - "🇭🇰 HK-HY2"
   - "🇮🇳 印度2"
   - "🇺🇸 美国2"
+  - "🏴‍☠️ CF_V8_usa.visa.com_443"
+  - "🇲🇲 CF_V9_myanmar.visa.com_8443"
+  - "🏴‍☠️ CF_V10_www.visa.com.tw_2053"
+  - "🏴‍☠️ CF_V11_www.visaeurope.ch_2083"
+  - "🏴‍☠️ CF_V12_www.visa.com.br_2087"
+  - "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -408,6 +444,12 @@ proxy-groups:
   - "🇭🇰 HK-HY2"
   - "🇮🇳 印度2"
   - "🇺🇸 美国2"
+  - "🏴‍☠️ CF_V8_usa.visa.com_443"
+  - "🇲🇲 CF_V9_myanmar.visa.com_8443"
+  - "🏴‍☠️ CF_V10_www.visa.com.tw_2053"
+  - "🏴‍☠️ CF_V11_www.visaeurope.ch_2083"
+  - "🏴‍☠️ CF_V12_www.visa.com.br_2087"
+  - "🏴‍☠️ CF_V13_www.visasoutheasteurope.com_2096"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
