@@ -63,64 +63,85 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇧🇬 _BG_保加利亚->_US_美国", type: "trojan", server: "87.121.33.202", port: 443, sni: "safe-flounder.shiner427.skin", password: "74260653385993900", skip-cert-verify: false}
-- {name: "🇺🇸 _CN_中国->_US_美国", type: "trojan", server: "eac1462b-swxgg0-sxkd63-17z95.cu.plebai.net", port: 15229, sni: "eac1462b-swxgg0-sxkd63-17z95.cu.plebai.net", password: "0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9", skip-cert-verify: false}
+- {name: "🇺🇸 _US_美国", type: "vmess", server: "Xcvfgt5.222560.xyz", port: 80, uuid: "19a78eeb-d83a-4364-b095-b7dd93436320", cipher: "auto", network: "ws", ws-opts: {path: "/7LBPethgWxDoVuzO0WLijID", headers: {Host: "xcvfgt5.222560.xyz"}}, alterId: 0}
+- {name: "🇺🇸 _CN_中国->_US_美国", type: "trojan", server: "36.151.251.62", port: 13542, sni: "cdn.egvra.cn", password: "RlzoEILU", skip-cert-verify: true}
+- {name: "🇺🇸 _CN_中国->_US_美国_1", type: "trojan", server: "120.233.44.201", port: 21102, sni: "120.233.44.201", password: "2b1ed981-6547-4094-998b-06a3323d6f6c", skip-cert-verify: true}
+- {name: "🇫🇷 _FR_法国", type: "ss", server: "195.154.54.171", port: 13355, cipher: "aes-256-gcm", password: "dongtaiwang.com"}
+- {name: "🇰🇷 _US_美国->_KR_韩国", type: "trojan", server: "13.60.86.63", port: 443, sni: "loosely.freetrade.link", password: "FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn"}
 - {name: "🇷🇺 _RU_俄罗斯", type: "ss", server: "185.231.233.112", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇫🇷 _FR_法国->_US_美国", type: "ss", server: "195.154.54.171", port: 13355, cipher: "aes-256-gcm", password: "dongtaiwang.com"}
+- {name: "🇫🇷 _GB_英国->_FR_法国", type: "trojan", server: "51.44.100.175", port: 22222, sni: "trojan.burgerip.co.uk", password: "telegram-id-privatevpns", alpn: ["http/1.1"]}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇧🇬 _BG_保加利亚->_US_美国"
+  - "🇺🇸 _US_美国"
   - "🇺🇸 _CN_中国->_US_美国"
+  - "🇺🇸 _CN_中国->_US_美国_1"
+  - "🇫🇷 _FR_法国"
+  - "🇰🇷 _US_美国->_KR_韩国"
   - "🇷🇺 _RU_俄罗斯"
-  - "🇫🇷 _FR_法国->_US_美国"
+  - "🇫🇷 _GB_英国->_FR_法国"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
-  - "🇧🇬 _BG_保加利亚->_US_美国"
+  - "🇺🇸 _US_美国"
   - "🇺🇸 _CN_中国->_US_美国"
+  - "🇺🇸 _CN_中国->_US_美国_1"
+  - "🇫🇷 _FR_法国"
+  - "🇰🇷 _US_美国->_KR_韩国"
   - "🇷🇺 _RU_俄罗斯"
-  - "🇫🇷 _FR_法国->_US_美国"
+  - "🇫🇷 _GB_英国->_FR_法国"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇧🇬 _BG_保加利亚->_US_美国"
+  - "🇺🇸 _US_美国"
   - "🇺🇸 _CN_中国->_US_美国"
+  - "🇺🇸 _CN_中国->_US_美国_1"
+  - "🇫🇷 _FR_法国"
+  - "🇰🇷 _US_美国->_KR_韩国"
   - "🇷🇺 _RU_俄罗斯"
-  - "🇫🇷 _FR_法国->_US_美国"
+  - "🇫🇷 _GB_英国->_FR_法国"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇧🇬 _BG_保加利亚->_US_美国"
+  - "🇺🇸 _US_美国"
   - "🇺🇸 _CN_中国->_US_美国"
+  - "🇺🇸 _CN_中国->_US_美国_1"
+  - "🇫🇷 _FR_法国"
+  - "🇰🇷 _US_美国->_KR_韩国"
   - "🇷🇺 _RU_俄罗斯"
-  - "🇫🇷 _FR_法国->_US_美国"
+  - "🇫🇷 _GB_英国->_FR_法国"
 - name: "TELEGRAM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇧🇬 _BG_保加利亚->_US_美国"
+  - "🇺🇸 _US_美国"
   - "🇺🇸 _CN_中国->_US_美国"
+  - "🇺🇸 _CN_中国->_US_美国_1"
+  - "🇫🇷 _FR_法国"
+  - "🇰🇷 _US_美国->_KR_韩国"
   - "🇷🇺 _RU_俄罗斯"
-  - "🇫🇷 _FR_法国->_US_美国"
+  - "🇫🇷 _GB_英国->_FR_法国"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇧🇬 _BG_保加利亚->_US_美国"
+  - "🇺🇸 _US_美国"
   - "🇺🇸 _CN_中国->_US_美国"
+  - "🇺🇸 _CN_中国->_US_美国_1"
+  - "🇫🇷 _FR_法国"
+  - "🇰🇷 _US_美国->_KR_韩国"
   - "🇷🇺 _RU_俄罗斯"
-  - "🇫🇷 _FR_法国->_US_美国"
+  - "🇫🇷 _GB_英国->_FR_法国"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
