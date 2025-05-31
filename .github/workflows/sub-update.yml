@@ -32,7 +32,7 @@ jobs:
 
       - name: Download SubStore
         run: |
-          python scripts/update.py
+          python substore/update.py
 
       - name: Run processing scripts
         run: bash run_scripts.sh
