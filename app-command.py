@@ -8,7 +8,7 @@ from urllib.parse import quote
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-API_BASE = "http://127.0.0.1:3000"
+API_BASE = "http://127.0.0.1:3003"
 MIHOMO_DIR = "../mihomo"
 SINGBOX_DIR = "../singbox"
 
@@ -16,6 +16,22 @@ def encode_gitlab_url(raw_url):
     encoded = raw_url.replace("%", "%25")
     encoded = encoded.replace("%", "%25")
     return encoded
+    
+def start_substore_backend():
+    env = os.environ.copy()
+    env["SUB_STORE_BACKEND_API_PORT"] = "3003"
+    env["SUB_STORE_DATA_BASE_PATH"] = "./substore"
+
+    try:
+        subprocess.Popen(
+            ["node", "./substore/sub-store.bundle.js"],
+            env=env,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        print("✅ SubStore 后端已启动")
+    except Exception as e:
+        print(f"❌ 启动 SubStore 后端失败: {e}")
 
 def refresh_backend():
     try:
@@ -73,6 +89,8 @@ def handle_json(json_input):
             print("跳过无效项：", item)
 
 if __name__ == "__main__":
+    start_substore_backend()
+
     parser = argparse.ArgumentParser(description="生成 Mihomo 和 Singbox 配置")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--json", help="JSON 文件路径或 URL（包含 name/url）")
