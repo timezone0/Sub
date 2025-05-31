@@ -30,21 +30,15 @@ jobs:
         with:
           node-version: "24.0.1"
 
-      - name: Run SubStore server
+      - name: Download SubStore
         run: |
-          mkdir -p substore
-          cd substore
-          curl -OL "${{ vars.SUBSTORE_URL }}"
-          ls
-          node "${{ vars.SUBSTORE }}" &
-          sleep 2
+          python scripts/update.py
 
       - name: Run processing scripts
         run: bash run_scripts.sh
 
       - name: Clean up substore folder
         run: |
-          pkill -f "node ${{ vars.SUBSTORE }}" || true
           rm -f substore/root.json substore/"${{ vars.SUBSTORE }}"
           ls substore
 
