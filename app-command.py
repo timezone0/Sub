@@ -1,6 +1,8 @@
 import os
 import sys
 import json
+import time
+import socket
 import argparse
 import requests
 import subprocess
@@ -16,7 +18,17 @@ def encode_gitlab_url(raw_url):
     encoded = raw_url.replace("%", "%25")
     encoded = encoded.replace("%", "%25")
     return encoded
-    
+
+def wait_for_port(host, port, timeout=10):
+    start_time = time.time()
+    while time.time() - start_time < timeout:
+        try:
+            with socket.create_connection((host, port), timeout=1):
+                return True
+        except OSError:
+            time.sleep(0.5)
+    return False
+
 def start_substore_backend():
     env = os.environ.copy()
     env["SUB_STORE_BACKEND_API_PORT"] = "3003"
@@ -29,7 +41,11 @@ def start_substore_backend():
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
         )
-        print("✅ SubStore 后端已启动")
+        print("✅ SubStore 后端已启动，等待服务响应...")
+        if wait_for_port("127.0.0.1", 3003):
+            print("✅ SubStore 服务已就绪")
+        else:
+            print("⚠️ 等待超时，服务可能未成功启动")
     except Exception as e:
         print(f"❌ 启动 SubStore 后端失败: {e}")
 
@@ -50,7 +66,7 @@ def handle_one(name, url):
     else:
         encoded_url = quote(url, safe="")
     local_url = f"{API_BASE}/download/sub?url={encoded_url}"
-    
+
     mihomo_out = os.path.join(MIHOMO_DIR, f"{name}.yaml")
     singbox_out = os.path.join(SINGBOX_DIR, f"{name}.json")
 
