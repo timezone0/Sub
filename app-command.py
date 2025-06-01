@@ -1,5 +1,4 @@
 import os
-import sys
 import json
 import time
 import socket
@@ -8,16 +7,26 @@ import requests
 import subprocess
 from urllib.parse import quote
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
-API_BASE = "http://127.0.0.1:3003"
+# === 基础配置 ===
+SUBSTORE_PORT = 3003
+SUBSTORE_HOST = "127.0.0.1"
+API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
 MIHOMO_DIR = "../mihomo"
 SINGBOX_DIR = "../singbox"
 
+# 切换到脚本所在目录
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+
+# === 实用函数 ===
+def log(msg):
+    print(f"[{time.strftime('%H:%M:%S')}] {msg}")
+
+
 def encode_gitlab_url(raw_url):
-    encoded = raw_url.replace("%", "%25")
-    encoded = encoded.replace("%", "%25")
-    return encoded
+    # GitLab API 特殊处理：需要对 `%` 进行双重编码
+    return raw_url.replace("%", "%25").replace("%", "%25")
+
 
 def wait_for_port(host, port, timeout=10):
     start_time = time.time()
@@ -29,9 +38,14 @@ def wait_for_port(host, port, timeout=10):
             time.sleep(0.5)
     return False
 
+
 def start_substore_backend():
+    if wait_for_port(SUBSTORE_HOST, SUBSTORE_PORT, timeout=1):
+        log("✅ SubStore 后端已在运行")
+        return
+
     env = os.environ.copy()
-    env["SUB_STORE_BACKEND_API_PORT"] = "3003"
+    env["SUB_STORE_BACKEND_API_PORT"] = str(SUBSTORE_PORT)
     env["SUB_STORE_DATA_BASE_PATH"] = "./substore"
 
     try:
@@ -41,60 +55,85 @@ def start_substore_backend():
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
         )
-        print("✅ SubStore 后端已启动，等待服务响应...")
-        if wait_for_port("127.0.0.1", 3003):
-            print("✅ SubStore 服务已就绪")
+        log("✅ SubStore 后端启动中，等待响应...")
+        if wait_for_port(SUBSTORE_HOST, SUBSTORE_PORT):
+            log("✅ SubStore 服务已就绪")
         else:
-            print("⚠️ 等待超时，服务可能未成功启动")
+            log("⚠️ 等待超时，服务可能未成功启动")
     except Exception as e:
-        print(f"❌ 启动 SubStore 后端失败: {e}")
+        log(f"❌ 启动 SubStore 后端失败: {e}")
+
 
 def refresh_backend():
     try:
-        print("刷新后端资源缓存...")
+        log("刷新后端资源缓存...")
         res = requests.get(f"{API_BASE}/api/utils/refresh")
         res.raise_for_status()
-        print("刷新成功")
+        log("✅ 刷新成功")
     except Exception as e:
-        print(f"刷新失败：{e}")
+        log(f"❌ 刷新失败：{e}")
+
+
+def get_output_paths(name):
+    return (
+        os.path.join(MIHOMO_DIR, f"{name}.yaml"),
+        os.path.join(SINGBOX_DIR, f"{name}.json"),
+    )
+
 
 def handle_one(name, url):
-    print(f"处理订阅: {name}")
+    log(f"开始处理订阅: {name}")
 
-    if url.startswith("https://gitlab.com/api/"):
-        encoded_url = encode_gitlab_url(url)
-    else:
-        encoded_url = quote(url, safe="")
+    # GitLab 特殊处理
+    encoded_url = (
+        encode_gitlab_url(url)
+        if url.startswith("https://gitlab.com/api/")
+        else quote(url, safe="")
+    )
     local_url = f"{API_BASE}/download/sub?url={encoded_url}"
 
-    mihomo_out = os.path.join(MIHOMO_DIR, f"{name}.yaml")
-    singbox_out = os.path.join(SINGBOX_DIR, f"{name}.json")
+    mihomo_out, singbox_out = get_output_paths(name)
 
-    print("生成 Mihomo 配置...")
-    subprocess.run(["python", "scripts/mihomo-remote-generate.py", local_url, mihomo_out])
+    try:
+        log("生成 Mihomo 配置...")
+        subprocess.run(
+            ["python", "scripts/mihomo-remote-generate.py", local_url, mihomo_out],
+            check=True,
+        )
+    except subprocess.CalledProcessError as e:
+        log(f"❌ 生成 Mihomo 配置失败: {e}")
 
-    print("生成 Singbox 配置...")
-    subprocess.run(["python", "scripts/singbox-remote-generate.py", local_url, singbox_out])
+    try:
+        log("生成 Singbox 配置...")
+        subprocess.run(
+            ["python", "scripts/singbox-remote-generate.py", local_url, singbox_out],
+            check=True,
+        )
+    except subprocess.CalledProcessError as e:
+        log(f"❌ 生成 Singbox 配置失败: {e}")
 
-    print("-----------------------------")
+    log("-----------------------------")
+
 
 def handle_json(json_input):
     refresh_backend()
 
-    if json_input.startswith("http://") or json_input.startswith("https://"):
-        try:
+    try:
+        if json_input.startswith("http://") or json_input.startswith("https://"):
+            log(f"从网络加载 JSON: {json_input}")
             response = requests.get(json_input)
             response.raise_for_status()
             items = response.json()
-        except Exception as e:
-            print(f"下载 JSON 失败: {e}")
-            return
-    else:
-        if not os.path.isfile(json_input):
-            print("无效的 JSON 文件路径")
-            return
-        with open(json_input, "r", encoding="utf-8") as f:
-            items = json.load(f)
+        else:
+            if not os.path.isfile(json_input):
+                log("❌ 无效的 JSON 文件路径")
+                return
+            log(f"读取本地 JSON 文件: {json_input}")
+            with open(json_input, "r", encoding="utf-8") as f:
+                items = json.load(f)
+    except Exception as e:
+        log(f"❌ 加载 JSON 失败: {e}")
+        return
 
     for item in items:
         name = item.get("name")
@@ -102,8 +141,10 @@ def handle_json(json_input):
         if name and url:
             handle_one(name, url)
         else:
-            print("跳过无效项：", item)
+            log(f"⚠️ 跳过无效项：{item}")
 
+
+# === 主程序入口 ===
 if __name__ == "__main__":
     start_substore_backend()
 
@@ -121,4 +162,5 @@ if __name__ == "__main__":
         refresh_backend()
         handle_one(args.name, args.url)
     else:
-        print("参数不完整，请使用 --json 或 --name 与 --url")
+        log("❌ 参数不完整，请使用 --json 或 --name 与 --url")
+
