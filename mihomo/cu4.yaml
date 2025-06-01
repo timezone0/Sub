@@ -63,115 +63,153 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇯🇵 日本 01", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", skip-cert-verify: true}
-- {name: "🇯🇵 日本 02", server: "18.178.175.245", port: 23553, type: "hysteria2", password: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", auth: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", skip-cert-verify: true}
-- {name: "🇯🇵 日本 03", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", skip-cert-verify: true}
-- {name: "🇯🇵 日本 04", server: "29d908d.j1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.eu:106053"}}
-- {name: "🇯🇵 日本 05", server: "29d908d.j2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
-- {name: "🇯🇵 日本 06", server: "riben2.31427397.xyz", port: 17390, type: "hysteria2", password: "185f03eb-5ce5-4db8-8107-7354530a9bb2", auth: "185f03eb-5ce5-4db8-8107-7354530a9bb2", skip-cert-verify: true, alpn: ["h3"], sni: "riben2.31427397.xyz"}
-- {name: "🇯🇵 日本 07", server: "57.180.13.24", port: 50750, type: "vless", uuid: "e7e7389d-aff6-41b5-b22d-5fa56ae4d380", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/"}}
-- {name: "🇯🇵 日本 08", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 09", server: "18.178.175.245", port: 23553, type: "hysteria2", password: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", auth: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 10", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 11", server: "tacm.ix2.edge.kunlunae.com", port: 50125, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 12", server: "tacm.ix2.edge.kunlunae.com", port: 50126, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 13", server: "tacm.ix2.edge.kunlunae.com", port: 50127, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 14", server: "tacm.ix2.edge.kunlunae.com", port: 50128, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 15", server: "tacm.ix2.edge.kunlunae.com", port: 50129, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 16", server: "tacm.ix2.edge.kunlunae.com", port: 50130, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 17", server: "tacm.ix2.edge.kunlunae.com", port: 50131, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 18", server: "tacm.ix2.edge.kunlunae.com", port: 50132, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 19", server: "tacm.ix2.edge.kunlunae.com", port: 50133, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 20", server: "tacm.ix2.edge.kunlunae.com", port: 50134, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 21", server: "tacm.ix2.edge.kunlunae.com", port: 50135, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇯🇵 日本 22", server: "57.180.13.24", port: 50750, type: "vless", uuid: "e7e7389d-aff6-41b5-b22d-5fa56ae4d380", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/"}}
-- {name: "🇯🇵 日本 23", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 24", server: "18.178.175.245", port: 23553, type: "hysteria2", password: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", auth: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 25", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "35.84.25.6", port: 3764, type: "hysteria2", password: "rIDir9endPsgk74c1EvpMk4zsjs", auth: "rIDir9endPsgk74c1EvpMk4zsjs", skip-cert-verify: true}
-- {name: "🇺🇸 美国 02", server: "184.73.88.70", port: 27157, type: "hysteria2", password: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", auth: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", skip-cert-verify: true}
-- {name: "🇺🇸 美国 03", server: "18.224.45.223", port: 6170, type: "hysteria2", password: "AcskAB70W13TwDE4pRbyB5cIGY", auth: "AcskAB70W13TwDE4pRbyB5cIGY", skip-cert-verify: true}
-- {name: "🇺🇸 美国 04", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", skip-cert-verify: true}
-- {name: "🇺🇸 美国 05", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", skip-cert-verify: true}
-- {name: "🇺🇸 美国 06", server: "29d908d.u4.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cl:106053"}}
-- {name: "🇺🇸 美国 07", server: "29d908d.u1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
-- {name: "🇺🇸 美国 08", server: "29d908d.u6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cat:106053"}}
-- {name: "🇺🇸 美国 09", server: "64.181.207.162", port: 47262, type: "hysteria2", password: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", auth: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", skip-cert-verify: true}
-- {name: "🇺🇸 美国 10", server: "29d908d.u3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.de:106053"}}
-- {name: "🇺🇸 美国 11", server: "29d908d.u5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ge:106053"}}
-- {name: "🇺🇸 美国 12", server: "35.212.254.169", port: 443, type: "vless", uuid: "f19ed531-81cb-433e-8746-1a69e009f9df", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "usa.rtot.me"}}, servername: "usa.rtot.me"}
-- {name: "🇺🇸 美国 13", server: "35.212.195.213", port: 443, type: "vless", uuid: "14c8603b-f036-4ebe-800b-ce6add99cd50", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "usb.rtot.me"}}, servername: "usb.rtot.me"}
-- {name: "🇺🇸 美国 14", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 15", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 16", server: "184.73.88.70", port: 27157, type: "hysteria2", password: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", auth: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 17", server: "18.224.45.223", port: 6170, type: "hysteria2", password: "AcskAB70W13TwDE4pRbyB5cIGY", auth: "AcskAB70W13TwDE4pRbyB5cIGY", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 18", server: "35.84.25.6", port: 3764, type: "hysteria2", password: "rIDir9endPsgk74c1EvpMk4zsjs", auth: "rIDir9endPsgk74c1EvpMk4zsjs", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 19", server: "35.212.254.169", port: 443, type: "vless", uuid: "f19ed531-81cb-433e-8746-1a69e009f9df", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "usa.rtot.me"}}, servername: "usa.rtot.me"}
-- {name: "🇺🇸 美国 20", server: "35.212.195.213", port: 443, type: "vless", uuid: "14c8603b-f036-4ebe-800b-ce6add99cd50", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "usb.rtot.me"}}, servername: "usb.rtot.me"}
-- {name: "🇺🇸 美国 21", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 22", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 23", server: "184.73.88.70", port: 27157, type: "hysteria2", password: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", auth: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 24", server: "18.224.45.223", port: 6170, type: "hysteria2", password: "AcskAB70W13TwDE4pRbyB5cIGY", auth: "AcskAB70W13TwDE4pRbyB5cIGY", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 25", server: "35.84.25.6", port: 3764, type: "hysteria2", password: "rIDir9endPsgk74c1EvpMk4zsjs", auth: "rIDir9endPsgk74c1EvpMk4zsjs", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 01", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 02", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 03", server: "120.232.153.40", port: 31209, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 04", server: "52.89.248.218", port: 11136, type: "hysteria2", password: "yDtaQpO8NeVVkInIkaqXlMa7et4", auth: "yDtaQpO8NeVVkInIkaqXlMa7et4", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 05", server: "138.2.68.173", port: 443, type: "vless", uuid: "0783b1b9-5d8b-4d03-adc3-b050acc71a29", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "sgp.rtot.me"}}, servername: "sgp.rtot.me"}
-- {name: "🇸🇬 新加坡 06", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 07", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 08", server: "tacm.ix2.edge.kunlunae.com", port: 50120, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 09", server: "tacm.ix2.edge.kunlunae.com", port: 50121, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 10", server: "tacm.ix2.edge.kunlunae.com", port: 50122, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 11", server: "tacm.ix2.edge.kunlunae.com", port: 50123, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 12", server: "tacm.ix2.edge.kunlunae.com", port: 50124, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 13", server: "tacm.ix2.edge.kunlunae.com", port: 50136, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 14", server: "tacm.ix2.edge.kunlunae.com", port: 50137, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 15", server: "tacm.ix2.edge.kunlunae.com", port: 50138, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 16", server: "tacm.ix2.edge.kunlunae.com", port: 50139, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
-- {name: "🇸🇬 新加坡 17", server: "138.2.68.173", port: 443, type: "vless", uuid: "0783b1b9-5d8b-4d03-adc3-b050acc71a29", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "sgp.rtot.me"}}, servername: "sgp.rtot.me"}
-- {name: "🇸🇬 新加坡 18", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 19", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "tacm.ix2.edge.kunlunae.com", port: 50133, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 02", server: "tacm.ix2.edge.kunlunae.com", port: 50134, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 03", server: "tacm.ix2.edge.kunlunae.com", port: 50132, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 04", server: "18.178.175.245", port: 23553, type: "hysteria2", password: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", auth: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", skip-cert-verify: true}
+- {name: "🇯🇵 日本 05", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", skip-cert-verify: true}
+- {name: "🇯🇵 日本 06", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", skip-cert-verify: true}
+- {name: "🇯🇵 日本 07", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18001, type: "ss", cipher: "aes-256-gcm", password: "O7DQSQ7A5UR40J58"}
+- {name: "🇯🇵 日本 08", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 18002, type: "ss", cipher: "aes-256-gcm", password: "BAK9EHF5AEMLEUMP"}
+- {name: "🇯🇵 日本 09", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18003, type: "ss", cipher: "aes-256-gcm", password: "17WF006Z7O7AK4HD"}
+- {name: "🇯🇵 日本 10", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18004, type: "ss", cipher: "aes-256-gcm", password: "AM0NT9KM2F754GKW"}
+- {name: "🇯🇵 日本 11", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18005, type: "ss", cipher: "aes-256-gcm", password: "LLQZU72PFL6JTNB8"}
+- {name: "🇯🇵 日本 12", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18006, type: "ss", cipher: "aes-256-gcm", password: "OE9AF0R1CWSKMD18"}
+- {name: "🇯🇵 日本 13", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18007, type: "ss", cipher: "aes-256-gcm", password: "TE0GWV5TF5MWQOQ2"}
+- {name: "🇯🇵 日本 14", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18009, type: "ss", cipher: "aes-256-gcm", password: "TO157AN0PHUIAM0X"}
+- {name: "🇯🇵 日本 15", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18010, type: "ss", cipher: "aes-256-gcm", password: "I8IJ1OF5AXYQH2I6"}
+- {name: "🇯🇵 日本 16", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18011, type: "ss", cipher: "aes-256-gcm", password: "F6FMTQ092PETIOM5"}
+- {name: "🇯🇵 日本 17", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18012, type: "ss", cipher: "aes-256-gcm", password: "63BO25DJPL06XHC3"}
+- {name: "🇯🇵 日本 18", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18013, type: "ss", cipher: "aes-256-gcm", password: "WSDVT4CQ1C8VE45A"}
+- {name: "🇯🇵 日本 19", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 18014, type: "ss", cipher: "aes-256-gcm", password: "RHLPJDVPHWCYE0KF"}
+- {name: "🇯🇵 日本 20", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18015, type: "ss", cipher: "aes-256-gcm", password: "98AUIE3RCIBPVMGQ"}
+- {name: "🇯🇵 日本 21", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18016, type: "ss", cipher: "aes-256-gcm", password: "S55LLDQ7HYYXND65"}
+- {name: "🇯🇵 日本 22", server: "tacm.ix2.edge.kunlunae.com", port: 50125, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 23", server: "tacm.ix2.edge.kunlunae.com", port: 50126, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 24", server: "tacm.ix2.edge.kunlunae.com", port: 50127, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 25", server: "tacm.ix2.edge.kunlunae.com", port: 50128, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 26", server: "tacm.ix2.edge.kunlunae.com", port: 50129, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 27", server: "tacm.ix2.edge.kunlunae.com", port: 50130, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 28", server: "tacm.ix2.edge.kunlunae.com", port: 50131, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 29", server: "tacm.ix2.edge.kunlunae.com", port: 50132, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 30", server: "tacm.ix2.edge.kunlunae.com", port: 50133, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 31", server: "tacm.ix2.edge.kunlunae.com", port: 50134, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 32", server: "tacm.ix2.edge.kunlunae.com", port: 50135, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇯🇵 日本 33", server: "57.180.13.24", port: 50750, type: "vless", uuid: "e7e7389d-aff6-41b5-b22d-5fa56ae4d380", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/"}}
+- {name: "🇯🇵 日本 34", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 35", server: "18.178.175.245", port: 23553, type: "hysteria2", password: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", auth: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 36", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 01", server: "tacm.ix2.edge.kunlunae.com", port: 50139, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 02", server: "tacm.ix2.edge.kunlunae.com", port: 50138, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 03", server: "tacm.ix2.edge.kunlunae.com", port: 50136, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 04", server: "tacm.ix2.edge.kunlunae.com", port: 50137, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 05", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 06", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 07", server: "52.89.248.218", port: 11136, type: "hysteria2", password: "yDtaQpO8NeVVkInIkaqXlMa7et4", auth: "yDtaQpO8NeVVkInIkaqXlMa7et4", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 08", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16001, type: "ss", cipher: "aes-256-gcm", password: "M82YGLD100KCCYA0"}
+- {name: "🇸🇬 新加坡 09", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16002, type: "ss", cipher: "aes-256-gcm", password: "C7J3VLWUNZK9OOXC"}
+- {name: "🇸🇬 新加坡 10", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16003, type: "ss", cipher: "aes-256-gcm", password: "GWQF20OSPQYWBISQ"}
+- {name: "🇸🇬 新加坡 11", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16004, type: "ss", cipher: "aes-256-gcm", password: "1XYS13G6QAZ04YNI"}
+- {name: "🇸🇬 新加坡 12", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 16006, type: "ss", cipher: "aes-256-gcm", password: "IWKPA0WLVZD14ZA0"}
+- {name: "🇸🇬 新加坡 13", server: "w72tapyb.slashdevslashnetslashtun.net", port: 16007, type: "ss", cipher: "aes-256-gcm", password: "BRITY3NYPYMEU2BV"}
+- {name: "🇸🇬 新加坡 14", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16008, type: "ss", cipher: "aes-256-gcm", password: "8URB7WWM3KSHNV25"}
+- {name: "🇸🇬 新加坡 15", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16009, type: "ss", cipher: "aes-256-gcm", password: "THKWDWICRFNF2KDP"}
+- {name: "🇸🇬 新加坡 16", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16010, type: "ss", cipher: "aes-256-gcm", password: "40KP31DU9RK86R99"}
+- {name: "🇸🇬 新加坡 17", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16011, type: "ss", cipher: "aes-256-gcm", password: "NDZ4097KER4X0WUZ"}
+- {name: "🇸🇬 新加坡 18", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16012, type: "ss", cipher: "aes-256-gcm", password: "8AXGR9YKGWX0RFOM"}
+- {name: "🇸🇬 新加坡 19", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16013, type: "ss", cipher: "aes-256-gcm", password: "JK60XGPQETSSWURX"}
+- {name: "🇸🇬 新加坡 20", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 16014, type: "ss", cipher: "aes-256-gcm", password: "1O0ZSH3E6YUX9E8F"}
+- {name: "🇸🇬 新加坡 21", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16015, type: "ss", cipher: "aes-256-gcm", password: "MMLKB2TTMUADDO10"}
+- {name: "🇸🇬 新加坡 22", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16016, type: "ss", cipher: "aes-256-gcm", password: "MVWE4NCO53OQH5Z9"}
+- {name: "🇸🇬 新加坡 23", server: "tacm.ix2.edge.kunlunae.com", port: 50120, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 24", server: "tacm.ix2.edge.kunlunae.com", port: 50121, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 25", server: "tacm.ix2.edge.kunlunae.com", port: 50122, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 26", server: "tacm.ix2.edge.kunlunae.com", port: 50123, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 27", server: "tacm.ix2.edge.kunlunae.com", port: 50124, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 28", server: "tacm.ix2.edge.kunlunae.com", port: 50136, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 29", server: "tacm.ix2.edge.kunlunae.com", port: 50137, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 30", server: "tacm.ix2.edge.kunlunae.com", port: 50138, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 31", server: "tacm.ix2.edge.kunlunae.com", port: 50139, type: "ssr", cipher: "chacha20", password: "mPQ5C9", protocol: "auth_chain_a", obfs: "tls1.2_ticket_auth", protocol-param: "60051626:f0hnV2", obfs-param: ""}
+- {name: "🇸🇬 新加坡 32", server: "138.2.68.173", port: 443, type: "vless", uuid: "0783b1b9-5d8b-4d03-adc3-b050acc71a29", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "sgp.rtot.me"}}, servername: "sgp.rtot.me"}
+- {name: "🇸🇬 新加坡 33", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 34", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "8.210.184.183", port: 6116, type: "hysteria2", password: "DRAAoEbDU6dRMrVKMNKEvhBrAY", auth: "DRAAoEbDU6dRMrVKMNKEvhBrAY", skip-cert-verify: true}
+- {name: "🇭🇰 香港 02", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 15007, type: "ss", cipher: "aes-256-gcm", password: "4EWU1DKLSMPL9IKD"}
+- {name: "🇭🇰 香港 03", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15014, type: "ss", cipher: "aes-256-gcm", password: "YFTT767VKBLWGE21"}
+- {name: "🇭🇰 香港 04", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 15015, type: "ss", cipher: "aes-256-gcm", password: "QV8860QXFTBM2ZG6"}
+- {name: "🇭🇰 香港 05", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 15016, type: "ss", cipher: "aes-256-gcm", password: "1PH2534UTK0VZ2R2"}
+- {name: "🇭🇰 香港 06", server: "8.210.184.183", port: 6116, type: "hysteria2", password: "DRAAoEbDU6dRMrVKMNKEvhBrAY", auth: "DRAAoEbDU6dRMrVKMNKEvhBrAY", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇩🇪 德国 01", server: "3.122.115.64", port: 22024, type: "hysteria2", password: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", auth: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", skip-cert-verify: true}
 - {name: "🇩🇪 德国 02", server: "3.120.153.207", port: 32816, type: "hysteria2", password: "0I8k2r7DPbQQsR1buvf8FaWF4U", auth: "0I8k2r7DPbQQsR1buvf8FaWF4U", skip-cert-verify: true}
-- {name: "🇩🇪 德国 03", server: "3.120.153.207", port: 32816, type: "hysteria2", password: "0I8k2r7DPbQQsR1buvf8FaWF4U", auth: "0I8k2r7DPbQQsR1buvf8FaWF4U", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇩🇪 德国 04", server: "3.122.115.64", port: 22024, type: "hysteria2", password: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", auth: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇩🇪 德国 05", server: "3.120.153.207", port: 32816, type: "hysteria2", password: "0I8k2r7DPbQQsR1buvf8FaWF4U", auth: "0I8k2r7DPbQQsR1buvf8FaWF4U", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇩🇪 德国 06", server: "3.122.115.64", port: 22024, type: "hysteria2", password: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", auth: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇭🇰 香港 01", server: "2600:1900:41a0:616::", port: 36866, type: "ss", cipher: "aes-256-gcm", password: "NkRJVGlNR3JBQW5Udzh1QXQxQkVXM1hQWm5Bd1RLS2w="}
-- {name: "🇭🇰 香港 02", server: "2600:1900:41a0:fd0f::", port: 29813, type: "ss", cipher: "aes-256-gcm", password: "MkZEbXRObHJtSEJUWldyTXRqUlh2N1NNc0hTSm04em8="}
-- {name: "🇭🇰 香港 03", server: "29d908d.h3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
-- {name: "🇭🇰 香港 04", server: "8.210.184.183", port: 6116, type: "hysteria2", password: "DRAAoEbDU6dRMrVKMNKEvhBrAY", auth: "DRAAoEbDU6dRMrVKMNKEvhBrAY", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇭🇰 香港 05", server: "8.210.184.183", port: 6116, type: "hysteria2", password: "DRAAoEbDU6dRMrVKMNKEvhBrAY", auth: "DRAAoEbDU6dRMrVKMNKEvhBrAY", sni: "bing.com", skip-cert-verify: true}
-- {name: "🏴‍☠️ 多米尼加共和国 01", server: "29d908d.b3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.eu:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 02", server: "29d908d.b7.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.jp:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 03", server: "29d908d.b9.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.de:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 04", server: "29d908d.b2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 05", server: "29d908d.b4.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 06", server: "29d908d.b6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.jp:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 07", server: "29d908d.d2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.xboxlive.com.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 08", server: "29d908d.b5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.de:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 09", server: "29d908d.b8.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ge:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 10", server: "29d908d.f2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.net.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 11", server: "29d908d.b1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 12", server: "29d908d.b5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 13", server: "29d908d.f1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cat.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 14", server: "29d908d.f3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cl.net:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 15", server: "29d908d.b6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 16", server: "29d908d.dc.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.eu:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 17", server: "29d908d.db.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ch:106053"}}
-- {name: "🏴‍☠️ 多米尼加共和国 18", server: "29d908d.da.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.io:106053"}}
-- {name: "🇨🇳 台湾 01", server: "sg.xnh98d9c32om.com", port: 24510, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
-- {name: "🇨🇳 台湾 02", server: "29d908d.t2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ee:106053"}}
-- {name: "🇨🇳 台湾 03", server: "29d908d.t5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.eu:106053"}}
-- {name: "🇨🇳 台湾 04", server: "29d908d.t1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.jp:106053"}}
-- {name: "🇨🇳 台湾 05", server: "29d908d.t3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cat:106053"}}
-- {name: "🇨🇳 台湾 06", server: "29d908d.t6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.de:106053"}}
-- {name: "🇨🇳 台湾 07", server: "sg.xnh98d9c32om.com", port: 24511, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
-- {name: "🇨🇳 台湾 08", server: "sg.xnh98d9c32om.com", port: 24512, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
-- {name: "🇨🇳 台湾 09", server: "29d908d.t4.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.it:106053"}}
-- {name: "🇨🇳 台湾 10", server: "sg.xnh98d9c32om.com", port: 24513, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
-- {name: "🇨🇳 台湾 11", server: "sg.xnh98d9c32om.com", port: 24549, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
+- {name: "🇩🇪 德国 03", server: "45.154.207.246", port: 20030, type: "ss", cipher: "aes-256-gcm", password: "6QLFZI1A1WG1VG10"}
+- {name: "🇩🇪 德国 04", server: "3.120.153.207", port: 32816, type: "hysteria2", password: "0I8k2r7DPbQQsR1buvf8FaWF4U", auth: "0I8k2r7DPbQQsR1buvf8FaWF4U", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇩🇪 德国 05", server: "3.122.115.64", port: 22024, type: "hysteria2", password: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", auth: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", skip-cert-verify: true}
+- {name: "🇺🇸 美国 02", server: "184.73.88.70", port: 27157, type: "hysteria2", password: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", auth: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", skip-cert-verify: true}
+- {name: "🇺🇸 美国 03", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", skip-cert-verify: true}
+- {name: "🇺🇸 美国 04", server: "18.224.45.223", port: 6170, type: "hysteria2", password: "AcskAB70W13TwDE4pRbyB5cIGY", auth: "AcskAB70W13TwDE4pRbyB5cIGY", skip-cert-verify: true}
+- {name: "🇺🇸 美国 05", server: "35.84.25.6", port: 3764, type: "hysteria2", password: "rIDir9endPsgk74c1EvpMk4zsjs", auth: "rIDir9endPsgk74c1EvpMk4zsjs", skip-cert-verify: true}
+- {name: "🇺🇸 美国 06", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17001, type: "ss", cipher: "aes-256-gcm", password: "2TZCDARS2YBFLUOK"}
+- {name: "🇺🇸 美国 07", server: "23.185.248.12", port: 17002, type: "ss", cipher: "aes-256-gcm", password: "03PQACJ3ENIMO4VM"}
+- {name: "🇺🇸 美国 08", server: "23.185.248.13", port: 17003, type: "ss", cipher: "aes-256-gcm", password: "W3YBUGEB488IQ9AA"}
+- {name: "🇺🇸 美国 09", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17004, type: "ss", cipher: "aes-256-gcm", password: "36L7ZTRUYPLKAHG2"}
+- {name: "🇺🇸 美国 10", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17005, type: "ss", cipher: "aes-256-gcm", password: "2Z11BX63H64YSEDM"}
+- {name: "🇺🇸 美国 11", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17007, type: "ss", cipher: "aes-256-gcm", password: "1XO65AOX78D6G273"}
+- {name: "🇺🇸 美国 12", server: "23.185.248.19", port: 17009, type: "ss", cipher: "aes-256-gcm", password: "9DST9C9YRE2AQCFN"}
+- {name: "🇺🇸 美国 13", server: "23.185.248.20", port: 17010, type: "ss", cipher: "aes-256-gcm", password: "Y58CHLX0T1GYKREP"}
+- {name: "🇺🇸 美国 14", server: "23.185.248.21", port: 17011, type: "ss", cipher: "aes-256-gcm", password: "GLW8E3OZ0G8HCIEL"}
+- {name: "🇺🇸 美国 15", server: "23.185.248.22", port: 17012, type: "ss", cipher: "aes-256-gcm", password: "I5DAH5PUIP7R5SZR"}
+- {name: "🇺🇸 美国 16", server: "23.185.248.23", port: 17013, type: "ss", cipher: "aes-256-gcm", password: "MYX6AU600LHJ92SZ"}
+- {name: "🇺🇸 美国 17", server: "23.185.248.24", port: 17014, type: "ss", cipher: "aes-256-gcm", password: "BFEQ191U8O7LSHI0"}
+- {name: "🇺🇸 美国 18", server: "23.185.248.25", port: 17015, type: "ss", cipher: "aes-256-gcm", password: "IGQ36BVWQAU5YJ5C"}
+- {name: "🇺🇸 美国 19", server: "23.185.248.26", port: 17016, type: "ss", cipher: "aes-256-gcm", password: "P2HV107PKPW9YA6D"}
+- {name: "🇺🇸 美国 20", server: "35.212.254.169", port: 443, type: "vless", uuid: "f19ed531-81cb-433e-8746-1a69e009f9df", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "usa.rtot.me"}}, servername: "usa.rtot.me"}
+- {name: "🇺🇸 美国 21", server: "35.212.195.213", port: 443, type: "vless", uuid: "14c8603b-f036-4ebe-800b-ce6add99cd50", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bing", headers: {Host: "usb.rtot.me"}}, servername: "usb.rtot.me"}
+- {name: "🇺🇸 美国 22", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 23", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 24", server: "184.73.88.70", port: 27157, type: "hysteria2", password: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", auth: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 25", server: "18.224.45.223", port: 6170, type: "hysteria2", password: "AcskAB70W13TwDE4pRbyB5cIGY", auth: "AcskAB70W13TwDE4pRbyB5cIGY", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 26", server: "35.84.25.6", port: 3764, type: "hysteria2", password: "rIDir9endPsgk74c1EvpMk4zsjs", auth: "rIDir9endPsgk74c1EvpMk4zsjs", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇳🇱 荷兰 01", server: "109.104.154.131", port: 20000, type: "ss", cipher: "aes-256-gcm", password: "VKJNI2NI0CJ168SZ"}
+- {name: "🇨🇭 瑞士 01", server: "37.143.131.121", port: 20001, type: "ss", cipher: "aes-256-gcm", password: "7H4YUNHL8A4NXRYX"}
+- {name: "🇷🇺 俄罗斯 01", server: "185.126.239.231", port: 20002, type: "ss", cipher: "aes-256-gcm", password: "NQA6R2WQN2PL195D"}
+- {name: "🇬🇷 希腊 01", server: "185.126.238.37", port: 20004, type: "ss", cipher: "aes-256-gcm", password: "BZBHLMTHMRXXZDCQ"}
+- {name: "🇨🇴 哥伦比亚 01", server: "91.148.134.106", port: 20005, type: "ss", cipher: "aes-256-gcm", password: "0CP1UAPJA808TG10"}
+- {name: "🇦🇷 阿根廷 01", server: "31.40.212.221", port: 20006, type: "ss", cipher: "aes-256-gcm", password: "1ZITFN43UPX46RLG"}
+- {name: "🇬🇹 危地马拉 01", server: "185.47.254.177", port: 20007, type: "ss", cipher: "aes-256-gcm", password: "71YKYZB4QV0MR8RB"}
+- {name: "🇧🇴 玻利维亚 01", server: "185.93.173.246", port: 20008, type: "ss", cipher: "aes-256-gcm", password: "T1SLJHEJ8IR8OTZB"}
+- {name: "🇵🇪 秘鲁 01", server: "185.47.252.16", port: 20009, type: "ss", cipher: "aes-256-gcm", password: "23T31THNZ3YVC9EV"}
+- {name: "🇪🇨 厄瓜多尔 01", server: "185.47.253.144", port: 20010, type: "ss", cipher: "aes-256-gcm", password: "1OP65WCL03VDXIO8"}
+- {name: "🇨🇷 哥斯达黎加 01", server: "145.14.131.81", port: 20011, type: "ss", cipher: "aes-256-gcm", password: "D1EB2OF09E37N5V3"}
+- {name: "🇨🇱 智利 01", server: "37.143.128.125", port: 20012, type: "ss", cipher: "aes-256-gcm", password: "R8LPY3DUFKTF8FZD"}
+- {name: "🇧🇷 巴西 01", server: "185.192.124.41", port: 20013, type: "ss", cipher: "aes-256-gcm", password: "NJDVHQ10FZW68VDX"}
+- {name: "🇲🇦 摩洛哥 01", server: "188.214.157.236", port: 20014, type: "ss", cipher: "aes-256-gcm", password: "IDN1B98E70RR0GMO"}
+- {name: "🇿🇦 南非 01", server: "129.232.133.62", port: 20015, type: "ss", cipher: "aes-256-gcm", password: "9WKEZXQJB82C98EV"}
+- {name: "🇳🇬 尼日利亚 01", server: "185.255.123.183", port: 20016, type: "ss", cipher: "aes-256-gcm", password: "Z007X1PO99WLI597"}
+- {name: "🇦🇪 阿联酋 01", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 20017, type: "ss", cipher: "aes-256-gcm", password: "F3VHM0SNE6JKORC0"}
+- {name: "🇲🇾 马来 01", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 20018, type: "ss", cipher: "aes-256-gcm", password: "U0OKWGAJX6LDXKYU"}
+- {name: "🇮🇱 以色列 01", server: "147.78.2.35", port: 20020, type: "ss", cipher: "aes-256-gcm", password: "SWGC1TOQZQ5DU14D"}
+- {name: "🇦🇺 澳大利亚 01", server: "103.75.119.144", port: 20021, type: "ss", cipher: "aes-256-gcm", password: "JJQJE7JZOKEMKNVQ"}
+- {name: "🇹🇭 泰国 01", server: "46.16.129.217", port: 20022, type: "ss", cipher: "aes-256-gcm", password: "JZ4NH3OZ8LCKI9UZ"}
+- {name: "🇵🇰 巴基斯坦 01", server: "223.165.5.107", port: 20023, type: "ss", cipher: "aes-256-gcm", password: "ABLFYY0B1SKS1Q0M"}
+- {name: "🇹🇷 土耳其 01", server: "185.123.100.140", port: 20024, type: "ss", cipher: "aes-256-gcm", password: "AI21W08RR2JPU8JJ"}
+- {name: "🇷🇸 塞尔维亚 01", server: "185.186.77.137", port: 20025, type: "ss", cipher: "aes-256-gcm", password: "6GKB5ID65JDSWZMN"}
+- {name: "🇧🇪 比利时 01", server: "185.213.22.93", port: 20026, type: "ss", cipher: "aes-256-gcm", password: "8FD7VM0JTKVS1D64"}
+- {name: "🇷🇴 罗马尼亚 01", server: "185.126.237.58", port: 20027, type: "ss", cipher: "aes-256-gcm", password: "JURH4CGR84EYYBSP"}
+- {name: "🇩🇰 丹麦 01", server: "185.186.79.135", port: 20028, type: "ss", cipher: "aes-256-gcm", password: "CXRABJZKT3PASTA0"}
+- {name: "🇮🇹 意大利 01", server: "185.213.20.36", port: 20029, type: "ss", cipher: "aes-256-gcm", password: "C28AR54RCV8QCZ1K"}
+- {name: "🇫🇮 芬兰 01", server: "37.143.129.127", port: 20031, type: "ss", cipher: "aes-256-gcm", password: "ZR3LVQHHE66K8FSI"}
+- {name: "🇺🇦 乌克兰 01", server: "147.78.3.137", port: 20032, type: "ss", cipher: "aes-256-gcm", password: "WVVO5GOW9HW6IPPO"}
+- {name: "🇳🇴 挪威 01", server: "185.90.61.157", port: 20034, type: "ss", cipher: "aes-256-gcm", password: "PGEBKD5KD0NB2YMU"}
+- {name: "🇸🇪 瑞典 01", server: "185.186.78.220", port: 20035, type: "ss", cipher: "aes-256-gcm", password: "60EKOPNJFYDOSA1B"}
+- {name: "🇱🇹 立陶宛 01", server: "185.237.185.77", port: 20036, type: "ss", cipher: "aes-256-gcm", password: "5XO9X59DLBTE29XV"}
+- {name: "🇨🇳 台湾 01", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 21001, type: "ss", cipher: "aes-256-gcm", password: "QWIL6EX3ME229DZ3"}
+- {name: "🇨🇳 台湾 02", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 21002, type: "ss", cipher: "aes-256-gcm", password: "LY9WUR9O51PA3DYR"}
+- {name: "🇨🇳 台湾 03", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 21003, type: "ss", cipher: "aes-256-gcm", password: "NCQHBA5TK7EULJIO"}
+- {name: "🇨🇳 台湾 04", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 21004, type: "ss", cipher: "aes-256-gcm", password: "MZD6L78KSL268PCZ"}
+- {name: "🇨🇳 台湾 05", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 21005, type: "ss", cipher: "aes-256-gcm", password: "1A9REDFMJLT0BZDZ"}
+- {name: "🇨🇳 台湾 06", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 21006, type: "ss", cipher: "aes-256-gcm", password: "JZALI2EFXPLJU045"}
+- {name: "🇨🇳 台湾 07", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 21007, type: "ss", cipher: "aes-256-gcm", password: "LYEZQWTCPXQQZYE4"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -202,6 +240,62 @@ proxy-groups:
   - "🇯🇵 日本 23"
   - "🇯🇵 日本 24"
   - "🇯🇵 日本 25"
+  - "🇯🇵 日本 26"
+  - "🇯🇵 日本 27"
+  - "🇯🇵 日本 28"
+  - "🇯🇵 日本 29"
+  - "🇯🇵 日本 30"
+  - "🇯🇵 日本 31"
+  - "🇯🇵 日本 32"
+  - "🇯🇵 日本 33"
+  - "🇯🇵 日本 34"
+  - "🇯🇵 日本 35"
+  - "🇯🇵 日本 36"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -227,54 +321,40 @@ proxy-groups:
   - "🇺🇸 美国 23"
   - "🇺🇸 美国 24"
   - "🇺🇸 美国 25"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
-  - "🇸🇬 新加坡 18"
-  - "🇸🇬 新加坡 19"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🏴‍☠️ 多米尼加共和国 01"
-  - "🏴‍☠️ 多米尼加共和国 02"
-  - "🏴‍☠️ 多米尼加共和国 03"
-  - "🏴‍☠️ 多米尼加共和国 04"
-  - "🏴‍☠️ 多米尼加共和国 05"
-  - "🏴‍☠️ 多米尼加共和国 06"
-  - "🏴‍☠️ 多米尼加共和国 07"
-  - "🏴‍☠️ 多米尼加共和国 08"
-  - "🏴‍☠️ 多米尼加共和国 09"
-  - "🏴‍☠️ 多米尼加共和国 10"
-  - "🏴‍☠️ 多米尼加共和国 11"
-  - "🏴‍☠️ 多米尼加共和国 12"
-  - "🏴‍☠️ 多米尼加共和国 13"
-  - "🏴‍☠️ 多米尼加共和国 14"
-  - "🏴‍☠️ 多米尼加共和国 15"
-  - "🏴‍☠️ 多米尼加共和国 16"
-  - "🏴‍☠️ 多米尼加共和国 17"
-  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇺🇸 美国 26"
+  - "🇳🇱 荷兰 01"
+  - "🇨🇭 瑞士 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇬🇷 希腊 01"
+  - "🇨🇴 哥伦比亚 01"
+  - "🇦🇷 阿根廷 01"
+  - "🇬🇹 危地马拉 01"
+  - "🇧🇴 玻利维亚 01"
+  - "🇵🇪 秘鲁 01"
+  - "🇪🇨 厄瓜多尔 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇨🇱 智利 01"
+  - "🇧🇷 巴西 01"
+  - "🇲🇦 摩洛哥 01"
+  - "🇿🇦 南非 01"
+  - "🇳🇬 尼日利亚 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇲🇾 马来 01"
+  - "🇮🇱 以色列 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇹🇭 泰国 01"
+  - "🇵🇰 巴基斯坦 01"
+  - "🇹🇷 土耳其 01"
+  - "🇷🇸 塞尔维亚 01"
+  - "🇧🇪 比利时 01"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇩🇰 丹麦 01"
+  - "🇮🇹 意大利 01"
+  - "🇫🇮 芬兰 01"
+  - "🇺🇦 乌克兰 01"
+  - "🇳🇴 挪威 01"
+  - "🇸🇪 瑞典 01"
+  - "🇱🇹 立陶宛 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -282,10 +362,6 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -317,6 +393,62 @@ proxy-groups:
   - "🇯🇵 日本 23"
   - "🇯🇵 日本 24"
   - "🇯🇵 日本 25"
+  - "🇯🇵 日本 26"
+  - "🇯🇵 日本 27"
+  - "🇯🇵 日本 28"
+  - "🇯🇵 日本 29"
+  - "🇯🇵 日本 30"
+  - "🇯🇵 日本 31"
+  - "🇯🇵 日本 32"
+  - "🇯🇵 日本 33"
+  - "🇯🇵 日本 34"
+  - "🇯🇵 日本 35"
+  - "🇯🇵 日本 36"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -342,54 +474,40 @@ proxy-groups:
   - "🇺🇸 美国 23"
   - "🇺🇸 美国 24"
   - "🇺🇸 美国 25"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
-  - "🇸🇬 新加坡 18"
-  - "🇸🇬 新加坡 19"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🏴‍☠️ 多米尼加共和国 01"
-  - "🏴‍☠️ 多米尼加共和国 02"
-  - "🏴‍☠️ 多米尼加共和国 03"
-  - "🏴‍☠️ 多米尼加共和国 04"
-  - "🏴‍☠️ 多米尼加共和国 05"
-  - "🏴‍☠️ 多米尼加共和国 06"
-  - "🏴‍☠️ 多米尼加共和国 07"
-  - "🏴‍☠️ 多米尼加共和国 08"
-  - "🏴‍☠️ 多米尼加共和国 09"
-  - "🏴‍☠️ 多米尼加共和国 10"
-  - "🏴‍☠️ 多米尼加共和国 11"
-  - "🏴‍☠️ 多米尼加共和国 12"
-  - "🏴‍☠️ 多米尼加共和国 13"
-  - "🏴‍☠️ 多米尼加共和国 14"
-  - "🏴‍☠️ 多米尼加共和国 15"
-  - "🏴‍☠️ 多米尼加共和国 16"
-  - "🏴‍☠️ 多米尼加共和国 17"
-  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇺🇸 美国 26"
+  - "🇳🇱 荷兰 01"
+  - "🇨🇭 瑞士 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇬🇷 希腊 01"
+  - "🇨🇴 哥伦比亚 01"
+  - "🇦🇷 阿根廷 01"
+  - "🇬🇹 危地马拉 01"
+  - "🇧🇴 玻利维亚 01"
+  - "🇵🇪 秘鲁 01"
+  - "🇪🇨 厄瓜多尔 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇨🇱 智利 01"
+  - "🇧🇷 巴西 01"
+  - "🇲🇦 摩洛哥 01"
+  - "🇿🇦 南非 01"
+  - "🇳🇬 尼日利亚 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇲🇾 马来 01"
+  - "🇮🇱 以色列 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇹🇭 泰国 01"
+  - "🇵🇰 巴基斯坦 01"
+  - "🇹🇷 土耳其 01"
+  - "🇷🇸 塞尔维亚 01"
+  - "🇧🇪 比利时 01"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇩🇰 丹麦 01"
+  - "🇮🇹 意大利 01"
+  - "🇫🇮 芬兰 01"
+  - "🇺🇦 乌克兰 01"
+  - "🇳🇴 挪威 01"
+  - "🇸🇪 瑞典 01"
+  - "🇱🇹 立陶宛 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -397,10 +515,6 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
 - name: "AI"
   type: "select"
   proxies:
@@ -430,6 +544,62 @@ proxy-groups:
   - "🇯🇵 日本 23"
   - "🇯🇵 日本 24"
   - "🇯🇵 日本 25"
+  - "🇯🇵 日本 26"
+  - "🇯🇵 日本 27"
+  - "🇯🇵 日本 28"
+  - "🇯🇵 日本 29"
+  - "🇯🇵 日本 30"
+  - "🇯🇵 日本 31"
+  - "🇯🇵 日本 32"
+  - "🇯🇵 日本 33"
+  - "🇯🇵 日本 34"
+  - "🇯🇵 日本 35"
+  - "🇯🇵 日本 36"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -455,54 +625,40 @@ proxy-groups:
   - "🇺🇸 美国 23"
   - "🇺🇸 美国 24"
   - "🇺🇸 美国 25"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
-  - "🇸🇬 新加坡 18"
-  - "🇸🇬 新加坡 19"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🏴‍☠️ 多米尼加共和国 01"
-  - "🏴‍☠️ 多米尼加共和国 02"
-  - "🏴‍☠️ 多米尼加共和国 03"
-  - "🏴‍☠️ 多米尼加共和国 04"
-  - "🏴‍☠️ 多米尼加共和国 05"
-  - "🏴‍☠️ 多米尼加共和国 06"
-  - "🏴‍☠️ 多米尼加共和国 07"
-  - "🏴‍☠️ 多米尼加共和国 08"
-  - "🏴‍☠️ 多米尼加共和国 09"
-  - "🏴‍☠️ 多米尼加共和国 10"
-  - "🏴‍☠️ 多米尼加共和国 11"
-  - "🏴‍☠️ 多米尼加共和国 12"
-  - "🏴‍☠️ 多米尼加共和国 13"
-  - "🏴‍☠️ 多米尼加共和国 14"
-  - "🏴‍☠️ 多米尼加共和国 15"
-  - "🏴‍☠️ 多米尼加共和国 16"
-  - "🏴‍☠️ 多米尼加共和国 17"
-  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇺🇸 美国 26"
+  - "🇳🇱 荷兰 01"
+  - "🇨🇭 瑞士 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇬🇷 希腊 01"
+  - "🇨🇴 哥伦比亚 01"
+  - "🇦🇷 阿根廷 01"
+  - "🇬🇹 危地马拉 01"
+  - "🇧🇴 玻利维亚 01"
+  - "🇵🇪 秘鲁 01"
+  - "🇪🇨 厄瓜多尔 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇨🇱 智利 01"
+  - "🇧🇷 巴西 01"
+  - "🇲🇦 摩洛哥 01"
+  - "🇿🇦 南非 01"
+  - "🇳🇬 尼日利亚 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇲🇾 马来 01"
+  - "🇮🇱 以色列 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇹🇭 泰国 01"
+  - "🇵🇰 巴基斯坦 01"
+  - "🇹🇷 土耳其 01"
+  - "🇷🇸 塞尔维亚 01"
+  - "🇧🇪 比利时 01"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇩🇰 丹麦 01"
+  - "🇮🇹 意大利 01"
+  - "🇫🇮 芬兰 01"
+  - "🇺🇦 乌克兰 01"
+  - "🇳🇴 挪威 01"
+  - "🇸🇪 瑞典 01"
+  - "🇱🇹 立陶宛 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -510,10 +666,6 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -544,6 +696,62 @@ proxy-groups:
   - "🇯🇵 日本 23"
   - "🇯🇵 日本 24"
   - "🇯🇵 日本 25"
+  - "🇯🇵 日本 26"
+  - "🇯🇵 日本 27"
+  - "🇯🇵 日本 28"
+  - "🇯🇵 日本 29"
+  - "🇯🇵 日本 30"
+  - "🇯🇵 日本 31"
+  - "🇯🇵 日本 32"
+  - "🇯🇵 日本 33"
+  - "🇯🇵 日本 34"
+  - "🇯🇵 日本 35"
+  - "🇯🇵 日本 36"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -569,54 +777,40 @@ proxy-groups:
   - "🇺🇸 美国 23"
   - "🇺🇸 美国 24"
   - "🇺🇸 美国 25"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
-  - "🇸🇬 新加坡 18"
-  - "🇸🇬 新加坡 19"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🏴‍☠️ 多米尼加共和国 01"
-  - "🏴‍☠️ 多米尼加共和国 02"
-  - "🏴‍☠️ 多米尼加共和国 03"
-  - "🏴‍☠️ 多米尼加共和国 04"
-  - "🏴‍☠️ 多米尼加共和国 05"
-  - "🏴‍☠️ 多米尼加共和国 06"
-  - "🏴‍☠️ 多米尼加共和国 07"
-  - "🏴‍☠️ 多米尼加共和国 08"
-  - "🏴‍☠️ 多米尼加共和国 09"
-  - "🏴‍☠️ 多米尼加共和国 10"
-  - "🏴‍☠️ 多米尼加共和国 11"
-  - "🏴‍☠️ 多米尼加共和国 12"
-  - "🏴‍☠️ 多米尼加共和国 13"
-  - "🏴‍☠️ 多米尼加共和国 14"
-  - "🏴‍☠️ 多米尼加共和国 15"
-  - "🏴‍☠️ 多米尼加共和国 16"
-  - "🏴‍☠️ 多米尼加共和国 17"
-  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇺🇸 美国 26"
+  - "🇳🇱 荷兰 01"
+  - "🇨🇭 瑞士 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇬🇷 希腊 01"
+  - "🇨🇴 哥伦比亚 01"
+  - "🇦🇷 阿根廷 01"
+  - "🇬🇹 危地马拉 01"
+  - "🇧🇴 玻利维亚 01"
+  - "🇵🇪 秘鲁 01"
+  - "🇪🇨 厄瓜多尔 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇨🇱 智利 01"
+  - "🇧🇷 巴西 01"
+  - "🇲🇦 摩洛哥 01"
+  - "🇿🇦 南非 01"
+  - "🇳🇬 尼日利亚 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇲🇾 马来 01"
+  - "🇮🇱 以色列 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇹🇭 泰国 01"
+  - "🇵🇰 巴基斯坦 01"
+  - "🇹🇷 土耳其 01"
+  - "🇷🇸 塞尔维亚 01"
+  - "🇧🇪 比利时 01"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇩🇰 丹麦 01"
+  - "🇮🇹 意大利 01"
+  - "🇫🇮 芬兰 01"
+  - "🇺🇦 乌克兰 01"
+  - "🇳🇴 挪威 01"
+  - "🇸🇪 瑞典 01"
+  - "🇱🇹 立陶宛 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -624,10 +818,6 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -658,6 +848,62 @@ proxy-groups:
   - "🇯🇵 日本 23"
   - "🇯🇵 日本 24"
   - "🇯🇵 日本 25"
+  - "🇯🇵 日本 26"
+  - "🇯🇵 日本 27"
+  - "🇯🇵 日本 28"
+  - "🇯🇵 日本 29"
+  - "🇯🇵 日本 30"
+  - "🇯🇵 日本 31"
+  - "🇯🇵 日本 32"
+  - "🇯🇵 日本 33"
+  - "🇯🇵 日本 34"
+  - "🇯🇵 日本 35"
+  - "🇯🇵 日本 36"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -683,54 +929,40 @@ proxy-groups:
   - "🇺🇸 美国 23"
   - "🇺🇸 美国 24"
   - "🇺🇸 美国 25"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
-  - "🇸🇬 新加坡 18"
-  - "🇸🇬 新加坡 19"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🏴‍☠️ 多米尼加共和国 01"
-  - "🏴‍☠️ 多米尼加共和国 02"
-  - "🏴‍☠️ 多米尼加共和国 03"
-  - "🏴‍☠️ 多米尼加共和国 04"
-  - "🏴‍☠️ 多米尼加共和国 05"
-  - "🏴‍☠️ 多米尼加共和国 06"
-  - "🏴‍☠️ 多米尼加共和国 07"
-  - "🏴‍☠️ 多米尼加共和国 08"
-  - "🏴‍☠️ 多米尼加共和国 09"
-  - "🏴‍☠️ 多米尼加共和国 10"
-  - "🏴‍☠️ 多米尼加共和国 11"
-  - "🏴‍☠️ 多米尼加共和国 12"
-  - "🏴‍☠️ 多米尼加共和国 13"
-  - "🏴‍☠️ 多米尼加共和国 14"
-  - "🏴‍☠️ 多米尼加共和国 15"
-  - "🏴‍☠️ 多米尼加共和国 16"
-  - "🏴‍☠️ 多米尼加共和国 17"
-  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇺🇸 美国 26"
+  - "🇳🇱 荷兰 01"
+  - "🇨🇭 瑞士 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇬🇷 希腊 01"
+  - "🇨🇴 哥伦比亚 01"
+  - "🇦🇷 阿根廷 01"
+  - "🇬🇹 危地马拉 01"
+  - "🇧🇴 玻利维亚 01"
+  - "🇵🇪 秘鲁 01"
+  - "🇪🇨 厄瓜多尔 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇨🇱 智利 01"
+  - "🇧🇷 巴西 01"
+  - "🇲🇦 摩洛哥 01"
+  - "🇿🇦 南非 01"
+  - "🇳🇬 尼日利亚 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇲🇾 马来 01"
+  - "🇮🇱 以色列 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇹🇭 泰国 01"
+  - "🇵🇰 巴基斯坦 01"
+  - "🇹🇷 土耳其 01"
+  - "🇷🇸 塞尔维亚 01"
+  - "🇧🇪 比利时 01"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇩🇰 丹麦 01"
+  - "🇮🇹 意大利 01"
+  - "🇫🇮 芬兰 01"
+  - "🇺🇦 乌克兰 01"
+  - "🇳🇴 挪威 01"
+  - "🇸🇪 瑞典 01"
+  - "🇱🇹 立陶宛 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -738,10 +970,6 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -772,6 +1000,62 @@ proxy-groups:
   - "🇯🇵 日本 23"
   - "🇯🇵 日本 24"
   - "🇯🇵 日本 25"
+  - "🇯🇵 日本 26"
+  - "🇯🇵 日本 27"
+  - "🇯🇵 日本 28"
+  - "🇯🇵 日本 29"
+  - "🇯🇵 日本 30"
+  - "🇯🇵 日本 31"
+  - "🇯🇵 日本 32"
+  - "🇯🇵 日本 33"
+  - "🇯🇵 日本 34"
+  - "🇯🇵 日本 35"
+  - "🇯🇵 日本 36"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -797,54 +1081,40 @@ proxy-groups:
   - "🇺🇸 美国 23"
   - "🇺🇸 美国 24"
   - "🇺🇸 美国 25"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
-  - "🇸🇬 新加坡 18"
-  - "🇸🇬 新加坡 19"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🏴‍☠️ 多米尼加共和国 01"
-  - "🏴‍☠️ 多米尼加共和国 02"
-  - "🏴‍☠️ 多米尼加共和国 03"
-  - "🏴‍☠️ 多米尼加共和国 04"
-  - "🏴‍☠️ 多米尼加共和国 05"
-  - "🏴‍☠️ 多米尼加共和国 06"
-  - "🏴‍☠️ 多米尼加共和国 07"
-  - "🏴‍☠️ 多米尼加共和国 08"
-  - "🏴‍☠️ 多米尼加共和国 09"
-  - "🏴‍☠️ 多米尼加共和国 10"
-  - "🏴‍☠️ 多米尼加共和国 11"
-  - "🏴‍☠️ 多米尼加共和国 12"
-  - "🏴‍☠️ 多米尼加共和国 13"
-  - "🏴‍☠️ 多米尼加共和国 14"
-  - "🏴‍☠️ 多米尼加共和国 15"
-  - "🏴‍☠️ 多米尼加共和国 16"
-  - "🏴‍☠️ 多米尼加共和国 17"
-  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇺🇸 美国 26"
+  - "🇳🇱 荷兰 01"
+  - "🇨🇭 瑞士 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇬🇷 希腊 01"
+  - "🇨🇴 哥伦比亚 01"
+  - "🇦🇷 阿根廷 01"
+  - "🇬🇹 危地马拉 01"
+  - "🇧🇴 玻利维亚 01"
+  - "🇵🇪 秘鲁 01"
+  - "🇪🇨 厄瓜多尔 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇨🇱 智利 01"
+  - "🇧🇷 巴西 01"
+  - "🇲🇦 摩洛哥 01"
+  - "🇿🇦 南非 01"
+  - "🇳🇬 尼日利亚 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇲🇾 马来 01"
+  - "🇮🇱 以色列 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇹🇭 泰国 01"
+  - "🇵🇰 巴基斯坦 01"
+  - "🇹🇷 土耳其 01"
+  - "🇷🇸 塞尔维亚 01"
+  - "🇧🇪 比利时 01"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇩🇰 丹麦 01"
+  - "🇮🇹 意大利 01"
+  - "🇫🇮 芬兰 01"
+  - "🇺🇦 乌克兰 01"
+  - "🇳🇴 挪威 01"
+  - "🇸🇪 瑞典 01"
+  - "🇱🇹 立陶宛 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -852,10 +1122,6 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
