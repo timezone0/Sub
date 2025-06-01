@@ -1,0 +1,498 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "223.5.5.5"
+  - "119.29.29.29"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇯🇵 日本 01", server: "54.238.229.239", port: 31771, type: "hysteria2", password: "OWTXTQv1bF61nvyLERhzmKotao", auth: "OWTXTQv1bF61nvyLERhzmKotao", skip-cert-verify: true}
+- {name: "🇯🇵 日本 02", server: "18.178.175.245", port: 23553, type: "hysteria2", password: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", auth: "WFIXGJKjFj54C7Qx9ZUytE8eBF0", skip-cert-verify: true}
+- {name: "🇯🇵 日本 03", server: "43.206.255.50", port: 26182, type: "hysteria2", password: "KUP1LshgSRNGg4vsCNGDPBXYNis", auth: "KUP1LshgSRNGg4vsCNGDPBXYNis", skip-cert-verify: true}
+- {name: "🇯🇵 日本 04", server: "29d908d.j1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.eu:106053"}}
+- {name: "🇯🇵 日本 05", server: "29d908d.j2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
+- {name: "🇯🇵 日本 06", server: "riben2.31427397.xyz", port: 17390, type: "hysteria2", password: "185f03eb-5ce5-4db8-8107-7354530a9bb2", auth: "185f03eb-5ce5-4db8-8107-7354530a9bb2", skip-cert-verify: true, alpn: ["h3"], sni: "riben2.31427397.xyz"}
+- {name: "🇺🇸 美国 01", server: "35.84.25.6", port: 3764, type: "hysteria2", password: "rIDir9endPsgk74c1EvpMk4zsjs", auth: "rIDir9endPsgk74c1EvpMk4zsjs", skip-cert-verify: true}
+- {name: "🇺🇸 美国 02", server: "184.73.88.70", port: 27157, type: "hysteria2", password: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", auth: "2TVaHB5xPuwPuSLewLPJiH9CR8Q", skip-cert-verify: true}
+- {name: "🇺🇸 美国 03", server: "18.224.45.223", port: 6170, type: "hysteria2", password: "AcskAB70W13TwDE4pRbyB5cIGY", auth: "AcskAB70W13TwDE4pRbyB5cIGY", skip-cert-verify: true}
+- {name: "🇺🇸 美国 04", server: "35.95.118.185", port: 12096, type: "hysteria2", password: "o7qQ56nYlcXUNGPEMybEzezMns", auth: "o7qQ56nYlcXUNGPEMybEzezMns", skip-cert-verify: true}
+- {name: "🇺🇸 美国 05", server: "54.202.31.170", port: 8288, type: "hysteria2", password: "Pet6beTavtYCwkkPQci5eYg", auth: "Pet6beTavtYCwkkPQci5eYg", skip-cert-verify: true}
+- {name: "🇺🇸 美国 06", server: "29d908d.u4.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cl:106053"}}
+- {name: "🇺🇸 美国 07", server: "29d908d.u1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
+- {name: "🇺🇸 美国 08", server: "29d908d.u6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cat:106053"}}
+- {name: "🇺🇸 美国 09", server: "64.181.207.162", port: 47262, type: "hysteria2", password: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", auth: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", skip-cert-verify: true}
+- {name: "🇺🇸 美国 10", server: "29d908d.u3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.de:106053"}}
+- {name: "🇺🇸 美国 11", server: "29d908d.u5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ge:106053"}}
+- {name: "🇸🇬 新加坡 01", server: "54.169.190.172", port: 31667, type: "hysteria2", password: "hf96oOugMgvkOAlVykIA0EKHk", auth: "hf96oOugMgvkOAlVykIA0EKHk", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 02", server: "13.215.50.242", port: 19647, type: "hysteria2", password: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", auth: "ayugXYUKGKFwS2B1QKWPGFlW4Rg", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 03", server: "120.232.153.40", port: 31209, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 04", server: "52.89.248.218", port: 11136, type: "hysteria2", password: "yDtaQpO8NeVVkInIkaqXlMa7et4", auth: "yDtaQpO8NeVVkInIkaqXlMa7et4", skip-cert-verify: true}
+- {name: "🇩🇪 德国 01", server: "3.122.115.64", port: 22024, type: "hysteria2", password: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", auth: "C1AhcuZ9TW9A2tnL7Q8TF1s1g", skip-cert-verify: true}
+- {name: "🇩🇪 德国 02", server: "3.120.153.207", port: 32816, type: "hysteria2", password: "0I8k2r7DPbQQsR1buvf8FaWF4U", auth: "0I8k2r7DPbQQsR1buvf8FaWF4U", skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "2600:1900:41a0:616::", port: 36866, type: "ss", cipher: "aes-256-gcm", password: "NkRJVGlNR3JBQW5Udzh1QXQxQkVXM1hQWm5Bd1RLS2w="}
+- {name: "🇭🇰 香港 02", server: "2600:1900:41a0:fd0f::", port: 29813, type: "ss", cipher: "aes-256-gcm", password: "MkZEbXRObHJtSEJUWldyTXRqUlh2N1NNc0hTSm04em8="}
+- {name: "🇭🇰 香港 03", server: "29d908d.h3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 01", server: "29d908d.b3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.eu:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 02", server: "29d908d.b7.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.jp:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 03", server: "29d908d.b9.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.de:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 04", server: "29d908d.b2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 05", server: "29d908d.b4.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 06", server: "29d908d.b6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.jp:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 07", server: "29d908d.d2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.xboxlive.com.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 08", server: "29d908d.b5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.de:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 09", server: "29d908d.b8.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ge:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 10", server: "29d908d.f2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.net.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 11", server: "29d908d.b1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 12", server: "29d908d.b5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 13", server: "29d908d.f1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cat.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 14", server: "29d908d.f3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cl.net:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 15", server: "29d908d.b6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.lu:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 16", server: "29d908d.dc.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.eu:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 17", server: "29d908d.db.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ch:106053"}}
+- {name: "🏴‍☠️ 多米尼加共和国 18", server: "29d908d.da.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.io:106053"}}
+- {name: "🇨🇳 台湾 01", server: "sg.xnh98d9c32om.com", port: 24510, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
+- {name: "🇨🇳 台湾 02", server: "29d908d.t2.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.ee:106053"}}
+- {name: "🇨🇳 台湾 03", server: "29d908d.t5.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.nintendo.eu:106053"}}
+- {name: "🇨🇳 台湾 04", server: "29d908d.t1.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.jp:106053"}}
+- {name: "🇨🇳 台湾 05", server: "29d908d.t3.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.cat:106053"}}
+- {name: "🇨🇳 台湾 06", server: "29d908d.t6.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.de:106053"}}
+- {name: "🇨🇳 台湾 07", server: "sg.xnh98d9c32om.com", port: 24511, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
+- {name: "🇨🇳 台湾 08", server: "sg.xnh98d9c32om.com", port: 24512, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
+- {name: "🇨🇳 台湾 09", server: "29d908d.t4.gladns.com", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "29d908d.dl.microsoft.it:106053"}}
+- {name: "🇨🇳 台湾 10", server: "sg.xnh98d9c32om.com", port: 24513, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
+- {name: "🇨🇳 台湾 11", server: "sg.xnh98d9c32om.com", port: 24549, type: "ss", cipher: "aes-128-gcm", password: "57355671-481c-40c0-8572-acde4adaacd6"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🏴‍☠️ 多米尼加共和国 01"
+  - "🏴‍☠️ 多米尼加共和国 02"
+  - "🏴‍☠️ 多米尼加共和国 03"
+  - "🏴‍☠️ 多米尼加共和国 04"
+  - "🏴‍☠️ 多米尼加共和国 05"
+  - "🏴‍☠️ 多米尼加共和国 06"
+  - "🏴‍☠️ 多米尼加共和国 07"
+  - "🏴‍☠️ 多米尼加共和国 08"
+  - "🏴‍☠️ 多米尼加共和国 09"
+  - "🏴‍☠️ 多米尼加共和国 10"
+  - "🏴‍☠️ 多米尼加共和国 11"
+  - "🏴‍☠️ 多米尼加共和国 12"
+  - "🏴‍☠️ 多米尼加共和国 13"
+  - "🏴‍☠️ 多米尼加共和国 14"
+  - "🏴‍☠️ 多米尼加共和国 15"
+  - "🏴‍☠️ 多米尼加共和国 16"
+  - "🏴‍☠️ 多米尼加共和国 17"
+  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🏴‍☠️ 多米尼加共和国 01"
+  - "🏴‍☠️ 多米尼加共和国 02"
+  - "🏴‍☠️ 多米尼加共和国 03"
+  - "🏴‍☠️ 多米尼加共和国 04"
+  - "🏴‍☠️ 多米尼加共和国 05"
+  - "🏴‍☠️ 多米尼加共和国 06"
+  - "🏴‍☠️ 多米尼加共和国 07"
+  - "🏴‍☠️ 多米尼加共和国 08"
+  - "🏴‍☠️ 多米尼加共和国 09"
+  - "🏴‍☠️ 多米尼加共和国 10"
+  - "🏴‍☠️ 多米尼加共和国 11"
+  - "🏴‍☠️ 多米尼加共和国 12"
+  - "🏴‍☠️ 多米尼加共和国 13"
+  - "🏴‍☠️ 多米尼加共和国 14"
+  - "🏴‍☠️ 多米尼加共和国 15"
+  - "🏴‍☠️ 多米尼加共和国 16"
+  - "🏴‍☠️ 多米尼加共和国 17"
+  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🏴‍☠️ 多米尼加共和国 01"
+  - "🏴‍☠️ 多米尼加共和国 02"
+  - "🏴‍☠️ 多米尼加共和国 03"
+  - "🏴‍☠️ 多米尼加共和国 04"
+  - "🏴‍☠️ 多米尼加共和国 05"
+  - "🏴‍☠️ 多米尼加共和国 06"
+  - "🏴‍☠️ 多米尼加共和国 07"
+  - "🏴‍☠️ 多米尼加共和国 08"
+  - "🏴‍☠️ 多米尼加共和国 09"
+  - "🏴‍☠️ 多米尼加共和国 10"
+  - "🏴‍☠️ 多米尼加共和国 11"
+  - "🏴‍☠️ 多米尼加共和国 12"
+  - "🏴‍☠️ 多米尼加共和国 13"
+  - "🏴‍☠️ 多米尼加共和国 14"
+  - "🏴‍☠️ 多米尼加共和国 15"
+  - "🏴‍☠️ 多米尼加共和国 16"
+  - "🏴‍☠️ 多米尼加共和国 17"
+  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🏴‍☠️ 多米尼加共和国 01"
+  - "🏴‍☠️ 多米尼加共和国 02"
+  - "🏴‍☠️ 多米尼加共和国 03"
+  - "🏴‍☠️ 多米尼加共和国 04"
+  - "🏴‍☠️ 多米尼加共和国 05"
+  - "🏴‍☠️ 多米尼加共和国 06"
+  - "🏴‍☠️ 多米尼加共和国 07"
+  - "🏴‍☠️ 多米尼加共和国 08"
+  - "🏴‍☠️ 多米尼加共和国 09"
+  - "🏴‍☠️ 多米尼加共和国 10"
+  - "🏴‍☠️ 多米尼加共和国 11"
+  - "🏴‍☠️ 多米尼加共和国 12"
+  - "🏴‍☠️ 多米尼加共和国 13"
+  - "🏴‍☠️ 多米尼加共和国 14"
+  - "🏴‍☠️ 多米尼加共和国 15"
+  - "🏴‍☠️ 多米尼加共和国 16"
+  - "🏴‍☠️ 多米尼加共和国 17"
+  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🏴‍☠️ 多米尼加共和国 01"
+  - "🏴‍☠️ 多米尼加共和国 02"
+  - "🏴‍☠️ 多米尼加共和国 03"
+  - "🏴‍☠️ 多米尼加共和国 04"
+  - "🏴‍☠️ 多米尼加共和国 05"
+  - "🏴‍☠️ 多米尼加共和国 06"
+  - "🏴‍☠️ 多米尼加共和国 07"
+  - "🏴‍☠️ 多米尼加共和国 08"
+  - "🏴‍☠️ 多米尼加共和国 09"
+  - "🏴‍☠️ 多米尼加共和国 10"
+  - "🏴‍☠️ 多米尼加共和国 11"
+  - "🏴‍☠️ 多米尼加共和国 12"
+  - "🏴‍☠️ 多米尼加共和国 13"
+  - "🏴‍☠️ 多米尼加共和国 14"
+  - "🏴‍☠️ 多米尼加共和国 15"
+  - "🏴‍☠️ 多米尼加共和国 16"
+  - "🏴‍☠️ 多米尼加共和国 17"
+  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🏴‍☠️ 多米尼加共和国 01"
+  - "🏴‍☠️ 多米尼加共和国 02"
+  - "🏴‍☠️ 多米尼加共和国 03"
+  - "🏴‍☠️ 多米尼加共和国 04"
+  - "🏴‍☠️ 多米尼加共和国 05"
+  - "🏴‍☠️ 多米尼加共和国 06"
+  - "🏴‍☠️ 多米尼加共和国 07"
+  - "🏴‍☠️ 多米尼加共和国 08"
+  - "🏴‍☠️ 多米尼加共和国 09"
+  - "🏴‍☠️ 多米尼加共和国 10"
+  - "🏴‍☠️ 多米尼加共和国 11"
+  - "🏴‍☠️ 多米尼加共和国 12"
+  - "🏴‍☠️ 多米尼加共和国 13"
+  - "🏴‍☠️ 多米尼加共和国 14"
+  - "🏴‍☠️ 多米尼加共和国 15"
+  - "🏴‍☠️ 多米尼加共和国 16"
+  - "🏴‍☠️ 多米尼加共和国 17"
+  - "🏴‍☠️ 多米尼加共和国 18"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

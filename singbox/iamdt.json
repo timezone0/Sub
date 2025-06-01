@@ -1,0 +1,1193 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🏴‍☠️ 多米尼加共和国 01",
+        "🏴‍☠️ 多米尼加共和国 02",
+        "🏴‍☠️ 多米尼加共和国 03",
+        "🏴‍☠️ 多米尼加共和国 04",
+        "🏴‍☠️ 多米尼加共和国 05",
+        "🏴‍☠️ 多米尼加共和国 06",
+        "🏴‍☠️ 多米尼加共和国 07",
+        "🏴‍☠️ 多米尼加共和国 08",
+        "🏴‍☠️ 多米尼加共和国 09",
+        "🏴‍☠️ 多米尼加共和国 10",
+        "🏴‍☠️ 多米尼加共和国 11",
+        "🏴‍☠️ 多米尼加共和国 12",
+        "🏴‍☠️ 多米尼加共和国 13",
+        "🏴‍☠️ 多米尼加共和国 14",
+        "🏴‍☠️ 多米尼加共和国 15",
+        "🏴‍☠️ 多米尼加共和国 16",
+        "🏴‍☠️ 多米尼加共和国 17",
+        "🏴‍☠️ 多米尼加共和国 18",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇨🇳 台湾 09",
+        "🇨🇳 台湾 10",
+        "🇨🇳 台湾 11"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🏴‍☠️ 多米尼加共和国 01",
+        "🏴‍☠️ 多米尼加共和国 02",
+        "🏴‍☠️ 多米尼加共和国 03",
+        "🏴‍☠️ 多米尼加共和国 04",
+        "🏴‍☠️ 多米尼加共和国 05",
+        "🏴‍☠️ 多米尼加共和国 06",
+        "🏴‍☠️ 多米尼加共和国 07",
+        "🏴‍☠️ 多米尼加共和国 08",
+        "🏴‍☠️ 多米尼加共和国 09",
+        "🏴‍☠️ 多米尼加共和国 10",
+        "🏴‍☠️ 多米尼加共和国 11",
+        "🏴‍☠️ 多米尼加共和国 12",
+        "🏴‍☠️ 多米尼加共和国 13",
+        "🏴‍☠️ 多米尼加共和国 14",
+        "🏴‍☠️ 多米尼加共和国 15",
+        "🏴‍☠️ 多米尼加共和国 16",
+        "🏴‍☠️ 多米尼加共和国 17",
+        "🏴‍☠️ 多米尼加共和国 18",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇨🇳 台湾 09",
+        "🇨🇳 台湾 10",
+        "🇨🇳 台湾 11"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🏴‍☠️ 多米尼加共和国 01",
+        "🏴‍☠️ 多米尼加共和国 02",
+        "🏴‍☠️ 多米尼加共和国 03",
+        "🏴‍☠️ 多米尼加共和国 04",
+        "🏴‍☠️ 多米尼加共和国 05",
+        "🏴‍☠️ 多米尼加共和国 06",
+        "🏴‍☠️ 多米尼加共和国 07",
+        "🏴‍☠️ 多米尼加共和国 08",
+        "🏴‍☠️ 多米尼加共和国 09",
+        "🏴‍☠️ 多米尼加共和国 10",
+        "🏴‍☠️ 多米尼加共和国 11",
+        "🏴‍☠️ 多米尼加共和国 12",
+        "🏴‍☠️ 多米尼加共和国 13",
+        "🏴‍☠️ 多米尼加共和国 14",
+        "🏴‍☠️ 多米尼加共和国 15",
+        "🏴‍☠️ 多米尼加共和国 16",
+        "🏴‍☠️ 多米尼加共和国 17",
+        "🏴‍☠️ 多米尼加共和国 18",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇨🇳 台湾 09",
+        "🇨🇳 台湾 10",
+        "🇨🇳 台湾 11"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🏴‍☠️ 多米尼加共和国 01",
+        "🏴‍☠️ 多米尼加共和国 02",
+        "🏴‍☠️ 多米尼加共和国 03",
+        "🏴‍☠️ 多米尼加共和国 04",
+        "🏴‍☠️ 多米尼加共和国 05",
+        "🏴‍☠️ 多米尼加共和国 06",
+        "🏴‍☠️ 多米尼加共和国 07",
+        "🏴‍☠️ 多米尼加共和国 08",
+        "🏴‍☠️ 多米尼加共和国 09",
+        "🏴‍☠️ 多米尼加共和国 10",
+        "🏴‍☠️ 多米尼加共和国 11",
+        "🏴‍☠️ 多米尼加共和国 12",
+        "🏴‍☠️ 多米尼加共和国 13",
+        "🏴‍☠️ 多米尼加共和国 14",
+        "🏴‍☠️ 多米尼加共和国 15",
+        "🏴‍☠️ 多米尼加共和国 16",
+        "🏴‍☠️ 多米尼加共和国 17",
+        "🏴‍☠️ 多米尼加共和国 18",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇨🇳 台湾 09",
+        "🇨🇳 台湾 10",
+        "🇨🇳 台湾 11"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🏴‍☠️ 多米尼加共和国 01",
+        "🏴‍☠️ 多米尼加共和国 02",
+        "🏴‍☠️ 多米尼加共和国 03",
+        "🏴‍☠️ 多米尼加共和国 04",
+        "🏴‍☠️ 多米尼加共和国 05",
+        "🏴‍☠️ 多米尼加共和国 06",
+        "🏴‍☠️ 多米尼加共和国 07",
+        "🏴‍☠️ 多米尼加共和国 08",
+        "🏴‍☠️ 多米尼加共和国 09",
+        "🏴‍☠️ 多米尼加共和国 10",
+        "🏴‍☠️ 多米尼加共和国 11",
+        "🏴‍☠️ 多米尼加共和国 12",
+        "🏴‍☠️ 多米尼加共和国 13",
+        "🏴‍☠️ 多米尼加共和国 14",
+        "🏴‍☠️ 多米尼加共和国 15",
+        "🏴‍☠️ 多米尼加共和国 16",
+        "🏴‍☠️ 多米尼加共和国 17",
+        "🏴‍☠️ 多米尼加共和国 18",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇨🇳 台湾 09",
+        "🇨🇳 台湾 10",
+        "🇨🇳 台湾 11"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🏴‍☠️ 多米尼加共和国 01",
+        "🏴‍☠️ 多米尼加共和国 02",
+        "🏴‍☠️ 多米尼加共和国 03",
+        "🏴‍☠️ 多米尼加共和国 04",
+        "🏴‍☠️ 多米尼加共和国 05",
+        "🏴‍☠️ 多米尼加共和国 06",
+        "🏴‍☠️ 多米尼加共和国 07",
+        "🏴‍☠️ 多米尼加共和国 08",
+        "🏴‍☠️ 多米尼加共和国 09",
+        "🏴‍☠️ 多米尼加共和国 10",
+        "🏴‍☠️ 多米尼加共和国 11",
+        "🏴‍☠️ 多米尼加共和国 12",
+        "🏴‍☠️ 多米尼加共和国 13",
+        "🏴‍☠️ 多米尼加共和国 14",
+        "🏴‍☠️ 多米尼加共和国 15",
+        "🏴‍☠️ 多米尼加共和国 16",
+        "🏴‍☠️ 多米尼加共和国 17",
+        "🏴‍☠️ 多米尼加共和国 18",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇨🇳 台湾 09",
+        "🇨🇳 台湾 10",
+        "🇨🇳 台湾 11"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "hysteria2",
+      "server": "54.238.229.239",
+      "server_port": 31771,
+      "password": "OWTXTQv1bF61nvyLERhzmKotao",
+      "tls": {
+        "enabled": true,
+        "server_name": "54.238.229.239",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "hysteria2",
+      "server": "18.178.175.245",
+      "server_port": 23553,
+      "password": "WFIXGJKjFj54C7Qx9ZUytE8eBF0",
+      "tls": {
+        "enabled": true,
+        "server_name": "18.178.175.245",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "hysteria2",
+      "server": "43.206.255.50",
+      "server_port": 26182,
+      "password": "KUP1LshgSRNGg4vsCNGDPBXYNis",
+      "tls": {
+        "enabled": true,
+        "server_name": "43.206.255.50",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "shadowsocks",
+      "server": "29d908d.j1.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.nintendo.eu:106053"
+    },
+    {
+      "tag": "🇯🇵 日本 05",
+      "type": "shadowsocks",
+      "server": "29d908d.j2.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.lu:106053"
+    },
+    {
+      "tag": "🇯🇵 日本 06",
+      "type": "hysteria2",
+      "server": "riben2.31427397.xyz",
+      "server_port": 17390,
+      "password": "185f03eb-5ce5-4db8-8107-7354530a9bb2",
+      "tls": {
+        "enabled": true,
+        "server_name": "riben2.31427397.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "35.84.25.6",
+      "server_port": 3764,
+      "password": "rIDir9endPsgk74c1EvpMk4zsjs",
+      "tls": {
+        "enabled": true,
+        "server_name": "35.84.25.6",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "hysteria2",
+      "server": "184.73.88.70",
+      "server_port": 27157,
+      "password": "2TVaHB5xPuwPuSLewLPJiH9CR8Q",
+      "tls": {
+        "enabled": true,
+        "server_name": "184.73.88.70",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "hysteria2",
+      "server": "18.224.45.223",
+      "server_port": 6170,
+      "password": "AcskAB70W13TwDE4pRbyB5cIGY",
+      "tls": {
+        "enabled": true,
+        "server_name": "18.224.45.223",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "hysteria2",
+      "server": "35.95.118.185",
+      "server_port": 12096,
+      "password": "o7qQ56nYlcXUNGPEMybEzezMns",
+      "tls": {
+        "enabled": true,
+        "server_name": "35.95.118.185",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "hysteria2",
+      "server": "54.202.31.170",
+      "server_port": 8288,
+      "password": "Pet6beTavtYCwkkPQci5eYg",
+      "tls": {
+        "enabled": true,
+        "server_name": "54.202.31.170",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "shadowsocks",
+      "server": "29d908d.u4.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.cl:106053"
+    },
+    {
+      "tag": "🇺🇸 美国 07",
+      "type": "shadowsocks",
+      "server": "29d908d.u1.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.net:106053"
+    },
+    {
+      "tag": "🇺🇸 美国 08",
+      "type": "shadowsocks",
+      "server": "29d908d.u6.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.cat:106053"
+    },
+    {
+      "tag": "🇺🇸 美国 09",
+      "type": "hysteria2",
+      "server": "64.181.207.162",
+      "server_port": 47262,
+      "password": "b72ba5d5-2d5e-45b7-93b5-236d343baa7c",
+      "tls": {
+        "enabled": true,
+        "server_name": "64.181.207.162",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 10",
+      "type": "shadowsocks",
+      "server": "29d908d.u3.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.de:106053"
+    },
+    {
+      "tag": "🇺🇸 美国 11",
+      "type": "shadowsocks",
+      "server": "29d908d.u5.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.ge:106053"
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "hysteria2",
+      "server": "54.169.190.172",
+      "server_port": 31667,
+      "password": "hf96oOugMgvkOAlVykIA0EKHk",
+      "tls": {
+        "enabled": true,
+        "server_name": "54.169.190.172",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "hysteria2",
+      "server": "13.215.50.242",
+      "server_port": 19647,
+      "password": "ayugXYUKGKFwS2B1QKWPGFlW4Rg",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.215.50.242",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 03",
+      "type": "vmess",
+      "server": "120.232.153.40",
+      "server_port": 31209,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇸🇬 新加坡 04",
+      "type": "hysteria2",
+      "server": "52.89.248.218",
+      "server_port": 11136,
+      "password": "yDtaQpO8NeVVkInIkaqXlMa7et4",
+      "tls": {
+        "enabled": true,
+        "server_name": "52.89.248.218",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇩🇪 德国 01",
+      "type": "hysteria2",
+      "server": "3.122.115.64",
+      "server_port": 22024,
+      "password": "C1AhcuZ9TW9A2tnL7Q8TF1s1g",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.122.115.64",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇩🇪 德国 02",
+      "type": "hysteria2",
+      "server": "3.120.153.207",
+      "server_port": 32816,
+      "password": "0I8k2r7DPbQQsR1buvf8FaWF4U",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.120.153.207",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "shadowsocks",
+      "server": "2600:1900:41a0:616::",
+      "server_port": 36866,
+      "method": "aes-256-gcm",
+      "password": "NkRJVGlNR3JBQW5Udzh1QXQxQkVXM1hQWm5Bd1RLS2w="
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "shadowsocks",
+      "server": "2600:1900:41a0:fd0f::",
+      "server_port": 29813,
+      "method": "aes-256-gcm",
+      "password": "MkZEbXRObHJtSEJUWldyTXRqUlh2N1NNc0hTSm04em8="
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "shadowsocks",
+      "server": "29d908d.h3.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.lu:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 01",
+      "type": "shadowsocks",
+      "server": "29d908d.b3.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.eu:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 02",
+      "type": "shadowsocks",
+      "server": "29d908d.b7.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.nintendo.jp:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 03",
+      "type": "shadowsocks",
+      "server": "29d908d.b9.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.nintendo.de:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 04",
+      "type": "shadowsocks",
+      "server": "29d908d.b2.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.lu:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 05",
+      "type": "shadowsocks",
+      "server": "29d908d.b4.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 06",
+      "type": "shadowsocks",
+      "server": "29d908d.b6.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.jp:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 07",
+      "type": "shadowsocks",
+      "server": "29d908d.d2.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.xboxlive.com.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 08",
+      "type": "shadowsocks",
+      "server": "29d908d.b5.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.nintendo.de:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 09",
+      "type": "shadowsocks",
+      "server": "29d908d.b8.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.ge:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 10",
+      "type": "shadowsocks",
+      "server": "29d908d.f2.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.nintendo.net.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 11",
+      "type": "shadowsocks",
+      "server": "29d908d.b1.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 12",
+      "type": "shadowsocks",
+      "server": "29d908d.b5.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 13",
+      "type": "shadowsocks",
+      "server": "29d908d.f1.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.cat.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 14",
+      "type": "shadowsocks",
+      "server": "29d908d.f3.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.cl.net:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 15",
+      "type": "shadowsocks",
+      "server": "29d908d.b6.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.lu:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 16",
+      "type": "shadowsocks",
+      "server": "29d908d.dc.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.eu:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 17",
+      "type": "shadowsocks",
+      "server": "29d908d.db.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.ch:106053"
+    },
+    {
+      "tag": "🏴‍☠️ 多米尼加共和国 18",
+      "type": "shadowsocks",
+      "server": "29d908d.da.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.io:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "shadowsocks",
+      "server": "sg.xnh98d9c32om.com",
+      "server_port": 24510,
+      "method": "aes-128-gcm",
+      "password": "57355671-481c-40c0-8572-acde4adaacd6"
+    },
+    {
+      "tag": "🇨🇳 台湾 02",
+      "type": "shadowsocks",
+      "server": "29d908d.t2.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.ee:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 03",
+      "type": "shadowsocks",
+      "server": "29d908d.t5.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.nintendo.eu:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 04",
+      "type": "shadowsocks",
+      "server": "29d908d.t1.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.jp:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 05",
+      "type": "shadowsocks",
+      "server": "29d908d.t3.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.cat:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 06",
+      "type": "shadowsocks",
+      "server": "29d908d.t6.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.de:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 07",
+      "type": "shadowsocks",
+      "server": "sg.xnh98d9c32om.com",
+      "server_port": 24511,
+      "method": "aes-128-gcm",
+      "password": "57355671-481c-40c0-8572-acde4adaacd6"
+    },
+    {
+      "tag": "🇨🇳 台湾 08",
+      "type": "shadowsocks",
+      "server": "sg.xnh98d9c32om.com",
+      "server_port": 24512,
+      "method": "aes-128-gcm",
+      "password": "57355671-481c-40c0-8572-acde4adaacd6"
+    },
+    {
+      "tag": "🇨🇳 台湾 09",
+      "type": "shadowsocks",
+      "server": "29d908d.t4.gladns.com",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=29d908d.dl.microsoft.it:106053"
+    },
+    {
+      "tag": "🇨🇳 台湾 10",
+      "type": "shadowsocks",
+      "server": "sg.xnh98d9c32om.com",
+      "server_port": 24513,
+      "method": "aes-128-gcm",
+      "password": "57355671-481c-40c0-8572-acde4adaacd6"
+    },
+    {
+      "tag": "🇨🇳 台湾 11",
+      "type": "shadowsocks",
+      "server": "sg.xnh98d9c32om.com",
+      "server_port": 24549,
+      "method": "aes-128-gcm",
+      "password": "57355671-481c-40c0-8572-acde4adaacd6"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
