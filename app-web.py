@@ -20,12 +20,8 @@ args, _ = parser.parse_known_args()
 MIHOMO_DIR = args.mihomo_dir
 SINGBOX_DIR = args.singbox_dir
 
-# 自动创建输出目录
-os.makedirs(MIHOMO_DIR, exist_ok=True)
-os.makedirs(SINGBOX_DIR, exist_ok=True)
-
 # === 基础配置 ===
-SUBSTORE_PORT = 3002
+SUBSTORE_PORT = 3004
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
 
@@ -75,21 +71,21 @@ def start_substore_backend():
         else:
             log("⚠️ 等待超时，服务可能未成功启动")
     except Exception as e:
-        log(f"❌ 启动 SubStore 后端失败: {e}")
+        log(f"❌ 启动 SubStore 后端失败：{e}")
 
 
 def refresh_backend():
     try:
-        log("刷新后端缓存...")
+        log("▶ 正在刷新后端资源缓存...")
         res = requests.get(f"{API_BASE}/api/utils/refresh")
         res.raise_for_status()
         return "✅ 缓存刷新成功"
     except Exception as e:
-        return f"❌ 缓存刷新失败: {e}"
+        return f"❌ 缓存刷新失败：{e}"
 
 
 def generate_configs(name, url):
-    logs = [f"▶ 处理订阅: {name}"]
+    logs = [f"▶ 正在处理订阅：{name}"]
 
     encoded_url = (
         encode_gitlab_url(url)
@@ -101,7 +97,7 @@ def generate_configs(name, url):
     mihomo_out = os.path.join(MIHOMO_DIR, f"{name}.yaml")
     singbox_out = os.path.join(SINGBOX_DIR, f"{name}.json")
 
-    logs.append("▶ 生成 Mihomo 配置...")
+    logs.append("▶ 正在生成 Mihomo 配置...")
     result1 = subprocess.run(
         ["python", "scripts/mihomo-remote-generate.py", local_url, mihomo_out],
         capture_output=True,
@@ -113,7 +109,7 @@ def generate_configs(name, url):
         logs.append("❌ Mihomo 错误：")
         logs.append(result1.stderr.strip())
 
-    logs.append("▶ 生成 Singbox 配置...")
+    logs.append("▶ 正在生成 Singbox 配置...")
     result2 = subprocess.run(
         ["python", "scripts/singbox-remote-generate.py", local_url, singbox_out],
         capture_output=True,
@@ -158,5 +154,5 @@ def index():
 if __name__ == "__main__":
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
         start_substore_backend()
-    app.run(debug=True, port=5002)
+    app.run(debug=True, port=5004)
 

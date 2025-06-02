@@ -58,26 +58,17 @@ def start_substore_backend():
         else:
             log("⚠️ 等待超时，服务可能未成功启动")
     except Exception as e:
-        log(f"❌ 启动 SubStore 后端失败: {e}")
+        log(f"❌ 启动 SubStore 后端失败：{e}")
 
 
 def refresh_backend():
     try:
-        log("刷新后端资源缓存...")
+        log("▶ 正在刷新后端资源缓存...")
         res = requests.get(f"{API_BASE}/api/utils/refresh")
         res.raise_for_status()
-        log("✅ 刷新成功")
+        log("✅ 缓存刷新成功")
     except Exception as e:
-        log(f"❌ 刷新失败：{e}")
-
-
-def ensure_dirs_exist(*dirs):
-    for d in dirs:
-        try:
-            os.makedirs(d, exist_ok=True)
-        except Exception as e:
-            log(f"❌ 创建目录失败 {d}: {e}")
-
+        log(f"❌ 缓存刷新失败：{e}")
 
 def get_output_paths(name, mihomo_dir, singbox_dir):
     return (
@@ -87,7 +78,7 @@ def get_output_paths(name, mihomo_dir, singbox_dir):
 
 
 def handle_one(name, url, mihomo_dir, singbox_dir):
-    log(f"开始处理订阅: {name}")
+    log(f"▶ 开始处理订阅：{name}")
 
     encoded_url = (
         encode_gitlab_url(url)
@@ -96,27 +87,25 @@ def handle_one(name, url, mihomo_dir, singbox_dir):
     )
     local_url = f"{API_BASE}/download/sub?url={encoded_url}"
 
-    # 确保输出目录存在
-    ensure_dirs_exist(mihomo_dir, singbox_dir)
     mihomo_out, singbox_out = get_output_paths(name, mihomo_dir, singbox_dir)
 
     try:
-        log("生成 Mihomo 配置...")
+        log("▶ 正在生成 Mihomo 配置...")
         subprocess.run(
             ["python", "scripts/mihomo-remote-generate.py", local_url, mihomo_out],
             check=True,
         )
     except subprocess.CalledProcessError as e:
-        log(f"❌ 生成 Mihomo 配置失败: {e}")
+        log(f"❌ 生成 Mihomo 配置失败：{e}")
 
     try:
-        log("生成 Singbox 配置...")
+        log("▶ 正在生成 Singbox 配置...")
         subprocess.run(
             ["python", "scripts/singbox-remote-generate.py", local_url, singbox_out],
             check=True,
         )
     except subprocess.CalledProcessError as e:
-        log(f"❌ 生成 Singbox 配置失败: {e}")
+        log(f"❌ 生成 Singbox 配置失败：{e}")
 
     log("-----------------------------")
 
@@ -126,7 +115,7 @@ def handle_json(json_input, mihomo_dir, singbox_dir):
 
     try:
         if json_input.startswith("http://") or json_input.startswith("https://"):
-            log(f"从网络加载 JSON: {json_input}")
+            log(f"从网络加载 JSON：{json_input}")
             response = requests.get(json_input)
             response.raise_for_status()
             items = response.json()
@@ -134,11 +123,11 @@ def handle_json(json_input, mihomo_dir, singbox_dir):
             if not os.path.isfile(json_input):
                 log("❌ 无效的 JSON 文件路径")
                 return
-            log(f"读取本地 JSON 文件: {json_input}")
+            log(f"读取本地 JSON 文件：{json_input}")
             with open(json_input, "r", encoding="utf-8") as f:
                 items = json.load(f)
     except Exception as e:
-        log(f"❌ 加载 JSON 失败: {e}")
+        log(f"❌ 加载 JSON 失败：{e}")
         return
 
     for item in items:

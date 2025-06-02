@@ -6,8 +6,7 @@ import re
 import ruamel.yaml
 from ruamel.yaml.scalarstring import DoubleQuotedScalarString
 
-script_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
-os.chdir(script_dir)
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 def download_yaml(url):
@@ -17,7 +16,7 @@ def download_yaml(url):
         response.raise_for_status()
         return response.text
     except requests.exceptions.RequestException as e:
-        print(f"🎃下载 YAML 文件时发生错误 (URL: {url}): {e}")
+        print(f"🎃下载 YAML 文件时发生错误 (URL：{url})：{e}")
         raise
 
 
@@ -26,7 +25,7 @@ def preprocess_yaml(yaml_content):
         content = re.sub(r"!\<str\>", "", yaml_content)
         return content
     except re.error as e:
-        print(f"🎃预处理 YAML 内容时发生错误: {e}")
+        print(f"🎃预处理 YAML 内容时发生错误：{e}")
         raise
 
 
@@ -49,7 +48,7 @@ def extract_proxies(yaml_content):
 
         return proxies
     except Exception as e:
-        print(f"🎃提取代理时发生错误: {e}")
+        print(f"🎃提取代理时发生错误：{e}")
         raise
 
 
@@ -59,13 +58,13 @@ def load_config(config_path):
         with open(config_path, "r", encoding="utf-8") as file:
             return yaml.load(file)
     except FileNotFoundError:
-        print(f"🎃未找到配置文件: {config_path}")
+        print(f"🎃未找到配置文件：{config_path}")
         raise
     except ruamel.yaml.YAMLError as e:
-        print(f"🎃加载 YAML 配置文件时发生错误: {e}")
+        print(f"🎃加载配置文件时发生错误：{e}")
         raise
     except Exception as e:
-        print(f"🎃读取配置文件时发生未知错误: {e}")
+        print(f"🎃读取配置文件时发生未知错误：{e}")
         raise
 
 
@@ -86,7 +85,7 @@ def insert_proxies_to_config(config_data, proxies):
             config_data["proxies"] = proxies
         return config_data
     except Exception as e:
-        print(f"🎃插入代理到配置文件时发生错误: {e}")
+        print(f"🎃插入代理到配置文件时发生错误：{e}")
         raise
 
 
@@ -108,7 +107,7 @@ def insert_names_into_proxy_groups(config_data):
 
         return config_data
     except Exception as e:
-        print(f"🎃更新代理组时发生错误: {e}")
+        print(f"🎃更新代理组时发生错误：{e}")
         raise
 
 
@@ -123,7 +122,7 @@ def apply_quotes_to_strings(data):
             return DoubleQuotedScalarString(data)
         return data
     except Exception as e:
-        print(f"🎃应用双引号时发生错误: {e}")
+        print(f"🎃应用双引号时发生错误：{e}")
         raise
 
 
@@ -139,36 +138,34 @@ def save_result(config_data, result_path):
         with open(result_path, "w", encoding="utf-8") as file:
             yaml.dump(config_data, file)
     except IOError as e:
-        print(f"🎃保存文件时发生错误: {e}")
+        print(f"🎃保存文件时发生错误：{e}")
         raise
     except Exception as e:
-        print(f"🎃保存结果时发生未知错误: {e}")
+        print(f"🎃保存结果时发生未知错误：{e}")
         raise
 
 
 def main(url, result_path):
     try:
-        print(f"正在下载 YAML 文件: {url}")
+        print(f"正在下载 YAML 文件：{url}")
         yaml_content = download_yaml(url)
         proxies = extract_proxies(yaml_content)
 
-        config_path = os.path.join("mihomo-config", "config.yaml")
-        print(f"加载配置文件: {config_path}")
+        config_path = "mihomo-config/config.yaml"
         config_data = load_config(config_path)
 
         updated_config = insert_proxies_to_config(config_data, proxies)
         updated_config = insert_names_into_proxy_groups(updated_config)
 
-        print(f"保存结果到: {result_path}")
         save_result(updated_config, result_path)
-        print(f"✅处理完成，结果已保存到 {result_path}")
+        print(f"✅处理完成，文件已保存到：{ os.path.abspath(result_path) }")
     except Exception as e:
-        print(f"🎃执行脚本时发生错误: {e}")
+        print(f"🎃执行脚本时发生错误：{e}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="通过URL下载YAML文件并更新config.yaml")
-    parser.add_argument("url", help="需要下载的YAML文件URL")
+    parser = argparse.ArgumentParser(description="通过 URL 下载 YAML 文件")
+    parser.add_argument("url", help="需要下载的 YAML 文件的 URL ")
     parser.add_argument("result_path", help="保存结果的路径")
     args = parser.parse_args()
 
