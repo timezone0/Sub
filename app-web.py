@@ -21,7 +21,7 @@ MIHOMO_DIR = args.mihomo_dir
 SINGBOX_DIR = args.singbox_dir
 
 # === 基础配置 ===
-SUBSTORE_PORT = 3004
+SUBSTORE_PORT = 3002
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
 
@@ -154,5 +154,5 @@ def index():
 if __name__ == "__main__":
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
         start_substore_backend()
-    app.run(debug=True, port=5004)
+    app.run(debug=True, port=5002)
 
