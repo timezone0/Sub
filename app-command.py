@@ -7,12 +7,10 @@ import requests
 import subprocess
 from urllib.parse import quote
 
-# === 基础配置 ===
+# === 配置 ===
 SUBSTORE_PORT = 3003
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
-MIHOMO_DIR = "../mihomo"
-SINGBOX_DIR = "../singbox"
 
 # 切换到脚本所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +22,6 @@ def log(msg):
 
 
 def encode_gitlab_url(raw_url):
-    # GitLab API 特殊处理：需要对 `%` 进行双重编码
     return raw_url.replace("%", "%25").replace("%", "%25")
 
 
@@ -74,17 +71,24 @@ def refresh_backend():
         log(f"❌ 刷新失败：{e}")
 
 
-def get_output_paths(name):
+def ensure_dirs_exist(*dirs):
+    for d in dirs:
+        try:
+            os.makedirs(d, exist_ok=True)
+        except Exception as e:
+            log(f"❌ 创建目录失败 {d}: {e}")
+
+
+def get_output_paths(name, mihomo_dir, singbox_dir):
     return (
-        os.path.join(MIHOMO_DIR, f"{name}.yaml"),
-        os.path.join(SINGBOX_DIR, f"{name}.json"),
+        os.path.join(mihomo_dir, f"{name}.yaml"),
+        os.path.join(singbox_dir, f"{name}.json"),
     )
 
 
-def handle_one(name, url):
+def handle_one(name, url, mihomo_dir, singbox_dir):
     log(f"开始处理订阅: {name}")
 
-    # GitLab 特殊处理
     encoded_url = (
         encode_gitlab_url(url)
         if url.startswith("https://gitlab.com/api/")
@@ -92,7 +96,9 @@ def handle_one(name, url):
     )
     local_url = f"{API_BASE}/download/sub?url={encoded_url}"
 
-    mihomo_out, singbox_out = get_output_paths(name)
+    # 确保输出目录存在
+    ensure_dirs_exist(mihomo_dir, singbox_dir)
+    mihomo_out, singbox_out = get_output_paths(name, mihomo_dir, singbox_dir)
 
     try:
         log("生成 Mihomo 配置...")
@@ -115,7 +121,7 @@ def handle_one(name, url):
     log("-----------------------------")
 
 
-def handle_json(json_input):
+def handle_json(json_input, mihomo_dir, singbox_dir):
     refresh_backend()
 
     try:
@@ -139,7 +145,7 @@ def handle_json(json_input):
         name = item.get("name")
         url = item.get("url")
         if name and url:
-            handle_one(name, url)
+            handle_one(name, url, mihomo_dir, singbox_dir)
         else:
             log(f"⚠️ 跳过无效项：{item}")
 
@@ -153,14 +159,18 @@ if __name__ == "__main__":
     group.add_argument("--json", help="JSON 文件路径或 URL（包含 name/url）")
     group.add_argument("--name", help="订阅名称（需配合 --url）")
     parser.add_argument("--url", help="订阅地址")
+    parser.add_argument("--mihomo-dir", default="../mihomo", help="Mihomo 配置输出目录")
+    parser.add_argument(
+        "--singbox-dir", default="../singbox", help="Singbox 配置输出目录"
+    )
 
     args = parser.parse_args()
 
     if args.json:
-        handle_json(args.json)
+        handle_json(args.json, args.mihomo_dir, args.singbox_dir)
     elif args.name and args.url:
         refresh_backend()
-        handle_one(args.name, args.url)
+        handle_one(args.name, args.url, args.mihomo_dir, args.singbox_dir)
     else:
         log("❌ 参数不完整，请使用 --json 或 --name 与 --url")
 

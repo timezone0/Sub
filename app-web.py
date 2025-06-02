@@ -6,16 +6,28 @@ import requests
 import subprocess
 from urllib.parse import quote
 from flask import Flask, render_template, request, redirect, url_for, session
+import argparse
+
+# 切换到脚本所在目录
+os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
+# === 命令行参数解析 ===
+parser = argparse.ArgumentParser(description="Flask 后端 + SubStore 配置生成器")
+parser.add_argument("--mihomo-dir", default="../mihomo", help="Mihomo 输出目录")
+parser.add_argument("--singbox-dir", default="../singbox", help="Singbox 输出目录")
+args, _ = parser.parse_known_args()
+
+MIHOMO_DIR = args.mihomo_dir
+SINGBOX_DIR = args.singbox_dir
+
+# 自动创建输出目录
+os.makedirs(MIHOMO_DIR, exist_ok=True)
+os.makedirs(SINGBOX_DIR, exist_ok=True)
 
 # === 基础配置 ===
 SUBSTORE_PORT = 3002
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
-MIHOMO_DIR = "../mihomo"
-SINGBOX_DIR = "../singbox"
-
-# 切换到脚本所在目录
-os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 app = Flask(__name__)
 app.secret_key = "your-secret-key"
@@ -27,7 +39,6 @@ def log(msg):
 
 
 def encode_gitlab_url(raw_url):
-    # GitLab API 特殊处理：需要对 `%` 进行双重编码
     return raw_url.replace("%", "%25").replace("%", "%25")
 
 
@@ -90,7 +101,6 @@ def generate_configs(name, url):
     mihomo_out = os.path.join(MIHOMO_DIR, f"{name}.yaml")
     singbox_out = os.path.join(SINGBOX_DIR, f"{name}.json")
 
-    # Mihomo 配置生成
     logs.append("▶ 生成 Mihomo 配置...")
     result1 = subprocess.run(
         ["python", "scripts/mihomo-remote-generate.py", local_url, mihomo_out],
@@ -103,7 +113,6 @@ def generate_configs(name, url):
         logs.append("❌ Mihomo 错误：")
         logs.append(result1.stderr.strip())
 
-    # Singbox 配置生成
     logs.append("▶ 生成 Singbox 配置...")
     result2 = subprocess.run(
         ["python", "scripts/singbox-remote-generate.py", local_url, singbox_out],
