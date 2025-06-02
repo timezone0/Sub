@@ -65,11 +65,8 @@ dns:
   - "https://doh.pub/dns-query"
 proxies:
 - {delay: 852, disable-sni: true, down: "", fingerprint: "", name: "🇺🇸 美国 01", obfs: "", obfs-password: "", password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", port: 3234, server: "209.141.47.127", skip-cert-verify: true, sni: "", type: "hysteria2", up: ""}
-- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 02", port: 11512, server: "108.181.24.77", skip-cert-verify: true, sni: "apple.com", type: "hysteria", udp: true, up: "1000 Mbps", auth-str: "dongtaiwang.com"}
-- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 03", port: 17549, server: "208.87.243.151", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria", up: "1000 Mbps", auth-str: "dongtaiwang.com"}
-- {name: "🇺🇸 美国 04", network: "ws", port: 8880, server: "45.80.111.124", type: "vless", udp: true, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir", User-Agent: "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"}, path: "/"}, xudp: true, servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 01", network: "ws", port: 8880, server: "89.116.250.20", type: "vless", udp: true, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir", User-Agent: "Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: "/?ed=2560"}, xudp: true, servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇦🇪 阿联酋 01", network: "ws", port: 8880, server: "89.116.46.20", type: "vless", udp: true, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir", User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: "/?ed=2560"}, xudp: true, servername: "reedfree8mahsang2.redorg.ir"}
+- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 02", port: 17549, server: "208.87.243.151", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria", up: "1000 Mbps", auth-str: "dongtaiwang.com"}
+- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 03", port: 11512, server: "108.181.24.77", skip-cert-verify: true, sni: "apple.com", type: "hysteria", udp: true, up: "1000 Mbps", auth-str: "dongtaiwang.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -78,9 +75,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇩🇪 德国 01"
-  - "🇦🇪 阿联酋 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -90,9 +84,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇩🇪 德国 01"
-  - "🇦🇪 阿联酋 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -100,9 +91,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇩🇪 德国 01"
-  - "🇦🇪 阿联酋 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -111,9 +99,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇩🇪 德国 01"
-  - "🇦🇪 阿联酋 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -122,9 +107,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇩🇪 德国 01"
-  - "🇦🇪 阿联酋 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -133,9 +115,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇩🇪 德国 01"
-  - "🇦🇪 阿联酋 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
