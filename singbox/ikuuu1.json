@@ -1,0 +1,415 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vmess",
+      "server": "fa0ic-g03.jp01-0986-vm0.entry.fr0307a.art",
+      "server_port": 21583,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1,
+      "tls": {
+        "enabled": true,
+        "server_name": "fa0ic-g03.jp01-0986-vm0.entry.fr0307a.art",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vmess",
+      "server": "k811w-g03.jp02-e3-vm0.entry.fr0528.art",
+      "server_port": 11775,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "vmess",
+      "server": "4jq23-g03.jp03-7d22-vm0.entry.fr0307a.art",
+      "server_port": 21583,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1,
+      "tls": {
+        "enabled": true,
+        "server_name": "4jq23-g03.jp03-7d22-vm0.entry.fr0307a.art",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "vmess",
+      "server": "kjscn-g03.jp04-1d-vm0.entry.fr0528.art",
+      "server_port": 446,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1
+    },
+    {
+      "tag": "🇯🇵 日本 05",
+      "type": "vmess",
+      "server": "krd1o-g03.jp05-h6-vm0.entry.fr0528.art",
+      "server_port": 46484,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1
+    },
+    {
+      "tag": "🇯🇵 日本 06",
+      "type": "vmess",
+      "server": "3kryy-g03.jp06-7c5a-vm0.entry.fr0307a.art",
+      "server_port": 28785,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1,
+      "tls": {
+        "enabled": true,
+        "server_name": "3kryy-g03.jp06-7c5a-vm0.entry.fr0307a.art",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 07",
+      "type": "vmess",
+      "server": "a4l4y-g03.jp07-sh-vm0.entry.fr0528.art",
+      "server_port": 28785,
+      "uuid": "1b3d7897-9d28-3ae9-8c9f-9e4a74f1b523",
+      "security": "auto",
+      "alter_id": 1
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}

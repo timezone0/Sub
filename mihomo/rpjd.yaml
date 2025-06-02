@@ -1,0 +1,289 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇭🇰 香港 01", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15010, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "ENYGONDU94UW1G6X", tfo: false}
+- {name: "🇭🇰 香港 02", server: "hkkh11v1.xpmc.cc", port: 27693, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "91a41f4e02dc", tfo: false, plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "hkkh11v1.xpmc.cc", path: "/utvbnrzejpmt", tls: true, mux: true, skip-cert-verify: false}}
+- {name: "🇭🇰 香港 03", server: "183.236.51.38", port: 49302, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇭🇰 香港 04", server: "usla.mjt000.com", port: 443, client-fingerprint: "chrome", type: "trojan", password: "e4af2638-bb12-4e4a-84f1-a032e23ca63f", sni: "usla.mjt000.com", skip-cert-verify: false}
+- {name: "🇭🇰 香港 05", server: "120.232.153.40", port: 52182, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇭🇰 香港 06", server: "v9.heduian.link", port: 30809, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇭🇰 香港 07", server: "v9.heduian.link", port: 30809, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇭🇰 香港 08", server: "v9.heduian.link", port: 30809, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇭🇰 香港 09", server: "120.232.153.40", port: 31209, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇭🇰 香港 10", server: "jg647hf446ghvw.gym0boy.com", port: 16100, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00", tfo: false}
+- {name: "🇯🇵 日本 01", server: "cn01.efan8867801.xyz", port: 8766, client-fingerprint: "chrome", type: "ss", cipher: "rc4-md5", password: "efanccyun", tfo: false, plugin: "obfs", plugin-opts: {mode: "http", host: "202505282364048-MMi78MWpgU.download.microsoft.com"}}
+- {name: "🇯🇵 日本 02", server: "43.226.17.17", port: 25356, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "2e96aa2f3054", tfo: false, plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "kr7v1.pmxiaonan.xyz", path: "/lornlqecrjwe", tls: true, mux: true, skip-cert-verify: false}}
+- {name: "🇯🇵 日本 03", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18008, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "6EZ5QKFX60AVSUYT", tfo: false}
+- {name: "🇯🇵 日本 04", server: "jg647hf446ghvw.gym0boy.com", port: 32875, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00", tfo: false}
+- {name: "🇸🇬 新加坡 01", server: "v12.heduian.link", port: 30812, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇸🇬 新加坡 02", server: "183.236.51.38", port: 49302, client-fingerprint: "chrome", type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false}
+- {name: "🇸🇬 新加坡 03", server: "jg647hf446ghvw.gym0boy.com", port: 44054, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "a9d1c7f7-a1bc-47d8-b320-9b79cdf8cd00", tfo: false}
+- {name: "🇸🇬 新加坡 04", server: "sg1.qqingca.cc", port: 20347, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "5a0b2638-8416-42c1-b87e-99864b3d3ef2", tfo: false}
+- {name: "🇰🇷 韩国 01", server: "125.141.26.12", port: 4857, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: false}
+- {name: "🇰🇷 韩国 02", server: "p080.panda001.net", port: 36379, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: false}
+- {name: "🇺🇸 美国 01", server: "cn01.efan8867801.xyz", port: 8774, client-fingerprint: "chrome", type: "ss", cipher: "rc4-md5", password: "efanccyun", tfo: false, plugin: "obfs", plugin-opts: {mode: "http", host: "202505160159024-hAiTvMCGlv.download.microsoft.com"}}
+- {name: "🇺🇸 美国 02", server: "v32.heduian.link", port: 30832, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 03", server: "111.26.109.79", port: 30828, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇺🇸 美国 04", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17005, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "2Z11BX63H64YSEDM", tfo: false}
+- {name: "🇺🇸 美国 05", server: "111.26.109.79", port: 30828, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

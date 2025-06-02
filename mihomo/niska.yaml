@@ -1,0 +1,163 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇯🇵 日本 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "chrome", type: "vmess", uuid: "cae97b1c-35e8-4cf2-dc1b-52032c3d3fa7", alterId: 0, cipher: "auto", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/aa", headers: {Host: "jp.insbot.filegear-sg.me"}}, servername: "jp.insbot.filegear-sg.me"}
+- {name: "🇺🇸 美国 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "chrome", type: "vmess", uuid: "de94cc0a-0592-4969-b1fc-97ea8f0ea0b3", alterId: 0, cipher: "auto", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/aa", headers: {Host: "us.insbot.filegear-sg.me"}}, servername: "us.insbot.filegear-sg.me"}
+- {name: "🇨🇳 台湾 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "chrome", type: "vmess", uuid: "56529ad8-61d2-4bfa-aa0b-a800719cb5fe", alterId: 0, cipher: "auto", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/aa", headers: {Host: "tw.insbot.filegear-sg.me"}}, servername: "tw.insbot.filegear-sg.me"}
+- {name: "🇸🇬 新加坡 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "safari", type: "vless", uuid: "24271b2a-1a4d-4d90-b259-8b91327b87ad", tls: true, alpn: ["h3%2Ch2"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/sg", headers: {Host: "sg.insbot.filegear-sg.me"}}, servername: "sg.insbot.filegear-sg.me"}
+- {name: "🇬🇧 英国 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "safari", type: "vless", uuid: "bfb3f1e8-adc8-490f-d01c-2bc9d43bff2a", tls: true, alpn: ["h2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/gb", headers: {Host: "uk.insbot.filegear-sg.me"}}, servername: "uk.insbot.filegear-sg.me"}
+- {name: "🇭🇰 香港 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "safari", type: "vless", uuid: "792b3cac-e3d9-440b-9681-847034a7cb87", tls: true, alpn: ["h2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/hk", headers: {Host: "hk.insbot.filegear-sg.me"}}, servername: "hk.insbot.filegear-sg.me"}
+- {name: "🇭🇰 香港 02", server: "47.76.78.145", port: 34200, reality-opts: {public-key: "9PISB87d2wQhpoUAp0JJgS0F-vnqUCXltKwN9nhSy0g", short-id: "562f"}, client-fingerprint: "chrome", type: "vless", uuid: "f528cf09-ec1c-471b-8837-ab66e83f1a25", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, network: "tcp", servername: "www.hkust.edu.hk"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 01"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 01"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 01"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 01"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 01"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 01"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

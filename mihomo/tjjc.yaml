@@ -1,0 +1,254 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇸🇬 新加坡 01", type: "vless", server: "sg001.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "WEttTimK6Q9qB8cd2AQ8kyDJOVfKAlPIl5E1T7-q0Dw", short-id: "1afbe06d"}, network: "tcp", servername: "www.nvidia.com"}
+- {name: "🇸🇬 新加坡 02", type: "vless", server: "sg002.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "1cs7mxEcoVKwcYepAnKgqHAFhRxPv6aO3tv7lNhwLDQ", short-id: "46bf6ea0"}, network: "tcp", servername: "www.nvidia.com"}
+- {name: "🇸🇬 新加坡 03", type: "vless", server: "sg003.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "hBXQa1tSoP0jjIezHxeyKhf1YKxe8CoBHoxvIxEJuAc", short-id: "2c5ecaae"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇸🇬 新加坡 04", type: "vless", server: "sg004.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "Bkxd25PPovqeYw6AevM-L266KM2kLDJomgmorzvGFmM", short-id: "2c846487"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇸🇬 新加坡 05", type: "trojan", server: "sg005.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇸🇬 新加坡 06", type: "trojan", server: "sg006.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇸🇬 新加坡 07", type: "trojan", server: "sg007.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇸🇬 新加坡 08", type: "trojan", server: "sg008.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇯🇵 日本 01", type: "vless", server: "jp001.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "opaO8sUF9JU5hP2wRoUgS6aWxFLfen83in6ZWJMonG4", short-id: "b92b2a09"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇯🇵 日本 02", type: "vless", server: "jp002.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE", short-id: "5c3c9f11"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇯🇵 日本 03", type: "vless", server: "jp003.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c", short-id: "d3b6f0c3"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇯🇵 日本 04", type: "vless", server: "jp004.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc", short-id: "abae4722"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇯🇵 日本 05", type: "trojan", server: "jp005.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇯🇵 日本 06", type: "trojan", server: "jp006.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇯🇵 日本 07", type: "trojan", server: "jp007.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇯🇵 日本 08", type: "trojan", server: "jp008.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇺🇸 美国 01", type: "vless", server: "us001.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "zWY5WwfH-Q8xvLZAr28WjRVk05L4WCp4B7F1lWPM0A8", short-id: "c1839f26"}, network: "tcp", servername: "www.nvidia.com"}
+- {name: "🇺🇸 美国 02", type: "vless", server: "us002.421421.xyz", port: 20230, uuid: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, tls: true, skip-cert-verify: false, flow: "", client-fingerprint: "chrome", reality-opts: {public-key: "Bq_RQyPwxp7zTYywC37jLxmcjV9npNN6H6_1d_R6GT0", short-id: "c9916730"}, network: "grpc", grpc-opts: {grpc-service-name: "tj"}, servername: "www.nvidia.com"}
+- {name: "🇺🇸 美国 03", type: "trojan", server: "us003.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+- {name: "🇺🇸 美国 04", type: "trojan", server: "us004.421421.xyz", port: 20230, password: "644a11df-a74a-49d7-a31e-8bf42e77eb47", udp: true, network: "ws", sni: "www.alibaba.com", skip-cert-verify: true, ws-opts: {path: "/"}}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"
