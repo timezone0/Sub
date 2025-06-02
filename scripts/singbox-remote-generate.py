@@ -67,7 +67,7 @@ def replace_outbounds_in_fixed_target(source_data, output_file):
     try:
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(target_data, f, indent=2, ensure_ascii=False)
-        print(f"✅处理完成，文件已保存到：{os.path.abspath(output_file)}")
+        print(f"✅处理完成，文件已保存至：{os.path.abspath(output_file)}")
     except IOError as e:
         print(f"🎃保存文件时发生错误：{e}")
         raise
@@ -98,3 +98,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

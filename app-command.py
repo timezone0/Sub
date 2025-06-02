@@ -70,6 +70,7 @@ def refresh_backend():
     except Exception as e:
         log(f"❌ 缓存刷新失败：{e}")
 
+
 def get_output_paths(name, mihomo_dir, singbox_dir):
     return (
         os.path.join(mihomo_dir, f"{name}.yaml"),
@@ -162,4 +163,3 @@ if __name__ == "__main__":
         handle_one(args.name, args.url, args.mihomo_dir, args.singbox_dir)
     else:
         log("❌ 参数不完整，请使用 --json 或 --name 与 --url")
-

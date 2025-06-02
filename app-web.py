@@ -155,4 +155,3 @@ if __name__ == "__main__":
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
         start_substore_backend()
     app.run(debug=True, port=5002)
-

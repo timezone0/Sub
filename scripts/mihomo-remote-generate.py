@@ -1,6 +1,5 @@
 import requests
 import os
-import sys
 import argparse
 import re
 import ruamel.yaml
@@ -158,7 +157,7 @@ def main(url, result_path):
         updated_config = insert_names_into_proxy_groups(updated_config)
 
         save_result(updated_config, result_path)
-        print(f"✅处理完成，文件已保存到：{ os.path.abspath(result_path) }")
+        print(f"✅处理完成，文件已保存至：{ os.path.abspath(result_path) }")
     except Exception as e:
         print(f"🎃执行脚本时发生错误：{e}")
 
@@ -170,3 +169,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.url, args.result_path)
+
