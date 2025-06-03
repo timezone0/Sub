@@ -89,8 +89,10 @@
         "auto",
         "🇺🇸 美国 01",
         "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇫🇷 法国 01",
-        "🇳🇱 荷兰 01"
+        "🇳🇱 荷兰 01",
+        "🇹🇷 土耳其 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -101,8 +103,10 @@
       "outbounds": [
         "🇺🇸 美国 01",
         "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇫🇷 法国 01",
-        "🇳🇱 荷兰 01"
+        "🇳🇱 荷兰 01",
+        "🇹🇷 土耳其 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -113,8 +117,10 @@
         "select",
         "🇺🇸 美国 01",
         "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇫🇷 法国 01",
-        "🇳🇱 荷兰 01"
+        "🇳🇱 荷兰 01",
+        "🇹🇷 土耳其 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,8 +132,10 @@
         "direct",
         "🇺🇸 美国 01",
         "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇫🇷 法国 01",
-        "🇳🇱 荷兰 01"
+        "🇳🇱 荷兰 01",
+        "🇹🇷 土耳其 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,8 +147,10 @@
         "direct",
         "🇺🇸 美国 01",
         "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇫🇷 法国 01",
-        "🇳🇱 荷兰 01"
+        "🇳🇱 荷兰 01",
+        "🇹🇷 土耳其 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -152,8 +162,10 @@
         "select",
         "🇺🇸 美国 01",
         "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇫🇷 法国 01",
-        "🇳🇱 荷兰 01"
+        "🇳🇱 荷兰 01",
+        "🇹🇷 土耳其 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -161,7 +173,7 @@
       "tag": "🇺🇸 美国 01",
       "type": "hysteria2",
       "server": "usf.node.cross666.top",
-      "server_port": 39124,
+      "server_port": 38127,
       "password": "abef57a5-ac14-4356-ba5d-c3fdc85df62b",
       "tls": {
         "enabled": true,
@@ -174,8 +186,22 @@
     {
       "tag": "🇩🇪 德国 01",
       "type": "hysteria2",
+      "server": "de1.node.cross666.top",
+      "server_port": 35799,
+      "password": "abef57a5-ac14-4356-ba5d-c3fdc85df62b",
+      "tls": {
+        "enabled": true,
+        "server_name": "mirror.dogado.de",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 300
+    },
+    {
+      "tag": "🇩🇪 德国 02",
+      "type": "hysteria2",
       "server": "deb.node.cross666.top",
-      "server_port": 35073,
+      "server_port": 36404,
       "password": "abef57a5-ac14-4356-ba5d-c3fdc85df62b",
       "tls": {
         "enabled": true,
@@ -189,7 +215,7 @@
       "tag": "🇫🇷 法国 01",
       "type": "hysteria2",
       "server": "fr1.node.cross666.top",
-      "server_port": 37092,
+      "server_port": 37711,
       "password": "abef57a5-ac14-4356-ba5d-c3fdc85df62b",
       "tls": {
         "enabled": true,
@@ -203,7 +229,7 @@
       "tag": "🇳🇱 荷兰 01",
       "type": "hysteria2",
       "server": "nla.node.cross666.top",
-      "server_port": 37666,
+      "server_port": 37391,
       "password": "abef57a5-ac14-4356-ba5d-c3fdc85df62b",
       "tls": {
         "enabled": true,
@@ -212,6 +238,20 @@
       },
       "up_mbps": 100,
       "down_mbps": 500
+    },
+    {
+      "tag": "🇹🇷 土耳其 01",
+      "type": "hysteria2",
+      "server": "tr01.node.cross666.top",
+      "server_port": 35995,
+      "password": "abef57a5-ac14-4356-ba5d-c3fdc85df62b",
+      "tls": {
+        "enabled": true,
+        "server_name": "mirror.dogado.de",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 400
     }
   ],
   "route": {
