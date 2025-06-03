@@ -64,83 +64,243 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇭🇰 香港 01", server: "vt-bana2-cn-11.ghpgwqswodgzv.com", port: 40021, type: "trojan", password: "a38c9e28-9960-4e31-9f18-ed2495a756aa", sni: "vt-bana2-cn-11.ghpgwqswodgzv.com", network: "ws", ws-opts: {path: "/dl_media", headers: {Host: "vt-bana2-cn-11.ghpgwqswodgzv.com"}}, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 02", server: "183.236.51.38", port: 33919, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 03", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15008, type: "ss", cipher: "aes-256-gcm", password: "0S43J3FD6L7IEKGQ", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 04", server: "dozo01.flztjc.top", port: 8313, type: "trojan", password: "2c605663-b89a-5734-a9d6-97d4743d72cf", sni: "hk-13-568.flztjc.net", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 05", server: "183.232.235.2", port: 8313, type: "trojan", password: "2c605663-b89a-5734-a9d6-97d4743d72cf", sni: "hk-13-568.flztjc.net", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 06", type: "ss", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15010, cipher: "aes-256-gcm", alterId: "0", tls: true, password: "ENYGONDU94UW1G6X", skip-cert-verify: true, sni: "8tv68qhq.slashdevslashnetslashtun.net", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 07", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15003, type: "ss", cipher: "aes-256-gcm", password: "4KGHWKCKQAJOVPHO", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 08", server: "5.10.214.11", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇭🇰 香港 09", server: "5.10.214.157", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇭🇰 香港 10", server: "45.131.211.203", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇭🇰 香港 11", server: "209.46.30.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇸🇬 新加坡 01", server: "183.236.51.38", port: 49302, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 02", server: "120.232.153.40", port: 50152, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 03", server: "120.232.153.40", port: 43292, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 04", server: "158fbba2-sx4v40-t8dih2-9kd8.cm5.cnkuaishou.com", port: 27231, type: "trojan", password: "8bd4eef0-e4ad-11ef-b717-f23c913c8d2b", sni: "158fbba2-sx4v40-t8dih2-9kd8.cm5.cnkuaishou.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 05", server: "sg-ss.ipracevpn.com", port: 8443, type: "ss", cipher: "aes-256-gcm", password: "wpB5eyFTw7BJw67DtsKpwoINwr3DvcK6wqPDscOAC1MUdw5QLMK2Cm7Du8OwDcOe", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 01", server: "8tv68qhq.slashdevslashnetslashtun.net", port: 15008, type: "ss", cipher: "aes-256-gcm", password: "0S43J3FD6L7IEKGQ", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 02", type: "trojan", server: "36.151.251.60", port: 28296, udp: true, password: "RlzoEILU", sni: "cdn.egvra.cn", skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 03", type: "vmess", server: "hk0067.alibabaokz.com", port: 60066, cipher: "auto", uuid: "38571ca6-6692-4559-b901-0bc5826b7661", alterId: "0", tls: false, skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 04", server: "102.132.188.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 05", server: "199.181.197.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 06", server: "185.207.197.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 07", server: "45.192.223.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/Telegram@V2ray_Alpha/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 08", server: "45.67.215.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 09", server: "198.202.211.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560"}, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 10", type: "vless", server: "154.219.5.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 11", server: "5.10.214.11", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇭🇰 香港 12", type: "vless", server: "103.116.7.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 13", type: "vless", server: "185.148.106.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 14", server: "5.10.215.143", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇭🇰 香港 15", type: "vless", server: "45.194.53.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 16", type: "vless", server: "86.38.214.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {type: "vless", name: "🇭🇰 香港 17", server: "92.53.188.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 18", type: "vless", server: "170.114.46.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 19", server: "45.80.111.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇭🇰 香港 20", type: "vless", server: "46.254.93.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 21", server: "45.131.211.70", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇭🇰 香港 22", type: "vless", server: "154.218.15.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 23", type: "vless", server: "205.233.181.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 24", type: "vless", server: "45.159.219.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 25", server: "188.42.89.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇭🇰 香港 26", type: "vless", server: "5.10.247.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 27", type: "vless", server: "45.80.111.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 28", type: "vless", server: "185.18.250.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 29", type: "vless", server: "209.46.30.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 30", type: "vless", server: "140.99.233.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇭🇰 香港 31", type: "vless", server: "5.182.84.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {type: "vless", name: "🇨🇳 台湾 01", server: "8.219.126.137", port: 491, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 02", server: "103.137.62.194", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "937f6b6168b6", plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "wt8v1.kvote.cn", path: "/oqhygtklyhwi", tls: true, mux: true}, udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 03", type: "vless", server: "47.79.90.82", port: 8843, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 04", type: "vless", server: "8.216.121.234", port: 51922, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 05", type: "vless", server: "210.61.97.241", port: 81, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 06", server: "42.200.111.106", port: 12351, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 07", type: "vless", server: "121.175.16.6", port: 10023, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {type: "trojan", name: "🇨🇳 台湾 08", server: "210.99.119.3", port: 50000, password: "Aimer", udp: true, skip-cert-verify: true, sni: "epmd.ambercc.filegear-sg.me", network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "epmd.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {type: "trojan", name: "🇨🇳 台湾 09", server: "119.194.220.146", port: 50000, password: "Aimer", udp: true, skip-cert-verify: true, sni: "epmd.ambercc.filegear-sg.me", network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "epmd.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {type: "trojan", name: "🇨🇳 台湾 10", server: "222.100.242.124", port: 50000, password: "Aimer", udp: true, skip-cert-verify: true, sni: "epms.ambercc.filegear-sg.me", network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "epms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇨🇳 台湾 11", server: "121.147.127.154", port: 32396, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 12", type: "trojan", server: "121.147.127.154", port: 32396, udp: true, password: "Aimer", sni: "epmd.ambercc.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "epmd.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {type: "trojan", name: "🇨🇳 台湾 13", server: "121.189.106.45", port: 30001, password: "Aimer", udp: true, skip-cert-verify: true, sni: "epmd.ambercc.filegear-sg.me", network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "epmd.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 14", type: "trojan", server: "121.175.16.6", port: 10023, udp: true, password: "Aimer", sni: "epms.ambercc.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "epms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {type: "trojan", name: "🇨🇳 台湾 15", server: "210.100.138.35", port: 12356, password: "Aimer", udp: true, skip-cert-verify: true, sni: "epms.ambercc.filegear-sg.me", network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "epms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇨🇳 台湾 16", server: "183.98.186.160", port: 12240, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 17", type: "vless", server: "thaddeus.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 18", type: "vless", server: "sage.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 19", server: "91.193.58.78", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
+- {type: "vless", name: "🇨🇳 台湾 20", server: "61.79.85.93", port: 50000, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 21", server: "141.193.213.157", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
+- {type: "vless", name: "🇨🇳 台湾 22", server: "141.193.213.117", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
+- {name: "🇨🇳 台湾 23", type: "vless", server: "91.193.58.69", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "cs.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
+- {type: "vless", name: "🇨🇳 台湾 24", server: "141.193.213.172", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
+- {type: "vless", name: "🇨🇳 台湾 25", server: "damien.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 26", server: "ignacio.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 27", server: "kip.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 28", server: "duke.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 29", server: "141.193.213.190", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cs.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
+- {name: "🇨🇳 台湾 30", type: "vless", server: "arvind.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 31", server: "lynn.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 32", server: "pranab.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 33", server: "209.94.90.87", port: 2087, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 34", server: "172.245.67.49", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {type: "vless", name: "🇨🇳 台湾 35", server: "theo.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 36", type: "vless", server: "103.116.7.103", port: 2083, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edms.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edms.ambercc.filegear-sg.me"}
+- {name: "🇨🇳 台湾 37", type: "vless", server: "220.86.131.135", port: 50001, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edma.ambercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edma.ambercc.filegear-sg.me"}
+- {name: "🇸🇬 新加坡 01", server: "120.232.153.40", port: 43292, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 02", type: "vless", server: "::ffff:156.238.18.176", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 03", server: "156.238.18.191", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 04", server: "156.238.18.54", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 05", type: "vless", server: "::ffff:156.238.18.84", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 06", server: "156.238.18.94", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇸🇬 新加坡 07", server: "156.238.18.190", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 08", type: "vless", server: "::ffff:156.238.18.7", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 09", type: "vless", server: "::ffff:156.238.18.207", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 10", type: "vless", server: "::ffff:156.238.18.20", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 11", type: "vless", server: "::ffff:156.238.18.252", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 12", server: "156.238.18.20", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 13", type: "vless", server: "::ffff:156.238.18.78", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 14", server: "156.238.18.172", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 15", type: "vless", server: "156.238.18.179", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 16", server: "156.238.18.175", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 17", type: "vless", server: "::ffff:156.238.18.11", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 18", server: "156.238.18.70", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 19", type: "vless", server: "::ffff:156.238.18.179", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 20", type: "vless", server: "::ffff:156.238.18.203", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 21", server: "156.238.18.46", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇸🇬 新加坡 22", server: "156.238.18.104", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 23", type: "vless", server: "::ffff:156.238.18.224", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 24", type: "vless", server: "::ffff:156.238.18.54", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 25", server: "156.238.18.232", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 26", type: "vless", server: "::ffff:156.238.18.167", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 27", type: "vless", server: "::ffff:156.238.18.206", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 28", server: "156.238.18.85", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 29", type: "vless", server: "::ffff:156.238.18.222", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 30", server: "156.238.18.2", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 31", type: "vless", server: "::ffff:156.238.18.123", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 32", type: "vless", server: "::ffff:156.238.18.104", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 33", type: "vless", server: "::ffff:156.238.18.244", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {skip-cert-verify: false, sni: "ddd0977f-sxaf40-t3b4w3-ywms.cm5.cnkuaishou.com", type: "trojan", password: "bf109e1a-2b99-11ed-bb74-f23c9164ca5d", server: "ddd0977f-sxaf40-t3b4w3-ywms.cm5.cnkuaishou.com", port: 27231, name: "🇸🇬 新加坡 34", client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 35", type: "vless", server: "::ffff:156.238.18.136", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 36", server: "156.238.18.166", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 37", type: "vless", server: "::ffff:156.238.18.46", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 38", server: "156.238.18.78", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
 - {name: "🇺🇸 美国 01", server: "120.232.153.40", port: 31209, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 02", server: "183.236.51.38", port: 49191, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 03", server: "120.232.153.41", port: 41491, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 04", server: "190.93.246.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 05", server: "190.93.245.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 06", server: "183.236.51.38", port: 41024, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 07", server: "185.162.230.6", port: 80, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 08", server: "45.142.120.56", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 09", server: "89.116.46.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 10", server: "45.131.211.70", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 11", server: "45.12.30.206", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 12", server: "92.53.188.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 13", server: "14.102.229.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 14", server: "45.80.110.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 15", server: "91.193.58.172", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 16", server: "91.193.58.102", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "sk.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {name: "🇺🇸 美国 17", server: "188.42.89.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 18", server: "45.12.30.86", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 19", server: "45.12.31.212", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 20", server: "91.193.58.79", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 21", server: "155.46.213.20", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 22", server: "45.142.120.147", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 23", server: "5.182.84.20", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 24", server: "91.193.58.134", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 25", server: "45.80.111.124", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 26", server: "::ffff:8e5d:fd31", port: 2095, type: "vmess", uuid: "21284025-a32f-4f90-aaba-55b5d22b0070", alterId: "0", cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["d1.awsstatic.com"]}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 27", server: "5.10.214.166", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 28", server: "45.131.209.230", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 29", server: "31.43.179.52", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 30", server: "120.198.71.216", port: 46159, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 31", server: "45.142.120.214", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 32", server: "45.85.119.75", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "hysteria2", name: "🇺🇸 美国 02", server: "108.181.5.130", port: 57773, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 03", server: "64.181.207.162", port: 47262, password: "b72ba5d5-2d5e-45b7-93b5-236d343baa7c", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 04", server: "45.131.211.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 05", server: "194.53.53.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 06", type: "vless", server: "185.221.160.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 07", server: "141.11.203.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 08", type: "vless", server: "45.131.209.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 09", type: "hysteria", server: "108.181.24.77", port: 11512, auth-str: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], protocol: "udp", up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 10", server: "104.16.183.83", port: 80, uuid: "d4e672e0-bc04-45c1-b710-df097fa41d23", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jolly-fog-9e08-ppal03.revog68198.workers.dev"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 11", type: "vless", server: "185.174.138.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 12", type: "hysteria", server: "208.87.243.151", port: 17549, auth_str: "dongtaiwang.com", alpn: ["h3"], sni: "www.bing.com", skip-cert-verify: true, up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome", auth-str: "dongtaiwang.com"}
+- {name: "🇺🇸 美国 13", type: "vless", server: "45.131.210.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 14", server: "104.16.54.161", port: 80, uuid: "1ae17c7d-6074-41e2-894b-478c9fcf5715", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "rough-hill-2959-ppal03.fawik58803.workers.dev"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 15", server: "183.236.51.38", port: 49554, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "64", cipher: "auto", tls: false, skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 16", server: "104.24.177.129", port: 80, uuid: "eb19e160-51f8-40d3-966b-9fa5de336924", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "crimson-cell-5828-ppal03.febox45376.workers.dev"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 17", server: "us.10101251.xyz", port: 3002, password: "14bdcd31-8a9f-4cf1-8fcc-60045900357d", sni: "us.10101251.xyz", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 18", type: "vless", server: "185.18.250.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 19", type: "vless", server: "14.102.228.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 20", server: "192.9.129.48", port: 8443, uuid: "06121b89-607b-44c9-9c01-cc2fc6a7321d", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "4Qekb9y1dqO8hvRzVSGeSRNyhko_gqpeWD94zrLCvjs", short-id: "5488b0e7"}, network: "tcp", servername: "www.yahoo.com"}
+- {type: "vless", name: "🇺🇸 美国 21", server: "185.162.228.165", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 22", server: "45.142.120.56", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 23", type: "vless", server: "156.238.18.106", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "yd.laoyoutiao.link"}}, disable-sni: true, skip-cert-verify: true, client-fingerprint: "chrome", servername: ""}
+- {name: "🇺🇸 美国 24", server: "104.254.140.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 25", server: "104.21.64.1", port: 2086, uuid: "7320522d-56c1-4e35-9fa7-88a151d76828", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "07fd36f0-yuv2ray3131331456346534643.cocefob714.workers.dev"}, path: "/DdAtLiofda1FCcda?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 26", server: "185.148.106.75", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 27", server: "185.162.229.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 28", server: "162.159.45.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 29", type: "vless", server: "5.10.215.118", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 30", server: "104.129.167.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 31", server: "45.142.120.93", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 32", server: "45.159.219.120", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
 - {name: "🇺🇸 美国 33", server: "156.238.18.80", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "yd.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {name: "🇺🇸 美国 34", server: "45.80.111.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 35", server: "156.238.18.170", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "yd.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {name: "🇺🇸 美国 36", server: "108.165.216.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇺🇸 美国 37", server: "91.193.58.63", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 01", server: "91.193.58.229", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 02", server: "141.193.213.207", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 03", server: "141.193.213.230", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 04", server: "141.193.213.241", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 05", server: "141.193.213.145", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 06", server: "91.193.58.222", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 07", server: "141.193.213.178", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 08", server: "141.193.213.153", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 09", server: "141.193.213.142", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 10", server: "141.193.213.214", port: 80, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560", headers: {Host: "cs.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "cs.laoyoutiao.link"}
-- {name: "🇫🇮 芬兰 01", server: "104.254.140.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇫🇮 芬兰 02", server: "45.12.31.162", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇫🇮 芬兰 03", server: "185.176.26.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇫🇮 芬兰 04", server: "45.159.216.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇫🇮 芬兰 05", server: "45.8.211.88", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇳🇱 荷兰 01", server: "194.76.18.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 01", server: "212.183.88.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 02", server: "45.142.120.116", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 03", server: "104.129.164.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 04", server: "103.169.142.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 05", server: "45.131.208.114", port: 80, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇩🇪 德国 06", server: "45.131.208.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇮🇳 印度 01", server: "167.68.42.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
-- {name: "🇦🇱 阿尔巴尼亚 01", server: "78.159.131.160", port: 443, type: "vless", uuid: "9835fbea-cfb1-402a-bdc6-16ca140c6788", tls: true, skip-cert-verify: false, client-fingerprint: "firefox", reality-opts: {public-key: "gWjVFJOoNc92yFN9zAKErrtFuA1UmS4PI6sLSYBI7VM", short-id: "e1f576c5"}, udp: true, network: "tcp", servername: "www.samsung.com"}
+- {type: "vless", name: "🇺🇸 美国 34", server: "167.68.11.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 35", server: "14.102.229.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 36", server: "198.41.214.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 37", server: "209.46.30.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 38", server: "45.142.120.116", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 39", type: "vless", server: "185.238.228.20", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {name: "🇺🇸 美国 40", server: "92.53.188.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 41", server: "91.193.58.172", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {name: "🇺🇸 美国 42", type: "vless", server: "5.10.214.4", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 43", server: "104.129.164.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 44", server: "31.43.179.219", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 45", server: "104.16.3.5", port: 443, uuid: "963816bd-b6e7-4648-abff-8af25bc07d87", tls: true, client-fingerprint: "randomized", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gulf-d96.pages.dev"}, path: "/ecY3gziM8W6ud5yj?ed=2560"}, servername: "gulf-d96.pages.dev"}
+- {name: "🇺🇸 美国 46", type: "vless", server: "5.10.215.134", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 47", server: "91.193.58.102", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "sk.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
+- {name: "🇺🇸 美国 48", type: "vless", server: "45.80.111.219", port: 80, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 49", type: "vless", server: "140.99.233.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 50", server: "104.16.172.173", port: 80, uuid: "850563d4-d5e2-4672-b2e1-ceaa69ff62f2", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aged-leaf-04aa-ppal03.midosib237.workers.dev"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 51", type: "vless", server: "185.193.30.20", port: 80, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, disable-sni: true, skip-cert-verify: true, client-fingerprint: "chrome", servername: ""}
+- {name: "🇺🇸 美国 52", type: "vless", server: "176.124.223.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 53", type: "vless", server: "91.193.58.175", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 54", server: "108.165.216.13", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 55", server: "45.12.31.212", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 56", server: "::ffff:8e5d:fd31", port: 2095, type: "vmess", uuid: "21284025-a32f-4f90-aaba-55b5d22b0070", alterId: "0", cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["d1.awsstatic.com"]}}, udp: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 57", server: "91.193.58.4", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {name: "🇺🇸 美国 58", type: "vless", server: "91.193.58.181", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {name: "🇺🇸 美国 59", server: "91.193.58.184", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 60", server: "104.16.53.48", port: 80, uuid: "c1659206-d827-41f6-9f73-f18ca30102d3", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "still-forest-e3e8-ppal03.mekah93880.workers.dev"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 61", server: "156.238.18.170", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "yd.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
+- {name: "🇺🇸 美国 62", server: "45.8.211.88", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 63", server: "213.109.205.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 64", server: "89.116.250.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇺🇸 美国 65", server: "104.16.38.60", port: 80, uuid: "2ab04aa0-5f28-432f-96c7-d168d09973d8", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hidden-river-df80-ppal03.bewome9099.workers.dev"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 66", server: "156.238.18.242", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "yd.laoyoutiao.link"}, path: "/Telegram"}, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
+- {name: "🇺🇸 美国 67", type: "vless", server: "5.10.215.222", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇺🇸 美国 68", server: "91.193.58.63", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {type: "vless", name: "🇬🇧 英国 01", server: "51.89.228.214", port: 2053, uuid: "e72e106e-cc38-434c-871a-d3345a27a99f", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}, network: "grpc", grpc-opts: {grpc-service-name: "xyz"}, servername: "reality.gamegh2.ir"}
+- {type: "hysteria2", name: "🇬🇧 英国 02", server: "ld-arm.nfsn666.gq", port: 8888, password: "nfsn666", sni: "ld-arm.nfsn666.gq", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇬🇧 英国 03", server: "130.162.182.250", port: 8888, password: "nfsn666", sni: "ld-arm.nfsn666.gq", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "ss", server: "45.144.54.33", port: 52703, cipher: "chacha20-ietf-poly1305", password: "l3gh4XX7l9nuQwETBNU85v", name: "🇬🇧 英国 04", client-fingerprint: "chrome"}
+- {type: "ss", server: "p080.panda001.net", port: 36379, cipher: "aes-256-cfb", password: "qwerREWQ@@", name: "🇰🇷 韩国 01", client-fingerprint: "chrome"}
+- {type: "ss", server: "218.237.185.230", port: 4652, cipher: "aes-256-cfb", password: "qwerREWQ@@", name: "🇰🇷 韩国 02", client-fingerprint: "chrome"}
+- {type: "ss", server: "221.150.109.89", port: 11389, cipher: "aes-256-cfb", password: "qwerREWQ@@", name: "🇰🇷 韩国 03", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇰🇷 韩国 04", server: "45.67.215.58", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国 05", server: "160.79.104.6", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国 06", server: "160.79.104.175", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国 07", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国 08", server: "160.123.255.246", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇮🇳 印度 01", server: "31.43.179.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/?ed=2560"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇮🇳 印度 02", type: "vless", server: "185.193.29.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇮🇳 印度 03", server: "45.131.7.115", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇳🇱 荷兰 01", type: "vless", server: "195.85.59.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇳🇱 荷兰 02", type: "vless", server: "45.131.5.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇳🇱 荷兰 03", server: "94.247.142.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇳🇱 荷兰 04", server: "45.12.30.206", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇳🇱 荷兰 05", type: "vless", server: "102.177.176.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇳🇱 荷兰 06", server: "45.159.216.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇯🇵 日本 01", type: "vless", server: "156.238.18.142", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "jp.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {name: "🇯🇵 日本 02", type: "vless", server: "156.238.18.100", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "jp.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {type: "vless", name: "🇯🇵 日本 03", server: "156.238.18.132", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2560"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {type: "vless", name: "🇯🇵 日本 04", server: "156.238.18.157", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2560"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {name: "🇯🇵 日本 05", type: "vless", server: "156.238.18.86", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "jp.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {name: "🇯🇵 日本 06", type: "vless", server: "156.238.18.212", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "jp.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {type: "vless", name: "🇯🇵 日本 07", server: "156.238.18.206", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇯🇵 日本 08", server: "183.237.84.53", port: 55002, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "64", cipher: "auto", tls: false, skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 09", type: "vless", server: "156.238.18.199", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "jp.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {type: "vless", name: "🇯🇵 日本 10", server: "156.238.18.217", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇨🇦 加拿大 01", server: "183.106.162.127", port: 18888, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 02", server: "119.197.201.29", port: 11481, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 03", server: "220.118.248.123", port: 30012, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 04", server: "185.133.35.85", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 05", server: "69.84.182.53", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 06", server: "69.84.182.41", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bz.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "bz.ylks0033.dpdns.org"}
+- {name: "🇫🇮 芬兰 01", type: "vless", server: "5.10.214.81", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇫🇮 芬兰 02", server: "185.176.26.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇫🇮 芬兰 03", type: "vless", server: "62.72.166.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇫🇮 芬兰 04", type: "vless", server: "5.10.214.115", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "hysteria2", name: "🇷🇺 俄罗斯 01", server: "46.17.41.5", port: 12904, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国 01", server: "104.129.166.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 02", type: "vless", server: "5.10.214.164", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇩🇪 德国 03", server: "45.85.119.88", port: 80, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国 04", server: "45.131.208.241", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 05", server: "45.80.110.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 06", server: "45.12.31.162", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇩🇪 德国 07", server: "185.148.105.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 08", server: "45.142.120.147", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇩🇪 德国 09", server: "185.162.230.228", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 10", server: "45.131.208.114", port: 80, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 11", server: "45.12.30.86", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇩🇪 德国 12", type: "trojan", server: "120.233.44.201", port: 21102, sni: "120.233.44.201", password: "2b1ed981-6547-4094-998b-06a3323d6f6c", skip-cert-verify: true, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国 13", server: "188.245.193.124", port: 8443, uuid: "e72e106e-cc38-434c-871a-d3345a27a99f", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}, network: "tcp", servername: "www.gameup.ir"}
+- {type: "vless", name: "🇩🇪 德国 14", server: "167.235.135.77", port: 443, uuid: "2b3570bd-6f48-4c31-a904-0582e0b2e499", tls: true, client-fingerprint: "firefox", skip-cert-verify: false, reality-opts: {public-key: "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8", short-id: "e54b5ad736ae4c38"}, network: "tcp", servername: "tgju.org"}
+- {type: "ss", server: "103.186.154.38", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 01", client-fingerprint: "chrome"}
+- {type: "ss", server: "103.186.154.20", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 02", client-fingerprint: "chrome"}
+- {type: "ss", server: "103.186.154.37", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 03", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇪 阿联酋 01", server: "185.162.231.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇦🇪 阿联酋 02", server: "194.76.18.20", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {type: "vless", name: "🇦🇪 阿联酋 03", server: "185.162.230.20", port: 8880, uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "reedfree8mahsang2.redorg.ir"}, path: "/"}, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
+- {name: "🇦🇪 阿联酋 04", server: "195.85.23.254", port: 8880, type: "vless", uuid: "53fa8faf-ba4b-4322-9c69-a3e5b1555049", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "reedfree8mahsang2.redorg.ir"}}, udp: true, client-fingerprint: "chrome", servername: "reedfree8mahsang2.redorg.ir"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -157,11 +317,101 @@ proxy-groups:
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
   - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇭🇰 香港 19"
+  - "🇭🇰 香港 20"
+  - "🇭🇰 香港 21"
+  - "🇭🇰 香港 22"
+  - "🇭🇰 香港 23"
+  - "🇭🇰 香港 24"
+  - "🇭🇰 香港 25"
+  - "🇭🇰 香港 26"
+  - "🇭🇰 香港 27"
+  - "🇭🇰 香港 28"
+  - "🇭🇰 香港 29"
+  - "🇭🇰 香港 30"
+  - "🇭🇰 香港 31"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
+  - "🇨🇳 台湾 28"
+  - "🇨🇳 台湾 29"
+  - "🇨🇳 台湾 30"
+  - "🇨🇳 台湾 31"
+  - "🇨🇳 台湾 32"
+  - "🇨🇳 台湾 33"
+  - "🇨🇳 台湾 34"
+  - "🇨🇳 台湾 35"
+  - "🇨🇳 台湾 36"
+  - "🇨🇳 台湾 37"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇸🇬 新加坡 35"
+  - "🇸🇬 新加坡 36"
+  - "🇸🇬 新加坡 37"
+  - "🇸🇬 新加坡 38"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -199,30 +449,100 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
+  - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
+  - "🇳🇱 荷兰 06"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
   - "🇫🇮 芬兰 03"
   - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇳🇱 荷兰 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
   - "🇩🇪 德国 05"
   - "🇩🇪 德国 06"
-  - "🇮🇳 印度 01"
-  - "🇦🇱 阿尔巴尼亚 01"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -240,11 +560,101 @@ proxy-groups:
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
   - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇭🇰 香港 19"
+  - "🇭🇰 香港 20"
+  - "🇭🇰 香港 21"
+  - "🇭🇰 香港 22"
+  - "🇭🇰 香港 23"
+  - "🇭🇰 香港 24"
+  - "🇭🇰 香港 25"
+  - "🇭🇰 香港 26"
+  - "🇭🇰 香港 27"
+  - "🇭🇰 香港 28"
+  - "🇭🇰 香港 29"
+  - "🇭🇰 香港 30"
+  - "🇭🇰 香港 31"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
+  - "🇨🇳 台湾 28"
+  - "🇨🇳 台湾 29"
+  - "🇨🇳 台湾 30"
+  - "🇨🇳 台湾 31"
+  - "🇨🇳 台湾 32"
+  - "🇨🇳 台湾 33"
+  - "🇨🇳 台湾 34"
+  - "🇨🇳 台湾 35"
+  - "🇨🇳 台湾 36"
+  - "🇨🇳 台湾 37"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇸🇬 新加坡 35"
+  - "🇸🇬 新加坡 36"
+  - "🇸🇬 新加坡 37"
+  - "🇸🇬 新加坡 38"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -282,30 +692,100 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
+  - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
+  - "🇳🇱 荷兰 06"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
   - "🇫🇮 芬兰 03"
   - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇳🇱 荷兰 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
   - "🇩🇪 德国 05"
   - "🇩🇪 德国 06"
-  - "🇮🇳 印度 01"
-  - "🇦🇱 阿尔巴尼亚 01"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
 - name: "AI"
   type: "select"
   proxies:
@@ -321,11 +801,101 @@ proxy-groups:
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
   - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇭🇰 香港 19"
+  - "🇭🇰 香港 20"
+  - "🇭🇰 香港 21"
+  - "🇭🇰 香港 22"
+  - "🇭🇰 香港 23"
+  - "🇭🇰 香港 24"
+  - "🇭🇰 香港 25"
+  - "🇭🇰 香港 26"
+  - "🇭🇰 香港 27"
+  - "🇭🇰 香港 28"
+  - "🇭🇰 香港 29"
+  - "🇭🇰 香港 30"
+  - "🇭🇰 香港 31"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
+  - "🇨🇳 台湾 28"
+  - "🇨🇳 台湾 29"
+  - "🇨🇳 台湾 30"
+  - "🇨🇳 台湾 31"
+  - "🇨🇳 台湾 32"
+  - "🇨🇳 台湾 33"
+  - "🇨🇳 台湾 34"
+  - "🇨🇳 台湾 35"
+  - "🇨🇳 台湾 36"
+  - "🇨🇳 台湾 37"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇸🇬 新加坡 35"
+  - "🇸🇬 新加坡 36"
+  - "🇸🇬 新加坡 37"
+  - "🇸🇬 新加坡 38"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -363,30 +933,100 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
+  - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
+  - "🇳🇱 荷兰 06"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
   - "🇫🇮 芬兰 03"
   - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇳🇱 荷兰 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
   - "🇩🇪 德国 05"
   - "🇩🇪 德国 06"
-  - "🇮🇳 印度 01"
-  - "🇦🇱 阿尔巴尼亚 01"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -403,11 +1043,101 @@ proxy-groups:
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
   - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇭🇰 香港 19"
+  - "🇭🇰 香港 20"
+  - "🇭🇰 香港 21"
+  - "🇭🇰 香港 22"
+  - "🇭🇰 香港 23"
+  - "🇭🇰 香港 24"
+  - "🇭🇰 香港 25"
+  - "🇭🇰 香港 26"
+  - "🇭🇰 香港 27"
+  - "🇭🇰 香港 28"
+  - "🇭🇰 香港 29"
+  - "🇭🇰 香港 30"
+  - "🇭🇰 香港 31"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
+  - "🇨🇳 台湾 28"
+  - "🇨🇳 台湾 29"
+  - "🇨🇳 台湾 30"
+  - "🇨🇳 台湾 31"
+  - "🇨🇳 台湾 32"
+  - "🇨🇳 台湾 33"
+  - "🇨🇳 台湾 34"
+  - "🇨🇳 台湾 35"
+  - "🇨🇳 台湾 36"
+  - "🇨🇳 台湾 37"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇸🇬 新加坡 35"
+  - "🇸🇬 新加坡 36"
+  - "🇸🇬 新加坡 37"
+  - "🇸🇬 新加坡 38"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -445,30 +1175,100 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
+  - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
+  - "🇳🇱 荷兰 06"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
   - "🇫🇮 芬兰 03"
   - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇳🇱 荷兰 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
   - "🇩🇪 德国 05"
   - "🇩🇪 德国 06"
-  - "🇮🇳 印度 01"
-  - "🇦🇱 阿尔巴尼亚 01"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -485,11 +1285,101 @@ proxy-groups:
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
   - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇭🇰 香港 19"
+  - "🇭🇰 香港 20"
+  - "🇭🇰 香港 21"
+  - "🇭🇰 香港 22"
+  - "🇭🇰 香港 23"
+  - "🇭🇰 香港 24"
+  - "🇭🇰 香港 25"
+  - "🇭🇰 香港 26"
+  - "🇭🇰 香港 27"
+  - "🇭🇰 香港 28"
+  - "🇭🇰 香港 29"
+  - "🇭🇰 香港 30"
+  - "🇭🇰 香港 31"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
+  - "🇨🇳 台湾 28"
+  - "🇨🇳 台湾 29"
+  - "🇨🇳 台湾 30"
+  - "🇨🇳 台湾 31"
+  - "🇨🇳 台湾 32"
+  - "🇨🇳 台湾 33"
+  - "🇨🇳 台湾 34"
+  - "🇨🇳 台湾 35"
+  - "🇨🇳 台湾 36"
+  - "🇨🇳 台湾 37"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇸🇬 新加坡 35"
+  - "🇸🇬 新加坡 36"
+  - "🇸🇬 新加坡 37"
+  - "🇸🇬 新加坡 38"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -527,30 +1417,100 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
+  - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
+  - "🇳🇱 荷兰 06"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
   - "🇫🇮 芬兰 03"
   - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇳🇱 荷兰 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
   - "🇩🇪 德国 05"
   - "🇩🇪 德国 06"
-  - "🇮🇳 印度 01"
-  - "🇦🇱 阿尔巴尼亚 01"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -567,11 +1527,101 @@ proxy-groups:
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
   - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇭🇰 香港 19"
+  - "🇭🇰 香港 20"
+  - "🇭🇰 香港 21"
+  - "🇭🇰 香港 22"
+  - "🇭🇰 香港 23"
+  - "🇭🇰 香港 24"
+  - "🇭🇰 香港 25"
+  - "🇭🇰 香港 26"
+  - "🇭🇰 香港 27"
+  - "🇭🇰 香港 28"
+  - "🇭🇰 香港 29"
+  - "🇭🇰 香港 30"
+  - "🇭🇰 香港 31"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
+  - "🇨🇳 台湾 28"
+  - "🇨🇳 台湾 29"
+  - "🇨🇳 台湾 30"
+  - "🇨🇳 台湾 31"
+  - "🇨🇳 台湾 32"
+  - "🇨🇳 台湾 33"
+  - "🇨🇳 台湾 34"
+  - "🇨🇳 台湾 35"
+  - "🇨🇳 台湾 36"
+  - "🇨🇳 台湾 37"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇸🇬 新加坡 19"
+  - "🇸🇬 新加坡 20"
+  - "🇸🇬 新加坡 21"
+  - "🇸🇬 新加坡 22"
+  - "🇸🇬 新加坡 23"
+  - "🇸🇬 新加坡 24"
+  - "🇸🇬 新加坡 25"
+  - "🇸🇬 新加坡 26"
+  - "🇸🇬 新加坡 27"
+  - "🇸🇬 新加坡 28"
+  - "🇸🇬 新加坡 29"
+  - "🇸🇬 新加坡 30"
+  - "🇸🇬 新加坡 31"
+  - "🇸🇬 新加坡 32"
+  - "🇸🇬 新加坡 33"
+  - "🇸🇬 新加坡 34"
+  - "🇸🇬 新加坡 35"
+  - "🇸🇬 新加坡 36"
+  - "🇸🇬 新加坡 37"
+  - "🇸🇬 新加坡 38"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -609,30 +1659,100 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
+  - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
+  - "🇳🇱 荷兰 06"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
   - "🇫🇮 芬兰 03"
   - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇳🇱 荷兰 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
   - "🇩🇪 德国 05"
   - "🇩🇪 德国 06"
-  - "🇮🇳 印度 01"
-  - "🇦🇱 阿尔巴尼亚 01"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
