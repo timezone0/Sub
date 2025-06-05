@@ -64,30 +64,29 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇬🇧 英国 01", type: "vmess", server: "141.11.252.64", port: 20630, uuid: "b7b232d1-79ae-4fb1-8fdb-6f0bdc8a41ee", cipher: "auto", network: "ws", fingerprint: "", ws-opts: {path: "/b7b232d1"}, alterId: 0}
 - {name: "🇺🇸 美国 01", type: "trojan", server: "172.67.133.248", port: 443, udp: true, sni: "DDd.890604.FIlEGear-sG.Me", password: "f0f6e76e-e5fe-4e2c-9faf-34832e021eae", network: "ws", ws-opts: {path: "/mZr1mA5hub7QHHkQBzYO", headers: {Host: "ddd.890604.filegear-sg.me"}}}
-- {name: "🇺🇸 美国 02", type: "trojan", server: "172.67.188.77", port: 443, udp: true, sni: "edfr4.890604.dpdns.org", password: "15153c1d-fc81-4b2a-9689-7b4e4a72dce5", network: "ws", ws-opts: {path: "/l6lvY4hFZriQDBimbKYmPIggy", headers: {Host: "edfr4.890604.dpdns.org"}}}
-- {name: "🇺🇸 美国 03", type: "trojan", server: "104.21.15.232", port: 443, udp: true, sni: "ab2c7f0b-bf1b-4eb3-9884-256f4de3d.2030.pp.ua", password: "15b24b56-d667-4fa8-b548-f3dc942fb461", network: "ws", ws-opts: {path: "/4p35eUnmGxQ8YJFJxz"}}
-- {name: "🇺🇸 美国 04", type: "trojan", server: "172.67.135.37", port: 443, udp: true, sni: "cCtv4.459.pp.uA", password: "44ed7a37-af89-4cd1-8680-83a7207810d9", network: "ws", ws-opts: {path: "/HpYP4foAlpTKtfYnjLYhU30U", headers: {Host: "cctv4.459.pp.ua"}}}
-- {name: "🇺🇸 美国 05", type: "trojan", server: "36.151.251.62", port: 3330, sni: "cdn.egvra.cn", password: "RlzoEILU", skip-cert-verify: true}
-- {name: "🇺🇸 美国 06", type: "trojan", server: "104.21.25.95", port: 443, udp: true, sni: "DDd.890604.FIlEGear-sG.Me", password: "f0f6e76e-e5fe-4e2c-9faf-34832e021eae", network: "ws", skip-cert-verify: true, ws-opts: {path: "/mZr1mA5hub7QHHkQBzYO"}}
-- {name: "🇺🇸 美国 07", type: "trojan", server: "104.21.35.247", port: 443, udp: true, sni: "ff.HuangSHANg2030.DPDnS.oRg", password: "c8eac4b7-95ba-4ce0-920d-c3279eb3b391", network: "ws", ws-opts: {path: "/ptGwaGzcA4KNAXX", headers: {Host: "ff.huangshang2030.dpdns.org"}}}
+- {name: "🇺🇸 美国 02", type: "ss", server: "9.163.232.180", port: 1490, cipher: "chacha20-ietf-poly1305", password: "ojcP36n1SouDcnBg9EOZP8"}
+- {name: "🇺🇸 美国 03", type: "ss", server: "35.91.246.41", port: 443, cipher: "aes-256-cfb", password: "awsps0501"}
+- {name: "🇺🇸 美国 04", type: "ss", server: "104.167.197.25", port: 57456, cipher: "chacha20-ietf-poly1305", password: "360e21d21977dc11"}
+- {name: "🇺🇸 美国 05", type: "trojan", server: "36.151.251.61", port: 33097, sni: "36.151.251.61", password: "RlzoEILU", skip-cert-verify: true}
+- {name: "🇺🇸 美国 06", type: "trojan", server: "104.21.35.247", port: 443, udp: true, sni: "ff.HuangSHANg2030.DPDnS.oRg", password: "c8eac4b7-95ba-4ce0-920d-c3279eb3b391", network: "ws", ws-opts: {path: "/ptGwaGzcA4KNAXX", headers: {Host: "ff.huangshang2030.dpdns.org"}}}
+- {name: "🇺🇸 美国 07", type: "vmess", server: "188.213.128.64", port: 2010, uuid: "b117bd27-0e16-4342-852a-59f0c0aa61f4", cipher: "auto", network: "tcp", fingerprint: "", alterId: 0}
 - {name: "🇺🇸 美国 08", type: "trojan", server: "36.151.251.62", port: 13542, sni: "cdn.egvra.cn", password: "RlzoEILU", skip-cert-verify: true}
-- {name: "🇺🇸 美国 09", type: "trojan", server: "172.67.144.126", port: 443, udp: true, sni: "CFR56ty7890.288288.sHOP", password: "895552fa-6284-4c1d-ba00-3944e0c7c626", network: "ws", ws-opts: {path: "/By7cEmOrNRS58yeduy9AOG", headers: {Host: "cfr56ty7890.288288.shop"}}}
-- {name: "🇺🇸 美国 10", type: "trojan", server: "104.21.83.113", port: 443, udp: true, sni: "SxcDe3.859886.XYz", password: "4a3ee276-f50f-46f6-ba4d-13571732ab70", network: "ws", ws-opts: {path: "/COp52Dbu3dvwvDWUxOqxq", headers: {Host: "sxcde3.859886.xyz"}}}
-- {name: "🇺🇸 美国 11", type: "trojan", server: "104.21.16.1", port: 443, udp: true, sni: "eeERrrR.999815.xYZ", password: "84831b86-5c76-4173-bdf1-02fa3ed78a32", network: "ws", ws-opts: {path: "/eS3prPmcpzbScA5VUAi1psm38Tz", headers: {Host: "eeerrrr.999815.xyz"}}}
-- {name: "🇺🇸 美国 12", type: "ss", server: "9.163.232.180", port: 1490, cipher: "chacha20-ietf-poly1305", password: "ojcP36n1SouDcnBg9EOZP8"}
-- {name: "🇰🇷 韩国 01", type: "ss", server: "p231.panda004.net", port: 11389, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
-- {name: "🇰🇷 韩国 02", type: "ss", server: "125.141.26.12", port: 4857, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
-- {name: "🇰🇷 韩国 03", type: "ss", server: "221.150.109.89", port: 11389, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
+- {name: "🇺🇸 美国 09", type: "trojan", server: "172.67.135.37", port: 443, udp: true, sni: "cCtv4.459.pp.uA", password: "44ed7a37-af89-4cd1-8680-83a7207810d9", network: "ws", ws-opts: {path: "/HpYP4foAlpTKtfYnjLYhU30U", headers: {Host: "cctv4.459.pp.ua"}}}
+- {name: "🇺🇸 美国 10", type: "trojan", server: "104.21.83.113", port: 443, udp: true, sni: "SxcDe3.859886.XYz", password: "4a3ee276-f50f-46f6-ba4d-13571732ab70", network: "ws", ws-opts: {path: "/COp52Dbu3dvwvDWUxOqxq"}}
+- {name: "🇺🇸 美国 11", type: "trojan", server: "104.21.25.95", port: 443, udp: true, sni: "DDd.890604.FIlEGear-sG.Me", password: "f0f6e76e-e5fe-4e2c-9faf-34832e021eae", network: "ws", skip-cert-verify: true, ws-opts: {path: "/mZr1mA5hub7QHHkQBzYO"}}
+- {name: "🇺🇸 美国 12", type: "trojan", server: "36.151.251.62", port: 3330, sni: "cdn.egvra.cn", password: "RlzoEILU", skip-cert-verify: true}
+- {name: "🇺🇸 美国 13", type: "trojan", server: "172.67.144.126", port: 443, udp: true, sni: "CFR56ty7890.288288.sHOP", password: "895552fa-6284-4c1d-ba00-3944e0c7c626", network: "ws", ws-opts: {path: "/By7cEmOrNRS58yeduy9AOG", headers: {Host: "cfr56ty7890.288288.shop"}}}
+- {name: "🇺🇸 美国 14", type: "trojan", server: "172.67.188.77", port: 443, udp: true, sni: "edfr4.890604.dpdns.org", password: "15153c1d-fc81-4b2a-9689-7b4e4a72dce5", network: "ws", ws-opts: {path: "/l6lvY4hFZriQDBimbKYmPIggy"}}
+- {name: "🇰🇷 韩国 01", type: "ss", server: "125.141.31.72", port: 15098, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
 - {name: "🇩🇪 德国 01", type: "trojan", server: "120.233.44.201", port: 21102, sni: "120.233.44.201", password: "2b1ed981-6547-4094-998b-06a3323d6f6c", skip-cert-verify: true}
-- {name: "🇨🇦 加拿大 01", type: "vmess", server: "v8.heduian.link", port: 30808, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v8.heduian.link"}}, alterId: 2}
+- {name: "🇯🇵 日本 01", type: "vmess", server: "b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com", port: 17232, uuid: "aed1cc24-351d-11ef-ba52-f23c9164ca5d", cipher: "auto", network: "tcp", alterId: 0}
+- {name: "🇸🇪 瑞典 01", type: "vmess", server: "185.146.173.25", port: 80, uuid: "46181c32-8c82-413a-b836-8375e5e513eb", cipher: "auto", network: "ws", fingerprint: "", ws-opts: {path: "/d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560", headers: {Host: "google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir."}}, alterId: 0}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇬🇧 英国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -100,18 +99,18 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
-  - "🇬🇧 英国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -124,16 +123,16 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -146,17 +145,17 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇬🇧 英国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -169,17 +168,17 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇬🇧 英国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -192,17 +191,17 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -215,11 +214,12 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
