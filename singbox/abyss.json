@@ -1,0 +1,1213 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31101,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 02",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31101,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 03",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31101,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇻🇳 越南 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31103,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇻🇳 越南 02",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31103,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇻🇳 越南 03",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31103,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31111,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31112,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31114,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 04",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31111,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 05",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31112,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 06",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31114,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 07",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31111,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 08",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31112,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 09",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31114,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31121,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31123,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31125,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31121,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31123,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31125,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 07",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31121,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 08",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31123,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 09",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31125,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31153,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 02",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31154,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 03",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31153,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 04",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31154,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 05",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31153,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 06",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31154,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31155,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 02",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31155,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 03",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31155,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31157,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31158,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31159,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31157,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 05",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31158,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 06",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31159,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 07",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31157,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 08",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31158,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 09",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31159,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 01",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31161,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 02",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31171,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 03",
+      "type": "hysteria2",
+      "server": "bgp.abyssvpn.com",
+      "server_port": 31172,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "bgp.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 04",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31161,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 05",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31171,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 06",
+      "type": "hysteria2",
+      "server": "cucc.abyssvpn.com",
+      "server_port": 31172,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cucc.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 07",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31161,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 08",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31171,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 09",
+      "type": "hysteria2",
+      "server": "CMCC.abyssvpn.com",
+      "server_port": 31172,
+      "password": "628d9312-4dae-4bb5-a93e-17a0a20519a4",
+      "tls": {
+        "enabled": true,
+        "server_name": "CMCC.abyssvpn.com",
+        "insecure": true
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}

@@ -1,0 +1,471 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇨🇳 台湾 01", server: "bgp.abyssvpn.com", port: 31101, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇳 台湾 02", server: "cucc.abyssvpn.com", port: 31101, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇳 台湾 03", server: "CMCC.abyssvpn.com", port: 31101, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇻🇳 越南 01", server: "bgp.abyssvpn.com", port: 31103, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇻🇳 越南 02", server: "cucc.abyssvpn.com", port: 31103, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇻🇳 越南 03", server: "CMCC.abyssvpn.com", port: 31103, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 01", server: "bgp.abyssvpn.com", port: 31111, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 02", server: "bgp.abyssvpn.com", port: 31112, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 03", server: "bgp.abyssvpn.com", port: 31114, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 04", server: "cucc.abyssvpn.com", port: 31111, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 05", server: "cucc.abyssvpn.com", port: 31112, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 06", server: "cucc.abyssvpn.com", port: 31114, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 07", server: "CMCC.abyssvpn.com", port: 31111, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 08", server: "CMCC.abyssvpn.com", port: 31112, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇭🇰 香港 09", server: "CMCC.abyssvpn.com", port: 31114, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 01", server: "bgp.abyssvpn.com", port: 31121, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 02", server: "bgp.abyssvpn.com", port: 31123, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 03", server: "bgp.abyssvpn.com", port: 31125, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 04", server: "cucc.abyssvpn.com", port: 31121, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 05", server: "cucc.abyssvpn.com", port: 31123, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 06", server: "cucc.abyssvpn.com", port: 31125, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 07", server: "CMCC.abyssvpn.com", port: 31121, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 08", server: "CMCC.abyssvpn.com", port: 31123, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇺🇸 美国 09", server: "CMCC.abyssvpn.com", port: 31125, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇮🇳 印度 01", server: "bgp.abyssvpn.com", port: 31153, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇮🇳 印度 02", server: "bgp.abyssvpn.com", port: 31154, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇮🇳 印度 03", server: "cucc.abyssvpn.com", port: 31153, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇮🇳 印度 04", server: "cucc.abyssvpn.com", port: 31154, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇮🇳 印度 05", server: "CMCC.abyssvpn.com", port: 31153, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇮🇳 印度 06", server: "CMCC.abyssvpn.com", port: 31154, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇰🇷 韩国 01", server: "bgp.abyssvpn.com", port: 31155, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇰🇷 韩国 02", server: "cucc.abyssvpn.com", port: 31155, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇰🇷 韩国 03", server: "CMCC.abyssvpn.com", port: 31155, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 01", server: "bgp.abyssvpn.com", port: 31157, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 02", server: "bgp.abyssvpn.com", port: 31158, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 03", server: "bgp.abyssvpn.com", port: 31159, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 04", server: "cucc.abyssvpn.com", port: 31157, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 05", server: "cucc.abyssvpn.com", port: 31158, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 06", server: "cucc.abyssvpn.com", port: 31159, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 07", server: "CMCC.abyssvpn.com", port: 31157, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 08", server: "CMCC.abyssvpn.com", port: 31158, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇯🇵 日本 09", server: "CMCC.abyssvpn.com", port: 31159, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 01", server: "bgp.abyssvpn.com", port: 31161, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 02", server: "bgp.abyssvpn.com", port: 31171, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 03", server: "bgp.abyssvpn.com", port: 31172, sni: "bgp.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 04", server: "cucc.abyssvpn.com", port: 31161, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 05", server: "cucc.abyssvpn.com", port: 31171, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 06", server: "cucc.abyssvpn.com", port: 31172, sni: "cucc.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 07", server: "CMCC.abyssvpn.com", port: 31161, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 08", server: "CMCC.abyssvpn.com", port: 31171, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+- {name: "🇨🇦 加拿大 09", server: "CMCC.abyssvpn.com", port: 31172, sni: "CMCC.abyssvpn.com", skip-cert-verify: true, type: "hysteria2", password: "628d9312-4dae-4bb5-a93e-17a0a20519a4"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇮🇳 印度 04"
+  - "🇮🇳 印度 05"
+  - "🇮🇳 印度 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇮🇳 印度 04"
+  - "🇮🇳 印度 05"
+  - "🇮🇳 印度 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇮🇳 印度 04"
+  - "🇮🇳 印度 05"
+  - "🇮🇳 印度 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇮🇳 印度 04"
+  - "🇮🇳 印度 05"
+  - "🇮🇳 印度 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇮🇳 印度 04"
+  - "🇮🇳 印度 05"
+  - "🇮🇳 印度 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇮🇳 印度 04"
+  - "🇮🇳 印度 05"
+  - "🇮🇳 印度 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"
