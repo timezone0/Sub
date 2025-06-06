@@ -70,7 +70,6 @@ proxies:
 - {name: "🇸🇬 新加坡 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "safari", type: "vless", uuid: "24271b2a-1a4d-4d90-b259-8b91327b87ad", tls: true, alpn: ["h3%2Ch2"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/sg", headers: {Host: "sg.insbot.filegear-sg.me"}}, servername: "sg.insbot.filegear-sg.me"}
 - {name: "🇬🇧 英国 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "safari", type: "vless", uuid: "bfb3f1e8-adc8-490f-d01c-2bc9d43bff2a", tls: true, alpn: ["h2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/gb", headers: {Host: "uk.insbot.filegear-sg.me"}}, servername: "uk.insbot.filegear-sg.me"}
 - {name: "🇭🇰 香港 01", server: "www.visa.com.tw", port: 443, client-fingerprint: "safari", type: "vless", uuid: "792b3cac-e3d9-440b-9681-847034a7cb87", tls: true, alpn: ["h2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/hk", headers: {Host: "hk.insbot.filegear-sg.me"}}, servername: "hk.insbot.filegear-sg.me"}
-- {name: "🇭🇰 香港 02", server: "47.76.78.145", port: 34200, reality-opts: {public-key: "9PISB87d2wQhpoUAp0JJgS0F-vnqUCXltKwN9nhSy0g", short-id: "562f"}, client-fingerprint: "chrome", type: "vless", uuid: "f528cf09-ec1c-471b-8837-ab66e83f1a25", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, network: "tcp", servername: "www.hkust.edu.hk"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -82,7 +81,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -95,7 +93,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -106,7 +103,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -118,7 +114,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -130,7 +125,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -142,7 +136,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
