@@ -89,7 +89,13 @@
         "auto",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇳🇱 荷兰 01"
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇳🇱 荷兰 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 04",
+        "🇳🇴 挪威 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -100,7 +106,13 @@
       "outbounds": [
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇳🇱 荷兰 01"
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇳🇱 荷兰 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 04",
+        "🇳🇴 挪威 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -111,7 +123,13 @@
         "select",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇳🇱 荷兰 01"
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇳🇱 荷兰 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 04",
+        "🇳🇴 挪威 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,7 +141,13 @@
         "direct",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇳🇱 荷兰 01"
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇳🇱 荷兰 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 04",
+        "🇳🇴 挪威 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -135,7 +159,13 @@
         "direct",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇳🇱 荷兰 01"
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇳🇱 荷兰 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 04",
+        "🇳🇴 挪威 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,7 +177,13 @@
         "select",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇳🇱 荷兰 01"
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇳🇱 荷兰 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 04",
+        "🇳🇴 挪威 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -188,6 +224,44 @@
       "down_mbps": 1000
     },
     {
+      "tag": "🇺🇸 美国 03",
+      "type": "vmess",
+      "server": "cloudgetservice.mcloudservice.site",
+      "server_port": 443,
+      "uuid": "96e44a22-4f5c-48f9-99d9-f2c1985dd5b9",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudgetservice.mcloudservice.site",
+        "insecure": false
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "Usa-Vp-192.blazEcloudMAin.SitE"
+        },
+        "path": "/linkvkws"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vmess",
+      "server": "0000:0000:0000:0000:0000:ffff:8e5d:fd31",
+      "server_port": 2095,
+      "uuid": "21284025-a32f-4f90-aaba-55b5d22b0070",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http",
+        "headers": {},
+        "path": "/",
+        "host": "d1.awsstatic.com"
+      }
+    },
+    {
       "tag": "🇳🇱 荷兰 01",
       "type": "hysteria",
       "server": "51.159.226.1",
@@ -204,6 +278,69 @@
       "auth_str": "dongtaiwang.com",
       "up_mbps": 100,
       "down_mbps": 100
+    },
+    {
+      "tag": "🇩🇪 德国 01",
+      "type": "trojan",
+      "server": "18.198.168.170",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇩🇪 德国 02",
+      "type": "vless",
+      "server": "zmaoz.faculty.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "7cccefc2-6e9b-47bb-f30c-ea2d3cdc8593",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "foffmelo.com",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+        },
+        "path": "/olem/ws",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 1024
+      }
+    },
+    {
+      "tag": "🇩🇪 德国 04",
+      "type": "vless",
+      "server": "Zmaoz.Faculty.Ucdavis.Edu",
+      "server_port": 80,
+      "uuid": "Parsashonam-251",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "Parsashonam-DE.ir",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36"
+        },
+        "path": "/@Parsashonam",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048
+      }
+    },
+    {
+      "tag": "🇳🇴 挪威 01",
+      "type": "shadowsocks",
+      "server": "185.213.23.226",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
     }
   ],
   "route": {
