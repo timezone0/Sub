@@ -98,13 +98,13 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 04"
       ],
       "interrupt_exist_connections": true
     },
@@ -124,13 +124,13 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 04"
       ],
       "interrupt_exist_connections": true
     },
@@ -150,13 +150,13 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 04"
       ],
       "interrupt_exist_connections": true
     },
@@ -177,13 +177,13 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 04"
       ],
       "interrupt_exist_connections": true
     },
@@ -204,13 +204,13 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 04"
       ],
       "interrupt_exist_connections": true
     },
@@ -231,30 +231,37 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 04"
       ],
       "interrupt_exist_connections": true
     },
     {
       "tag": "🇭🇰 香港 01",
-      "type": "vmess",
-      "server": "183.236.51.38",
-      "server_port": 49554,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "security": "auto",
-      "alter_id": 64
+      "type": "trojan",
+      "server": "120.233.128.68",
+      "server_port": 39001,
+      "password": "85f133142f04dbf6547da33895cfabb3",
+      "tls": {
+        "enabled": true,
+        "server_name": "120.233.128.68",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇭🇰 香港 02",
       "type": "shadowsocks",
       "server": "121.127.231.217",
-      "server_port": 29755,
+      "server_port": 41099,
       "method": "chacha20-ietf-poly1305",
       "password": "1450cecfb93f",
       "plugin": "v2ray-plugin",
@@ -265,21 +272,35 @@
     },
     {
       "tag": "🇭🇰 香港 03",
-      "type": "vmess",
-      "server": "183.236.51.38",
-      "server_port": 49302,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "security": "auto",
-      "alter_id": 64
+      "type": "trojan",
+      "server": "125.94.40.221",
+      "server_port": 39001,
+      "password": "85f133142f04dbf6547da33895cfabb3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yrtok.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇭🇰 香港 04",
-      "type": "vmess",
-      "server": "38.147.189.7",
-      "server_port": 27680,
-      "uuid": "1e17ef3c-b4a9-4430-ba37-3c986dba8f2f",
-      "security": "auto",
-      "alter_id": 0
+      "type": "trojan",
+      "server": "113.99.140.184",
+      "server_port": 39001,
+      "password": "85f133142f04dbf6547da33895cfabb3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yrtok.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇭🇰 香港 05",
@@ -308,28 +329,28 @@
     },
     {
       "tag": "🇭🇰 香港 07",
-      "type": "trojan",
-      "server": "113.99.140.184",
-      "server_port": 39001,
-      "password": "85f133142f04dbf6547da33895cfabb3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yrtok.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "type": "vmess",
+      "server": "103.224.80.111",
+      "server_port": 29992,
+      "uuid": "c3659582-a6e0-45c2-92ec-3b4d8b240e07",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "tag": "🇭🇰 香港 08",
       "type": "vmess",
-      "server": "183.236.51.38",
-      "server_port": 59652,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "server": "9b53711d-sxlj40-szcxa1-dmd8.hkt.east.wctype.com",
+      "server_port": 460,
+      "uuid": "2058bdd6-1505-11f0-a035-f23c95b6f51d",
       "security": "auto",
-      "alter_id": 64
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "a605477178.m.ctrip.com"
+        },
+        "path": "/"
+      }
     },
     {
       "tag": "🇯🇵 日本 01",
@@ -339,13 +360,13 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202506070920094-RCFIknio7m.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202506070920094-JZCkrm5A71.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 02",
       "type": "shadowsocks",
       "server": "43.226.17.11",
-      "server_port": 50058,
+      "server_port": 40990,
       "method": "chacha20-ietf-poly1305",
       "password": "60a930c17ff0",
       "plugin": "v2ray-plugin",
@@ -369,6 +390,15 @@
         },
         "path": "/oooo"
       }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vmess",
+      "server": "183.236.51.38",
+      "server_port": 41024,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "tag": "🇰🇷 韩国 01",
@@ -402,7 +432,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202506070920094-RCFIknio7m.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202506070920094-JZCkrm5A71.download.microsoft.com"
     },
     {
       "tag": "🇺🇸 美国 02",
@@ -460,14 +490,6 @@
         },
         "path": "/"
       }
-    },
-    {
-      "tag": "🇬🇧 英国 01",
-      "type": "shadowsocks",
-      "server": "sdjhv3hjubds733.nertron.xyz",
-      "server_port": 23674,
-      "method": "aes-128-gcm",
-      "password": "cf44a1b7-6806-4412-aac9-5ceb838fb705"
     }
   ],
   "route": {
