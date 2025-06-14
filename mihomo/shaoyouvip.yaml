@@ -64,26 +64,9 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {auth: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", name: "🇸🇬 新加坡 01", password: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", port: 10086, server: "asg.pagate.top", skip-cert-verify: false, sni: "asg.pagate.top", type: "hysteria2"}
-- {alpn: [""], alterId: "0", cipher: "auto", name: "🇸🇬 新加坡 02", network: "tcp", port: 19379, server: "e9vm2tgj.8542112.xyz", skip-cert-verify: false, tls: false, type: "vmess", udp: true, uuid: "d341195d-6316-32ea-949c-aaea2b2cb0a8", xudp: true}
-- {alpn: ["h3"], auth-str: "dongtaiwang.com", delay: 2641, down: "100", name: "🇺🇸 美国 01", port: 36194, protocol: "udp", server: "198.40.52.27", skip-cert-verify: true, sni: "apple.com", type: "hysteria", udp: "true", up: "100"}
-- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 02", port: 11512, server: "108.181.24.77", skip-cert-verify: true, sni: "apple.com", type: "hysteria", udp: true, up: "1000 Mbps", auth-str: "dongtaiwang.com"}
-- {name: "🇺🇸 美国 03", password: "bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b", port: 15229, server: "e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net", skip-cert-verify: false, sni: "e312e558-sxusg0-t3f7qr-141tv.cu.plebai.net", type: "trojan"}
-- {down: "", fingerprint: "", name: "🇺🇸 美国 04", obfs: "", obfs-password: "", password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", port: 3234, server: "209.141.47.127", skip-cert-verify: true, sni: "", type: "hysteria2", up: "", disable-sni: true}
-- {name: "🇺🇸 美国 05", network: "ws", port: 443, server: "45.67.215.209", skip-cert-verify: true, tls: true, type: "vless", udp: true, uuid: "55520747-311e-4015-83ce-be46e2060ce3", ws-opts: {headers: {Host: "ss.bgm2024.dpdns.org"}, path: "/?ed=2560"}, servername: "ss.bgm2024.dpdns.org"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 06", port: 46430, reality-opts: {public-key: "kQoMZ1G4jwT9yTlF-NtZwhG22j3NQhzlvGsiiLxrLzI", short-id: "e27f3a"}, server: "143.14.220.136", skip-cert-verify: false, tls: true, type: "vless", udp: true, uuid: "021423af-85fc-4bb6-b32e-deeed97581e1", network: "tcp", servername: "yahoo.com"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 07", network: "ws", port: 443, server: "152.67.203.34", tls: true, type: "vless", udp: true, uuid: "cd2e9541-3fce-4d95-9bec-919d884f911e", ws-opts: {headers: {Host: "piqie.justin-lifeistooshort.info", User-Agent: "Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36"}, path: "/tiger"}, xudp: true, servername: "piqie.justin-lifeistooshort.info"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 08", network: "ws", port: 443, server: "104.19.222.79", tls: true, type: "vless", udp: true, uuid: "cd2e9541-3fce-4d95-9bec-919d884f911e", ws-opts: {headers: {Host: "wureq.stephen-lifeistooshort.info", User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0"}, path: "/tiger"}, xudp: true, servername: "wureq.stephen-lifeistooshort.info"}
-- {client-fingerprint: "chrome", name: "🇭🇰 香港 01", password: "85f133142f04dbf6547da33895cfabb3", port: 39001, server: "125.94.40.221", skip-cert-verify: true, sni: "www.yrtok.com", type: "trojan"}
-- {name: "🇭🇰 香港 02", password: "<password>", port: 443, server: "38f6538e-sx8kg0-t1bnjq-1krtb.hkt2.cdnhuawei.com", tls: true, type: "socks5", username: "60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d", sni: "38f6538e-sx8kg0-t1bnjq-1krtb.hkt2.cdnhuawei.com"}
-- {cipher: "aes-256-gcm", name: "🇫🇷 法国 01", password: "20bf42df-ae17-39b2-9b9f-4e34338b6558", port: 20065, server: "wrjyn-g01.fr01-ae5.entry.v50307shvkaa.art", type: "ss", udp: true}
-- {alpn: ["h3"], auth-str: "dongtaiwang.com", auth_str: "dongtaiwang.com", delay: 932, down: 100, name: "🇳🇱 荷兰 01", port: 14241, protocol: "udp", server: "51.159.226.1", skip-cert-verify: true, sni: "apple.com", type: "hysteria", udp: true, up: 100}
-- {name: "🇳🇱 荷兰 02", network: "ws", port: 8880, server: "cloud.updatte.tech", type: "vless", udp: true, uuid: "v2Rayfast_7", ws-opts: {headers: {Host: "join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir", User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: "/?ed=2048"}, xudp: true}
-- {name: "🇱🇻 拉脱维亚 01", password: "e3826052-a5a4-4566-978b-cdd0e717a5eb", port: 53171, server: "bgp-xdd.blue-bgp.xyz", skip-cert-verify: true, sni: "cn.bing.com", type: "trojan"}
-- {auth: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", name: "🇯🇵 日本 01", password: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", port: 10086, server: "ajp.pagate.top", skip-cert-verify: false, sni: "ajp.pagate.top", type: "hysteria2"}
-- {alpn: ["h2", "http/1.1"], client-fingerprint: "randomized", name: "🇫🇮 芬兰 01", network: "ws", password: "8r<[9'l6hAO#8ZQi", port: 8443, server: "koma-yt.pages.dev", skip-cert-verify: false, sni: "Koma-YT.PAGeS.Dev", type: "trojan", udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"}, path: "/tro8sFW1S91B6sZrM1?ed=2560"}}
-- {alpn: ["h2"], client-fingerprint: "chrome", flow: "xtls-rprx-vision", name: "🇬🇧 英国 01", network: "tcp", port: 443, reality-opts: {public-key: "GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg", short-id: "7a2b"}, server: "3.10.175.222", tls: true, type: "vless", udp: true, uuid: "7f93e196-1b2f-4a42-8051-5815554c05db", xudp: true, servername: "zula.ir"}
-- {alpn: ["http/1.1"], client-fingerprint: "randomized", name: "🇩🇪 德国 01", network: "ws", port: 443, server: "104.17.148.22", tls: true, type: "vless", udp: true, uuid: "3058e698-61fd-4d12-95bc-f1fe4c071713", ws-opts: {headers: {Host: "hozori.ir", User-Agent: "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7"}, path: "/Telegram@V2ray_Alpha"}, xudp: true, servername: "hOZori.iR"}
+- {name: "🇸🇬 新加坡 01", network: "ws", port: 8880, server: "::ffff:156.238.18.224", type: "vless", udp: true, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", ws-opts: {headers: {Host: "sg.laoyoutiao.link", User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: "/Telegram@WangCai2/?ed=2048"}, xudp: true, servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 02", network: "ws", port: 8880, server: "::ffff:156.238.18.160", type: "vless", udp: true, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", ws-opts: {headers: {Host: "sg.laoyoutiao.link", User-Agent: "Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: "/Telegram@WangCai2/?ed=2048"}, xudp: true, servername: "sg.laoyoutiao.link"}
+- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 01", port: 11512, server: "108.181.24.77", skip-cert-verify: true, sni: "apple.com", type: "hysteria", udp: true, up: "1000 Mbps", auth-str: "dongtaiwang.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -92,23 +75,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇫🇷 法国 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇱🇻 拉脱维亚 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇮 芬兰 01"
-  - "🇬🇧 英国 01"
-  - "🇩🇪 德国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -118,23 +84,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇫🇷 法国 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇱🇻 拉脱维亚 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇮 芬兰 01"
-  - "🇬🇧 英国 01"
-  - "🇩🇪 德国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -142,23 +91,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇫🇷 法国 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇱🇻 拉脱维亚 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇮 芬兰 01"
-  - "🇬🇧 英国 01"
-  - "🇩🇪 德国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -167,23 +99,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇫🇷 法国 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇱🇻 拉脱维亚 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇮 芬兰 01"
-  - "🇬🇧 英国 01"
-  - "🇩🇪 德国 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -192,23 +107,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇫🇷 法国 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇱🇻 拉脱维亚 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇮 芬兰 01"
-  - "🇬🇧 英国 01"
-  - "🇩🇪 德国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -217,23 +115,6 @@ proxy-groups:
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇫🇷 法国 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇱🇻 拉脱维亚 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇮 芬兰 01"
-  - "🇬🇧 英国 01"
-  - "🇩🇪 德国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
