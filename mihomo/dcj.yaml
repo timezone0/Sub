@@ -64,147 +64,113 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {skip-cert-verify: true, sni: "120.233.128.68", type: "trojan", password: "85f133142f04dbf6547da33895cfabb3", server: "120.233.128.68", port: 39001, name: "🇭🇰 香港 01", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 02", type: "trojan", server: "116.31.75.150", port: 39001, udp: true, password: "85f133142f04dbf6547da33895cfabb3", skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 03", type: "vmess", server: "183.236.51.38", port: 41024, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", tls: false, skip-cert-verify: true, network: "tcp", ws-opts: {path: "", headers: {host: ""}}, disable-sni: true, client-fingerprint: "chrome", servername: ""}
-- {cipher: "aes-256-cfb", name: "🇸🇬 新加坡 01", password: "qawszxc123", port: 443, server: "54.169.30.154", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 02", type: "vmess", server: "120.232.153.40", port: 50152, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", tls: false, skip-cert-verify: true, network: "tcp", ws-opts: {path: "", headers: {host: ""}}, disable-sni: true, client-fingerprint: "chrome", servername: ""}
-- {type: "vless", name: "🇸🇬 新加坡 03", server: "156.238.18.20", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram🇨🇳@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇸🇬 新加坡 04", server: "156.238.18.184", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 05", type: "vless", server: "::ffff:156.238.18.123", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {type: "vless", name: "🇸🇬 新加坡 06", server: "156.238.18.254", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇸🇬 新加坡 07", server: "156.238.18.200", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 08", type: "vless", server: "::ffff:156.238.18.125", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 09", type: "vless", server: "::ffff:156.238.18.252", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 10", type: "vless", server: "::ffff:156.238.18.177", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 11", type: "vless", server: "::ffff:156.238.18.200", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {type: "vless", name: "🇸🇬 新加坡 12", server: "156.238.18.136", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed=2048"}, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 13", type: "vless", server: "::ffff:156.238.18.11", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 14", type: "vless", server: "45.144.167.46", port: 19816, uuid: "e46d518d-4a20-4f9a-873d-a86e9455321c", tls: true, network: "ws", ws-opts: {path: "/e46d518d-4a20-4f9a-873d-a86e9455321c-vless?ed=2048", headers: {Host: "mixing-proper-sharon-literary.trycloudflare.com"}}, client-fingerprint: "chrome", servername: "mixing-proper-sharon-literary.trycloudflare.com"}
+- {name: "🇭🇰 香港 01", type: "ss", server: "freet.cloudrithm.com", port: 41145, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 02", type: "ss", server: "freet.cloudrithm.com", port: 41143, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 03", type: "ss", server: "freet.cloudrithm.com", port: 41141, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 04", type: "trojan", server: "116.31.75.150", port: 39001, udp: true, password: "85f133142f04dbf6547da33895cfabb3", skip-cert-verify: true, client-fingerprint: "chrome"}
 - {type: "ss", server: "112.54.160.36", port: 30232, cipher: "aes-256-gcm", password: "dwz1GtF7", name: "🇯🇵 日本 01", client-fingerprint: "chrome"}
-- {type: "ss", server: "120.232.220.156", port: 20406, cipher: "aes-256-gcm", password: "dwz1GtF7", name: "🇺🇸 美国 01", client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 02", server: "108.181.23.255", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", obfs-password: "", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 03", server: "208.87.242.215", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", obfs-password: "", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 04", server: "209.141.47.127", port: 3234, password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 05", server: "104.17.105.92", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 06", server: "104.18.42.254", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 07", server: "104.16.6.169", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 08", server: "104.17.104.45", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 09", server: "104.16.102.171", port: 80, uuid: "8c17092b-4d89-44e3-9dcb-a00c2bf28827", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aymng.bahareh.dpdns.org"}, path: "/?ed=2560"}, servername: "aymng.bahareh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 10", server: "104.16.181.110", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 11", server: "104.16.1.106", port: 80, uuid: "f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "delam.ahaysiahzangi.dpdns.org"}, path: "/?ed=2560"}, servername: "delam.ahaysiahzangi.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 12", server: "104.16.99.37", port: 80, uuid: "bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "barayeiran.nastaranh.dpdns.org"}, path: "/?ed=2560"}, servername: "barayeiran.nastaranh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 13", server: "172.67.59.104", port: 80, uuid: "bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "barayeiran.nastaranh.dpdns.org"}, path: "/?ed=2560"}, servername: "barayeiran.nastaranh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 14", server: "104.17.85.22", port: 80, uuid: "8c17092b-4d89-44e3-9dcb-a00c2bf28827", client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aymng.bahareh.dpdns.org"}, path: "/?ed=2560"}, servername: "aymng.bahareh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 15", server: "172.66.208.89", port: 80, uuid: "26bc13af-e442-4956-afd4-b8f85744d26f", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "fggerlad.gerald81.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 16", type: "vless", network: "ws", server: "104.16.1.47", port: 80, uuid: "b550a101-63fe-4862-bfd3-8b87bb4168dd", tls: false, client-fingerprint: "chrome", ws-opts: {headers: {Host: "flat-bread-ddb6-ppal03.joriy39169.workers.dev"}, path: "/?ed=2560"}, servername: "flat-bread-ddb6-ppal03.joriy39169.workers.dev"}
-- {type: "vless", name: "🇺🇸 美国 17", server: "172.66.177.129", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, servername: "tannaz.juveitaly.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 18", server: "104.17.209.145", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 19", server: "104.24.31.150", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, servername: "lot.sosant.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 20", server: "104.16.103.97", port: 80, uuid: "8c17092b-4d89-44e3-9dcb-a00c2bf28827", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aymng.bahareh.dpdns.org"}, path: "/?ed=2560"}, servername: "aymng.bahareh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 21", server: "172.67.38.63", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "tannaz.juveitaly.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 22", server: "104.17.220.188", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 23", server: "172.67.78.196", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, servername: "tannaz.juveitaly.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 24", server: "104.16.108.27", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 25", server: "104.16.108.43", port: 80, uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "oops.shalamshorba.dpdns.org"}, path: "/?ed=2560"}, servername: "oops.shalamshorba.dpdns.org"}
-- {name: "🇺🇸 美国 26", type: "vless", network: "ws", server: "104.24.147.64", port: 80, uuid: "03e4d6fe-f461-499f-b9c6-35c60f192e1a", tls: false, ws-opts: {headers: {Host: "ppal03-ppal03.letiwe3303.workers.dev"}, path: "/?ed=2560"}, client-fingerprint: "chrome", servername: "ppal03-ppal03.letiwe3303.workers.dev"}
-- {type: "vless", name: "🇺🇸 美国 27", server: "104.16.150.12", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 28", server: "172.66.138.81", port: 80, uuid: "26bc13af-e442-4956-afd4-b8f85744d26f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "fggerlad.gerald81.dpdns.org"}, path: "/?ed=2560"}, servername: "fggerlad.gerald81.dpdns.org"}
-- {name: "🇺🇸 美国 29", type: "vless", network: "ws", server: "104.24.37.192", port: 80, uuid: "9a2680ff-c5d5-410a-9108-8d6b10e4ea1e", skip-cert-verify: false, tls: false, ws-opts: {headers: {Host: "ppal03.dolobe7975.workers.dev"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 30", server: "172.67.56.112", port: 80, uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "entezar.loseyourself.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "entezar.loseyourself.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 31", server: "104.25.86.75", port: 80, uuid: "d1237c01-58b5-48f9-8a27-8a396b7f5422", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ey.nazanin.dpdns.org"}, path: "/?ed=2560"}, servername: "ey.nazanin.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 32", server: "172.67.101.86", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 33", server: "162.159.14.42", port: 80, uuid: "db9d419e-3094-4942-9313-d39afd3dd163", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "spx.lindak.dpdns.org"}, path: "/?ed=2560"}, servername: "spx.lindak.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 34", server: "104.21.113.169", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 35", server: "172.67.218.184", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 36", server: "104.21.114.48", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 37", server: "104.21.62.181", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 38", server: "172.67.212.233", port: 80, uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "oops.shalamshorba.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 39", server: "172.67.252.98", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 40", server: "172.67.193.209", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, servername: "tannaz.juveitaly.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 41", server: "172.66.137.85", port: 80, uuid: "26bc13af-e442-4956-afd4-b8f85744d26f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "fggerlad.gerald81.dpdns.org"}, path: "/?ed=2560"}, servername: "fggerlad.gerald81.dpdns.org"}
-- {name: "🇺🇸 美国 42", type: "vmess", server: "183.238.90.8", port: 46920, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", tls: false, skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 02", type: "ss", server: "freet.cloudrithm.com", port: 41111, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 03", type: "ss", server: "freet.cloudrithm.com", port: 41113, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 04", type: "ss", server: "freet.cloudrithm.com", port: 41115, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "www.yrtok.com", type: "trojan", password: "85f133142f04dbf6547da33895cfabb3", server: "203.156.253.11", port: 39001, name: "🇯🇵 日本 05", client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 01", type: "ss", server: "freet.cloudrithm.com", port: 41173, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 02", type: "ss", server: "freet.cloudrithm.com", port: 41171, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 03", type: "vmess", server: "120.232.153.40", port: 50152, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", tls: false, skip-cert-verify: true, network: "tcp", ws-opts: {path: "", headers: {host: ""}}, disable-sni: true, client-fingerprint: "chrome", servername: ""}
+- {name: "🇸🇬 新加坡 04", type: "vless", server: "::ffff:156.238.18.244", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: "sg.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
 - {name: "🇨🇳 台湾 01", server: "103.137.62.194", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "937f6b6168b6", plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "wt8v1.kvote.cn", path: "/oqhygtklyhwi", tls: true, mux: true}, udp: true, client-fingerprint: "chrome"}
 - {name: "🇨🇳 台湾 02", server: "twmoon1-cdn-route.couldflare-cdn.com", port: 1443, type: "http", username: "mrwdfNTD8M79LCukCieldrqZWqs=", password: "exaxgqkKkd0TAMrCxeonWg==", tls: true, udp: true, sni: "twmoon1-cdn-route.couldflare-cdn.com", client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 03", type: "vmess", server: "twjxlnnoljxc.jkhkgj.xyz", port: 80, cipher: "auto", uuid: "b0af4d14-db9d-4217-b010-5fd2a4b80590", alterId: "0", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/market/tw?ed=512", headers: {Host: "file.dingtalk.com"}}, client-fingerprint: "chrome", servername: "file.dingtalk.com"}
-- {type: "vless", name: "🇫🇮 芬兰 01", server: "91.99.150.156", port: 2182, uuid: "b96981a2-a6aa-44c0-b21f-88328379ec33", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I"}, network: "grpc", grpc-opts: {grpc-service-name: "chessgame"}, servername: "chess.com"}
-- {type: "vless", name: "🇫🇮 芬兰 02", server: "91.99.144.165", port: 2182, uuid: "b96981a2-a6aa-44c0-b21f-88328379ec33", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I"}, network: "grpc", grpc-opts: {grpc-service-name: "chessgame"}, servername: "chess.com"}
-- {type: "vless", name: "🇫🇮 芬兰 03", server: "65.109.203.8", port: 14787, uuid: "29b198d6-25e1-4c15-9b53-feacf78ac3d0", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "---rivmiDN3OHmQHOpowqKDVft8FWrl4BqZ_gyImCR4", short-id: "be31134d"}, network: "grpc", grpc-opts: {grpc-service-name: "digikala.ir"}, servername: "tgju.org"}
-- {type: "vless", name: "🇫🇮 芬兰 04", server: "104.16.104.151", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 05", server: "172.66.132.44", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 06", server: "172.67.11.138", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇫🇮 芬兰 07", server: "104.18.209.108", port: 80, uuid: "d1237c01-58b5-48f9-8a27-8a396b7f5422", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ey.nazanin.dpdns.org"}, path: "/?ed=2560"}, servername: "ey.nazanin.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 08", server: "172.66.128.138", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 09", server: "104.16.109.134", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 10", server: "104.16.137.145", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 11", server: "104.16.109.107", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 12", server: "172.66.150.129", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, servername: "sib.sibzamini.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 13", server: "104.22.22.78", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 14", server: "172.67.33.67", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 15", server: "104.16.101.143", port: 80, uuid: "db9d419e-3094-4942-9313-d39afd3dd163", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "spx.lindak.dpdns.org"}, path: "/?ed=2560"}, servername: "spx.lindak.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 16", server: "104.21.103.107", port: 80, uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "oops.shalamshorba.dpdns.org"}, path: "/?ed=2560"}, servername: "oops.shalamshorba.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 17", server: "172.66.141.21", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, servername: "a1.ghormehsabzi.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 18", server: "172.67.216.21", port: 80, uuid: "8c17092b-4d89-44e3-9dcb-a00c2bf28827", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aymng.bahareh.dpdns.org"}, path: "/?ed=2560"}, servername: "aymng.bahareh.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 19", server: "172.67.136.116", port: 80, uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "entezar.loseyourself.dpdns.org"}, path: "/?ed=2560"}, servername: "entezar.loseyourself.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 20", server: "172.67.254.80", port: 80, uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "oops.shalamshorba.dpdns.org"}, path: "/?ed=2560"}, servername: "oops.shalamshorba.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 21", server: "172.67.239.188", port: 80, uuid: "4179c595-08ca-45cd-b555-91b6f1faeadc", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "di.dibdibini.dpdns.org"}, path: "/?ed=2560"}, servername: "di.dibdibini.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 22", server: "172.67.12.164", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, servername: "a1.ghormehsabzi.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 23", server: "172.67.197.185", port: 80, uuid: "db9d419e-3094-4942-9313-d39afd3dd163", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "spx.lindak.dpdns.org"}, path: "/?ed=2560"}, servername: "spx.lindak.dpdns.org"}
-- {type: "vless", name: "🇫🇮 芬兰 24", server: "172.67.60.197", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
-- {name: "🇷🇺 俄罗斯 01", type: "hysteria2", server: "46.17.41.217", port: 30033, password: "dongtaiwang.com", fast-open: true, sni: "www.bing.com", skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇰🇷 韩国 01", type: "ss", server: "p231.panda004.net", port: 11389, cipher: "aes-256-cfb", password: "qwerREWQ@@", client-fingerprint: "chrome"}
-- {type: "ss", server: "218.237.185.230", port: 4652, cipher: "aes-256-cfb", password: "qwerREWQ@@", name: "🇰🇷 韩国 02", client-fingerprint: "chrome"}
-- {name: "🇰🇷 韩国 03", type: "vless", server: "154.85.99.20", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {cipher: "aes-256-cfb", name: "🇰🇷 韩国 04", password: "qwerREWQ@@", port: 5344, server: "125.141.26.14", tfo: false, type: "ss", client-fingerprint: "chrome"}
+- {type: "ss", server: "218.237.185.230", port: 4652, cipher: "aes-256-cfb", password: "qwerREWQ@@", name: "🇰🇷 韩国 01", client-fingerprint: "chrome"}
+- {name: "🇰🇷 韩国 02", type: "vless", server: "benedict.ns.cloudflare.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "re.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "re.ylks0033.dpdns.org"}
+- {name: "🇰🇷 韩国 03", type: "vless", server: "160.79.104.117", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "re.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "re.ylks0033.dpdns.org"}
+- {name: "🇰🇷 韩国 04", type: "vless", server: "www.whatismyip.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "re.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "re.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国 05", server: "172.67.79.211", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇰🇷 韩国 06", server: "162.159.153.209", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 01", server: "65.109.203.8", port: 14787, uuid: "29b198d6-25e1-4c15-9b53-feacf78ac3d0", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "---rivmiDN3OHmQHOpowqKDVft8FWrl4BqZ_gyImCR4", short-id: "be31134d"}, network: "grpc", grpc-opts: {grpc-service-name: "digikala.ir"}, servername: "tgju.org"}
+- {type: "vless", name: "🇫🇮 芬兰 02", server: "104.18.30.65", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, servername: "lot.sosant.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 03", server: "104.17.213.213", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 04", server: "104.17.85.22", port: 80, uuid: "8c17092b-4d89-44e3-9dcb-a00c2bf28827", client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aymng.bahareh.dpdns.org"}, path: "/?ed=2560"}, servername: "aymng.bahareh.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 05", server: "172.66.134.126", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 06", server: "104.18.42.254", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 07", server: "104.17.104.45", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇫🇮 芬兰 08", server: "104.16.180.35", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 09", server: "104.16.1.106", port: 80, uuid: "f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "delam.ahaysiahzangi.dpdns.org"}, path: "/?ed=2560"}, servername: "delam.ahaysiahzangi.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 10", server: "172.67.56.112", port: 80, uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "entezar.loseyourself.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "entezar.loseyourself.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 11", server: "172.66.210.188", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, servername: "a1.ghormehsabzi.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 12", server: "172.67.92.147", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 13", server: "172.66.133.134", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 14", server: "91.99.144.165", port: 2182, uuid: "b96981a2-a6aa-44c0-b21f-88328379ec33", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I"}, network: "grpc", grpc-opts: {grpc-service-name: "chessgame"}, servername: "chess.com"}
+- {type: "vless", name: "🇫🇮 芬兰 15", server: "172.67.127.113", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, servername: "sib.sibzamini.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 16", server: "104.24.60.135", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
+- {type: "vless", name: "🇫🇮 芬兰 17", server: "104.16.108.43", port: 80, uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "oops.shalamshorba.dpdns.org"}, path: "/?ed=2560"}, servername: "oops.shalamshorba.dpdns.org"}
 - {type: "vless", name: "🇩🇪 德国 01", server: "185.235.241.208", port: 443, uuid: "fce886cf-9623-4ba0-9599-edba06c7877c", tls: true, client-fingerprint: "firefox", skip-cert-verify: false, reality-opts: {public-key: "Ih0HZjPvGjLGORRBc7ivhazmBTlYILGMe9WHO17WNWc", short-id: "71a2"}, network: "grpc", grpc-opts: {grpc-service-name: "Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs_Telegram_configMs"}, servername: "maps.google.com"}
-- {type: "vless", name: "🇩🇪 德国 02", server: "104.16.180.35", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 03", server: "172.67.92.147", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 04", server: "104.16.103.250", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 05", server: "172.66.133.134", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 06", server: "104.16.136.210", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇩🇪 德国 07", server: "104.16.100.188", port: 80, uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "entezar.loseyourself.dpdns.org"}, path: "/?ed=2560"}, servername: "entezar.loseyourself.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 08", server: "172.67.36.32", port: 80, uuid: "bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "barayeiran.nastaranh.dpdns.org"}, path: "/?ed=2570"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇩🇪 德国 09", server: "172.66.134.126", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 10", server: "104.17.119.85", port: 80, uuid: "8c17092b-4d89-44e3-9dcb-a00c2bf28827", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "aymng.bahareh.dpdns.org"}, path: "/?ed=2560"}, servername: "aymng.bahareh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 11", server: "104.18.182.185", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 12", server: "172.67.9.145", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, servername: "kssepa.sabzipolobamahi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 13", server: "172.66.210.188", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, servername: "a1.ghormehsabzi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 14", server: "172.66.139.99", port: 80, uuid: "26bc13af-e442-4956-afd4-b8f85744d26f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "fggerlad.gerald81.dpdns.org"}, path: "/?ed=2560"}, servername: "fggerlad.gerald81.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 15", server: "104.16.110.49", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 16", server: "104.24.135.83", port: 80, uuid: "f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "delam.ahaysiahzangi.dpdns.org"}, path: "/?ed=2560"}, servername: "delam.ahaysiahzangi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 17", server: "172.67.177.223", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, servername: "lot.sosant.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 18", server: "172.66.138.99", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 19", server: "172.67.14.59", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, servername: "kssepa.sabzipolobamahi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 20", server: "172.67.53.233", port: 80, uuid: "4179c595-08ca-45cd-b555-91b6f1faeadc", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "di.dibdibini.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "di.dibdibini.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 21", server: "172.67.10.124", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2580"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇩🇪 德国 22", server: "172.67.212.226", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 23", server: "172.67.21.2", port: 80, uuid: "f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "delam.ahaysiahzangi.dpdns.org"}, path: "/?ed=2560"}, servername: "delam.ahaysiahzangi.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 24", server: "172.67.128.105", port: 80, uuid: "4179c595-08ca-45cd-b555-91b6f1faeadc", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "di.dibdibini.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇩🇪 德国 25", server: "172.67.203.123", port: 80, uuid: "4179c595-08ca-45cd-b555-91b6f1faeadc", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "di.dibdibini.dpdns.org"}, path: "/?ed=2560"}, servername: "di.dibdibini.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 26", server: "104.17.99.202", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, servername: "lot.sosant.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 27", server: "172.67.127.113", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, servername: "sib.sibzamini.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 28", server: "172.67.208.49", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, servername: "sib.sibzamini.dpdns.org"}
-- {type: "vless", name: "🇩🇪 德国 29", server: "172.67.67.92", port: 80, uuid: "f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "delam.ahaysiahzangi.dpdns.org"}, path: "/?ed=2560"}, servername: "delam.ahaysiahzangi.dpdns.org"}
-- {type: "vless", name: "🇦🇪 阿联酋 01", server: "104.17.213.213", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
-- {type: "vless", name: "🇦🇪 阿联酋 02", server: "172.67.6.114", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
-- {type: "vless", name: "🇦🇪 阿联酋 03", server: "172.67.62.141", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇦🇪 阿联酋 04", server: "172.67.54.233", port: 80, uuid: "26bc13af-e442-4956-afd4-b8f85744d26f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "fggerlad.gerald81.dpdns.org"}, path: "/?ed=2560"}, servername: "fggerlad.gerald81.dpdns.org"}
-- {type: "vless", name: "🇦🇪 阿联酋 05", server: "104.24.34.94", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2570"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇦🇪 阿联酋 06", server: "172.67.157.20", port: 80, uuid: "4179c595-08ca-45cd-b555-91b6f1faeadc", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "di.dibdibini.dpdns.org"}, path: "/?ed=2560"}, servername: "di.dibdibini.dpdns.org"}
-- {type: "vless", name: "🇦🇪 阿联酋 07", server: "172.67.164.239", port: 80, uuid: "bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "barayeiran.nastaranh.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "barayeiran.nastaranh.dpdns.org"}
-- {type: "vless", name: "🇦🇪 阿联酋 08", server: "104.24.60.135", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
-- {type: "vless", name: "🇳🇱 荷兰 01", server: "104.16.16.135", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
-- {type: "vless", name: "🇳🇱 荷兰 02", server: "172.67.17.195", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇳🇱 荷兰 03", server: "104.24.56.187", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇳🇱 荷兰 04", server: "172.66.135.5", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
-- {type: "vless", name: "🇳🇱 荷兰 05", server: "104.24.247.217", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
-- {type: "vless", name: "🇳🇱 荷兰 06", server: "104.18.30.65", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, servername: "lot.sosant.dpdns.org"}
-- {type: "vless", name: "🇳🇱 荷兰 07", server: "172.67.73.163", port: 80, uuid: "2a11c595-935d-4e1b-81d4-ab8dd1e10bff", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "DECENt-ReFerEnCE.ZUlAir.oRG."}, path: "/?ed=2048"}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇳🇱 荷兰 08", server: "104.27.126.10", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, servername: "kssepa.sabzipolobamahi.dpdns.org"}
-- {name: "🇻🇳 越南 01", server: "103.186.154.38", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", client-fingerprint: "chrome"}
-- {name: "🇻🇳 越南 02", server: "103.186.154.19", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", client-fingerprint: "chrome"}
-- {name: "🇻🇳 越南 03", server: "103.163.218.2", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", client-fingerprint: "chrome"}
-- {type: "ss", server: "103.186.154.21", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 04", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇩🇪 德国 02", server: "104.17.220.188", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 03", server: "104.17.209.145", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 04", server: "104.16.6.169", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 05", server: "104.24.31.150", port: 80, uuid: "9d6315f7-f272-4806-97c8-5fdaafad391e", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "lot.sosant.dpdns.org"}, path: "/?ed=2560"}, servername: "lot.sosant.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 06", server: "172.66.141.21", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, servername: "a1.ghormehsabzi.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 07", server: "104.18.182.185", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 08", server: "172.67.33.67", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 09", server: "172.67.12.164", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2560"}, servername: "a1.ghormehsabzi.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 10", server: "104.16.109.107", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 11", server: "172.66.150.129", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, servername: "sib.sibzamini.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 12", server: "172.67.78.196", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, servername: "tannaz.juveitaly.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 13", server: "172.66.135.5", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 14", server: "104.18.209.108", port: 80, uuid: "d1237c01-58b5-48f9-8a27-8a396b7f5422", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ey.nazanin.dpdns.org"}, path: "/?ed=2560"}, servername: "ey.nazanin.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 15", server: "172.66.138.99", port: 80, uuid: "68b48eeb-5770-4eb3-9b77-deeb77a41ccf", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "varzesh3.varzesh.dpdns.org"}, path: "/?ed=2560"}, servername: "varzesh3.varzesh.dpdns.org"}
+- {type: "vless", name: "🇩🇪 德国 16", server: "172.67.197.185", port: 80, uuid: "db9d419e-3094-4942-9313-d39afd3dd163", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "spx.lindak.dpdns.org"}, path: "/?ed=2560"}, servername: "spx.lindak.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 01", server: "104.16.104.151", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 02", server: "104.16.181.110", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 03", server: "104.16.100.188", port: 80, uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "entezar.loseyourself.dpdns.org"}, path: "/?ed=2560"}, servername: "entezar.loseyourself.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 04", server: "104.16.241.234", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 05", server: "104.16.101.143", port: 80, uuid: "db9d419e-3094-4942-9313-d39afd3dd163", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "spx.lindak.dpdns.org"}, path: "/?ed=2560"}, servername: "spx.lindak.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 06", server: "104.16.65.193", port: 80, uuid: "c09d51b8-25c5-4eaf-98bc-ef40c807de84", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dawn-mountain-d79f-ppal03.doniji1519.workers.dev"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 07", server: "172.67.17.195", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 08", server: "172.66.177.129", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, servername: "tannaz.juveitaly.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 09", server: "172.67.9.145", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, servername: "kssepa.sabzipolobamahi.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 10", server: "172.67.11.138", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 11", server: "104.16.136.210", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 12", server: "104.24.247.217", port: 80, uuid: "92f481b6-ad92-43e4-a683-2bb0aeaa9846", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "dw.alibichareh.dpdns.org"}, path: "/?ed=2560"}, servername: "dw.alibichareh.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 13", server: "172.67.6.114", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 14", server: "172.67.62.141", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 15", type: "ss", server: "freet.cloudrithm.com", port: 41211, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 16", server: "104.22.22.78", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 17", server: "172.67.10.124", port: 80, uuid: "e6236ebc-7334-4bed-977f-0c20bcdfcc00", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "a1.ghormehsabzi.dpdns.org"}, path: "/?ed=2580"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 18", server: "104.16.108.27", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 19", server: "104.25.86.75", port: 80, uuid: "d1237c01-58b5-48f9-8a27-8a396b7f5422", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ey.nazanin.dpdns.org"}, path: "/?ed=2560"}, servername: "ey.nazanin.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 20", server: "104.16.16.135", port: 80, uuid: "b28eb861-1748-4200-ba72-278669edc33b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "coco.mahmoodchitooz.dpdns.org"}, path: "/?ed=2560"}, servername: "coco.mahmoodchitooz.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 21", server: "104.16.150.12", port: 80, uuid: "dfdf1c0a-5e52-4746-88bd-19d4e4ac7853", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tannaz.juveitaly.dpdns.org"}, path: "/?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 22", server: "104.27.126.10", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, servername: "kssepa.sabzipolobamahi.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 23", server: "172.67.67.92", port: 80, uuid: "f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "delam.ahaysiahzangi.dpdns.org"}, path: "/?ed=2560"}, servername: "delam.ahaysiahzangi.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 24", server: "172.66.132.44", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 25", server: "172.67.218.184", port: 80, uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "abcd.taraneh.dpdns.org"}, path: "/?ed=2560"}, servername: "abcd.taraneh.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 26", server: "104.21.114.48", port: 80, uuid: "1f431db3-1918-4e7b-a855-c93485e11694", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "pari.parinazz.dpdns.org"}, path: "/?ed=2560"}, servername: "pari.parinazz.dpdns.org"}
+- {type: "vless", name: "🇺🇸 美国 27", server: "104.16.110.49", port: 80, uuid: "941d092e-8313-452a-ba21-c9995dcba79d", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "havvas.shohreh.dpdns.org"}, path: "/?ed=2560"}, servername: "havvas.shohreh.dpdns.org"}
+- {name: "🇺🇸 美国 28", type: "ss", server: "freet.cloudrithm.com", port: 41215, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 29", type: "vless", network: "ws", server: "104.16.182.65", port: 80, uuid: "f86586c2-3a4c-49c9-83ec-5ae43786d4f7", skip-cert-verify: false, tls: false, client-fingerprint: "chrome", ws-opts: {headers: {Host: "dark-bonus-0f2f-ppal03.yapeyef825.workers.dev"}, path: "/Telegram"}}
+- {type: "vless", name: "🇺🇸 美国 30", server: "104.16.53.48", port: 80, uuid: "c1659206-d827-41f6-9f73-f18ca30102d3", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "still-forest-e3e8-ppal03.mekah93880.workers.dev"}, path: "/"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇳🇱 荷兰 01", server: "172.67.101.86", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇳🇱 荷兰 02", server: "162.159.14.42", port: 80, uuid: "db9d419e-3094-4942-9313-d39afd3dd163", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "spx.lindak.dpdns.org"}, path: "/?ed=2560"}, servername: "spx.lindak.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 03", server: "104.16.137.145", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 04", server: "172.67.60.197", port: 80, uuid: "cba0b35b-8943-4c70-a864-9f78145b7897", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "agolna.mahsaamini.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "agolna.mahsaamini.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 05", server: "172.67.14.59", port: 80, uuid: "b55ec078-3b17-4ed1-a697-71f464cdcaaa", tls: false, client-fingerprint: "random", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "kssepa.sabzipolobamahi.dpdns.org"}, path: "/?ed=2560"}, servername: "kssepa.sabzipolobamahi.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 06", server: "172.67.53.233", port: 80, uuid: "4179c595-08ca-45cd-b555-91b6f1faeadc", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "di.dibdibini.dpdns.org"}, path: "/BaRAyeIran?ed=2560"}, servername: "di.dibdibini.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 07", server: "104.21.103.107", port: 80, uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "oops.shalamshorba.dpdns.org"}, path: "/?ed=2560"}, servername: "oops.shalamshorba.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 08", server: "172.67.212.226", port: 80, uuid: "b8be6118-0dd7-4402-ae1a-69b2816f3a7f", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "br.presskiwi.dpdns.org"}, path: "/?ed=2560"}, servername: "br.presskiwi.dpdns.org"}
+- {type: "vless", name: "🇳🇱 荷兰 09", server: "172.67.73.163", port: 80, uuid: "2a11c595-935d-4e1b-81d4-ab8dd1e10bff", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "DECENt-ReFerEnCE.ZUlAir.oRG."}, path: "/?ed=2048"}, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇫🇷 法国 01", server: "51.159.111.32", port: 31180, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇮🇳 印度 01", type: "ss", server: "freet.cloudrithm.com", port: 41371, cipher: "chacha20-ietf-poly1305", password: "2054b92c-d2a2-4d90-8ee3-bbe81a9c2614", udp: true, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇪 阿联酋 01", server: "172.67.208.49", port: 80, uuid: "6f690965-3be3-43bb-9331-3ead6efb20aa", tls: false, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sib.sibzamini.dpdns.org"}, path: "/?ed=2560"}, servername: "sib.sibzamini.dpdns.org"}
+- {name: "🇷🇺 俄罗斯 01", type: "hysteria2", server: "46.17.41.217", port: 30033, password: "dongtaiwang.com", fast-open: true, sni: "www.bing.com", skip-cert-verify: true, client-fingerprint: "chrome"}
+- {type: "ss", server: "103.186.154.21", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 01", client-fingerprint: "chrome"}
+- {name: "🇻🇳 越南 02", server: "103.186.154.38", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", client-fingerprint: "chrome"}
+- {name: "🇻🇳 越南 03", server: "103.186.154.19", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", client-fingerprint: "chrome"}
+- {name: "🇨🇦 加拿大 01", type: "vless", server: "cris.ns.cloudflare.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {name: "🇨🇦 加拿大 02", type: "vless", server: "braden.ns.cloudflare.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 03", server: "sullivan.ns.cloudflare.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 04", server: "iplocation.io", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {name: "🇨🇦 加拿大 05", type: "vless", server: "time.is", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "re.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "re.ylks0033.dpdns.org"}
+- {name: "🇨🇦 加拿大 06", type: "vless", server: "toy-people.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
+- {type: "vless", name: "🇨🇦 加拿大 07", server: "162.159.153.217", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "rd.ylks0033.dpdns.org"}}, client-fingerprint: "chrome", servername: "rd.ylks0033.dpdns.org"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -213,21 +179,57 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇯🇵 日本 01"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
+  - "🇫🇮 芬兰 03"
+  - "🇫🇮 芬兰 04"
+  - "🇫🇮 芬兰 05"
+  - "🇫🇮 芬兰 06"
+  - "🇫🇮 芬兰 07"
+  - "🇫🇮 芬兰 08"
+  - "🇫🇮 芬兰 09"
+  - "🇫🇮 芬兰 10"
+  - "🇫🇮 芬兰 11"
+  - "🇫🇮 芬兰 12"
+  - "🇫🇮 芬兰 13"
+  - "🇫🇮 芬兰 14"
+  - "🇫🇮 芬兰 15"
+  - "🇫🇮 芬兰 16"
+  - "🇫🇮 芬兰 17"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇩🇪 德国 15"
+  - "🇩🇪 德国 16"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -258,87 +260,6 @@ proxy-groups:
   - "🇺🇸 美国 28"
   - "🇺🇸 美国 29"
   - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇫🇮 芬兰 01"
-  - "🇫🇮 芬兰 02"
-  - "🇫🇮 芬兰 03"
-  - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇫🇮 芬兰 06"
-  - "🇫🇮 芬兰 07"
-  - "🇫🇮 芬兰 08"
-  - "🇫🇮 芬兰 09"
-  - "🇫🇮 芬兰 10"
-  - "🇫🇮 芬兰 11"
-  - "🇫🇮 芬兰 12"
-  - "🇫🇮 芬兰 13"
-  - "🇫🇮 芬兰 14"
-  - "🇫🇮 芬兰 15"
-  - "🇫🇮 芬兰 16"
-  - "🇫🇮 芬兰 17"
-  - "🇫🇮 芬兰 18"
-  - "🇫🇮 芬兰 19"
-  - "🇫🇮 芬兰 20"
-  - "🇫🇮 芬兰 21"
-  - "🇫🇮 芬兰 22"
-  - "🇫🇮 芬兰 23"
-  - "🇫🇮 芬兰 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇩🇪 德国 11"
-  - "🇩🇪 德国 12"
-  - "🇩🇪 德国 13"
-  - "🇩🇪 德国 14"
-  - "🇩🇪 德国 15"
-  - "🇩🇪 德国 16"
-  - "🇩🇪 德国 17"
-  - "🇩🇪 德国 18"
-  - "🇩🇪 德国 19"
-  - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
-  - "🇩🇪 德国 29"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇦🇪 阿联酋 06"
-  - "🇦🇪 阿联酋 07"
-  - "🇦🇪 阿联酋 08"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -347,10 +268,21 @@ proxy-groups:
   - "🇳🇱 荷兰 06"
   - "🇳🇱 荷兰 07"
   - "🇳🇱 荷兰 08"
+  - "🇳🇱 荷兰 09"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -360,21 +292,57 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇯🇵 日本 01"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
+  - "🇫🇮 芬兰 03"
+  - "🇫🇮 芬兰 04"
+  - "🇫🇮 芬兰 05"
+  - "🇫🇮 芬兰 06"
+  - "🇫🇮 芬兰 07"
+  - "🇫🇮 芬兰 08"
+  - "🇫🇮 芬兰 09"
+  - "🇫🇮 芬兰 10"
+  - "🇫🇮 芬兰 11"
+  - "🇫🇮 芬兰 12"
+  - "🇫🇮 芬兰 13"
+  - "🇫🇮 芬兰 14"
+  - "🇫🇮 芬兰 15"
+  - "🇫🇮 芬兰 16"
+  - "🇫🇮 芬兰 17"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇩🇪 德国 15"
+  - "🇩🇪 德国 16"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -405,87 +373,6 @@ proxy-groups:
   - "🇺🇸 美国 28"
   - "🇺🇸 美国 29"
   - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇫🇮 芬兰 01"
-  - "🇫🇮 芬兰 02"
-  - "🇫🇮 芬兰 03"
-  - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇫🇮 芬兰 06"
-  - "🇫🇮 芬兰 07"
-  - "🇫🇮 芬兰 08"
-  - "🇫🇮 芬兰 09"
-  - "🇫🇮 芬兰 10"
-  - "🇫🇮 芬兰 11"
-  - "🇫🇮 芬兰 12"
-  - "🇫🇮 芬兰 13"
-  - "🇫🇮 芬兰 14"
-  - "🇫🇮 芬兰 15"
-  - "🇫🇮 芬兰 16"
-  - "🇫🇮 芬兰 17"
-  - "🇫🇮 芬兰 18"
-  - "🇫🇮 芬兰 19"
-  - "🇫🇮 芬兰 20"
-  - "🇫🇮 芬兰 21"
-  - "🇫🇮 芬兰 22"
-  - "🇫🇮 芬兰 23"
-  - "🇫🇮 芬兰 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇩🇪 德国 11"
-  - "🇩🇪 德国 12"
-  - "🇩🇪 德国 13"
-  - "🇩🇪 德国 14"
-  - "🇩🇪 德国 15"
-  - "🇩🇪 德国 16"
-  - "🇩🇪 德国 17"
-  - "🇩🇪 德国 18"
-  - "🇩🇪 德国 19"
-  - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
-  - "🇩🇪 德国 29"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇦🇪 阿联酋 06"
-  - "🇦🇪 阿联酋 07"
-  - "🇦🇪 阿联酋 08"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -494,10 +381,21 @@ proxy-groups:
   - "🇳🇱 荷兰 06"
   - "🇳🇱 荷兰 07"
   - "🇳🇱 荷兰 08"
+  - "🇳🇱 荷兰 09"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
 - name: "AI"
   type: "select"
   proxies:
@@ -505,21 +403,57 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇯🇵 日本 01"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
+  - "🇫🇮 芬兰 03"
+  - "🇫🇮 芬兰 04"
+  - "🇫🇮 芬兰 05"
+  - "🇫🇮 芬兰 06"
+  - "🇫🇮 芬兰 07"
+  - "🇫🇮 芬兰 08"
+  - "🇫🇮 芬兰 09"
+  - "🇫🇮 芬兰 10"
+  - "🇫🇮 芬兰 11"
+  - "🇫🇮 芬兰 12"
+  - "🇫🇮 芬兰 13"
+  - "🇫🇮 芬兰 14"
+  - "🇫🇮 芬兰 15"
+  - "🇫🇮 芬兰 16"
+  - "🇫🇮 芬兰 17"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇩🇪 德国 15"
+  - "🇩🇪 德国 16"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -550,87 +484,6 @@ proxy-groups:
   - "🇺🇸 美国 28"
   - "🇺🇸 美国 29"
   - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇫🇮 芬兰 01"
-  - "🇫🇮 芬兰 02"
-  - "🇫🇮 芬兰 03"
-  - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇫🇮 芬兰 06"
-  - "🇫🇮 芬兰 07"
-  - "🇫🇮 芬兰 08"
-  - "🇫🇮 芬兰 09"
-  - "🇫🇮 芬兰 10"
-  - "🇫🇮 芬兰 11"
-  - "🇫🇮 芬兰 12"
-  - "🇫🇮 芬兰 13"
-  - "🇫🇮 芬兰 14"
-  - "🇫🇮 芬兰 15"
-  - "🇫🇮 芬兰 16"
-  - "🇫🇮 芬兰 17"
-  - "🇫🇮 芬兰 18"
-  - "🇫🇮 芬兰 19"
-  - "🇫🇮 芬兰 20"
-  - "🇫🇮 芬兰 21"
-  - "🇫🇮 芬兰 22"
-  - "🇫🇮 芬兰 23"
-  - "🇫🇮 芬兰 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇩🇪 德国 11"
-  - "🇩🇪 德国 12"
-  - "🇩🇪 德国 13"
-  - "🇩🇪 德国 14"
-  - "🇩🇪 德国 15"
-  - "🇩🇪 德国 16"
-  - "🇩🇪 德国 17"
-  - "🇩🇪 德国 18"
-  - "🇩🇪 德国 19"
-  - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
-  - "🇩🇪 德国 29"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇦🇪 阿联酋 06"
-  - "🇦🇪 阿联酋 07"
-  - "🇦🇪 阿联酋 08"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -639,10 +492,21 @@ proxy-groups:
   - "🇳🇱 荷兰 06"
   - "🇳🇱 荷兰 07"
   - "🇳🇱 荷兰 08"
+  - "🇳🇱 荷兰 09"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -651,21 +515,57 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇯🇵 日本 01"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
+  - "🇫🇮 芬兰 03"
+  - "🇫🇮 芬兰 04"
+  - "🇫🇮 芬兰 05"
+  - "🇫🇮 芬兰 06"
+  - "🇫🇮 芬兰 07"
+  - "🇫🇮 芬兰 08"
+  - "🇫🇮 芬兰 09"
+  - "🇫🇮 芬兰 10"
+  - "🇫🇮 芬兰 11"
+  - "🇫🇮 芬兰 12"
+  - "🇫🇮 芬兰 13"
+  - "🇫🇮 芬兰 14"
+  - "🇫🇮 芬兰 15"
+  - "🇫🇮 芬兰 16"
+  - "🇫🇮 芬兰 17"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇩🇪 德国 15"
+  - "🇩🇪 德国 16"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -696,87 +596,6 @@ proxy-groups:
   - "🇺🇸 美国 28"
   - "🇺🇸 美国 29"
   - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇫🇮 芬兰 01"
-  - "🇫🇮 芬兰 02"
-  - "🇫🇮 芬兰 03"
-  - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇫🇮 芬兰 06"
-  - "🇫🇮 芬兰 07"
-  - "🇫🇮 芬兰 08"
-  - "🇫🇮 芬兰 09"
-  - "🇫🇮 芬兰 10"
-  - "🇫🇮 芬兰 11"
-  - "🇫🇮 芬兰 12"
-  - "🇫🇮 芬兰 13"
-  - "🇫🇮 芬兰 14"
-  - "🇫🇮 芬兰 15"
-  - "🇫🇮 芬兰 16"
-  - "🇫🇮 芬兰 17"
-  - "🇫🇮 芬兰 18"
-  - "🇫🇮 芬兰 19"
-  - "🇫🇮 芬兰 20"
-  - "🇫🇮 芬兰 21"
-  - "🇫🇮 芬兰 22"
-  - "🇫🇮 芬兰 23"
-  - "🇫🇮 芬兰 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇩🇪 德国 11"
-  - "🇩🇪 德国 12"
-  - "🇩🇪 德国 13"
-  - "🇩🇪 德国 14"
-  - "🇩🇪 德国 15"
-  - "🇩🇪 德国 16"
-  - "🇩🇪 德国 17"
-  - "🇩🇪 德国 18"
-  - "🇩🇪 德国 19"
-  - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
-  - "🇩🇪 德国 29"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇦🇪 阿联酋 06"
-  - "🇦🇪 阿联酋 07"
-  - "🇦🇪 阿联酋 08"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -785,10 +604,21 @@ proxy-groups:
   - "🇳🇱 荷兰 06"
   - "🇳🇱 荷兰 07"
   - "🇳🇱 荷兰 08"
+  - "🇳🇱 荷兰 09"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -797,21 +627,57 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇯🇵 日本 01"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
+  - "🇫🇮 芬兰 03"
+  - "🇫🇮 芬兰 04"
+  - "🇫🇮 芬兰 05"
+  - "🇫🇮 芬兰 06"
+  - "🇫🇮 芬兰 07"
+  - "🇫🇮 芬兰 08"
+  - "🇫🇮 芬兰 09"
+  - "🇫🇮 芬兰 10"
+  - "🇫🇮 芬兰 11"
+  - "🇫🇮 芬兰 12"
+  - "🇫🇮 芬兰 13"
+  - "🇫🇮 芬兰 14"
+  - "🇫🇮 芬兰 15"
+  - "🇫🇮 芬兰 16"
+  - "🇫🇮 芬兰 17"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇩🇪 德国 15"
+  - "🇩🇪 德国 16"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -842,87 +708,6 @@ proxy-groups:
   - "🇺🇸 美国 28"
   - "🇺🇸 美国 29"
   - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇫🇮 芬兰 01"
-  - "🇫🇮 芬兰 02"
-  - "🇫🇮 芬兰 03"
-  - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇫🇮 芬兰 06"
-  - "🇫🇮 芬兰 07"
-  - "🇫🇮 芬兰 08"
-  - "🇫🇮 芬兰 09"
-  - "🇫🇮 芬兰 10"
-  - "🇫🇮 芬兰 11"
-  - "🇫🇮 芬兰 12"
-  - "🇫🇮 芬兰 13"
-  - "🇫🇮 芬兰 14"
-  - "🇫🇮 芬兰 15"
-  - "🇫🇮 芬兰 16"
-  - "🇫🇮 芬兰 17"
-  - "🇫🇮 芬兰 18"
-  - "🇫🇮 芬兰 19"
-  - "🇫🇮 芬兰 20"
-  - "🇫🇮 芬兰 21"
-  - "🇫🇮 芬兰 22"
-  - "🇫🇮 芬兰 23"
-  - "🇫🇮 芬兰 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇩🇪 德国 11"
-  - "🇩🇪 德国 12"
-  - "🇩🇪 德国 13"
-  - "🇩🇪 德国 14"
-  - "🇩🇪 德国 15"
-  - "🇩🇪 德国 16"
-  - "🇩🇪 德国 17"
-  - "🇩🇪 德国 18"
-  - "🇩🇪 德国 19"
-  - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
-  - "🇩🇪 德国 29"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇦🇪 阿联酋 06"
-  - "🇦🇪 阿联酋 07"
-  - "🇦🇪 阿联酋 08"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -931,10 +716,21 @@ proxy-groups:
   - "🇳🇱 荷兰 06"
   - "🇳🇱 荷兰 07"
   - "🇳🇱 荷兰 08"
+  - "🇳🇱 荷兰 09"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -943,21 +739,57 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇯🇵 日本 01"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
+  - "🇫🇮 芬兰 03"
+  - "🇫🇮 芬兰 04"
+  - "🇫🇮 芬兰 05"
+  - "🇫🇮 芬兰 06"
+  - "🇫🇮 芬兰 07"
+  - "🇫🇮 芬兰 08"
+  - "🇫🇮 芬兰 09"
+  - "🇫🇮 芬兰 10"
+  - "🇫🇮 芬兰 11"
+  - "🇫🇮 芬兰 12"
+  - "🇫🇮 芬兰 13"
+  - "🇫🇮 芬兰 14"
+  - "🇫🇮 芬兰 15"
+  - "🇫🇮 芬兰 16"
+  - "🇫🇮 芬兰 17"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇩🇪 德国 11"
+  - "🇩🇪 德国 12"
+  - "🇩🇪 德国 13"
+  - "🇩🇪 德国 14"
+  - "🇩🇪 德国 15"
+  - "🇩🇪 德国 16"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -988,87 +820,6 @@ proxy-groups:
   - "🇺🇸 美国 28"
   - "🇺🇸 美国 29"
   - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇫🇮 芬兰 01"
-  - "🇫🇮 芬兰 02"
-  - "🇫🇮 芬兰 03"
-  - "🇫🇮 芬兰 04"
-  - "🇫🇮 芬兰 05"
-  - "🇫🇮 芬兰 06"
-  - "🇫🇮 芬兰 07"
-  - "🇫🇮 芬兰 08"
-  - "🇫🇮 芬兰 09"
-  - "🇫🇮 芬兰 10"
-  - "🇫🇮 芬兰 11"
-  - "🇫🇮 芬兰 12"
-  - "🇫🇮 芬兰 13"
-  - "🇫🇮 芬兰 14"
-  - "🇫🇮 芬兰 15"
-  - "🇫🇮 芬兰 16"
-  - "🇫🇮 芬兰 17"
-  - "🇫🇮 芬兰 18"
-  - "🇫🇮 芬兰 19"
-  - "🇫🇮 芬兰 20"
-  - "🇫🇮 芬兰 21"
-  - "🇫🇮 芬兰 22"
-  - "🇫🇮 芬兰 23"
-  - "🇫🇮 芬兰 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇩🇪 德国 11"
-  - "🇩🇪 德国 12"
-  - "🇩🇪 德国 13"
-  - "🇩🇪 德国 14"
-  - "🇩🇪 德国 15"
-  - "🇩🇪 德国 16"
-  - "🇩🇪 德国 17"
-  - "🇩🇪 德国 18"
-  - "🇩🇪 德国 19"
-  - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
-  - "🇩🇪 德国 29"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇦🇪 阿联酋 06"
-  - "🇦🇪 阿联酋 07"
-  - "🇦🇪 阿联酋 08"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1077,10 +828,21 @@ proxy-groups:
   - "🇳🇱 荷兰 06"
   - "🇳🇱 荷兰 07"
   - "🇳🇱 荷兰 08"
+  - "🇳🇱 荷兰 09"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇷🇺 俄罗斯 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
