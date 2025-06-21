@@ -89,6 +89,7 @@
         "auto",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
         "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
@@ -102,6 +103,7 @@
       "outbounds": [
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
         "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
@@ -115,6 +117,7 @@
         "select",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
         "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
@@ -129,6 +132,7 @@
         "direct",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
         "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
@@ -143,6 +147,7 @@
         "direct",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
         "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
@@ -157,6 +162,7 @@
         "select",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
         "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
@@ -174,6 +180,28 @@
     {
       "tag": "🇭🇰 香港 02",
       "type": "vless",
+      "server": "46.3.32.65",
+      "server_port": 65300,
+      "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "gamedownloads-rockstargames-com.akamaized.net",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "8pADMaHlmWnajzNQMpekmxc8fnWKEDH_-zm2nDio7lM",
+          "short_id": "f1fc6e76"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "vless",
       "server": "46.3.104.215",
       "server_port": 65300,
       "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
@@ -188,7 +216,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -218,7 +246,7 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "vless",
-      "server": "172.99.138.5",
+      "server": "172.99.138.107",
       "server_port": 65300,
       "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
       "tls": {
@@ -232,7 +260,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -254,7 +282,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -305,7 +333,10 @@
       },
       {
         "domain_keyword": [
-          "hoyoverse.com"
+          "hoyoverse.com",
+          "autopatchhk.yuanshen.com",
+          "autopatchos.starrails.com",
+          "autopatchos.zenlesszonezero.com"
         ],
         "outbound": "select"
       },
