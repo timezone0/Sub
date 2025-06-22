@@ -85,6 +85,9 @@ proxies:
 - {name: "🇰🇷 韩国 02", password: "85f133142f04dbf6547da33895cfabb3", port: 39001, server: "203.156.253.12", skip-cert-verify: true, sni: "www.yrtok.com", type: "trojan", client-fingerprint: "chrome"}
 - {cipher: "aes-256-gcm", name: "🇰🇷 韩国 03", password: "dwz1GtF7", port: 20406, server: "112.54.161.141", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", grpc-opts: {grpc-service-name: "vmess-grpc"}, name: "🇩🇪 德国 01", network: "grpc", port: 443, server: "de.vmess.comnpmjs.com", skip-cert-verify: false, tls: true, type: "vmess", uuid: "ceaaf653-9874-58c6-b100-092c01a1f73d", client-fingerprint: "chrome", servername: "de.vmess.comnpmjs.com"}
+- {name: "🇩🇪 德国 02", password: "telegram-id-privatevpns", port: 22222, server: "18.197.223.180", skip-cert-verify: false, sni: "trojan.burgerip.co.uk", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 03", password: "telegram-id-directvpn", port: 22223, server: "18.197.223.180", skip-cert-verify: false, sni: "trojan.burgerip.co.uk", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 04", password: "4732adfa16c6450bbef87264e41332db", port: 443, server: "165.22.74.230", skip-cert-verify: true, sni: "nextstepcareer.online", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 01", network: "ws", port: 8080, server: "bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net", skip-cert-verify: false, tls: false, type: "vmess", uuid: "62b7824e-47dc-11ef-9f2d-f23c9164ca5d", ws-opts: {headers: {Host: "broadcastlv.chat.bilibili.com"}, path: "/"}, client-fingerprint: "chrome"}
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 02", network: "ws", port: 30809, server: "v9.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {cipher: "chacha20-ietf-poly1305", name: "🇭🇰 香港 03", password: "08293b204707", plugin: "v2ray-plugin", plugin-opts: {host: "hk6v1.pmxiaonan.xyz", mode: "websocket", mux: true, path: "/sclbvcgkp", skip-cert-verify: false, tls: true}, port: 58697, server: "156.251.179.238", tfo: false, type: "ss", client-fingerprint: "chrome"}
@@ -122,6 +125,9 @@ proxy-groups:
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -160,6 +166,9 @@ proxy-groups:
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -196,6 +205,9 @@ proxy-groups:
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -233,6 +245,9 @@ proxy-groups:
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -270,6 +285,9 @@ proxy-groups:
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -307,6 +325,9 @@ proxy-groups:
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -320,6 +341,9 @@ proxy-groups:
   - "🇨🇳 台湾 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
+- "DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT"
+- "DOMAIN-SUFFIX,szbdyd.com,REJECT"
 - "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
 - "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
 - "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
