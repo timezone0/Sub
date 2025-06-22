@@ -1,0 +1,449 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇭🇰 香港 01", server: "hk1.jueduibupao.top", port: 50001, sni: "hk1.jueduibupao.top", up: 100, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇭🇰 香港 02", server: "hk2.jueduibupao.top", port: 41741, sni: "hk2.jueduibupao.top", up: 100, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇭🇰 香港 03", type: "ss", server: "hzhz1.sssyun.xyz", port: 29527, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇭🇰 香港 04", type: "ss", server: "hzhz2.sssyun.xyz", port: 40010, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇭🇰 香港 05", type: "ss", server: "hzhz1.sssyun.xyz", port: 19527, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇭🇰 香港 06", type: "ss", server: "hzhz2.sssyun.xyz", port: 40023, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇭🇰 香港 07", type: "ss", server: "hzhz1.sssyun.xyz", port: 39301, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇭🇰 香港 08", type: "ss", server: "hzhz2.sssyun.xyz", port: 40011, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇸🇬 新加坡 01", server: "linsg2.jueduibupao.top", port: 48356, sni: "linsg2.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇸🇬 新加坡 02", server: "linsg3.jueduibupao.top", port: 30054, sni: "linsg3.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇸🇬 新加坡 03", type: "ss", server: "hzhz1.sssyun.xyz", port: 39204, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇸🇬 新加坡 04", type: "ss", server: "hzhz2.sssyun.xyz", port: 40013, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇸🇬 新加坡 05", type: "ss", server: "hzhz1.sssyun.xyz", port: 39505, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇸🇬 新加坡 06", type: "ss", server: "hzhz2.sssyun.xyz", port: 44014, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇨🇳 台湾 01", server: "tw2.jueduibupao.top", port: 30078, sni: "tw2.jueduibupao.top", up: 200, down: 200, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇨🇳 台湾 02", type: "ss", server: "hzhz1.sssyun.xyz", port: 32207, cipher: "2022-blake3-aes-128-gcm", password: "NjVhMWE2YmVmNzg4MTcwMA==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇨🇳 台湾 03", type: "ss", server: "hzhz2.sssyun.xyz", port: 40017, cipher: "2022-blake3-aes-128-gcm", password: "NjVhMWE2YmVmNzg4MTcwMA==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇯🇵 日本 01", server: "linjp1.jueduibupao.top", port: 49316, sni: "linjp1.jueduibupao.top", up: 100, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇯🇵 日本 02", server: "linjp2.jueduibupao.top", port: 43012, sni: "linjp2.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇯🇵 日本 03", type: "ss", server: "hzhz1.sssyun.xyz", port: 19529, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇯🇵 日本 04", type: "ss", server: "hzhz2.sssyun.xyz", port: 40019, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇯🇵 日本 05", type: "ss", server: "hzhz1.sssyun.xyz", port: 49207, cipher: "2022-blake3-aes-256-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNjE5OWQyNDYxZjM1MjA0OTg=:ZmEyYjNjN2QtMmI2OC00Mzg2LWE3ZTQtMmIwZjI2OGI=", udp: true}
+- {name: "🇯🇵 日本 06", type: "ss", server: "hzhz2.sssyun.xyz", port: 40020, cipher: "2022-blake3-aes-256-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNjE5OWQyNDYxZjM1MjA0OTg=:ZmEyYjNjN2QtMmI2OC00Mzg2LWE3ZTQtMmIwZjI2OGI=", udp: true}
+- {name: "🇰🇷 韩国 01", server: "6bkr1.6bnw.top", port: 10100, sni: "6bkr1.6bnw.top", up: 100, down: 100, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇰🇷 韩国 02", type: "ss", server: "hzhz1.sssyun.xyz", port: 39206, cipher: "2022-blake3-aes-128-gcm", password: "NjVhMWE2YmVmNzg4MTcwMA==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇰🇷 韩国 03", type: "ss", server: "hzhz2.sssyun.xyz", port: 20116, cipher: "2022-blake3-aes-128-gcm", password: "NjVhMWE2YmVmNzg4MTcwMA==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇹🇭 泰国 01", server: "th1.jueduibupao.top", port: 30000, sni: "th1.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇮🇩 印尼 01", server: "in1.jueduibupao.top", port: 30000, sni: "in1.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇺🇸 美国 01", server: "lvs.jueduibupao.top", port: 50001, sni: "lvs.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇺🇸 美国 02", server: "ny.jueduibupao.top", port: 50001, sni: "ny.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316"}
+- {name: "🇺🇸 美国 03", type: "ss", server: "hzhz1.sssyun.xyz", port: 12980, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇺🇸 美国 04", type: "ss", server: "hzhz2.sssyun.xyz", port: 12981, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇺🇸 美国 05", type: "ss", server: "hzhz1.sssyun.xyz", port: 12983, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇺🇸 美国 06", type: "ss", server: "hzhz2.sssyun.xyz", port: 12984, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇺🇸 美国 07", type: "vmess", server: "mugen11.6bnw.top", port: 8080, uuid: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "buyvmus2.6bnw.top"}}}
+- {name: "🇺🇸 美国 08", type: "vmess", server: "mugen22.6bnw.top", port: 8080, uuid: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "buyvmus2.6bnw.top"}}}
+- {name: "🇺🇸 美国 09", type: "vmess", server: "mugen33.6bnw.top", port: 8080, uuid: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "buyvmus2.6bnw.top"}}}
+- {name: "🇺🇸 美国 10", type: "vmess", server: "mugen44.6bnw.top", port: 8080, uuid: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "buyvmus2.6bnw.top"}}}
+- {name: "🇨🇦 加拿大 01", server: "ca1.jueduibupao.top", port: 41293, sni: "ca1.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇨🇦 加拿大 02", type: "ss", server: "hzhz1.sssyun.xyz", port: 39209, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇨🇦 加拿大 03", type: "ss", server: "hzhz2.sssyun.xyz", port: 40021, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇩🇪 德国 01", server: "de1.jueduibupao.top", port: 46651, sni: "de1.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇩🇪 德国 02", type: "ss", server: "hzhz1.sssyun.xyz", port: 39987, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇩🇪 德国 03", type: "ss", server: "hzhz2.sssyun.xyz", port: 39981, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇬🇧 英国 01", server: "uk1.jueduibupao.top", port: 48440, sni: "uk1.jueduibupao.top", up: 300, down: 300, skip-cert-verify: true, type: "hysteria2", password: "fa2b3c7d-2b68-4386-a7e4-2b0f268b6316", ports: "40000-50000"}
+- {name: "🇬🇧 英国 02", type: "ss", server: "hzhz1.sssyun.xyz", port: 32988, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+- {name: "🇬🇧 英国 03", type: "ss", server: "hzhz2.sssyun.xyz", port: 32989, cipher: "2022-blake3-aes-128-gcm", password: "MDhhMTdjZDI0MjI2ZWRlNg==:ZmEyYjNjN2QtMmI2OC00Mw==", udp: true}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇹🇭 泰国 01"
+  - "🇮🇩 印尼 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇹🇭 泰国 01"
+  - "🇮🇩 印尼 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇹🇭 泰国 01"
+  - "🇮🇩 印尼 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇹🇭 泰国 01"
+  - "🇮🇩 印尼 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇹🇭 泰国 01"
+  - "🇮🇩 印尼 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇹🇭 泰国 01"
+  - "🇮🇩 印尼 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
+- "DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT"
+- "DOMAIN-SUFFIX,szbdyd.com,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,PROXY"
+- "DOMAIN-KEYWORD,autopatchos.starrails.com,PROXY"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"
