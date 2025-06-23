@@ -137,6 +137,8 @@ proxies:
 - {name: "🏴‍☠️ 刚果(金) 01", server: "cccvffgty.444752.xyz", port: 443, type: "trojan", password: "512d9674-db12-44ca-a1b5-654244549b65", sni: "cccvffgty.444752.xyz", alpn: ["http/1.1"], skip-cert-verify: true}
 - {name: "🏴‍☠️ 刚果(金) 02", server: "sssxxcvfty.444752.xyz", port: 443, type: "trojan", password: "512d9674-db12-44ca-a1b5-654244549b65", sni: "sssxxcvfty.444752.xyz", alpn: ["http/1.1"], skip-cert-verify: true}
 - {name: "🏴‍☠️ 刚果(金) 03", server: "gghui.4444936.xyz", port: 443, type: "trojan", password: "512d9674-db12-44ca-a1b5-654244549b65", sni: "gghui.4444936.xyz", alpn: ["http/1.1"], skip-cert-verify: true}
+- {name: "🇦🇹 奥地利 01", server: "172.67.128.245", port: 8880, type: "vmess", uuid: "e3627473-66c6-4069-8372-07c1d5f8eec4", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "euro-eyed-civilian-figured.trycloudflare.com"}}}
+- {name: "🇦🇹 奥地利 02", server: "172.67.140.183", port: 8443, type: "vmess", uuid: "e3627473-66c6-4069-8372-07c1d5f8eec4", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "euro-eyed-civilian-figured.trycloudflare.com"}}, servername: "euro-eyed-civilian-figured.trycloudflare.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -215,6 +217,8 @@ proxy-groups:
   - "🏴‍☠️ 刚果(金) 01"
   - "🏴‍☠️ 刚果(金) 02"
   - "🏴‍☠️ 刚果(金) 03"
+  - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -294,6 +298,8 @@ proxy-groups:
   - "🏴‍☠️ 刚果(金) 01"
   - "🏴‍☠️ 刚果(金) 02"
   - "🏴‍☠️ 刚果(金) 03"
+  - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -371,6 +377,8 @@ proxy-groups:
   - "🏴‍☠️ 刚果(金) 01"
   - "🏴‍☠️ 刚果(金) 02"
   - "🏴‍☠️ 刚果(金) 03"
+  - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -449,6 +457,8 @@ proxy-groups:
   - "🏴‍☠️ 刚果(金) 01"
   - "🏴‍☠️ 刚果(金) 02"
   - "🏴‍☠️ 刚果(金) 03"
+  - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -527,6 +537,8 @@ proxy-groups:
   - "🏴‍☠️ 刚果(金) 01"
   - "🏴‍☠️ 刚果(金) 02"
   - "🏴‍☠️ 刚果(金) 03"
+  - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -605,6 +617,8 @@ proxy-groups:
   - "🏴‍☠️ 刚果(金) 01"
   - "🏴‍☠️ 刚果(金) 02"
   - "🏴‍☠️ 刚果(金) 03"
+  - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
