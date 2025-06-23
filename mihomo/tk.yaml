@@ -64,34 +64,22 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇷🇺 俄罗斯 01", type: "ss", server: "185.22.154.123", port: 50120, tls: false, password: "ae627920168c1cce", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 02", type: "ss", server: "195.133.5.185", port: 50120, tls: false, password: "7f20be91749b5874", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 俄罗斯 01", type: "ss", server: "195.133.5.185", port: 50120, tls: false, password: "7f20be91749b5874", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 俄罗斯 02", type: "ss", server: "176.32.35.68", port: 19021, tls: false, password: "4194ce5b1f36f660", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇷🇺 俄罗斯 03", type: "ss", server: "185.22.153.235", port: 50120, tls: false, password: "058798d9a3087e43", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 04", type: "ss", server: "176.32.35.68", port: 50120, tls: false, password: "4194ce5b1f36f660", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 05", type: "ss", server: "185.22.153.67", port: 50120, tls: false, password: "b55c7e84afdd52cb", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 06", type: "ss", server: "195.58.49.147", port: 50112, tls: false, password: "560b7d65c1f4b12a", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 07", type: "ss", server: "195.133.5.176", port: 50210, tls: false, password: "d7a15f7a4c806a33", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 俄罗斯 04", type: "ss", server: "185.22.153.67", port: 50120, tls: false, password: "b55c7e84afdd52cb", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 俄罗斯 05", type: "ss", server: "195.58.49.147", port: 50112, tls: false, password: "560b7d65c1f4b12a", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 俄罗斯 06", type: "ss", server: "195.133.5.176", port: 50210, tls: false, password: "d7a15f7a4c806a33", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇷🇺 俄罗斯 07", type: "ss", server: "195.133.5.185", port: 50120, tls: false, password: "7f20be91749b5874", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇺🇸 美国 01", type: "ss", server: "103.115.18.246", port: 50120, tls: false, password: "b8ef46fefc3cac36", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇺🇸 美国 02", type: "ss", server: "194.87.196.7", port: 50120, tls: false, password: "1aa23ecefeba6669", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇺🇸 美国 03", type: "ss", server: "34.219.47.156", port: 443, tls: false, password: "awsps0501", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇺🇸 美国 04", type: "ss", server: "34.216.158.33", port: 443, tls: false, password: "awsps0501", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇺🇸 美国 05", type: "hysteria", server: "51.159.226.1", port: 14241, sni: "apple.com", alpn: ["h3"], up: "100", down: "100", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
-- {name: "🇺🇸 美国 06", type: "hysteria2", server: "aus.pagate.top", port: 10086, password: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", sni: "aus.pagate.top", skip-cert-verify: false, fast-open: false, ip-version: "dual"}
-- {name: "🇺🇸 美国 07", type: "vmess", server: "172.67.199.104", port: 80, uuid: "03e92910-34b1-4245-ac63-04a865f43cd5", network: "ws", tls: false, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}}
-- {name: "🇺🇸 美国 08", type: "hysteria2", server: "asg.pagate.top", port: 10086, password: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", sni: "asg.pagate.top", skip-cert-verify: false, fast-open: false, ip-version: "dual"}
-- {name: "🇺🇸 美国 09", type: "hysteria", server: "208.87.243.151", port: 17549, sni: "www.bing.com", alpn: ["h3"], up: "10", down: "50", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
-- {name: "🇺🇸 美国 10", type: "hysteria", server: "208.87.243.187", port: 40528, sni: "apple.com", alpn: ["h3"], up: "100", down: "100", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
-- {name: "🇺🇸 美国 11", type: "trojan", server: "104.21.84.242", port: 443, network: "ws", password: "03e92910-34b1-4245-ac63-04a865f43cd5", sni: "3ERt.4444916.XyZ", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/bi35bFWoRrnPhIJoo2wcE6Q", headers: {}}, ip-version: "dual"}
-- {name: "🇺🇸 美国 12", type: "trojan", server: "104.21.78.206", port: 2083, network: "ws", password: "13253e6e-a1f7-4090-801f-a8dc2b083bef", sni: "inVIncibLE.fAfA20.shoP", alpn: ["http/1.1"], skip-cert-verify: false, client-fingerprint: "randomized", ws-opts: {path: "/trxSsuyYmFFPA4woIq/NzguNDYuNTYuNDI=?ed=2560", headers: {}}, ip-version: "dual"}
-- {name: "🇺🇸 美国 13", type: "trojan", server: "104.21.95.229", port: 2083, network: "ws", password: "13253e6e-a1f7-4090-801f-a8dc2b083bef", sni: "INvincIBLE.fafA20.Shop", alpn: ["http/1.1"], skip-cert-verify: false, client-fingerprint: "randomized", ws-opts: {path: "/trYStgfIRQtOjkkxCQ/MTI5LjE1OS44NC43MQ==?ed=2560", headers: {}}, ip-version: "dual"}
-- {name: "🇺🇸 美国 14", type: "trojan", server: "104.21.75.120", port: 443, network: "ws", password: "13253e6e-a1f7-4090-801f-a8dc2b083bef", sni: "inviNcIble.fafa20.ShOp", alpn: ["http/1.1"], skip-cert-verify: false, client-fingerprint: "randomized", ws-opts: {path: "/tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560", headers: {}}, ip-version: "dual"}
-- {name: "🇺🇸 美国 15", type: "hysteria2", server: "ajp.pagate.top", port: 10086, password: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", sni: "ajp.pagate.top", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇺🇸 美国 03", type: "trojan", server: "eer.freevpnatm.dpdns.org", port: 443, network: "ws", password: "ffcf7ec1-3e09-4821-b3d9-b426a107b73b", sni: "eer.freevpnatm.dpdns.org", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/XmTzATQPJv9RO3xr1D40NK", headers: {}}, ip-version: "dual"}
+- {name: "🇺🇸 美国 04", type: "vmess", server: "ssscdvfgt.444682.xyz", port: 80, uuid: "30602b6d-5d5c-4f56-9b65-9ae2fd9348cb", network: "ws", tls: false, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "ssscdvfgt.444682.xyz"}, path: "/"}}
 - {name: "🇪🇸 西班牙 01", type: "ss", server: "212.192.12.22", port: 50120, tls: false, password: "7e1dd4c55bf85da5", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇦🇺 澳大利亚 01", type: "ss", server: "203.32.26.81", port: 50120, tls: false, password: "1928aa4d6e3c8df3", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇦🇺 澳大利亚 02", type: "ss", server: "43.207.145.54", port: 443, tls: false, password: "awsps0501", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇩🇪 德国 01", type: "ss", server: "178.128.200.198", port: 8443, tls: false, password: "KnYKwpw0w4c0RDnCo8KUcDQcwpp7w7bCv3nCgMOPHB/DnhLDj8OawrVVB2o5", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇫🇷 法国 01", type: "hysteria", server: "195.154.200.178", port: 46938, sni: "apple.com", alpn: ["h3"], up: "11", down: "55", skip-cert-verify: true, ip-version: "dual", auth-str: "dongtaiwang.com"}
-- {name: "🇨🇦 加拿大 01", type: "hysteria2", server: "108.181.5.130", port: 4710, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇦🇺 澳大利亚 01", type: "ss", server: "203.32.26.81", port: 19028, tls: false, password: "1928aa4d6e3c8df3", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇧🇬 保加利亚 01", type: "ss", server: "31.40.212.221", port: 20006, tls: false, password: "YOIL05FKZIUB8TU4", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇸🇬 新加坡 01", type: "ss", server: "188.166.245.158", port: 12677, tls: false, password: "1U53AUf85w9ZyrCb05SsKq", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇬🇧 英国 01", type: "ss", server: "51.15.17.169", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -108,23 +96,11 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
   - "🇪🇸 西班牙 01"
   - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇪 德国 01"
-  - "🇫🇷 法国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇧🇬 保加利亚 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -142,23 +118,11 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
   - "🇪🇸 西班牙 01"
   - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇪 德国 01"
-  - "🇫🇷 法国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇧🇬 保加利亚 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -174,23 +138,11 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
   - "🇪🇸 西班牙 01"
   - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇪 德国 01"
-  - "🇫🇷 法国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇧🇬 保加利亚 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -207,23 +159,11 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
   - "🇪🇸 西班牙 01"
   - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇪 德国 01"
-  - "🇫🇷 法国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇧🇬 保加利亚 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -240,23 +180,11 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
   - "🇪🇸 西班牙 01"
   - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇪 德国 01"
-  - "🇫🇷 法国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇧🇬 保加利亚 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -273,23 +201,11 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
-  - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
   - "🇪🇸 西班牙 01"
   - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇪 德国 01"
-  - "🇫🇷 法国 01"
-  - "🇨🇦 加拿大 01"
+  - "🇧🇬 保加利亚 01"
+  - "🇸🇬 新加坡 01"
+  - "🇬🇧 英国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
