@@ -1547,24 +1547,24 @@
     },
     {
       "tag": "🇦🇹 奥地利 01",
-      "type": "vmess",
-      "server": "172.67.140.183",
-      "server_port": 8443,
-      "uuid": "e3627473-66c6-4069-8372-07c1d5f8eec4",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "vless",
+      "server": "152.53.47.16",
+      "server_port": 12433,
+      "uuid": "1807314d-40b0-4b6f-9820-0591ca65c8bc",
       "tls": {
         "enabled": true,
-        "server_name": "len-agent-gentleman-initiatives.trycloudflare.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "len-agent-gentleman-initiatives.trycloudflare.com"
+        "server_name": "www.amazon.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "UEu3V_ycQdP1F3nng4aFtZyNbP_mWc3rzfTKsHojZiw"
         },
-        "path": "/"
-      }
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
     }
   ],
   "route": {
