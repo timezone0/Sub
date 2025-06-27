@@ -64,203 +64,119 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇨🇳 台湾 01", server: "tw.xiao666666.site", port: 26900, type: "hysteria2", password: "05168661-a845-4844-9e04-e610461ebad9", auth: "05168661-a845-4844-9e04-e610461ebad9", sni: "tw.xiao666666.site", up: 150, down: 150, skip-cert-verify: false, udp: true, delay: 2840}
-- {name: "🇮🇳 印度 01", server: "112.132.215.34", port: 50007, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, delay: 621}
-- {name: "🇮🇳 印度 02", server: "112.132.215.12", type: "vmess", country: "🇨🇳CN", port: 50002, uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 560, servername: "09jzus.zdzdzd.xyz"}
-- {name: "🇭🇰 香港 01", server: "pop.air.1543.0tk8a3a1q4t94dler.com", type: "ss", port: 3052, password: "VXPipi29nxMO", cipher: "aes-128-gcm", plugin: "obfs", plugin-opts: {host: "182039459a34f64238143cd31ddebbc914362.taobao.com", mode: "http"}, delay: 172}
-- {name: "🇭🇰 香港 02", server: "2.linkhub.support", port: 40206, type: "ssr", cipher: "rc4-md5", password: "ENZ52K", protocol: "auth_aes128_md5", obfs: "plain", protocol-param: "92902:pFWGOQ", obfs-param: "cd2b692902.6602b8463464108506.microsoft.com", udp: true, delay: 1110}
-- {name: "🇭🇰 香港 03", server: "103.149.182.61", type: "ss", country: "🇭🇰HK", port: 8388, password: "asd123456", cipher: "chacha20-ietf", delay: 1893}
-- {name: "🇭🇰 香港 04", server: "hk-02.foxspirit.click", type: "vmess", country: "🇭🇰HK", port: 1086, uuid: "4ca1e6db-f31a-4257-a95f-7bbef918cabd", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/zxascas", headers: {HOST: "www.ouabaua.com"}}, delay: 995, servername: "www.ouabaua.com"}
-- {name: "🇭🇰 香港 05", server: "hk-02.foxspirit.click", type: "vmess", country: "🇭🇰HK", port: 1086, uuid: "4799f446-702b-407f-bbba-9b242fa38ed7", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/zxascas", headers: {HOST: "www.ouabaua.com"}}, delay: 1394, servername: "www.ouabaua.com"}
-- {name: "🇭🇰 香港 06", server: "hk-02.foxspirit.click", type: "vmess", country: "🇭🇰HK", port: 1086, uuid: "5aef9bfd-20e3-420a-9b16-433031984bd9", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/zxascas", headers: {HOST: "www.ouabaua.com"}}, delay: 1394, servername: "www.ouabaua.com"}
-- {name: "🇭🇰 香港 07", server: "3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "40e084d6-0316-11f0-90e2-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com"}}, delay: 2716, servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 08", server: "7b5d670c-sw1z40-swjbhe-8bem.hgc1.tcpbbr.net", type: "vmess", country: "🇭🇰 HK", port: 8080, uuid: "ca506e08-ce3d-5e5a-c128-6358caca15e5", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1532, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "7b5d670c-sw1z40-swjbhe-8bem.hgc1.tcpbbr.net"}}, servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇷🇺 俄罗斯 01", server: "45.129.2.108", type: "hysteria2", country: "🇷🇺RU", port: 50850, udp: true, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, delay: 1378}
-- {name: "🇷🇺 俄罗斯 02", server: "46.17.41.217", port: 30033, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, delay: 2341}
-- {name: "🇨🇦 加拿大 01", server: "150.230.24.24", port: 30300, type: "hysteria2", password: "2429bee3-e0c1-47dd-b420-75e6512b184b", auth: "2429bee3-e0c1-47dd-b420-75e6512b184b", sni: "www.bing.com", skip-cert-verify: true, alpn: ["h3"], udp: true, delay: 1520}
-- {name: "🇨🇦 加拿大 02", server: "ca.opensocks.site", type: "ss", port: 8388, password: "N2E4M", cipher: "chacha20-ietf-poly1305", delay: 2003}
-- {name: "🇩🇪 德国 01", server: "91.107.164.255", type: "vmess", country: "🇩🇪DE", port: 33203, uuid: "a82148dd-4f11-4472-b341-f63f57dce17f", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1683}
-- {name: "🇩🇪 德国 02", server: "78.39.56.4", type: "vmess", country: "🇮🇷IR", port: 7600, uuid: "ce63d7ce-bc85-455a-a12b-4e54eb39a14f", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 2666}
-- {name: "🇩🇪 德国 03", server: "102.132.188.3", type: "vmess", port: 80, uuid: "e95e35ba-f874-4eb3-9600-4dbd6d099f4e", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "h4.grAsSoRy.shop"}}, delay: 1327, servername: "h4.grAsSoRy.shop"}
-- {name: "🇩🇪 德国 04", server: "172.67.36.32", port: 80, type: "vless", uuid: "bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0", tls: false, network: "ws", ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2570", headers: {Host: "barayeiran.nastaranh.dpdns.org"}}, udp: true, delay: 570}
-- {client-fingerprint: "chrome", name: "🇩🇪 德国 05", network: "tcp", port: 443, reality-opts: {public-key: "GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ", short-id: "7def4dde"}, server: "vpn_proxy_channel_vpn_proxy_channel.hohod.ir", skip-cert-verify: false, tls: true, type: "vless", uuid: "33707040-edcf-4185-94e4-2a071315c602", delay: 1510, servername: "vpn_proxy_channel_vpn_proxy_channel.hohod.ir"}
-- {name: "🇸🇬 新加坡 01", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16016, type: "ss", cipher: "aes-256-gcm", password: "A9QFM22KQPP4FDY5", udp: true, delay: 787}
-- {name: "🇯🇵 日本 01", server: "ztcloudjp.ztcloud.xyz", port: 18530, type: "hysteria2", password: "7788d84f-a530-4393-8ce4-a05ab4ef537d", auth: "7788d84f-a530-4393-8ce4-a05ab4ef537d", sni: "ztcloudjp.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 1995}
-- {name: "🇫🇷 法国 01", network: "ws", port: 8080, server: "172.67.73.163", skip-cert-verify: false, tls: false, type: "vless", uuid: "0eb83f3e-7b95-427a-8952-abedfca1869f", ws-opts: {headers: {Host: "QW.VU6d72nt9y.zULaiR.orG."}, path: "/?ed=2048"}, delay: 832}
-- {alpn: ["h3"], auth-str: "dongtaiwang.com", auth_str: "dongtaiwang.com", delay: 1191, down: "100", name: "🇫🇷 法国 02", obfs: "", port: 15010, protocol: "", server: "195.154.200.40", skip-cert-verify: true, sni: "apple.com", type: "hysteria", up: "100"}
-- {name: "🇫🇷 法国 03", server: "51.159.226.1", port: 14241, type: "hysteria", auth_str: "dongtaiwang.com", auth-str: "dongtaiwang.com", up: 100, down: 100, protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], udp: true, delay: 2666}
-- {name: "🇫🇷 法国 04", network: "ws", port: 80, server: "tgju.org", skip-cert-verify: false, tls: false, type: "vless", uuid: "76ad8213-4617-47eb-92cc-5392b39b45ce", ws-opts: {headers: {Host: "eLOQuENt-caSE.ZUlaIR.orG."}, path: "/?ed=2048"}, delay: 1085, servername: "eLOQuENt-caSE.ZUlaIR.orG."}
-- {name: "🇫🇷 法国 05", network: "ws", port: 8080, server: "104.26.14.85", type: "vless", udp: true, uuid: "0eb83f3e-7b95-427a-8952-abedfca1869f", ws-opts: {headers: {Host: "QW.VU6d72nt9y.zULaiR.orG.", User-Agent: "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"}, path: "/?ed=2048"}, xudp: true, delay: 1642}
-- {name: "🇺🇸 美国 01", server: "132.226.117.48", type: "hysteria2", country: "🇺🇸US", port: 30000, udp: true, password: "ca5c8e49-3b25-45f8-9fbb-6dd1806a1444", sni: "www.apple.com", skip-cert-verify: true, delay: 1204}
-- {down: "", fingerprint: "", name: "🇺🇸 美国 02", obfs: "", obfs-password: "", password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", port: 3234, server: "209.141.47.127", skip-cert-verify: true, sni: "", type: "hysteria2", up: "", disable-sni: true, delay: 1863}
-- {name: "🇺🇸 美国 03", server: "104.192.226.106", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", delay: 630}
-- {name: "🇺🇸 美国 04", server: "108.181.24.77", port: 11512, type: "hysteria", auth_str: "dongtaiwang.com", auth-str: "dongtaiwang.com", up: "11 Mbps", down: "55 Mbps", protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], udp: true, delay: 2417}
-- {name: "🇺🇸 美国 05", server: "108.181.5.130", port: 4710, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, udp: true, delay: 2960}
-- {name: "🇺🇸 美国 06", server: "cd4281bd-sw3ts0-syhw90-1rsuw.hy2.gotochinatown.net", type: "hysteria2", country: "🇺🇸US", port: 8443, udp: true, password: "0de37cdc-abff-11ef-b7c6-f23c913c8d2b", sni: "cd4281bd-sw3ts0-syhw90-1rsuw.hy2.gotochinatown.net", skip-cert-verify: false, delay: 2921}
-- {name: "🇺🇸 美国 07", server: "112.65.92.20", type: "vmess", port: 45251, uuid: "469e0b31-30c3-4dab-800d-711232634ce1", alterId: 0, cipher: "auto", http-opts: {}, h2-opts: {}, delay: 671}
-- {name: "🇺🇸 美国 08", server: "104.21.52.157", type: "vmess", country: "🏁ZZ", port: 80, uuid: "6757b7d6-fa32-4708-b5d1-30e3cf928b51", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/WsUikr8wXrXrFl2p8BiMhP42l", headers: {HOST: "222222222d.freevpn2026.dpdns.org"}}, delay: 1208, servername: "222222222d.freevpn2026.dpdns.org"}
-- {name: "🇺🇸 美国 09", server: "103.245.228.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 664, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 10", server: "185.148.106.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 433, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 11", server: "168.100.6.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 807, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 12", server: "204.93.210.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 457, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 13", server: "216.205.52.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 645, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 14", server: "198.62.62.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 439, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 15", server: "185.148.104.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 439, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 16", server: "160.153.0.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1526, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 17", server: "195.13.45.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1815, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 18", server: "192.0.54.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 814, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 19", server: "216.24.57.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 839, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 20", server: "188.164.159.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 514, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 21", server: "108.162.198.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 440, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 22", server: "209.94.90.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1537, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 23", server: "192.200.160.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 440, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 24", server: "160.79.105.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 429, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 25", server: "198.202.211.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2510, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 26", server: "209.46.30.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 603, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 27", server: "141.101.114.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2545, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 28", network: "ws", port: 8880, server: "104.129.164.39", type: "vless", udp: true, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", ws-opts: {headers: {Host: "ip.langmanshanxi.top", User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"}, path: "/Telegram🇨🇳"}, xudp: true, delay: 1512, servername: "ip.langmanshanxi.top"}
-- {name: "🇺🇸 美国 29", server: "185.170.166.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1499, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 30", server: "185.207.197.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 552, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 31", server: "188.164.158.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1565, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 32", server: "194.53.53.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1291, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 33", server: "170.114.46.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 705, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 34", server: "89.117.112.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1443, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 35", server: "47.57.245.232", port: 443, type: "vless", uuid: "948f6596-66f9-4707-aa92-3107a214ce53", tls: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "oops.shalamshorba.dpdns.org"}}, udp: true, delay: 2666, servername: "oops.shalamshorba.dpdns.org"}
-- {name: "🇺🇸 美国 36", server: "190.93.247.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1498, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 37", server: "212.183.88.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 790, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 38", server: "185.207.199.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 640, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 39", server: "185.207.198.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1972, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 40", server: "192.65.217.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 502, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 41", server: "77.74.228.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 951, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 42", server: "185.133.35.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1533, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 43", server: "23.227.60.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 512, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 44", server: "23.227.39.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 752, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 45", server: "104.234.239.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1329, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 46", server: "190.93.246.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 441, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 47", server: "190.93.244.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 864, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 48", server: "193.124.224.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 551, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 49", server: "193.124.18.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 834, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 50", server: "5.10.215.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 566, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 51", server: "45.80.111.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 413, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 52", server: "140.99.233.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 874, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 53", server: "45.80.110.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1686, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 54", server: "45.80.108.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 786, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 55", server: "185.251.82.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2290, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 56", server: "141.11.202.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 434, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 57", server: "185.16.110.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 414, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 58", server: "77.75.199.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 538, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 59", server: "25.25.25.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 958, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 60", server: "109.176.239.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 481, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 61", server: "154.218.15.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1487, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 62", server: "45.192.222.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 631, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 63", server: "45.192.223.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 627, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 64", server: "154.92.9.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1517, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 65", server: "194.59.5.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 477, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 66", server: "185.176.26.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2610, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 67", server: "31.43.179.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 605, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 68", server: "89.116.250.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 976, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 69", server: "88.216.67.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1396, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 70", server: "188.42.89.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 505, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 71", server: "188.42.88.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1523, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 72", server: "193.227.99.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 935, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 73", server: "45.205.0.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 972, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 74", server: "5.10.246.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 430, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 75", server: "5.10.245.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 879, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 76", server: "5.10.244.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 497, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 77", server: "45.149.12.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 427, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 78", server: "160.153.1.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 477, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 79", server: "::ffff:91.193.58.48", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2048", headers: {Host: "tw.laoyoutiao.link"}}, udp: true, delay: 435, servername: "tw.laoyoutiao.link"}
-- {name: "🇺🇸 美国 80", server: "185.148.107.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1345, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 81", server: "185.221.160.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 417, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 82", server: "185.176.24.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 851, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 83", server: "45.142.255.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2453, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 84", server: "45.142.120.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 876, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 85", server: "188.42.145.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 467, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 86", server: "46.254.92.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2442, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 87", server: "5.182.84.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 441, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 88", server: "46.254.93.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 449, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 89", server: "154.194.0.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 441, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 90", server: "154.197.108.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 469, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 91", server: "154.197.88.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 843, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 92", server: "154.197.64.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1604, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 93", server: "154.83.2.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1177, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 94", server: "92.243.74.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 460, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 95", server: "27.50.49.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 523, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 96", server: "92.243.75.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 538, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 97", server: "92.60.74.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 539, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 98", server: "92.53.188.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1475, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 99", server: "92.53.189.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 523, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 100", server: "92.53.191.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 547, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 101", server: "92.53.190.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 836, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 102", server: "46.202.30.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 545, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 103", server: "14.102.228.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 449, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 104", server: "104.129.167.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 718, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 105", server: "104.129.164.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 542, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 106", server: "45.194.53.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 561, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 107", server: "167.68.11.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 726, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 108", server: "130.250.137.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 830, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 109", server: "154.85.99.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 629, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 110", server: "108.165.152.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 439, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 111", server: "195.13.54.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 456, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 112", server: "184.174.80.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 597, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 113", server: "104.129.166.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 888, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 114", server: "104.16.100.188", port: 80, type: "vless", uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "entezar.loseyourself.dpdns.org"}}, udp: true, delay: 513, servername: "entezar.loseyourself.dpdns.org"}
-- {name: "🇺🇸 美国 115", server: "167.68.4.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 436, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 116", server: "45.159.219.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 439, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 117", server: "45.202.113.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 1596, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 118", server: "66.235.200.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 907, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 119", server: "199.34.228.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 438, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 120", server: "69.84.182.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 612, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 121", server: "154.206.12.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 816, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 122", server: "103.133.1.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 2033, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 123", server: "139.64.235.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 450, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 124", server: "199.34.229.3", port: 8880, type: "vless", uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "bitget1.asdasd.click"}}, udp: true, delay: 811, servername: "Telegram-channel-WangCai2"}
-- {name: "🇬🇧 英国 01", server: "ztcloudgb.ztcloud.xyz", port: 18580, type: "hysteria2", password: "0bc750db-bd26-4ec8-9559-29cc1bbcbb82", auth: "0bc750db-bd26-4ec8-9559-29cc1bbcbb82", sni: "ztcloudgb.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 921}
-- {name: "🇬🇧 英国 02", server: "ztcloudgb.ztcloud.xyz", port: 18580, type: "hysteria2", password: "3c572c6e-d32e-4d28-b10f-7f752dd14c7c", auth: "3c572c6e-d32e-4d28-b10f-7f752dd14c7c", sni: "ztcloudgb.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 964}
-- {name: "🇬🇧 英国 03", server: "ztcloudgb.ztcloud.xyz", port: 18580, type: "hysteria2", password: "7b5d702d-4f85-4b23-b0e8-668ec9eaf3ce", auth: "7b5d702d-4f85-4b23-b0e8-668ec9eaf3ce", sni: "ztcloudgb.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 1447}
-- {name: "🇳🇱 荷兰 01", server: "v30.heduian.link", port: 30830, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v30.heduian.link"}}, udp: true, delay: 2795}
-- {name: "🇳🇱 荷兰 02", server: "109.207.173.6", port: 8443, type: "vless", uuid: "863a79a8-b56b-41cc-b7fb-c7d7314c2fa2", tls: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["zula.ir"]}}, udp: true, delay: 2455, servername: "zula.ir"}
-- {client-fingerprint: "firefox", name: "🇻🇳 越南 01", network: "tcp", port: 34045, reality-opts: {public-key: "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA", short-id: "e8ab71d0"}, server: "160.250.65.132", skip-cert-verify: false, tls: true, type: "vless", uuid: "d8dd94fd-540e-461d-b5d4-acebef02c22a", delay: 2435, servername: "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me"}
-- {cipher: "aes-256-cfb", name: "🇻🇳 越南 02", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.155.18", type: "ss", delay: 873}
-- {cipher: "aes-256-cfb", country: "🏁 ZZ", name: "🇻🇳 越南 03", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.37", type: "ss", delay: 909}
-- {cipher: "aes-256-cfb", country: "🏁 ZZ", name: "🇻🇳 越南 04", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.18", type: "ss", delay: 897}
-- {name: "🇰🇷 韩国 01", server: "203.156.253.12", port: 39001, type: "trojan", password: "85f133142f04dbf6547da33895cfabb3", sni: "www.yrtok.com", skip-cert-verify: true, udp: true, delay: 1673}
-- {name: "🇰🇷 韩国 02", server: "125.141.31.72", port: 15098, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", delay: 433}
-- {name: "🇰🇷 韩国 03", server: "v28.heduian.link", port: 30828, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, delay: 1919}
-- {name: "🇰🇷 韩国 04", server: "ztcloudkr.ztcloud.xyz", port: 18540, type: "hysteria2", password: "5ce83070-e344-49fb-bb69-cd39ea51325d", auth: "5ce83070-e344-49fb-bb69-cd39ea51325d", sni: "ztcloudkr.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 1933}
-- {name: "🇰🇷 韩国 05", server: "ztcloudkr.ztcloud.xyz", port: 18540, type: "hysteria2", password: "7345c763-e388-4a4b-b40a-d61cab47d7bc", auth: "7345c763-e388-4a4b-b40a-d61cab47d7bc", sni: "ztcloudkr.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 1562}
+- {name: "🇮🇳 印度 01", server: "112.132.215.34", port: 50007, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, delay: 194}
+- {name: "🇭🇰 香港 01", server: "2.linkhub.support", port: 40206, type: "ssr", cipher: "rc4-md5", password: "ENZ52K", protocol: "auth_aes128_md5", obfs: "plain", protocol-param: "92902:pFWGOQ", obfs-param: "cd2b692902.6602b8463464108506.microsoft.com", udp: true, delay: 798}
+- {name: "🇭🇰 香港 02", server: "183.236.51.37", type: "vmess", country: "🇨🇳CN", port: 55112, uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 468}
+- {name: "🇭🇰 香港 03", server: "183.236.51.37", type: "vmess", country: "🇨🇳CN", port: 46621, uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 147}
+- {name: "🇭🇰 香港 04", server: "183.236.51.37", type: "vmess", country: "🇨🇳CN", port: 41911, uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 64, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 208}
+- {name: "🇭🇰 香港 05", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 15015, type: "ss", cipher: "aes-256-gcm", password: "1FE8UX5KHGYBLYMU", udp: true, delay: 199}
+- {name: "🇮🇱 以色列 01", server: "yal.fxlcn.com", type: "vmess", country: "🇺🇸US", port: 45262, uuid: "469e0b31-30c3-4dab-800d-711232634ce1", alterId: 0, cipher: "auto", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 819}
+- {name: "🇮🇷 伊朗 01", server: "185.112.32.244", type: "ss", country: "🇮🇷IR", port: 31792, password: "OOSWDYXTSRWMTAEIJ8XUCD27R2F384ODKTHXF41YLRV4", cipher: "aes-128-gcm", delay: 854}
+- {name: "🇷🇺 俄罗斯 01", server: "45.129.2.108", port: 50850, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, udp: true, delay: 1235}
+- {name: "🇷🇺 俄罗斯 02", server: "46.17.41.217", port: 30033, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, delay: 1074}
+- {name: "🇷🇺 俄罗斯 03", server: "pop.air.3278.0tk8a3a1q4t94dler.com", port: 2062, type: "ss", cipher: "aes-128-gcm", password: "VXPipi29nxMO", plugin: "obfs", plugin-opts: {mode: "http", host: "182039459a34f64238143cd31ddebbc914362.taobao.com"}, udp: true, delay: 926}
+- {name: "🇨🇦 加拿大 01", server: "150.230.24.24", port: 30300, type: "hysteria2", password: "2429bee3-e0c1-47dd-b420-75e6512b184b", auth: "2429bee3-e0c1-47dd-b420-75e6512b184b", sni: "www.bing.com", skip-cert-verify: true, alpn: ["h3"], udp: true, delay: 2095}
+- {name: "🇨🇦 加拿大 02", server: "111.26.109.79", port: 30825, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/oooo"}, delay: 1025}
+- {name: "🇹🇷 土耳其 01", server: "vip.terterppn.pw", type: "vmess", country: "🇮🇷IR", port: 8090, uuid: "891e1d1c-5fbc-40cb-9256-58b016b6b600", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 2036}
+- {name: "🇹🇷 土耳其 02", server: "78.39.9.134", type: "vmess", country: "🇮🇷IR", port: 8090, uuid: "891e1d1c-5fbc-40cb-9256-58b016b6b600", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1715}
+- {name: "🇧🇷 巴西 01", server: "42.240.152.238", port: 8842, type: "trojan", password: "1b4c16925f934c57b954a9f0f23dea33", sni: "brwx.spvpv.com", skip-cert-verify: true, udp: true, delay: 1304}
+- {name: "🇩🇪 德国 01", server: "172.66.132.44", port: 80, type: "vless", uuid: "5459f68e-d914-4b31-93a3-ecdf638b7a5b", tls: false, client-fingerprint: "random", network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "abcd.taraneh.dpdns.org"}}, udp: true, delay: 471, servername: "abcd.taraneh.dpdns.org"}
+- {client-fingerprint: "random", name: "🇩🇪 德国 02", network: "ws", port: 2087, server: "104.24.135.129", skip-cert-verify: true, tfo: false, tls: true, type: "vless", uuid: "7b5ea382-cbc6-4169-9f88-8200ca80c31a", ws-opts: {headers: {Host: "fandouhuayuan.pages.dev"}, path: "/?ed=2560"}, delay: 996, servername: "fandouhuayuan.pages.dev"}
+- {name: "🇱🇻 拉脱维亚 01", server: "89.46.238.35", type: "ss", country: "🇷🇴RO", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 728}
+- {name: "🇸🇬 新加坡 01", server: "sg2-b2.oraclenat.cc", port: 13145, type: "vless", uuid: "65f3443e-4056-4b51-8203-efd6a33aeafa", tls: false, network: "tcp", udp: true, delay: 2059}
+- {name: "🇸🇬 新加坡 02", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16002, type: "ss", cipher: "aes-256-gcm", password: "PTOLSTKKE7DWRV1I", udp: true, delay: 240}
+- {name: "🇸🇬 新加坡 03", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 16013, type: "ss", cipher: "aes-256-gcm", password: "LHYN1FM2G207U465", udp: true, delay: 313}
+- {name: "🇯🇵 日本 01", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18011, type: "ss", cipher: "aes-256-gcm", password: "KY6T7MOYVUYDCE0T", udp: true, delay: 349}
+- {name: "🇯🇵 日本 02", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18005, type: "ss", cipher: "aes-256-gcm", password: "ARXJ37E4V8N09KWH", udp: true, delay: 345}
+- {name: "🇯🇵 日本 03", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18008, type: "ss", cipher: "aes-256-gcm", password: "KAB2P3693PNXGL0D", udp: true, delay: 512}
+- {name: "🇯🇵 日本 04", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 18010, type: "ss", cipher: "aes-256-gcm", password: "Y5YXP5V1312FYBX8", udp: true, delay: 2000}
+- {alpn: ["h3"], auth-str: "dongtaiwang.com", auth_str: "dongtaiwang.com", delay: 1483, down: "100", name: "🇫🇷 法国 01", obfs: "", port: 15010, protocol: "", server: "195.154.200.40", skip-cert-verify: true, sni: "apple.com", type: "hysteria", up: "100"}
+- {name: "🇫🇷 法国 02", server: "51.159.226.1", port: 14241, type: "hysteria", auth_str: "dongtaiwang.com", auth-str: "dongtaiwang.com", up: 100, down: 100, protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], udp: true, delay: 1427}
+- {name: "🇫🇷 法国 03", network: "ws", port: 80, server: "tgju.org", skip-cert-verify: false, tls: false, type: "vless", uuid: "76ad8213-4617-47eb-92cc-5392b39b45ce", ws-opts: {headers: {Host: "eLOQuENt-caSE.ZUlaIR.orG."}, path: "/?ed=2048"}, delay: 892, servername: "eLOQuENt-caSE.ZUlaIR.orG."}
+- {name: "🇫🇷 法国 04", network: "ws", port: 8080, server: "104.26.14.85", type: "vless", udp: true, uuid: "0eb83f3e-7b95-427a-8952-abedfca1869f", ws-opts: {headers: {Host: "QW.VU6d72nt9y.zULaiR.orG.", User-Agent: "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"}, path: "/?ed=2048"}, xudp: true, delay: 542}
+- {name: "🇵🇱 波兰 01", server: "146.59.80.70", type: "vmess", country: "🇵🇱PL", port: 2083, uuid: "7523339b-fb63-4ecb-b84a-e402045919ef", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, delay: 740}
+- {name: "🇺🇸 美国 01", server: "104.21.57.206", type: "vmess", country: "🏁ZZ", port: 80, uuid: "3d9741da-c0e4-47cc-a5e0-f1af3d337dae", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/U2Z0FoBkgtZqfwAwY2SNm", headers: {HOST: "sssssssssssdddfgt.4444926.xyz"}}, delay: 1563, servername: "sssssssssssdddfgt.4444926.xyz"}
+- {name: "🇺🇸 美国 02", server: "v7.heduian.link", port: 30807, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, delay: 2502}
+- {name: "🇺🇸 美国 03", server: "v24.heduian.link", port: 30824, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v24.heduian.link"}}, delay: 1789}
+- {name: "🇺🇸 美国 04", server: "23.185.248.12", type: "ss", port: 17002, password: "XDX84I26C5MTNQIQ", cipher: "aes-256-gcm", delay: 613}
+- {name: "🇺🇸 美国 05", server: "45.147.201.231", port: 30076, type: "hysteria2", password: "0929e391-8d00-4d50-9c93-80d578d22488", auth: "0929e391-8d00-4d50-9c93-80d578d22488", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true, delay: 1839}
+- {name: "🇺🇸 美国 06", server: "45.147.201.231", port: 30076, type: "hysteria2", password: "2840b8c3-d83d-47ea-8996-07ba2e7c1c02", auth: "2840b8c3-d83d-47ea-8996-07ba2e7c1c02", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true, delay: 1828}
+- {name: "🇺🇸 美国 07", server: "45.147.201.231", port: 30076, type: "hysteria2", password: "4a3ceb13-3185-4fe2-a539-e57422816f92", auth: "4a3ceb13-3185-4fe2-a539-e57422816f92", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true, delay: 1824}
+- {name: "🇺🇸 美国 08", server: "108.181.24.77", port: 11512, type: "hysteria", auth_str: "dongtaiwang.com", auth-str: "dongtaiwang.com", up: "11 Mbps", down: "55 Mbps", protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], udp: true, delay: 1275}
+- {name: "🇺🇸 美国 09", server: "108.181.5.130", port: 4710, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, udp: true, delay: 749}
+- {name: "🇺🇸 美国 10", server: "2c5ace97-sykps0-thcykv-14au8.hy2.gotochinatown.net", port: 8443, type: "hysteria2", password: "44811728-ebd8-11ec-adf5-f23c91cfbbc9", auth: "44811728-ebd8-11ec-adf5-f23c91cfbbc9", udp: true, sni: "2c5ace97-sykps0-thcykv-14au8.hy2.gotochinatown.net", delay: 1186}
+- {name: "🇺🇸 美国 11", server: "66tghji.191262.xyz", port: 443, type: "vless", uuid: "509ed9b7-8d64-4204-8ec8-6b749020ac3f", tls: true, alpn: ["http%2F1.1"], client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/VlJKGXt3aXBStn7", headers: {Host: "66tGHjI.191262.XyZ"}}, udp: true, delay: 1641, servername: "66tGHjI.191262.XyZ"}
+- {name: "🇺🇸 美国 12", server: "172.67.162.74", type: "vmess", country: "🏁ZZ", port: 443, uuid: "e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/VgtsOrriMf1sdep5KKSues", headers: {HOST: "p09.iran.pp.ua"}}, delay: 1454, servername: "p09.iran.pp.ua"}
+- {name: "🇺🇸 美国 13", server: "209.46.30.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 1608, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 14", server: "176.124.223.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 642, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 15", server: "45.131.208.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 802, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 16", server: "5.10.245.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 769, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 17", server: "141.101.121.224", port: 8080, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: false, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/?ed=2048", headers: {Host: "1750293123492.china.baidu.bilibili.china.aeko.cn"}}, udp: true, delay: 446}
+- {name: "🇺🇸 美国 18", server: "185.18.250.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 436, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 19", server: "154.83.2.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 409, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 20", server: "5.10.246.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 437, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 21", server: "14.102.228.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 398, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 22", server: "185.207.199.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 419, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 23", server: "45.159.216.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 1621, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 24", server: "188.164.248.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 578, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 25", server: "154.218.15.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 2874, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 26", server: "0000:0000:0000:0000:0000:ffff:91.193.58.48", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2048", headers: {Host: "tw.laoyoutiao.link"}}, udp: true, delay: 821, servername: "tw.laoyoutiao.link"}
+- {name: "🇺🇸 美国 27", server: "141.101.120.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 418, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 28", server: "216.116.134.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 629, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 29", server: "45.153.7.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 441, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 30", server: "139.64.235.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 549, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 31", server: "185.176.26.13", port: 8880, type: "vless", uuid: "9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: "c.82313369.xyz"}}, udp: true, delay: 882, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 32", server: "5.10.214.20", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, udp: true, delay: 1904, servername: "ip.langmanshanxi.top"}
+- {alpn: ["http/1.1"], client-fingerprint: "randomized", name: "🇺🇸 美国 33", network: "ws", port: 443, server: "www.speedtest.net", skip-cert-verify: false, tls: true, type: "vless", uuid: "3058e698-61fd-4d12-95bc-f1fe4c071713", ws-opts: {headers: {Host: "hozori.ir"}, path: "/Telegram@V2ray_Alpha"}, delay: 1021, servername: "hOZori.iR"}
+- {name: "🇺🇸 美国 34", server: "104.16.100.188", port: 80, type: "vless", uuid: "148709e4-402b-48dd-8892-ed39b55ea45c", tls: false, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "entezar.loseyourself.dpdns.org"}}, udp: true, delay: 539, servername: "entezar.loseyourself.dpdns.org"}
+- {name: "🇺🇸 美国 35", server: "156.238.18.196", port: 2083, type: "trojan", password: "d6b8011a-c725-435a-9fec-bf6d3530392c", sni: "vle.amclubdns.dpdns.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/?ed=2560&PROT_TYPE=trojan", headers: {Host: "vle.amclubdns.dpdns.org"}}, udp: true, delay: 1930}
+- {name: "🇬🇧 英国 01", server: "lt.fxlcn.com", type: "vmess", country: "🇬🇧 GB", port: 45210, uuid: "469e0b31-30c3-4dab-800d-711232634ce1", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1489, servername: "v36.heduian.link"}
+- {name: "🇬🇧 英国 02", server: "ztcloudgb.ztcloud.xyz", port: 18580, type: "hysteria2", password: "0bc750db-bd26-4ec8-9559-29cc1bbcbb82", auth: "0bc750db-bd26-4ec8-9559-29cc1bbcbb82", sni: "ztcloudgb.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 2393}
+- {name: "🇳🇱 荷兰 01", server: "109.207.173.6", port: 8443, type: "vless", uuid: "863a79a8-b56b-41cc-b7fb-c7d7314c2fa2", tls: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["zula.ir"]}}, udp: true, delay: 620, servername: "zula.ir"}
+- {name: "🇻🇳 越南 01", server: "arxfw2b78fi2q9hzylhn.freesocks.work", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "Nk9asglDzHzjktVzTkvhaA", delay: 2933}
+- {client-fingerprint: "firefox", name: "🇻🇳 越南 02", network: "tcp", port: 34045, reality-opts: {public-key: "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA", short-id: "e8ab71d0"}, server: "160.250.65.132", skip-cert-verify: false, tls: true, type: "vless", uuid: "d8dd94fd-540e-461d-b5d4-acebef02c22a", delay: 2174, servername: "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me"}
+- {name: "🇻🇳 越南 03", server: "160.250.65.124", port: 34045, type: "vless", uuid: "d8dd94fd-540e-461d-b5d4-acebef02c22a", tls: true, reality-opts: {public-key: "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA", short-id: "e8ab71d0"}, client-fingerprint: "chrome", network: "tcp", udp: true, delay: 2462, servername: "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me"}
+- {name: "🇰🇷 韩国 01", server: "p141.panda001.net", type: "ss", country: "🇰🇷KR", port: 4652, password: "qwerREWQ@@", cipher: "aes-256-cfb", delay: 348}
+- {name: "🇰🇷 韩国 02", server: "111.26.109.79", port: 30828, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, delay: 2171}
+- {name: "🇰🇷 韩国 03", server: "104.21.227.134", type: "vmess", country: "🏁ZZ", port: 2082, uuid: "c7820065-fa05-36d6-ab77-56e4b03c5881", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/dabai.in104.20.64.217", headers: {HOST: "100-47-213-116.s5.db-link01.top"}}, delay: 1706, servername: "100-47-213-116.s5.db-link01.top"}
+- {name: "🇰🇷 韩国 04", server: "ztcloudkr.ztcloud.xyz", port: 18540, type: "hysteria2", password: "7345c763-e388-4a4b-b40a-d61cab47d7bc", auth: "7345c763-e388-4a4b-b40a-d61cab47d7bc", sni: "ztcloudkr.ztcloud.xyz", skip-cert-verify: true, udp: true, delay: 2778}
+- {name: "🇰🇷 韩国 05", server: "kr2.qiangdong.xyz", type: "ss", port: 1052, password: "VXPipi29nxMO", cipher: "aes-128-gcm", plugin: "obfs", plugin-opts: {host: "182039459a34f64238143cd31ddebbc914362.taobao.com", mode: "http"}, delay: 314}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇨🇳 台湾 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
-  - "🇭🇰 香港 07"
-  - "🇭🇰 香港 08"
+  - "🇮🇱 以色列 01"
+  - "🇮🇷 伊朗 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
+  - "🇱🇻 拉脱维亚 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
   - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇵🇱 波兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -296,104 +212,12 @@ proxy-groups:
   - "🇺🇸 美国 33"
   - "🇺🇸 美国 34"
   - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
-  - "🇺🇸 美国 52"
-  - "🇺🇸 美国 53"
-  - "🇺🇸 美国 54"
-  - "🇺🇸 美国 55"
-  - "🇺🇸 美国 56"
-  - "🇺🇸 美国 57"
-  - "🇺🇸 美国 58"
-  - "🇺🇸 美国 59"
-  - "🇺🇸 美国 60"
-  - "🇺🇸 美国 61"
-  - "🇺🇸 美国 62"
-  - "🇺🇸 美国 63"
-  - "🇺🇸 美国 64"
-  - "🇺🇸 美国 65"
-  - "🇺🇸 美国 66"
-  - "🇺🇸 美国 67"
-  - "🇺🇸 美国 68"
-  - "🇺🇸 美国 69"
-  - "🇺🇸 美国 70"
-  - "🇺🇸 美国 71"
-  - "🇺🇸 美国 72"
-  - "🇺🇸 美国 73"
-  - "🇺🇸 美国 74"
-  - "🇺🇸 美国 75"
-  - "🇺🇸 美国 76"
-  - "🇺🇸 美国 77"
-  - "🇺🇸 美国 78"
-  - "🇺🇸 美国 79"
-  - "🇺🇸 美国 80"
-  - "🇺🇸 美国 81"
-  - "🇺🇸 美国 82"
-  - "🇺🇸 美国 83"
-  - "🇺🇸 美国 84"
-  - "🇺🇸 美国 85"
-  - "🇺🇸 美国 86"
-  - "🇺🇸 美国 87"
-  - "🇺🇸 美国 88"
-  - "🇺🇸 美国 89"
-  - "🇺🇸 美国 90"
-  - "🇺🇸 美国 91"
-  - "🇺🇸 美国 92"
-  - "🇺🇸 美国 93"
-  - "🇺🇸 美国 94"
-  - "🇺🇸 美国 95"
-  - "🇺🇸 美国 96"
-  - "🇺🇸 美国 97"
-  - "🇺🇸 美国 98"
-  - "🇺🇸 美国 99"
-  - "🇺🇸 美国 100"
-  - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
-  - "🇺🇸 美国 109"
-  - "🇺🇸 美国 110"
-  - "🇺🇸 美国 111"
-  - "🇺🇸 美国 112"
-  - "🇺🇸 美国 113"
-  - "🇺🇸 美国 114"
-  - "🇺🇸 美国 115"
-  - "🇺🇸 美国 116"
-  - "🇺🇸 美国 117"
-  - "🇺🇸 美国 118"
-  - "🇺🇸 美国 119"
-  - "🇺🇸 美国 120"
-  - "🇺🇸 美国 121"
-  - "🇺🇸 美国 122"
-  - "🇺🇸 美国 123"
-  - "🇺🇸 美国 124"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -405,33 +229,37 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - "🇨🇳 台湾 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
-  - "🇭🇰 香港 07"
-  - "🇭🇰 香港 08"
+  - "🇮🇱 以色列 01"
+  - "🇮🇷 伊朗 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
+  - "🇱🇻 拉脱维亚 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
   - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇵🇱 波兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -467,104 +295,12 @@ proxy-groups:
   - "🇺🇸 美国 33"
   - "🇺🇸 美国 34"
   - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
-  - "🇺🇸 美国 52"
-  - "🇺🇸 美国 53"
-  - "🇺🇸 美国 54"
-  - "🇺🇸 美国 55"
-  - "🇺🇸 美国 56"
-  - "🇺🇸 美国 57"
-  - "🇺🇸 美国 58"
-  - "🇺🇸 美国 59"
-  - "🇺🇸 美国 60"
-  - "🇺🇸 美国 61"
-  - "🇺🇸 美国 62"
-  - "🇺🇸 美国 63"
-  - "🇺🇸 美国 64"
-  - "🇺🇸 美国 65"
-  - "🇺🇸 美国 66"
-  - "🇺🇸 美国 67"
-  - "🇺🇸 美国 68"
-  - "🇺🇸 美国 69"
-  - "🇺🇸 美国 70"
-  - "🇺🇸 美国 71"
-  - "🇺🇸 美国 72"
-  - "🇺🇸 美国 73"
-  - "🇺🇸 美国 74"
-  - "🇺🇸 美国 75"
-  - "🇺🇸 美国 76"
-  - "🇺🇸 美国 77"
-  - "🇺🇸 美国 78"
-  - "🇺🇸 美国 79"
-  - "🇺🇸 美国 80"
-  - "🇺🇸 美国 81"
-  - "🇺🇸 美国 82"
-  - "🇺🇸 美国 83"
-  - "🇺🇸 美国 84"
-  - "🇺🇸 美国 85"
-  - "🇺🇸 美国 86"
-  - "🇺🇸 美国 87"
-  - "🇺🇸 美国 88"
-  - "🇺🇸 美国 89"
-  - "🇺🇸 美国 90"
-  - "🇺🇸 美国 91"
-  - "🇺🇸 美国 92"
-  - "🇺🇸 美国 93"
-  - "🇺🇸 美国 94"
-  - "🇺🇸 美国 95"
-  - "🇺🇸 美国 96"
-  - "🇺🇸 美国 97"
-  - "🇺🇸 美国 98"
-  - "🇺🇸 美国 99"
-  - "🇺🇸 美国 100"
-  - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
-  - "🇺🇸 美国 109"
-  - "🇺🇸 美国 110"
-  - "🇺🇸 美国 111"
-  - "🇺🇸 美国 112"
-  - "🇺🇸 美国 113"
-  - "🇺🇸 美国 114"
-  - "🇺🇸 美国 115"
-  - "🇺🇸 美国 116"
-  - "🇺🇸 美国 117"
-  - "🇺🇸 美国 118"
-  - "🇺🇸 美国 119"
-  - "🇺🇸 美国 120"
-  - "🇺🇸 美国 121"
-  - "🇺🇸 美国 122"
-  - "🇺🇸 美国 123"
-  - "🇺🇸 美国 124"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -574,33 +310,37 @@ proxy-groups:
   type: "select"
   proxies:
   - "PROXY"
-  - "🇨🇳 台湾 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
-  - "🇭🇰 香港 07"
-  - "🇭🇰 香港 08"
+  - "🇮🇱 以色列 01"
+  - "🇮🇷 伊朗 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
+  - "🇱🇻 拉脱维亚 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
   - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇵🇱 波兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -636,104 +376,12 @@ proxy-groups:
   - "🇺🇸 美国 33"
   - "🇺🇸 美国 34"
   - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
-  - "🇺🇸 美国 52"
-  - "🇺🇸 美国 53"
-  - "🇺🇸 美国 54"
-  - "🇺🇸 美国 55"
-  - "🇺🇸 美国 56"
-  - "🇺🇸 美国 57"
-  - "🇺🇸 美国 58"
-  - "🇺🇸 美国 59"
-  - "🇺🇸 美国 60"
-  - "🇺🇸 美国 61"
-  - "🇺🇸 美国 62"
-  - "🇺🇸 美国 63"
-  - "🇺🇸 美国 64"
-  - "🇺🇸 美国 65"
-  - "🇺🇸 美国 66"
-  - "🇺🇸 美国 67"
-  - "🇺🇸 美国 68"
-  - "🇺🇸 美国 69"
-  - "🇺🇸 美国 70"
-  - "🇺🇸 美国 71"
-  - "🇺🇸 美国 72"
-  - "🇺🇸 美国 73"
-  - "🇺🇸 美国 74"
-  - "🇺🇸 美国 75"
-  - "🇺🇸 美国 76"
-  - "🇺🇸 美国 77"
-  - "🇺🇸 美国 78"
-  - "🇺🇸 美国 79"
-  - "🇺🇸 美国 80"
-  - "🇺🇸 美国 81"
-  - "🇺🇸 美国 82"
-  - "🇺🇸 美国 83"
-  - "🇺🇸 美国 84"
-  - "🇺🇸 美国 85"
-  - "🇺🇸 美国 86"
-  - "🇺🇸 美国 87"
-  - "🇺🇸 美国 88"
-  - "🇺🇸 美国 89"
-  - "🇺🇸 美国 90"
-  - "🇺🇸 美国 91"
-  - "🇺🇸 美国 92"
-  - "🇺🇸 美国 93"
-  - "🇺🇸 美国 94"
-  - "🇺🇸 美国 95"
-  - "🇺🇸 美国 96"
-  - "🇺🇸 美国 97"
-  - "🇺🇸 美国 98"
-  - "🇺🇸 美国 99"
-  - "🇺🇸 美国 100"
-  - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
-  - "🇺🇸 美国 109"
-  - "🇺🇸 美国 110"
-  - "🇺🇸 美国 111"
-  - "🇺🇸 美国 112"
-  - "🇺🇸 美国 113"
-  - "🇺🇸 美国 114"
-  - "🇺🇸 美国 115"
-  - "🇺🇸 美国 116"
-  - "🇺🇸 美国 117"
-  - "🇺🇸 美国 118"
-  - "🇺🇸 美国 119"
-  - "🇺🇸 美国 120"
-  - "🇺🇸 美国 121"
-  - "🇺🇸 美国 122"
-  - "🇺🇸 美国 123"
-  - "🇺🇸 美国 124"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -744,33 +392,37 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇨🇳 台湾 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
-  - "🇭🇰 香港 07"
-  - "🇭🇰 香港 08"
+  - "🇮🇱 以色列 01"
+  - "🇮🇷 伊朗 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
+  - "🇱🇻 拉脱维亚 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
   - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇵🇱 波兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -806,104 +458,12 @@ proxy-groups:
   - "🇺🇸 美国 33"
   - "🇺🇸 美国 34"
   - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
-  - "🇺🇸 美国 52"
-  - "🇺🇸 美国 53"
-  - "🇺🇸 美国 54"
-  - "🇺🇸 美国 55"
-  - "🇺🇸 美国 56"
-  - "🇺🇸 美国 57"
-  - "🇺🇸 美国 58"
-  - "🇺🇸 美国 59"
-  - "🇺🇸 美国 60"
-  - "🇺🇸 美国 61"
-  - "🇺🇸 美国 62"
-  - "🇺🇸 美国 63"
-  - "🇺🇸 美国 64"
-  - "🇺🇸 美国 65"
-  - "🇺🇸 美国 66"
-  - "🇺🇸 美国 67"
-  - "🇺🇸 美国 68"
-  - "🇺🇸 美国 69"
-  - "🇺🇸 美国 70"
-  - "🇺🇸 美国 71"
-  - "🇺🇸 美国 72"
-  - "🇺🇸 美国 73"
-  - "🇺🇸 美国 74"
-  - "🇺🇸 美国 75"
-  - "🇺🇸 美国 76"
-  - "🇺🇸 美国 77"
-  - "🇺🇸 美国 78"
-  - "🇺🇸 美国 79"
-  - "🇺🇸 美国 80"
-  - "🇺🇸 美国 81"
-  - "🇺🇸 美国 82"
-  - "🇺🇸 美国 83"
-  - "🇺🇸 美国 84"
-  - "🇺🇸 美国 85"
-  - "🇺🇸 美国 86"
-  - "🇺🇸 美国 87"
-  - "🇺🇸 美国 88"
-  - "🇺🇸 美国 89"
-  - "🇺🇸 美国 90"
-  - "🇺🇸 美国 91"
-  - "🇺🇸 美国 92"
-  - "🇺🇸 美国 93"
-  - "🇺🇸 美国 94"
-  - "🇺🇸 美国 95"
-  - "🇺🇸 美国 96"
-  - "🇺🇸 美国 97"
-  - "🇺🇸 美国 98"
-  - "🇺🇸 美国 99"
-  - "🇺🇸 美国 100"
-  - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
-  - "🇺🇸 美国 109"
-  - "🇺🇸 美国 110"
-  - "🇺🇸 美国 111"
-  - "🇺🇸 美国 112"
-  - "🇺🇸 美国 113"
-  - "🇺🇸 美国 114"
-  - "🇺🇸 美国 115"
-  - "🇺🇸 美国 116"
-  - "🇺🇸 美国 117"
-  - "🇺🇸 美国 118"
-  - "🇺🇸 美国 119"
-  - "🇺🇸 美国 120"
-  - "🇺🇸 美国 121"
-  - "🇺🇸 美国 122"
-  - "🇺🇸 美国 123"
-  - "🇺🇸 美国 124"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -914,33 +474,37 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇨🇳 台湾 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
-  - "🇭🇰 香港 07"
-  - "🇭🇰 香港 08"
+  - "🇮🇱 以色列 01"
+  - "🇮🇷 伊朗 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
+  - "🇱🇻 拉脱维亚 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
   - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇵🇱 波兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -976,104 +540,12 @@ proxy-groups:
   - "🇺🇸 美国 33"
   - "🇺🇸 美国 34"
   - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
-  - "🇺🇸 美国 52"
-  - "🇺🇸 美国 53"
-  - "🇺🇸 美国 54"
-  - "🇺🇸 美国 55"
-  - "🇺🇸 美国 56"
-  - "🇺🇸 美国 57"
-  - "🇺🇸 美国 58"
-  - "🇺🇸 美国 59"
-  - "🇺🇸 美国 60"
-  - "🇺🇸 美国 61"
-  - "🇺🇸 美国 62"
-  - "🇺🇸 美国 63"
-  - "🇺🇸 美国 64"
-  - "🇺🇸 美国 65"
-  - "🇺🇸 美国 66"
-  - "🇺🇸 美国 67"
-  - "🇺🇸 美国 68"
-  - "🇺🇸 美国 69"
-  - "🇺🇸 美国 70"
-  - "🇺🇸 美国 71"
-  - "🇺🇸 美国 72"
-  - "🇺🇸 美国 73"
-  - "🇺🇸 美国 74"
-  - "🇺🇸 美国 75"
-  - "🇺🇸 美国 76"
-  - "🇺🇸 美国 77"
-  - "🇺🇸 美国 78"
-  - "🇺🇸 美国 79"
-  - "🇺🇸 美国 80"
-  - "🇺🇸 美国 81"
-  - "🇺🇸 美国 82"
-  - "🇺🇸 美国 83"
-  - "🇺🇸 美国 84"
-  - "🇺🇸 美国 85"
-  - "🇺🇸 美国 86"
-  - "🇺🇸 美国 87"
-  - "🇺🇸 美国 88"
-  - "🇺🇸 美国 89"
-  - "🇺🇸 美国 90"
-  - "🇺🇸 美国 91"
-  - "🇺🇸 美国 92"
-  - "🇺🇸 美国 93"
-  - "🇺🇸 美国 94"
-  - "🇺🇸 美国 95"
-  - "🇺🇸 美国 96"
-  - "🇺🇸 美国 97"
-  - "🇺🇸 美国 98"
-  - "🇺🇸 美国 99"
-  - "🇺🇸 美国 100"
-  - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
-  - "🇺🇸 美国 109"
-  - "🇺🇸 美国 110"
-  - "🇺🇸 美国 111"
-  - "🇺🇸 美国 112"
-  - "🇺🇸 美国 113"
-  - "🇺🇸 美国 114"
-  - "🇺🇸 美国 115"
-  - "🇺🇸 美国 116"
-  - "🇺🇸 美国 117"
-  - "🇺🇸 美国 118"
-  - "🇺🇸 美国 119"
-  - "🇺🇸 美国 120"
-  - "🇺🇸 美国 121"
-  - "🇺🇸 美国 122"
-  - "🇺🇸 美国 123"
-  - "🇺🇸 美国 124"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -1084,33 +556,37 @@ proxy-groups:
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇨🇳 台湾 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
-  - "🇭🇰 香港 07"
-  - "🇭🇰 香港 08"
+  - "🇮🇱 以色列 01"
+  - "🇮🇷 伊朗 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
+  - "🇱🇻 拉脱维亚 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
   - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇵🇱 波兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1146,104 +622,12 @@ proxy-groups:
   - "🇺🇸 美国 33"
   - "🇺🇸 美国 34"
   - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
-  - "🇺🇸 美国 52"
-  - "🇺🇸 美国 53"
-  - "🇺🇸 美国 54"
-  - "🇺🇸 美国 55"
-  - "🇺🇸 美国 56"
-  - "🇺🇸 美国 57"
-  - "🇺🇸 美国 58"
-  - "🇺🇸 美国 59"
-  - "🇺🇸 美国 60"
-  - "🇺🇸 美国 61"
-  - "🇺🇸 美国 62"
-  - "🇺🇸 美国 63"
-  - "🇺🇸 美国 64"
-  - "🇺🇸 美国 65"
-  - "🇺🇸 美国 66"
-  - "🇺🇸 美国 67"
-  - "🇺🇸 美国 68"
-  - "🇺🇸 美国 69"
-  - "🇺🇸 美国 70"
-  - "🇺🇸 美国 71"
-  - "🇺🇸 美国 72"
-  - "🇺🇸 美国 73"
-  - "🇺🇸 美国 74"
-  - "🇺🇸 美国 75"
-  - "🇺🇸 美国 76"
-  - "🇺🇸 美国 77"
-  - "🇺🇸 美国 78"
-  - "🇺🇸 美国 79"
-  - "🇺🇸 美国 80"
-  - "🇺🇸 美国 81"
-  - "🇺🇸 美国 82"
-  - "🇺🇸 美国 83"
-  - "🇺🇸 美国 84"
-  - "🇺🇸 美国 85"
-  - "🇺🇸 美国 86"
-  - "🇺🇸 美国 87"
-  - "🇺🇸 美国 88"
-  - "🇺🇸 美国 89"
-  - "🇺🇸 美国 90"
-  - "🇺🇸 美国 91"
-  - "🇺🇸 美国 92"
-  - "🇺🇸 美国 93"
-  - "🇺🇸 美国 94"
-  - "🇺🇸 美国 95"
-  - "🇺🇸 美国 96"
-  - "🇺🇸 美国 97"
-  - "🇺🇸 美国 98"
-  - "🇺🇸 美国 99"
-  - "🇺🇸 美国 100"
-  - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
-  - "🇺🇸 美国 109"
-  - "🇺🇸 美国 110"
-  - "🇺🇸 美国 111"
-  - "🇺🇸 美国 112"
-  - "🇺🇸 美国 113"
-  - "🇺🇸 美国 114"
-  - "🇺🇸 美国 115"
-  - "🇺🇸 美国 116"
-  - "🇺🇸 美国 117"
-  - "🇺🇸 美国 118"
-  - "🇺🇸 美国 119"
-  - "🇺🇸 美国 120"
-  - "🇺🇸 美国 121"
-  - "🇺🇸 美国 122"
-  - "🇺🇸 美国 123"
-  - "🇺🇸 美国 124"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
