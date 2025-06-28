@@ -67,21 +67,26 @@ def load_config(config_path):
         raise
 
 
-def insert_proxies_to_config(config_data, proxies):
+def insert_proxies_to_config(config_data, new_proxies):
     try:
-        proxy_groups_index = None
-        for idx, key in enumerate(config_data.keys()):
-            if key == "proxy-groups":
-                proxy_groups_index = idx
-                break
-
-        if proxy_groups_index is not None:
-            items = list(config_data.items())
-            items.insert(proxy_groups_index, ("proxies", proxies))
-            config_data.clear()
-            config_data.update(dict(items))
+        if "proxies" in config_data:
+            existing_proxies = config_data.get("proxies", [])
+            config_data["proxies"] = existing_proxies + new_proxies
         else:
-            config_data["proxies"] = proxies
+            proxy_groups_index = None
+            for idx, key in enumerate(config_data.keys()):
+                if key == "proxy-groups":
+                    proxy_groups_index = idx
+                    break
+
+            if proxy_groups_index is not None:
+                items = list(config_data.items())
+                items.insert(proxy_groups_index, ("proxies", new_proxies))
+                config_data.clear()
+                config_data.update(dict(items))
+            else:
+                config_data["proxies"] = new_proxies
+
         return config_data
     except Exception as e:
         print(f"🎃插入代理到配置文件时发生错误：{e}")
@@ -93,16 +98,21 @@ def insert_names_into_proxy_groups(config_data):
         proxies = config_data.get("proxies", [])
         proxy_groups = config_data.get("proxy-groups", [])
 
-        proxy_names = [proxy.get("name") for proxy in proxies if "name" in proxy]
-        excluded_names = ["🎯 全球直连", "🛑 全球拦截", "🍃 应用净化"]
+        excluded_proxy_names = ["✨ fcm"]
+        excluded_group_names = ["🎯 全球直连", "🛑 全球拦截", "🍃 应用净化"]
+
+        proxy_names = [
+            proxy["name"]
+            for proxy in proxies
+            if "name" in proxy and proxy["name"] not in excluded_proxy_names
+        ]
 
         for group in proxy_groups:
-            if "proxies" in group:
-                if group.get("name") not in excluded_names:
-                    if not group["proxies"]:
-                        group["proxies"] = proxy_names
-                    else:
-                        group["proxies"].extend(proxy_names)
+            if "proxies" in group and group.get("name") not in excluded_group_names:
+                if not group["proxies"]:
+                    group["proxies"] = proxy_names
+                else:
+                    group["proxies"].extend(proxy_names)
 
         return config_data
     except Exception as e:
@@ -169,4 +179,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.url, args.result_path)
-
