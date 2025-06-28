@@ -64,6 +64,24 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
 - {name: "🇸🇬 新加坡 01", server: "120.232.153.40", port: 52152, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "64", cipher: "auto", tls: false, skip-cert-verify: false, udp: true, client-fingerprint: "chrome"}
 - {type: "hysteria2", name: "🇺🇸 美国 01", server: "209.141.47.127", port: 3234, password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
 - {type: "hysteria2", name: "🇺🇸 美国 02", server: "108.181.5.130", port: 4710, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
@@ -106,6 +124,7 @@ proxy-groups:
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
+  - "✨ fcm"
   - "PROXY"
   - "DIRECT"
   - "🇸🇬 新加坡 01"

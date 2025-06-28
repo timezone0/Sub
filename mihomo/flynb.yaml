@@ -64,6 +64,24 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
 - {name: "🇯🇵 日本 01", server: "103.232.213.170", port: 4990, client-fingerprint: "chrome", type: "http", username: "tqqlqvxj@mayorlogistic.com", password: "25d55ad283aa400af464c76d713c07ad", tls: true, skip-cert-verify: true, udp: true}
 - {name: "🇯🇵 日本 02", server: "156.231.117.17", port: 4399, client-fingerprint: "chrome", type: "http", username: "tqqlqvxj@mayorlogistic.com", password: "25d55ad283aa400af464c76d713c07ad", tls: true, skip-cert-verify: true, udp: true}
 - {name: "🇺🇸 美国 01", server: "lax04.wddc.akaedge.net", port: 8330, client-fingerprint: "chrome", type: "http", username: "tqqlqvxj@mayorlogistic.com", password: "25d55ad283aa400af464c76d713c07ad", tls: true, skip-cert-verify: true, udp: true, sni: "lax04.wddc.akaedge.net"}
@@ -182,6 +200,7 @@ proxy-groups:
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
+  - "✨ fcm"
   - "PROXY"
   - "DIRECT"
   - "🇯🇵 日本 01"

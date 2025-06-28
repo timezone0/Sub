@@ -64,6 +64,24 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
 - {name: "🇺🇸 美国 01", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
 - {name: "🇺🇸 美国 02", type: "trojan", server: "xd-js.timiwc.com", port: 21332, sni: "k65.tudou211.com", password: "2b1ed981-6547-4094-998b-06a3323d6f6c"}
 - {name: "🇺🇸 美国 03", type: "ss", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17004, cipher: "aes-256-gcm", password: "PNZAZ7XKT5SYVF5A"}
@@ -122,6 +140,7 @@ proxy-groups:
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
+  - "✨ fcm"
   - "PROXY"
   - "DIRECT"
   - "🇺🇸 美国 01"
