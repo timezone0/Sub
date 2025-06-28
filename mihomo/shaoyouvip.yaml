@@ -82,79 +82,86 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {client-fingerprint: "chrome", flow: "xtls-rprx-vision", name: "🇩🇪 德国 01", network: "tcp", port: 443, reality-opts: {public-key: "vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4", short-id: "fc7a526a7e61ba3b"}, server: "94.141.123.233", tls: true, type: "vless", udp: true, uuid: "ba26f084-9124-4524-add4-53fcfb928161", xudp: true, servername: "cdnjs.com"}
-- {cipher: "chacha20-ietf", name: "🇭🇰 香港 01", obfs: "http_simple", obfs-param: "dfde699935.microsoft.com", password: "ygUo3W", port: 9011, protocol: "auth_aes128_md5", protocol-param: "99935:vb3TTF", server: "cname04b-srmkx6ffsizssmjw.bestruisleipa.com", type: "ssr", udp: true}
-- {cipher: "chacha20-ietf", name: "🇸🇬 新加坡 01", obfs: "http_simple", obfs-param: "dfde699935.microsoft.com", password: "ygUo3W", port: 9041, protocol: "auth_aes128_md5", protocol-param: "99935:vb3TTF", server: "cnamepc02-d2zdrzg6ilecsynk.bestdosas.com", type: "ssr", udp: true}
-- {alterId: "0", cipher: "auto", name: "🇨🇳 台湾 01", network: "tcp", port: 45078, server: "haa.dashuai.cyou", skip-cert-verify: false, tls: false, type: "vmess", udp: true, uuid: "bdf94eca-b155-4bee-8290-412ef33a638c", xudp: true}
-- {alterId: "0", cipher: "auto", name: "🇺🇸 美国 01", network: "tcp", port: 45053, server: "xdd.dashuai.cyou", skip-cert-verify: false, tls: false, type: "vmess", udp: true, uuid: "bdf94eca-b155-4bee-8290-412ef33a638c", xudp: true}
-- {alterId: "0", cipher: "auto", name: "🇯🇵 日本 01", network: "tcp", port: 45057, server: "xdd.dashuai.cyou", skip-cert-verify: false, tls: false, type: "vmess", udp: true, uuid: "bdf94eca-b155-4bee-8290-412ef33a638c", xudp: true}
+- {alpn: ["h3"], auth_str: "dongtaiwang.com", down: "1000 Mbps", name: "🇺🇸 美国 01", port: 17549, server: "208.87.243.151", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria", up: "1000 Mbps", auth-str: "dongtaiwang.com"}
+- {alpn: ["h2", "http/1.1"], client-fingerprint: "randomized", name: "🇺🇸 美国 02", network: "ws", password: "8r<[9'l6hAO#8ZQi", port: 8443, server: "koma-yt.pages.dev", skip-cert-verify: false, sni: "Koma-YT.PAGeS.Dev", type: "trojan", udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"}, path: "/tro8sFW1S91B6sZrM1?ed=2560"}}
+- {name: "🇫🇮 芬兰 01", network: "ws", port: 2086, server: "104.17.147.22", type: "vless", udp: true, uuid: "Parsashonam", ws-opts: {headers: {Host: "ws.DafieMikoneTheWeekendPlay.SpAcE.", User-Agent: "Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36"}, path: "/---Parsashonam---Parsashonam---Parsashonam---Parsashonam---Parsashonam---Parsashonam---Parsashonam---Parsashonam---Parsashonam?ed=2048"}, xudp: true}
+- {name: "🇳🇱 荷兰 01", network: "ws", port: 80, server: "104.18.26.90", type: "vless", udp: true, uuid: "3824fba1-352a-44f6-89c3-66bacce658eb", ws-opts: {headers: {Host: "s4.main-2.workers.dev", User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"}, path: "/jljz7QlAQ15I0v5O?ed=2560"}, xudp: true}
+- {client-fingerprint: "chrome", flow: "xtls-rprx-vision", http-opts: {headers: {}, path: ["/"]}, name: "🇫🇷 法国 01", network: "tcp", port: 443, reality-opts: {public-key: "XThpnyytziagvWMwmxGuSQ0nqfUw2sosq49F2fUEzmk", short-id: "0ca18da2c8f9"}, server: "2.56.126.76", tls: true, type: "vless", udp: true, uuid: "7f97131b-0d9d-4be9-b7b4-3fa21403cffa", xudp: true, servername: "yahoo.com"}
+- {name: "🇩🇪 德国 01", network: "ws", port: 80, server: "Www.speedtest.net", type: "vless", udp: true, uuid: "786e8dbd-2563-4465-bdaa-249a6bcd9c98", ws-opts: {headers: {Host: "www.speedtest.net.XpnviP.ir.", User-Agent: "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"}, path: "/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048"}, xudp: true}
+- {client-fingerprint: "chrome", flow: "xtls-rprx-vision", name: "🇷🇺 俄罗斯 01", network: "tcp", port: 443, reality-opts: {public-key: "cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ", short-id: "0f917152a871e9c0"}, server: "212.233.95.52", tls: true, type: "vless", udp: true, uuid: "0a947205-01a0-4634-8e78-daf200d02def", xudp: true, servername: "maviks.eu"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇸🇬 新加坡 01"
-  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
-  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 02"
+  - "🇫🇮 芬兰 01"
+  - "🇳🇱 荷兰 01"
+  - "🇫🇷 法国 01"
+  - "🇩🇪 德国 01"
+  - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇸🇬 新加坡 01"
-  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
-  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 02"
+  - "🇫🇮 芬兰 01"
+  - "🇳🇱 荷兰 01"
+  - "🇫🇷 法国 01"
+  - "🇩🇪 德国 01"
+  - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇸🇬 新加坡 01"
-  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
-  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 02"
+  - "🇫🇮 芬兰 01"
+  - "🇳🇱 荷兰 01"
+  - "🇫🇷 法国 01"
+  - "🇩🇪 德国 01"
+  - "🇷🇺 俄罗斯 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇸🇬 新加坡 01"
-  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
-  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 02"
+  - "🇫🇮 芬兰 01"
+  - "🇳🇱 荷兰 01"
+  - "🇫🇷 法国 01"
+  - "🇩🇪 德国 01"
+  - "🇷🇺 俄罗斯 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇸🇬 新加坡 01"
-  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
-  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 02"
+  - "🇫🇮 芬兰 01"
+  - "🇳🇱 荷兰 01"
+  - "🇫🇷 法国 01"
+  - "🇩🇪 德国 01"
+  - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇸🇬 新加坡 01"
-  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
-  - "🇯🇵 日本 01"
+  - "🇺🇸 美国 02"
+  - "🇫🇮 芬兰 01"
+  - "🇳🇱 荷兰 01"
+  - "🇫🇷 法国 01"
+  - "🇩🇪 德国 01"
+  - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
