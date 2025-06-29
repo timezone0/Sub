@@ -94,15 +94,11 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇨🇦 加拿大 01"
+        "🇫🇷 法国 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -111,15 +107,11 @@
       "type": "urltest",
       "interval": "5m",
       "outbounds": [
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇨🇦 加拿大 01"
+        "🇫🇷 法国 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -128,15 +120,11 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇨🇦 加拿大 01"
+        "🇫🇷 法国 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,15 +135,11 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇨🇦 加拿大 01"
+        "🇫🇷 法国 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -165,15 +149,11 @@
       "outbounds": [
         "select",
         "direct",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇨🇦 加拿大 01"
+        "🇫🇷 法国 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,15 +163,11 @@
       "outbounds": [
         "direct",
         "select",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇨🇦 加拿大 01"
+        "🇫🇷 法国 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -226,10 +202,18 @@
       }
     },
     {
+      "tag": "🇲🇩 摩尔多瓦 01",
+      "type": "shadowsocks",
+      "server": "185.153.197.5",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
       "tag": "🇺🇸 美国 01",
       "type": "vmess",
-      "server": "v29.heduian.link",
-      "server_port": 30829,
+      "server": "111.26.109.79",
+      "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2,
@@ -243,96 +227,39 @@
     },
     {
       "tag": "🇺🇸 美国 02",
-      "type": "trojan",
-      "server": "xd-js.timiwc.com",
-      "server_port": 21332,
-      "password": "2b1ed981-6547-4094-998b-06a3323d6f6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "k65.tudou211.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 03",
-      "type": "shadowsocks",
-      "server": "ti3hyra4.slashdevslashnetslashtun.net",
-      "server_port": 17004,
-      "method": "aes-256-gcm",
-      "password": "PNZAZ7XKT5SYVF5A"
-    },
-    {
-      "tag": "🇺🇸 美国 05",
-      "type": "trojan",
-      "server": "36.156.184.33",
-      "server_port": 21332,
-      "password": "2b1ed981-6547-4094-998b-06a3323d6f6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "k65.tudou211.com",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 06",
-      "type": "trojan",
-      "server": "63.178.144.147",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 07",
       "type": "vmess",
-      "server": "111.26.109.79",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {},
-        "path": "/oooo"
-      }
-    },
-    {
-      "tag": "🇰🇷 韩国 01",
-      "type": "shadowsocks",
-      "server": "221.150.109.20",
-      "server_port": 50345,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "tag": "🇲🇩 摩尔多瓦 01",
-      "type": "shadowsocks",
-      "server": "185.153.197.5",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "tag": "🇨🇦 加拿大 01",
-      "type": "vmess",
-      "server": "v35.heduian.link",
-      "server_port": 30835,
+      "server": "v7.heduian.link",
+      "server_port": 30807,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "v35.heduian.link"
+          "Host": "v7.heduian.link"
         },
         "path": "/oooo"
       }
+    },
+    {
+      "tag": "🇫🇷 法国 01",
+      "type": "trojan",
+      "server": "fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com",
+      "server_port": 27235,
+      "password": "202c296a-f34a-11ef-80e5-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "shadowsocks",
+      "server": "125.141.31.72",
+      "server_port": 15098,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     }
   ],
   "route": {

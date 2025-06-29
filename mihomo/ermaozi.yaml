@@ -82,107 +82,93 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇺🇸 美国 01", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
-- {name: "🇺🇸 美国 02", type: "trojan", server: "xd-js.timiwc.com", port: 21332, sni: "k65.tudou211.com", password: "2b1ed981-6547-4094-998b-06a3323d6f6c"}
-- {name: "🇺🇸 美国 03", type: "ss", server: "ti3hyra4.slashdevslashnetslashtun.net", port: 17004, cipher: "aes-256-gcm", password: "PNZAZ7XKT5SYVF5A"}
-- {name: "🇺🇸 美国 04", type: "vmess", server: "89.44.112.34", port: 2535, uuid: "04d7c089-bbc5-4ef2-80ef-a0982cf33708", cipher: "aes-128-gcm", network: "tcp", fingerprint: "", alterId: 0}
-- {name: "🇺🇸 美国 05", type: "trojan", server: "36.156.184.33", port: 21332, sni: "k65.tudou211.com", password: "2b1ed981-6547-4094-998b-06a3323d6f6c"}
-- {name: "🇺🇸 美国 06", type: "trojan", server: "63.178.144.147", port: 22223, sni: "trojan.burgerip.co.uk", password: "telegram-id-directvpn", alpn: ["http/1.1"]}
-- {name: "🇺🇸 美国 07", type: "vmess", server: "111.26.109.79", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo"}, alterId: 2}
-- {name: "🇰🇷 韩国 01", type: "ss", server: "221.150.109.20", port: 50345, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
+- {name: "🇸🇪 瑞典 01", type: "vmess", server: "213.66.68.73", port: 62002, uuid: "5b9b682a-7811-4050-b287-254320f3ac9e", cipher: "auto", network: "tcp", alterId: 0}
 - {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "185.153.197.5", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇨🇦 加拿大 01", type: "vmess", server: "v35.heduian.link", port: 30835, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "v35.heduian.link"}}, alterId: 2}
+- {name: "🇺🇸 美国 01", type: "vmess", server: "111.26.109.79", port: 30807, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
+- {name: "🇺🇸 美国 02", type: "vmess", server: "v7.heduian.link", port: 30807, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v7.heduian.link"}}, alterId: 2}
+- {name: "🇫🇷 法国 01", type: "trojan", server: "fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com", port: 27235, password: "202c296a-f34a-11ef-80e5-f23c9164ca5d", skip-cert-verify: false, sni: "fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com"}
+- {name: "🇮🇷 伊朗 01", type: "ssr", server: "cnamelm-dwzksl7kzye3rdby.bestbrocciu.com", port: 9031, cipher: "chacha20-ietf", password: "ygUo3W", obfs: "http_simple", protocol: "auth_aes128_md5", group: "SSRProvider", obfs-param: "dfde699935.microsoft.com", protocol-param: "99935:vb3TTF"}
+- {name: "🇮🇷 伊朗 02", type: "ssr", server: "cnamelm-dwzksl7kzye3rdby.bestbrocciu.com", port: 9080, cipher: "chacha20-ietf", password: "ygUo3W", obfs: "http_simple", protocol: "auth_aes128_md5", group: "SSRProvider", obfs-param: "dfde699935.microsoft.com", protocol-param: "99935:vb3TTF"}
+- {name: "🇰🇷 韩国 01", type: "ss", server: "125.141.31.72", port: 15098, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇸🇪 瑞典 01"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
+  - "🇫🇷 法国 01"
+  - "🇮🇷 伊朗 01"
+  - "🇮🇷 伊朗 02"
   - "🇰🇷 韩国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇨🇦 加拿大 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
+  - "🇸🇪 瑞典 01"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
+  - "🇫🇷 法国 01"
+  - "🇮🇷 伊朗 01"
+  - "🇮🇷 伊朗 02"
   - "🇰🇷 韩国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇨🇦 加拿大 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇸🇪 瑞典 01"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
+  - "🇫🇷 法国 01"
+  - "🇮🇷 伊朗 01"
+  - "🇮🇷 伊朗 02"
   - "🇰🇷 韩国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇨🇦 加拿大 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇸🇪 瑞典 01"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
+  - "🇫🇷 法国 01"
+  - "🇮🇷 伊朗 01"
+  - "🇮🇷 伊朗 02"
   - "🇰🇷 韩国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇨🇦 加拿大 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇸🇪 瑞典 01"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
+  - "🇫🇷 法国 01"
+  - "🇮🇷 伊朗 01"
+  - "🇮🇷 伊朗 02"
   - "🇰🇷 韩国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇨🇦 加拿大 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇸🇪 瑞典 01"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
+  - "🇫🇷 法国 01"
+  - "🇮🇷 伊朗 01"
+  - "🇮🇷 伊朗 02"
   - "🇰🇷 韩国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇨🇦 加拿大 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
