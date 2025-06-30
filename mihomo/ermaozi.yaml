@@ -82,93 +82,107 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇸🇪 瑞典 01", type: "vmess", server: "213.66.68.73", port: 62002, uuid: "5b9b682a-7811-4050-b287-254320f3ac9e", cipher: "auto", network: "tcp", alterId: 0}
-- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "185.153.197.5", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 - {name: "🇺🇸 美国 01", type: "vmess", server: "111.26.109.79", port: 30807, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
-- {name: "🇺🇸 美国 02", type: "vmess", server: "v7.heduian.link", port: 30807, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v7.heduian.link"}}, alterId: 2}
-- {name: "🇫🇷 法国 01", type: "trojan", server: "fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com", port: 27235, password: "202c296a-f34a-11ef-80e5-f23c9164ca5d", skip-cert-verify: false, sni: "fc111582-syof40-t39hdu-1tf4x.cm5.cnkuaishou.com"}
-- {name: "🇮🇷 伊朗 01", type: "ssr", server: "cnamelm-dwzksl7kzye3rdby.bestbrocciu.com", port: 9031, cipher: "chacha20-ietf", password: "ygUo3W", obfs: "http_simple", protocol: "auth_aes128_md5", group: "SSRProvider", obfs-param: "dfde699935.microsoft.com", protocol-param: "99935:vb3TTF"}
-- {name: "🇮🇷 伊朗 02", type: "ssr", server: "cnamelm-dwzksl7kzye3rdby.bestbrocciu.com", port: 9080, cipher: "chacha20-ietf", password: "ygUo3W", obfs: "http_simple", protocol: "auth_aes128_md5", group: "SSRProvider", obfs-param: "dfde699935.microsoft.com", protocol-param: "99935:vb3TTF"}
-- {name: "🇰🇷 韩国 01", type: "ss", server: "125.141.31.72", port: 15098, cipher: "aes-256-cfb", password: "qwerREWQ@@"}
+- {name: "🇺🇸 美国 02", type: "trojan", server: "13.38.152.226", port: 22222, sni: "trojan.burgerip.co.uk", password: "telegram-id-privatevpns"}
+- {name: "🇺🇸 美国 03", type: "trojan", server: "mmmkiiuytr.iran.pp.ua", port: 443, udp: true, sni: "MMmkIiuYTR.IRaN.pP.Ua", password: "e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c", network: "ws", ws-opts: {path: "/s1XRkMWuneQkqtp5KKSues"}}
+- {name: "🇺🇸 美国 04", type: "vmess", server: "111.26.109.79", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo"}, alterId: 2}
+- {name: "🇺🇸 美国 05", type: "ss", server: "a.moeya.cc", port: 15028, cipher: "chacha20-ietf-poly1305", password: "9214b8e1-5eed-4b36-9ef5-42c2f915bd0e"}
+- {name: "🇺🇸 美国 06", type: "ss", server: "45.153.124.90", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇺🇸 美国 07", type: "vmess", server: "v7.heduian.link", port: 30807, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v7.heduian.link"}}, alterId: 2}
+- {name: "🇺🇸 美国 08", type: "ss", server: "38.165.233.93", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "91.132.94.200", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇲🇩 摩尔多瓦 02", type: "ss", server: "185.153.197.5", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇸🇪 瑞典 01"
-  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇫🇷 法国 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇲🇩 摩尔多瓦 01"
+  - "🇲🇩 摩尔多瓦 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
-  - "🇸🇪 瑞典 01"
-  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇫🇷 法国 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇲🇩 摩尔多瓦 01"
+  - "🇲🇩 摩尔多瓦 02"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇸🇪 瑞典 01"
-  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇫🇷 法国 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇲🇩 摩尔多瓦 01"
+  - "🇲🇩 摩尔多瓦 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇸🇪 瑞典 01"
-  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇫🇷 法国 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇲🇩 摩尔多瓦 01"
+  - "🇲🇩 摩尔多瓦 02"
 - name: "TELEGRAM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇸🇪 瑞典 01"
-  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇫🇷 法国 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇲🇩 摩尔多瓦 01"
+  - "🇲🇩 摩尔多瓦 02"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇸🇪 瑞典 01"
-  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇫🇷 法国 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇲🇩 摩尔多瓦 01"
+  - "🇲🇩 摩尔多瓦 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
