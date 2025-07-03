@@ -111,6 +111,7 @@
         "🇰🇷 韩国 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -141,6 +142,7 @@
         "🇰🇷 韩国 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -171,6 +173,7 @@
         "🇰🇷 韩国 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -203,6 +206,7 @@
         "🇰🇷 韩国 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -234,6 +238,7 @@
         "🇰🇷 韩国 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -265,6 +270,7 @@
         "🇰🇷 韩国 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -378,7 +384,7 @@
       "type": "vmess",
       "server": "hkt.gotochinatown.net",
       "server_port": 80,
-      "uuid": "b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b",
+      "uuid": "9b604194-17b7-11ef-80b0-f23c913c8d2b",
       "security": "auto",
       "alter_id": 2,
       "transport": {
@@ -397,26 +403,31 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507020089439-ZZW4Z8jpet.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202506101686237-pCdX1ZAl7Y.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 02",
-      "type": "trojan",
-      "server": "36.151.192.60",
-      "server_port": 2176,
-      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "type": "shadowsocks",
+      "server": "jsyd.piaomiaoxu.net",
+      "server_port": 44721,
+      "method": "aes-256-gcm",
+      "password": "781bb54c-f089-48df-8102-01288a81eb10"
     },
     {
       "tag": "🇯🇵 日本 03",
+      "type": "shadowsocks",
+      "server": "137.220.142.143",
+      "server_port": 636,
+      "method": "aes-256-gcm",
+      "password": "887bfcf43b52",
+      "plugin": "v2ray-plugin",
+      "multiplex": {
+        "enabled": true
+      },
+      "plugin_opts": "mode=websocket;host=jp6v1.lingjfjkm002.com;path=/svynueogf;tls;skip-cert-verify=false"
+    },
+    {
+      "tag": "🇯🇵 日本 04",
       "type": "trojan",
       "server": "36.151.192.61",
       "server_port": 4445,
@@ -430,19 +441,6 @@
           "fingerprint": "chrome"
         }
       }
-    },
-    {
-      "tag": "🇯🇵 日本 04",
-      "type": "shadowsocks",
-      "server": "137.220.191.38",
-      "server_port": 636,
-      "method": "aes-256-gcm",
-      "password": "823e135ed103",
-      "plugin": "v2ray-plugin",
-      "multiplex": {
-        "enabled": true
-      },
-      "plugin_opts": "mode=websocket;host=jp7v1.lingjfjkm002.com;path=/dchlbvrbbotc;tls;skip-cert-verify=false"
     },
     {
       "tag": "🇯🇵 日本 05",
@@ -479,12 +477,12 @@
     {
       "tag": "🇰🇷 韩国 02",
       "type": "trojan",
-      "server": "36.151.192.61",
-      "server_port": 4448,
-      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
+      "server": "13.125.64.14",
+      "server_port": 6668,
+      "password": "1a17b19d-4896-4531-af79-6e91d8ef8228",
       "tls": {
         "enabled": true,
-        "server_name": "www.baidu.com",
+        "server_name": "baidu.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -511,13 +509,13 @@
     {
       "tag": "🇰🇷 韩国 04",
       "type": "trojan",
-      "server": "3.36.117.121",
-      "server_port": 6668,
-      "password": "1a17b19d-4896-4531-af79-6e91d8ef8228",
+      "server": "36.151.192.60",
+      "server_port": 13967,
+      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
-        "server_name": "baidu.com",
-        "insecure": false,
+        "server_name": "www.baidu.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -557,17 +555,15 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
+      "tag": "🇸🇬 新加坡 03",
       "type": "shadowsocks",
-      "server": "cn01.efan8867801.xyz",
-      "server_port": 8774,
-      "method": "rc4-md5",
-      "password": "efanccyun",
-      "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507020089439-ZZW4Z8jpet.download.microsoft.com"
+      "server": "free-relay.t01.themars.top",
+      "server_port": 49900,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c376082c-95c3-452e-88e4-6bb6a5daab41"
     },
     {
-      "tag": "🇺🇸 美国 02",
+      "tag": "🇺🇸 美国 01",
       "type": "vmess",
       "server": "111.26.109.79",
       "server_port": 30828,
@@ -581,6 +577,16 @@
         },
         "path": "/oooo"
       }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "shadowsocks",
+      "server": "cn01.efan8867801.xyz",
+      "server_port": 8774,
+      "method": "rc4-md5",
+      "password": "efanccyun",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=202506101686237-pCdX1ZAl7Y.download.microsoft.com"
     },
     {
       "tag": "🇺🇸 美国 03",
