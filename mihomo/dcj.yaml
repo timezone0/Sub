@@ -82,99 +82,38 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "hkbn.xiao666666.site", port: 51001, type: "hysteria2", password: "94610fa2-7e11-427b-830b-d801bfc85497", auth: "94610fa2-7e11-427b-830b-d801bfc85497", sni: "hkbn.xiao666666.site", up: "100", down: "100", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 02", server: "1ec053e0-swd340-t4m86v-1s9pj.hgc1.tcpbbr.net", port: 8080, type: "vmess", uuid: "57f70d4e-6428-11ef-8f5f-f23c913c8d2b", alterId: "0", cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "1ec053e0-swd340-t4m86v-1s9pj.hgc1.tcpbbr.net"}}, client-fingerprint: "chrome", servername: "🇭🇰HK-1.36.218.107-4901 | 7.081MB"}
-- {name: "🇭🇰 香港 03", server: "64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net", port: 8080, type: "vmess", uuid: "8f7cb770-1305-11ee-b107-f23c91cfbbc9", alterId: "0", cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net"}}, client-fingerprint: "chrome", servername: "🇭🇰HK-1.36.218.107-4909 | 5.85MB"}
 - {type: "hysteria2", name: "🇺🇸 美国 01", server: "108.181.5.130", port: 4710, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 02", server: "209.141.47.127", port: 3234, password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 03", server: "152.67.234.151", port: 444, password: "sysadmin.sysadmin", sni: "mg2.wtn.wang", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 04", type: "vless", server: "210.61.97.241", port: 81, uuid: "55520747-311e-4015-83ce-be46e2060ce3", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 05", type: "hysteria", server: "108.181.24.77", port: 11512, auth-str: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], protocol: "udp", up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 06", server: "210.178.96.12", port: 50003, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {name: "🇺🇸 美国 07", server: "aus.pagate.top", port: 10086, type: "hysteria2", password: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", auth: "e6d8d743-a9bc-48c9-be99-8f3cc94d16e1", sni: "aus.pagate.top", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 08", type: "hysteria", server: "208.87.243.151", port: 17549, auth_str: "dongtaiwang.com", alpn: ["h3"], sni: "www.bing.com", skip-cert-verify: true, up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome", auth-str: "dongtaiwang.com"}
-- {type: "vless", name: "🇺🇸 美国 09", server: "104.16.120.49", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 10", server: "arvind.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {type: "vless", name: "🇺🇸 美国 11", server: "160.79.105.76", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 12", type: "vless", server: "89.116.250.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {type: "vless", name: "🇺🇸 美国 13", server: "104.16.229.50", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 14", server: "pranab.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {name: "🇺🇸 美国 15", type: "vless", server: "sage.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {type: "vless", name: "🇺🇸 美国 16", server: "thaddeus.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {type: "vless", name: "🇺🇸 美国 17", server: "217.163.76.84", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 18", type: "vless", server: "104.19.150.163", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "hysteria2", name: "🇺🇸 美国 19", server: "107.172.5.215", port: 443, password: "sysadmin.sysadmin", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 20", server: "185.133.35.22", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 21", server: "192.0.54.42", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 22", type: "vless", server: "104.18.80.243", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 23", server: "160.79.105.89", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 24", server: "104.18.82.55", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 25", server: "104.16.134.46", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 26", server: "104.18.86.131", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 27", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 28", server: "69.84.182.89", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 29", server: "63.141.128.140", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 30", type: "vless", server: "104.19.144.212", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 31", server: "92.243.74.115", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {type: "vless", name: "🇺🇸 美国 32", server: "198.41.208.23", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 33", server: "63.141.128.102", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 34", server: "104.16.242.72", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 35", server: "104.17.210.171", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 36", type: "vless", server: "213.109.205.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 37", server: "212.183.88.136", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 38", server: "104.17.102.95", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 39", server: "217.163.76.201", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 40", server: "kip.ns.cloudflare.com", port: 443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {type: "vless", name: "🇺🇸 美国 41", server: "104.16.132.56", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 42", server: "212.183.88.94", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 43", server: "160.79.104.102", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 44", server: "190.93.247.160", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 45", type: "vless", server: "104.17.223.37", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 46", server: "185.133.35.183", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 47", type: "vless", server: "108.165.152.82", port: 8443, uuid: "ee6774c0-9b19-4ff1-8b30-2da4b71977e2", tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "edmk.aimercc.filegear-sg.me"}}, client-fingerprint: "chrome", servername: "edmk.aimercc.filegear-sg.me"}
-- {type: "vless", name: "🇺🇸 美国 48", server: "212.183.88.16", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 49", server: "104.24.184.126", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 50", server: "162.159.153.217", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 51", server: "104.24.170.151", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "bv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "bv.bgm2024.dpdns.org"}
-- {name: "🇨🇳 台湾 01", server: "183.240.187.198", port: 34664, type: "ss", cipher: "2022-blake3-aes-128-gcm", password: "12xGRmcEy3TVETzE47MreA==", client-fingerprint: "chrome"}
-- {name: "🇦🇺 澳大利亚 01", type: "vless", server: "108.165.216.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 02", type: "vless", server: "185.251.82.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 03", type: "vless", server: "92.53.190.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 04", type: "vless", server: "185.174.138.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 05", type: "vless", server: "185.221.160.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 06", type: "vless", server: "45.131.5.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 07", type: "vless", server: "155.46.167.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 08", type: "vless", server: "156.238.19.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 09", type: "vless", server: "185.162.231.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 10", type: "vless", server: "192.65.217.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 11", type: "vless", server: "185.193.30.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇦🇺 澳大利亚 12", server: "77.232.140.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 13", type: "vless", server: "25.26.27.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇦🇺 澳大利亚 14", server: "45.131.7.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 15", type: "vless", server: "88.216.69.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 16", type: "vless", server: "91.124.127.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇦🇺 澳大利亚 17", server: "190.93.244.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 18", type: "vless", server: "185.251.81.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇦🇺 澳大利亚 19", server: "160.79.104.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 20", type: "vless", server: "31.43.179.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {type: "vless", name: "🇦🇺 澳大利亚 21", server: "92.60.74.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {name: "🇦🇺 澳大利亚 22", type: "vless", server: "103.133.1.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇦🇺 澳大利亚 23", server: "170.114.45.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇦🇺 澳大利亚 24", type: "vless", server: "46.202.30.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {name: "🇷🇺 俄罗斯 01", type: "hysteria2", server: "46.17.41.217", port: 30033, password: "dongtaiwang.com", fast-open: true, sni: "www.bing.com", skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇰🇷 韩国 01", type: "vless", server: "195.13.44.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇰🇷 韩国 02", type: "vless", server: "45.85.119.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /?ed=2560", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇳🇱 荷兰 01", server: "141.101.121.224", port: 8080, uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: false, client-fingerprint: "randomized", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "1750293123492.china.baidu.bilibili.china.aeko.cn"}, path: "/?ed=2048"}}
+- {type: "hysteria2", name: "🇺🇸 美国 02", server: "108.181.23.255", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", obfs-password: "", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 03", server: "208.87.242.215", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", obfs-password: "", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 04", server: "75.127.13.83", port: 45551, password: "d9fe1f5e-8f0f-41b6-95f6-d90aa0404924", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 05", server: "112.173.102.47", port: 11111, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/?ed=2560", headers: {Host: "zv.bgm2024.dpdns.org"}}, client-fingerprint: "chrome", servername: "zv.bgm2024.dpdns.org"}
+- {name: "🇺🇸 美国 06", type: "vless", server: "103.160.204.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 07", type: "vless", server: "104.129.166.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 08", type: "vless", server: "185.193.29.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 09", type: "vless", server: "25.129.199.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
+- {name: "🇺🇸 美国 10", type: "vless", server: "45.131.210.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇨🇳 台湾 01", server: "120.233.128.98", port: 30015, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "dwz1GtF7", tfo: false}
+- {type: "hysteria2", name: "🇫🇷 法国 01", server: "fr3.eyucdn.xyz", port: 2056, password: "37d19f09-5fa4-4ad0-8484-55050b582a29", sni: "fr3.eyucdn.xyz", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
 - {name: "🇻🇳 越南 01", server: "103.186.155.20", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", client-fingerprint: "chrome"}
-- {name: "🇯🇵 日本 01", server: "jsyd.piaomiaoxu.net", port: 44721, type: "ss", cipher: "aes-256-gcm", password: "781bb54c-f089-48df-8102-01288a81eb10", udp: true, client-fingerprint: "chrome"}
+- {name: "🇦🇺 澳大利亚 01", type: "vless", server: "195.245.221.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 02", type: "vless", server: "195.13.55.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 03", type: "vless", server: "162.251.82.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 04", type: "vless", server: "45.131.5.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 05", type: "vless", server: "199.181.197.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 06", type: "vless", server: "140.99.233.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 07", type: "vless", server: "185.162.231.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 08", type: "vless", server: "92.53.189.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 09", type: "vless", server: "170.114.46.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 10", type: "vless", server: "168.100.6.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 11", type: "vless", server: "5.10.215.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 12", type: "vless", server: "45.80.110.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 13", type: "vless", server: "161.145.150.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 01", type: "vless", server: "zoomgov.vipren.biz.id", port: 80, uuid: "d851bbb5-3c52-46ed-b85a-6ae478cf1811", tls: false, network: "ws", ws-opts: {path: "/146.235.19.79=28983", headers: {Host: "zoomgov.vipren.biz.id"}}, client-fingerprint: "chrome", servername: "zoomgov.vipren.biz.id"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -185,48 +124,9 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
-  - "🇺🇸 美国 16"
-  - "🇺🇸 美国 17"
-  - "🇺🇸 美国 18"
-  - "🇺🇸 美国 19"
-  - "🇺🇸 美国 20"
-  - "🇺🇸 美国 21"
-  - "🇺🇸 美国 22"
-  - "🇺🇸 美国 23"
-  - "🇺🇸 美国 24"
-  - "🇺🇸 美国 25"
-  - "🇺🇸 美国 26"
-  - "🇺🇸 美国 27"
-  - "🇺🇸 美国 28"
-  - "🇺🇸 美国 29"
-  - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
   - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇻🇳 越南 01"
   - "🇦🇺 澳大利亚 01"
   - "🇦🇺 澳大利亚 02"
   - "🇦🇺 澳大利亚 03"
@@ -240,32 +140,13 @@ proxy-groups:
   - "🇦🇺 澳大利亚 11"
   - "🇦🇺 澳大利亚 12"
   - "🇦🇺 澳大利亚 13"
-  - "🇦🇺 澳大利亚 14"
-  - "🇦🇺 澳大利亚 15"
-  - "🇦🇺 澳大利亚 16"
-  - "🇦🇺 澳大利亚 17"
-  - "🇦🇺 澳大利亚 18"
-  - "🇦🇺 澳大利亚 19"
-  - "🇦🇺 澳大利亚 20"
-  - "🇦🇺 澳大利亚 21"
-  - "🇦🇺 澳大利亚 22"
-  - "🇦🇺 澳大利亚 23"
-  - "🇦🇺 澳大利亚 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇳🇱 荷兰 01"
-  - "🇻🇳 越南 01"
-  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 300
   tolerance: 50
   proxies:
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -276,48 +157,9 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
-  - "🇺🇸 美国 16"
-  - "🇺🇸 美国 17"
-  - "🇺🇸 美国 18"
-  - "🇺🇸 美国 19"
-  - "🇺🇸 美国 20"
-  - "🇺🇸 美国 21"
-  - "🇺🇸 美国 22"
-  - "🇺🇸 美国 23"
-  - "🇺🇸 美国 24"
-  - "🇺🇸 美国 25"
-  - "🇺🇸 美国 26"
-  - "🇺🇸 美国 27"
-  - "🇺🇸 美国 28"
-  - "🇺🇸 美国 29"
-  - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
   - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇻🇳 越南 01"
   - "🇦🇺 澳大利亚 01"
   - "🇦🇺 澳大利亚 02"
   - "🇦🇺 澳大利亚 03"
@@ -331,30 +173,11 @@ proxy-groups:
   - "🇦🇺 澳大利亚 11"
   - "🇦🇺 澳大利亚 12"
   - "🇦🇺 澳大利亚 13"
-  - "🇦🇺 澳大利亚 14"
-  - "🇦🇺 澳大利亚 15"
-  - "🇦🇺 澳大利亚 16"
-  - "🇦🇺 澳大利亚 17"
-  - "🇦🇺 澳大利亚 18"
-  - "🇦🇺 澳大利亚 19"
-  - "🇦🇺 澳大利亚 20"
-  - "🇦🇺 澳大利亚 21"
-  - "🇦🇺 澳大利亚 22"
-  - "🇦🇺 澳大利亚 23"
-  - "🇦🇺 澳大利亚 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇳🇱 荷兰 01"
-  - "🇻🇳 越南 01"
-  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -365,48 +188,9 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
-  - "🇺🇸 美国 16"
-  - "🇺🇸 美国 17"
-  - "🇺🇸 美国 18"
-  - "🇺🇸 美国 19"
-  - "🇺🇸 美国 20"
-  - "🇺🇸 美国 21"
-  - "🇺🇸 美国 22"
-  - "🇺🇸 美国 23"
-  - "🇺🇸 美国 24"
-  - "🇺🇸 美国 25"
-  - "🇺🇸 美国 26"
-  - "🇺🇸 美国 27"
-  - "🇺🇸 美国 28"
-  - "🇺🇸 美国 29"
-  - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
   - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇻🇳 越南 01"
   - "🇦🇺 澳大利亚 01"
   - "🇦🇺 澳大利亚 02"
   - "🇦🇺 澳大利亚 03"
@@ -420,32 +204,13 @@ proxy-groups:
   - "🇦🇺 澳大利亚 11"
   - "🇦🇺 澳大利亚 12"
   - "🇦🇺 澳大利亚 13"
-  - "🇦🇺 澳大利亚 14"
-  - "🇦🇺 澳大利亚 15"
-  - "🇦🇺 澳大利亚 16"
-  - "🇦🇺 澳大利亚 17"
-  - "🇦🇺 澳大利亚 18"
-  - "🇦🇺 澳大利亚 19"
-  - "🇦🇺 澳大利亚 20"
-  - "🇦🇺 澳大利亚 21"
-  - "🇦🇺 澳大利亚 22"
-  - "🇦🇺 澳大利亚 23"
-  - "🇦🇺 澳大利亚 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇳🇱 荷兰 01"
-  - "🇻🇳 越南 01"
-  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -456,48 +221,9 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
-  - "🇺🇸 美国 16"
-  - "🇺🇸 美国 17"
-  - "🇺🇸 美国 18"
-  - "🇺🇸 美国 19"
-  - "🇺🇸 美国 20"
-  - "🇺🇸 美国 21"
-  - "🇺🇸 美国 22"
-  - "🇺🇸 美国 23"
-  - "🇺🇸 美国 24"
-  - "🇺🇸 美国 25"
-  - "🇺🇸 美国 26"
-  - "🇺🇸 美国 27"
-  - "🇺🇸 美国 28"
-  - "🇺🇸 美国 29"
-  - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
   - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇻🇳 越南 01"
   - "🇦🇺 澳大利亚 01"
   - "🇦🇺 澳大利亚 02"
   - "🇦🇺 澳大利亚 03"
@@ -511,31 +237,12 @@ proxy-groups:
   - "🇦🇺 澳大利亚 11"
   - "🇦🇺 澳大利亚 12"
   - "🇦🇺 澳大利亚 13"
-  - "🇦🇺 澳大利亚 14"
-  - "🇦🇺 澳大利亚 15"
-  - "🇦🇺 澳大利亚 16"
-  - "🇦🇺 澳大利亚 17"
-  - "🇦🇺 澳大利亚 18"
-  - "🇦🇺 澳大利亚 19"
-  - "🇦🇺 澳大利亚 20"
-  - "🇦🇺 澳大利亚 21"
-  - "🇦🇺 澳大利亚 22"
-  - "🇦🇺 澳大利亚 23"
-  - "🇦🇺 澳大利亚 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇳🇱 荷兰 01"
-  - "🇻🇳 越南 01"
-  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -546,48 +253,9 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
-  - "🇺🇸 美国 16"
-  - "🇺🇸 美国 17"
-  - "🇺🇸 美国 18"
-  - "🇺🇸 美国 19"
-  - "🇺🇸 美国 20"
-  - "🇺🇸 美国 21"
-  - "🇺🇸 美国 22"
-  - "🇺🇸 美国 23"
-  - "🇺🇸 美国 24"
-  - "🇺🇸 美国 25"
-  - "🇺🇸 美国 26"
-  - "🇺🇸 美国 27"
-  - "🇺🇸 美国 28"
-  - "🇺🇸 美国 29"
-  - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
   - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇻🇳 越南 01"
   - "🇦🇺 澳大利亚 01"
   - "🇦🇺 澳大利亚 02"
   - "🇦🇺 澳大利亚 03"
@@ -601,31 +269,12 @@ proxy-groups:
   - "🇦🇺 澳大利亚 11"
   - "🇦🇺 澳大利亚 12"
   - "🇦🇺 澳大利亚 13"
-  - "🇦🇺 澳大利亚 14"
-  - "🇦🇺 澳大利亚 15"
-  - "🇦🇺 澳大利亚 16"
-  - "🇦🇺 澳大利亚 17"
-  - "🇦🇺 澳大利亚 18"
-  - "🇦🇺 澳大利亚 19"
-  - "🇦🇺 澳大利亚 20"
-  - "🇦🇺 澳大利亚 21"
-  - "🇦🇺 澳大利亚 22"
-  - "🇦🇺 澳大利亚 23"
-  - "🇦🇺 澳大利亚 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇳🇱 荷兰 01"
-  - "🇻🇳 越南 01"
-  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -636,48 +285,9 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
-  - "🇺🇸 美国 12"
-  - "🇺🇸 美国 13"
-  - "🇺🇸 美国 14"
-  - "🇺🇸 美国 15"
-  - "🇺🇸 美国 16"
-  - "🇺🇸 美国 17"
-  - "🇺🇸 美国 18"
-  - "🇺🇸 美国 19"
-  - "🇺🇸 美国 20"
-  - "🇺🇸 美国 21"
-  - "🇺🇸 美国 22"
-  - "🇺🇸 美国 23"
-  - "🇺🇸 美国 24"
-  - "🇺🇸 美国 25"
-  - "🇺🇸 美国 26"
-  - "🇺🇸 美国 27"
-  - "🇺🇸 美国 28"
-  - "🇺🇸 美国 29"
-  - "🇺🇸 美国 30"
-  - "🇺🇸 美国 31"
-  - "🇺🇸 美国 32"
-  - "🇺🇸 美国 33"
-  - "🇺🇸 美国 34"
-  - "🇺🇸 美国 35"
-  - "🇺🇸 美国 36"
-  - "🇺🇸 美国 37"
-  - "🇺🇸 美国 38"
-  - "🇺🇸 美国 39"
-  - "🇺🇸 美国 40"
-  - "🇺🇸 美国 41"
-  - "🇺🇸 美国 42"
-  - "🇺🇸 美国 43"
-  - "🇺🇸 美国 44"
-  - "🇺🇸 美国 45"
-  - "🇺🇸 美国 46"
-  - "🇺🇸 美国 47"
-  - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇺🇸 美国 51"
   - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇻🇳 越南 01"
   - "🇦🇺 澳大利亚 01"
   - "🇦🇺 澳大利亚 02"
   - "🇦🇺 澳大利亚 03"
@@ -691,23 +301,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 11"
   - "🇦🇺 澳大利亚 12"
   - "🇦🇺 澳大利亚 13"
-  - "🇦🇺 澳大利亚 14"
-  - "🇦🇺 澳大利亚 15"
-  - "🇦🇺 澳大利亚 16"
-  - "🇦🇺 澳大利亚 17"
-  - "🇦🇺 澳大利亚 18"
-  - "🇦🇺 澳大利亚 19"
-  - "🇦🇺 澳大利亚 20"
-  - "🇦🇺 澳大利亚 21"
-  - "🇦🇺 澳大利亚 22"
-  - "🇦🇺 澳大利亚 23"
-  - "🇦🇺 澳大利亚 24"
-  - "🇷🇺 俄罗斯 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇳🇱 荷兰 01"
-  - "🇻🇳 越南 01"
-  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
