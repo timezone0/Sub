@@ -94,7 +94,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -103,7 +103,7 @@
       "type": "urltest",
       "interval": "5m",
       "outbounds": [
-        "🇺🇸 美国 01"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,7 +112,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,7 +123,7 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 01"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,7 +133,7 @@
       "outbounds": [
         "select",
         "direct",
-        "🇺🇸 美国 01"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -143,7 +143,7 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 01"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -178,18 +178,12 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
-      "type": "vmess",
-      "server": "111.26.109.79",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {},
-        "path": "/oooo"
-      }
+      "tag": "🇩🇪 德国 01",
+      "type": "shadowsocks",
+      "server": "45.87.175.58",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
     }
   ],
   "route": {
