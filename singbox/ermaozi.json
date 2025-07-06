@@ -94,7 +94,13 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 01"
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -103,7 +109,13 @@
       "type": "urltest",
       "interval": "5m",
       "outbounds": [
-        "🇩🇪 德国 01"
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,7 +124,13 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01"
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,7 +141,13 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇩🇪 德国 01"
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,7 +157,13 @@
       "outbounds": [
         "select",
         "direct",
-        "🇩🇪 德国 01"
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -143,7 +173,13 @@
       "outbounds": [
         "direct",
         "select",
-        "🇩🇪 德国 01"
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -178,12 +214,97 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
+      "tag": "🇷🇺 俄罗斯 01",
       "type": "shadowsocks",
-      "server": "45.87.175.58",
-      "server_port": 8080,
+      "server": "62.133.63.212",
+      "server_port": 57456,
       "method": "chacha20-ietf-poly1305",
-      "password": "oZIoA69Q8yhcQV8ka3Pa3A"
+      "password": "c40641c1f89e7acb"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 02",
+      "type": "shadowsocks",
+      "server": "tr.vpnsparta.pro",
+      "server_port": 57456,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c40641c1f89e7acb"
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "trojan",
+      "server": "104.21.7.147",
+      "server_port": 443,
+      "password": "4b33b482-25bc-49e4-b866-878c914d945a",
+      "tls": {
+        "enabled": true,
+        "server_name": "44444444.HuanGShANG.DPDNs.oRG",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "44444444.HuanGShANG.DPDNs.oRG"
+        },
+        "path": "/kzefUfBUzMsQY6zyyQCjn8kmnN0ehd"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "shadowsocks",
+      "server": "38.54.57.90",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "trojan",
+      "server": "e16abc19-sz1ds0-szd8vg-1ryup.cu2.plebai.net",
+      "server_port": 15229,
+      "password": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "e16abc19-sz1ds0-szd8vg-1ryup.cu2.plebai.net",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "trojan",
+      "server": "104.21.63.135",
+      "server_port": 443,
+      "password": "fa050497-fc2a-45ee-89c0-96670c4ecb65",
+      "tls": {
+        "enabled": true,
+        "server_name": "Rrr4.8906004.xYZ",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rrr4.8906004.xyz"
+        },
+        "path": "/DZxb5QZyWgQPuXTwt"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "trojan",
+      "server": "cccvffgty.444752.xyz",
+      "server_port": 443,
+      "password": "512d9674-db12-44ca-a1b5-654244549b65",
+      "tls": {
+        "enabled": true,
+        "server_name": "cccvffgty.444752.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cccvffgty.444752.xyz"
+        },
+        "path": "/HOi2k5ElZdeML7Ua7dX3JIrYk7zm"
+      }
     }
   ],
   "route": {
