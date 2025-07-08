@@ -104,7 +104,6 @@ proxies:
 - {name: "🇺🇸 美国 07", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 30534, server: "36.151.251.36", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 08", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 30495, server: "36.151.251.60", sin: "www.baidu.com", skip-cert-verify: true, type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 09", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 30495, server: "36.151.251.60", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 10", network: "ws", password: "Aimer", port: 2053, server: "199.34.228.50", skip-cert-verify: false, sni: "epml.ambercc.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epml.ambercc.filegear-sg.me"}, path: "/"}, client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇹🇭 泰国 01", network: "ws", port: 443, server: "38.47.96.30", skip-cert-verify: false, tls: true, type: "vmess", udp: true, uuid: "164a6ad0-476a-4bae-b78f-a3d37cf0f414", ws-opts: {headers: {Host: "th.lzj520hxw.dpdns.org"}, path: "/lzjjj"}, client-fingerprint: "chrome", servername: "th.lzj520hxw.dpdns.org"}
 - {cipher: "aes-256-cfb", name: "🇰🇷 韩国 01", password: "qwerREWQ@@", port: 15098, server: "125.141.31.72", type: "ss", client-fingerprint: "chrome"}
 - {name: "🇰🇷 韩国 02", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 45203, server: "36.151.251.61", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
@@ -119,10 +118,6 @@ proxies:
 - {alterId: 0, cipher: "none", name: "🇭🇰 香港 08", network: "kcp", port: 34833, server: "47.76.28.43", tls: false, type: "vmess", uuid: "dd0d30ae-a4d1-4d1e-8553-42bfff66fd27", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {name: "🇨🇳 台湾 01", password: "77c0e69d-f479-4636-bbe5-e79001d5708b", port: 42765, server: "gz-43e866.kaiqsz.com", skip-cert-verify: true, sni: "mmbiz1.redapricotcloud.com", type: "trojan", client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "f8f7aCzcPKbsF8p3", port: 989, server: "103.163.218.2", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇦🇲 亚美尼亚 01", network: "ws", password: "Aimer", port: 2083, server: "188.164.159.214", skip-cert-verify: false, sni: "epmk.ambercc.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epmk.ambercc.filegear-sg.me"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 01", network: "ws", password: "trojan", port: 8443, server: "109.234.211.66", skip-cert-verify: false, sni: "store.timimi.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "store.timimi.dpdns.org"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇰🇿 哈萨克斯坦 01", network: "ws", password: "Aimer", port: 443, server: "31.43.179.27", skip-cert-verify: false, sni: "epmk.ambercc.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epmk.ambercc.filegear-sg.me"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇷🇺 俄罗斯 01", network: "ws", password: "Aimer", port: 8443, server: "46.254.93.243", skip-cert-verify: false, sni: "epmk.ambercc.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epmk.ambercc.filegear-sg.me"}, path: "/"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -150,7 +145,6 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -165,10 +159,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇻🇳 越南 01"
-  - "🇦🇲 亚美尼亚 01"
-  - "🇪🇸 西班牙 01"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -197,7 +187,6 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -212,10 +201,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇻🇳 越南 01"
-  - "🇦🇲 亚美尼亚 01"
-  - "🇪🇸 西班牙 01"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -242,7 +227,6 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -257,10 +241,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇻🇳 越南 01"
-  - "🇦🇲 亚美尼亚 01"
-  - "🇪🇸 西班牙 01"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🇷🇺 俄罗斯 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -289,7 +269,6 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -304,10 +283,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇻🇳 越南 01"
-  - "🇦🇲 亚美尼亚 01"
-  - "🇪🇸 西班牙 01"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🇷🇺 俄罗斯 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -335,7 +310,6 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -350,10 +324,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇻🇳 越南 01"
-  - "🇦🇲 亚美尼亚 01"
-  - "🇪🇸 西班牙 01"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -381,7 +351,6 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -396,10 +365,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇻🇳 越南 01"
-  - "🇦🇲 亚美尼亚 01"
-  - "🇪🇸 西班牙 01"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
