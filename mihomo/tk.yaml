@@ -91,39 +91,41 @@ proxies:
 - {name: "🇷🇺 俄罗斯 06", type: "ss", server: "46.17.40.169", port: 30198, tls: false, password: "f34579d0148b2581", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇷🇺 俄罗斯 07", type: "ss", server: "195.58.49.147", port: 30109, tls: false, password: "560b7d65c1f4b12a", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇷🇺 俄罗斯 08", type: "ss", server: "176.32.35.51", port: 10601, tls: false, password: "40bdc52dcffa6942", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 09", type: "ss", server: "212.118.42.181", port: 9260, tls: false, password: "X0xJs7Bn4yXxePbQhfsKqc0CiAi5a7tcV6GFPCyYWn4=:LiWM+H+SWMrNnYZiOjpmOzWMW0BMYCBrLC57O5Ub+Ns=", ip-version: "dual", cipher: "2022-blake3-aes-256-gcm"}
-- {name: "🇷🇺 俄罗斯 10", type: "ss", server: "194.87.31.68", port: 443, tls: false, password: "R2UGad61FGO5", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
 - {name: "🇺🇸 美国 01", type: "ss", server: "212.192.221.27", port: 30198, tls: false, password: "2728fad650a5e43c", ip-version: "dual", cipher: "aes-256-gcm"}
-- {name: "🇺🇸 美国 02", type: "vmess", server: "172.233.229.91", port: 14102, uuid: "27ba87fc-583f-4763-9060-83cf0b9264db", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
-- {name: "🇺🇸 美国 03", type: "trojan", server: "104.21.6.179", port: 443, network: "ws", password: "6757b7d6-fa32-4708-b5d1-30e3cf928b51", sni: "ZZzzzZZ.890601.XYZ", skip-cert-verify: false, ws-opts: {path: "/l96MZ8se5Kl2p8BiMhP42l", headers: {}}, ip-version: "dual"}
-- {name: "🇺🇸 美国 04", type: "ss", server: "34.219.47.156", port: 443, tls: false, password: "awsps0501", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇺🇸 美国 05", type: "ss", server: "104.192.226.106", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
+- {name: "🇺🇸 美国 02", type: "hysteria2", server: "51.159.226.1", port: 50066, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, fast-open: false, ip-version: "dual"}
+- {name: "🇺🇸 美国 03", type: "ss", server: "104.192.226.106", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
+- {name: "🇺🇸 美国 04", type: "trojan", server: "104.21.6.179", port: 443, network: "ws", password: "6757b7d6-fa32-4708-b5d1-30e3cf928b51", sni: "ZZzzzZZ.890601.XYZ", skip-cert-verify: false, ws-opts: {path: "/l96MZ8se5Kl2p8BiMhP42l", headers: {}}, ip-version: "dual"}
+- {name: "🇺🇸 美国 05", type: "ss", server: "167.172.89.195", port: 8575, tls: false, password: "uewxc4bF87Gb2hJWtbMyt1", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
 - {name: "🇺🇸 美国 06", type: "vmess", server: "104.21.3.189", port: 2096, uuid: "350e2b01-d410-44a6-90ba-6483f1062972", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "rak2d1.89060004.xyz"}
-- {name: "🇺🇸 美国 07", type: "ss", server: "167.172.89.195", port: 8575, tls: false, password: "uewxc4bF87Gb2hJWtbMyt1", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
-- {name: "🇺🇸 美国 08", type: "vmess", server: "SSsXXXCvBnmjKi.931.Pp.uA", port: 443, uuid: "da128246-33b0-4c88-a44e-d91e9e0a1e05", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "SSsXXXCvBnmjKi.931.Pp.uA"}
-- {name: "🇺🇸 美国 09", type: "vmess", server: "104.21.20.162", port: 8443, uuid: "57e595e6-ef54-4e0d-b8df-e96db9612b99", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "orvps2.horsenma.net"}
-- {name: "🇺🇸 美国 10", type: "vmess", server: "orvps2.horsenma.net", port: 8443, uuid: "57e595e6-ef54-4e0d-b8df-e96db9612b99", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "orvps2.horsenma.net"}
-- {name: "🇺🇸 美国 11", type: "vmess", server: "1750158741.tencentapp.cn", port: 443, uuid: "d81a2b99-7eeb-4083-8261-9655ee61e1a7", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "free1.chiikawanetworkcfjiasucdn.us.kg"}
-- {name: "🇺🇸 美国 12", type: "vmess", server: "1750158741.tencentapp.cn", port: 443, uuid: "531d1634-c794-412a-89c7-f9ce6f1768f8", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "free1.chiikawanetworkcfjiasucdn.us.kg"}
-- {name: "🇺🇸 美国 13", type: "ss", server: "173.244.56.6", port: 443, tls: false, password: "shadowsocks", ip-version: "dual", cipher: "aes-128-gcm"}
-- {name: "🇺🇸 美国 14", type: "ss", server: "156.146.38.167", port: 443, tls: false, password: "shadowsocks", ip-version: "dual", cipher: "aes-128-gcm"}
-- {name: "🇺🇸 美国 15", type: "vmess", server: "186.190.215.193", port: 22324, uuid: "04621bae-ab36-11ec-b909-0242ac120002", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
-- {name: "🇺🇸 美国 16", type: "vmess", server: "104.18.149.76", port: 443, uuid: "de94cc0a-0592-4969-b1fc-97ea8f0ea0b3", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "us.kkp.me.eu.org"}
+- {name: "🇺🇸 美国 07", type: "vmess", server: "SSsXXXCvBnmjKi.931.Pp.uA", port: 443, uuid: "da128246-33b0-4c88-a44e-d91e9e0a1e05", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "SSsXXXCvBnmjKi.931.Pp.uA"}
+- {name: "🇺🇸 美国 08", type: "vmess", server: "104.21.96.1", port: 8443, uuid: "f10598e2-c606-4945-bfde-e5730756a2dd", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "us01.sh-cloudflare.sbs"}
+- {name: "🇺🇸 美国 09", type: "vmess", server: "172.233.229.91", port: 14102, uuid: "27ba87fc-583f-4763-9060-83cf0b9264db", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🇺🇸 美国 10", type: "vmess", server: "1750158741.tencentapp.cn", port: 443, uuid: "2c09d2f6-96da-46a1-b8e5-e8ea2c140ed5", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "free1.chiikawanetworkcfjiasucdn.us.kg"}
+- {name: "🇺🇸 美国 11", type: "vmess", server: "198.2.218.216", port: 44883, uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🇺🇸 美国 12", type: "ss", server: "167.172.85.14", port: 21964, tls: false, password: "UBvx4diZlSrPzl9hPLT2QU", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇺🇸 美国 13", type: "vmess", server: "186.190.215.193", port: 22324, uuid: "04621bae-ab36-11ec-b909-0242ac120002", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🇺🇸 美国 14", type: "vmess", server: "104.18.26.90", port: 80, uuid: "95abfa50-f1d9-4e7d-8a7a-50c2ee9a7365", network: "ws", tls: false, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}}
+- {name: "🇺🇸 美国 15", type: "vmess", server: "rak1ding.89060004.xyz", port: 2083, uuid: "75d96365-1229-4fc4-dbda-855717f876cf", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "rak1ding.89060004.xyz"}
+- {name: "🇺🇸 美国 16", type: "ss", server: "173.244.56.9", port: 443, tls: false, password: "shadowsocks", ip-version: "dual", cipher: "aes-128-gcm"}
+- {name: "🇺🇸 美国 17", type: "ss", server: "173.244.56.6", port: 443, tls: false, password: "shadowsocks", ip-version: "dual", cipher: "aes-128-gcm"}
+- {name: "🇺🇸 美国 18", type: "vmess", server: "cc2dash.89060004.xyz", port: 2096, uuid: "2fc37713-3017-497e-ff2d-965f826a19a3", network: "ws", tls: true, skip-cert-verify: true, ip-version: "dual", alterId: 0, cipher: "auto", ws-opts: {path: "/"}, servername: "cc2d1.89060004.xyz"}
+- {name: "🇺🇸 美国 19", type: "ss", server: "13.212.185.27", port: 443, tls: false, password: "qawszxc123", ip-version: "dual", cipher: "aes-256-cfb"}
 - {name: "🇪🇸 西班牙 01", type: "ss", server: "212.192.12.22", port: 30127, tls: false, password: "7e1dd4c55bf85da5", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇪🇸 西班牙 02", type: "ss", server: "212.192.15.124", port: 40109, tls: false, password: "82888bb98615435b", ip-version: "dual", cipher: "aes-256-gcm"}
 - {name: "🇦🇺 澳大利亚 01", type: "ss", server: "203.32.26.81", port: 19028, tls: false, password: "1928aa4d6e3c8df3", ip-version: "dual", cipher: "aes-256-gcm"}
+- {name: "🇦🇺 澳大利亚 02", type: "vmess", server: "172.105.174.237", port: 43183, uuid: "aa8b85cf-6153-457f-9eab-7ffe19caee47", network: "raw", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
 - {name: "🇬🇧 英国 01", type: "ss", server: "85.210.120.237", port: 443, tls: false, password: "Bog0ELmMM9DSxDdQ", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇬🇧 英国 02", type: "ss", server: "212.102.53.196", port: 443, tls: false, password: "shadowsocks", ip-version: "dual", cipher: "aes-128-gcm"}
 - {name: "🇳🇱 荷兰 01", type: "ss", server: "45.153.124.90", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
 - {name: "🇳🇱 荷兰 02", type: "vmess", server: "channel.dollardoon.com", port: 15709, uuid: "4ac39e8a-6d5c-48bb-b0d0-f633c829113e", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
-- {name: "🇳🇱 荷兰 03", type: "vmess", server: "channel.dollardoon.com", port: 15709, uuid: "4ac39e8a-6d5c-48bb-b0d0-f633c829113e", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
-- {name: "🇳🇱 荷兰 04", type: "ss", server: "45.139.24.24", port: 57456, tls: false, password: "360e21d21977dc11", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
-- {name: "🇳🇱 荷兰 05", type: "ss", server: "45.158.171.132", port: 8080, tls: false, password: "4a2rfixophdjffa8KVA4Aa", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
-- {name: "🇸🇬 新加坡 01", type: "ss", server: "13.250.5.111", port: 443, tls: false, password: "qawszxc123", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇰🇷 韩国 01", type: "ss", server: "52.79.154.42", port: 443, tls: false, password: "yijian0503", ip-version: "dual", cipher: "aes-256-cfb"}
+- {name: "🇳🇱 荷兰 03", type: "vmess", server: "83.149.84.145", port: 15709, uuid: "4ac39e8a-6d5c-48bb-b0d0-f633c829113e", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🇳🇱 荷兰 04", type: "ss", server: "45.158.171.132", port: 8080, tls: false, password: "cvII85TrW6n0OGyfpHVS1u", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "185.153.197.5", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
+- {name: "🇺🇦 乌克兰 01", type: "ss", server: "switcher-nick-croquet.freesocks.work", port: 443, tls: false, password: "9tqhMdIrTkgQ46PvhyAtMH", ip-version: "dual", cipher: "chacha20-ietf-poly1305"}
 - {name: "🇯🇵 日本 01", type: "ss", server: "13.231.22.148", port: 443, tls: false, password: "awsps0501", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇫🇷 法国 01", type: "ss", server: "195.154.185.174", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇫🇷 法国 02", type: "ss", server: "195.154.169.198", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
-- {name: "🇺🇦 乌克兰 01", type: "ss", server: "37.19.198.160", port: 443, tls: false, password: "shadowsocks", ip-version: "dual", cipher: "aes-128-gcm"}
+- {name: "🇸🇬 新加坡 01", type: "ss", server: "13.250.5.111", port: 443, tls: false, password: "qawszxc123", ip-version: "dual", cipher: "aes-256-cfb"}
+- {name: "🇮🇷 伊朗 01", type: "vmess", server: "0.numberone.sbs", port: 80, uuid: "e831ec46-4a9d-4eb8-847d-b06d0d818a31", network: "tcp", tls: false, ip-version: "dual", alterId: 0, cipher: "auto"}
+- {name: "🇸🇰 斯洛伐克 01", type: "ss", server: "156.146.40.194", port: 989, tls: false, password: "f8f7aCzcPKbsF8p3", ip-version: "dual", cipher: "aes-256-cfb"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -138,8 +140,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 06"
   - "🇷🇺 俄罗斯 07"
   - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -156,21 +156,25 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
   - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇸🇬 新加坡 01"
-  - "🇰🇷 韩国 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇦 乌克兰 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
+  - "🇮🇷 伊朗 01"
+  - "🇸🇰 斯洛伐克 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -186,8 +190,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 06"
   - "🇷🇺 俄罗斯 07"
   - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -204,21 +206,25 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
   - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇸🇬 新加坡 01"
-  - "🇰🇷 韩国 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇦 乌克兰 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
+  - "🇮🇷 伊朗 01"
+  - "🇸🇰 斯洛伐克 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -232,8 +238,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 06"
   - "🇷🇺 俄罗斯 07"
   - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -250,21 +254,25 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
   - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇸🇬 新加坡 01"
-  - "🇰🇷 韩国 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇦 乌克兰 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
+  - "🇮🇷 伊朗 01"
+  - "🇸🇰 斯洛伐克 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -280,8 +288,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 06"
   - "🇷🇺 俄罗斯 07"
   - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -298,21 +304,25 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
   - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇸🇬 新加坡 01"
-  - "🇰🇷 韩国 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇦 乌克兰 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
+  - "🇮🇷 伊朗 01"
+  - "🇸🇰 斯洛伐克 01"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -327,8 +337,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 06"
   - "🇷🇺 俄罗斯 07"
   - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -345,21 +353,25 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
   - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇸🇬 新加坡 01"
-  - "🇰🇷 韩国 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇦 乌克兰 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
+  - "🇮🇷 伊朗 01"
+  - "🇸🇰 斯洛伐克 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -374,8 +386,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 06"
   - "🇷🇺 俄罗斯 07"
   - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -392,21 +402,25 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
   - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇸🇬 新加坡 01"
-  - "🇰🇷 韩国 01"
-  - "🇯🇵 日本 01"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
+  - "🇲🇩 摩尔多瓦 01"
   - "🇺🇦 乌克兰 01"
+  - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
+  - "🇮🇷 伊朗 01"
+  - "🇸🇰 斯洛伐克 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
