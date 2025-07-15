@@ -115,14 +115,14 @@ proxies:
 - {name: "🇯🇵 日本 06", server: "bgp.xn--wstp0p.site", port: 38042, type: "trojan", password: "c4b13cfe-2952-415c-b18a-ff7113c7883d", sni: "aliyun.com", skip-cert-verify: true}
 - {name: "🇯🇵 日本 07", server: "57.180.29.92", port: 48603, type: "vless", uuid: "a4a5aedb-0509-4764-b46f-ede33469b3cf", tls: false, tfo: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇯🇵 日本 08", server: "47.79.34.232", port: 25635, type: "hysteria2", password: "jyEWQRbJATgWMu3XQtRvxb2h0", auth: "jyEWQRbJATgWMu3XQtRvxb2h0", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 09", server: "47.74.34.102", port: 27881, type: "hysteria2", password: "mpynzxNvDEczaQeSM7K7VO3RPQ", auth: "mpynzxNvDEczaQeSM7K7VO3RPQ", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 10", server: "47.245.53.59", port: 38163, type: "hysteria2", password: "em4ZXWfclor7Wwbc9eRAHFM", auth: "em4ZXWfclor7Wwbc9eRAHFM", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 09", server: "47.74.34.102", port: 53348, type: "hysteria2", password: "wl4HYN9PPKs8d8IzGIt4yKqt0", auth: "wl4HYN9PPKs8d8IzGIt4yKqt0", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 10", server: "47.245.53.59", port: 26404, type: "hysteria2", password: "kWlrCka5jzfKbD2z7ucwANEdZM", auth: "kWlrCka5jzfKbD2z7ucwANEdZM", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇯🇵 日本 11", server: "13.112.101.203", port: 35562, type: "hysteria2", password: "Y9vRstWcTHECGcKnayA2VYiUXs", auth: "Y9vRstWcTHECGcKnayA2VYiUXs", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇯🇵 日本 12", server: "104.18.45.17", port: 8443, type: "vmess", uuid: "52e8e60d-a4b9-441e-8022-6bb1195d5ca5", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "jpfdahufha.huaweiwuu5.xyz"}}, servername: "jpfdahufha.huaweiwuu5.xyz"}
 - {name: "🇯🇵 日本 13", server: "57.180.29.92", port: 48603, type: "vless", uuid: "a4a5aedb-0509-4764-b46f-ede33469b3cf", tls: false, tfo: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇯🇵 日本 14", server: "47.79.34.232", port: 25635, type: "hysteria2", password: "jyEWQRbJATgWMu3XQtRvxb2h0", auth: "jyEWQRbJATgWMu3XQtRvxb2h0", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 15", server: "47.74.34.102", port: 27881, type: "hysteria2", password: "mpynzxNvDEczaQeSM7K7VO3RPQ", auth: "mpynzxNvDEczaQeSM7K7VO3RPQ", sni: "bing.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 16", server: "47.245.53.59", port: 38163, type: "hysteria2", password: "em4ZXWfclor7Wwbc9eRAHFM", auth: "em4ZXWfclor7Wwbc9eRAHFM", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 15", server: "47.74.34.102", port: 53348, type: "hysteria2", password: "wl4HYN9PPKs8d8IzGIt4yKqt0", auth: "wl4HYN9PPKs8d8IzGIt4yKqt0", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 16", server: "47.245.53.59", port: 26404, type: "hysteria2", password: "kWlrCka5jzfKbD2z7ucwANEdZM", auth: "kWlrCka5jzfKbD2z7ucwANEdZM", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇯🇵 日本 17", server: "13.112.101.203", port: 35562, type: "hysteria2", password: "Y9vRstWcTHECGcKnayA2VYiUXs", auth: "Y9vRstWcTHECGcKnayA2VYiUXs", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇺🇸 美国 01", server: "44.244.4.50", port: 18507, type: "hysteria2", password: "KH6Oa5eFS8z4ZWT3LOiOSrljy0", auth: "KH6Oa5eFS8z4ZWT3LOiOSrljy0", skip-cert-verify: true}
 - {name: "🇺🇸 美国 02", server: "44.250.248.2", port: 22700, type: "hysteria2", password: "1XBaoV4RvpzHzAuGIzdaQKttzME", auth: "1XBaoV4RvpzHzAuGIzdaQKttzME", skip-cert-verify: true}
@@ -134,15 +134,23 @@ proxies:
 - {name: "🇺🇸 美国 08", server: "192.227.152.86", port: 61001, type: "hysteria2", password: "5CBqBh6MeDq6GajcilBiDg==", auth: "5CBqBh6MeDq6GajcilBiDg==", skip-cert-verify: true}
 - {name: "🇺🇸 美国 09", server: "192-227-152-86.nip.io", port: 61001, type: "hysteria2", password: "5CBqBh6MeDq6GajcilBiDg==", auth: "5CBqBh6MeDq6GajcilBiDg==", skip-cert-verify: true, sni: "192-227-152-86.nip.io"}
 - {name: "🇺🇸 美国 10", server: "108.181.5.130", port: 4710, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 11", server: "172.64.152.78", port: 8443, type: "vmess", uuid: "b3b28da5-a27d-4d33-ee13-dcdf5c7fc45b", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "vancouver-brunswick-mel-captured.trycloudflare.com"}}, servername: "vancouver-brunswick-mel-captured.trycloudflare.com"}
-- {name: "🇺🇸 美国 12", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "76fe2888-6fcc-40ac-fafe-02a77c0c651a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "watershed-convenience-lawyers-sanyo.trycloudflare.com"}}}
-- {name: "🇺🇸 美国 13", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "76fe2888-6fcc-40ac-fafe-02a77c0c651a", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "watershed-convenience-lawyers-sanyo.trycloudflare.com"}}, servername: "watershed-convenience-lawyers-sanyo.trycloudflare.com"}
-- {name: "🇺🇸 美国 14", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "249c6d09-3889-4e3a-89d0-4aa1d52032d2", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "entities-simple-tone-listing.trycloudflare.com"}}}
-- {name: "🇺🇸 美国 15", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "249c6d09-3889-4e3a-89d0-4aa1d52032d2", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "entities-simple-tone-listing.trycloudflare.com"}}, servername: "entities-simple-tone-listing.trycloudflare.com"}
-- {name: "🇺🇸 美国 16", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "c476f656-3178-4ec4-8cfd-ea5abf568672", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "independence-multiple-aus-rf.trycloudflare.com"}}}
-- {name: "🇺🇸 美国 17", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "c476f656-3178-4ec4-8cfd-ea5abf568672", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "independence-multiple-aus-rf.trycloudflare.com"}}, servername: "independence-multiple-aus-rf.trycloudflare.com"}
-- {name: "🇺🇸 美国 18", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "181f980d-326b-42f9-f279-263c89cec04f", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cho-farm-ratings-hk.trycloudflare.com"}}}
-- {name: "🇺🇸 美国 19", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "181f980d-326b-42f9-f279-263c89cec04f", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cho-farm-ratings-hk.trycloudflare.com"}}, servername: "cho-farm-ratings-hk.trycloudflare.com"}
+- {name: "🇺🇸 美国 11", server: "64.23.194.249", port: 24742, type: "hysteria2", password: "uyzMwZOG2JFOEXhjBnMX7bkf3o", auth: "uyzMwZOG2JFOEXhjBnMX7bkf3o", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 12", server: "146.190.51.60", port: 33763, type: "hysteria2", password: "J8Had1nwTgkNvWNN0WrucWq38", auth: "J8Had1nwTgkNvWNN0WrucWq38", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 13", server: "137.184.36.36", port: 25231, type: "hysteria2", password: "V9o2mn4BwochLNk4XkJobx0bY", auth: "V9o2mn4BwochLNk4XkJobx0bY", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 14", server: "192.241.182.193", port: 6526, type: "hysteria2", password: "dEvt5wSHGhobuYBR8kdo4aBvvqQ", auth: "dEvt5wSHGhobuYBR8kdo4aBvvqQ", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 15", server: "172.64.152.78", port: 8443, type: "vmess", uuid: "b3b28da5-a27d-4d33-ee13-dcdf5c7fc45b", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "vancouver-brunswick-mel-captured.trycloudflare.com"}}, servername: "vancouver-brunswick-mel-captured.trycloudflare.com"}
+- {name: "🇺🇸 美国 16", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "76fe2888-6fcc-40ac-fafe-02a77c0c651a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "watershed-convenience-lawyers-sanyo.trycloudflare.com"}}}
+- {name: "🇺🇸 美国 17", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "76fe2888-6fcc-40ac-fafe-02a77c0c651a", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "watershed-convenience-lawyers-sanyo.trycloudflare.com"}}, servername: "watershed-convenience-lawyers-sanyo.trycloudflare.com"}
+- {name: "🇺🇸 美国 18", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "249c6d09-3889-4e3a-89d0-4aa1d52032d2", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "entities-simple-tone-listing.trycloudflare.com"}}}
+- {name: "🇺🇸 美国 19", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "249c6d09-3889-4e3a-89d0-4aa1d52032d2", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "entities-simple-tone-listing.trycloudflare.com"}}, servername: "entities-simple-tone-listing.trycloudflare.com"}
+- {name: "🇺🇸 美国 20", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "c476f656-3178-4ec4-8cfd-ea5abf568672", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "independence-multiple-aus-rf.trycloudflare.com"}}}
+- {name: "🇺🇸 美国 21", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "c476f656-3178-4ec4-8cfd-ea5abf568672", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "independence-multiple-aus-rf.trycloudflare.com"}}, servername: "independence-multiple-aus-rf.trycloudflare.com"}
+- {name: "🇺🇸 美国 22", server: "www.visa.com.sg", port: 8880, type: "vmess", uuid: "181f980d-326b-42f9-f279-263c89cec04f", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cho-farm-ratings-hk.trycloudflare.com"}}}
+- {name: "🇺🇸 美国 23", server: "www.visa.com.sg", port: 8443, type: "vmess", uuid: "181f980d-326b-42f9-f279-263c89cec04f", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cho-farm-ratings-hk.trycloudflare.com"}}, servername: "cho-farm-ratings-hk.trycloudflare.com"}
+- {name: "🇺🇸 美国 24", server: "64.23.194.249", port: 24742, type: "hysteria2", password: "uyzMwZOG2JFOEXhjBnMX7bkf3o", auth: "uyzMwZOG2JFOEXhjBnMX7bkf3o", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 25", server: "146.190.51.60", port: 33763, type: "hysteria2", password: "J8Had1nwTgkNvWNN0WrucWq38", auth: "J8Had1nwTgkNvWNN0WrucWq38", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 26", server: "137.184.36.36", port: 25231, type: "hysteria2", password: "V9o2mn4BwochLNk4XkJobx0bY", auth: "V9o2mn4BwochLNk4XkJobx0bY", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 27", server: "192.241.182.193", port: 6526, type: "hysteria2", password: "dEvt5wSHGhobuYBR8kdo4aBvvqQ", auth: "dEvt5wSHGhobuYBR8kdo4aBvvqQ", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇭🇰 香港 01", server: "bgp.xn--wstp0p.site", port: 38011, type: "trojan", password: "c4b13cfe-2952-415c-b18a-ff7113c7883d", sni: "aliyun.com", skip-cert-verify: true}
 - {name: "🇭🇰 香港 02", server: "bgp.xn--wstp0p.site", port: 38014, type: "trojan", password: "c4b13cfe-2952-415c-b18a-ff7113c7883d", sni: "aliyun.com", skip-cert-verify: true}
 - {name: "🇭🇰 香港 03", server: "bgp.xn--wstp0p.site", port: 38013, type: "trojan", password: "c4b13cfe-2952-415c-b18a-ff7113c7883d", sni: "aliyun.com", skip-cert-verify: true}
@@ -227,6 +235,14 @@ proxy-groups:
   - "🇺🇸 美国 17"
   - "🇺🇸 美国 18"
   - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
+  - "🇺🇸 美国 23"
+  - "🇺🇸 美国 24"
+  - "🇺🇸 美国 25"
+  - "🇺🇸 美国 26"
+  - "🇺🇸 美国 27"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -312,6 +328,14 @@ proxy-groups:
   - "🇺🇸 美国 17"
   - "🇺🇸 美国 18"
   - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
+  - "🇺🇸 美国 23"
+  - "🇺🇸 美国 24"
+  - "🇺🇸 美国 25"
+  - "🇺🇸 美国 26"
+  - "🇺🇸 美国 27"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -395,6 +419,14 @@ proxy-groups:
   - "🇺🇸 美国 17"
   - "🇺🇸 美国 18"
   - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
+  - "🇺🇸 美国 23"
+  - "🇺🇸 美国 24"
+  - "🇺🇸 美国 25"
+  - "🇺🇸 美国 26"
+  - "🇺🇸 美国 27"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -480,6 +512,14 @@ proxy-groups:
   - "🇺🇸 美国 17"
   - "🇺🇸 美国 18"
   - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
+  - "🇺🇸 美国 23"
+  - "🇺🇸 美国 24"
+  - "🇺🇸 美国 25"
+  - "🇺🇸 美国 26"
+  - "🇺🇸 美国 27"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -564,6 +604,14 @@ proxy-groups:
   - "🇺🇸 美国 17"
   - "🇺🇸 美国 18"
   - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
+  - "🇺🇸 美国 23"
+  - "🇺🇸 美国 24"
+  - "🇺🇸 美国 25"
+  - "🇺🇸 美国 26"
+  - "🇺🇸 美国 27"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -648,6 +696,14 @@ proxy-groups:
   - "🇺🇸 美国 17"
   - "🇺🇸 美国 18"
   - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
+  - "🇺🇸 美国 23"
+  - "🇺🇸 美国 24"
+  - "🇺🇸 美国 25"
+  - "🇺🇸 美国 26"
+  - "🇺🇸 美国 27"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
