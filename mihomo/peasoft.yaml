@@ -99,7 +99,6 @@ proxies:
 - {cipher: "rc4-md5", name: "🇺🇸 美国 05", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202507121073737-O8zUIKjU25.download.microsoft.com", mode: "http"}, port: 8774, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 06", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 4447, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 07", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 13855, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 08", network: "ws", password: "tg-fq521free", port: 443, server: "198.62.62.67", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇹🇭 泰国 01", network: "ws", port: 443, server: "38.47.96.30", skip-cert-verify: false, tls: true, type: "vmess", udp: true, uuid: "164a6ad0-476a-4bae-b78f-a3d37cf0f414", ws-opts: {headers: {Host: "th.lzj520hxw.dpdns.org"}, path: "/lzjjj"}, client-fingerprint: "chrome", servername: "th.lzj520hxw.dpdns.org"}
 - {cipher: "aes-256-cfb", name: "🇰🇷 韩国 01", password: "qwerREWQ@@", port: 15098, server: "125.141.31.72", type: "ss", client-fingerprint: "chrome"}
 - {name: "🇰🇷 韩国 02", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 16158, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
@@ -116,8 +115,8 @@ proxies:
 - {alterId: 0, cipher: "auto", name: "🇨🇳 台湾 02", network: "tcp", port: 3687, server: "8077092c-sznls0-t0wpqd-4cwg.77.iwskwai.com", tls: false, type: "vmess", uuid: "03c1d503-4803-11ef-8f3d-f23c9313b177", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {cipher: "aes-256-gcm", name: "🇦🇹 奥地利 01", password: "TG:@Enkelte_notif&&TG:@Notif_Chat", port: 34045, server: "152.53.2.128", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.18", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇬🇧 英国 01", network: "ws", password: "trojan", port: 443, server: "91.193.58.0", skip-cert-verify: false, sni: "wahaha.yingyangkuaixian.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "wahaha.yingyangkuaixian.dpdns.org"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇷🇺 俄罗斯 01", network: "ws", password: "tg-fq521free", port: 443, server: "45.67.215.95", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇬🇧 英国 01", password: "74260628090146500", port: 443, server: "stirring-parakeet.shiner427.skin", skip-cert-verify: false, type: "trojan", udp: true, client-fingerprint: "chrome", sni: "stirring-parakeet.shiner427.skin"}
+- {name: "🇬🇧 英国 02", network: "ws", password: "trojan", port: 443, server: "91.193.58.0", skip-cert-verify: false, sni: "wahaha.yingyangkuaixian.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "wahaha.yingyangkuaixian.dpdns.org"}, path: "/"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -140,7 +139,6 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -158,7 +156,7 @@ proxy-groups:
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
   - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇬🇧 英国 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -182,7 +180,6 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -200,7 +197,7 @@ proxy-groups:
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
   - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇬🇧 英国 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -222,7 +219,6 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -240,7 +236,7 @@ proxy-groups:
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
   - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇬🇧 英国 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -264,7 +260,6 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -282,7 +277,7 @@ proxy-groups:
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
   - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇬🇧 英国 02"
 - name: "TELEGRAM"
   type: "select"
   proxies:
@@ -305,7 +300,6 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -323,7 +317,7 @@ proxy-groups:
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
   - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇬🇧 英国 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -346,7 +340,6 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
-  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
@@ -364,7 +357,7 @@ proxy-groups:
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
   - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇬🇧 英国 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
