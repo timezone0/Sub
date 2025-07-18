@@ -85,32 +85,38 @@ proxies:
 - {alterId: 64, cipher: "auto", name: "🇯🇵 日本 01", network: "ws", port: 1443, server: "sslvpn.51job.com", skip-cert-verify: true, tfo: false, tls: true, type: "vmess", udp: true, uuid: "a6a0d901-67e9-460a-90b5-634c5c4f9782", ws-opts: {headers: {Host: "centos7"}, path: "/634c5c4f9782"}, client-fingerprint: "chrome", servername: "sslvpn.51job.com"}
 - {cipher: "rc4-md5", name: "🇯🇵 日本 02", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202507121073737-O8zUIKjU25.download.microsoft.com", mode: "http"}, port: 8766, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {cipher: "aes-256-gcm", name: "🇯🇵 日本 03", password: "823e135ed103", plugin: "v2ray-plugin", plugin-opts: {host: "jp7v1.lingjfjkm002.com", mode: "websocket", mux: true, path: "/dchlbvrbbotc", skip-cert-verify: false, tls: true}, port: 636, server: "137.220.191.40", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇯🇵 日本 04", network: "kcp", port: 56428, server: "8.211.136.249", tls: false, type: "vmess", uuid: "2a37eb45-4cdd-4c2e-914e-ed2f972e4003", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇯🇵 日本 04", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 53248, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 05", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 41225, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇯🇵 日本 06", network: "kcp", port: 56428, server: "8.211.136.249", tls: false, type: "vmess", uuid: "2a37eb45-4cdd-4c2e-914e-ed2f972e4003", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {cipher: "aes-256-cfb", name: "🇸🇰 斯洛伐克 01", password: "f8f7aCzcPKbsF8p3", port: 989, server: "156.146.40.194", type: "ss", udp: true, client-fingerprint: "chrome"}
 - {alterId: 64, cipher: "auto", name: "🇸🇬 新加坡 01", port: 49291, server: "183.236.51.38", skip-cert-verify: false, tls: false, type: "vmess", udp: true, uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 02", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 44123, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 03", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 32765, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 01", password: "60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d", port: 15229, server: "391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net", skip-cert-verify: false, type: "trojan", udp: true, client-fingerprint: "chrome", sni: "391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net"}
 - {alterId: 2, cipher: "auto", name: "🇺🇸 美国 02", network: "ws", port: 30829, server: "v29.heduian.link", skip-cert-verify: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "ocbc.com"}, path: "/oooo"}, client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 03", password: "5e2f888c-68ef-11ef-96ca-f23c9164ca5d", port: 15229, server: "13c2c931-swin40-swy6li-tni2.cu.plebai.net", skip-cert-verify: false, sni: "13c2c931-swin40-swy6li-tni2.cu.plebai.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 04", password: "def14a51-e0d9-11ec-8429-f23c91cfbbc9", port: 15229, server: "4560c642-swin40-tjuq6l-wf62.cu.plebai.net", skip-cert-verify: true, sni: "4560c642-swin40-tjuq6l-wf62.cu.plebai.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {cipher: "rc4-md5", name: "🇺🇸 美国 05", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202507121073737-O8zUIKjU25.download.microsoft.com", mode: "http"}, port: 8774, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 06", network: "ws", password: "tg-fq521free", port: 443, server: "198.62.62.67", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 06", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 4447, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 07", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 13855, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 08", network: "ws", password: "tg-fq521free", port: 443, server: "198.62.62.67", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇹🇭 泰国 01", network: "ws", port: 443, server: "38.47.96.30", skip-cert-verify: false, tls: true, type: "vmess", udp: true, uuid: "164a6ad0-476a-4bae-b78f-a3d37cf0f414", ws-opts: {headers: {Host: "th.lzj520hxw.dpdns.org"}, path: "/lzjjj"}, client-fingerprint: "chrome", servername: "th.lzj520hxw.dpdns.org"}
 - {cipher: "aes-256-cfb", name: "🇰🇷 韩国 01", password: "qwerREWQ@@", port: 15098, server: "125.141.31.72", type: "ss", client-fingerprint: "chrome"}
+- {name: "🇰🇷 韩国 02", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 16158, server: "36.151.251.48", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", grpc-opts: {grpc-service-name: "vmess-grpc"}, name: "🇩🇪 德国 01", network: "grpc", port: 443, server: "de.vmess.comnpmjs.com", skip-cert-verify: false, tls: true, type: "vmess", uuid: "ceaaf653-9874-58c6-b100-092c01a1f73d", client-fingerprint: "chrome", servername: "de.vmess.comnpmjs.com"}
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 01", network: "ws", port: 8080, server: "bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net", skip-cert-verify: false, tls: false, type: "vmess", uuid: "62b7824e-47dc-11ef-9f2d-f23c9164ca5d", ws-opts: {headers: {Host: "broadcastlv.chat.bilibili.com"}, path: "/"}, client-fingerprint: "chrome"}
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 02", network: "ws", port: 30809, server: "v9.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {cipher: "aes-256-gcm", name: "🇭🇰 香港 03", password: "9bfdde71b4c0", plugin: "v2ray-plugin", plugin-opts: {host: "newroot2v1.dsjsapp.com", mode: "websocket", mux: true, path: "/cauejypbltqt", skip-cert-verify: false, tls: true}, port: 636, server: "103.103.245.158", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 04", password: "da631e61-bead-4c9c-8bd7-7bea82f736ae", port: 12221, server: "js-12f83a8c.kaiqsz.com", skip-cert-verify: false, sni: "nkrpjj.cn", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 05", password: "7367d04e-4c59-4dff-a50e-12e730a09891", port: 26193, server: "155.117.228.70", skip-cert-verify: true, type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 06", network: "kcp", port: 63101, server: "47.76.160.154", tls: false, type: "vmess", uuid: "ba47c516-0c18-49d5-9548-6370c835e163", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇭🇰 香港 04", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 1122, server: "36.151.192.13", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 05", password: "da631e61-bead-4c9c-8bd7-7bea82f736ae", port: 12221, server: "js-12f83a8c.kaiqsz.com", skip-cert-verify: false, sni: "nkrpjj.cn", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 06", password: "d0d08cddacc3190ea81b1b792e1b5fde", port: 9141, server: "36.151.192.13", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 07", password: "7367d04e-4c59-4dff-a50e-12e730a09891", port: 26193, server: "155.117.228.70", skip-cert-verify: true, type: "trojan", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "kcp", port: 63101, server: "47.76.160.154", tls: false, type: "vmess", uuid: "ba47c516-0c18-49d5-9548-6370c835e163", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {alterId: 0, cipher: "auto", name: "🇨🇳 台湾 01", port: 3687, server: "8077092c-sznls0-t0wpqd-4cwg.77.iwskwai.com", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "03c1d503-4803-11ef-8f3d-f23c9313b177", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇨🇳 台湾 02", network: "tcp", port: 3687, server: "8077092c-sznls0-t0wpqd-4cwg.77.iwskwai.com", tls: false, type: "vmess", uuid: "03c1d503-4803-11ef-8f3d-f23c9313b177", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {name: "🇨🇳 台湾 03", network: "ws", password: "ttfang", port: 81, server: "103.106.230.186", skip-cert-verify: true, sni: "ttfang.fange.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "ttfang.fange.me"}, path: "/"}, client-fingerprint: "chrome"}
 - {cipher: "aes-256-gcm", name: "🇦🇹 奥地利 01", password: "TG:@Enkelte_notif&&TG:@Notif_Chat", port: 34045, server: "152.53.2.128", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.18", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 01", network: "ws", password: "trojan", port: 8443, server: "109.234.211.66", skip-cert-verify: false, sni: "store.timimi.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "store.timimi.dpdns.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇬🇧 英国 01", network: "ws", password: "trojan", port: 443, server: "91.193.58.0", skip-cert-verify: false, sni: "wahaha.yingyangkuaixian.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "wahaha.yingyangkuaixian.dpdns.org"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇰🇿 哈萨克斯坦 01", network: "ws", password: "tg-fq521free", port: 443, server: "194.76.18.129", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇷🇺 俄罗斯 01", network: "ws", password: "tg-fq521free", port: 443, server: "45.67.215.95", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
@@ -121,16 +127,23 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇰 斯洛伐克 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇩🇪 德国 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
@@ -138,14 +151,13 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
-  - "🇪🇸 西班牙 01"
   - "🇬🇧 英国 01"
-  - "🇰🇿 哈萨克斯坦 01"
   - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
@@ -157,16 +169,23 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇰 斯洛伐克 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇩🇪 德国 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
@@ -174,14 +193,13 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
-  - "🇪🇸 西班牙 01"
   - "🇬🇧 英国 01"
-  - "🇰🇿 哈萨克斯坦 01"
   - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
@@ -191,16 +209,23 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇰 斯洛伐克 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇩🇪 德国 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
@@ -208,14 +233,13 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
-  - "🇪🇸 西班牙 01"
   - "🇬🇧 英国 01"
-  - "🇰🇿 哈萨克斯坦 01"
   - "🇷🇺 俄罗斯 01"
 - name: "GOOGLEFCM"
   type: "select"
@@ -227,16 +251,23 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇰 斯洛伐克 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇩🇪 德国 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
@@ -244,14 +275,13 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
-  - "🇪🇸 西班牙 01"
   - "🇬🇧 英国 01"
-  - "🇰🇿 哈萨克斯坦 01"
   - "🇷🇺 俄罗斯 01"
 - name: "TELEGRAM"
   type: "select"
@@ -262,16 +292,23 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇰 斯洛伐克 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇩🇪 德国 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
@@ -279,14 +316,13 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
-  - "🇪🇸 西班牙 01"
   - "🇬🇧 英国 01"
-  - "🇰🇿 哈萨克斯坦 01"
   - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
@@ -297,16 +333,23 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇰 斯洛伐克 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
   - "🇹🇭 泰国 01"
   - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇩🇪 德国 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
@@ -314,14 +357,13 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
   - "🇦🇹 奥地利 01"
   - "🇻🇳 越南 01"
-  - "🇪🇸 西班牙 01"
   - "🇬🇧 英国 01"
-  - "🇰🇿 哈萨克斯坦 01"
   - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
