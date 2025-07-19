@@ -1,0 +1,495 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
+- {name: "🇭🇰 香港 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 42628, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇭🇰 香港 02", server: "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com", port: 23502, type: "trojan", password: "4cda1623-6594-453f-ad42-e07df6e482b8", sni: "cn.bing.com", skip-cert-verify: true, udp: true}
+- {name: "🇭🇰 香港 03", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 18749, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇭🇰 香港 04", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 53838, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇭🇰 香港 05", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 16379, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇭🇰 香港 06", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 29229, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇨🇳 台湾 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 41781, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇨🇳 台湾 02", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 55777, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇯🇵 日本 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 46855, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇯🇵 日本 02", server: "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com", port: 23514, type: "trojan", password: "4cda1623-6594-453f-ad42-e07df6e482b8", sni: "cn.bing.com", skip-cert-verify: true, udp: true}
+- {name: "🇯🇵 日本 03", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 39569, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇯🇵 日本 04", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 39569, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇯🇵 日本 05", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 46855, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇰🇷 韩国 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 34461, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇰🇷 韩国 02", server: "hanguoshouer1.959555.xyz", port: 10000, type: "hysteria2", password: "2fdf5dca-6a50-48cd-a676-211631631bad", auth: "2fdf5dca-6a50-48cd-a676-211631631bad", sni: "hanguoshouer1.959555.xyz", skip-cert-verify: true, udp: true}
+- {name: "🇸🇬 新加坡 01", server: "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com", port: 23510, type: "trojan", password: "4cda1623-6594-453f-ad42-e07df6e482b8", sni: "cn.bing.com", skip-cert-verify: true, udp: true}
+- {name: "🇸🇬 新加坡 02", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 10086, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇷🇺 俄罗斯 01", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23144, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇷🇺 俄罗斯 02", server: "nexiaels.688997.xyz", port: 20757, type: "hysteria2", password: "f9a006f7-b8ec-49fe-b38d-ed3486e947c9", auth: "f9a006f7-b8ec-49fe-b38d-ed3486e947c9", sni: "nexiaels.688997.xyz", skip-cert-verify: true, obfs: "salamander", obfs-password: "ZDQxZDhjZDk4ZjAwYjIwNA==", udp: true}
+- {name: "🇷🇺 俄罗斯 03", server: "nexiaels.688997.xyz", port: 20757, type: "hysteria2", password: "f9a006f7-b8ec-49fe-b38d-ed3486e947c9", auth: "f9a006f7-b8ec-49fe-b38d-ed3486e947c9", sni: "nexiaels.688997.xyz", skip-cert-verify: true, obfs: "salamander", obfs-password: "ZDQxZDhjZDk4ZjAwYjIwNA==", udp: true}
+- {name: "🇬🇧 英国 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 43270, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇬🇧 英国 02", server: "xcuk.cokecloud.top", port: 18227, type: "vmess", uuid: "6f9c5300-70fa-4b5b-a946-95eed7d78241", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 34728, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇺🇸 美国 02", server: "cokecloudjp.cokecloud.top", port: 47393, type: "ss", cipher: "chacha20-ietf-poly1305", password: "6f9c5300-70fa-4b5b-a946-95eed7d78241", udp: true}
+- {name: "🇺🇸 美国 03", server: "cokecloudus.cokecloud.top", port: 25619, type: "vmess", uuid: "6f9c5300-70fa-4b5b-a946-95eed7d78241", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 04", server: "cokecloudjp.cokecloud.top", port: 17318, type: "ss", cipher: "chacha20-ietf-poly1305", password: "6f9c5300-70fa-4b5b-a946-95eed7d78241", udp: true}
+- {name: "🇺🇸 美国 05", server: "cokecloudjp.cokecloud.top", port: 40793, type: "ss", cipher: "chacha20-ietf-poly1305", password: "6f9c5300-70fa-4b5b-a946-95eed7d78241", udp: true}
+- {name: "🇺🇸 美国 06", server: "cokecloudus.cokecloud.top", port: 20067, type: "vmess", uuid: "6f9c5300-70fa-4b5b-a946-95eed7d78241", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 01", server: "de.youyacloud.me", port: 30189, type: "hysteria2", password: "c2f291eb-f044-4c1a-8723-5253bdac0ad0", auth: "c2f291eb-f044-4c1a-8723-5253bdac0ad0", sni: "de.youyacloud.me", up: 1000, down: 1000, skip-cert-verify: true, obfs: "salamander", obfs-password: "qBbeISsJ8AK48fZW", ports: "30101-30199"}
+- {name: "🇩🇪 德国 02", server: "de.youyacloud.me", port: 30141, type: "hysteria2", password: "c2f291eb-f044-4c1a-8723-5253bdac0ad0", auth: "c2f291eb-f044-4c1a-8723-5253bdac0ad0", sni: "de.youyacloud.me", up: 1000, down: 1000, skip-cert-verify: true, obfs: "salamander", obfs-password: "qBbeISsJ8AK48fZW", ports: "30101-30199"}
+- {name: "🇫🇷 法国 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 40104, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇫🇷 法国 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23118, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇨🇦 加拿大 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 13600, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇨🇦 加拿大 02", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 13600, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇹🇭 泰国 01", server: "th.youyacloud.me", port: 20613, type: "hysteria2", password: "c2f291eb-f044-4c1a-8723-5253bdac0ad0", auth: "c2f291eb-f044-4c1a-8723-5253bdac0ad0", sni: "th.youyacloud.me", up: 1000, down: 1000, skip-cert-verify: true, ports: "20601-20699"}
+- {name: "🇹🇭 泰国 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23126, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇹🇭 泰国 03", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23127, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇻🇳 越南 01", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23132, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇻🇳 越南 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23133, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇲🇾 马来 01", server: "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com", port: 23525, type: "trojan", password: "4cda1623-6594-453f-ad42-e07df6e482b8", sni: "cn.bing.com", skip-cert-verify: true, udp: true}
+- {name: "🇲🇾 马来 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23526, type: "trojan", password: "4cda1623-6594-453f-ad42-e07df6e482b8", sni: "cn.bing.com", skip-cert-verify: true, udp: true}
+- {name: "🇨🇭 瑞士 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 43168, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇸🇪 瑞典 01", server: "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com", port: 37442, type: "ss", cipher: "aes-256-gcm", password: "2fdf5dca-6a50-48cd-a676-211631631bad", udp: true}
+- {name: "🇦🇪 阿联酋 01", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23157, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇦🇪 阿联酋 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23158, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇱🇹 立陶宛 01", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23154, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇱🇹 立陶宛 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23153, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇳🇬 尼日利亚 01", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23149, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇳🇬 尼日利亚 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23150, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇦🇺 澳大利亚 01", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23124, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+- {name: "🇦🇺 澳大利亚 02", server: "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com", port: 23125, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4cda1623-6594-453f-ad42-e07df6e482b8", udp: true}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇹🇭 泰国 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇨🇭 瑞士 01"
+  - "🇸🇪 瑞典 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇱🇹 立陶宛 01"
+  - "🇱🇹 立陶宛 02"
+  - "🇳🇬 尼日利亚 01"
+  - "🇳🇬 尼日利亚 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 300
+  tolerance: 50
+  proxies:
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇹🇭 泰国 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇨🇭 瑞士 01"
+  - "🇸🇪 瑞典 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇱🇹 立陶宛 01"
+  - "🇱🇹 立陶宛 02"
+  - "🇳🇬 尼日利亚 01"
+  - "🇳🇬 尼日利亚 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇹🇭 泰国 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇨🇭 瑞士 01"
+  - "🇸🇪 瑞典 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇱🇹 立陶宛 01"
+  - "🇱🇹 立陶宛 02"
+  - "🇳🇬 尼日利亚 01"
+  - "🇳🇬 尼日利亚 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "✨ fcm"
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇹🇭 泰国 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇨🇭 瑞士 01"
+  - "🇸🇪 瑞典 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇱🇹 立陶宛 01"
+  - "🇱🇹 立陶宛 02"
+  - "🇳🇬 尼日利亚 01"
+  - "🇳🇬 尼日利亚 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+- name: "TELEGRAM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇹🇭 泰国 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇨🇭 瑞士 01"
+  - "🇸🇪 瑞典 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇱🇹 立陶宛 01"
+  - "🇱🇹 立陶宛 02"
+  - "🇳🇬 尼日利亚 01"
+  - "🇳🇬 尼日利亚 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇹🇭 泰国 03"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇨🇭 瑞士 01"
+  - "🇸🇪 瑞典 01"
+  - "🇦🇪 阿联酋 01"
+  - "🇦🇪 阿联酋 02"
+  - "🇱🇹 立陶宛 01"
+  - "🇱🇹 立陶宛 02"
+  - "🇳🇬 尼日利亚 01"
+  - "🇳🇬 尼日利亚 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT"
+- "DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT"
+- "DOMAIN-SUFFIX,szbdyd.com,REJECT"
+- "DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT"
+- "DOMAIN-SUFFIX,cf.gtlx.org,DIRECT"
+- "DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,PROXY"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TELEGRAM,TELEGRAM"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,TELEGRAM,TELEGRAM"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

@@ -1,0 +1,1067 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_suffix": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "45.135.135.229",
+      "server_port": 22078,
+      "uuid": "25fad6b4-e513-4e70-8435-f6ab39ac032a",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "45.135.135.229",
+      "server_port": 22078,
+      "uuid": "02d50ec6-c4ea-45ca-94cb-05ce4737cf78",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45053,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 80,
+      "password": "c5868f09-b936-4cf8-b533-5905a8b7cbc3",
+      "obfs": {
+        "type": "salamander",
+        "password": "OGU1NTEyMGE2ZDhkODdhOQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "vmess",
+      "server": "45.135.135.229",
+      "server_port": 25010,
+      "uuid": "25fad6b4-e513-4e70-8435-f6ab39ac032a",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 80,
+      "password": "02d50ec6-c4ea-45ca-94cb-05ce4737cf78",
+      "obfs": {
+        "type": "salamander",
+        "password": "OGU1NTEyMGE2ZDhkODdhOQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 07",
+      "type": "vmess",
+      "server": "45.135.135.229",
+      "server_port": 25010,
+      "uuid": "02d50ec6-c4ea-45ca-94cb-05ce4737cf78",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 08",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 31008,
+      "password": "02d50ec6-c4ea-45ca-94cb-05ce4737cf78",
+      "obfs": {
+        "type": "salamander",
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 09",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 33079,
+      "password": "25fad6b4-e513-4e70-8435-f6ab39ac032a",
+      "obfs": {
+        "type": "salamander",
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 10",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 80,
+      "password": "25fad6b4-e513-4e70-8435-f6ab39ac032a",
+      "obfs": {
+        "type": "salamander",
+        "password": "OGU1NTEyMGE2ZDhkODdhOQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 11",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 33079,
+      "password": "c5868f09-b936-4cf8-b533-5905a8b7cbc3",
+      "obfs": {
+        "type": "salamander",
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 12",
+      "type": "vmess",
+      "server": "45.135.135.229",
+      "server_port": 22078,
+      "uuid": "c5868f09-b936-4cf8-b533-5905a8b7cbc3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 13",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 31008,
+      "password": "25fad6b4-e513-4e70-8435-f6ab39ac032a",
+      "obfs": {
+        "type": "salamander",
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 14",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 31008,
+      "password": "c5868f09-b936-4cf8-b533-5905a8b7cbc3",
+      "obfs": {
+        "type": "salamander",
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇺🇸 美国 15",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45052,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇺🇸 美国 16",
+      "type": "vmess",
+      "server": "45.135.135.229",
+      "server_port": 25010,
+      "uuid": "c5868f09-b936-4cf8-b533-5905a8b7cbc3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 17",
+      "type": "hysteria2",
+      "server": "45.135.135.229",
+      "server_port": 33079,
+      "password": "02d50ec6-c4ea-45ca-94cb-05ce4737cf78",
+      "obfs": {
+        "type": "salamander",
+        "password": "NDhhNmY5YTY0MGYzOTgxYQ=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "45.135.135.229",
+        "insecure": true
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45055,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45054,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇹🇭 泰国 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45060,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇹🇭 泰国 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45061,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45077,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇨🇳 台湾 02",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45078,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇦🇺 澳大利亚 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45062,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇦🇺 澳大利亚 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45063,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45051,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vmess",
+      "server": "xg.dashuai.cyou",
+      "server_port": 19901,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45056,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45057,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇫🇷 法国 01",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45071,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇫🇷 法国 02",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45072,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇲🇾 马来 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45058,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇲🇾 马来 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45059,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45067,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇬🇧 英国 02",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45066,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇨🇦 加拿大 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45064,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇨🇦 加拿大 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45065,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45076,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇰🇷 韩国 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45075,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇮🇳 印度 01",
+      "type": "vmess",
+      "server": "haa.dashuai.cyou",
+      "server_port": 45074,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇮🇳 印度 02",
+      "type": "vmess",
+      "server": "xdd.dashuai.cyou",
+      "server_port": 45073,
+      "uuid": "38b8aa60-61c5-47e1-98a0-aeed70ae37d4",
+      "security": "auto",
+      "alter_id": 0
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com",
+          "autopatchhk.yuanshen.com",
+          "autopatchos.zenlesszonezero.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}

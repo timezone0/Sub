@@ -1,0 +1,1127 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_suffix": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇷🇺 俄罗斯 03",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇨🇭 瑞士 01",
+        "🇸🇪 瑞典 01",
+        "🇦🇪 阿联酋 01",
+        "🇦🇪 阿联酋 02",
+        "🇱🇹 立陶宛 01",
+        "🇱🇹 立陶宛 02",
+        "🇳🇬 尼日利亚 01",
+        "🇳🇬 尼日利亚 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "5m",
+      "outbounds": [
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇷🇺 俄罗斯 03",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇨🇭 瑞士 01",
+        "🇸🇪 瑞典 01",
+        "🇦🇪 阿联酋 01",
+        "🇦🇪 阿联酋 02",
+        "🇱🇹 立陶宛 01",
+        "🇱🇹 立陶宛 02",
+        "🇳🇬 尼日利亚 01",
+        "🇳🇬 尼日利亚 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇷🇺 俄罗斯 03",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇨🇭 瑞士 01",
+        "🇸🇪 瑞典 01",
+        "🇦🇪 阿联酋 01",
+        "🇦🇪 阿联酋 02",
+        "🇱🇹 立陶宛 01",
+        "🇱🇹 立陶宛 02",
+        "🇳🇬 尼日利亚 01",
+        "🇳🇬 尼日利亚 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇷🇺 俄罗斯 03",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇨🇭 瑞士 01",
+        "🇸🇪 瑞典 01",
+        "🇦🇪 阿联酋 01",
+        "🇦🇪 阿联酋 02",
+        "🇱🇹 立陶宛 01",
+        "🇱🇹 立陶宛 02",
+        "🇳🇬 尼日利亚 01",
+        "🇳🇬 尼日利亚 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "telegram",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇷🇺 俄罗斯 03",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇨🇭 瑞士 01",
+        "🇸🇪 瑞典 01",
+        "🇦🇪 阿联酋 01",
+        "🇦🇪 阿联酋 02",
+        "🇱🇹 立陶宛 01",
+        "🇱🇹 立陶宛 02",
+        "🇳🇬 尼日利亚 01",
+        "🇳🇬 尼日利亚 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02",
+        "🇷🇺 俄罗斯 03",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇲🇾 马来 01",
+        "🇲🇾 马来 02",
+        "🇨🇭 瑞士 01",
+        "🇸🇪 瑞典 01",
+        "🇦🇪 阿联酋 01",
+        "🇦🇪 阿联酋 02",
+        "🇱🇹 立陶宛 01",
+        "🇱🇹 立陶宛 02",
+        "🇳🇬 尼日利亚 01",
+        "🇳🇬 尼日利亚 02",
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 42628,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "trojan",
+      "server": "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com",
+      "server_port": 23502,
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cn.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 18749,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇭🇰 香港 04",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 53838,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇭🇰 香港 05",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 16379,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇭🇰 香港 06",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 29229,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 41781,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇨🇳 台湾 02",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 55777,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 46855,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "trojan",
+      "server": "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com",
+      "server_port": 23514,
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cn.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 39569,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 39569,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇯🇵 日本 05",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 46855,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 34461,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇰🇷 韩国 02",
+      "type": "hysteria2",
+      "server": "hanguoshouer1.959555.xyz",
+      "server_port": 10000,
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad",
+      "tls": {
+        "enabled": true,
+        "server_name": "hanguoshouer1.959555.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "trojan",
+      "server": "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com",
+      "server_port": 23510,
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cn.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 10086,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 01",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23144,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 02",
+      "type": "hysteria2",
+      "server": "nexiaels.688997.xyz",
+      "server_port": 20757,
+      "password": "f9a006f7-b8ec-49fe-b38d-ed3486e947c9",
+      "obfs": {
+        "type": "salamander",
+        "password": "ZDQxZDhjZDk4ZjAwYjIwNA=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "nexiaels.688997.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 03",
+      "type": "hysteria2",
+      "server": "nexiaels.688997.xyz",
+      "server_port": 20757,
+      "password": "f9a006f7-b8ec-49fe-b38d-ed3486e947c9",
+      "obfs": {
+        "type": "salamander",
+        "password": "ZDQxZDhjZDk4ZjAwYjIwNA=="
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "nexiaels.688997.xyz",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 43270,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇬🇧 英国 02",
+      "type": "vmess",
+      "server": "xcuk.cokecloud.top",
+      "server_port": 18227,
+      "uuid": "6f9c5300-70fa-4b5b-a946-95eed7d78241",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 34728,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "shadowsocks",
+      "server": "cokecloudjp.cokecloud.top",
+      "server_port": 47393,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6f9c5300-70fa-4b5b-a946-95eed7d78241"
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vmess",
+      "server": "cokecloudus.cokecloud.top",
+      "server_port": 25619,
+      "uuid": "6f9c5300-70fa-4b5b-a946-95eed7d78241",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "shadowsocks",
+      "server": "cokecloudjp.cokecloud.top",
+      "server_port": 17318,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6f9c5300-70fa-4b5b-a946-95eed7d78241"
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "shadowsocks",
+      "server": "cokecloudjp.cokecloud.top",
+      "server_port": 40793,
+      "method": "chacha20-ietf-poly1305",
+      "password": "6f9c5300-70fa-4b5b-a946-95eed7d78241"
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "vmess",
+      "server": "cokecloudus.cokecloud.top",
+      "server_port": 20067,
+      "uuid": "6f9c5300-70fa-4b5b-a946-95eed7d78241",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇩🇪 德国 01",
+      "type": "hysteria2",
+      "server": "de.youyacloud.me",
+      "server_port": 30189,
+      "password": "c2f291eb-f044-4c1a-8723-5253bdac0ad0",
+      "obfs": {
+        "type": "salamander",
+        "password": "qBbeISsJ8AK48fZW"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "de.youyacloud.me",
+        "insecure": true
+      },
+      "server_ports": [
+        "30101:30199"
+      ],
+      "up_mbps": 1000,
+      "down_mbps": 1000
+    },
+    {
+      "tag": "🇩🇪 德国 02",
+      "type": "hysteria2",
+      "server": "de.youyacloud.me",
+      "server_port": 30141,
+      "password": "c2f291eb-f044-4c1a-8723-5253bdac0ad0",
+      "obfs": {
+        "type": "salamander",
+        "password": "qBbeISsJ8AK48fZW"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "de.youyacloud.me",
+        "insecure": true
+      },
+      "server_ports": [
+        "30101:30199"
+      ],
+      "up_mbps": 1000,
+      "down_mbps": 1000
+    },
+    {
+      "tag": "🇫🇷 法国 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 40104,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇫🇷 法国 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23118,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇨🇦 加拿大 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 13600,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇨🇦 加拿大 02",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 13600,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇹🇭 泰国 01",
+      "type": "hysteria2",
+      "server": "th.youyacloud.me",
+      "server_port": 20613,
+      "password": "c2f291eb-f044-4c1a-8723-5253bdac0ad0",
+      "tls": {
+        "enabled": true,
+        "server_name": "th.youyacloud.me",
+        "insecure": true
+      },
+      "server_ports": [
+        "20601:20699"
+      ],
+      "up_mbps": 1000,
+      "down_mbps": 1000
+    },
+    {
+      "tag": "🇹🇭 泰国 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23126,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇹🇭 泰国 03",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23127,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇻🇳 越南 01",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23132,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇻🇳 越南 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23133,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇲🇾 马来 01",
+      "type": "trojan",
+      "server": "c3b2a1f0e9d8c7b6a5f4e3d2c1b0a9f8.1kmei.com",
+      "server_port": 23525,
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cn.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇲🇾 马来 02",
+      "type": "trojan",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23526,
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cn.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇭 瑞士 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 43168,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇸🇪 瑞典 01",
+      "type": "shadowsocks",
+      "server": "cme-challenge.vipaqy.xn--fiqs8s40dz2j.com",
+      "server_port": 37442,
+      "method": "aes-256-gcm",
+      "password": "2fdf5dca-6a50-48cd-a676-211631631bad"
+    },
+    {
+      "tag": "🇦🇪 阿联酋 01",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23157,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇦🇪 阿联酋 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23158,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇱🇹 立陶宛 01",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23154,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇱🇹 立陶宛 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23153,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇳🇬 尼日利亚 01",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23149,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇳🇬 尼日利亚 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23150,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇦🇺 澳大利亚 01",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23124,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    },
+    {
+      "tag": "🇦🇺 澳大利亚 02",
+      "type": "shadowsocks",
+      "server": "e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com",
+      "server_port": 23125,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4cda1623-6594-453f-ad42-e07df6e482b8"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com",
+          "autopatchhk.yuanshen.com",
+          "autopatchos.zenlesszonezero.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-telegram",
+          "geoip-telegram"
+        ],
+        "outbound": "telegram"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "domain_suffix": [
+              "ushd.xmsl.org",
+              "cf.gtlx.org"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-telegram",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
