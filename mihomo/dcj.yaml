@@ -82,171 +82,274 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇨🇳 台湾 01", server: "183.240.187.198", port: 34664, type: "ss", cipher: "2022-blake3-aes-128-gcm", password: "12xGRmcEy3TVETzE47MreA==", client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇳🇱 荷兰 01", server: "yapc-1.adamhayward.co.uk", port: 35000, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇳🇱 荷兰 02", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇳🇱 荷兰 03", server: "yapc-1.adamhayward.co.uk", port: 35200, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇳🇱 荷兰 04", server: "yapc-1.adamhayward.co.uk", port: 36600, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
-- {name: "🇳🇱 荷兰 05", server: "beesyar.org", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa", client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 01", server: "209.141.47.127", port: 3234, password: "65a43b6e-19c5-4fab-b960-d110a07d66a4", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 02", server: "120.232.153.121", port: 59222, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 03", server: "86.38.214.186", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 04", type: "hysteria", server: "208.87.243.151", port: 17549, auth_str: "dongtaiwang.com", alpn: ["h3"], sni: "www.bing.com", skip-cert-verify: true, up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome", auth-str: "dongtaiwang.com"}
-- {name: "🇺🇸 美国 05", server: "137.184.36.36", port: 25231, type: "hysteria2", password: "V9o2mn4BwochLNk4XkJobx0bY", auth: "V9o2mn4BwochLNk4XkJobx0bY", sni: "bing.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 06", server: "185.59.218.177", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 07", server: "62.72.166.251", port: 8880, type: "vless", uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {type: "vless", name: "🇺🇸 美国 08", server: "160.79.105.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 09", server: "45.81.58.236", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 10", type: "vless", server: "89.116.250.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 11", server: "46.254.92.186", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 12", server: "185.207.198.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 13", type: "hysteria", server: "108.181.24.77", port: 11512, auth-str: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], protocol: "udp", up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 14", server: "74.49.215.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 15", server: "104.16.42.209", port: 80, uuid: "be976fd2-e487-45b6-8f83-8d095c300fd8", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cold-limit-d61-ppal03.sobeyov632.workers.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 16", server: "us10.s2fjeyeeyafe.bond", port: 35789, type: "hysteria2", password: "196d331c-9a7d-4a8a-990e-f8babff27412", auth: "196d331c-9a7d-4a8a-990e-f8babff27412", sni: "us10.s2fjeyeeyafe.bond", skip-cert-verify: false, udp: true, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 17", server: "45.81.58.138", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 18", server: "45.153.7.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 19", server: "193.124.224.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 20", server: "108.181.5.130", port: 4710, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 21", type: "vless", server: "45.12.31.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {type: "vless", name: "🇺🇸 美国 22", server: "172.67.133.49", port: 8880, uuid: "6d0b71e4-b843-4acc-a239-884e422c9f33", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ponq0qxlwnh55dbid7ebc1j6ltxdcyer.mamadibaram.workers.dev"}, path: "/rAnzZ41YzhPlT0iC", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 23", server: "212.183.88.136", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xy.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xy.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 24", server: "77.37.33.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {name: "🇺🇸 美国 25", type: "vless", server: "91.193.58.151", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 26", server: "69.84.182.89", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xy.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xy.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 27", server: "63.141.128.140", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xu.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xu.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 28", server: "185.18.250.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 29", type: "vless", server: "130.250.137.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 30", server: "195.26.229.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 31", type: "vless", server: "91.193.58.217", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @MxlShare @WangCai2 /?ed", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 32", server: "130.250.137.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 33", server: "104.16.120.49", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xy.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xy.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 34", type: "vless", server: "91.193.58.127", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @MxlShare @WangCai2 /", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 35", server: "209.94.90.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 36", type: "vless", server: "91.193.58.42", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {name: "🇺🇸 美国 37", type: "vless", server: "91.193.58.250", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net/", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 38", server: "25.129.198.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 39", server: "199.34.230.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 40", type: "vless", server: "91.193.58.59", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 41", type: "vless", server: "91.193.58.192", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 42", type: "vless", server: "63.141.128.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 43", server: "91.193.58.104", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "us.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {name: "🇺🇸 美国 44", type: "vless", server: "161.145.150.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 45", type: "vless", server: "185.16.110.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /?ed=2560fp=chrome", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {type: "vless", name: "🇺🇸 美国 46", server: "91.193.58.245", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "us.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 47", server: "104.18.80.243", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xu.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xu.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 48", server: "104.24.161.187", port: 80, uuid: "575d2e5e-e7a4-48b8-a55e-aa38e16a3106", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "flat-bird-3aa7-ppal03.hesiwap437.workers.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇺🇸 美国 49", server: "185.193.30.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇺🇸 美国 50", server: "91.193.58.191", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "us.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 51", server: "104.16.132.56", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xu.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xu.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 52", server: "63.141.128.88", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xu.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xu.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 53", server: "185.133.35.22", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xy.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xy.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 54", type: "vless", server: "91.193.58.134", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 55", server: "212.183.88.94", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "xy.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "xy.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 56", server: "91.193.58.200", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "us.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
-- {type: "vless", name: "🇺🇸 美国 57", server: "194.152.44.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 58", type: "vless", server: "185.16.110.254", port: 8880, uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "yg.bantony199.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 59", type: "vless", server: "91.193.58.162", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramğŸ‡¨ğŸ‡³", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
-- {name: "🇺🇸 美国 60", server: "162.159.152.55", port: 2083, type: "vless", uuid: "47bd0b60-29ca-4755-a314-9f1ef398657e", tls: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "hong2333.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "hong2333.pages.dev"}
-- {type: "vless", name: "🇺🇸 美国 61", server: "62.72.166.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "bitget1.asdasd.click"}
-- {name: "🇰🇷 韩国 01", server: "74.49.214.186", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇰🇷 韩国 02", server: "185.148.104.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {name: "🇰🇷 韩国 03", type: "vless", server: "45.131.6.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇰🇷 韩国 04", server: "www.pcmag.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "mc.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "mc.ylks0033.dpdns.org"}
-- {type: "vless", name: "🇰🇷 韩国 05", server: "www.wto.org", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "mc.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "mc.ylks0033.dpdns.org"}
-- {type: "vless", name: "🇰🇷 韩国 06", server: "trevor.ns.cloudflare.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "mc.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "mc.ylks0033.dpdns.org"}
-- {type: "vless", name: "🇰🇷 韩国 07", server: "abdullah.ns.cloudflare.com", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "mc.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "mc.ylks0033.dpdns.org"}
-- {type: "vless", name: "🇰🇷 韩国 08", server: "198.62.62.156", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "mc.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "mc.ylks0033.dpdns.org"}
-- {type: "vless", name: "🇰🇷 韩国 09", server: "104.19.148.108", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cx.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "cx.ylks0033.dpdns.org"}
-- {type: "vless", name: "🇰🇷 韩国 10", server: "104.17.215.102", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cx.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "cx.ylks0033.dpdns.org"}
-- {name: "🇸🇬 新加坡 01", type: "vless", server: "91.193.58.128", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 02", type: "vless", server: "91.193.58.81", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 03", type: "vless", server: "91.193.58.11", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇸🇬 新加坡 04", type: "vless", server: "156.238.18.14", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 05", type: "vless", server: "91.193.58.171", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 06", type: "vless", server: "91.193.58.225", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 07", type: "vless", server: "156.238.18.42", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 08", server: "159.242.242.156", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇸🇬 新加坡 09", type: "vless", server: "91.193.58.18", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 10", type: "vless", server: "91.193.58.175", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 11", type: "vless", server: "91.193.58.173", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 12", type: "vless", server: "156.238.18.167", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 13", type: "vless", server: "156.238.18.234", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 14", type: "vless", server: "156.238.18.226", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 15", type: "vless", server: "91.193.58.28", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 16", type: "vless", server: "45.12.30.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 17", type: "vless", server: "91.193.58.164", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 18", type: "vless", server: "91.193.58.204", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 19", type: "vless", server: "91.193.58.71", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 20", type: "vless", server: "91.193.58.24", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 21", type: "vless", server: "91.193.58.22", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 22", type: "vless", server: "91.193.58.34", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 23", type: "vless", server: "91.193.58.118", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 24", type: "vless", server: "156.238.18.240", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 25", type: "vless", server: "91.193.58.55", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 26", type: "vless", server: "91.193.58.161", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 27", type: "vless", server: "216.116.134.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 28", type: "vless", server: "91.193.58.176", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 29", type: "vless", server: "91.193.58.211", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 30", type: "vless", server: "91.193.58.180", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 31", type: "vless", server: "156.238.18.63", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 32", type: "vless", server: "156.238.18.92", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 33", type: "vless", server: "156.238.18.197", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 34", type: "vless", server: "91.193.58.13", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 35", type: "vless", server: "91.193.58.77", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 36", type: "vless", server: "91.193.58.19", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 37", type: "vless", server: "91.193.58.139", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 38", type: "vless", server: "156.238.18.32", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 39", type: "vless", server: "91.193.58.131", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 40", type: "vless", server: "91.193.58.92", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 41", type: "vless", server: "91.193.58.85", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 42", type: "vless", server: "91.193.58.126", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 43", type: "vless", server: "91.193.58.70", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 44", type: "vless", server: "91.193.58.203", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 45", type: "vless", server: "156.238.18.233", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 46", type: "vless", server: "156.238.18.225", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 47", type: "vless", server: "156.238.18.180", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 48", type: "vless", server: "91.193.58.31", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 49", type: "vless", server: "91.193.58.130", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸|華東電訊|解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 50", type: "vless", server: "91.193.58.111", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇸🇬 新加坡 51", type: "vless", server: "156.238.18.187", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 52", type: "vless", server: "156.238.18.242", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 53", type: "vless", server: "91.193.58.142", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
-- {name: "🇫🇷 法国 01", type: "trojan", server: "gerxyz.bm04.xyz", port: 2053, udp: true, sni: "gerxyz.bm04.xyz", password: "94cf288d-f764-4ce9-a547-a7228144f056", network: "grpc", grpc-opts: {grpc-service-name: "qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048"}, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇫🇷 法国 02", server: "51.159.111.32", port: 31180, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇯🇵 日本 01", server: "45.67.215.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇯🇵 日本 02", server: "45.131.7.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇯🇵 日本 03", server: "14.102.229.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 04", server: "86.38.214.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 05", server: "185.174.138.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 06", server: "185.18.250.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 07", server: "104.254.140.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 08", server: "194.36.55.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 09", server: "102.177.176.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {type: "vless", name: "🇯🇵 日本 10", server: "188.42.89.213", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
-- {name: "🇦🇺 澳大利亚 01", type: "vless", server: "185.193.28.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇨🇦 加拿大 01", server: "185.221.160.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇨🇦 加拿大 02", server: "216.116.134.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇨🇦 加拿大 03", server: "104.17.223.37", port: 443, uuid: "06e4425e-a8cb-4b63-929f-2105604ab0a9", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "mc.ylks0033.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "mc.ylks0033.dpdns.org"}
-- {name: "🇮🇹 意大利 01", server: "45.131.210.177", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "Telegram-channel-WangCai2"}
-- {type: "vless", name: "🇮🇹 意大利 02", server: "135.84.75.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {type: "vless", name: "🇩🇪 德国 01", server: "104.16.86.73", port: 8880, uuid: "e9979910-79d1-4621-a93c-b2a579c44ba7", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "vngsupply.ip-ddns.com"}, path: "/"}, client-fingerprint: "chrome", servername: "vngsupply.ip-ddns.com"}
-- {name: "🇭🇰 香港 01", server: "103.245.229.29", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "hk.laoyoutiao.link"}}, udp: true, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
-- {type: "vless", name: "🇭🇰 香港 02", server: "155.46.167.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
-- {type: "vless", name: "🇭🇰 香港 03", server: "141.193.27.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
-- {name: "🇷🇺 俄罗斯 01", type: "hysteria", server: "185.22.155.71", port: 10803, auth_str: "dongtaiwang.com", alpn: ["h3"], sni: "www.bing.com", skip-cert-verify: true, up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome", auth-str: "dongtaiwang.com"}
-- {type: "ss", server: "152.53.2.128", port: 34045, cipher: "aes-256-gcm", password: "TG:@Enkelte_notif&&TG:@Notif_Chat", name: "🇦🇹 奥地利 01", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 01", server: "120.232.153.121", port: 59222, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: "0", cipher: "auto", tls: false, skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 02", server: "us10.s2fjeyeeyafe.bond", port: 35789, type: "hysteria2", password: "196d331c-9a7d-4a8a-990e-f8babff27412", auth: "196d331c-9a7d-4a8a-990e-f8babff27412", sni: "us10.s2fjeyeeyafe.bond", skip-cert-verify: false, udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 03", server: "208.87.242.215", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", obfs-password: "", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 04", server: "108.181.23.255", port: 443, password: "b8bd42a9-551f-419d-b70d-4aefdd2cb074", sni: "www.bing.com", obfs-password: "", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 05", server: "165.140.166.78", port: 41003, password: "Jj0FrgSd85", obfs: "salamander", obfs-password: "v2raybluecrystal3", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 06", server: "137.184.36.36", port: 25231, type: "hysteria2", password: "V9o2mn4BwochLNk4XkJobx0bY", auth: "V9o2mn4BwochLNk4XkJobx0bY", sni: "bing.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 07", server: "165.140.166.78", port: 50163, password: "Jj0FrgSd85", obfs: "salamander", obfs-password: "v2raybluecrystal", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 08", server: "88.216.69.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 09", server: "74.49.214.186", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 10", server: "45.85.118.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 11", server: "188.42.89.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 12", type: "vless", server: "135.84.74.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
+- {name: "🇺🇸 美国 13", server: "156.238.18.212", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @MxlShare @WangCai2 /", headers: {Host: "us.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 14", server: "45.149.12.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 15", server: "188.244.122.177", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 16", server: "208.87.243.187", port: 40528, type: "hysteria", auth_str: "dongtaiwang.com", auth-str: "dongtaiwang.com", up: "100", down: "100", protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], udp: true, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 17", server: "103.169.142.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 18", server: "154.83.2.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 19", server: "46.254.92.186", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 20", type: "hysteria", server: "208.87.243.151", port: 17549, auth_str: "dongtaiwang.com", alpn: ["h3"], sni: "www.bing.com", skip-cert-verify: true, up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome", auth-str: "dongtaiwang.com"}
+- {name: "🇺🇸 美国 21", type: "vless", server: "46.254.93.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 22", type: "vless", server: "45.131.211.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 23", type: "vless", server: "190.93.244.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 24", server: "66.235.200.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 25", server: "45.8.211.186", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 26", server: "185.221.160.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 27", type: "hysteria", server: "108.181.24.77", port: 11512, auth-str: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"], protocol: "udp", up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 28", server: "185.162.228.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 29", type: "vless", server: "45.12.31.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
+- {type: "vless", name: "🇺🇸 美国 30", server: "45.153.7.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 31", server: "89.116.161.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 32", server: "45.131.210.177", port: 8880, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 33", server: "45.85.118.0", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 34", server: "45.67.215.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 35", server: "46.202.30.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 36", type: "vless", server: "167.68.4.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 37", server: "185.148.105.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 38", server: "185.251.81.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 39", type: "vless", server: "212.183.88.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 40", type: "vless", server: "91.193.58.151", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 41", server: "156.238.18.106", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "yd.laoyoutiao.link"}, path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 42", type: "vless", server: "141.193.213.175", port: 80, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/?ed", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 43", server: "185.251.82.20", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "us.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 44", server: "188.42.89.188", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 45", server: "92.53.188.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramÑ€Ğ¯Ğ—Â®Ñ€Ğ¯Ğ—â‰¥ @WangCai2"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
+- {name: "🇺🇸 美国 46", type: "vless", server: "91.193.58.37", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 47", server: "167.68.4.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 48", type: "vless", server: "45.8.211.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸|華東電訊|解鎖Netflix", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
+- {type: "vless", name: "🇺🇸 美国 49", server: "209.94.90.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 50", type: "vless", server: "199.34.229.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 51", server: "130.250.137.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 52", server: "185.18.250.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 53", server: "195.26.229.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 54", type: "vless", server: "185.16.110.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 55", server: "195.13.55.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 56", type: "vless", server: "91.193.58.217", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @MxlShare @WangCai2 /?ed", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 57", server: "185.176.26.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "hysteria2", name: "🇺🇸 美国 58", server: "108.181.5.130", port: 4710, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 59", type: "vless", server: "91.193.58.59", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "us.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "us.laoyoutiao.link"}
+- {name: "🇺🇸 美国 60", type: "vless", server: "45.142.120.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 61", server: "14.102.229.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 62", server: "185.221.160.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 63", server: "195.13.45.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cf.d3z.net"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {type: "vless", name: "🇺🇸 美国 64", server: "46.202.30.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 65", server: "103.116.7.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 66", type: "vless", server: "91.193.58.133", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "sk.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "sk.laoyoutiao.link"}
+- {type: "vless", name: "🇺🇸 美国 67", server: "192.0.54.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "bitget1.asdasd.click"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 68", type: "vless", server: "190.93.246.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 69", type: "vless", server: "92.53.188.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 70", type: "vless", server: "216.205.52.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 71", server: "185.148.104.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 72", server: "195.13.45.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇺🇸 美国 73", server: "216.205.52.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇯🇵 日本 01", server: "jpcn286.s2fjeyeeyafe.bond", port: 35789, type: "hysteria2", password: "196d331c-9a7d-4a8a-990e-f8babff27412", auth: "196d331c-9a7d-4a8a-990e-f8babff27412", sni: "jpcn286.s2fjeyeeyafe.bond", skip-cert-verify: false, udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 02", type: "vless", server: "160.16.56.195", port: 443, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: true, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "jp.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {name: "🇯🇵 日本 03", server: "205.233.181.63", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /", headers: {Host: "jp.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, servername: "jp.laoyoutiao.link"}
+- {name: "🇯🇵 日本 04", server: "141.193.27.63", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /", headers: {Host: "jp.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, servername: "jp.laoyoutiao.link"}
+- {type: "vless", name: "🇯🇵 日本 05", server: "185.176.26.63", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {type: "vless", name: "🇯🇵 日本 06", server: "45.8.211.63", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "jp.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "jp.laoyoutiao.link"}
+- {name: "🇭🇰 香港 01", server: "a49f4399-szrb40-t16fm4-1fy29.hk3.p5pv.com", port: 80, type: "vmess", uuid: "500dd8cc-a21c-11ec-bd7c-f23c913c8d2b", alterId: "2", cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 02", type: "ss", server: "154.3.8.151", port: 30067, cipher: "aes-256-gcm", password: "iUB0923RBA", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 03", server: "155.46.167.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {type: "vless", name: "🇭🇰 香港 04", server: "66.81.247.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {type: "vless", name: "🇭🇰 香港 05", server: "170.114.46.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {type: "vless", name: "🇭🇰 香港 06", server: "103.133.1.29", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "hk.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "hk.laoyoutiao.link"}
+- {name: "🇰🇷 韩国 01", server: "125.139.134.133", port: 21791, type: "vmess", uuid: "bc29535d-dcbe-4663-cfc3-16cb14ba13da", alterId: "0", cipher: "auto", tls: false, client-fingerprint: "chrome"}
+- {name: "🇰🇷 韩国 02", server: "218.237.185.230", port: 4652, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇩🇪 德国 01", server: "185.211.101.15", port: 20358, password: "F6HtMurQGt", obfs: "salamander", obfs-password: "v2raybluecrystal", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇩🇪 德国 02", server: "185.211.101.15", port: 16666, password: "F6HtMurQGt", obfs: "salamander", obfs-password: "v2raybluecrystal2", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 03", server: "flydg.flylink.cyou", port: 35230, type: "hysteria2", password: "3d9d0485-e27f-4a82-820b-2251c14710b6", auth: "3d9d0485-e27f-4a82-820b-2251c14710b6", sni: "flydg.flylink.cyou", skip-cert-verify: true, obfs: "salamander", obfs-password: "ZWYxYjI3YjlmY2I0OGEwYw==", udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇳🇱 荷兰 01", server: "yapc-1.adamhayward.co.uk", port: 35200, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇳🇱 荷兰 02", server: "gavazn.lnmarketplace.net", port: 45000, password: "Telegram-->@Ln2Ray", sni: "gavazn.55994421.xyz", obfs: "salamander", obfs-password: "Telegram-->@Ln2Ray", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇳🇱 荷兰 03", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 01", type: "vless", server: "156.238.18.194", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 02", type: "vless", server: "156.238.18.239", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 03", type: "vless", server: "91.193.58.175", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 04", type: "vless", server: "156.238.18.80", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 05", type: "vless", server: "91.193.58.55", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 06", type: "vless", server: "91.193.58.11", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 07", type: "vless", server: "156.238.18.136", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 08", type: "vless", server: "91.193.58.128", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 09", type: "vless", server: "156.238.18.42", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 10", type: "vless", server: "156.238.18.172", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 11", type: "vless", server: "91.193.58.234", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 12", type: "vless", server: "91.193.58.84", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 13", server: "156.238.18.78", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 14", type: "vless", server: "91.193.58.154", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 15", type: "vless", server: "91.193.58.43", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 16", type: "vless", server: "91.193.58.41", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 17", type: "vless", server: "91.193.58.76", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 18", type: "vless", server: "91.193.58.248", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 19", type: "vless", server: "91.193.58.124", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 20", type: "vless", server: "156.238.18.119", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 21", type: "vless", server: "91.193.58.21", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 22", type: "vless", server: "91.193.58.210", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 23", type: "vless", server: "156.238.18.54", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 24", type: "vless", server: "156.238.18.137", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 25", type: "vless", server: "91.193.58.171", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 26", type: "vless", server: "91.193.58.66", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 27", type: "vless", server: "91.193.58.77", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 28", type: "vless", server: "91.193.58.112", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 29", type: "vless", server: "156.238.18.134", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 30", type: "vless", server: "156.238.18.64", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 31", type: "vless", server: "91.193.58.225", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 32", server: "194.53.53.156", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 33", type: "vless", server: "91.193.58.7", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 34", type: "vless", server: "91.193.58.241", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 35", type: "vless", server: "91.193.58.160", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 36", type: "vless", server: "91.193.58.18", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 37", type: "vless", server: "77.105.163.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 38", server: "159.242.242.156", port: 8880, type: "vless", uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 39", type: "vless", server: "156.238.18.122", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 40", type: "vless", server: "91.193.58.1", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 41", type: "vless", server: "156.238.18.195", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 42", type: "vless", server: "156.238.18.14", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 43", type: "vless", server: "156.238.18.24", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 44", type: "vless", server: "156.238.18.235", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 45", type: "vless", server: "156.238.18.83", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 46", type: "vless", server: "156.238.18.218", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 47", type: "vless", server: "156.238.18.81", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 48", type: "vless", server: "156.238.18.22", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 49", type: "vless", server: "91.193.58.53", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 50", type: "vless", server: "23.227.39.63", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 51", type: "vless", server: "91.193.58.24", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 52", type: "vless", server: "91.193.58.34", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 53", type: "vless", server: "91.193.58.60", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 54", type: "vless", server: "156.238.18.169", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 55", type: "vless", server: "91.193.58.157", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 56", type: "vless", server: "91.193.58.226", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 57", type: "vless", server: "156.238.18.234", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 58", type: "vless", server: "91.193.58.204", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 59", type: "vless", server: "91.193.58.85", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 60", type: "vless", server: "91.193.58.70", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 61", type: "vless", server: "156.238.18.44", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 62", type: "vless", server: "91.193.58.0", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 63", type: "vless", server: "91.193.58.49", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 64", type: "vless", server: "156.238.18.226", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 65", type: "vless", server: "140.99.233.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 66", type: "vless", server: "156.238.18.69", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 67", type: "vless", server: "91.193.58.2", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 68", type: "vless", server: "156.238.18.197", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 69", type: "vless", server: "185.16.110.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 70", type: "vless", server: "91.193.58.103", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 71", type: "vless", server: "91.193.58.74", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 72", type: "vless", server: "91.193.58.54", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 73", type: "vless", server: "156.238.18.253", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 74", type: "vless", server: "156.238.18.113", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 75", type: "vless", server: "91.193.58.28", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 76", type: "vless", server: "91.193.58.146", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 77", type: "vless", server: "156.238.18.82", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 78", type: "vless", server: "156.238.18.3", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 79", type: "vless", server: "91.193.58.224", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 80", type: "vless", server: "91.193.58.20", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 81", type: "vless", server: "91.193.58.219", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 82", type: "vless", server: "91.193.58.242", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 83", type: "vless", server: "91.193.58.113", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 84", type: "vless", server: "156.238.18.11", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 85", type: "vless", server: "156.238.18.108", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 86", type: "vless", server: "91.193.58.48", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 87", type: "vless", server: "156.238.18.36", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 88", type: "vless", server: "188.42.145.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 89", type: "vless", server: "156.238.18.151", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 90", type: "vless", server: "156.238.18.153", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 91", type: "vless", server: "91.193.58.235", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 92", type: "vless", server: "185.221.160.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 93", type: "vless", server: "156.238.18.37", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 94", type: "vless", server: "104.31.16.63", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 95", type: "vless", server: "91.193.58.32", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 96", type: "vless", server: "91.193.58.19", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 97", type: "vless", server: "156.238.18.73", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 98", type: "vless", server: "185.207.196.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 99", type: "vless", server: "91.193.58.94", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 100", type: "vless", server: "192.200.160.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 101", type: "vless", server: "156.238.18.188", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 102", type: "vless", server: "168.100.6.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 103", type: "vless", server: "156.238.18.52", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 104", type: "vless", server: "185.162.229.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 105", type: "vless", server: "156.238.18.185", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 106", type: "vless", server: "91.193.58.99", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 107", type: "vless", server: "139.64.235.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 108", type: "vless", server: "156.238.18.32", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 109", type: "vless", server: "156.238.18.177", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 110", type: "vless", server: "91.193.58.145", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 111", type: "vless", server: "141.193.27.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 112", type: "vless", server: "91.193.58.215", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 113", type: "vless", server: "91.193.58.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 114", type: "vless", server: "91.193.58.97", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 115", type: "vless", server: "91.193.58.82", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2/", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 116", type: "vless", server: "156.238.18.251", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "kjgx.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 117", type: "vless", server: "91.193.58.203", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 118", server: "91.193.58.120", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 119", type: "vless", server: "91.193.58.174", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 120", server: "185.176.26.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 121", server: "188.164.248.168", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/Telegram@WangCai2/?ed"}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 122", type: "vless", server: "156.238.18.236", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸|華東電訊|解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 123", server: "::ffff:156.238.18.136", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 124", type: "vless", server: "156.238.18.231", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 125", type: "vless", server: "91.193.58.46", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 126", type: "vless", server: "91.193.58.220", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 127", server: "160.79.105.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 128", type: "vless", server: "156.238.18.225", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 129", type: "vless", server: "91.193.58.79", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 130", server: "69.84.182.63", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {name: "🇸🇬 新加坡 131", type: "vless", server: "156.238.18.180", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/freecodes蘇小檸 | 華東電訊 | 解鎖Netflix", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "kjgx.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 132", server: "104.129.165.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 133", server: "192.200.160.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 134", server: "::ffff:156.238.18.252", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "sg.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
+- {type: "vless", name: "🇸🇬 新加坡 135", server: "185.251.83.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 136", server: "209.46.30.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 137", server: "91.193.58.166", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 138", server: "31.43.179.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇸🇬 新加坡 139", server: "92.243.74.156", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kjgx.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇸🇬 新加坡 140", type: "vless", server: "91.193.58.35", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "kjgx.laoyoutiao.link"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "hysteria2", name: "🇷🇺 俄罗斯 01", server: "46.17.41.217", port: 30033, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇷🇺 俄罗斯 02", server: "45.129.2.108", port: 50850, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 03", type: "hysteria", server: "185.22.155.71", port: 10803, auth_str: "dongtaiwang.com", alpn: ["h3"], sni: "www.bing.com", skip-cert-verify: true, up: "11 Mbps", down: "55 Mbps", client-fingerprint: "chrome", auth-str: "dongtaiwang.com"}
+- {type: "vless", name: "🇦🇺 澳大利亚 01", server: "45.131.209.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 02", server: "45.159.216.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 03", server: "94.140.0.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 04", server: "135.84.79.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳 @WangCai2 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 05", server: "185.148.104.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 06", server: "162.120.94.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 07", server: "193.124.224.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 08", server: "45.85.119.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 09", server: "104.129.164.39", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇮🇷@ShadowProxy66 /", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 10", server: "66.81.247.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 11", server: "159.112.235.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳@WangCai2/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇦🇺 澳大利亚 12", server: "185.176.26.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇦🇺 澳大利亚 13", server: "94.247.142.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramğŸ‡¨ğŸ‡³ @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 14", type: "vless", server: "192.0.54.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@WangCai2", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇦🇺 澳大利亚 15", server: "170.114.46.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇦🇺 澳大利亚 16", server: "74.49.215.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇦🇺 澳大利亚 17", server: "104.254.140.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 18", type: "vless", server: "130.250.137.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇦🇺 澳大利亚 19", server: "185.148.107.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇦🇺 澳大利亚 20", type: "vless", server: "108.165.216.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "vless", name: "🇦🇺 澳大利亚 21", server: "170.114.45.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {type: "hysteria2", name: "🇫🇷 法国 01", server: "51.159.111.32", port: 31180, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇮🇳 印度 01", server: "160.191.183.244", port: 14849, password: "fzgdaH0cJ7", obfs: "salamander", obfs-password: "v2raybluecrystal2", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇮🇳 印度 02", server: "160.191.183.244", port: 48004, password: "fzgdaH0cJ7", obfs: "salamander", obfs-password: "v2raybluecrystal3", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇮🇳 印度 03", server: "160.191.183.244", port: 11282, password: "fzgdaH0cJ7", obfs: "salamander", obfs-password: "v2raybluecrystal", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇨🇦 加拿大 01", server: "150.230.30.237", port: 45979, password: "cfe032e4-1bc3-454f-9d09-301b0aea08ff", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇫🇮 芬兰 01", server: "45.85.119.151", port: 8880, uuid: "e9979910-79d1-4621-a93c-b2a579c44ba7", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "vngsupply.ip-ddns.com"}, path: "/J5aLQOY1R9ONWYCM"}, client-fingerprint: "chrome", servername: "vngsupply.ip-ddns.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇨🇳 台湾 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -308,16 +411,38 @@ proxy-groups:
   - "🇺🇸 美国 59"
   - "🇺🇸 美国 60"
   - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇺🇸 美国 69"
+  - "🇺🇸 美国 70"
+  - "🇺🇸 美国 71"
+  - "🇺🇸 美国 72"
+  - "🇺🇸 美国 73"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
-  - "🇰🇷 韩国 07"
-  - "🇰🇷 韩国 08"
-  - "🇰🇷 韩国 09"
-  - "🇰🇷 韩国 10"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -371,42 +496,129 @@ proxy-groups:
   - "🇸🇬 新加坡 51"
   - "🇸🇬 新加坡 52"
   - "🇸🇬 新加坡 53"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇦🇺 澳大利亚 01"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇮🇹 意大利 01"
-  - "🇮🇹 意大利 02"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 54"
+  - "🇸🇬 新加坡 55"
+  - "🇸🇬 新加坡 56"
+  - "🇸🇬 新加坡 57"
+  - "🇸🇬 新加坡 58"
+  - "🇸🇬 新加坡 59"
+  - "🇸🇬 新加坡 60"
+  - "🇸🇬 新加坡 61"
+  - "🇸🇬 新加坡 62"
+  - "🇸🇬 新加坡 63"
+  - "🇸🇬 新加坡 64"
+  - "🇸🇬 新加坡 65"
+  - "🇸🇬 新加坡 66"
+  - "🇸🇬 新加坡 67"
+  - "🇸🇬 新加坡 68"
+  - "🇸🇬 新加坡 69"
+  - "🇸🇬 新加坡 70"
+  - "🇸🇬 新加坡 71"
+  - "🇸🇬 新加坡 72"
+  - "🇸🇬 新加坡 73"
+  - "🇸🇬 新加坡 74"
+  - "🇸🇬 新加坡 75"
+  - "🇸🇬 新加坡 76"
+  - "🇸🇬 新加坡 77"
+  - "🇸🇬 新加坡 78"
+  - "🇸🇬 新加坡 79"
+  - "🇸🇬 新加坡 80"
+  - "🇸🇬 新加坡 81"
+  - "🇸🇬 新加坡 82"
+  - "🇸🇬 新加坡 83"
+  - "🇸🇬 新加坡 84"
+  - "🇸🇬 新加坡 85"
+  - "🇸🇬 新加坡 86"
+  - "🇸🇬 新加坡 87"
+  - "🇸🇬 新加坡 88"
+  - "🇸🇬 新加坡 89"
+  - "🇸🇬 新加坡 90"
+  - "🇸🇬 新加坡 91"
+  - "🇸🇬 新加坡 92"
+  - "🇸🇬 新加坡 93"
+  - "🇸🇬 新加坡 94"
+  - "🇸🇬 新加坡 95"
+  - "🇸🇬 新加坡 96"
+  - "🇸🇬 新加坡 97"
+  - "🇸🇬 新加坡 98"
+  - "🇸🇬 新加坡 99"
+  - "🇸🇬 新加坡 100"
+  - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
+  - "🇸🇬 新加坡 108"
+  - "🇸🇬 新加坡 109"
+  - "🇸🇬 新加坡 110"
+  - "🇸🇬 新加坡 111"
+  - "🇸🇬 新加坡 112"
+  - "🇸🇬 新加坡 113"
+  - "🇸🇬 新加坡 114"
+  - "🇸🇬 新加坡 115"
+  - "🇸🇬 新加坡 116"
+  - "🇸🇬 新加坡 117"
+  - "🇸🇬 新加坡 118"
+  - "🇸🇬 新加坡 119"
+  - "🇸🇬 新加坡 120"
+  - "🇸🇬 新加坡 121"
+  - "🇸🇬 新加坡 122"
+  - "🇸🇬 新加坡 123"
+  - "🇸🇬 新加坡 124"
+  - "🇸🇬 新加坡 125"
+  - "🇸🇬 新加坡 126"
+  - "🇸🇬 新加坡 127"
+  - "🇸🇬 新加坡 128"
+  - "🇸🇬 新加坡 129"
+  - "🇸🇬 新加坡 130"
+  - "🇸🇬 新加坡 131"
+  - "🇸🇬 新加坡 132"
+  - "🇸🇬 新加坡 133"
+  - "🇸🇬 新加坡 134"
+  - "🇸🇬 新加坡 135"
+  - "🇸🇬 新加坡 136"
+  - "🇸🇬 新加坡 137"
+  - "🇸🇬 新加坡 138"
+  - "🇸🇬 新加坡 139"
+  - "🇸🇬 新加坡 140"
   - "🇷🇺 俄罗斯 01"
-  - "🇦🇹 奥地利 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+  - "🇦🇺 澳大利亚 03"
+  - "🇦🇺 澳大利亚 04"
+  - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
+  - "🇦🇺 澳大利亚 07"
+  - "🇦🇺 澳大利亚 08"
+  - "🇦🇺 澳大利亚 09"
+  - "🇦🇺 澳大利亚 10"
+  - "🇦🇺 澳大利亚 11"
+  - "🇦🇺 澳大利亚 12"
+  - "🇦🇺 澳大利亚 13"
+  - "🇦🇺 澳大利亚 14"
+  - "🇦🇺 澳大利亚 15"
+  - "🇦🇺 澳大利亚 16"
+  - "🇦🇺 澳大利亚 17"
+  - "🇦🇺 澳大利亚 18"
+  - "🇦🇺 澳大利亚 19"
+  - "🇦🇺 澳大利亚 20"
+  - "🇦🇺 澳大利亚 21"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇨🇦 加拿大 01"
+  - "🇫🇮 芬兰 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇨🇳 台湾 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -468,16 +680,38 @@ proxy-groups:
   - "🇺🇸 美国 59"
   - "🇺🇸 美国 60"
   - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇺🇸 美国 69"
+  - "🇺🇸 美国 70"
+  - "🇺🇸 美国 71"
+  - "🇺🇸 美国 72"
+  - "🇺🇸 美国 73"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
-  - "🇰🇷 韩国 07"
-  - "🇰🇷 韩国 08"
-  - "🇰🇷 韩国 09"
-  - "🇰🇷 韩国 10"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -531,40 +765,127 @@ proxy-groups:
   - "🇸🇬 新加坡 51"
   - "🇸🇬 新加坡 52"
   - "🇸🇬 新加坡 53"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇦🇺 澳大利亚 01"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇮🇹 意大利 01"
-  - "🇮🇹 意大利 02"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 54"
+  - "🇸🇬 新加坡 55"
+  - "🇸🇬 新加坡 56"
+  - "🇸🇬 新加坡 57"
+  - "🇸🇬 新加坡 58"
+  - "🇸🇬 新加坡 59"
+  - "🇸🇬 新加坡 60"
+  - "🇸🇬 新加坡 61"
+  - "🇸🇬 新加坡 62"
+  - "🇸🇬 新加坡 63"
+  - "🇸🇬 新加坡 64"
+  - "🇸🇬 新加坡 65"
+  - "🇸🇬 新加坡 66"
+  - "🇸🇬 新加坡 67"
+  - "🇸🇬 新加坡 68"
+  - "🇸🇬 新加坡 69"
+  - "🇸🇬 新加坡 70"
+  - "🇸🇬 新加坡 71"
+  - "🇸🇬 新加坡 72"
+  - "🇸🇬 新加坡 73"
+  - "🇸🇬 新加坡 74"
+  - "🇸🇬 新加坡 75"
+  - "🇸🇬 新加坡 76"
+  - "🇸🇬 新加坡 77"
+  - "🇸🇬 新加坡 78"
+  - "🇸🇬 新加坡 79"
+  - "🇸🇬 新加坡 80"
+  - "🇸🇬 新加坡 81"
+  - "🇸🇬 新加坡 82"
+  - "🇸🇬 新加坡 83"
+  - "🇸🇬 新加坡 84"
+  - "🇸🇬 新加坡 85"
+  - "🇸🇬 新加坡 86"
+  - "🇸🇬 新加坡 87"
+  - "🇸🇬 新加坡 88"
+  - "🇸🇬 新加坡 89"
+  - "🇸🇬 新加坡 90"
+  - "🇸🇬 新加坡 91"
+  - "🇸🇬 新加坡 92"
+  - "🇸🇬 新加坡 93"
+  - "🇸🇬 新加坡 94"
+  - "🇸🇬 新加坡 95"
+  - "🇸🇬 新加坡 96"
+  - "🇸🇬 新加坡 97"
+  - "🇸🇬 新加坡 98"
+  - "🇸🇬 新加坡 99"
+  - "🇸🇬 新加坡 100"
+  - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
+  - "🇸🇬 新加坡 108"
+  - "🇸🇬 新加坡 109"
+  - "🇸🇬 新加坡 110"
+  - "🇸🇬 新加坡 111"
+  - "🇸🇬 新加坡 112"
+  - "🇸🇬 新加坡 113"
+  - "🇸🇬 新加坡 114"
+  - "🇸🇬 新加坡 115"
+  - "🇸🇬 新加坡 116"
+  - "🇸🇬 新加坡 117"
+  - "🇸🇬 新加坡 118"
+  - "🇸🇬 新加坡 119"
+  - "🇸🇬 新加坡 120"
+  - "🇸🇬 新加坡 121"
+  - "🇸🇬 新加坡 122"
+  - "🇸🇬 新加坡 123"
+  - "🇸🇬 新加坡 124"
+  - "🇸🇬 新加坡 125"
+  - "🇸🇬 新加坡 126"
+  - "🇸🇬 新加坡 127"
+  - "🇸🇬 新加坡 128"
+  - "🇸🇬 新加坡 129"
+  - "🇸🇬 新加坡 130"
+  - "🇸🇬 新加坡 131"
+  - "🇸🇬 新加坡 132"
+  - "🇸🇬 新加坡 133"
+  - "🇸🇬 新加坡 134"
+  - "🇸🇬 新加坡 135"
+  - "🇸🇬 新加坡 136"
+  - "🇸🇬 新加坡 137"
+  - "🇸🇬 新加坡 138"
+  - "🇸🇬 新加坡 139"
+  - "🇸🇬 新加坡 140"
   - "🇷🇺 俄罗斯 01"
-  - "🇦🇹 奥地利 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+  - "🇦🇺 澳大利亚 03"
+  - "🇦🇺 澳大利亚 04"
+  - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
+  - "🇦🇺 澳大利亚 07"
+  - "🇦🇺 澳大利亚 08"
+  - "🇦🇺 澳大利亚 09"
+  - "🇦🇺 澳大利亚 10"
+  - "🇦🇺 澳大利亚 11"
+  - "🇦🇺 澳大利亚 12"
+  - "🇦🇺 澳大利亚 13"
+  - "🇦🇺 澳大利亚 14"
+  - "🇦🇺 澳大利亚 15"
+  - "🇦🇺 澳大利亚 16"
+  - "🇦🇺 澳大利亚 17"
+  - "🇦🇺 澳大利亚 18"
+  - "🇦🇺 澳大利亚 19"
+  - "🇦🇺 澳大利亚 20"
+  - "🇦🇺 澳大利亚 21"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇨🇦 加拿大 01"
+  - "🇫🇮 芬兰 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇨🇳 台湾 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -626,16 +947,38 @@ proxy-groups:
   - "🇺🇸 美国 59"
   - "🇺🇸 美国 60"
   - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇺🇸 美国 69"
+  - "🇺🇸 美国 70"
+  - "🇺🇸 美国 71"
+  - "🇺🇸 美国 72"
+  - "🇺🇸 美国 73"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
-  - "🇰🇷 韩国 07"
-  - "🇰🇷 韩国 08"
-  - "🇰🇷 韩国 09"
-  - "🇰🇷 韩国 10"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -689,42 +1032,129 @@ proxy-groups:
   - "🇸🇬 新加坡 51"
   - "🇸🇬 新加坡 52"
   - "🇸🇬 新加坡 53"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇦🇺 澳大利亚 01"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇮🇹 意大利 01"
-  - "🇮🇹 意大利 02"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 54"
+  - "🇸🇬 新加坡 55"
+  - "🇸🇬 新加坡 56"
+  - "🇸🇬 新加坡 57"
+  - "🇸🇬 新加坡 58"
+  - "🇸🇬 新加坡 59"
+  - "🇸🇬 新加坡 60"
+  - "🇸🇬 新加坡 61"
+  - "🇸🇬 新加坡 62"
+  - "🇸🇬 新加坡 63"
+  - "🇸🇬 新加坡 64"
+  - "🇸🇬 新加坡 65"
+  - "🇸🇬 新加坡 66"
+  - "🇸🇬 新加坡 67"
+  - "🇸🇬 新加坡 68"
+  - "🇸🇬 新加坡 69"
+  - "🇸🇬 新加坡 70"
+  - "🇸🇬 新加坡 71"
+  - "🇸🇬 新加坡 72"
+  - "🇸🇬 新加坡 73"
+  - "🇸🇬 新加坡 74"
+  - "🇸🇬 新加坡 75"
+  - "🇸🇬 新加坡 76"
+  - "🇸🇬 新加坡 77"
+  - "🇸🇬 新加坡 78"
+  - "🇸🇬 新加坡 79"
+  - "🇸🇬 新加坡 80"
+  - "🇸🇬 新加坡 81"
+  - "🇸🇬 新加坡 82"
+  - "🇸🇬 新加坡 83"
+  - "🇸🇬 新加坡 84"
+  - "🇸🇬 新加坡 85"
+  - "🇸🇬 新加坡 86"
+  - "🇸🇬 新加坡 87"
+  - "🇸🇬 新加坡 88"
+  - "🇸🇬 新加坡 89"
+  - "🇸🇬 新加坡 90"
+  - "🇸🇬 新加坡 91"
+  - "🇸🇬 新加坡 92"
+  - "🇸🇬 新加坡 93"
+  - "🇸🇬 新加坡 94"
+  - "🇸🇬 新加坡 95"
+  - "🇸🇬 新加坡 96"
+  - "🇸🇬 新加坡 97"
+  - "🇸🇬 新加坡 98"
+  - "🇸🇬 新加坡 99"
+  - "🇸🇬 新加坡 100"
+  - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
+  - "🇸🇬 新加坡 108"
+  - "🇸🇬 新加坡 109"
+  - "🇸🇬 新加坡 110"
+  - "🇸🇬 新加坡 111"
+  - "🇸🇬 新加坡 112"
+  - "🇸🇬 新加坡 113"
+  - "🇸🇬 新加坡 114"
+  - "🇸🇬 新加坡 115"
+  - "🇸🇬 新加坡 116"
+  - "🇸🇬 新加坡 117"
+  - "🇸🇬 新加坡 118"
+  - "🇸🇬 新加坡 119"
+  - "🇸🇬 新加坡 120"
+  - "🇸🇬 新加坡 121"
+  - "🇸🇬 新加坡 122"
+  - "🇸🇬 新加坡 123"
+  - "🇸🇬 新加坡 124"
+  - "🇸🇬 新加坡 125"
+  - "🇸🇬 新加坡 126"
+  - "🇸🇬 新加坡 127"
+  - "🇸🇬 新加坡 128"
+  - "🇸🇬 新加坡 129"
+  - "🇸🇬 新加坡 130"
+  - "🇸🇬 新加坡 131"
+  - "🇸🇬 新加坡 132"
+  - "🇸🇬 新加坡 133"
+  - "🇸🇬 新加坡 134"
+  - "🇸🇬 新加坡 135"
+  - "🇸🇬 新加坡 136"
+  - "🇸🇬 新加坡 137"
+  - "🇸🇬 新加坡 138"
+  - "🇸🇬 新加坡 139"
+  - "🇸🇬 新加坡 140"
   - "🇷🇺 俄罗斯 01"
-  - "🇦🇹 奥地利 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+  - "🇦🇺 澳大利亚 03"
+  - "🇦🇺 澳大利亚 04"
+  - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
+  - "🇦🇺 澳大利亚 07"
+  - "🇦🇺 澳大利亚 08"
+  - "🇦🇺 澳大利亚 09"
+  - "🇦🇺 澳大利亚 10"
+  - "🇦🇺 澳大利亚 11"
+  - "🇦🇺 澳大利亚 12"
+  - "🇦🇺 澳大利亚 13"
+  - "🇦🇺 澳大利亚 14"
+  - "🇦🇺 澳大利亚 15"
+  - "🇦🇺 澳大利亚 16"
+  - "🇦🇺 澳大利亚 17"
+  - "🇦🇺 澳大利亚 18"
+  - "🇦🇺 澳大利亚 19"
+  - "🇦🇺 澳大利亚 20"
+  - "🇦🇺 澳大利亚 21"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇨🇦 加拿大 01"
+  - "🇫🇮 芬兰 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇨🇳 台湾 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -786,16 +1216,38 @@ proxy-groups:
   - "🇺🇸 美国 59"
   - "🇺🇸 美国 60"
   - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇺🇸 美国 69"
+  - "🇺🇸 美国 70"
+  - "🇺🇸 美国 71"
+  - "🇺🇸 美国 72"
+  - "🇺🇸 美国 73"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
-  - "🇰🇷 韩国 07"
-  - "🇰🇷 韩国 08"
-  - "🇰🇷 韩国 09"
-  - "🇰🇷 韩国 10"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -849,41 +1301,128 @@ proxy-groups:
   - "🇸🇬 新加坡 51"
   - "🇸🇬 新加坡 52"
   - "🇸🇬 新加坡 53"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇦🇺 澳大利亚 01"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇮🇹 意大利 01"
-  - "🇮🇹 意大利 02"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 54"
+  - "🇸🇬 新加坡 55"
+  - "🇸🇬 新加坡 56"
+  - "🇸🇬 新加坡 57"
+  - "🇸🇬 新加坡 58"
+  - "🇸🇬 新加坡 59"
+  - "🇸🇬 新加坡 60"
+  - "🇸🇬 新加坡 61"
+  - "🇸🇬 新加坡 62"
+  - "🇸🇬 新加坡 63"
+  - "🇸🇬 新加坡 64"
+  - "🇸🇬 新加坡 65"
+  - "🇸🇬 新加坡 66"
+  - "🇸🇬 新加坡 67"
+  - "🇸🇬 新加坡 68"
+  - "🇸🇬 新加坡 69"
+  - "🇸🇬 新加坡 70"
+  - "🇸🇬 新加坡 71"
+  - "🇸🇬 新加坡 72"
+  - "🇸🇬 新加坡 73"
+  - "🇸🇬 新加坡 74"
+  - "🇸🇬 新加坡 75"
+  - "🇸🇬 新加坡 76"
+  - "🇸🇬 新加坡 77"
+  - "🇸🇬 新加坡 78"
+  - "🇸🇬 新加坡 79"
+  - "🇸🇬 新加坡 80"
+  - "🇸🇬 新加坡 81"
+  - "🇸🇬 新加坡 82"
+  - "🇸🇬 新加坡 83"
+  - "🇸🇬 新加坡 84"
+  - "🇸🇬 新加坡 85"
+  - "🇸🇬 新加坡 86"
+  - "🇸🇬 新加坡 87"
+  - "🇸🇬 新加坡 88"
+  - "🇸🇬 新加坡 89"
+  - "🇸🇬 新加坡 90"
+  - "🇸🇬 新加坡 91"
+  - "🇸🇬 新加坡 92"
+  - "🇸🇬 新加坡 93"
+  - "🇸🇬 新加坡 94"
+  - "🇸🇬 新加坡 95"
+  - "🇸🇬 新加坡 96"
+  - "🇸🇬 新加坡 97"
+  - "🇸🇬 新加坡 98"
+  - "🇸🇬 新加坡 99"
+  - "🇸🇬 新加坡 100"
+  - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
+  - "🇸🇬 新加坡 108"
+  - "🇸🇬 新加坡 109"
+  - "🇸🇬 新加坡 110"
+  - "🇸🇬 新加坡 111"
+  - "🇸🇬 新加坡 112"
+  - "🇸🇬 新加坡 113"
+  - "🇸🇬 新加坡 114"
+  - "🇸🇬 新加坡 115"
+  - "🇸🇬 新加坡 116"
+  - "🇸🇬 新加坡 117"
+  - "🇸🇬 新加坡 118"
+  - "🇸🇬 新加坡 119"
+  - "🇸🇬 新加坡 120"
+  - "🇸🇬 新加坡 121"
+  - "🇸🇬 新加坡 122"
+  - "🇸🇬 新加坡 123"
+  - "🇸🇬 新加坡 124"
+  - "🇸🇬 新加坡 125"
+  - "🇸🇬 新加坡 126"
+  - "🇸🇬 新加坡 127"
+  - "🇸🇬 新加坡 128"
+  - "🇸🇬 新加坡 129"
+  - "🇸🇬 新加坡 130"
+  - "🇸🇬 新加坡 131"
+  - "🇸🇬 新加坡 132"
+  - "🇸🇬 新加坡 133"
+  - "🇸🇬 新加坡 134"
+  - "🇸🇬 新加坡 135"
+  - "🇸🇬 新加坡 136"
+  - "🇸🇬 新加坡 137"
+  - "🇸🇬 新加坡 138"
+  - "🇸🇬 新加坡 139"
+  - "🇸🇬 新加坡 140"
   - "🇷🇺 俄罗斯 01"
-  - "🇦🇹 奥地利 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+  - "🇦🇺 澳大利亚 03"
+  - "🇦🇺 澳大利亚 04"
+  - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
+  - "🇦🇺 澳大利亚 07"
+  - "🇦🇺 澳大利亚 08"
+  - "🇦🇺 澳大利亚 09"
+  - "🇦🇺 澳大利亚 10"
+  - "🇦🇺 澳大利亚 11"
+  - "🇦🇺 澳大利亚 12"
+  - "🇦🇺 澳大利亚 13"
+  - "🇦🇺 澳大利亚 14"
+  - "🇦🇺 澳大利亚 15"
+  - "🇦🇺 澳大利亚 16"
+  - "🇦🇺 澳大利亚 17"
+  - "🇦🇺 澳大利亚 18"
+  - "🇦🇺 澳大利亚 19"
+  - "🇦🇺 澳大利亚 20"
+  - "🇦🇺 澳大利亚 21"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇨🇦 加拿大 01"
+  - "🇫🇮 芬兰 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇨🇳 台湾 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -945,16 +1484,38 @@ proxy-groups:
   - "🇺🇸 美国 59"
   - "🇺🇸 美国 60"
   - "🇺🇸 美国 61"
+  - "🇺🇸 美国 62"
+  - "🇺🇸 美国 63"
+  - "🇺🇸 美国 64"
+  - "🇺🇸 美国 65"
+  - "🇺🇸 美国 66"
+  - "🇺🇸 美国 67"
+  - "🇺🇸 美国 68"
+  - "🇺🇸 美国 69"
+  - "🇺🇸 美国 70"
+  - "🇺🇸 美国 71"
+  - "🇺🇸 美国 72"
+  - "🇺🇸 美国 73"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
-  - "🇰🇷 韩国 07"
-  - "🇰🇷 韩国 08"
-  - "🇰🇷 韩国 09"
-  - "🇰🇷 韩国 10"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -1008,30 +1569,123 @@ proxy-groups:
   - "🇸🇬 新加坡 51"
   - "🇸🇬 新加坡 52"
   - "🇸🇬 新加坡 53"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇦🇺 澳大利亚 01"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇮🇹 意大利 01"
-  - "🇮🇹 意大利 02"
-  - "🇩🇪 德国 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 54"
+  - "🇸🇬 新加坡 55"
+  - "🇸🇬 新加坡 56"
+  - "🇸🇬 新加坡 57"
+  - "🇸🇬 新加坡 58"
+  - "🇸🇬 新加坡 59"
+  - "🇸🇬 新加坡 60"
+  - "🇸🇬 新加坡 61"
+  - "🇸🇬 新加坡 62"
+  - "🇸🇬 新加坡 63"
+  - "🇸🇬 新加坡 64"
+  - "🇸🇬 新加坡 65"
+  - "🇸🇬 新加坡 66"
+  - "🇸🇬 新加坡 67"
+  - "🇸🇬 新加坡 68"
+  - "🇸🇬 新加坡 69"
+  - "🇸🇬 新加坡 70"
+  - "🇸🇬 新加坡 71"
+  - "🇸🇬 新加坡 72"
+  - "🇸🇬 新加坡 73"
+  - "🇸🇬 新加坡 74"
+  - "🇸🇬 新加坡 75"
+  - "🇸🇬 新加坡 76"
+  - "🇸🇬 新加坡 77"
+  - "🇸🇬 新加坡 78"
+  - "🇸🇬 新加坡 79"
+  - "🇸🇬 新加坡 80"
+  - "🇸🇬 新加坡 81"
+  - "🇸🇬 新加坡 82"
+  - "🇸🇬 新加坡 83"
+  - "🇸🇬 新加坡 84"
+  - "🇸🇬 新加坡 85"
+  - "🇸🇬 新加坡 86"
+  - "🇸🇬 新加坡 87"
+  - "🇸🇬 新加坡 88"
+  - "🇸🇬 新加坡 89"
+  - "🇸🇬 新加坡 90"
+  - "🇸🇬 新加坡 91"
+  - "🇸🇬 新加坡 92"
+  - "🇸🇬 新加坡 93"
+  - "🇸🇬 新加坡 94"
+  - "🇸🇬 新加坡 95"
+  - "🇸🇬 新加坡 96"
+  - "🇸🇬 新加坡 97"
+  - "🇸🇬 新加坡 98"
+  - "🇸🇬 新加坡 99"
+  - "🇸🇬 新加坡 100"
+  - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
+  - "🇸🇬 新加坡 108"
+  - "🇸🇬 新加坡 109"
+  - "🇸🇬 新加坡 110"
+  - "🇸🇬 新加坡 111"
+  - "🇸🇬 新加坡 112"
+  - "🇸🇬 新加坡 113"
+  - "🇸🇬 新加坡 114"
+  - "🇸🇬 新加坡 115"
+  - "🇸🇬 新加坡 116"
+  - "🇸🇬 新加坡 117"
+  - "🇸🇬 新加坡 118"
+  - "🇸🇬 新加坡 119"
+  - "🇸🇬 新加坡 120"
+  - "🇸🇬 新加坡 121"
+  - "🇸🇬 新加坡 122"
+  - "🇸🇬 新加坡 123"
+  - "🇸🇬 新加坡 124"
+  - "🇸🇬 新加坡 125"
+  - "🇸🇬 新加坡 126"
+  - "🇸🇬 新加坡 127"
+  - "🇸🇬 新加坡 128"
+  - "🇸🇬 新加坡 129"
+  - "🇸🇬 新加坡 130"
+  - "🇸🇬 新加坡 131"
+  - "🇸🇬 新加坡 132"
+  - "🇸🇬 新加坡 133"
+  - "🇸🇬 新加坡 134"
+  - "🇸🇬 新加坡 135"
+  - "🇸🇬 新加坡 136"
+  - "🇸🇬 新加坡 137"
+  - "🇸🇬 新加坡 138"
+  - "🇸🇬 新加坡 139"
+  - "🇸🇬 新加坡 140"
   - "🇷🇺 俄罗斯 01"
-  - "🇦🇹 奥地利 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
+  - "🇦🇺 澳大利亚 03"
+  - "🇦🇺 澳大利亚 04"
+  - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
+  - "🇦🇺 澳大利亚 07"
+  - "🇦🇺 澳大利亚 08"
+  - "🇦🇺 澳大利亚 09"
+  - "🇦🇺 澳大利亚 10"
+  - "🇦🇺 澳大利亚 11"
+  - "🇦🇺 澳大利亚 12"
+  - "🇦🇺 澳大利亚 13"
+  - "🇦🇺 澳大利亚 14"
+  - "🇦🇺 澳大利亚 15"
+  - "🇦🇺 澳大利亚 16"
+  - "🇦🇺 澳大利亚 17"
+  - "🇦🇺 澳大利亚 18"
+  - "🇦🇺 澳大利亚 19"
+  - "🇦🇺 澳大利亚 20"
+  - "🇦🇺 澳大利亚 21"
+  - "🇫🇷 法国 01"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
+  - "🇮🇳 印度 03"
+  - "🇨🇦 加拿大 01"
+  - "🇫🇮 芬兰 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
