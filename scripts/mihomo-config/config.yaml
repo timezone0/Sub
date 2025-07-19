@@ -84,7 +84,7 @@ proxy-groups:
   - name: AUTO
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 180
     tolerance: 50
     proxies:
   - name: AI
@@ -97,11 +97,6 @@ proxy-groups:
       - ✨ fcm
       - PROXY
       - DIRECT
-  - name: TELEGRAM
-    type: select
-    proxies:
-      - PROXY
-      - DIRECT
   - name: HOYO
     type: select
     proxies:
@@ -109,25 +104,23 @@ proxy-groups:
       - PROXY
 rules:
   - GEOSITE,CATEGORY-ADS-ALL,REJECT
-  - DOMAIN-SUFFIX,mcdn.bilivideo.com,REJECT
-  - DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT
-  - DOMAIN-SUFFIX,szbdyd.com,REJECT
-  - DOMAIN-SUFFIX,ushd.xmsl.org,DIRECT
-  - DOMAIN-SUFFIX,cf.gtlx.org,DIRECT
-  - DOMAIN-SUFFIX,public-operation-hkrpg-sg.hoyoverse.com,HOYO
-  - DOMAIN-SUFFIX,public-operation-hk4e-sg.hoyoverse.com,HOYO
-  - DOMAIN-SUFFIX,public-operation-nap-sg.hoyoverse.com,HOYO
+  - DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT
+  - DOMAIN-KEYWORD,mcdn.bilivideo.cn,REJECT
+  - DOMAIN-KEYWORD,szbdyd.com,REJECT
+  - DOMAIN-KEYWORD,ushd.xmsl.org,DIRECT
+  - DOMAIN-KEYWORD,cf.gtlx.org,DIRECT
+  - DOMAIN-KEYWORD,public-operation-hkrpg-sg.hoyoverse.com,HOYO
+  - DOMAIN-KEYWORD,public-operation-hk4e-sg.hoyoverse.com,HOYO
+  - DOMAIN-KEYWORD,public-operation-nap-sg.hoyoverse.com,HOYO
+  - DOMAIN-KEYWORD,autopatchhk.yuanshen.com,HOYO
+  - DOMAIN-KEYWORD,autopatchos.starrails.com,HOYO
+  - DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,HOYO
   - DST-PORT,23301/22101-22102/20501/21601-21606,HOYO
   - DOMAIN-KEYWORD,hoyoverse.com,PROXY
-  - DOMAIN-KEYWORD,autopatchhk.yuanshen.com,PROXY
-  - DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,PROXY
   - GEOSITE,CATEGORY-AI-!CN,AI
   - GEOSITE,GOOGLEFCM,GOOGLEFCM
-  - GEOSITE,TELEGRAM,TELEGRAM
   - GEOSITE,PRIVATE,DIRECT
   - GEOSITE,CN,DIRECT
-  - GEOIP,TELEGRAM,TELEGRAM
   - GEOIP,PRIVATE,DIRECT,no-resolve
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
-
