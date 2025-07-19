@@ -29,7 +29,7 @@
             "query_type": "HTTPS"
           },
           {
-            "domain_suffix": [
+            "domain_keyword": [
               "mcdn.bilivideo.com",
               "mcdn.bilivideo.cn",
               "szbdyd.com"
@@ -110,7 +110,7 @@
     {
       "tag": "auto",
       "type": "urltest",
-      "interval": "5m",
+      "interval": "3m",
       "outbounds": [
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
@@ -148,25 +148,6 @@
       "type": "selector",
       "outbounds": [
         "✨ fcm",
-        "select",
-        "direct",
-        "🇨🇳 台湾 01",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇰🇷 韩国 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇨🇦 加拿大 01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "telegram",
-      "type": "selector",
-      "outbounds": [
         "select",
         "direct",
         "🇨🇳 台湾 01",
@@ -338,10 +319,13 @@
         "mode": "or",
         "rules": [
           {
-            "domain_suffix": [
+            "domain_keyword": [
               "public-operation-hkrpg-sg.hoyoverse.com",
               "public-operation-hk4e-sg.hoyoverse.com",
-              "public-operation-nap-sg.hoyoverse.com"
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
             ]
           },
           {
@@ -357,9 +341,7 @@
       },
       {
         "domain_keyword": [
-          "hoyoverse.com",
-          "autopatchhk.yuanshen.com",
-          "autopatchos.zenlesszonezero.com"
+          "hoyoverse.com"
         ],
         "outbound": "select"
       },
@@ -376,13 +358,6 @@
         "outbound": "googlefcm"
       },
       {
-        "rule_set": [
-          "geosite-telegram",
-          "geoip-telegram"
-        ],
-        "outbound": "telegram"
-      },
-      {
         "type": "logical",
         "mode": "or",
         "rules": [
@@ -390,7 +365,7 @@
             "ip_is_private": true
           },
           {
-            "domain_suffix": [
+            "domain_keyword": [
               "ushd.xmsl.org",
               "cf.gtlx.org"
             ]
@@ -432,20 +407,6 @@
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
-        "download_detour": "select"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-telegram",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
-        "download_detour": "select"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-telegram",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
         "download_detour": "select"
       },
       {
