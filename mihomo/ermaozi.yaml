@@ -82,35 +82,21 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇺🇸 美国 01", type: "vmess", server: "69.84.182.108", port: 8880, uuid: "922b45c8-1ec8-4a65-9b32-137716a0e55f", cipher: "auto", network: "ws", ws-opts: {path: "/profile/telegram@ssrsub", headers: {Host: "cdn-node-oss-99.paofu.de"}}, alterId: 0}
-- {name: "🇺🇸 美国 02", type: "vmess", server: "twjxlnnoljxc2.jkhkgj.xyz", port: 80, uuid: "e15ac3ce-6a1a-412a-aa07-4bc52daa5935", cipher: "auto", network: "ws", ws-opts: {path: "/market/us1", headers: {Host: "file.dingtalk.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 512}, alterId: 0}
-- {name: "🇺🇸 美国 03", type: "vmess", server: "hyttttesgvvxb2.jkhkgj.xyz", port: 80, uuid: "e15ac3ce-6a1a-412a-aa07-4bc52daa5935", cipher: "auto", network: "ws", ws-opts: {path: "/market/sg", headers: {Host: "file.dingtalk.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 512}, alterId: 0}
-- {name: "🇺🇸 美国 04", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
-- {name: "🇺🇸 美国 05", type: "ss", server: "154.3.8.151", port: 30067, cipher: "aes-256-gcm", password: "iUB0923RBA"}
-- {name: "🇦🇺 澳大利亚 01", type: "vmess", server: "fhrcvbgffxd.hjdfghfc.asia", port: 50229, uuid: "e15ac3ce-6a1a-412a-aa07-4bc52daa5935", cipher: "auto", network: "ws", ws-opts: {path: "/market", headers: {Host: "file.dingtalk.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 512}, alterId: 0}
+- {name: "🇺🇸 美国 01", type: "ss", server: "154.3.8.151", port: 30067, cipher: "aes-256-gcm", password: "iUB0923RBA"}
 - {name: "🇩🇪 德国 01", type: "trojan", server: "36.151.251.57", port: 40252, sni: "www.baidu.com", password: "SdCqFLcA", skip-cert-verify: true}
-- {name: "🇩🇪 德国 02", type: "vmess", server: "v33.heduian.link", port: 30833, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v33.heduian.link"}}, alterId: 2}
-- {name: "🇬🇧 英国 01", type: "trojan", server: "stirring-parakeet.shiner427.skin", port: 443, password: "74260628090146500", skip-cert-verify: false, sni: "stirring-parakeet.shiner427.skin"}
-- {name: "🇬🇧 英国 02", type: "vmess", server: "ssssssssvae2.jkhkgj.xyz", port: 80, uuid: "e15ac3ce-6a1a-412a-aa07-4bc52daa5935", cipher: "auto", network: "ws", ws-opts: {path: "/market/sg", headers: {Host: "ssssssssvae2.jkhkgj.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 512}, alterId: 0}
-- {name: "🇨🇦 加拿大 01", type: "vmess", server: "v8.heduian.link", port: 30808, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "v8.heduian.link"}}, alterId: 2}
-- {name: "🇲🇩 摩尔多瓦 01", type: "vmess", server: "v5.heduian.link", port: 30805, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "v5.heduian.link"}}, alterId: 2}
+- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "91.132.94.200", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇬🇧 英国 01", type: "vmess", server: "ssssssssvae2.jkhkgj.xyz", port: 80, uuid: "e15ac3ce-6a1a-412a-aa07-4bc52daa5935", cipher: "auto", network: "ws", ws-opts: {path: "/market/sg", headers: {Host: "ssssssssvae2.jkhkgj.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 512}, alterId: 0}
+- {name: "🇰🇷 韩国 01", type: "vmess", server: "125.139.134.133", port: 21791, uuid: "bc29535d-dcbe-4663-cfc3-16cb14ba13da", cipher: "auto", network: "tcp", alterId: 0}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇦🇺 澳大利亚 01"
   - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇨🇦 加拿大 01"
   - "🇲🇩 摩尔多瓦 01"
+  - "🇬🇧 英国 01"
+  - "🇰🇷 韩国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -118,33 +104,19 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇦🇺 澳大利亚 01"
   - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇨🇦 加拿大 01"
   - "🇲🇩 摩尔多瓦 01"
+  - "🇬🇧 英国 01"
+  - "🇰🇷 韩国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇦🇺 澳大利亚 01"
   - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇨🇦 加拿大 01"
   - "🇲🇩 摩尔多瓦 01"
+  - "🇬🇧 英国 01"
+  - "🇰🇷 韩国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -152,34 +124,20 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇦🇺 澳大利亚 01"
   - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇨🇦 加拿大 01"
   - "🇲🇩 摩尔多瓦 01"
+  - "🇬🇧 英国 01"
+  - "🇰🇷 韩国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇦🇺 澳大利亚 01"
   - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇨🇦 加拿大 01"
   - "🇲🇩 摩尔多瓦 01"
+  - "🇬🇧 英国 01"
+  - "🇰🇷 韩国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
