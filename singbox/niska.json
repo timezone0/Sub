@@ -203,14 +203,10 @@
       "tls": {
         "enabled": true,
         "server_name": "jp.insbot.filegear-sg.me",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -233,14 +229,10 @@
       "tls": {
         "enabled": true,
         "server_name": "us.insbot.filegear-sg.me",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -263,14 +255,10 @@
       "tls": {
         "enabled": true,
         "server_name": "tw.insbot.filegear-sg.me",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "insecure": true,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -291,10 +279,9 @@
       "tls": {
         "enabled": true,
         "server_name": "sg.insbot.filegear-sg.me",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "h3",
-          "h2"
+          "h3%2Ch2"
         ],
         "utls": {
           "enabled": true,
@@ -319,10 +306,9 @@
       "tls": {
         "enabled": true,
         "server_name": "uk.insbot.filegear-sg.me",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "h2",
-          "http/1.1"
+          "h2%2Chttp%2F1.1"
         ],
         "utls": {
           "enabled": true,
@@ -347,10 +333,9 @@
       "tls": {
         "enabled": true,
         "server_name": "hk.insbot.filegear-sg.me",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "h2",
-          "http/1.1"
+          "h2%2Chttp%2F1.1"
         ],
         "utls": {
           "enabled": true,
