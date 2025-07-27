@@ -99,6 +99,7 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -111,7 +112,6 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
         "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
@@ -126,6 +126,7 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -138,7 +139,6 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
         "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
@@ -153,6 +153,7 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -165,7 +166,6 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
         "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
@@ -182,6 +182,7 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -194,7 +195,6 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
         "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
@@ -210,6 +210,7 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -222,7 +223,6 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
         "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
@@ -290,19 +290,11 @@
     {
       "tag": "🇭🇰 香港 03",
       "type": "vmess",
-      "server": "b5ca534f-t02f40-t1iztx-1ryup.hk.p5pv.com",
-      "server_port": 80,
-      "uuid": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
+      "server": "38.147.188.87",
+      "server_port": 12425,
+      "uuid": "2f927b33-021b-4d45-9d4e-9a3592aef502",
       "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "broadcastlv.chat.bilibili.com"
-        },
-        "max_early_data": null,
-        "path": "/"
-      }
+      "alter_id": 0
     },
     {
       "tag": "🇭🇰 香港 04",
@@ -337,7 +329,34 @@
       }
     },
     {
+      "tag": "🇭🇰 香港 06",
+      "type": "vmess",
+      "server": "14269f63-t049s0-t1kmeg-mv7m.hk3.p5pv.com",
+      "server_port": 80,
+      "uuid": "94d40708-8273-11ea-8fc9-f23c913c8d2b",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "broadcastlv.chat.bilibili.com"
+        },
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
       "tag": "🇯🇵 日本 01",
+      "type": "shadowsocks",
+      "server": "cn01.efan8867801.xyz",
+      "server_port": 8766,
+      "method": "rc4-md5",
+      "password": "efanccyun",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=202507121073737-8Na8oPBuci.download.microsoft.com"
+    },
+    {
+      "tag": "🇯🇵 日本 02",
       "type": "shadowsocks",
       "server": "137.220.191.40",
       "server_port": 636,
@@ -348,16 +367,6 @@
         "enabled": true
       },
       "plugin_opts": "mode=websocket;host=jp7v1.lingjfjkm002.com;path=/dchlbvrbbotc;tls;skip-cert-verify=false"
-    },
-    {
-      "tag": "🇯🇵 日本 02",
-      "type": "shadowsocks",
-      "server": "cn01.efan8867801.xyz",
-      "server_port": 8766,
-      "method": "rc4-md5",
-      "password": "efanccyun",
-      "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507232129723-vNgaz226QA.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 03",
@@ -419,7 +428,7 @@
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
       "server": "36.151.251.7",
-      "server_port": 44123,
+      "server_port": 9161,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
@@ -479,7 +488,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507232129723-vNgaz226QA.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202507121073737-8Na8oPBuci.download.microsoft.com"
     },
     {
       "tag": "🇺🇸 美国 03",
@@ -514,17 +523,9 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 05",
-      "type": "shadowsocks",
-      "server": "iepl.huli168.com",
-      "server_port": 17273,
-      "method": "aes-256-gcm",
-      "password": "Gjv3t0WDY17HUakw+2DpeA=="
-    },
-    {
       "tag": "🇻🇳 越南 01",
       "type": "shadowsocks",
-      "server": "103.186.154.19",
+      "server": "103.186.154.26",
       "server_port": 38388,
       "method": "aes-256-cfb",
       "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
