@@ -113,7 +113,6 @@
         "🇺🇸 美国 06",
         "🇺🇸 美国 07",
         "🇺🇸 美国 08",
-        "🇺🇸 美国 09",
         "🇹🇭 泰国 01",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
@@ -125,7 +124,6 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇻🇳 越南 01",
         "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
@@ -154,7 +152,6 @@
         "🇺🇸 美国 06",
         "🇺🇸 美国 07",
         "🇺🇸 美国 08",
-        "🇺🇸 美国 09",
         "🇹🇭 泰国 01",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
@@ -166,7 +163,6 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇻🇳 越南 01",
         "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
@@ -195,7 +191,6 @@
         "🇺🇸 美国 06",
         "🇺🇸 美国 07",
         "🇺🇸 美国 08",
-        "🇺🇸 美国 09",
         "🇹🇭 泰国 01",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
@@ -207,7 +202,6 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇻🇳 越南 01",
         "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
@@ -238,7 +232,6 @@
         "🇺🇸 美国 06",
         "🇺🇸 美国 07",
         "🇺🇸 美国 08",
-        "🇺🇸 美国 09",
         "🇹🇭 泰国 01",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
@@ -250,7 +243,6 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇻🇳 越南 01",
         "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
@@ -280,7 +272,6 @@
         "🇺🇸 美国 06",
         "🇺🇸 美国 07",
         "🇺🇸 美国 08",
-        "🇺🇸 美国 09",
         "🇹🇭 泰国 01",
         "🇰🇷 韩国 01",
         "🇰🇷 韩国 02",
@@ -292,7 +283,6 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇻🇳 越南 01",
         "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
@@ -361,7 +351,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202507121073737-8Na8oPBuci.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202507022251291-d01YttPsbj.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇯🇵 日本 03",
@@ -564,27 +554,11 @@
     },
     {
       "tag": "🇺🇸 美国 05",
-      "type": "trojan",
-      "server": "91.193.58.0",
-      "server_port": 443,
-      "password": "trojan",
-      "tls": {
-        "enabled": true,
-        "server_name": "wahaha.yingyangkuaixian.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "wahaha.yingyangkuaixian.dpdns.org"
-        },
-        "max_early_data": null,
-        "path": "/"
-      }
+      "type": "shadowsocks",
+      "server": "jpiplc.deuen.com",
+      "server_port": 36529,
+      "method": "aes-256-gcm",
+      "password": "vGCBLG1SUe7YdXI1fPhdsA=="
     },
     {
       "tag": "🇺🇸 美国 06",
@@ -594,26 +568,10 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202507121073737-8Na8oPBuci.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202507022251291-d01YttPsbj.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇺🇸 美国 07",
-      "type": "trojan",
-      "server": "36.151.251.7",
-      "server_port": 3596,
-      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 08",
       "type": "trojan",
       "server": "36.151.251.7",
       "server_port": 32962,
@@ -629,27 +587,19 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 09",
+      "tag": "🇺🇸 美国 08",
       "type": "trojan",
-      "server": "91.193.58.0",
-      "server_port": 443,
-      "password": "trojan",
+      "server": "36.151.251.7",
+      "server_port": 3596,
+      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
-        "server_name": "wahaha.yingyangkuaixian.dpdns.org",
-        "insecure": false,
+        "server_name": "www.baidu.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "wahaha.yingyangkuaixian.dpdns.org"
-        },
-        "max_early_data": null,
-        "path": "/%2F"
       }
     },
     {
@@ -688,11 +638,19 @@
     },
     {
       "tag": "🇰🇷 韩国 02",
-      "type": "shadowsocks",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "type": "trojan",
+      "server": "36.151.251.7",
+      "server_port": 16012,
+      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.baidu.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "tag": "🇩🇪 德国 01",
@@ -766,9 +724,9 @@
     {
       "tag": "🇭🇰 香港 04",
       "type": "vmess",
-      "server": "38.147.188.87",
-      "server_port": 12425,
-      "uuid": "2f927b33-021b-4d45-9d4e-9a3592aef502",
+      "server": "103.224.80.29",
+      "server_port": 42203,
+      "uuid": "89e3bb59-bf63-4346-9864-cbc79cee58a5",
       "security": "auto",
       "alter_id": 0
     },
@@ -807,27 +765,11 @@
     {
       "tag": "🇭🇰 香港 07",
       "type": "vmess",
-      "server": "14269f63-t049s0-t1kmeg-mv7m.hk3.p5pv.com",
-      "server_port": 80,
-      "uuid": "94d40708-8273-11ea-8fc9-f23c913c8d2b",
+      "server": "103.181.165.26",
+      "server_port": 49597,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "broadcastlv.chat.bilibili.com"
-        },
-        "max_early_data": null,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇻🇳 越南 01",
-      "type": "shadowsocks",
-      "server": "103.186.154.26",
-      "server_port": 38388,
-      "method": "aes-256-cfb",
-      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+      "alter_id": 0
     },
     {
       "tag": "🇬🇧 英国 01",
