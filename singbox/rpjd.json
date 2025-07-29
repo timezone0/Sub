@@ -99,7 +99,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -126,7 +125,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -153,7 +151,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -182,7 +179,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -210,7 +206,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -290,9 +285,9 @@
     {
       "tag": "🇭🇰 香港 03",
       "type": "vmess",
-      "server": "103.224.80.29",
-      "server_port": 42203,
-      "uuid": "89e3bb59-bf63-4346-9864-cbc79cee58a5",
+      "server": "38.147.188.250",
+      "server_port": 11745,
+      "uuid": "aee65b36-ac1a-428b-8da3-dae88195e47f",
       "security": "auto",
       "alter_id": 0
     },
@@ -329,15 +324,6 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 06",
-      "type": "vmess",
-      "server": "103.181.165.26",
-      "server_port": 49597,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
       "tag": "🇯🇵 日本 01",
       "type": "shadowsocks",
       "server": "cn01.efan8867801.xyz",
@@ -345,7 +331,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507022251291-d01YttPsbj.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202507282137611-JtmNFkb3wi.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 02",
@@ -379,8 +365,8 @@
     {
       "tag": "🇯🇵 日本 04",
       "type": "trojan",
-      "server": "172.234.90.253",
-      "server_port": 41225,
+      "server": "172.237.27.220",
+      "server_port": 443,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
@@ -394,15 +380,24 @@
     },
     {
       "tag": "🇯🇵 日本 05",
-      "type": "vmess",
-      "server": "47.79.94.25",
-      "server_port": 8080,
-      "uuid": "b36d992c-786b-4136-96d6-c37641207d47",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "trojan",
+      "server": "jp006.421421.xyz",
+      "server_port": 20230,
+      "password": "2ba7e4d0-f2f9-456e-a43e-f5a724d7e367",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.alibaba.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "www.alibaba.com"
+        },
         "max_early_data": null,
         "path": "/"
       }
@@ -427,7 +422,7 @@
       "tag": "🇸🇬 新加坡 01",
       "type": "trojan",
       "server": "36.151.195.111",
-      "server_port": 25618,
+      "server_port": 811,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
@@ -442,8 +437,8 @@
     {
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
-      "server": "36.151.195.111",
-      "server_port": 9161,
+      "server": "178.128.106.216",
+      "server_port": 443,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
@@ -473,11 +468,27 @@
     },
     {
       "tag": "🇺🇸 美国 01",
-      "type": "shadowsocks",
-      "server": "jpiplc.deuen.com",
-      "server_port": 36529,
-      "method": "aes-256-gcm",
-      "password": "vGCBLG1SUe7YdXI1fPhdsA=="
+      "type": "trojan",
+      "server": "172.67.214.21",
+      "server_port": 443,
+      "password": "7248e825-887c-48b9-83bc-c26bc6392bf8",
+      "tls": {
+        "enabled": true,
+        "server_name": "xXcdvFgt.191268.XYz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "xXcdvFgt.191268.XYz"
+        },
+        "max_early_data": null,
+        "path": "/ctdmgeIg3NII3ibrzzKXJGy3S1"
+      }
     },
     {
       "tag": "🇺🇸 美国 02",
@@ -487,7 +498,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507022251291-d01YttPsbj.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202507282137611-JtmNFkb3wi.download.microsoft.com"
     },
     {
       "tag": "🇺🇸 美国 03",
@@ -508,8 +519,8 @@
     {
       "tag": "🇺🇸 美国 04",
       "type": "trojan",
-      "server": "36.151.192.243",
-      "server_port": 34719,
+      "server": "174.138.85.53",
+      "server_port": 443,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
