@@ -82,50 +82,56 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "hk-aws-171.77vpn.com", port: 1080, type: "trojan", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", sni: "hk-aws-171.77vpn.com", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 02", server: "hk-aws-171.77vpn.com", port: 1081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", udp: true}
-- {name: "🇭🇰 香港 03", server: "16.162.50.142", port: 10001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", udp: true}
-- {name: "🇭🇰 香港 04", server: "156.224.77.215", port: 22800, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7544f8c0-f998-4a4c-beda-469b91acc534", udp: true}
-- {name: "🇭🇰 香港 05", server: "hk-aws-171.77vpn.com", port: 1082, type: "vmess", uuid: "fb1f27c3-64da-4e27-b636-4296b7df24ec", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/77vpn", headers: {Host: "hk-aws-171.77vpn.com"}}, udp: true, servername: "hk-aws-171.77vpn.com"}
-- {name: "🇭🇰 香港 06", server: "115.120.244.50", port: 20001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", udp: true}
-- {name: "🇭🇰 香港 07", server: "hk-aws-171.77vpn.com", port: 1083, type: "vmess", uuid: "fb1f27c3-64da-4e27-b636-4296b7df24ec", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "grpc", grpc-opts: {grpc-service-name: "/"}, udp: true, servername: "hk-aws-171.77vpn.com"}
-- {name: "🇭🇰 香港 08", server: "115.120.244.50", port: 20101, type: "ss", cipher: "chacha20-ietf-poly1305", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", udp: true}
-- {name: "🇭🇰 香港 09", server: "xdd.dashuai.cyou", port: 45051, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇭🇰 香港 10", server: "xg.dashuai.cyou", port: 19901, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇹🇭 泰国 01", server: "haa.dashuai.cyou", port: 45060, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇹🇭 泰国 02", server: "xdd.dashuai.cyou", port: 45061, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇨🇦 加拿大 01", server: "haa.dashuai.cyou", port: 45064, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇨🇦 加拿大 02", server: "xdd.dashuai.cyou", port: 45065, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇺🇸 美国 01", server: "us-elegang-aws-100.77vpn.com", port: 1083, type: "vmess", uuid: "fb1f27c3-64da-4e27-b636-4296b7df24ec", alterId: 0, cipher: "auto", tls: true, network: "grpc", grpc-opts: {grpc-service-name: "/"}, udp: true, servername: "us-elegang-aws-100.77vpn.com"}
-- {name: "🇺🇸 美国 02", server: "us-elegang-aws-100.77vpn.com", port: 1081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", udp: true}
-- {name: "🇺🇸 美国 03", server: "xdd.dashuai.cyou", port: 45053, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇺🇸 美国 04", server: "haa.dashuai.cyou", port: 45052, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇺🇸 美国 05", server: "us-elegang-aws-100.77vpn.com", port: 1080, type: "trojan", password: "fb1f27c3-64da-4e27-b636-4296b7df24ec", sni: "us-elegang-aws-100.77vpn.com", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 06", server: "us-elegang-aws-100.77vpn.com", port: 1082, type: "vmess", uuid: "fb1f27c3-64da-4e27-b636-4296b7df24ec", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/77vpn", headers: {Host: "us-elegang-aws-100.77vpn.com"}}, udp: true, servername: "us-elegang-aws-100.77vpn.com"}
-- {name: "🇬🇧 英国 01", server: "xdd.dashuai.cyou", port: 45067, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇬🇧 英国 02", server: "haa.dashuai.cyou", port: 45066, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇯🇵 日本 01", server: "haa.dashuai.cyou", port: 45056, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇯🇵 日本 02", server: "xdd.dashuai.cyou", port: 45057, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇸🇬 新加坡 01", server: "haa.dashuai.cyou", port: 45054, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇸🇬 新加坡 02", server: "xdd.dashuai.cyou", port: 45055, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇫🇷 法国 01", server: "haa.dashuai.cyou", port: 45072, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇫🇷 法国 02", server: "xdd.dashuai.cyou", port: 45071, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇮🇪 爱尔兰 01", server: "107.175.187.181", port: 22800, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7544f8c0-f998-4a4c-beda-469b91acc534", udp: true}
-- {name: "🇰🇷 韩国 01", server: "haa.dashuai.cyou", port: 45076, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇰🇷 韩国 02", server: "xdd.dashuai.cyou", port: 45075, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇦🇺 澳大利亚 01", server: "xdd.dashuai.cyou", port: 45063, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇦🇺 澳大利亚 02", server: "haa.dashuai.cyou", port: 45062, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇲🇾 马来 01", server: "haa.dashuai.cyou", port: 45058, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇲🇾 马来 02", server: "xdd.dashuai.cyou", port: 45059, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇮🇳 印度 01", server: "xdd.dashuai.cyou", port: 45073, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇮🇳 印度 02", server: "haa.dashuai.cyou", port: 45074, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇨🇳 台湾 01", server: "xdd.dashuai.cyou", port: 45077, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇨🇳 台湾 02", server: "haa.dashuai.cyou", port: 45078, type: "vmess", uuid: "7c4c189e-aa97-46d5-b99a-5cb44c7cf2f4", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇺🇸 美国 01", server: "us-elegang-aws-100.77vpn.com", port: 1083, type: "vmess", uuid: "f103974d-5dbf-401f-a24d-773ac22949eb", alterId: 0, cipher: "auto", tls: true, network: "grpc", grpc-opts: {grpc-service-name: "/"}, udp: true, servername: "us-elegang-aws-100.77vpn.com"}
+- {name: "🇺🇸 美国 02", server: "us-elegang-aws-100.77vpn.com", port: 1082, type: "vmess", uuid: "f103974d-5dbf-401f-a24d-773ac22949eb", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/77vpn", headers: {Host: "us-elegang-aws-100.77vpn.com"}}, udp: true, servername: "us-elegang-aws-100.77vpn.com"}
+- {name: "🇺🇸 美国 03", server: "us-elegang-aws-100.77vpn.com", port: 1080, type: "trojan", password: "f103974d-5dbf-401f-a24d-773ac22949eb", sni: "us-elegang-aws-100.77vpn.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 04", server: "haa.dashuai.cyou", port: 45052, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇺🇸 美国 05", server: "us-elegang-aws-100.77vpn.com", port: 1081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f103974d-5dbf-401f-a24d-773ac22949eb", udp: true}
+- {name: "🇺🇸 美国 06", server: "xdd.dashuai.cyou", port: 45053, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇭🇰 香港 01", server: "16.162.50.142", port: 10001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f103974d-5dbf-401f-a24d-773ac22949eb", udp: true}
+- {name: "🇭🇰 香港 02", server: "115.120.244.50", port: 20001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f103974d-5dbf-401f-a24d-773ac22949eb", udp: true}
+- {name: "🇭🇰 香港 03", server: "xdd.dashuai.cyou", port: 45051, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇭🇰 香港 04", server: "hk-aws-171.77vpn.com", port: 1080, type: "trojan", password: "f103974d-5dbf-401f-a24d-773ac22949eb", sni: "hk-aws-171.77vpn.com", skip-cert-verify: true, udp: true}
+- {name: "🇭🇰 香港 05", server: "115.120.244.50", port: 20101, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f103974d-5dbf-401f-a24d-773ac22949eb", udp: true}
+- {name: "🇭🇰 香港 06", server: "hk-aws-171.77vpn.com", port: 1083, type: "vmess", uuid: "f103974d-5dbf-401f-a24d-773ac22949eb", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "grpc", grpc-opts: {grpc-service-name: "/"}, udp: true, servername: "hk-aws-171.77vpn.com"}
+- {name: "🇭🇰 香港 07", server: "hk-aws-171.77vpn.com", port: 1081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f103974d-5dbf-401f-a24d-773ac22949eb", udp: true}
+- {name: "🇭🇰 香港 08", server: "156.224.77.215", port: 22800, type: "ss", cipher: "chacha20-ietf-poly1305", password: "02a8a611-7762-445f-bcd1-b54f4b0ad969", udp: true}
+- {name: "🇭🇰 香港 09", server: "hk-aws-171.77vpn.com", port: 1082, type: "vmess", uuid: "f103974d-5dbf-401f-a24d-773ac22949eb", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/77vpn", headers: {Host: "hk-aws-171.77vpn.com"}}, udp: true, servername: "hk-aws-171.77vpn.com"}
+- {name: "🇭🇰 香港 10", server: "xg.dashuai.cyou", port: 19901, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇯🇵 日本 01", server: "haa.dashuai.cyou", port: 45056, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇯🇵 日本 02", server: "xdd.dashuai.cyou", port: 45057, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇫🇷 法国 01", server: "xdd.dashuai.cyou", port: 45071, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇫🇷 法国 02", server: "haa.dashuai.cyou", port: 45072, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇲🇾 马来 01", server: "haa.dashuai.cyou", port: 45058, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇲🇾 马来 02", server: "xdd.dashuai.cyou", port: 45059, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇸🇬 新加坡 01", server: "xdd.dashuai.cyou", port: 45055, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇸🇬 新加坡 02", server: "haa.dashuai.cyou", port: 45054, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇨🇦 加拿大 01", server: "haa.dashuai.cyou", port: 45064, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇨🇦 加拿大 02", server: "xdd.dashuai.cyou", port: 45065, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇬🇧 英国 01", server: "xdd.dashuai.cyou", port: 45067, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇬🇧 英国 02", server: "haa.dashuai.cyou", port: 45066, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇮🇪 爱尔兰 01", server: "107.175.187.181", port: 22800, type: "ss", cipher: "chacha20-ietf-poly1305", password: "02a8a611-7762-445f-bcd1-b54f4b0ad969", udp: true}
+- {name: "🇮🇳 印度 01", server: "xdd.dashuai.cyou", port: 45073, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇮🇳 印度 02", server: "haa.dashuai.cyou", port: 45074, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇰🇷 韩国 01", server: "haa.dashuai.cyou", port: 45076, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇰🇷 韩国 02", server: "xdd.dashuai.cyou", port: 45075, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇨🇳 台湾 01", server: "xdd.dashuai.cyou", port: 45077, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇨🇳 台湾 02", server: "haa.dashuai.cyou", port: 45078, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇹🇭 泰国 01", server: "xdd.dashuai.cyou", port: 45061, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇹🇭 泰国 02", server: "haa.dashuai.cyou", port: 45060, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇦🇺 澳大利亚 01", server: "haa.dashuai.cyou", port: 45062, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
+- {name: "🇦🇺 澳大利亚 02", server: "xdd.dashuai.cyou", port: 45063, type: "vmess", uuid: "336f7d89-3949-4129-a305-ea92116b7f69", alterId: 0, cipher: "auto", tls: false, udp: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -136,41 +142,41 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
-  - "🇮🇪 爱尔兰 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇮🇪 爱尔兰 01"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -181,39 +187,39 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
-  - "🇮🇪 爱尔兰 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇮🇪 爱尔兰 01"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -224,41 +230,41 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
-  - "🇮🇪 爱尔兰 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇮🇪 爱尔兰 01"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -269,40 +275,40 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
-  - "🇮🇪 爱尔兰 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇮🇪 爱尔兰 01"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -313,35 +319,29 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
   - "🇭🇰 香港 10"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
-  - "🇮🇪 爱尔兰 01"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇮🇪 爱尔兰 01"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
+  - "🇹🇭 泰国 01"
+  - "🇹🇭 泰国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
