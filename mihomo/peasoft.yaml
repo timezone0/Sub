@@ -96,7 +96,6 @@ proxies:
 - {alterId: 2, cipher: "auto", name: "🇸🇬 新加坡 05", network: "ws", port: 30839, server: "v39.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {alterId: 0, cipher: "auto", name: "🇸🇬 新加坡 06", port: 3683, server: "51e48c04-t0fds0-t3fjp7-cdfn.82.iwskwai.com", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "94931862-1484-11f0-9ab7-f23c95b6f51d", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇸🇬 新加坡 07", network: "tcp", port: 3683, server: "51e48c04-t0fds0-t3fjp7-cdfn.82.iwskwai.com", tls: false, type: "vmess", uuid: "94931862-1484-11f0-9ab7-f23c95b6f51d", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {name: "🇸🇬 新加坡 08", network: "ws", password: "Aimer", port: 8443, server: "92.243.74.180", skip-cert-verify: false, sni: "tyep.esslh.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "tyep.esslh.filegear-sg.me"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 01", password: "60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d", port: 15229, server: "391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net", skip-cert-verify: false, type: "trojan", udp: true, client-fingerprint: "chrome", sni: "391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net"}
 - {alterId: 2, cipher: "auto", name: "🇺🇸 美国 02", network: "ws", port: 30829, server: "v29.heduian.link", skip-cert-verify: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "ocbc.com"}, path: "/oooo"}, client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 03", password: "5e2f888c-68ef-11ef-96ca-f23c9164ca5d", port: 15229, server: "13c2c931-swin40-swy6li-tni2.cu.plebai.net", skip-cert-verify: false, sni: "13c2c931-swin40-swy6li-tni2.cu.plebai.net", type: "trojan", client-fingerprint: "chrome"}
@@ -120,7 +119,6 @@ proxies:
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "kcp", port: 3423, server: "8.217.129.229", tls: false, type: "vmess", uuid: "97a3cf03-66d6-4d65-aa3e-33eb6c709be7", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {alterId: 0, cipher: "auto", name: "🇨🇳 台湾 01", port: 3690, server: "64657217-t0fds0-t0yugh-dnss.82.iwskwai.com", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "16955d72-1794-11f0-a035-f23c95b6f51d", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇨🇳 台湾 02", network: "tcp", port: 3690, server: "64657217-t0fds0-t0yugh-dnss.82.iwskwai.com", tls: false, type: "vmess", uuid: "16955d72-1794-11f0-a035-f23c95b6f51d", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {name: "🇬🇧 英国 01", password: "74260628090146500", port: 443, server: "stirring-parakeet.shiner427.skin", skip-cert-verify: false, type: "trojan", udp: true, client-fingerprint: "chrome", sni: "stirring-parakeet.shiner427.skin"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -140,7 +138,6 @@ proxy-groups:
   - "🇸🇬 新加坡 05"
   - "🇸🇬 新加坡 06"
   - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -164,7 +161,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇬🇧 英国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -185,7 +181,6 @@ proxy-groups:
   - "🇸🇬 新加坡 05"
   - "🇸🇬 新加坡 06"
   - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -209,7 +204,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇬🇧 英国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -228,7 +222,6 @@ proxy-groups:
   - "🇸🇬 新加坡 05"
   - "🇸🇬 新加坡 06"
   - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -252,7 +245,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇬🇧 英国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -273,7 +265,6 @@ proxy-groups:
   - "🇸🇬 新加坡 05"
   - "🇸🇬 新加坡 06"
   - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -297,7 +288,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇬🇧 英国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -317,7 +307,6 @@ proxy-groups:
   - "🇸🇬 新加坡 05"
   - "🇸🇬 新加坡 06"
   - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -341,7 +330,6 @@ proxy-groups:
   - "🇭🇰 香港 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇬🇧 英国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
