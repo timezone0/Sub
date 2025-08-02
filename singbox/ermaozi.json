@@ -233,6 +233,35 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "emby",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇰🇷 韩国 01",
+        "🇯🇵 日本 01",
+        "🇷🇺 俄罗斯 01",
+        "🇲🇩 摩尔多瓦 01",
+        "🇲🇩 摩尔多瓦 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -633,17 +662,18 @@
         "outbound": "googlefcm"
       },
       {
+        "domain_keyword": [
+          "ushd.xmsl.org",
+          "cf.gtlx.org"
+        ],
+        "outbound": "emby"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
           {
             "ip_is_private": true
-          },
-          {
-            "domain_keyword": [
-              "ushd.xmsl.org",
-              "cf.gtlx.org"
-            ]
           },
           {
             "rule_set": [

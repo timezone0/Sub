@@ -173,6 +173,23 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "emby",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇸🇬 新加坡 01",
+        "🇯🇵 日本 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -227,7 +244,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -273,7 +290,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -295,7 +312,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -317,7 +334,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -388,17 +405,18 @@
         "outbound": "googlefcm"
       },
       {
+        "domain_keyword": [
+          "ushd.xmsl.org",
+          "cf.gtlx.org"
+        ],
+        "outbound": "emby"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
           {
             "ip_is_private": true
-          },
-          {
-            "domain_keyword": [
-              "ushd.xmsl.org",
-              "cf.gtlx.org"
-            ]
           },
           {
             "rule_set": [

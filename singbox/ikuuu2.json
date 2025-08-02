@@ -168,6 +168,22 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "emby",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -200,21 +216,21 @@
     {
       "tag": "🇯🇵 日本 01",
       "type": "vmess",
-      "server": "hmmgc-g01.jp01-nn-vm0.entry.fr0528.art",
+      "server": "dpi61-g01.jp01-nn-vm0.entry.fr0528.art",
       "server_port": 21581,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
       "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "hmmgc-g01.jp01-nn-vm0.entry.fr0528.art",
+        "server_name": "dpi61-g01.jp01-nn-vm0.entry.fr0528.art",
         "insecure": false
       }
     },
     {
       "tag": "🇯🇵 日本 02",
       "type": "vmess",
-      "server": "5r1e7-g01.jp02-e3-vm0.entry.fr0528.art",
+      "server": "awwzp-g01.jp02-e3-vm0.entry.fr0528.art",
       "server_port": 11773,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -223,21 +239,21 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "vmess",
-      "server": "jiznk-g01.jp03-j7-vm0.entry.fr0528.art",
+      "server": "3n9lh-g01.jp03-j7-vm0.entry.fr0528.art",
       "server_port": 21581,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
       "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "jiznk-g01.jp03-j7-vm0.entry.fr0528.art",
+        "server_name": "3n9lh-g01.jp03-j7-vm0.entry.fr0528.art",
         "insecure": false
       }
     },
     {
       "tag": "🇯🇵 日本 04",
       "type": "vmess",
-      "server": "r3lg8-g01.jp04-1d-vm0.entry.fr0528.art",
+      "server": "6naia-g01.jp04-1d-vm0.entry.fr0528.art",
       "server_port": 444,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -246,7 +262,7 @@
     {
       "tag": "🇯🇵 日本 05",
       "type": "vmess",
-      "server": "uqja0-g01.jp05-h6-vm0.entry.fr0528.art",
+      "server": "qg7a9-g01.jp05-h6-vm0.entry.fr0528.art",
       "server_port": 46482,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -255,21 +271,21 @@
     {
       "tag": "🇯🇵 日本 06",
       "type": "vmess",
-      "server": "34at8-g01.jp06-jz-vm0.entry.fr0528.art",
+      "server": "xayi3-g01.jp06-jz-vm0.entry.fr0528.art",
       "server_port": 28783,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
       "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "34at8-g01.jp06-jz-vm0.entry.fr0528.art",
+        "server_name": "xayi3-g01.jp06-jz-vm0.entry.fr0528.art",
         "insecure": false
       }
     },
     {
       "tag": "🇯🇵 日本 07",
       "type": "vmess",
-      "server": "l7md2-g01.jp07-sh-vm0.entry.fr0528.art",
+      "server": "ghfr1-g01.jp07-sh-vm0.entry.fr0528.art",
       "server_port": 28783,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -341,17 +357,18 @@
         "outbound": "googlefcm"
       },
       {
+        "domain_keyword": [
+          "ushd.xmsl.org",
+          "cf.gtlx.org"
+        ],
+        "outbound": "emby"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
           {
             "ip_is_private": true
-          },
-          {
-            "domain_keyword": [
-              "ushd.xmsl.org",
-              "cf.gtlx.org"
-            ]
           },
           {
             "rule_set": [
