@@ -101,6 +101,7 @@
         "🇯🇵 日本 05",
         "🇯🇵 日本 07",
         "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
         "🇸🇰 斯洛伐克 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -167,6 +168,7 @@
         "🇯🇵 日本 05",
         "🇯🇵 日本 07",
         "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
         "🇸🇰 斯洛伐克 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -233,6 +235,7 @@
         "🇯🇵 日本 05",
         "🇯🇵 日本 07",
         "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
         "🇸🇰 斯洛伐克 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -301,6 +304,7 @@
         "🇯🇵 日本 05",
         "🇯🇵 日本 07",
         "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
         "🇸🇰 斯洛伐克 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -368,6 +372,7 @@
         "🇯🇵 日本 05",
         "🇯🇵 日本 07",
         "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
         "🇸🇰 斯洛伐克 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -435,6 +440,7 @@
         "🇯🇵 日本 05",
         "🇯🇵 日本 07",
         "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
         "🇸🇰 斯洛伐克 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -603,8 +609,8 @@
     {
       "tag": "🇯🇵 日本 07",
       "type": "trojan",
-      "server": "103.116.7.100",
-      "server_port": 2087,
+      "server": "103.116.7.220",
+      "server_port": 2096,
       "password": "Aimer",
       "tls": {
         "enabled": true,
@@ -630,6 +636,31 @@
       "type": "trojan",
       "server": "103.116.7.103",
       "server_port": 2083,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 09",
+      "type": "trojan",
+      "server": "103.116.7.100",
+      "server_port": 2087,
       "password": "Aimer",
       "tls": {
         "enabled": true,
@@ -718,7 +749,7 @@
     {
       "tag": "🇸🇬 新加坡 05",
       "type": "trojan",
-      "server": "92.243.74.239",
+      "server": "92.243.74.180",
       "server_port": 8443,
       "password": "Aimer",
       "tls": {
@@ -767,7 +798,7 @@
     {
       "tag": "🇸🇬 新加坡 07",
       "type": "trojan",
-      "server": "92.243.74.180",
+      "server": "92.243.74.239",
       "server_port": 8443,
       "password": "Aimer",
       "tls": {
@@ -1014,13 +1045,36 @@
         "headers": {
           "Host": "epga.aimercc.dpdns.org"
         },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
+        "max_early_data": null,
         "path": "/"
       }
     },
     {
       "tag": "🇺🇸 美国 13",
+      "type": "trojan",
+      "server": "198.62.62.67",
+      "server_port": 443,
+      "password": "tg-fq521free",
+      "tls": {
+        "enabled": true,
+        "server_name": "torjan.xn--xhq44j.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "torjan.xn--xhq44j.eu.org"
+        },
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 14",
       "type": "trojan",
       "server": "192.0.54.7",
       "server_port": 443,
@@ -1045,9 +1099,9 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 14",
+      "tag": "🇺🇸 美国 15",
       "type": "trojan",
-      "server": "192.200.160.35",
+      "server": "198.62.62.192",
       "server_port": 2083,
       "password": "Aimer",
       "tls": {
@@ -1066,30 +1120,6 @@
         },
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 15",
-      "type": "trojan",
-      "server": "198.62.62.67",
-      "server_port": 443,
-      "password": "tg-fq521free",
-      "tls": {
-        "enabled": true,
-        "server_name": "torjan.xn--xhq44j.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "torjan.xn--xhq44j.eu.org"
-        },
-        "max_early_data": null,
         "path": "/"
       }
     },
@@ -1146,7 +1176,7 @@
     {
       "tag": "🇺🇸 美国 18",
       "type": "trojan",
-      "server": "161.145.150.29",
+      "server": "192.200.160.35",
       "server_port": 2083,
       "password": "Aimer",
       "tls": {
@@ -1171,130 +1201,6 @@
     {
       "tag": "🇺🇸 美国 19",
       "type": "trojan",
-      "server": "66.81.247.230",
-      "server_port": 2096,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 20",
-      "type": "trojan",
-      "server": "135.84.64.77",
-      "server_port": 2096,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 21",
-      "type": "trojan",
-      "server": "198.62.62.192",
-      "server_port": 2083,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "max_early_data": null,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 22",
-      "type": "trojan",
-      "server": "216.24.57.1",
-      "server_port": 2053,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 23",
-      "type": "trojan",
-      "server": "161.145.150.26",
-      "server_port": 2087,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 24",
-      "type": "trojan",
       "server": "130.250.137.63",
       "server_port": 2083,
       "password": "Aimer",
@@ -1318,57 +1224,7 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 25",
-      "type": "trojan",
-      "server": "167.68.5.248",
-      "server_port": 2087,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 26",
-      "type": "trojan",
-      "server": "167.68.4.7",
-      "server_port": 2053,
-      "password": "Aimer",
-      "tls": {
-        "enabled": true,
-        "server_name": "epga.aimercc.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epga.aimercc.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 27",
+      "tag": "🇺🇸 美国 20",
       "type": "trojan",
       "server": "167.68.4.131",
       "server_port": 8443,
@@ -1393,7 +1249,132 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 28",
+      "tag": "🇺🇸 美国 21",
+      "type": "trojan",
+      "server": "161.145.150.29",
+      "server_port": 2083,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 22",
+      "type": "trojan",
+      "server": "66.81.247.230",
+      "server_port": 2096,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 23",
+      "type": "trojan",
+      "server": "167.68.5.248",
+      "server_port": 2087,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 24",
+      "type": "trojan",
+      "server": "161.145.150.26",
+      "server_port": 2087,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 25",
+      "type": "trojan",
+      "server": "167.68.4.7",
+      "server_port": 2053,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 26",
       "type": "trojan",
       "server": "216.24.57.30",
       "server_port": 443,
@@ -1413,6 +1394,56 @@
           "Host": "torjan.xn--xhq44j.eu.org"
         },
         "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 27",
+      "type": "trojan",
+      "server": "216.24.57.1",
+      "server_port": 2053,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 28",
+      "type": "trojan",
+      "server": "135.84.64.77",
+      "server_port": 2096,
+      "password": "Aimer",
+      "tls": {
+        "enabled": true,
+        "server_name": "epga.aimercc.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "epga.aimercc.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
         "path": "/"
       }
     },
@@ -1630,8 +1661,7 @@
         "headers": {
           "Host": "epga.aimercc.dpdns.org"
         },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
+        "max_early_data": null,
         "path": "/"
       }
     },
@@ -1655,7 +1685,8 @@
         "headers": {
           "Host": "epga.aimercc.dpdns.org"
         },
-        "max_early_data": null,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
         "path": "/"
       }
     },
