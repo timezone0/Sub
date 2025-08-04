@@ -163,21 +163,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "emby",
-      "type": "selector",
-      "outbounds": [
-        "select",
-        "direct",
-        "🇯🇵 日本 01",
-        "🇺🇸 美国 01",
-        "🇨🇳 台湾 01",
-        "🇸🇬 新加坡 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -430,13 +415,6 @@
           "geosite-googlefcm"
         ],
         "outbound": "googlefcm"
-      },
-      {
-        "domain_keyword": [
-          "ushd.xmsl.org",
-          "cf.gtlx.org"
-        ],
-        "outbound": "emby"
       },
       {
         "type": "logical",

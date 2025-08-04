@@ -183,25 +183,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "emby",
-      "type": "selector",
-      "outbounds": [
-        "select",
-        "direct",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
-        "🇨🇦 加拿大 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -375,13 +356,6 @@
           "geosite-googlefcm"
         ],
         "outbound": "googlefcm"
-      },
-      {
-        "domain_keyword": [
-          "ushd.xmsl.org",
-          "cf.gtlx.org"
-        ],
-        "outbound": "emby"
       },
       {
         "type": "logical",
