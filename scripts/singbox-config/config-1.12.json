@@ -132,15 +132,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "emby",
-      "type": "selector",
-      "outbounds": [
-        "select",
-        "direct"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -234,13 +225,6 @@
           "geosite-googlefcm"
         ],
         "outbound": "googlefcm"
-      },
-      {
-        "domain_keyword": [
-          "ushd.xmsl.org",
-          "cf.gtlx.org"
-        ],
-        "outbound": "emby"
       },
       {
         "type": "logical",
