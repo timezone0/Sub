@@ -123,7 +123,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇭🇰 香港 08"
+        "🇭🇰 香港 08",
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -161,7 +162,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇭🇰 香港 08"
+        "🇭🇰 香港 08",
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -199,7 +201,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇭🇰 香港 08"
+        "🇭🇰 香港 08",
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -239,7 +242,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇭🇰 香港 08"
+        "🇭🇰 香港 08",
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -278,7 +282,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
-        "🇭🇰 香港 08"
+        "🇭🇰 香港 08",
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -346,7 +351,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202507282137611-5Up7OUIi18.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202507282137611-T3mfnF0MuU.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇯🇵 日本 03",
@@ -555,7 +560,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202507282137611-5Up7OUIi18.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202507282137611-T3mfnF0MuU.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇺🇸 美国 07",
@@ -576,8 +581,8 @@
     {
       "tag": "🇺🇸 美国 08",
       "type": "trojan",
-      "server": "143.110.155.169",
-      "server_port": 443,
+      "server": "36.156.102.125",
+      "server_port": 472,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
@@ -721,7 +726,7 @@
       "type": "vmess",
       "server": "hkt.gotochinatown.net",
       "server_port": 80,
-      "uuid": "715a2574-9c25-11eb-8673-f23c9164ca5d",
+      "uuid": "6d4abac0-86e6-11ef-83cc-f23c913c8d2b",
       "security": "auto",
       "alter_id": 2,
       "transport": {
@@ -736,8 +741,8 @@
     {
       "tag": "🇭🇰 香港 05",
       "type": "trojan",
-      "server": "58.152.30.37",
-      "server_port": 443,
+      "server": "36.156.102.125",
+      "server_port": 447,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
       "tls": {
         "enabled": true,
@@ -751,19 +756,18 @@
     },
     {
       "tag": "🇭🇰 香港 06",
-      "type": "vmess",
-      "server": "hkt.gotochinatown.net",
-      "server_port": 80,
-      "uuid": "6e313598-a088-11ea-a22e-f23c91cfbbc9",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "hkt.gotochinatown.net"
-        },
-        "max_early_data": null,
-        "path": "/"
+      "type": "trojan",
+      "server": "gz-43e866.kaiqsz.com",
+      "server_port": 12221,
+      "password": "dfd4867b-26c6-4e49-9b96-ef4dbbb3f31f",
+      "tls": {
+        "enabled": true,
+        "server_name": "mmbiz.redapricotcloud.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -784,11 +788,28 @@
     },
     {
       "tag": "🇭🇰 香港 08",
+      "type": "vmess",
+      "server": "hkt.gotochinatown.net",
+      "server_port": 80,
+      "uuid": "ca506e08-ce3d-5e5a-c128-6358caca15e5",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "broadcastlv.chat.bilibili.com"
+        },
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇻🇳 越南 01",
       "type": "shadowsocks",
-      "server": "103.149.183.154",
-      "server_port": 8388,
-      "method": "chacha20-ietf",
-      "password": "asd123456"
+      "server": "103.186.155.20",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
     }
   ],
   "route": {
