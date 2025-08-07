@@ -98,11 +98,11 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -122,11 +122,11 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -146,11 +146,11 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -172,11 +172,11 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -197,11 +197,11 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
@@ -274,15 +274,6 @@
     },
     {
       "tag": "🇭🇰 香港 03",
-      "type": "vmess",
-      "server": "38.147.188.109",
-      "server_port": 51527,
-      "uuid": "861a3fbe-e925-4163-9c28-2413abd580af",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇭🇰 香港 04",
       "type": "trojan",
       "server": "36.156.102.125",
       "server_port": 447,
@@ -298,7 +289,7 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 05",
+      "tag": "🇭🇰 香港 04",
       "type": "trojan",
       "server": "36.156.102.125",
       "server_port": 444,
@@ -334,7 +325,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507282137611-RCmbvsdXhz.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202507282137611-9VmVbE7FgF.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 02",
@@ -352,6 +343,22 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "trojan",
+      "server": "okanc.iepl.cac.cab",
+      "server_port": 23008,
+      "password": "6b5b43c9-05bd-471e-b502-d52c0dbd55fd",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bilibili.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "trojan",
       "server": "36.156.102.125",
       "server_port": 461,
       "password": "d0d08cddacc3190ea81b1b792e1b5fde",
@@ -368,13 +375,13 @@
     {
       "tag": "🇰🇷 韩国 01",
       "type": "trojan",
-      "server": "36.156.102.125",
-      "server_port": 461,
-      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
+      "server": "okanc.iepl.cac.cab",
+      "server_port": 24001,
+      "password": "6b5b43c9-05bd-471e-b502-d52c0dbd55fd",
       "tls": {
         "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": true,
+        "server_name": "www.bilibili.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -439,32 +446,16 @@
     },
     {
       "tag": "🇺🇸 美国 02",
-      "type": "trojan",
-      "server": "36.156.102.125",
-      "server_port": 472,
-      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 03",
       "type": "shadowsocks",
       "server": "cn01.efan8867801.xyz",
       "server_port": 8774,
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202507282137611-RCmbvsdXhz.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202507282137611-9VmVbE7FgF.download.microsoft.com"
     },
     {
-      "tag": "🇺🇸 美国 04",
+      "tag": "🇺🇸 美国 03",
       "type": "trojan",
       "server": "36.156.102.125",
       "server_port": 329,
@@ -472,7 +463,23 @@
       "tls": {
         "enabled": true,
         "server_name": "www.baidu.com",
-        "insecure": false,
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "trojan",
+      "server": "36.156.102.125",
+      "server_port": 472,
+      "password": "d0d08cddacc3190ea81b1b792e1b5fde",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.baidu.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
