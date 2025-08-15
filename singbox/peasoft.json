@@ -120,6 +120,7 @@
         "🇰🇷 韩国 09",
         "🇰🇷 韩国 10",
         "🇰🇷 韩国 11",
+        "🇰🇷 韩国 12",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -217,6 +218,7 @@
         "🇰🇷 韩国 09",
         "🇰🇷 韩国 10",
         "🇰🇷 韩国 11",
+        "🇰🇷 韩国 12",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -314,6 +316,7 @@
         "🇰🇷 韩国 09",
         "🇰🇷 韩国 10",
         "🇰🇷 韩国 11",
+        "🇰🇷 韩国 12",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -413,6 +416,7 @@
         "🇰🇷 韩国 09",
         "🇰🇷 韩国 10",
         "🇰🇷 韩国 11",
+        "🇰🇷 韩国 12",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -511,6 +515,7 @@
         "🇰🇷 韩国 09",
         "🇰🇷 韩国 10",
         "🇰🇷 韩国 11",
+        "🇰🇷 韩国 12",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -664,11 +669,20 @@
     },
     {
       "tag": "🇭🇰 香港 05",
-      "type": "shadowsocks",
-      "server": "awes35lesl.blhao0o.dpdns.org",
-      "server_port": 12014,
-      "method": "aes-128-gcm",
-      "password": "01721e43-5389-4f97-b21c-900abb2bda9e"
+      "type": "vmess",
+      "server": "hkt.gotochinatown.net",
+      "server_port": 80,
+      "uuid": "adbd0a82-3336-11ed-bd7c-f23c913c8d2b",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "broadcastlv.chat.bilibili.com"
+        },
+        "max_early_data": null,
+        "path": "/"
+      }
     },
     {
       "tag": "🇭🇰 香港 06",
@@ -744,7 +758,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202507282137611-pwlP10l6s0.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202507282137611-vye4FDfLUP.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇯🇵 日本 02",
@@ -793,11 +807,20 @@
     },
     {
       "tag": "🇯🇵 日本 05",
-      "type": "shadowsocks",
-      "server": "t1.fttos.xyz",
-      "server_port": 35782,
-      "method": "chacha20-ietf-poly1305",
-      "password": "628726b8-9371-4bdd-aab5-d864a492a492"
+      "type": "vmess",
+      "server": "planb.mojcn.com",
+      "server_port": 16617,
+      "uuid": "0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "b37048544d083a503188d38c53d6e4f2.mobgslb.tbcache.com"
+        },
+        "max_early_data": null,
+        "path": "/"
+      }
     },
     {
       "tag": "🇯🇵 日本 07",
@@ -859,6 +882,14 @@
     },
     {
       "tag": "🇰🇷 韩国 02",
+      "type": "shadowsocks",
+      "server": "54.180.238.255",
+      "server_port": 9898,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1a17b19d-4896-4531-af79-6e91d8ef8228"
+    },
+    {
+      "tag": "🇰🇷 韩国 03",
       "type": "trojan",
       "server": "115.22.115.218",
       "server_port": 50000,
@@ -883,7 +914,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 03",
+      "tag": "🇰🇷 韩国 04",
       "type": "trojan",
       "server": "175.210.186.14",
       "server_port": 12562,
@@ -908,7 +939,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 04",
+      "tag": "🇰🇷 韩国 05",
       "type": "trojan",
       "server": "211.224.100.145",
       "server_port": 50000,
@@ -933,7 +964,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 05",
+      "tag": "🇰🇷 韩国 06",
       "type": "trojan",
       "server": "211.57.146.108",
       "server_port": 50000,
@@ -958,7 +989,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 06",
+      "tag": "🇰🇷 韩国 07",
       "type": "trojan",
       "server": "222.105.100.2",
       "server_port": 12483,
@@ -983,7 +1014,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 07",
+      "tag": "🇰🇷 韩国 08",
       "type": "trojan",
       "server": "59.16.25.39",
       "server_port": 12288,
@@ -1008,7 +1039,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 08",
+      "tag": "🇰🇷 韩国 09",
       "type": "trojan",
       "server": "210.222.78.191",
       "server_port": 10240,
@@ -1033,7 +1064,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 09",
+      "tag": "🇰🇷 韩国 10",
       "type": "trojan",
       "server": "121.167.146.253",
       "server_port": 12902,
@@ -1058,7 +1089,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 10",
+      "tag": "🇰🇷 韩国 11",
       "type": "trojan",
       "server": "220.72.106.154",
       "server_port": 12127,
@@ -1083,7 +1114,7 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 11",
+      "tag": "🇰🇷 韩国 12",
       "type": "trojan",
       "server": "175.212.51.220",
       "server_port": 21301,
@@ -1141,18 +1172,19 @@
     },
     {
       "tag": "🇸🇬 新加坡 03",
-      "type": "trojan",
-      "server": "8.148.194.255",
-      "server_port": 25010,
-      "password": "be76ac23-8ff8-4afe-a86e-5153f4ce869d",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.148.194.255",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+      "type": "vmess",
+      "server": "free-relay.themars.top",
+      "server_port": 49102,
+      "uuid": "631484bb-c085-4384-8c3a-d93db3d587ef",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "www.cctv.com"
+        },
+        "max_early_data": null,
+        "path": "/cctv1.m3u8"
       }
     },
     {
@@ -1329,7 +1361,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202507282137611-pwlP10l6s0.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202507282137611-vye4FDfLUP.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇺🇸 美国 03",
