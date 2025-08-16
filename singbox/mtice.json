@@ -1,0 +1,1082 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "1.1.1.1",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_keyword": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇰🇷 韩国 04",
+        "🇰🇷 韩国 05",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "3m",
+      "outbounds": [
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇰🇷 韩国 04",
+        "🇰🇷 韩国 05",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇰🇷 韩国 04",
+        "🇰🇷 韩国 05",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇰🇷 韩国 04",
+        "🇰🇷 韩国 05",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇰🇷 韩国 04",
+        "🇰🇷 韩国 05",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "vless",
+      "server": "hk1-r.ddns-link-b5.uk",
+      "server_port": 10126,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vless",
+      "server": "hk2-r.ddns-link-b5.uk",
+      "server_port": 10127,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "hysteria2",
+      "server": "hk3.dexlos.com",
+      "server_port": 5644,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk3.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 04",
+      "type": "hysteria2",
+      "server": "hk4.dexlos.com",
+      "server_port": 7178,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk4.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 05",
+      "type": "hysteria2",
+      "server": "hk5.dexlos.com",
+      "server_port": 9784,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk5.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vless",
+      "server": "jp1-r.ddns-link-b5.uk",
+      "server_port": 10031,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vless",
+      "server": "jp2-r.ddns-link-b5.uk",
+      "server_port": 10032,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "hysteria2",
+      "server": "jp1.dexlos.com",
+      "server_port": 1826,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp1.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "hysteria2",
+      "server": "jp2.dexlos.com",
+      "server_port": 3858,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp2.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 05",
+      "type": "hysteria2",
+      "server": "jp3.dexlos.com",
+      "server_port": 5484,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 06",
+      "type": "hysteria2",
+      "server": "jp4.dexlos.com",
+      "server_port": 7169,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp4.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 07",
+      "type": "hysteria2",
+      "server": "jp5.dexlos.com",
+      "server_port": 9091,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp5.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "vless",
+      "server": "kr1-r.ddns-link-b5.uk",
+      "server_port": 10046,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 02",
+      "type": "vless",
+      "server": "kr2-r.ddns-link-b5.uk",
+      "server_port": 10047,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 03",
+      "type": "vless",
+      "server": "kr3-r.ddns-link-b5.uk",
+      "server_port": 10048,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 04",
+      "type": "vless",
+      "server": "kr4-r.ddns-link-b5.uk",
+      "server_port": 10049,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 05",
+      "type": "vless",
+      "server": "kr5-r.ddns-link-b5.uk",
+      "server_port": 10050,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "sg1-r.ddns-link-b5.uk",
+      "server_port": 10036,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vless",
+      "server": "sg2-r.ddns-link-b5.uk",
+      "server_port": 10037,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 03",
+      "type": "vless",
+      "server": "sg3-r.ddns-link-b5.uk",
+      "server_port": 10038,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 04",
+      "type": "vless",
+      "server": "sg4-r.ddns-link-b5.uk",
+      "server_port": 10039,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 05",
+      "type": "vless",
+      "server": "sg5-r.ddns-link-b5.uk",
+      "server_port": 10040,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "hysteria2",
+      "server": "tw1.dexlos.com",
+      "server_port": 1944,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw1.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 02",
+      "type": "hysteria2",
+      "server": "tw2.dexlos.com",
+      "server_port": 3650,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw2.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 03",
+      "type": "hysteria2",
+      "server": "tw3.dexlos.com",
+      "server_port": 5262,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw3.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 04",
+      "type": "hysteria2",
+      "server": "tw4.dexlos.com",
+      "server_port": 7743,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw4.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 05",
+      "type": "hysteria2",
+      "server": "tw5.dexlos.com",
+      "server_port": 9970,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw5.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "us1-r.ddns-link-b5.uk",
+      "server_port": 10041,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vless",
+      "server": "us2-r.ddns-link-b5.uk",
+      "server_port": 10042,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vless",
+      "server": "us3-r.ddns-link-b5.uk",
+      "server_port": 10043,
+      "uuid": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "s0.awsstatic.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
+          "short_id": "686c0ef0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "movie"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "hysteria2",
+      "server": "us3.dexlos.com",
+      "server_port": 5825,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "hysteria2",
+      "server": "us4.dexlos.com",
+      "server_port": 7510,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "us4.dexlos.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "hysteria2",
+      "server": "us5.dexlos.com",
+      "server_port": 9955,
+      "password": "FD4AB882-B96F-44DC-B14E-40F7430F97AA",
+      "tls": {
+        "enabled": true,
+        "server_name": "us5.dexlos.com",
+        "insecure": false
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
