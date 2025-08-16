@@ -29,7 +29,7 @@
             "query_type": "HTTPS"
           },
           {
-            "domain_suffix": [
+            "domain_keyword": [
               "mcdn.bilivideo.com",
               "mcdn.bilivideo.cn",
               "szbdyd.com"
@@ -160,7 +160,7 @@
     {
       "tag": "auto",
       "type": "urltest",
-      "interval": "5m",
+      "interval": "3m",
       "outbounds": [
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
@@ -364,75 +364,6 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "telegram",
-      "type": "selector",
-      "outbounds": [
-        "select",
-        "direct",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
-        "🇨🇳 台湾 01",
-        "🇨🇳 台湾 02",
-        "🇨🇳 台湾 03",
-        "🇨🇳 台湾 04",
-        "🇨🇳 台湾 05",
-        "🇨🇳 台湾 06",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
-        "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04",
-        "🇸🇬 新加坡 05",
-        "🇸🇬 新加坡 06",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇩🇪 德国 01",
-        "🇫🇷 法国 01",
-        "🇬🇧 英国 01",
-        "🇳🇱 荷兰 01",
-        "🇮🇳 印度 01",
-        "🇨🇱 智利 01",
-        "🇧🇷 巴西 01",
-        "🇪🇸 西班牙 01",
-        "🇨🇭 瑞士 01",
-        "🇸🇪 瑞典 01",
-        "🇲🇽 墨西哥 01",
-        "🇨🇦 加拿大 01",
-        "🇦🇺 澳大利亚 01",
-        "🇦🇪 阿联酋 01",
-        "🇿🇦 南非 01",
-        "🇸🇦 沙特阿拉伯 01",
-        "🇨🇴 哥伦比亚 01",
-        "🇮🇱 以色列 01",
-        "🇻🇳 越南 01",
-        "🇹🇭 泰国 01",
-        "🇲🇾 马来 01",
-        "🇷🇺 俄罗斯 01",
-        "🇵🇭 菲律宾 01",
-        "🇳🇬 尼日利亚 01",
-        "🇮🇩 印尼 01",
-        "🇹🇷 土耳其 01",
-        "🇲🇴 澳门 01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
       "tag": "hoyo",
       "type": "selector",
       "outbounds": [
@@ -540,7 +471,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -552,7 +487,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -564,7 +503,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -604,7 +547,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -616,7 +563,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -628,7 +579,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -640,7 +595,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -680,7 +639,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -692,7 +655,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -704,7 +671,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -716,7 +687,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -756,7 +731,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -768,7 +747,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -780,7 +763,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -792,7 +779,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -832,7 +823,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -844,7 +839,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -856,7 +855,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -868,7 +871,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -880,7 +887,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -920,7 +931,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -932,7 +947,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -944,7 +963,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -956,7 +979,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -968,7 +995,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -980,7 +1011,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -992,7 +1027,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1004,7 +1043,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1016,7 +1059,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1028,7 +1075,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1040,7 +1091,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1052,7 +1107,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1064,7 +1123,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1076,7 +1139,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1088,7 +1155,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1100,7 +1171,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1112,7 +1187,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1124,7 +1203,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1136,7 +1219,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1148,7 +1235,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1160,7 +1251,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1172,7 +1267,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1184,7 +1283,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1196,7 +1299,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1208,7 +1315,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1220,7 +1331,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1232,7 +1347,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1244,7 +1363,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1256,7 +1379,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -1268,7 +1395,11 @@
       "tls": {
         "enabled": true,
         "server_name": "v1-dy.ixigua.com",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     }
   ],
@@ -1298,10 +1429,13 @@
         "mode": "or",
         "rules": [
           {
-            "domain_suffix": [
+            "domain_keyword": [
               "public-operation-hkrpg-sg.hoyoverse.com",
               "public-operation-hk4e-sg.hoyoverse.com",
-              "public-operation-nap-sg.hoyoverse.com"
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
             ]
           },
           {
@@ -1317,9 +1451,7 @@
       },
       {
         "domain_keyword": [
-          "hoyoverse.com",
-          "autopatchhk.yuanshen.com",
-          "autopatchos.zenlesszonezero.com"
+          "hoyoverse.com"
         ],
         "outbound": "select"
       },
@@ -1336,24 +1468,11 @@
         "outbound": "googlefcm"
       },
       {
-        "rule_set": [
-          "geosite-telegram",
-          "geoip-telegram"
-        ],
-        "outbound": "telegram"
-      },
-      {
         "type": "logical",
         "mode": "or",
         "rules": [
           {
             "ip_is_private": true
-          },
-          {
-            "domain_suffix": [
-              "ushd.xmsl.org",
-              "cf.gtlx.org"
-            ]
           },
           {
             "rule_set": [
@@ -1392,20 +1511,6 @@
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
-        "download_detour": "select"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-telegram",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-telegram.srs",
-        "download_detour": "select"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-telegram",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-telegram.srs",
         "download_detour": "select"
       },
       {
