@@ -94,11 +94,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇷🇺 俄罗斯 01"
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,11 +105,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇷🇺 俄罗斯 01"
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -120,11 +116,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇷🇺 俄罗斯 01"
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -135,11 +129,9 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇷🇺 俄罗斯 01"
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -149,11 +141,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇷🇺 俄罗斯 01"
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -188,37 +178,29 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
+      "tag": "🇺🇸 美国 02",
       "type": "vmess",
-      "server": "pubg.ac",
-      "server_port": 80,
-      "uuid": "7577254b-c576-48cd-bbd0-69872aa3a9c9",
+      "server": "v33.heduian.link",
+      "server_port": 30833,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
-      "alter_id": 0,
+      "alter_id": 2,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "cdn-node-oss-99.paofu.de"
+          "Host": "v33.heduian.link"
         },
         "max_early_data": null,
-        "path": "/profile/telegram@ssrsub"
+        "path": "/oooo"
       }
-    },
-    {
-      "tag": "🇺🇸 美国 02",
-      "type": "shadowsocks",
-      "server": "23.251.121.242",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "tag": "🇺🇸 美国 03",
       "type": "shadowsocks",
-      "server": "154.3.8.151",
-      "server_port": 30067,
-      "method": "aes-256-gcm",
-      "password": "iUB0923RBA"
+      "server": "38.180.211.126",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Kuiqk2cP0BMWrgme9IfEvp"
     },
     {
       "tag": "🇲🇩 摩尔多瓦 01",
@@ -227,23 +209,6 @@
       "server_port": 989,
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "tag": "🇷🇺 俄罗斯 01",
-      "type": "vmess",
-      "server": "v29.heduian.link",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "v29.heduian.link"
-        },
-        "max_early_data": null,
-        "path": "/oooo"
-      }
     }
   ],
   "route": {
