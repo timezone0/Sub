@@ -94,9 +94,11 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01"
+        "🇲🇩 摩尔多瓦 01",
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -105,9 +107,11 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01"
+        "🇲🇩 摩尔多瓦 01",
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -116,9 +120,11 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01"
+        "🇲🇩 摩尔多瓦 01",
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -129,9 +135,11 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01"
+        "🇲🇩 摩尔多瓦 01",
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -141,9 +149,11 @@
       "outbounds": [
         "direct",
         "select",
+        "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01"
+        "🇲🇩 摩尔多瓦 01",
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -178,7 +188,23 @@
       }
     },
     {
+      "tag": "🇺🇸 美国 01",
+      "type": "shadowsocks",
+      "server": "154.3.8.151",
+      "server_port": 30067,
+      "method": "aes-256-gcm",
+      "password": "iUB0923RBA"
+    },
+    {
       "tag": "🇺🇸 美国 02",
+      "type": "shadowsocks",
+      "server": "usa022.tmdns-sing.top",
+      "server_port": 13892,
+      "method": "aes-128-gcm",
+      "password": "6b1e5475-7661-4921-aa26-d11758b2f3f1"
+    },
+    {
+      "tag": "🇺🇸 美国 03",
       "type": "vmess",
       "server": "v33.heduian.link",
       "server_port": 30833,
@@ -195,20 +221,20 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 03",
-      "type": "shadowsocks",
-      "server": "38.180.211.126",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Kuiqk2cP0BMWrgme9IfEvp"
-    },
-    {
       "tag": "🇲🇩 摩尔多瓦 01",
       "type": "shadowsocks",
       "server": "185.153.197.5",
       "server_port": 989,
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "shadowsocks",
+      "server": "usa20250815010624020199.tmdns-sing.top",
+      "server_port": 13874,
+      "method": "aes-128-gcm",
+      "password": "6b1e5475-7661-4921-aa26-d11758b2f3f1"
     }
   ],
   "route": {
