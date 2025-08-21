@@ -101,6 +101,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -113,7 +115,7 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇩 印尼 01"
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -129,6 +131,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -141,7 +145,7 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇩 印尼 01"
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,6 +161,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -169,7 +175,7 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇩 印尼 01"
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -187,6 +193,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -199,7 +207,7 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇩 印尼 01"
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -216,6 +224,8 @@
         "🇭🇰 香港 05",
         "🇭🇰 香港 06",
         "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
@@ -228,7 +238,7 @@
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇩 印尼 01"
+        "🇻🇳 越南 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -344,11 +354,30 @@
     {
       "tag": "🇭🇰 香港 07",
       "type": "vmess",
-      "server": "183.240.245.239",
-      "server_port": 42272,
+      "server": "38.147.188.156",
+      "server_port": 36600,
+      "uuid": "33cc836e-d562-4f39-8369-23a1f06dcb73",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "tag": "🇭🇰 香港 08",
+      "type": "vmess",
+      "server": "183.240.245.245",
+      "server_port": 48333,
       "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",
       "alter_id": 64
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "shadowsocks",
+      "server": "60.249.14.38",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=tls;obfs-host=d35c547:137545"
     },
     {
       "tag": "🇯🇵 日本 01",
@@ -358,7 +387,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202508150964186-dmRA1xMJaG.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202508150964186-K2NRtAGhZK.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 02",
@@ -376,12 +405,12 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "trojan",
-      "server": "36.156.102.78",
-      "server_port": 409,
+      "server": "36.156.102.125",
+      "server_port": 461,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
-        "server_name": "1-dy.ixigua.com",
+        "server_name": "www.baidu.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -392,12 +421,12 @@
     {
       "tag": "🇯🇵 日本 04",
       "type": "trojan",
-      "server": "36.156.102.125",
-      "server_port": 461,
+      "server": "36.156.102.78",
+      "server_port": 409,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
-        "server_name": "www.baidu.com",
+        "server_name": "1-dy.ixigua.com",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -424,8 +453,8 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "trojan",
-      "server": "36.156.102.125",
-      "server_port": 1256,
+      "server": "36.156.102.78",
+      "server_port": 15015,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
@@ -440,8 +469,8 @@
     {
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
-      "server": "36.156.102.125",
-      "server_port": 406,
+      "server": "36.156.102.78",
+      "server_port": 14568,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
@@ -469,7 +498,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202508150964186-dmRA1xMJaG.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202508150964186-K2NRtAGhZK.download.microsoft.com"
     },
     {
       "tag": "🇺🇸 美国 03",
@@ -504,10 +533,10 @@
       }
     },
     {
-      "tag": "🇮🇩 印尼 01",
+      "tag": "🇻🇳 越南 01",
       "type": "shadowsocks",
-      "server": "yinni01.tmdns-sing.top",
-      "server_port": 13879,
+      "server": "yuenan01.tmdns-sing.top",
+      "server_port": 13875,
       "method": "aes-128-gcm",
       "password": "6b1e5475-7661-4921-aa26-d11758b2f3f1"
     }

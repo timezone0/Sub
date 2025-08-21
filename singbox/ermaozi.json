@@ -94,11 +94,10 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,11 +106,10 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -120,11 +118,10 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -135,11 +132,10 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -149,11 +145,10 @@
       "outbounds": [
         "direct",
         "select",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇲🇩 摩尔多瓦 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -188,51 +183,47 @@
       }
     },
     {
+      "tag": "🇳🇱 荷兰 01",
+      "type": "trojan",
+      "server": "45.91.171.116",
+      "server_port": 443,
+      "password": "2ee85121-31de-4581-a492-eb00f606e392",
+      "tls": {
+        "enabled": true,
+        "server_name": "sto.freeguard.org",
+        "insecure": false
+      }
+    },
+    {
       "tag": "🇺🇸 美国 01",
       "type": "shadowsocks",
-      "server": "154.3.8.151",
-      "server_port": 30067,
-      "method": "aes-256-gcm",
-      "password": "iUB0923RBA"
+      "server": "77.83.245.190",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "haQpIdcLwwtb"
     },
     {
       "tag": "🇺🇸 美国 02",
-      "type": "shadowsocks",
-      "server": "usa022.tmdns-sing.top",
-      "server_port": 13892,
-      "method": "aes-128-gcm",
-      "password": "6b1e5475-7661-4921-aa26-d11758b2f3f1"
-    },
-    {
-      "tag": "🇺🇸 美国 03",
       "type": "vmess",
-      "server": "v33.heduian.link",
-      "server_port": 30833,
+      "server": "v29.heduian.link",
+      "server_port": 30829,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "v33.heduian.link"
+          "Host": "ocbc.com"
         },
         "max_early_data": null,
         "path": "/oooo"
       }
     },
     {
-      "tag": "🇲🇩 摩尔多瓦 01",
+      "tag": "🇺🇸 美国 03",
       "type": "shadowsocks",
-      "server": "185.153.197.5",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "tag": "🇬🇧 英国 01",
-      "type": "shadowsocks",
-      "server": "usa20250815010624020199.tmdns-sing.top",
-      "server_port": 13874,
+      "server": "japan001.tmdns-sing.top",
+      "server_port": 13890,
       "method": "aes-128-gcm",
       "password": "6b1e5475-7661-4921-aa26-d11758b2f3f1"
     }
