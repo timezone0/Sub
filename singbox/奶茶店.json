@@ -94,12 +94,11 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
+        "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
       ],
@@ -110,12 +109,11 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
+        "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
       ],
@@ -126,12 +124,11 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
+        "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
       ],
@@ -144,12 +141,11 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
+        "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
       ],
@@ -161,12 +157,11 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
+        "🇺🇸 美国 01",
         "🇸🇬 新加坡 01",
         "🇯🇵 日本 01"
       ],
@@ -201,36 +196,6 @@
           "fingerprint": "chrome"
         }
       }
-    },
-    {
-      "tag": "🇺🇸 美国 01",
-      "type": "shadowsocks",
-      "server": "2605:52c0:1:1fd:0cea:39ff:fe6a:b52d",
-      "server_port": 65403,
-      "method": "aes-256-gcm",
-      "password": "cbbae268-e129-41fa-80d5-9f115f5a0a4b"
-    },
-    {
-      "tag": "🇺🇸 美国 02",
-      "type": "vless",
-      "server": "154.17.227.127",
-      "server_port": 65310,
-      "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "gamedownloads-rockstargames-com.akamaized.net",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "UwObpjthXR56McGdJewxXsrNYygmiPl6cZxN84OVRTY",
-          "short_id": "0c08d8ba"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "flow": "xtls-rprx-vision"
     },
     {
       "tag": "🇭🇰 香港 01",
@@ -279,6 +244,28 @@
       "flow": "xtls-rprx-vision"
     },
     {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "154.17.227.127",
+      "server_port": 65310,
+      "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "gamedownloads-rockstargames-com.akamaized.net",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "UwObpjthXR56McGdJewxXsrNYygmiPl6cZxN84OVRTY",
+          "short_id": "0c08d8ba"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
       "tag": "🇸🇬 新加坡 01",
       "type": "vless",
       "server": "172.99.138.107",
@@ -295,7 +282,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -317,7 +304,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "flow": "xtls-rprx-vision"
