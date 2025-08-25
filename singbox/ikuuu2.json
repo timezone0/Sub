@@ -168,6 +168,21 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -200,21 +215,21 @@
     {
       "tag": "🇯🇵 日本 01",
       "type": "vmess",
-      "server": "zu4xw-g01.jp01-nn-vm0.entry.fr0528.art",
+      "server": "x2mfo-g01.jp01-nn-vm0.entry.fr0528.art",
       "server_port": 21581,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
       "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "zu4xw-g01.jp01-nn-vm0.entry.fr0528.art",
+        "server_name": "x2mfo-g01.jp01-nn-vm0.entry.fr0528.art",
         "insecure": false
       }
     },
     {
       "tag": "🇯🇵 日本 02",
       "type": "vmess",
-      "server": "8lkop-g01.jp02-e3-vm0.entry.fr0528.art",
+      "server": "kejnh-g01.jp02-e3-vm0.entry.fr0528.art",
       "server_port": 11773,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -223,21 +238,21 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "vmess",
-      "server": "eal8i-g01.jp03-j7-vm0.entry.fr0528.art",
+      "server": "b1kfk-g01.jp03-j7-vm0.entry.fr0528.art",
       "server_port": 21581,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
       "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "eal8i-g01.jp03-j7-vm0.entry.fr0528.art",
+        "server_name": "b1kfk-g01.jp03-j7-vm0.entry.fr0528.art",
         "insecure": false
       }
     },
     {
       "tag": "🇯🇵 日本 04",
       "type": "vmess",
-      "server": "gbd76-g01.jp04-1d-vm0.entry.fr0528.art",
+      "server": "o2o2u-g01.jp04-1d-vm0.entry.fr0528.art",
       "server_port": 444,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -246,7 +261,7 @@
     {
       "tag": "🇯🇵 日本 05",
       "type": "vmess",
-      "server": "y5364-g01.jp05-h6-vm0.entry.fr0528.art",
+      "server": "ui82d-g01.jp05-h6-vm0.entry.fr0528.art",
       "server_port": 46482,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -255,21 +270,21 @@
     {
       "tag": "🇯🇵 日本 06",
       "type": "vmess",
-      "server": "j0ns8-g01.jp06-jz-vm0.entry.fr0528.art",
+      "server": "0za8l-g01.jp06-jz-vm0.entry.fr0528.art",
       "server_port": 28783,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
       "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "j0ns8-g01.jp06-jz-vm0.entry.fr0528.art",
+        "server_name": "0za8l-g01.jp06-jz-vm0.entry.fr0528.art",
         "insecure": false
       }
     },
     {
       "tag": "🇯🇵 日本 07",
       "type": "vmess",
-      "server": "u5yfi-g01.jp07-sh-vm0.entry.fr0528.art",
+      "server": "ixvf0-g01.jp07-sh-vm0.entry.fr0528.art",
       "server_port": 28783,
       "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
       "security": "auto",
@@ -341,6 +356,12 @@
         "outbound": "googlefcm"
       },
       {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
@@ -391,6 +412,13 @@
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
         "download_detour": "select"
       }
     ],

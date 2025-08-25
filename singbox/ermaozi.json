@@ -158,6 +158,19 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇸🇪 瑞典 01",
+        "🇷🇺 俄罗斯 01",
+        "🇷🇺 俄罗斯 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -318,6 +331,12 @@
         "outbound": "googlefcm"
       },
       {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
@@ -368,6 +387,13 @@
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
         "download_detour": "select"
       }
     ],

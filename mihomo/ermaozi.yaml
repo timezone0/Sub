@@ -138,6 +138,15 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+- name: "TIKTOK"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇸🇪 瑞典 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
@@ -153,6 +162,7 @@ rules:
 - "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
 - "GEOSITE,CATEGORY-AI-!CN,AI"
 - "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TIKTOK,TIKTOK"
 - "GEOSITE,PRIVATE,DIRECT"
 - "GEOSITE,CN,DIRECT"
 - "GEOIP,PRIVATE,DIRECT,no-resolve"
