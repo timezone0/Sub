@@ -23,7 +23,7 @@ def download_json_from_url(url):
 
 
 def replace_outbounds_in_fixed_target(source_data, output_file):
-    target_file = "singbox-config/config-1.12.json"
+    target_file = "singbox-config/config.json"
     if not os.path.exists(target_file):
         raise FileNotFoundError(f"配置文件 '{target_file}' 未找到")
     try:
