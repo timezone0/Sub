@@ -82,71 +82,71 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇺🇸 美国 01", type: "vmess", server: "www.speedtest.net", port: 80, uuid: "3d76ac40-80c4-11f0-b432-205c6d5f5d78", cipher: "auto", network: "ws", fingerprint: "", ws-opts: {path: "/b87r3d9e", headers: {Host: "zula.ir.eu-2.hihu.net"}}, alterId: 0}
-- {name: "🇺🇸 美国 02", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
+- {name: "🇷🇺 俄罗斯 01", type: "ss", server: "185.231.233.112", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇺🇸 美国 01", type: "vmess", server: "s3.ipyar.org", port: 32020, uuid: "78b4fb57-39d7-4e9d-dd38-c9a38322bcb2", cipher: "auto", network: "tcp", fingerprint: "", alterId: 0}
+- {name: "🇺🇸 美国 02", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "v29.heduian.link"}}, alterId: 2}
+- {name: "🇺🇸 美国 03", type: "vmess", server: "www.speedtest.net", port: 80, uuid: "3d76ac40-80c4-11f0-b432-205c6d5f5d78", cipher: "auto", network: "ws", ws-opts: {path: "/b87r3d9e", headers: {Host: "zula.ir.eu-2.hihu.net"}}, alterId: 0}
 - {name: "🇸🇪 瑞典 01", type: "ss", server: "192.71.166.100", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇷🇺 俄罗斯 01", type: "trojan", server: "193.124.46.134", port: 8441, sni: "zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir", password: "tunnel-astrovpn_official-29", alpn: ["http/1.1"], skip-cert-verify: true}
-- {name: "🇷🇺 俄罗斯 02", type: "ss", server: "185.231.233.112", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇸🇪 瑞典 01"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
+  - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇸🇪 瑞典 01"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇸🇪 瑞典 01"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇸🇪 瑞典 01"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇸🇪 瑞典 01"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇸🇪 瑞典 01"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
