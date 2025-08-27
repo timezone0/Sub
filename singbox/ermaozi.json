@@ -94,10 +94,8 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇸🇪 瑞典 01"
+        "🇷🇺 俄罗斯 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,10 +104,8 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇷🇺 俄罗斯 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇸🇪 瑞典 01"
+        "🇷🇺 俄罗斯 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,10 +114,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇷🇺 俄罗斯 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇸🇪 瑞典 01"
+        "🇷🇺 俄罗斯 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -132,10 +126,8 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇷🇺 俄罗斯 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇸🇪 瑞典 01"
+        "🇷🇺 俄罗斯 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -145,10 +137,8 @@
       "outbounds": [
         "direct",
         "select",
-        "🇷🇺 俄罗斯 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇸🇪 瑞典 01"
+        "🇷🇺 俄罗斯 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,10 +147,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇷🇺 俄罗斯 01",
         "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇸🇪 瑞典 01"
+        "🇷🇺 俄罗斯 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -195,14 +183,6 @@
       }
     },
     {
-      "tag": "🇷🇺 俄罗斯 01",
-      "type": "shadowsocks",
-      "server": "185.231.233.112",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
       "tag": "🇺🇸 美国 02",
       "type": "vmess",
       "server": "v29.heduian.link",
@@ -213,36 +193,19 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "v29.heduian.link"
+          "Host": "ocbc.com"
         },
         "max_early_data": null,
         "path": "/oooo"
       }
     },
     {
-      "tag": "🇺🇸 美国 03",
-      "type": "vmess",
-      "server": "www.speedtest.net",
-      "server_port": 80,
-      "uuid": "3d76ac40-80c4-11f0-b432-205c6d5f5d78",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "zula.ir.eu-2.hihu.net"
-        },
-        "max_early_data": null,
-        "path": "/b87r3d9e"
-      }
-    },
-    {
-      "tag": "🇸🇪 瑞典 01",
+      "tag": "🇷🇺 俄罗斯 01",
       "type": "shadowsocks",
-      "server": "192.71.166.100",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
+      "server": "81.177.214.214",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aObvLFQBhTQ1"
     }
   ],
   "route": {
