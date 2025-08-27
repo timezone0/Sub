@@ -98,11 +98,13 @@ proxies:
 - {alterId: 0, cipher: "auto", name: "🇯🇵 日本 05", network: "kcp", port: 37257, server: "47.74.57.10", tls: false, type: "vmess", uuid: "cb774883-1c2f-4b8a-8637-828f356e0c76", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {name: "🇸🇬 新加坡 01", password: "253bc477d4e43c209f2d427272968280", port: 8116, server: "43.199.63.145", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇸🇬 新加坡 02", password: "253bc477d4e43c209f2d427272968280", port: 2045, server: "43.199.63.145", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇺🇸 美国 01", network: "ws", port: 443, server: "ssssssssssssfffffffgh.2032.pp.ua", tls: true, type: "vmess", uuid: "4174b95d-115e-4d39-add6-1f8db95bb860", ws-opts: {headers: {Host: "ssssssssssssfffffffgh.2032.pp.ua"}, path: "/6We3U9Df1WGxgFnoFPw1"}, client-fingerprint: "chrome", servername: "ssssssssssssfffffffgh.2032.pp.ua"}
-- {name: "🇺🇸 美国 02", password: "253bc477d4e43c209f2d427272968280", port: 4801, server: "43.199.63.145", skip-cert-verify: true, sni: "36.156.102.116", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 03", password: "253bc477d4e43c209f2d427272968280", port: 5343, server: "43.199.63.145", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 04", network: "ws", password: "tg-fq521free", port: 443, server: "216.24.57.30", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 05", network: "ws", password: "tg-fq521free", port: 443, server: "198.62.62.67", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇸🇬 新加坡 03", password: "GhYEufnq9M9yvgAc1ylvfq", port: 18336, server: "165.22.61.177", tfo: false, type: "ss", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇺🇸 美国 01", network: "ws", port: 443, server: "ssssssssssssfffffffgh.2032.pp.ua", skip-cert-verify: false, tfo: false, tls: true, type: "vmess", uuid: "4174b95d-115e-4d39-add6-1f8db95bb860", ws-opts: {headers: {Host: "ssssssssssssfffffffgh.2032.pp.ua"}, path: "/6We3U9Df1WGxgFnoFPw1"}, client-fingerprint: "chrome", servername: "ssssssssssssfffffffgh.2032.pp.ua"}
+- {cipher: "rc4-md5", name: "🇺🇸 美国 02", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202508150964186-fU2HxC1HnE.download.microsoft.com", mode: "http"}, port: 8774, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 03", password: "253bc477d4e43c209f2d427272968280", port: 4801, server: "43.199.63.145", skip-cert-verify: true, sni: "36.156.102.116", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 04", password: "253bc477d4e43c209f2d427272968280", port: 5343, server: "43.199.63.145", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 05", network: "ws", password: "tg-fq521free", port: 443, server: "216.24.57.30", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 06", network: "ws", password: "tg-fq521free", port: 443, server: "198.62.62.67", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇰🇿 哈萨克斯坦 01", network: "ws", password: "tg-fq521free", port: 443, server: "194.76.18.129", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇱🇹 立陶宛 01", network: "ws", password: "ttfang", port: 2096, server: "86.38.214.194", skip-cert-verify: true, sni: "ttfang.fange.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "ttfang.fange.me"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
 - {name: "🇷🇺 俄罗斯 01", network: "ws", password: "tg-fq521free", port: 443, server: "45.67.215.95", skip-cert-verify: false, sni: "torjan.xn--xhq44j.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "torjan.xn--xhq44j.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
@@ -127,11 +129,13 @@ proxy-groups:
   - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇱🇹 立陶宛 01"
   - "🇷🇺 俄罗斯 01"
@@ -157,11 +161,13 @@ proxy-groups:
   - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇱🇹 立陶宛 01"
   - "🇷🇺 俄罗斯 01"
@@ -185,11 +191,13 @@ proxy-groups:
   - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇱🇹 立陶宛 01"
   - "🇷🇺 俄罗斯 01"
@@ -215,11 +223,13 @@ proxy-groups:
   - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇱🇹 立陶宛 01"
   - "🇷🇺 俄罗斯 01"
@@ -244,11 +254,13 @@ proxy-groups:
   - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇱🇹 立陶宛 01"
   - "🇷🇺 俄罗斯 01"
@@ -272,11 +284,13 @@ proxy-groups:
   - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇱🇹 立陶宛 01"
   - "🇷🇺 俄罗斯 01"
