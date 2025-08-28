@@ -94,8 +94,8 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -104,8 +104,8 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -114,8 +114,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,8 +126,8 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,8 +137,8 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,8 +147,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,7 +183,7 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 02",
+      "tag": "🇺🇸 美国 01",
       "type": "vmess",
       "server": "v29.heduian.link",
       "server_port": 30829,
@@ -200,12 +200,21 @@
       }
     },
     {
-      "tag": "🇷🇺 俄罗斯 01",
-      "type": "shadowsocks",
-      "server": "81.177.214.214",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aObvLFQBhTQ1"
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "v24.heduian.link",
+      "server_port": 30824,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "v24.heduian.link"
+        },
+        "max_early_data": null,
+        "path": "/oooo"
+      }
     }
   ],
   "route": {
