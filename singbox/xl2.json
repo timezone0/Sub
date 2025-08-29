@@ -94,13 +94,10 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇯🇵 日本 07"
+        "🇺🇸 美国 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,13 +106,10 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇯🇵 日本 07"
+        "🇺🇸 美国 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -124,13 +118,10 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇯🇵 日本 07"
+        "🇺🇸 美国 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -141,13 +132,10 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇯🇵 日本 07"
+        "🇺🇸 美国 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,13 +145,10 @@
       "outbounds": [
         "direct",
         "select",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇯🇵 日本 07"
+        "🇺🇸 美国 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -172,13 +157,10 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇯🇵 日本 03",
-        "🇯🇵 日本 04",
-        "🇯🇵 日本 05",
-        "🇯🇵 日本 06",
-        "🇯🇵 日本 07"
+        "🇺🇸 美国 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -213,82 +195,68 @@
       }
     },
     {
-      "tag": "🇯🇵 日本 01",
-      "type": "vmess",
-      "server": "jpgma-g01.jp01-nn-vm0.entry.fr0528.art",
-      "server_port": 21581,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1,
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "207.90.239.227",
+      "server_port": 54842,
+      "password": "012e1eab-ae5c-4260-8124-a03762c49661",
+      "obfs": {
+        "type": "salamander",
+        "password": "gq449ACcO8pAMivN"
+      },
       "tls": {
         "enabled": true,
-        "server_name": "jpgma-g01.jp01-nn-vm0.entry.fr0528.art",
-        "insecure": false
+        "server_name": "images-na.ssl-images-amazon.com",
+        "insecure": true
       }
     },
     {
-      "tag": "🇯🇵 日本 02",
-      "type": "vmess",
-      "server": "c2iok-g01.jp02-e3-vm0.entry.fr0528.art",
-      "server_port": 11773,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1
-    },
-    {
-      "tag": "🇯🇵 日本 03",
-      "type": "vmess",
-      "server": "xs0ss-g01.jp03-j7-vm0.entry.fr0528.art",
-      "server_port": 21581,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1,
+      "tag": "🇭🇰 香港 01",
+      "type": "hysteria2",
+      "server": "206.237.1.249",
+      "server_port": 53572,
+      "password": "012e1eab-ae5c-4260-8124-a03762c49661",
+      "obfs": {
+        "type": "salamander",
+        "password": "QsyDz1ULsnADksQk"
+      },
       "tls": {
         "enabled": true,
-        "server_name": "xs0ss-g01.jp03-j7-vm0.entry.fr0528.art",
-        "insecure": false
+        "server_name": "www.apple.com",
+        "insecure": true
       }
     },
     {
-      "tag": "🇯🇵 日本 04",
-      "type": "vmess",
-      "server": "zolak-g01.jp04-1d-vm0.entry.fr0528.art",
-      "server_port": 444,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1
-    },
-    {
-      "tag": "🇯🇵 日本 05",
-      "type": "vmess",
-      "server": "p9wph-g01.jp05-h6-vm0.entry.fr0528.art",
-      "server_port": 46482,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1
-    },
-    {
-      "tag": "🇯🇵 日本 06",
-      "type": "vmess",
-      "server": "xqmdp-g01.jp06-jz-vm0.entry.fr0528.art",
-      "server_port": 28783,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1,
+      "tag": "🇭🇰 香港 02",
+      "type": "hysteria2",
+      "server": "hkssl.vosniehcihwocc.cfd",
+      "server_port": 443,
+      "password": "012e1eab-ae5c-4260-8124-a03762c49661",
+      "obfs": {
+        "type": "salamander",
+        "password": "VSmtQEn7kYMFPlcC"
+      },
       "tls": {
         "enabled": true,
-        "server_name": "xqmdp-g01.jp06-jz-vm0.entry.fr0528.art",
-        "insecure": false
-      }
+        "server_name": "hkssl.vosniehcihwocc.cfd",
+        "insecure": true
+      },
+      "up_mbps": 200,
+      "down_mbps": 200
     },
     {
-      "tag": "🇯🇵 日本 07",
-      "type": "vmess",
-      "server": "2hcsr-g01.jp07-sh-vm0.entry.fr0528.art",
-      "server_port": 28783,
-      "uuid": "9e22dd9a-98e8-39d9-ab8b-2cee7e8ca678",
-      "security": "auto",
-      "alter_id": 1
+      "tag": "🇩🇪 德国 01",
+      "type": "hysteria2",
+      "server": "deguo1.vosniehcihwocc.cfd",
+      "server_port": 443,
+      "password": "012e1eab-ae5c-4260-8124-a03762c49661",
+      "tls": {
+        "enabled": true,
+        "server_name": "deguo1.vosniehcihwocc.cfd",
+        "insecure": false
+      },
+      "up_mbps": 300,
+      "down_mbps": 300
     }
   ],
   "route": {
