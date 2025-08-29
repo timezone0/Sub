@@ -1,0 +1,1333 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_keyword": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09",
+        "🇨🇦 加拿大 10",
+        "🇨🇦 加拿大 11",
+        "🇨🇦 加拿大 12",
+        "🇨🇦 加拿大 13",
+        "🇨🇦 加拿大 14",
+        "🇨🇦 加拿大 15",
+        "🇨🇦 加拿大 16",
+        "🇨🇦 加拿大 17",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "3m",
+      "outbounds": [
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09",
+        "🇨🇦 加拿大 10",
+        "🇨🇦 加拿大 11",
+        "🇨🇦 加拿大 12",
+        "🇨🇦 加拿大 13",
+        "🇨🇦 加拿大 14",
+        "🇨🇦 加拿大 15",
+        "🇨🇦 加拿大 16",
+        "🇨🇦 加拿大 17",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09",
+        "🇨🇦 加拿大 10",
+        "🇨🇦 加拿大 11",
+        "🇨🇦 加拿大 12",
+        "🇨🇦 加拿大 13",
+        "🇨🇦 加拿大 14",
+        "🇨🇦 加拿大 15",
+        "🇨🇦 加拿大 16",
+        "🇨🇦 加拿大 17",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09",
+        "🇨🇦 加拿大 10",
+        "🇨🇦 加拿大 11",
+        "🇨🇦 加拿大 12",
+        "🇨🇦 加拿大 13",
+        "🇨🇦 加拿大 14",
+        "🇨🇦 加拿大 15",
+        "🇨🇦 加拿大 16",
+        "🇨🇦 加拿大 17",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09",
+        "🇨🇦 加拿大 10",
+        "🇨🇦 加拿大 11",
+        "🇨🇦 加拿大 12",
+        "🇨🇦 加拿大 13",
+        "🇨🇦 加拿大 14",
+        "🇨🇦 加拿大 15",
+        "🇨🇦 加拿大 16",
+        "🇨🇦 加拿大 17",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇨🇦 加拿大 01",
+        "🇨🇦 加拿大 02",
+        "🇨🇦 加拿大 03",
+        "🇨🇦 加拿大 04",
+        "🇨🇦 加拿大 05",
+        "🇨🇦 加拿大 06",
+        "🇨🇦 加拿大 07",
+        "🇨🇦 加拿大 08",
+        "🇨🇦 加拿大 09",
+        "🇨🇦 加拿大 10",
+        "🇨🇦 加拿大 11",
+        "🇨🇦 加拿大 12",
+        "🇨🇦 加拿大 13",
+        "🇨🇦 加拿大 14",
+        "🇨🇦 加拿大 15",
+        "🇨🇦 加拿大 16",
+        "🇨🇦 加拿大 17",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "vmess",
+      "server": "47.83.16.29",
+      "server_port": 30298,
+      "uuid": "602272c0-1916-41fe-9b53-f1efd149f9bf",
+      "security": "aes-128-gcm",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vmess",
+      "server": "47.83.16.29",
+      "server_port": 30298,
+      "uuid": "602272c0-1916-41fe-9b53-f1efd149f9bf",
+      "security": "aes-128-gcm",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "vless",
+      "server": "5.102.124.78",
+      "server_port": 8443,
+      "uuid": "79091265-a298-4205-a559-d04ed045c38b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "POAZKZyD98MlYa3A5bSOayTPHdofqXynPAT1_QWEwjo",
+          "short_id": "dfeff076987e2d34"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "vmess",
+      "server": "202.79.161.192",
+      "server_port": 443,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "aes-128-gcm",
+      "alter_id": 1,
+      "tls": {
+        "enabled": true,
+        "server_name": "www.32278117.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "www.32278117.xyz"
+        },
+        "max_early_data": null,
+        "path": "/path/170733132233"
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 02",
+      "type": "vmess",
+      "server": "202.79.161.192",
+      "server_port": 443,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "www.32278117.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "www.32278117.xyz"
+        },
+        "max_early_data": null,
+        "path": "/path/170733132233"
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 03",
+      "type": "vless",
+      "server": "144.24.84.212",
+      "server_port": 49888,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vless",
+      "server": "vljp.zyttbywy.xyz",
+      "server_port": 443,
+      "uuid": "39d164af-a672-4ef9-8764-09cbaf30cb96",
+      "tls": {
+        "enabled": true,
+        "server_name": "vljp.zyttbywy.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "vljp.zyttbywy.xyz"
+        },
+        "max_early_data": null,
+        "path": "/vws"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vless",
+      "server": "18.183.158.211",
+      "server_port": 443,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "vless",
+      "server": "141.147.178.249",
+      "server_port": 37043,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "204.44.110.129",
+      "server_port": 51541,
+      "password": "20050105zhu",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vless",
+      "server": "162.159.251.165",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vless",
+      "server": "162.159.249.49",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vless",
+      "server": "vless.zyttbywy.xyz",
+      "server_port": 443,
+      "uuid": "b340d332-7ee9-450e-80e7-7aaf9ffbb302",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.zyttbywy.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/vws"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "shadowsocks",
+      "server": "45.87.175.192",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1RWwXhwfAB5gAEozU4G2Pg"
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "vless",
+      "server": "199.181.197.186",
+      "server_port": 8880,
+      "uuid": "583ceab3-4022-4553-9158-9bedc625ad4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ip.langmanshanxi.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/TelegramU0001F1E8U0001F1F3 @WangCai2 /"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 07",
+      "type": "hysteria2",
+      "server": "204.44.110.129",
+      "server_port": 51541,
+      "password": "20050105zhu",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 08",
+      "type": "trojan",
+      "server": "tuntro005.instconn.com",
+      "server_port": 443,
+      "password": "fea3ddf1-3c02-41b0-be1b-4b1d19a86a0c",
+      "tls": {
+        "enabled": true,
+        "server_name": "Phoenixrm2.686911.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 09",
+      "type": "vless",
+      "server": "103.133.1.188",
+      "server_port": 8880,
+      "uuid": "583ceab3-4022-4553-9158-9bedc625ad4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ip.langmanshanxi.top"
+        },
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 01",
+      "type": "vless",
+      "server": "172.64.229.228",
+      "server_port": 2096,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 02",
+      "type": "vless",
+      "server": "172.64.40.175",
+      "server_port": 443,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 03",
+      "type": "vless",
+      "server": "172.67.114.195",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 04",
+      "type": "vless",
+      "server": "104.18.164.69",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 05",
+      "type": "vless",
+      "server": "104.24.87.184",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 06",
+      "type": "vless",
+      "server": "172.67.240.192",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 07",
+      "type": "vless",
+      "server": "104.27.94.254",
+      "server_port": 2087,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 08",
+      "type": "vless",
+      "server": "172.64.40.134",
+      "server_port": 443,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 09",
+      "type": "vless",
+      "server": "104.19.150.163",
+      "server_port": 443,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 10",
+      "type": "vless",
+      "server": "172.64.40.132",
+      "server_port": 443,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 11",
+      "type": "vless",
+      "server": "162.159.153.222",
+      "server_port": 2096,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 12",
+      "type": "vless",
+      "server": "172.64.40.175",
+      "server_port": 443,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 13",
+      "type": "vless",
+      "server": "172.67.186.58",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 14",
+      "type": "vless",
+      "server": "172.67.216.216",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 15",
+      "type": "vless",
+      "server": "198.41.198.176",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "c379b284.vs-494.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c379b284.vs-494.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 16",
+      "type": "vless",
+      "server": "162.159.153.109",
+      "server_port": 2096,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇨🇦 加拿大 17",
+      "type": "vless",
+      "server": "jp.weyolo.com",
+      "server_port": 443,
+      "uuid": "b8c7ce41-d2bd-4205-933a-bc2b9c34dc03",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.weyolo.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "jp.weyolo.com"
+        },
+        "max_early_data": null,
+        "path": "/ws"
+      }
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "vless",
+      "server": "138.68.141.220",
+      "server_port": 2053,
+      "uuid": "222a1c34-96f5-45fd-bedd-b9ac4b477b98",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.singbox.ggff.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.singbox.ggff.net"
+        },
+        "max_early_data": null,
+        "path": "/r6PSatuYdS9gZH6L/c2pjLm8wMG8ub29v"
+      }
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 01",
+      "type": "vless",
+      "server": "45.67.215.177",
+      "server_port": 8880,
+      "uuid": "583ceab3-4022-4553-9158-9bedc625ad4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ip.langmanshanxi.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/Telegram@freecodes/"
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
