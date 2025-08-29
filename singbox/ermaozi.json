@@ -94,8 +94,12 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -104,8 +108,12 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -114,8 +122,12 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,8 +138,12 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,8 +153,12 @@
       "outbounds": [
         "direct",
         "select",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,8 +167,12 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇳🇱 荷兰 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,37 +207,110 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
+      "tag": "🇳🇱 荷兰 01",
       "type": "vmess",
-      "server": "v29.heduian.link",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "server": "188.164.248.224",
+      "server_port": 8880,
+      "uuid": "64076cae-b5ba-32c8-a316-fa782f0a553b",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "ocbc.com"
+          "Host": "TG.WangCai2.s4.db-link02.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/dabai&Telegram🇨🇳@WangCai2/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "trojan",
+      "server": "csgo.com",
+      "server_port": 8443,
+      "password": "62e4250a-fe02-40cc-ad32-c847389956cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-node-oss-99.paofu.de",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn-node-oss-99.paofu.de"
         },
         "max_early_data": null,
-        "path": "/oooo"
+        "path": "/profile/telegram@ssrsub"
       }
     },
     {
       "tag": "🇺🇸 美国 02",
-      "type": "vmess",
-      "server": "v24.heduian.link",
-      "server_port": 30824,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2,
+      "type": "trojan",
+      "server": "pubg.ac",
+      "server_port": 8443,
+      "password": "62e4250a-fe02-40cc-ad32-c847389956cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-node-oss-99.paofu.de",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "v24.heduian.link"
+          "Host": "cdn-node-oss-99.paofu.de"
         },
         "max_early_data": null,
-        "path": "/oooo"
+        "path": "/profile/telegram@ssrsub"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "trojan",
+      "server": "gerxyz.bm04.xyz",
+      "server_port": 2053,
+      "password": "94cf288d-f764-4ce9-a547-a7228144f056",
+      "tls": {
+        "enabled": true,
+        "server_name": "gerxyz.bm04.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vmess",
+      "server": "45.136.245.177",
+      "server_port": 22102,
+      "uuid": "c8631767-f45c-4f48-bf19-5405e6d18679",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇧🇬 保加利亚 01",
+      "type": "vmess",
+      "server": "185.176.26.224",
+      "server_port": 8880,
+      "uuid": "64076cae-b5ba-32c8-a316-fa782f0a553b",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "TG.WangCai2.s4.db-link02.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/dabai&Telegram🇨🇳@WangCai2/"
       }
     }
   ],

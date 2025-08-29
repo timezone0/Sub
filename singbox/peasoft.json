@@ -99,7 +99,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇯🇵 日本 01",
@@ -130,7 +129,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇯🇵 日本 01",
@@ -161,7 +159,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇯🇵 日本 01",
@@ -194,7 +191,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇯🇵 日本 01",
@@ -226,7 +222,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇯🇵 日本 01",
@@ -257,7 +252,6 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇯🇵 日本 01",
@@ -341,11 +335,11 @@
     {
       "tag": "🇭🇰 香港 03",
       "type": "vmess",
-      "server": "38.147.189.37",
-      "server_port": 31552,
-      "uuid": "07048eb8-af77-407f-9426-af79a45d2bb1",
+      "server": "183.240.245.250",
+      "server_port": 47272,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
       "security": "auto",
-      "alter_id": 0
+      "alter_id": 64
     },
     {
       "tag": "🇭🇰 香港 04",
@@ -365,26 +359,9 @@
     },
     {
       "tag": "🇭🇰 香港 05",
-      "type": "vmess",
-      "server": "hkt.gotochinatown.net",
-      "server_port": 80,
-      "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "hkt.gotochinatown.net"
-        },
-        "max_early_data": null,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 06",
       "type": "trojan",
-      "server": "42.2.237.179",
-      "server_port": 443,
+      "server": "36.150.215.188",
+      "server_port": 1546,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
@@ -399,18 +376,18 @@
     {
       "tag": "🇨🇳 台湾 01",
       "type": "shadowsocks",
-      "server": "125.230.12.246",
-      "server_port": 10032,
+      "server": "36.232.74.25",
+      "server_port": 10148,
       "method": "chacha20-ietf-poly1305",
-      "password": "72ba05a3-632e-490b-ad00-158578664c18"
+      "password": "87db2955-048b-4ac9-bf8d-fb1bfe760e71"
     },
     {
       "tag": "🇨🇳 台湾 02",
       "type": "shadowsocks",
-      "server": "125.229.88.58",
-      "server_port": 10121,
+      "server": "36.232.100.114",
+      "server_port": 10141,
       "method": "chacha20-ietf-poly1305",
-      "password": "befbdd4b-0cb5-42f1-9aad-7aae3ba11ed9"
+      "password": "0a28538e-d7a3-4185-928a-c8bd49bb9c6b"
     },
     {
       "tag": "🇯🇵 日本 01",
@@ -420,7 +397,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202508150964186-1Vi6U9m87m.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202508150964186-5vnd5Hsmlh.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇯🇵 日本 02",
@@ -501,29 +478,11 @@
     },
     {
       "tag": "🇺🇸 美国 01",
-      "type": "vmess",
-      "server": "ssssssssssssfffffffgh.2032.pp.ua",
-      "server_port": 443,
-      "uuid": "4174b95d-115e-4d39-add6-1f8db95bb860",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "ssssssssssssfffffffgh.2032.pp.ua",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "ssssssssssssfffffffgh.2032.pp.ua"
-        },
-        "max_early_data": null,
-        "path": "/6We3U9Df1WGxgFnoFPw1"
-      }
+      "type": "shadowsocks",
+      "server": "awes35lesl.blhao0o.dpdns.org",
+      "server_port": 12023,
+      "method": "aes-128-gcm",
+      "password": "01721e43-5389-4f97-b21c-900abb2bda9e"
     },
     {
       "tag": "🇺🇸 美国 02",
@@ -533,7 +492,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs-host=202508150964186-1Vi6U9m87m.download.microsoft.com;obfs=http"
+      "plugin_opts": "obfs-host=202508150964186-5vnd5Hsmlh.download.microsoft.com;obfs=http"
     },
     {
       "tag": "🇺🇸 美国 03",
