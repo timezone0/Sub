@@ -82,76 +82,95 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇸🇬 新加坡 01", server: "8.219.232.60", port: 6467, type: "hysteria2", password: "fWydUhyG3woKe4a0kcKKKdx78", auth: "fWydUhyG3woKe4a0kcKKKdx78", sni: "bing.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 02", type: "vless", server: "45.159.217.182", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 03", type: "vless", server: "45.159.217.234", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 04", type: "vless", server: "156.238.18.166", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 05", type: "vless", server: "156.238.18.179", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 06", type: "vless", server: "45.159.217.108", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 07", type: "vless", server: "45.159.217.139", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇸🇬 新加坡 08", type: "vless", server: "156.238.18.89", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "sg.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2048"}, client-fingerprint: "chrome", servername: "sg.laoyoutiao.link"}
-- {name: "🇨🇳 台湾 01", server: "36.232.119.195", port: 10128, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f03bced5-7130-4c3e-9367-d3dffdd69751", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 02", server: "36.232.119.217", port: 10139, type: "ss", cipher: "chacha20-ietf-poly1305", password: "0fd7b433-2f9c-4a9d-b1ad-a78af389c2f0", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 03", server: "114.33.53.213", port: 10037, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f75d3f26-038e-4f53-b81b-ae2e05ebef33", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 04", server: "114.46.94.65", port: 10070, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d00ad149-7c56-44d3-9fdc-7cb260f737e3", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 05", server: "114.46.79.253", port: 10068, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d00ad149-7c56-44d3-9fdc-7cb260f737e3", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 06", server: "114.35.114.182", port: 10129, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f03bced5-7130-4c3e-9367-d3dffdd69751", udp: true, client-fingerprint: "chrome"}
-- {name: "🏴‍☠️ 塞舌尔 01", server: "156.251.179.136", port: 636, type: "ss", cipher: "aes-256-gcm", password: "0b191076d18f", plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "hk6v1.dsjsapp.com", path: "/ugiibpkbca", tls: true, mux: true}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 01", type: "vless", server: "46.254.92.195", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 02", type: "vless", server: "46.254.92.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, disable-sni: true, skip-cert-verify: true, client-fingerprint: "chrome", servername: ""}
-- {name: "🇺🇸 美国 03", type: "vless", server: "147.185.161.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @ CoinTech2U2 /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel- CoinTech2U2"}
-- {name: "🇺🇸 美国 04", server: "185.16.110.251", port: 8880, type: "vless", uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 05", type: "vless", server: "160.79.104.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇺🇸 美国 06", type: "vless", server: "5.10.214.20", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {name: "🇺🇸 美国 07", type: "vless", server: "46.254.92.9", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 08", server: "185.251.82.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 09", type: "vless", server: "46.254.92.11", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 10", server: "92.53.191.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 11", type: "vless", server: "45.194.53.178", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "ld.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ld.laoyoutiao.link"}
-- {name: "🇺🇸 美国 12", type: "vless", server: "45.194.53.141", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "ld.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ld.laoyoutiao.link"}
-- {name: "🇺🇸 美国 13", server: "88.216.69.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 14", server: "5.10.214.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 15", type: "vless", server: "92.53.190.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 16", server: "94.140.0.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 17", server: "167.68.5.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 18", type: "vless", server: "46.254.92.249", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 19", type: "vless", server: "185.148.106.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇺🇸 美国 20", server: "92.53.188.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 21", type: "vless", server: "46.254.92.47", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 22", type: "vless", server: "46.254.92.193", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 23", server: "160.79.105.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 24", type: "vless", server: "104.129.167.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇺🇸 美国 25", type: "vless", server: "46.254.92.2", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 26", type: "vless", server: "5.182.84.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ip.langmanshanxi.top"}
-- {name: "🇺🇸 美国 27", type: "vless", server: "45.149.12.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 28", server: "91.124.127.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 29", type: "vless", server: "141.11.203.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇺🇸 美国 30", type: "vless", server: "45.194.53.215", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "ld.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "ld.laoyoutiao.link"}
-- {name: "🇺🇸 美国 31", type: "vless", server: "46.254.92.33", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 32", server: "45.131.4.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 33", server: "194.53.53.143", port: 8880, type: "vless", uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "yg.bantony199.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 34", type: "vless", server: "63.141.128.188", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {type: "vless", name: "🇺🇸 美国 35", server: "160.79.104.11", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "bw.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "bw.bgm2024.dpdns.org"}
-- {type: "vless", name: "🇺🇸 美国 36", server: "46.254.92.8", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cf.d3z.net"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 37", type: "vless", server: "46.202.30.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇺🇸 美国 38", type: "vless", server: "212.183.88.254", port: 8880, uuid: "34c01e61-f4f3-4afb-a83b-406caf8caa33", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "yg.bantony199.top"}}, client-fingerprint: "chrome", servername: "yg.bantony199.top"}
-- {type: "vless", name: "🇺🇸 美国 39", server: "170.114.46.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
-- {name: "🇺🇸 美国 40", type: "vless", server: "45.80.111.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {type: "vless", name: "🇺🇸 美国 41", server: "63.141.128.140", port: 443, uuid: "55520747-311e-4015-83ce-be46e2060ce3", skip-cert-verify: true, udp: true, tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sw.bgm2024.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "sw.bgm2024.dpdns.org"}
-- {name: "🇺🇸 美国 42", type: "vless", server: "94.140.0.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/freecodesfreecodes", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇺🇸 美国 43", type: "vless", server: "141.11.203.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
-- {name: "🇺🇸 美国 44", type: "vless", server: "45.142.120.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇦🇪 阿联酋 01", type: "vless", server: "156.238.18.13", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @MxlShare @freecodes /", headers: {Host: "yd.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {name: "🇦🇪 阿联酋 02", type: "vless", server: "156.238.18.150", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @MxlShare @freecodes /", headers: {Host: "yd.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {name: "🇦🇪 阿联酋 03", type: "vless", server: "156.238.18.83", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", tls: false, network: "ws", ws-opts: {path: "/Telegram @MxlShare @freecodes /", headers: {Host: "yd.laoyoutiao.link"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {type: "vless", name: "🇦🇪 阿联酋 04", server: "156.238.18.139", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "yd.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {type: "vless", name: "🇦🇪 阿联酋 05", server: "156.238.18.239", port: 8880, uuid: "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "yd.laoyoutiao.link"}, path: "/TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "yd.laoyoutiao.link"}
-- {name: "🇻🇳 越南 01", server: "103.186.154.28", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, client-fingerprint: "chrome"}
-- {name: "🇻🇳 越南 02", server: "103.186.154.36", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, client-fingerprint: "chrome"}
-- {name: "🇻🇳 越南 03", server: "103.186.155.21", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, client-fingerprint: "chrome"}
-- {name: "🇰🇷 韩国 01", type: "vless", server: "167.68.5.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "ip.langmanshanxi.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
-- {name: "🇨🇦 加拿大 01", type: "vless", server: "ip.sb", port: 443, uuid: "8df60790-c903-4661-b85d-64c0009378e5", tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "f1.parsa.filegear-sg.me"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "F1.paRsa.fiLegEar-Sg.Me"}
-- {name: "🇨🇦 加拿大 02", type: "vless", server: "160.79.105.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {type: "hysteria2", name: "🇸🇬 新加坡 01", server: "8.222.183.55", port: 33131, password: "lPK6OZ9ouqyXrCghO6ohUbbN5g", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇸🇬 新加坡 02", server: "52.221.210.182", port: 17193, password: "5OiuCsPmULZ0lJwts89fegLJE", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇸🇬 新加坡 03", server: "47.129.224.62", port: 22509, password: "3hszBhqVsUhqOOFWJlev6k6Tkc", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 04", server: "8.219.232.60", port: 6467, type: "hysteria2", password: "fWydUhyG3woKe4a0kcKKKdx78", auth: "fWydUhyG3woKe4a0kcKKKdx78", sni: "bing.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 01", server: "125.229.191.104", port: 10033, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e99db645-925f-440b-a7c1-20d29887b7ee", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 02", server: "118.170.254.201", port: 10006, type: "ss", cipher: "chacha20-ietf-poly1305", password: "32ab7934-4b6c-4480-a623-fe66c4e8f2a1", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 03", server: "114.46.74.1", port: 10067, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d8571dfd-6809-42c7-9e95-a13eb5064db1", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 04", server: "125.228.180.215", port: 10089, type: "ss", cipher: "chacha20-ietf-poly1305", password: "1e5d6d04-415e-4ac6-b051-711371182eb9", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 05", server: "125.228.34.244", port: 10105, type: "ss", cipher: "chacha20-ietf-poly1305", password: "16104337-92a5-4852-ae68-e53423f6e9bf", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 06", server: "125.231.82.47", port: 10038, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76fd3293-7b31-4860-ba9c-fb54b7144335", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 07", server: "125.228.31.10", port: 10113, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76fd3293-7b31-4860-ba9c-fb54b7144335", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 08", server: "125.231.76.216", port: 10049, type: "ss", cipher: "chacha20-ietf-poly1305", password: "59b9e05f-ab2f-4639-815c-2e3cbe89f4cf", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 09", server: "1.170.50.16", port: 10085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d8571dfd-6809-42c7-9e95-a13eb5064db1", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 10", server: "118.170.218.227", port: 10014, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ea3c2465-9213-4422-b43f-ae7782a65685", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 11", server: "36.232.71.108", port: 10149, type: "ss", cipher: "chacha20-ietf-poly1305", password: "524719d3-3318-4e90-bd35-6f6739f9659b", udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇭🇰 香港 01", server: "47.76.83.25", port: 11243, password: "L60nS04NhsoMpN2DDGbnMqLP8DY", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇭🇰 香港 02", server: "47.242.195.121", port: 12854, password: "XK52yierGckONMJWbJnuskD3unI", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 03", server: "697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com", port: 80, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", alterId: "2", cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 01", server: "jp029.jd.kunlunpx.com", port: 45913, type: "ss", cipher: "aes-128-gcm", password: "c8960ca4a0add435fc34", plugin: "obfs", plugin-opts: {mode: "http", host: "215996dd9f1c3db1e54b.microsoft.com"}, udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇯🇵 日本 02", server: "47.245.0.72", port: 27789, password: "yD0mxkCA18WgPD1uVGd3Eu1dc", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 01", server: "us3.xilucloud.top", port: 14558, type: "hysteria2", password: "dd1e4ade-746b-4ab6-88ee-744336fabf7a", auth: "dd1e4ade-746b-4ab6-88ee-744336fabf7a", sni: "us3.xilucloud.top", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 02", server: "166.88.164.9", port: 27704, password: "peEduuHzbExjK7UQHzazXwqgA", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 03", server: "108.181.5.130", port: 63015, password: "dongtaiwang.com", sni: "apple.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇸 美国 04", server: "148.135.43.253", port: 446, password: "sysadmin.sysadmin", sni: "ss.aslirico3212.nyc.mn", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 05", server: "185.16.110.251", port: 8880, type: "vless", uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @WangCai2 /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, udp: true, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 06", type: "vless", server: "159.246.55.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 07", type: "vless", server: "46.254.92.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, disable-sni: true, skip-cert-verify: true, client-fingerprint: "chrome", servername: ""}
+- {name: "🇺🇸 美国 08", type: "vless", server: "89.116.180.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 09", type: "vless", server: "92.53.190.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 10", type: "vless", server: "46.254.92.2", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 11", type: "vless", server: "103.245.229.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 12", type: "vless", server: "188.42.88.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 13", type: "vless", server: "188.42.89.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 14", type: "vless", server: "46.254.92.9", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 15", type: "vless", server: "46.254.92.221", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 16", type: "vless", server: "46.254.92.18", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 17", type: "vless", server: "46.254.92.195", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 18", type: "vless", server: "46.254.92.247", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 19", type: "vless", server: "46.254.92.11", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 20", type: "vless", server: "188.164.248.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 21", type: "vless", server: "74.49.215.192", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 22", type: "vless", server: "185.148.106.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 23", type: "vless", server: "46.254.92.241", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 24", type: "vless", server: "46.254.92.40", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 25", type: "vless", server: "46.254.92.33", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 26", type: "vless", server: "103.169.142.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 27", type: "vless", server: "212.183.88.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 28", type: "vless", server: "46.254.92.47", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 29", type: "vless", server: "46.254.92.64", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /", headers: {Host: "cf.d3z.net"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: "2560"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {type: "hysteria2", name: "🇺🇸 美国 30", server: "208.87.243.187", port: 22222, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 31", type: "vless", server: "195.13.45.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @freecodes", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {type: "vless", name: "🇺🇸 美国 32", server: "114.129.43.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cf.d3z.net"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "Telegram-channel-WangCai2"}
+- {name: "🇺🇸 美国 33", type: "vless", server: "92.243.74.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 34", type: "vless", server: "185.148.107.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel- CoinTech2U2"}
+- {name: "🇺🇸 美国 35", type: "vless", server: "45.159.219.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 36", server: "us038.jd.kunlunpx.com", port: 45922, type: "ss", cipher: "aes-128-gcm", password: "c1ee5895686790a383fb", plugin: "obfs", plugin-opts: {mode: "http", host: "215996dd9f1c3db1e54b.microsoft.com"}, udp: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 37", type: "vless", server: "192.65.217.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 38", type: "vless", server: "141.193.27.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /?ed=2560fp=chrome", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 39", type: "vless", server: "46.254.92.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 40", type: "vless", server: "62.72.166.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 41", type: "vless", server: "77.105.163.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/ [By EbraSha]", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "������ [By EbraSha]"}
+- {name: "🇺🇸 美国 42", type: "vless", server: "185.251.82.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /?ed=2560fp=chrome", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 43", type: "vless", server: "86.38.214.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/freecodesfreecodes", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 44", type: "vless", server: "66.235.200.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 45", type: "vless", server: "94.247.142.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram @freecodes /?ed=2560fp=chrome", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {type: "vless", name: "🇺🇸 美国 46", server: "46.254.92.8", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cf.d3z.net"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 47", type: "vless", server: "45.142.120.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 48", type: "vless", server: "89.117.112.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "cf.d3z.net"}}, disable-sni: true, skip-cert-verify: true, client-fingerprint: "chrome", servername: ""}
+- {name: "🇺🇸 美国 49", type: "vless", server: "89.116.180.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 50", type: "vless", server: "66.235.200.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/ [By EbraSha]", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇺🇸 美国 51", type: "vless", server: "185.251.80.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 52", type: "vless", server: "89.116.250.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 53", type: "vless", server: "185.176.24.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 54", type: "vless", server: "195.26.229.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 55", type: "vless", server: "185.238.228.251", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", tls: false, network: "ws", ws-opts: {path: "/ [By EbraSha]", headers: {Host: "cf.d3z.net"}}, client-fingerprint: "chrome", servername: " [By EbraSha]"}
+- {name: "🇺🇸 美国 56", type: "vless", server: "188.164.248.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 57", type: "vless", server: "103.169.142.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 58", type: "vless", server: "141.11.203.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇺🇸 美国 59", type: "vless", server: "31.43.179.3", port: 8880, uuid: "b5441b0d-2147-4898-8a6a-9b2c87f58382", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "bitget1.asdasd.click"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {type: "vless", name: "🇺🇸 美国 60", server: "46.254.92.1", port: 8880, uuid: "0132166f-e702-48ed-a9e7-b07af768faf8", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "cf.d3z.net"}, path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed"}, client-fingerprint: "chrome", servername: "cf.d3z.net"}
+- {name: "🇰🇷 韩国 01", server: "kr037.jd.kunlunpx.com", port: 45921, type: "ss", cipher: "aes-128-gcm", password: "d7577ca6729babe0790f", plugin: "obfs", plugin-opts: {mode: "http", host: "215996dd9f1c3db1e54b.microsoft.com"}, udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇫🇷 法国 01", server: "51.159.111.32", port: 5355, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇳🇱 荷兰 01", server: "yapc-1.adamhayward.co.uk", port: 35200, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇳🇱 荷兰 02", server: "yapc-1.adamhayward.co.uk", port: 36300, type: "hysteria2", password: "Yet-Another-Public-Config-1", auth: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", skip-cert-verify: true, obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", udp: true, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇳🇱 荷兰 03", server: "gavazn.lnmarketplace.net", port: 45000, password: "Telegram-->@Ln2Ray", sni: "gavazn.55994421.xyz", obfs: "salamander", obfs-password: "Telegram-->@Ln2Ray", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "hysteria2", name: "🇺🇦 乌克兰 01", server: "185.126.255.78", port: 43429, password: "1fdb6b30-5371-4ff8-a001-efdc4b43d79b", sni: "real.getafreenode.sbs", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇨🇦 加拿大 01", type: "vless", server: "140.99.233.186", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇨🇦 加拿大 02", type: "vless", server: "94.140.0.177", port: 8880, uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", tls: false, network: "ws", ws-opts: {path: "/freecodesfreecodes", headers: {Host: "ip.langmanshanxi.top"}}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
+- {name: "🇩🇪 德国 01", type: "vless", server: "tgju.org", port: 80, uuid: "2b277eea-66b2-4f3a-b934-46225c1f5e6f", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "SeRvER12.VtNEt.InFO"}}, client-fingerprint: "chrome", servername: "SeRvER12.VtNEt.InFO"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -161,17 +180,22 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
   - "🇨🇳 台湾 04"
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
-  - "🏴‍☠️ 塞舌尔 01"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -216,17 +240,31 @@ proxy-groups:
   - "🇺🇸 美国 42"
   - "🇺🇸 美国 43"
   - "🇺🇸 美国 44"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
   - "🇰🇷 韩国 01"
+  - "🇫🇷 法国 01"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇺🇦 乌克兰 01"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇩🇪 德国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -237,17 +275,22 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
   - "🇨🇳 台湾 04"
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
-  - "🏴‍☠️ 塞舌尔 01"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -292,17 +335,31 @@ proxy-groups:
   - "🇺🇸 美国 42"
   - "🇺🇸 美国 43"
   - "🇺🇸 美国 44"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
   - "🇰🇷 韩国 01"
+  - "🇫🇷 法国 01"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇺🇦 乌克兰 01"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇩🇪 德国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -311,17 +368,22 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
   - "🇨🇳 台湾 04"
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
-  - "🏴‍☠️ 塞舌尔 01"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -366,17 +428,31 @@ proxy-groups:
   - "🇺🇸 美国 42"
   - "🇺🇸 美国 43"
   - "🇺🇸 美国 44"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
   - "🇰🇷 韩国 01"
+  - "🇫🇷 法国 01"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇺🇦 乌克兰 01"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇩🇪 德国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -387,17 +463,22 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
   - "🇨🇳 台湾 04"
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
-  - "🏴‍☠️ 塞舌尔 01"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -442,17 +523,31 @@ proxy-groups:
   - "🇺🇸 美国 42"
   - "🇺🇸 美国 43"
   - "🇺🇸 美国 44"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
   - "🇰🇷 韩国 01"
+  - "🇫🇷 法国 01"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇺🇦 乌克兰 01"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇩🇪 德国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -462,17 +557,22 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
   - "🇨🇳 台湾 04"
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
-  - "🏴‍☠️ 塞舌尔 01"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -517,17 +617,31 @@ proxy-groups:
   - "🇺🇸 美国 42"
   - "🇺🇸 美国 43"
   - "🇺🇸 美国 44"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
   - "🇰🇷 韩国 01"
+  - "🇫🇷 法国 01"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇺🇦 乌克兰 01"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇩🇪 德国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -536,17 +650,22 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
   - "🇨🇳 台湾 04"
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
-  - "🏴‍☠️ 塞舌尔 01"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -591,17 +710,31 @@ proxy-groups:
   - "🇺🇸 美国 42"
   - "🇺🇸 美国 43"
   - "🇺🇸 美国 44"
-  - "🇦🇪 阿联酋 01"
-  - "🇦🇪 阿联酋 02"
-  - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
+  - "🇺🇸 美国 45"
+  - "🇺🇸 美国 46"
+  - "🇺🇸 美国 47"
+  - "🇺🇸 美国 48"
+  - "🇺🇸 美国 49"
+  - "🇺🇸 美国 50"
+  - "🇺🇸 美国 51"
+  - "🇺🇸 美国 52"
+  - "🇺🇸 美国 53"
+  - "🇺🇸 美国 54"
+  - "🇺🇸 美国 55"
+  - "🇺🇸 美国 56"
+  - "🇺🇸 美国 57"
+  - "🇺🇸 美国 58"
+  - "🇺🇸 美国 59"
+  - "🇺🇸 美国 60"
   - "🇰🇷 韩国 01"
+  - "🇫🇷 法国 01"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇺🇦 乌克兰 01"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇩🇪 德国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
