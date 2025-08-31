@@ -95,9 +95,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 04",
-        "🇩🇪 德国 01",
-        "🇲🇩 摩尔多瓦 01"
+        "🇿🇦 南非 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,9 +105,7 @@
       "interval": "3m",
       "outbounds": [
         "🇺🇸 美国 01",
-        "🇺🇸 美国 04",
-        "🇩🇪 德国 01",
-        "🇲🇩 摩尔多瓦 01"
+        "🇿🇦 南非 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -119,9 +115,7 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 04",
-        "🇩🇪 德国 01",
-        "🇲🇩 摩尔多瓦 01"
+        "🇿🇦 南非 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,9 +127,7 @@
         "select",
         "direct",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 04",
-        "🇩🇪 德国 01",
-        "🇲🇩 摩尔多瓦 01"
+        "🇿🇦 南非 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -146,9 +138,7 @@
         "direct",
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 04",
-        "🇩🇪 德国 01",
-        "🇲🇩 摩尔多瓦 01"
+        "🇿🇦 南非 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -158,9 +148,7 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 04",
-        "🇩🇪 德国 01",
-        "🇲🇩 摩尔多瓦 01"
+        "🇿🇦 南非 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -196,56 +184,39 @@
     },
     {
       "tag": "🇺🇸 美国 01",
-      "type": "trojan",
-      "server": "fastcup.net",
-      "server_port": 8443,
-      "password": "56c852c2-9517-4c13-ae18-bf0bee41706a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn-node-oss-99.paofu.de",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn-node-oss-99.paofu.de"
-        },
-        "max_early_data": null,
-        "path": "/profile/telegram@ssrsub"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 04",
       "type": "vmess",
-      "server": "pubg.ac",
-      "server_port": 80,
-      "uuid": "56c852c2-9517-4c13-ae18-bf0bee41706a",
+      "server": "102.177.176.249",
+      "server_port": 8880,
+      "uuid": "d5ed323c-019e-37c7-b7a7-cf7dc699e9c4",
       "security": "auto",
       "alter_id": 0,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "cdn-node-oss-99.paofu.de"
+          "Host": "TG.WangCai2.s2.db-link02.top"
         },
-        "max_early_data": null,
-        "path": "/profile/telegram@ssrsub"
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/dabai&Telegram🇨🇳 @WangCai2 /"
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
-      "type": "shadowsocks",
-      "server": "46.183.184.60",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "tag": "🇲🇩 摩尔多瓦 01",
-      "type": "shadowsocks",
-      "server": "91.132.94.200",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
+      "tag": "🇿🇦 南非 01",
+      "type": "vmess",
+      "server": "102.132.188.249",
+      "server_port": 8880,
+      "uuid": "53ec5471-532d-371f-a499-c152006493b8",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "TG.WangCai2.s2.db-link02.top"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/dabai&Telegram🇨🇳 @WangCai2 /"
+      }
     }
   ],
   "route": {
