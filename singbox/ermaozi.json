@@ -94,8 +94,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01",
-        "🇿🇦 南非 01"
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -104,8 +103,7 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇺🇸 美国 01",
-        "🇿🇦 南非 01"
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -114,8 +112,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01",
-        "🇿🇦 南非 01"
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,8 +123,7 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 01",
-        "🇿🇦 南非 01"
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,8 +133,7 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 01",
-        "🇿🇦 南非 01"
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,8 +142,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01",
-        "🇿🇦 南非 01"
+        "🇬🇧 英国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,40 +177,12 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
-      "type": "vmess",
-      "server": "102.177.176.249",
-      "server_port": 8880,
-      "uuid": "d5ed323c-019e-37c7-b7a7-cf7dc699e9c4",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "TG.WangCai2.s2.db-link02.top"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/dabai&Telegram🇨🇳 @WangCai2 /"
-      }
-    },
-    {
-      "tag": "🇿🇦 南非 01",
-      "type": "vmess",
-      "server": "102.132.188.249",
-      "server_port": 8880,
-      "uuid": "53ec5471-532d-371f-a499-c152006493b8",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "TG.WangCai2.s2.db-link02.top"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/dabai&Telegram🇨🇳 @WangCai2 /"
-      }
+      "tag": "🇬🇧 英国 01",
+      "type": "shadowsocks",
+      "server": "195.35.113.79",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1112935345BtgV5PDHVww"
     }
   ],
   "route": {
