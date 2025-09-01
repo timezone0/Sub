@@ -82,44 +82,98 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇨🇾 塞浦路斯 01", server: "vpnhub.shop", port: 8443, type: "vless", uuid: "714d0dcd-17f8-4495-ba35-5f04d2d92c0f", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "EJKcPSl0dv7mtU26gg6tUmKPw_aDvO2AHraRgNn6B14", short-id: "425ba80cd1a821a8"}, udp: true, network: "tcp", servername: "www.apple.com"}
-- {name: "🇩🇪 德国 01", server: "deu246.bypassall.org", port: 443, type: "vless", uuid: "b4b8aa1f-77d2-4851-a5a4-f78886f3e997", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"}, udp: true, network: "tcp", servername: "www.bing.com"}
-- {name: "🇭🇰 香港 01", server: "203.184.246.7", port: 24229, type: "vmess", uuid: "50b9297e-c728-46c0-de4b-36ddf8948007", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇭🇰 香港 02", server: "203.184.246.211", port: 51043, type: "vmess", uuid: "c05b241c-0de2-4959-b3a0-ec3df5bfda99", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇭🇰 香港 03", server: "c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net", port: 80, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net"}}, udp: true}
-- {name: "🇮🇷 伊朗 01", server: "fina.iranbuildings.com", port: 8444, type: "vless", uuid: "ac083fa9-df9a-4722-b70d-24c17bef0516", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["speedtest.net"]}}, udp: true, servername: "speedtest.net"}
-- {name: "🇮🇷 伊朗 02", server: "cdn28.saloonak.ir", port: 8443, type: "vless", uuid: "789d4f30-c31b-4762-8116-ed42574d5e85", tls: false, skip-cert-verify: false, udp: true, network: "tcp"}
+- {name: "🇨🇷 哥斯达黎加 01", server: "190.93.247.195", port: 2096, type: "trojan", password: "slch2024", sni: "ocost-dy.wmlefl.cc", skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳", headers: {Host: "ocost-dy.wmlefl.cc"}}, udp: true}
+- {name: "🇬🇧 英国 01", server: "31.56.204.125", port: 47535, type: "vmess", uuid: "bd31942b-9b80-4f70-893a-c75604228b84", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇬🇧 英国 02", server: "158.41.110.94", port: 34045, type: "vless", uuid: "d8dd94fd-540e-461d-b5d4-acebef02c22a", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA", short-id: "e8ab71d0"}, udp: true, network: "tcp", servername: "visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me"}
+- {name: "🇭🇰 香港 01", server: "1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com", port: 80, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true}
 - {name: "🇯🇵 日本 01", server: "103.13.19.254", port: 50414, type: "vmess", uuid: "aacec49a-c6eb-43a0-b14a-e3b4302e5f1a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇸🇬 新加坡 01", server: "159.65.8.30", port: 45029, type: "ss", cipher: "chacha20-ietf-poly1305", password: "YSYPIIGxFOHX0FeSKAr637", udp: true}
-- {name: "🇸🇬 新加坡 02", server: "165.22.248.174", port: 26714, type: "ss", cipher: "chacha20-ietf-poly1305", password: "rawFyLwFfDQDAaWOAwhYek", udp: true}
-- {name: "🇨🇳 台湾 01", server: "165.154.195.38", port: 35034, type: "vmess", uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 01", server: "64.81.33.196", port: 15988, type: "vmess", uuid: "8ec3bede-e979-4063-bdab-034fbd16f7f7", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 02", server: "64.81.34.113", port: 31971, type: "vmess", uuid: "983abe73-28fd-4ce5-cee8-dcce8e56d71a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 03", server: "64.81.33.109", port: 46611, type: "vmess", uuid: "363d7952-cd0f-41df-be8a-386a64e15f8b", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 04", server: "192.3.216.180", port: 25740, type: "vmess", uuid: "43cf14a5-5b85-47e2-a4c2-b514beab7054", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
-- {name: "🇺🇸 美国 05", server: "206.119.191.9", port: 7998, type: "vmess", uuid: "984429ed-3959-4022-e248-cbcb19c96f9a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 06", server: "206.119.191.20", port: 7998, type: "vmess", uuid: "984429ed-3959-4022-e248-cbcb19c96f9a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 07", server: "66.253.5.58", port: 40083, type: "vmess", uuid: "19003217-0407-43d5-bf22-9aa642469a83", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇺🇸 美国 08", server: "156.238.225.160", port: 59081, type: "vmess", uuid: "ce42a56d-06fb-4cf0-bddd-18cdc3114622", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
-- {name: "🇺🇸 美国 09", server: "159.203.173.101", port: 10721, type: "ss", cipher: "chacha20-ietf-poly1305", password: "YA4zGmd4OPLkKZGyLfR6PN", udp: true}
-- {name: "🇺🇸 美国 10", server: "63.141.128.26", port: 80, type: "vless", uuid: "c032bdcd-bcd6-4d85-99ee-e12a9458ba62", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON", headers: {Host: "f.jOin.zEdMoDeOn.oNl."}}, udp: true, servername: "f.jOin.zEdMoDeOn.oNl."}
-- {name: "🇺🇸 美国 11", server: "63.141.128.13", port: 8080, type: "vless", uuid: "c8919b30-1117-405d-9e0f-9577c7e0f0ff", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON", headers: {Host: "c.jOin.zEdMoDeOn.oNl."}}, udp: true, servername: "c.jOin.zEdMoDeOn.oNl."}
+- {name: "🇯🇵 日本 02", server: "jphj-hk-500m-100g.ifuck.gay", port: 38001, type: "ss", cipher: "aes-256-gcm", password: "McRu2JvKif", udp: true}
+- {name: "🇷🇺 俄罗斯 01", server: "194.53.53.195", port: 2096, type: "trojan", password: "slch2024", sni: "ocost-dy.wmlefl.cc", skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳", headers: {Host: "ocost-dy.wmlefl.cc"}}, udp: true}
+- {name: "🇷🇺 俄罗斯 02", server: "wa.sfasti.ru", port: 443, type: "vless", uuid: "d4e4c02a-d969-47a6-ba0f-3d433fdac206", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8", short-id: "16895459a2c7768d"}, udp: true, network: "tcp", servername: "wa.sfasti.ru"}
+- {name: "🏴‍☠️ 塞舌尔 01", server: "154.197.26.237", port: 8388, type: "ss", cipher: "chacha20-ietf", password: "asd123456", udp: true}
+- {name: "🇸🇪 瑞典 01", server: "185.146.173.39", port: 2052, type: "vless", uuid: "2d14c894-aca5-4854-bcdb-75d4505486c2", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/wsmmad", headers: {Host: "michalde.lemoex.ir"}}, udp: true, servername: "michalde.lemoex.ir"}
+- {name: "🇸🇪 瑞典 02", server: "james2.evovpn.ru", port: 443, type: "vless", uuid: "d7b157a3-c463-4bd6-909b-64bfbaa379bb", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "-P9ZxYZP76-s_0mXFUDZeXxgUllKI1zkxSCqQca3NBM", short-id: "8f36094fbbe8e92e"}, udp: true, network: "tcp", servername: "speedtest.net"}
+- {name: "🇨🇳 台湾 01", server: "114.33.53.80", port: 10047, type: "ss", cipher: "chacha20-ietf-poly1305", password: "02150e6a-2a32-4028-89b7-a203cb56ad89", udp: true}
+- {name: "🇨🇳 台湾 02", server: "111.253.197.201", port: 10141, type: "ss", cipher: "chacha20-ietf-poly1305", password: "1cdb8dcd-36be-4d54-ae30-7c88b3f04e18", udp: true}
+- {name: "🇨🇳 台湾 03", server: "114.46.83.122", port: 10075, type: "ss", cipher: "chacha20-ietf-poly1305", password: "60df4359-5fe2-4df7-8751-c97ff6a52668", udp: true}
+- {name: "🇨🇳 台湾 04", server: "118.170.217.180", port: 10020, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5aeb7d55-60fc-479d-a35d-f24e3d757f8c", udp: true}
+- {name: "🇨🇳 台湾 05", server: "111.253.199.25", port: 10148, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f1ad222f-b304-40a8-aeab-24a810371ea9", udp: true}
+- {name: "🇨🇳 台湾 06", server: "125.228.180.215", port: 10089, type: "ss", cipher: "chacha20-ietf-poly1305", password: "9cd50d98-7e20-4b5f-8c1c-23a81de7a541", udp: true}
+- {name: "🇨🇳 台湾 07", server: "36.232.127.162", port: 10140, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7182ca82-f580-4e2e-9e9a-22b1c3fdfafb", udp: true}
+- {name: "🇨🇳 台湾 08", server: "114.46.79.69", port: 10070, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7fc173fa-fbad-4cf1-94d3-3c7fe576a1ce", udp: true}
+- {name: "🇨🇳 台湾 09", server: "118.170.220.47", port: 10025, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e73c8f9f-d53e-4f34-9237-2212ccc12d63", udp: true}
+- {name: "🇨🇳 台湾 10", server: "125.231.85.152", port: 10080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "60f661f4-579c-45c9-8156-e0db88911dc6", udp: true}
+- {name: "🇨🇳 台湾 11", server: "118.170.220.47", port: 10025, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5b60ce4f-e6f1-4db8-a8a3-6778e7f3ef53", udp: true}
+- {name: "🇨🇳 台湾 12", server: "114.46.83.122", port: 10075, type: "ss", cipher: "chacha20-ietf-poly1305", password: "04066376-d974-4ba0-a76f-20f8aeecd05b", udp: true}
+- {name: "🇨🇳 台湾 13", server: "114.46.83.122", port: 10075, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7182ca82-f580-4e2e-9e9a-22b1c3fdfafb", udp: true}
+- {name: "🇨🇳 台湾 14", server: "114.46.79.69", port: 10070, type: "ss", cipher: "chacha20-ietf-poly1305", password: "c6081e42-2dac-4ca0-ab51-176be0f479e7", udp: true}
+- {name: "🇨🇳 台湾 15", server: "59.126.32.59", port: 10066, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5f1cdb54-70ee-4f52-a8d3-db5bf6f2729c", udp: true}
+- {name: "🇨🇳 台湾 16", server: "111.253.197.201", port: 10141, type: "ss", cipher: "chacha20-ietf-poly1305", password: "95911f0e-ca9e-4570-89a3-2622ac71ada0", udp: true}
+- {name: "🇨🇳 台湾 17", server: "36.232.127.162", port: 10140, type: "ss", cipher: "chacha20-ietf-poly1305", password: "04066376-d974-4ba0-a76f-20f8aeecd05b", udp: true}
+- {name: "🇨🇳 台湾 18", server: "118.170.211.35", port: 10005, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5b60ce4f-e6f1-4db8-a8a3-6778e7f3ef53", udp: true}
+- {name: "🇨🇳 台湾 19", server: "118.170.220.47", port: 10025, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7182ca82-f580-4e2e-9e9a-22b1c3fdfafb", udp: true}
+- {name: "🇨🇳 台湾 20", server: "118.170.211.35", port: 10005, type: "ss", cipher: "chacha20-ietf-poly1305", password: "60df4359-5fe2-4df7-8751-c97ff6a52668", udp: true}
+- {name: "🇨🇳 台湾 21", server: "114.33.53.80", port: 10047, type: "ss", cipher: "chacha20-ietf-poly1305", password: "9cd50d98-7e20-4b5f-8c1c-23a81de7a541", udp: true}
+- {name: "🇨🇳 台湾 22", server: "36.232.126.210", port: 10147, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7fc173fa-fbad-4cf1-94d3-3c7fe576a1ce", udp: true}
+- {name: "🇨🇳 台湾 23", server: "114.33.53.80", port: 10047, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5f1cdb54-70ee-4f52-a8d3-db5bf6f2729c", udp: true}
+- {name: "🇨🇳 台湾 24", server: "118.170.208.202", port: 10027, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5b60ce4f-e6f1-4db8-a8a3-6778e7f3ef53", udp: true}
+- {name: "🇨🇳 台湾 25", server: "111.253.200.231", port: 10126, type: "ss", cipher: "chacha20-ietf-poly1305", password: "04066376-d974-4ba0-a76f-20f8aeecd05b", udp: true}
+- {name: "🇨🇳 台湾 26", server: "125.231.85.152", port: 10080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f1ad222f-b304-40a8-aeab-24a810371ea9", udp: true}
+- {name: "🇨🇳 台湾 27", server: "111.253.200.231", port: 10126, type: "ss", cipher: "chacha20-ietf-poly1305", password: "02150e6a-2a32-4028-89b7-a203cb56ad89", udp: true}
+- {name: "🇺🇸 美国 01", server: "95.174.71.28", port: 2377, type: "ss", cipher: "chacha20-ietf-poly1305", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {mode: "tls", host: "(TG @WangCai2)4fa101a:48723", tls: false}, udp: true}
+- {name: "🇺🇸 美国 02", server: "192.3.216.180", port: 25740, type: "vmess", uuid: "43cf14a5-5b85-47e2-a4c2-b514beab7054", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
+- {name: "🇺🇸 美国 03", server: "66.253.5.58", port: 40083, type: "vmess", uuid: "19003217-0407-43d5-bf22-9aa642469a83", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇺🇸 美国 04", server: "64.81.24.59", port: 42940, type: "vmess", uuid: "f68d852e-cef3-4baf-f4ce-b98c88197bde", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇺🇸 美国 05", server: "209.94.90.195", port: 2096, type: "trojan", password: "slch2024", sni: "ocost-dy.wmlefl.cc", skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳", headers: {Host: "ocost-dy.wmlefl.cc"}}, udp: true}
+- {name: "🇺🇸 美国 06", server: "63.141.128.14", port: 80, type: "vless", uuid: "18494a96-f6a7-425d-ae82-dc00c4f3f819", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON", headers: {Host: "a.joIn.zEdMoDeOn.oNl."}}, udp: true, servername: "a.joIn.zEdMoDeOn.oNl."}
+- {name: "🇺🇸 美国 07", server: "63.141.128.28", port: 8080, type: "vless", uuid: "49e77ea9-62bd-44c4-8a52-0d7569c305c5", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON", headers: {Host: "f.jOin.zEdMoDeOn.oNl."}}, udp: true, servername: "f.jOin.zEdMoDeOn.oNl."}
+- {name: "🇺🇸 美国 08", server: "63.141.128.23", port: 80, type: "vless", uuid: "d59d49d3-a392-403a-8480-59934008431d", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON", headers: {Host: "b.jOin.zEdMoDeOn.oNl."}}, udp: true, servername: "b.jOin.zEdMoDeOn.oNl."}
+- {name: "🇺🇸 美国 09", server: "63.141.128.13", port: 80, type: "vless", uuid: "fdf5ef4d-bf23-4bd1-b04e-39c80ba0c577", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON", headers: {Host: "c.jOin.zEdMoDeOn.oNl."}}, udp: true, servername: "c.jOin.zEdMoDeOn.oNl."}
+- {name: "🇻🇳 越南 01", server: "103.186.154.19", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 02", server: "103.186.154.37", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇨🇾 塞浦路斯 01"
-  - "🇩🇪 德国 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
+  - "🇯🇵 日本 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🏴‍☠️ 塞舌尔 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -129,25 +183,52 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇨🇾 塞浦路斯 01"
-  - "🇩🇪 德国 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
+  - "🇯🇵 日本 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🏴‍☠️ 塞舌尔 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -157,23 +238,50 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇨🇾 塞浦路斯 01"
-  - "🇩🇪 德国 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
+  - "🇯🇵 日本 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🏴‍☠️ 塞舌尔 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -183,25 +291,52 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇨🇾 塞浦路斯 01"
-  - "🇩🇪 德国 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
+  - "🇯🇵 日本 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🏴‍☠️ 塞舌尔 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -211,24 +346,51 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇨🇾 塞浦路斯 01"
-  - "🇩🇪 德国 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
+  - "🇯🇵 日本 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🏴‍☠️ 塞舌尔 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -238,23 +400,50 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇨🇾 塞浦路斯 01"
-  - "🇩🇪 德国 01"
+  - "🇨🇷 哥斯达黎加 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
+  - "🇯🇵 日本 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🏴‍☠️ 塞舌尔 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
+  - "🇨🇳 台湾 19"
+  - "🇨🇳 台湾 20"
+  - "🇨🇳 台湾 21"
+  - "🇨🇳 台湾 22"
+  - "🇨🇳 台湾 23"
+  - "🇨🇳 台湾 24"
+  - "🇨🇳 台湾 25"
+  - "🇨🇳 台湾 26"
+  - "🇨🇳 台湾 27"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -264,8 +453,8 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
-  - "🇺🇸 美国 10"
-  - "🇺🇸 美国 11"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
