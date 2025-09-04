@@ -85,8 +85,7 @@ proxies:
 - {name: "🇺🇸 美国 01", server: "207.90.239.227", port: 54842, sni: "images-na.ssl-images-amazon.com", skip-cert-verify: true, type: "hysteria2", password: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", obfs: "salamander", obfs-password: "gq449ACcO8pAMivN"}
 - {name: "🇺🇸 美国 02", type: "tuic", server: "38.114.101.118", port: 64141, udp: true, uuid: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", password: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", skip-cert-verify: true, sni: "www.apple.com", alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇭🇰 香港 01", server: "206.237.1.249", port: 53572, sni: "www.apple.com", skip-cert-verify: true, type: "hysteria2", password: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", obfs: "salamander", obfs-password: "QsyDz1ULsnADksQk"}
-- {name: "🇭🇰 香港 02", server: "hkssl.vosniehcihwocc.cfd", port: 443, sni: "hkssl.vosniehcihwocc.cfd", up: 200, down: 200, skip-cert-verify: true, type: "hysteria2", password: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", obfs: "salamander", obfs-password: "VSmtQEn7kYMFPlcC"}
-- {name: "🇳🇱 荷兰 01", type: "vless", server: "194.87.17.69", port: 52957, uuid: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", alterId: 0, cipher: "auto", udp: true, flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, reality-opts: {public-key: "cSbGdogt-0Bc-sd0oqwzly40d1UYTw8SyquCyqiXGTc", short-id: "24f30562c80a"}, client-fingerprint: "edge", network: "tcp", servername: "images-na.ssl-images-amazon.com"}
+- {name: "🇳🇱 荷兰 01", type: "vless", server: "194.87.17.69", port: 52957, uuid: "216b062f-c964-4bb2-b4a5-2ee9ee71d381", alterId: 0, cipher: "auto", udp: true, flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, reality-opts: {public-key: "cSbGdogt-0Bc-sd0oqwzly40d1UYTw8SyquCyqiXGTc", short-id: "24f30562c80a"}, client-fingerprint: "safari", network: "tcp", servername: "images-na.ssl-images-amazon.com"}
 - {name: "🇩🇪 德国 01", server: "deguo1.vosniehcihwocc.cfd", port: 443, sni: "deguo1.vosniehcihwocc.cfd", up: 300, down: 300, skip-cert-verify: false, type: "hysteria2", password: "216b062f-c964-4bb2-b4a5-2ee9ee71d381"}
 proxy-groups:
 - name: "PROXY"
@@ -96,7 +95,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇳🇱 荷兰 01"
   - "🇩🇪 德国 01"
 - name: "AUTO"
@@ -108,7 +106,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇳🇱 荷兰 01"
   - "🇩🇪 德国 01"
 - name: "AI"
@@ -118,7 +115,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇳🇱 荷兰 01"
   - "🇩🇪 德国 01"
 - name: "GOOGLEFCM"
@@ -130,7 +126,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇳🇱 荷兰 01"
   - "🇩🇪 德国 01"
 - name: "HOYO"
@@ -141,7 +136,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇳🇱 荷兰 01"
   - "🇩🇪 德国 01"
 - name: "TIKTOK"
@@ -151,7 +145,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇳🇱 荷兰 01"
   - "🇩🇪 德国 01"
 rules:
