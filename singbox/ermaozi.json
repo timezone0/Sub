@@ -94,9 +94,10 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇲🇩 摩尔多瓦 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -105,9 +106,10 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇲🇩 摩尔多瓦 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -116,9 +118,10 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇲🇩 摩尔多瓦 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -129,9 +132,10 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇲🇩 摩尔多瓦 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -141,9 +145,10 @@
       "outbounds": [
         "direct",
         "select",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇲🇩 摩尔多瓦 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -152,9 +157,10 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇲🇩 摩尔多瓦 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇲🇩 摩尔多瓦 01"
+        "🇺🇸 美国 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -189,6 +195,14 @@
       }
     },
     {
+      "tag": "🇲🇩 摩尔多瓦 01",
+      "type": "shadowsocks",
+      "server": "185.153.197.5",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
       "tag": "🇺🇸 美国 01",
       "type": "vmess",
       "server": "v29.heduian.link",
@@ -207,19 +221,33 @@
     },
     {
       "tag": "🇺🇸 美国 02",
-      "type": "shadowsocks",
-      "server": "38.180.211.126",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Kuiqk2cP0BMWrgme9IfEvp"
+      "type": "vmess",
+      "server": "46.17.45.21",
+      "server_port": 23168,
+      "uuid": "4cf81d78-40d6-45dd-9b70-beb9c51adfa6",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
     },
     {
-      "tag": "🇲🇩 摩尔多瓦 01",
-      "type": "shadowsocks",
-      "server": "185.153.197.5",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
+      "tag": "🇺🇸 美国 03",
+      "type": "vmess",
+      "server": "46.17.45.21",
+      "server_port": 25039,
+      "uuid": "e8c470e9-56ee-4cf0-b251-dd07e3d58a60",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "max_early_data": null,
+        "path": "/"
+      }
     }
   ],
   "route": {
