@@ -85,11 +85,13 @@ proxies:
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 01", network: "ws", port: 30809, server: "v9.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {cipher: "aes-256-gcm", name: "🇭🇰 香港 02", password: "2b5fad3874e5", plugin: "v2ray-plugin", plugin-opts: {host: "hk6v1.dsjsapp.com", mode: "websocket", mux: true, path: "/aqwshiog", skip-cert-verify: false, tls: true}, port: 443, server: "156.251.179.135", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 03", network: "ws", port: 80, server: "hkt.gotochinatown.net", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", ws-opts: {headers: {Host: "hkt.gotochinatown.net"}, path: "/"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
-- {name: "🇭🇰 香港 04", password: "253bc477d4e43c209f2d427272968280", port: 441, server: "18.162.156.99", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 04", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "219.77.97.194", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 05", port: 28677, server: "43.247.134.80", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "f9575b63-7410-4c76-88db-91c24a429ea8", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 06", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "18.162.147.157", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 07", network: "tcp", port: 28677, server: "43.247.134.80", tls: false, type: "vmess", uuid: "f9575b63-7410-4c76-88db-91c24a429ea8", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "kcp", port: 28590, server: "47.239.183.87", tls: false, type: "vmess", uuid: "d75481c7-b5c8-40a9-811a-02b709e74816", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇭🇰 香港 06", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "219.73.55.195", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 07", password: "253bc477d4e43c209f2d427272968280", port: 441, server: "18.162.156.99", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "tcp", port: 28677, server: "43.247.134.80", tls: false, type: "vmess", uuid: "f9575b63-7410-4c76-88db-91c24a429ea8", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇭🇰 香港 09", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "18.162.147.157", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 10", network: "kcp", port: 28590, server: "47.239.183.87", tls: false, type: "vmess", uuid: "d75481c7-b5c8-40a9-811a-02b709e74816", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 01", password: "e690cd6f-6c50-42e2-8b51-570e95a9be19", port: 10065, server: "125.231.72.120", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 02", password: "674ee5a2-42e6-4c9f-ab6f-885f9c8e71c9", port: 10065, server: "125.231.72.120", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 03", password: "140e4cb2-a874-414b-a58b-c0300720fa7d", port: 10066, server: "59.126.32.59", tfo: false, type: "ss", client-fingerprint: "chrome"}
@@ -151,6 +153,8 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -213,6 +217,8 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -273,6 +279,8 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -335,6 +343,8 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -396,6 +406,8 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -456,6 +468,8 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
