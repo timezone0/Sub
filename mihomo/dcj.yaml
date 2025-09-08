@@ -82,13 +82,9 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇨🇳 台湾 01", server: "118.170.204.156", port: 10006, type: "ss", cipher: "chacha20-ietf-poly1305", password: "6866cfef-3188-4fcd-a17e-751841e1a680", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 02", server: "36.234.110.135", port: 10046, type: "ss", cipher: "chacha20-ietf-poly1305", password: "63d1fa53-bd8a-4321-a38f-8ea15058a4bf", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 03", server: "125.231.70.82", port: 10079, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2bd749f1-38e6-4b46-a52d-db1f7b5abc61", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 04", server: "118.170.216.58", port: 10021, type: "ss", cipher: "chacha20-ietf-poly1305", password: "cc99f8f5-2201-4dd3-a038-5a5a012eb25f", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 05", server: "114.46.69.142", port: 10078, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7b82a211-c7f8-4a1f-9123-025d78cd42e4", udp: true, client-fingerprint: "chrome"}
-- {name: "🇨🇳 台湾 06", server: "awes35lesl.blhao0o.dpdns.org", port: 12031, client-fingerprint: "chrome", type: "ss", cipher: "aes-128-gcm", password: "01721e43-5389-4f97-b21c-900abb2bda9e", tfo: false}
-- {type: "hysteria2", name: "🇳🇱 荷兰 01", server: "yapc-1.adamhayward.co.uk", port: 35000, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 01", server: "125.228.162.163", port: 10137, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d5abead3-0b9d-4ff8-9ecc-f0ad5ef0a192", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 02", server: "125.231.68.36", port: 10056, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f87588c4-f759-4634-9b63-32032ede64bd", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 03", type: "ss", server: "awes35lesl.blhao0o.dpdns.org", port: 12031, cipher: "aes-128-gcm", alterId: "0", tls: true, password: "01721e43-5389-4f97-b21c-900abb2bda9e", skip-cert-verify: true, sni: "awes35lesl.blhao0o.dpdns.org", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -97,10 +93,6 @@ proxy-groups:
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇳🇱 荷兰 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -110,10 +102,6 @@ proxy-groups:
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇳🇱 荷兰 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -121,10 +109,6 @@ proxy-groups:
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇳🇱 荷兰 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -134,10 +118,6 @@ proxy-groups:
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇳🇱 荷兰 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -146,10 +126,6 @@ proxy-groups:
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇳🇱 荷兰 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -157,10 +133,6 @@ proxy-groups:
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇳🇱 荷兰 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
