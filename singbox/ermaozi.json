@@ -94,10 +94,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,10 +103,7 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,10 +112,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -132,10 +123,7 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -145,10 +133,7 @@
       "outbounds": [
         "direct",
         "select",
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,10 +142,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -195,22 +177,6 @@
       }
     },
     {
-      "tag": "🇲🇩 摩尔多瓦 01",
-      "type": "shadowsocks",
-      "server": "185.153.197.5",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "tag": "🇲🇩 摩尔多瓦 02",
-      "type": "shadowsocks",
-      "server": "91.132.94.200",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
       "tag": "🇺🇸 美国 01",
       "type": "vmess",
       "server": "v35.heduian.link",
@@ -224,20 +190,6 @@
           "Host": "v35.heduian.link"
         },
         "path": "/oooo"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 02",
-      "type": "vmess",
-      "server": "45.144.174.211",
-      "server_port": 22107,
-      "uuid": "ca840767-e6c3-4149-bcf1-c5c61e450bcc",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {},
-        "path": "/"
       }
     }
   ],
