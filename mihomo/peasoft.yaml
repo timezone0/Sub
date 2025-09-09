@@ -82,59 +82,90 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 01", network: "ws", port: 30809, server: "v9.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
-- {cipher: "aes-256-gcm", name: "🇭🇰 香港 02", password: "2b5fad3874e5", plugin: "v2ray-plugin", plugin-opts: {host: "hk6v1.dsjsapp.com", mode: "websocket", mux: true, path: "/aqwshiog", skip-cert-verify: false, tls: true}, port: 443, server: "156.251.179.135", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 03", network: "ws", port: 80, server: "hkt.gotochinatown.net", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", ws-opts: {headers: {Host: "hkt.gotochinatown.net"}, path: "/"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
+- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 01", network: "ws", port: 30809, server: "v9.heduian.link", skip-cert-verify: true, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
+- {cipher: "aes-256-gcm", name: "🇭🇰 香港 02", password: "2b5fad3874e5", plugin: "v2ray-plugin", plugin-opts: {host: "hk6v1.dsjsapp.com", mode: "websocket", mux: true, path: "/aqwshiog", skip-cert-verify: false, tls: true}, port: 443, server: "156.251.179.135", type: "ss", client-fingerprint: "chrome"}
+- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 03", network: "ws", port: 80, server: "hkt.gotochinatown.net", skip-cert-verify: true, tls: false, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", ws-opts: {headers: {Host: "hkt.gotochinatown.net"}, path: "/"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {name: "🇭🇰 香港 04", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "218.103.249.91", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 05", password: "253bc477d4e43c209f2d427272968280", port: 2282, server: "43.198.184.150", skip-cert-verify: true, sni: "fe2.update.microsoft.com", type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 06", network: "kcp", port: 28590, server: "47.239.183.87", tls: false, type: "vmess", uuid: "d75481c7-b5c8-40a9-811a-02b709e74816", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 01", password: "e6187cf8-7003-47e2-967b-7b900b132ddb", port: 10129, server: "114.35.114.182", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 02", password: "8fc95eb8-83b4-47af-ae17-d7639dd0fd2c", port: 10147, server: "111.253.205.251", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 03", password: "f200fa8b-dd29-4fac-a67f-67bc05717bad", port: 10147, server: "111.253.205.251", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {cipher: "rc4-md5", name: "🇯🇵 日本 01", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202509031722041-9tGNGazmKT.download.microsoft.com", mode: "http"}, port: 8766, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {cipher: "aes-256-gcm", name: "🇯🇵 日本 02", password: "8a6ca14c0936", plugin: "v2ray-plugin", plugin-opts: {host: "jpxw9v1.dashengjs.net", mode: "websocket", mux: false, path: "/wrdfiatyd", skip-cert-verify: false, tls: true}, port: 443, server: "137.220.142.150", tfo: false, type: "ss", client-fingerprint: "chrome"}
+- {cipher: "aes-256-gcm", name: "🇭🇰 香港 05", password: "amazongreatvpn", port: 16888, server: "18.162.224.234", type: "ss", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 06", password: "253bc477d4e43c209f2d427272968280", port: 2282, server: "43.198.184.150", skip-cert-verify: true, sni: "fe2.update.microsoft.com", type: "trojan", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 07", network: "kcp", port: 28590, server: "47.239.183.87", tls: false, type: "vmess", uuid: "d75481c7-b5c8-40a9-811a-02b709e74816", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 01", password: "e6187cf8-7003-47e2-967b-7b900b132ddb", port: 10129, server: "114.35.114.182", type: "ss", client-fingerprint: "chrome"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 02", password: "8fc95eb8-83b4-47af-ae17-d7639dd0fd2c", port: 10147, server: "111.253.205.251", type: "ss", client-fingerprint: "chrome"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇨🇳 台湾 03", password: "f200fa8b-dd29-4fac-a67f-67bc05717bad", port: 10147, server: "111.253.205.251", type: "ss", client-fingerprint: "chrome"}
+- {cipher: "rc4-md5", name: "🇯🇵 日本 01", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202509031722041-NTzL1f4K0s.download.microsoft.com", mode: "http"}, port: 8766, server: "cn01.efan8867801.xyz", type: "ss", client-fingerprint: "chrome"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 日本 02", password: "8a6ca14c0936", plugin: "v2ray-plugin", plugin-opts: {host: "jpxw9v1.dashengjs.net", mode: "websocket", mux: false, path: "/wrdfiatyd", skip-cert-verify: false, tls: true}, port: 443, server: "137.220.142.150", type: "ss", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 03", password: "253bc477d4e43c209f2d427272968280", port: 316, server: "xingxing.jiasu123.org", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 04", password: "253bc477d4e43c209f2d427272968280", port: 1924, server: "36.156.102.77", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇯🇵 日本 05", network: "kcp", port: 34933, server: "8.209.211.236", tls: false, type: "vmess", uuid: "8a9150bc-b9c8-40ac-be83-aaec45176a81", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {cipher: "aes-256-gcm", name: "🇯🇵 日本 05", password: "amazongreatvpn", port: 16888, server: "57.183.2.72", type: "ss", client-fingerprint: "chrome"}
+- {alterId: 0, cipher: "auto", name: "🇯🇵 日本 06", network: "kcp", port: 34933, server: "8.209.211.236", tls: false, type: "vmess", uuid: "8a9150bc-b9c8-40ac-be83-aaec45176a81", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {name: "🇸🇬 新加坡 01", password: "253bc477d4e43c209f2d427272968280", port: 3957, server: "xingxing.jiasu123.org", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇸🇬 新加坡 02", password: "253bc477d4e43c209f2d427272968280", port: 9160, server: "36.156.102.77", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 2, cipher: "auto", name: "🇸🇬 新加坡 03", network: "ws", port: 30839, server: "v39.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
-- {cipher: "rc4-md5", name: "🇺🇸 美国 01", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202509031722041-9tGNGazmKT.download.microsoft.com", mode: "http"}, port: 8774, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
+- {alterId: 2, cipher: "auto", name: "🇸🇬 新加坡 03", network: "ws", port: 30839, server: "v39.heduian.link", skip-cert-verify: true, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
+- {cipher: "rc4-md5", name: "🇺🇸 美国 01", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202509031722041-NTzL1f4K0s.download.microsoft.com", mode: "http"}, port: 8774, server: "cn01.efan8867801.xyz", type: "ss", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", password: "253bc477d4e43c209f2d427272968280", port: 2966, server: "xingxing.jiasu123.org", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 03", password: "253bc477d4e43c209f2d427272968280", port: 18233, server: "13.231.37.82", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 04", network: "ws", password: "slch2024", port: 2096, server: "199.68.156.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 05", network: "ws", password: "slch2024", port: 2096, server: "199.34.230.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 06", network: "ws", password: "slch2024", port: 2096, server: "209.94.90.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 07", network: "ws", password: "slch2024", port: 2096, server: "185.148.106.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 08", network: "ws", password: "slch2024", port: 2096, server: "192.0.63.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 09", network: "ws", password: "slch2024", port: 2096, server: "192.0.54.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 10", network: "ws", password: "slch2024", port: 2096, server: "192.200.160.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 11", network: "ws", password: "slch2024", port: 2096, server: "185.148.104.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 12", network: "ws", password: "slch2024", port: 2096, server: "195.13.45.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 04", network: "ws", password: "slch2024", port: 2096, server: "199.68.156.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇮🇷ShadowProxy66"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 05", network: "ws", password: "slch2024", port: 2096, server: "199.68.156.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 06", network: "ws", password: "slch2024", port: 2096, server: "199.68.156.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 07", network: "ws", password: "slch2024", port: 2096, server: "209.94.90.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 08", network: "ws", password: "slch2024", port: 2096, server: "192.0.54.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 09", network: "ws", password: "slch2024", port: 2096, server: "199.34.229.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 10", network: "ws", password: "slch2024", port: 2096, server: "209.94.90.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇮🇷ShadowProxy66"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 11", network: "ws", password: "slch2024", port: 2096, server: "195.13.44.87", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 12", network: "ws", password: "slch2024", port: 2096, server: "185.148.106.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 13", network: "ws", password: "slch2024", port: 2096, server: "192.200.160.87", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 14", network: "ws", password: "slch2024", port: 2096, server: "209.94.90.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 15", network: "ws", password: "slch2024", port: 2096, server: "192.200.160.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 16", network: "ws", password: "slch2024", port: 2096, server: "185.148.104.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 17", network: "ws", password: "slch2024", port: 2096, server: "199.34.230.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 18", network: "ws", password: "slch2024", port: 2096, server: "192.0.63.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇦🇲 亚美尼亚 01", network: "ws", password: "slch2024", port: 2096, server: "188.164.158.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
+- {name: "🇦🇲 亚美尼亚 02", network: "ws", password: "slch2024", port: 2096, server: "188.164.159.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
 - {name: "🇦🇹 奥地利 01", network: "ws", password: "slch2024", port: 2096, server: "212.183.88.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇨🇾 塞浦路斯 01", network: "ws", password: "slch2024", port: 2096, server: "195.26.229.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇨🇿 捷克 01", network: "ws", password: "slch2024", port: 2096, server: "193.124.224.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇦🇹 奥地利 02", network: "ws", password: "slch2024", port: 2096, server: "212.183.88.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇨🇾 塞浦路斯 01", network: "ws", password: "slch2024", port: 2096, server: "195.26.229.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇨🇾 塞浦路斯 02", network: "ws", password: "slch2024", port: 2096, server: "195.26.229.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇨🇿 捷克 01", network: "ws", password: "slch2024", port: 2096, server: "193.124.224.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇨🇿 捷克 02", network: "ws", password: "slch2024", port: 2096, server: "193.124.224.195", skip-cert-verify: true, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
+- {name: "🇨🇿 捷克 03", network: "ws", password: "slch2024", port: 2096, server: "193.124.224.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
 - {name: "🇩🇪 德国 01", network: "ws", password: "slch2024", port: 2096, server: "188.244.122.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 01", network: "ws", password: "slch2024", port: 2096, server: "185.251.83.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 02", network: "ws", password: "slch2024", port: 2096, server: "185.251.80.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 03", network: "ws", password: "slch2024", port: 2096, server: "185.251.82.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 04", network: "ws", password: "slch2024", port: 2096, server: "185.251.83.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 05", network: "ws", password: "slch2024", port: 2096, server: "185.238.228.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇪🇸 西班牙 06", network: "ws", password: "slch2024", port: 2096, server: "185.251.81.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇫🇷 法国 01", network: "ws", password: "slch2024", port: 2096, server: "185.16.110.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 02", network: "ws", password: "slch2024", port: 2096, server: "188.244.122.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 01", network: "ws", password: "slch2024", port: 2096, server: "185.251.80.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 02", network: "ws", password: "slch2024", port: 2096, server: "185.251.83.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 03", network: "ws", password: "slch2024", port: 2096, server: "185.251.83.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 04", network: "ws", password: "slch2024", port: 2096, server: "185.251.83.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 05", network: "ws", password: "slch2024", port: 2096, server: "185.251.81.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 06", network: "ws", password: "slch2024", port: 2096, server: "185.251.80.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 07", network: "ws", password: "slch2024", port: 2096, server: "185.251.82.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 08", network: "ws", password: "slch2024", port: 2096, server: "185.251.82.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇪🇸 西班牙 09", network: "ws", password: "slch2024", port: 2096, server: "185.251.81.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇫🇷 法国 01", network: "ws", password: "slch2024", port: 2096, server: "185.7.240.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
 - {name: "🇫🇷 法国 02", network: "ws", password: "slch2024", port: 2096, server: "185.7.240.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇬🇧 英国 01", network: "ws", password: "slch2024", port: 2096, server: "194.36.55.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇬🇧 英国 02", network: "ws", password: "slch2024", port: 2096, server: "185.156.19.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇰🇿 哈萨克斯坦 01", network: "ws", password: "slch2024", port: 2096, server: "194.76.18.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇱🇺 卢森堡 01", network: "ws", password: "slch2024", port: 2096, server: "188.42.88.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇫🇷 法国 03", network: "ws", password: "slch2024", port: 2096, server: "185.16.110.195", skip-cert-verify: true, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇫🇷 法国 04", network: "ws", password: "slch2024", port: 2096, server: "185.16.110.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇬🇧 英国 01", network: "ws", password: "slch2024", port: 2096, server: "185.156.19.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
+- {name: "🇬🇧 英国 02", network: "ws", password: "slch2024", port: 2096, server: "185.156.19.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇬🇧 英国 03", network: "ws", password: "slch2024", port: 2096, server: "194.36.55.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇬🇧 英国 04", network: "ws", password: "slch2024", port: 2096, server: "185.156.19.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇬🇧 英国 05", network: "ws", password: "slch2024", port: 2096, server: "194.36.55.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇰🇿 哈萨克斯坦 01", network: "ws", password: "slch2024", port: 2096, server: "194.76.18.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇰🇿 哈萨克斯坦 02", network: "ws", password: "slch2024", port: 2096, server: "185.176.26.195", skip-cert-verify: true, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇰🇿 哈萨克斯坦 03", network: "ws", password: "slch2024", port: 2096, server: "194.76.18.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇱🇺 卢森堡 01", network: "ws", password: "slch2024", port: 2096, server: "188.42.88.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
 - {name: "🇱🇺 卢森堡 02", network: "ws", password: "slch2024", port: 2096, server: "188.42.89.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇳🇱 荷兰 01", network: "ws", password: "slch2024", port: 2096, server: "188.164.248.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇷🇺 俄罗斯 01", network: "ws", password: "slch2024", port: 2096, server: "185.59.218.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇱🇺 卢森堡 03", network: "ws", password: "slch2024", port: 2096, server: "188.42.88.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇱🇺 卢森堡 04", network: "ws", password: "slch2024", port: 2096, server: "188.42.89.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇱🇺 卢森堡 05", network: "ws", password: "slch2024", port: 2096, server: "188.42.89.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
+- {name: "🇳🇱 荷兰 01", network: "ws", password: "slch2024", port: 2096, server: "188.164.248.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇳🇱 荷兰 02", network: "ws", password: "slch2024", port: 2096, server: "188.164.248.87", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 01", network: "ws", password: "slch2024", port: 2096, server: "185.148.107.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram@ShadowProxy66"}, client-fingerprint: "chrome"}
 - {name: "🇷🇺 俄罗斯 02", network: "ws", password: "slch2024", port: 2096, server: "185.148.107.195", skip-cert-verify: true, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
-- {name: "🇷🇺 俄罗斯 03", network: "ws", password: "slch2024", port: 2096, server: "188.42.145.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 03", network: "ws", password: "slch2024", port: 2096, server: "185.176.24.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/TelegramU0001F1E8U0001F1F3"}, client-fingerprint: "chrome"}
 - {name: "🇷🇺 俄罗斯 04", network: "ws", password: "slch2024", port: 2096, server: "185.148.107.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇷🇺 俄罗斯 05", network: "ws", password: "slch2024", port: 2096, server: "193.9.49.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
-- {name: "🇷🇺 俄罗斯 06", network: "ws", password: "slch2024", port: 2096, server: "185.176.24.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 05", network: "ws", password: "slch2024", port: 2096, server: "185.148.107.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 06", network: "ws", password: "slch2024", port: 2096, server: "185.59.218.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 07", network: "ws", password: "slch2024", port: 2096, server: "185.59.218.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 08", network: "ws", password: "slch2024", port: 2096, server: "185.174.138.195", skip-cert-verify: false, sni: "ocost-dy.wmlefl.cc", type: "trojan", udp: true, ws-opts: {headers: {Host: "ocost-dy.wmlefl.cc"}, path: "/Telegram"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -146,6 +177,7 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -154,6 +186,7 @@ proxy-groups:
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -169,30 +202,59 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇦🇲 亚美尼亚 01"
+  - "🇦🇲 亚美尼亚 02"
   - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
   - "🇨🇾 塞浦路斯 01"
+  - "🇨🇾 塞浦路斯 02"
   - "🇨🇿 捷克 01"
+  - "🇨🇿 捷克 02"
+  - "🇨🇿 捷克 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇪🇸 西班牙 03"
   - "🇪🇸 西班牙 04"
   - "🇪🇸 西班牙 05"
   - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇪🇸 西班牙 08"
+  - "🇪🇸 西班牙 09"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
   - "🇰🇿 哈萨克斯坦 01"
+  - "🇰🇿 哈萨克斯坦 02"
+  - "🇰🇿 哈萨克斯坦 03"
   - "🇱🇺 卢森堡 01"
   - "🇱🇺 卢森堡 02"
+  - "🇱🇺 卢森堡 03"
+  - "🇱🇺 卢森堡 04"
+  - "🇱🇺 卢森堡 05"
   - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
   - "🇷🇺 俄罗斯 03"
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
+  - "🇷🇺 俄罗斯 07"
+  - "🇷🇺 俄罗斯 08"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -205,6 +267,7 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -213,6 +276,7 @@ proxy-groups:
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -228,30 +292,59 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇦🇲 亚美尼亚 01"
+  - "🇦🇲 亚美尼亚 02"
   - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
   - "🇨🇾 塞浦路斯 01"
+  - "🇨🇾 塞浦路斯 02"
   - "🇨🇿 捷克 01"
+  - "🇨🇿 捷克 02"
+  - "🇨🇿 捷克 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇪🇸 西班牙 03"
   - "🇪🇸 西班牙 04"
   - "🇪🇸 西班牙 05"
   - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇪🇸 西班牙 08"
+  - "🇪🇸 西班牙 09"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
   - "🇰🇿 哈萨克斯坦 01"
+  - "🇰🇿 哈萨克斯坦 02"
+  - "🇰🇿 哈萨克斯坦 03"
   - "🇱🇺 卢森堡 01"
   - "🇱🇺 卢森堡 02"
+  - "🇱🇺 卢森堡 03"
+  - "🇱🇺 卢森堡 04"
+  - "🇱🇺 卢森堡 05"
   - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
   - "🇷🇺 俄罗斯 03"
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
+  - "🇷🇺 俄罗斯 07"
+  - "🇷🇺 俄罗斯 08"
 - name: "AI"
   type: "select"
   proxies:
@@ -262,6 +355,7 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -270,6 +364,7 @@ proxy-groups:
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -285,30 +380,59 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇦🇲 亚美尼亚 01"
+  - "🇦🇲 亚美尼亚 02"
   - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
   - "🇨🇾 塞浦路斯 01"
+  - "🇨🇾 塞浦路斯 02"
   - "🇨🇿 捷克 01"
+  - "🇨🇿 捷克 02"
+  - "🇨🇿 捷克 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇪🇸 西班牙 03"
   - "🇪🇸 西班牙 04"
   - "🇪🇸 西班牙 05"
   - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇪🇸 西班牙 08"
+  - "🇪🇸 西班牙 09"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
   - "🇰🇿 哈萨克斯坦 01"
+  - "🇰🇿 哈萨克斯坦 02"
+  - "🇰🇿 哈萨克斯坦 03"
   - "🇱🇺 卢森堡 01"
   - "🇱🇺 卢森堡 02"
+  - "🇱🇺 卢森堡 03"
+  - "🇱🇺 卢森堡 04"
+  - "🇱🇺 卢森堡 05"
   - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
   - "🇷🇺 俄罗斯 03"
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
+  - "🇷🇺 俄罗斯 07"
+  - "🇷🇺 俄罗斯 08"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -321,6 +445,7 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -329,6 +454,7 @@ proxy-groups:
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -344,30 +470,59 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇦🇲 亚美尼亚 01"
+  - "🇦🇲 亚美尼亚 02"
   - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
   - "🇨🇾 塞浦路斯 01"
+  - "🇨🇾 塞浦路斯 02"
   - "🇨🇿 捷克 01"
+  - "🇨🇿 捷克 02"
+  - "🇨🇿 捷克 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇪🇸 西班牙 03"
   - "🇪🇸 西班牙 04"
   - "🇪🇸 西班牙 05"
   - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇪🇸 西班牙 08"
+  - "🇪🇸 西班牙 09"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
   - "🇰🇿 哈萨克斯坦 01"
+  - "🇰🇿 哈萨克斯坦 02"
+  - "🇰🇿 哈萨克斯坦 03"
   - "🇱🇺 卢森堡 01"
   - "🇱🇺 卢森堡 02"
+  - "🇱🇺 卢森堡 03"
+  - "🇱🇺 卢森堡 04"
+  - "🇱🇺 卢森堡 05"
   - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
   - "🇷🇺 俄罗斯 03"
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
+  - "🇷🇺 俄罗斯 07"
+  - "🇷🇺 俄罗斯 08"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -379,6 +534,7 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -387,6 +543,7 @@ proxy-groups:
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -402,30 +559,59 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇦🇲 亚美尼亚 01"
+  - "🇦🇲 亚美尼亚 02"
   - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
   - "🇨🇾 塞浦路斯 01"
+  - "🇨🇾 塞浦路斯 02"
   - "🇨🇿 捷克 01"
+  - "🇨🇿 捷克 02"
+  - "🇨🇿 捷克 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇪🇸 西班牙 03"
   - "🇪🇸 西班牙 04"
   - "🇪🇸 西班牙 05"
   - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇪🇸 西班牙 08"
+  - "🇪🇸 西班牙 09"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
   - "🇰🇿 哈萨克斯坦 01"
+  - "🇰🇿 哈萨克斯坦 02"
+  - "🇰🇿 哈萨克斯坦 03"
   - "🇱🇺 卢森堡 01"
   - "🇱🇺 卢森堡 02"
+  - "🇱🇺 卢森堡 03"
+  - "🇱🇺 卢森堡 04"
+  - "🇱🇺 卢森堡 05"
   - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
   - "🇷🇺 俄罗斯 03"
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
+  - "🇷🇺 俄罗斯 07"
+  - "🇷🇺 俄罗斯 08"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -436,6 +622,7 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -444,6 +631,7 @@ proxy-groups:
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -459,30 +647,59 @@ proxy-groups:
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
   - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇦🇲 亚美尼亚 01"
+  - "🇦🇲 亚美尼亚 02"
   - "🇦🇹 奥地利 01"
+  - "🇦🇹 奥地利 02"
   - "🇨🇾 塞浦路斯 01"
+  - "🇨🇾 塞浦路斯 02"
   - "🇨🇿 捷克 01"
+  - "🇨🇿 捷克 02"
+  - "🇨🇿 捷克 03"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
   - "🇪🇸 西班牙 01"
   - "🇪🇸 西班牙 02"
   - "🇪🇸 西班牙 03"
   - "🇪🇸 西班牙 04"
   - "🇪🇸 西班牙 05"
   - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇪🇸 西班牙 08"
+  - "🇪🇸 西班牙 09"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
   - "🇰🇿 哈萨克斯坦 01"
+  - "🇰🇿 哈萨克斯坦 02"
+  - "🇰🇿 哈萨克斯坦 03"
   - "🇱🇺 卢森堡 01"
   - "🇱🇺 卢森堡 02"
+  - "🇱🇺 卢森堡 03"
+  - "🇱🇺 卢森堡 04"
+  - "🇱🇺 卢森堡 05"
   - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
   - "🇷🇺 俄罗斯 03"
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
+  - "🇷🇺 俄罗斯 07"
+  - "🇷🇺 俄罗斯 08"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"

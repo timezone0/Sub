@@ -82,24 +82,26 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "v9.heduian.link", port: 30809, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
-- {name: "🇭🇰 香港 02", server: "156.251.179.135", port: 443, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "2b5fad3874e5", tfo: false, plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "hk6v1.dsjsapp.com", path: "/aqwshiog", tls: true, mux: true, skip-cert-verify: false}}
-- {name: "🇭🇰 香港 03", server: "hkt.gotochinatown.net", port: 80, client-fingerprint: "chrome", type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}}
-- {name: "🇭🇰 香港 04", server: "218.103.249.91", port: 443, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
-- {name: "🇭🇰 香港 05", server: "43.198.184.150", port: 2282, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "fe2.update.microsoft.com", skip-cert-verify: true}
-- {name: "🇨🇳 台湾 01", server: "114.35.114.182", port: 10129, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "e6187cf8-7003-47e2-967b-7b900b132ddb", tfo: false}
-- {name: "🇨🇳 台湾 02", server: "111.253.205.251", port: 10147, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "8fc95eb8-83b4-47af-ae17-d7639dd0fd2c", tfo: false}
-- {name: "🇨🇳 台湾 03", server: "111.253.205.251", port: 10147, client-fingerprint: "chrome", type: "ss", cipher: "chacha20-ietf-poly1305", password: "f200fa8b-dd29-4fac-a67f-67bc05717bad", tfo: false}
-- {name: "🇯🇵 日本 01", server: "cn01.efan8867801.xyz", port: 8766, client-fingerprint: "chrome", type: "ss", cipher: "rc4-md5", password: "efanccyun", tfo: false, plugin: "obfs", plugin-opts: {mode: "http", host: "202509031722041-9tGNGazmKT.download.microsoft.com"}}
-- {name: "🇯🇵 日本 02", server: "137.220.142.150", port: 443, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "8a6ca14c0936", tfo: false, plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "jpxw9v1.dashengjs.net", path: "/wrdfiatyd", tls: true, mux: false, skip-cert-verify: false}}
-- {name: "🇯🇵 日本 03", server: "xingxing.jiasu123.org", port: 316, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
-- {name: "🇯🇵 日本 04", server: "36.156.102.77", port: 1924, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 01", server: "xingxing.jiasu123.org", port: 3957, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 02", server: "36.156.102.77", port: 9160, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 03", server: "v39.heduian.link", port: 30839, client-fingerprint: "chrome", type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
-- {name: "🇺🇸 美国 01", server: "cn01.efan8867801.xyz", port: 8774, client-fingerprint: "chrome", type: "ss", cipher: "rc4-md5", password: "efanccyun", tfo: false, plugin: "obfs", plugin-opts: {mode: "http", host: "202509031722041-9tGNGazmKT.download.microsoft.com"}}
-- {name: "🇺🇸 美国 02", server: "xingxing.jiasu123.org", port: 2966, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
-- {name: "🇺🇸 美国 03", server: "13.231.37.82", port: 18233, client-fingerprint: "chrome", type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "v9.heduian.link", port: 30809, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇭🇰 香港 02", server: "156.251.179.135", port: 443, type: "ss", cipher: "aes-256-gcm", password: "2b5fad3874e5", plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "hk6v1.dsjsapp.com", path: "/aqwshiog", tls: true, mux: true, skip-cert-verify: false}}
+- {name: "🇭🇰 香港 03", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}}
+- {name: "🇭🇰 香港 04", server: "218.103.249.91", port: 443, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇭🇰 香港 05", server: "18.162.224.234", port: 16888, type: "ss", cipher: "aes-256-gcm", password: "amazongreatvpn"}
+- {name: "🇭🇰 香港 06", server: "43.198.184.150", port: 2282, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "fe2.update.microsoft.com", skip-cert-verify: true}
+- {name: "🇨🇳 台湾 01", server: "114.35.114.182", port: 10129, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e6187cf8-7003-47e2-967b-7b900b132ddb"}
+- {name: "🇨🇳 台湾 02", server: "111.253.205.251", port: 10147, type: "ss", cipher: "chacha20-ietf-poly1305", password: "8fc95eb8-83b4-47af-ae17-d7639dd0fd2c"}
+- {name: "🇨🇳 台湾 03", server: "111.253.205.251", port: 10147, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f200fa8b-dd29-4fac-a67f-67bc05717bad"}
+- {name: "🇯🇵 日本 01", server: "cn01.efan8867801.xyz", port: 8766, type: "ss", cipher: "rc4-md5", password: "efanccyun", plugin: "obfs", plugin-opts: {mode: "http", host: "202509031722041-NTzL1f4K0s.download.microsoft.com"}}
+- {name: "🇯🇵 日本 02", server: "137.220.142.150", port: 443, type: "ss", cipher: "aes-256-gcm", password: "8a6ca14c0936", plugin: "v2ray-plugin", plugin-opts: {mode: "websocket", host: "jpxw9v1.dashengjs.net", path: "/wrdfiatyd", tls: true, mux: false, skip-cert-verify: false}}
+- {name: "🇯🇵 日本 03", server: "xingxing.jiasu123.org", port: 316, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇯🇵 日本 04", server: "36.156.102.77", port: 1924, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇯🇵 日本 05", server: "57.183.2.72", port: 16888, type: "ss", cipher: "aes-256-gcm", password: "amazongreatvpn"}
+- {name: "🇸🇬 新加坡 01", server: "xingxing.jiasu123.org", port: 3957, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 02", server: "36.156.102.77", port: 9160, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 03", server: "v39.heduian.link", port: 30839, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 01", server: "cn01.efan8867801.xyz", port: 8774, type: "ss", cipher: "rc4-md5", password: "efanccyun", plugin: "obfs", plugin-opts: {mode: "http", host: "202509031722041-NTzL1f4K0s.download.microsoft.com"}}
+- {name: "🇺🇸 美国 02", server: "xingxing.jiasu123.org", port: 2966, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
+- {name: "🇺🇸 美国 03", server: "13.231.37.82", port: 18233, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "23.45.86.28", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -110,6 +112,7 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -117,6 +120,7 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -134,6 +138,7 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -141,6 +146,7 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -156,6 +162,7 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -163,6 +170,7 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -180,6 +188,7 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -187,6 +196,7 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -203,6 +213,7 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -210,6 +221,7 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -225,6 +237,7 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -232,6 +245,7 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
