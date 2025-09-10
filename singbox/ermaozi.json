@@ -94,7 +94,8 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -103,7 +104,8 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,7 +114,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,7 +126,8 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,7 +137,8 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,7 +147,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -188,6 +194,22 @@
         "type": "ws",
         "headers": {
           "Host": "v35.heduian.link"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "v29.heduian.link",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocbc.com"
         },
         "path": "/oooo"
       }
