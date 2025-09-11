@@ -94,11 +94,13 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 02",
+        "🇭🇰 香港 01",
+        "🇺🇸 美国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,11 +109,13 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 02",
+        "🇭🇰 香港 01",
+        "🇺🇸 美国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -120,11 +124,13 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 02",
+        "🇭🇰 香港 01",
+        "🇺🇸 美国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -135,11 +141,13 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 02",
+        "🇭🇰 香港 01",
+        "🇺🇸 美国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -149,11 +157,13 @@
       "outbounds": [
         "direct",
         "select",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 02",
+        "🇭🇰 香港 01",
+        "🇺🇸 美国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -162,11 +172,13 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 02",
+        "🇭🇰 香港 01",
+        "🇺🇸 美国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -201,6 +213,62 @@
       }
     },
     {
+      "tag": "🇰🇷 韩国 01",
+      "type": "shadowsocks",
+      "server": "glance.asuscomm.com",
+      "server_port": 10099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "12242"
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "hysteria2",
+      "server": "47.237.23.83",
+      "server_port": 4763,
+      "password": "KYIFgW1don6L8TaDBJHynafxZ0",
+      "tls": {
+        "enabled": true,
+        "server_name": "47.237.23.83",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "hysteria2",
+      "server": "8.219.232.60",
+      "server_port": 6467,
+      "password": "fWydUhyG3woKe4a0kcKKKdx78",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.219.232.60",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "hysteria2",
+      "server": "47.76.83.25",
+      "server_port": 11243,
+      "password": "L60nS04NhsoMpN2DDGbnMqLP8DY",
+      "tls": {
+        "enabled": true,
+        "server_name": "47.76.83.25",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "166.88.164.9",
+      "server_port": 27704,
+      "password": "peEduuHzbExjK7UQHzazXwqgA",
+      "tls": {
+        "enabled": true,
+        "server_name": "166.88.164.9",
+        "insecure": true
+      }
+    },
+    {
       "tag": "🇯🇵 日本 01",
       "type": "hysteria2",
       "server": "47.245.0.72",
@@ -221,42 +289,6 @@
       "tls": {
         "enabled": true,
         "server_name": "47.245.0.72",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "hysteria2",
-      "server": "47.76.83.25",
-      "server_port": 11243,
-      "password": "L60nS04NhsoMpN2DDGbnMqLP8DY",
-      "tls": {
-        "enabled": true,
-        "server_name": "47.76.83.25",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "hysteria2",
-      "server": "8.219.232.60",
-      "server_port": 6467,
-      "password": "fWydUhyG3woKe4a0kcKKKdx78",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.219.232.60",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 02",
-      "type": "hysteria2",
-      "server": "47.237.23.83",
-      "server_port": 4763,
-      "password": "KYIFgW1don6L8TaDBJHynafxZ0",
-      "tls": {
-        "enabled": true,
-        "server_name": "47.237.23.83",
         "insecure": true
       }
     }
