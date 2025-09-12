@@ -94,6 +94,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇺🇸 美国 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -116,6 +117,7 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇺🇸 美国 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -138,6 +140,7 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇺🇸 美国 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -162,6 +165,7 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇺🇸 美国 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -185,6 +189,7 @@
       "outbounds": [
         "direct",
         "select",
+        "🇺🇸 美国 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -207,6 +212,7 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇺🇸 美国 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -252,6 +258,22 @@
           "enabled": true,
           "fingerprint": "chrome"
         }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "172.245.152.39",
+      "server_port": 64144,
+      "password": "012e1eab-ae5c-4260-8124-a03762c49661",
+      "obfs": {
+        "type": "salamander",
+        "password": "JNXRjUDYidh5wHg1"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true
       }
     },
     {
@@ -308,7 +330,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -435,7 +457,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -456,7 +478,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "edge"
         }
       }
     },
@@ -477,7 +499,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         }
       }
     },
@@ -498,7 +520,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         }
       }
     },
@@ -519,7 +541,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "edge"
         }
       }
     }
