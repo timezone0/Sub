@@ -82,18 +82,11 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇰🇷 韩国 01", server: "218.237.185.230", port: 4652, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@"}
-- {name: "🇰🇷 韩国 02", server: "mm.huawei-api.top", port: 19551, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2ba85e09-7ae8-417d-8c91-05b3b954771e"}
-- {name: "🇰🇷 韩国 03", server: "glance.asuscomm.com", port: 10099, type: "ss", cipher: "chacha20-ietf-poly1305", password: "12242"}
-- {name: "🇮🇳 印度 01", server: "mm.huawei-api.top", port: 19581, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2ba85e09-7ae8-417d-8c91-05b3b954771e"}
-- {name: "🇹🇭 泰国 01", server: "mm.huawei-api.top", port: 19582, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2ba85e09-7ae8-417d-8c91-05b3b954771e"}
-- {name: "🇯🇵 日本 01", server: "tt.huawei-api.top", port: 19531, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2ba85e09-7ae8-417d-8c91-05b3b954771e"}
-- {name: "🇯🇵 日本 02", server: "47.245.0.72", port: 27789, type: "hysteria2", password: "yD0mxkCA18WgPD1uVGd3Eu1dc", auth: "yD0mxkCA18WgPD1uVGd3Eu1dc", skip-cert-verify: true}
-- {name: "🇯🇵 日本 03", server: "47.245.0.72", port: 27789, type: "hysteria2", password: "yD0mxkCA18WgPD1uVGd3Eu1dc", auth: "yD0mxkCA18WgPD1uVGd3Eu1dc", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 01", server: "47.237.23.83", port: 4763, type: "hysteria2", password: "KYIFgW1don6L8TaDBJHynafxZ0", auth: "KYIFgW1don6L8TaDBJHynafxZ0", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 02", server: "8.219.232.60", port: 6467, type: "hysteria2", password: "fWydUhyG3woKe4a0kcKKKdx78", auth: "fWydUhyG3woKe4a0kcKKKdx78", skip-cert-verify: true}
-- {name: "🇭🇰 香港 01", server: "47.76.83.25", port: 11243, type: "hysteria2", password: "L60nS04NhsoMpN2DDGbnMqLP8DY", auth: "L60nS04NhsoMpN2DDGbnMqLP8DY", skip-cert-verify: true}
+- {name: "🇰🇷 韩国 01", server: "glance.asuscomm.com", port: 10099, type: "ss", cipher: "chacha20-ietf-poly1305", password: "12242"}
+- {name: "🇰🇷 韩国 02", server: "218.237.185.230", port: 4652, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@"}
 - {name: "🇺🇸 美国 01", server: "166.88.164.9", port: 27704, type: "hysteria2", password: "peEduuHzbExjK7UQHzazXwqgA", auth: "peEduuHzbExjK7UQHzazXwqgA", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 01", server: "47.237.23.83", port: 4763, type: "hysteria2", password: "KYIFgW1don6L8TaDBJHynafxZ0", auth: "KYIFgW1don6L8TaDBJHynafxZ0", skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "47.245.0.72", port: 27789, type: "hysteria2", password: "yD0mxkCA18WgPD1uVGd3Eu1dc", auth: "yD0mxkCA18WgPD1uVGd3Eu1dc", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -101,16 +94,9 @@ proxy-groups:
   - "AUTO"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇮🇳 印度 01"
-  - "🇹🇭 泰国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -119,32 +105,18 @@ proxy-groups:
   proxies:
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇮🇳 印度 01"
-  - "🇹🇭 泰国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇮🇳 印度 01"
-  - "🇹🇭 泰国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -153,16 +125,9 @@ proxy-groups:
   - "DIRECT"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇮🇳 印度 01"
-  - "🇹🇭 泰国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -170,32 +135,18 @@ proxy-groups:
   - "PROXY"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇮🇳 印度 01"
-  - "🇹🇭 泰国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇮🇳 印度 01"
-  - "🇹🇭 泰国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
