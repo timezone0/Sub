@@ -95,10 +95,16 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇳🇱 荷兰 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇫🇷 法国 01",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -108,10 +114,16 @@
       "interval": "3m",
       "outbounds": [
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇳🇱 荷兰 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇫🇷 法国 01",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -121,10 +133,16 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇳🇱 荷兰 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇫🇷 法国 01",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -136,10 +154,16 @@
         "select",
         "direct",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇳🇱 荷兰 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇫🇷 法国 01",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -150,10 +174,16 @@
         "direct",
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇳🇱 荷兰 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇫🇷 法国 01",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -163,10 +193,16 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇳🇱 荷兰 01",
-        "🇬🇧 英国 01"
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇫🇷 法国 01",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -202,46 +238,65 @@
     },
     {
       "tag": "🇺🇸 美国 01",
-      "type": "trojan",
-      "server": "185.156.19.195",
-      "server_port": 2096,
-      "password": "slch2024",
+      "type": "vless",
+      "server": "104.26.6.89",
+      "server_port": 443,
+      "uuid": "a4b17aa4-8723-4f12-945d-9e3bdf926bf7",
       "tls": {
         "enabled": true,
-        "server_name": "ocost-dy.wmlefl.cc",
-        "insecure": false
+        "server_name": "77777788.xyz",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
+      "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "ocost-dy.wmlefl.cc"
+          "Host": "nb-us.77777788.xyz",
+          "User-Agent": "Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17"
         },
-        "path": "/由零开始"
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/hajmi"
       }
     },
     {
-      "tag": "🇺🇸 美国 02",
-      "type": "trojan",
-      "server": "192.200.160.87",
-      "server_port": 2096,
-      "password": "slch2024",
+      "tag": "🇺🇸 美国 06",
+      "type": "vless",
+      "server": "141.101.120.100",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "ocost-dy.wmlefl.cc",
-        "insecure": false
+        "server_name": "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
+      "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "ocost-dy.wmlefl.cc"
+          "Host": "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
         },
-        "path": "/Telegram🇨🇳"
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048,
+        "path": "/telegram@V2ray_Alpha/"
       }
     },
     {
-      "tag": "🇺🇸 美国 03",
+      "tag": "🇺🇸 美国 08",
       "type": "trojan",
-      "server": "195.13.44.87",
+      "server": "213.182.199.195",
       "server_port": 2096,
       "password": "slch2024",
       "tls": {
@@ -254,31 +309,179 @@
         "headers": {
           "Host": "ocost-dy.wmlefl.cc"
         },
-        "path": "/Telegram"
+        "path": "/TelegramU0001F1E8U0001F1F3"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 09",
+      "type": "trojan",
+      "server": "190.93.244.91",
+      "server_port": 2096,
+      "password": "slch2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ocost-dy.wmlefl.cc",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocost-dy.wmlefl.cc"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/Telegram🇨🇳 @WangCai2 /"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 11",
+      "type": "vless",
+      "server": "102.129.137.198",
+      "server_port": 2000,
+      "uuid": "d3f15d92-a370-4791-ed0a-a9d4a19d62eb",
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "path": "/trigger/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 12",
+      "type": "vmess",
+      "server": "klo.986986.shop",
+      "server_port": 443,
+      "uuid": "b75c9731-408d-4aa6-8ae9-3857205113a1",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "klo.986986.shop",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "klo.986986.shop"
+        },
+        "path": "/nvjx6j7kbDQIQMZvbeVA9"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 15",
+      "type": "vless",
+      "server": "141.101.120.15",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 16",
+      "type": "vless",
+      "server": "141.101.121.34",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 17",
+      "type": "vless",
+      "server": "1750926563683.tencentapp.cn",
+      "server_port": 2096,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "1750926570965.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "1750926570965.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇫🇷 法国 01",
+      "type": "vless",
+      "server": "141.94.213.115",
+      "server_port": 25365,
+      "uuid": "2715b5fc-a3a8-49dd-8c10-55f18f3030c5",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "grpc",
+        "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
       }
     },
     {
       "tag": "🇳🇱 荷兰 01",
-      "type": "shadowsocks",
-      "server": "51.15.17.169",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
-    },
-    {
-      "tag": "🇬🇧 英国 01",
-      "type": "vmess",
-      "server": "test2.flha.ru",
-      "server_port": 80,
-      "uuid": "15f62abf-8cc9-4598-8d57-e4df7b499a84",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "vless",
+      "server": "104.21.80.1",
+      "server_port": 443,
+      "uuid": "86d36440-a890-4caf-8b90-ad5f4de25037",
+      "tls": {
+        "enabled": true,
+        "server_name": "joss.krikkrik.tech",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "test2.flha.ru"
+          "Host": "joss.krikkrik.tech",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
         },
-        "path": "/15f62abf-8cc9-4598-8d57-e4df7b499a84-vmess"
+        "path": "/Free-VPN-CF-Geo-Project/CH1"
       }
     }
   ],
