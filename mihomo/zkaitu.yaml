@@ -82,134 +82,176 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇨🇦 加拿大 01", server: "ca.viefast.net", port: 443, type: "trojan", password: "9e76767d-4bfa-4f04-a800-42e2f63afed2", sni: "csapp.catch.net.tw", skip-cert-verify: true, udp: true}
 - {name: "🇩🇪 德国 01", server: "188.68.53.100", port: 6666, type: "vless", uuid: "0abf9050-c7be-464d-80af-24094c2b97de", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g", short-id: "b525ecd2fc"}, udp: true, network: "tcp", servername: "Tgju.org"}
 - {name: "🇫🇷 法国 01", server: "fr.viefast.net", port: 443, type: "trojan", password: "9e76767d-4bfa-4f04-a800-42e2f63afed2", sni: "csapp.catch.net.tw", skip-cert-verify: true, udp: true}
 - {name: "🇬🇷 希腊 01", server: "185.39.207.121", port: 443, type: "vless", uuid: "6035325d-399a-5148-9126-29cedfd5966a", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M", short-id: "0fa84b90"}, udp: true, network: "tcp", servername: "outlook.office.com"}
-- {name: "🇰🇷 韩国 01", server: "testkr3.ssv.vc", port: 30446, type: "http", username: "test", password: "test.+", tls: true, skip-cert-verify: true, udp: true, sni: "testkr3.ssv.vc"}
+- {name: "🇭🇰 香港 01", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "93fb69fc-77cf-11ee-85ee-f23c91369f2d", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true}
 - {name: "🇳🇱 荷兰 01", server: "45.148.233.10", port: 443, type: "vless", uuid: "3c7a1227-5383-3a19-7084-76624ec8f84f", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "eJeVlxdi2YBV1YpPVCcCgTez80y8ny27SQoZZVBFGyc"}, udp: true, network: "tcp", servername: "speed.cloudflare.com"}
 - {name: "🇳🇱 荷兰 02", server: "45.148.233.10", port: 1443, type: "vless", uuid: "3c7a1227-5383-3a19-7084-76624ec8f84f", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "eJeVlxdi2YBV1YpPVCcCgTez80y8ny27SQoZZVBFGyc"}, udp: true, network: "tcp", servername: "speed.cloudflare.com"}
 - {name: "🇵🇱 波兰 01", server: "poland20.clearorbitllc.com", port: 443, type: "vless", uuid: "e3847ec6-b2fc-4eb2-b919-174d986f882c", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ", short-id: "2a22"}, udp: true, network: "tcp", servername: "poland20.clearorbitllc.com"}
-- {name: "🇵🇱 波兰 02", server: "poland20.clearorbitllc.com", port: 443, type: "vless", uuid: "e3847ec6-b2fc-4eb2-b919-174d986f882c", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "firefox", reality-opts: {public-key: "oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ", short-id: "2a22"}, udp: true, network: "tcp", servername: "poland20.clearorbitllc.com"}
-- {name: "🇺🇸 美国 01", server: "92.112.126.110", port: 28109, type: "vless", uuid: "330cc365-1a14-48ae-a97e-679b5a112d99", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY"}, udp: true, network: "tcp", servername: "addons.mozilla.org"}
-- {name: "🇺🇸 美国 02", server: "k2.viefast.net", port: 443, type: "trojan", password: "9e76767d-4bfa-4f04-a800-42e2f63afed2", sni: "csapp.catch.net.tw", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 03", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "e5fdf52f-fc09-4196-a588-008926767195", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, udp: true, network: "tcp", servername: "www.python.org"}
-- {name: "🇺🇸 美国 04", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "15f55604-933d-4ca3-8295-3fce0013aa84", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, udp: true, network: "tcp", servername: "www.python.org"}
-- {name: "🇺🇸 美国 05", server: "176.126.111.10", port: 443, type: "vless", uuid: "3c7a1227-5383-3a19-7084-76624ec8f84f", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "QHkMTl1hdagEIqAb-o0UubqxctDrBUUYKQ2jawa6oX4"}, udp: true, network: "tcp", servername: "speed.cloudflare.com"}
+- {name: "🇷🇺 俄罗斯 01", server: "ss.80808.sbs", port: 20, type: "ss", cipher: "aes-256-gcm", password: "a4VtqRwhj6gWbHwL4Jt26w", udp: true}
+- {name: "🇨🇳 台湾 01", server: "tw131.taichu.icu", port: 29889, type: "vless", uuid: "03d6e092-dd9b-45dc-ae8e-bf312ef95371", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "BhQUa3vDvGf4z4_nPrWBGfluHxed0I0UQ-_BcsoYQw8", short-id: "41a85e56b440f2"}, udp: true, network: "tcp", servername: "www.bing.com"}
+- {name: "🇺🇸 美国 01", server: "91.186.209.46", port: 5555, type: "vmess", uuid: "b778d9b4-e9ae-4df7-ce6e-59f25c2bbf4e", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
+- {name: "🇺🇸 美国 02", server: "141.101.120.100", port: 2053, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/telegram@V2ray_Alpha/", headers: {Host: "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, udp: true, servername: "1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua"}
+- {name: "🇺🇸 美国 03", server: "155.117.19.221", port: 8880, type: "vless", uuid: "f2f00a89-cc9d-450f-b8bb-0d5b2d4c5a65", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "zQw1fAQByQ8nSFvliZS4NsIWdhfzMnRMnK_xCFRwFQQ"}, udp: true, network: "tcp", servername: "aws.amazon.com"}
+- {name: "🇺🇸 美国 04", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "e5fdf52f-fc09-4196-a588-008926767195", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, udp: true, network: "tcp", servername: "www.python.org"}
+- {name: "🇺🇸 美国 05", server: "crazy-identity.oneeat.co", port: 80, type: "vless", uuid: "64d6d0d4-3706-4837-b154-cda2816adcc5", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "crazy-identity.oneeat.co"}}, udp: true, servername: "crazy-identity.oneeat.co"}
+- {name: "🇺🇸 美国 06", server: "www.visa.com.sg", port: 8880, type: "vless", uuid: "ce3fd4b2-2300-45ac-bf90-7082ff95abfe", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "odd-sun-be36.linqiang-d8e.workers.dev"}}, udp: true, servername: "odd-sun-be36.linqiang-d8e.workers.dev"}
+- {name: "🇺🇸 美国 07", server: "freev2.cloudflare.182682.xyz", port: 443, type: "vless", uuid: "aac03257-ebba-494a-a2a2-dc529a7d4395", tls: true, skip-cert-verify: false, client-fingerprint: "random", network: "ws", ws-opts: {path: "/freev2.net", headers: {Host: "do-sgp1.008883.xyz"}}, udp: true, servername: "do-sgp1.008883.xyz"}
+- {name: "🇺🇸 美国 08", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "0a9bc681-342e-4af7-a06b-1bf4e637288b", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "firefox", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, udp: true, network: "tcp", servername: "www.python.org"}
+- {name: "🇻🇳 越南 01", server: "103.186.155.36", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 02", server: "103.186.155.183", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 03", server: "103.186.155.135", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇨🇦 加拿大 01"
   - "🇩🇪 德国 01"
   - "🇫🇷 法国 01"
   - "🇬🇷 希腊 01"
-  - "🇰🇷 韩国 01"
+  - "🇭🇰 香港 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇵🇱 波兰 01"
-  - "🇵🇱 波兰 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇨🇦 加拿大 01"
   - "🇩🇪 德国 01"
   - "🇫🇷 法国 01"
   - "🇬🇷 希腊 01"
-  - "🇰🇷 韩国 01"
+  - "🇭🇰 香港 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇵🇱 波兰 01"
-  - "🇵🇱 波兰 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇨🇦 加拿大 01"
   - "🇩🇪 德国 01"
   - "🇫🇷 法国 01"
   - "🇬🇷 希腊 01"
-  - "🇰🇷 韩国 01"
+  - "🇭🇰 香港 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇵🇱 波兰 01"
-  - "🇵🇱 波兰 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇨🇦 加拿大 01"
   - "🇩🇪 德国 01"
   - "🇫🇷 法国 01"
   - "🇬🇷 希腊 01"
-  - "🇰🇷 韩国 01"
+  - "🇭🇰 香港 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇵🇱 波兰 01"
-  - "🇵🇱 波兰 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇨🇦 加拿大 01"
   - "🇩🇪 德国 01"
   - "🇫🇷 法国 01"
   - "🇬🇷 希腊 01"
-  - "🇰🇷 韩国 01"
+  - "🇭🇰 香港 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇵🇱 波兰 01"
-  - "🇵🇱 波兰 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇨🇦 加拿大 01"
   - "🇩🇪 德国 01"
   - "🇫🇷 法国 01"
   - "🇬🇷 希腊 01"
-  - "🇰🇷 韩国 01"
+  - "🇭🇰 香港 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇵🇱 波兰 01"
-  - "🇵🇱 波兰 02"
+  - "🇷🇺 俄罗斯 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
+  - "🇻🇳 越南 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
