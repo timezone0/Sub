@@ -106,6 +106,7 @@ proxies:
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 03", port: 6506, server: "193.124.24.247", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "c53d41d1-7d56-43ce-9994-408780c6476a", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 04", password: "253bc477d4e43c209f2d427272968280", port: 4317, server: "xingxing.jiasu123.org", skip-cert-verify: true, sni: "23.45.86.28", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 05", network: "tcp", port: 6506, server: "193.124.24.247", tls: false, type: "vmess", uuid: "c53d41d1-7d56-43ce-9994-408780c6476a", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇺🇸 美国 06", network: "ws", password: "Aimer", port: 2053, server: "167.68.4.199", skip-cert-verify: false, sni: "epge.muarua.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epge.muarua.filegear-sg.me"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.155.116", tfo: false, type: "ss", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
@@ -136,6 +137,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇻🇳 越南 01"
 - name: "AUTO"
   type: "url-test"
@@ -167,6 +169,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇻🇳 越南 01"
 - name: "AI"
   type: "select"
@@ -196,6 +199,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇻🇳 越南 01"
 - name: "GOOGLEFCM"
   type: "select"
@@ -227,6 +231,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇻🇳 越南 01"
 - name: "HOYO"
   type: "select"
@@ -257,6 +262,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇻🇳 越南 01"
 - name: "TIKTOK"
   type: "select"
@@ -286,6 +292,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇻🇳 越南 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
