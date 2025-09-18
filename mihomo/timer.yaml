@@ -83,16 +83,15 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇭🇰 香港 01", type: "vmess", server: "183.240.245.235", port: 49212, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, tls: false}
-- {type: "vless", name: "🇭🇰 香港 02", server: "210.123.143.214", port: 12280, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
-- {type: "vless", name: "🇯🇵 日本 01", server: "27.50.48.21", port: 443, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
-- {type: "vless", name: "🇯🇵 日本 02", server: "170.106.152.78", port: 443, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
 - {type: "vless", name: "🇸🇬 新加坡 01", server: "cloudflare.182682.xyz", port: 443, uuid: "a546c4de-2840-49b7-b914-98babd165bb1", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "de.xiejiang.dpdns.org"}, path: "/XYXY0721"}, servername: "de.xiejiang.dpdns.org"}
 - {type: "hysteria2", name: "🇸🇬 新加坡 02", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false}
-- {type: "vless", name: "🇺🇸 美国 01", server: "45.144.48.186", port: 2053, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
-- {name: "🇺🇸 美国 02", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 03", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 04", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {name: "🇺🇸 美国 05", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 01", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
+- {client-fingerprint: "chrome", name: "🇺🇸 美国 02", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
+- {client-fingerprint: "chrome", name: "🇺🇸 美国 03", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
+- {name: "🇺🇸 美国 04", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
+- {sni: "phooey.appagent.net", type: "trojan", password: "3SKej06yugYqRaxFllD4w7ayCCECS9xR8Z2Fz3nZATaDOOIXp3ceNYAD58SpB3", server: "phooey.appagent.net", port: 28333, name: "🇺🇸 美国 05"}
+- {sni: "luminum.isquirrel.net", type: "trojan", password: "AEO7C3qIaxFDeCcY8OIeCDjeypSEul3SYwND3267lDF2ZTz083SAplSqZ3xAXywyaja9N", server: "luminum.isquirrel.net", port: 18333, name: "🇺🇸 美国 06"}
+- {sni: "cooker.isquirrel.net", type: "trojan", password: "DI3IFnD36aYZy9uZSNCTyCzn8R0e6AC3lyYSSpZS8Oq375Xxl5aOD3xwAxEX3D3aYF2cK", server: "cooker.isquirrel.net", port: 28331, name: "🇺🇸 美国 07"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 01", network: "ws", port: 443, server: "172.67.114.195", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 02", network: "ws", port: 443, server: "104.18.164.69", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 03", network: "ws", port: 443, server: "104.24.87.184", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
@@ -106,9 +105,6 @@ proxy-groups:
   proxies:
   - "AUTO"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
@@ -116,6 +112,8 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -130,9 +128,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
@@ -140,6 +135,8 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -152,9 +149,6 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
@@ -162,6 +156,8 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -176,9 +172,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
@@ -186,6 +179,8 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -199,9 +194,6 @@ proxy-groups:
   - "DIRECT"
   - "PROXY"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
@@ -209,6 +201,8 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -221,9 +215,6 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
@@ -231,6 +222,8 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
