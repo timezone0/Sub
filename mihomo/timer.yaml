@@ -82,14 +82,17 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {client-fingerprint: "chrome", flow: "xtls-rprx-vision", name: "🇭🇰 香港 01", port: 8443, reality-opts: {public-key: "POAZKZyD98MlYa3A5bSOayTPHdofqXynPAT1_QWEwjo", short-id: "dfeff076987e2d34"}, server: "5.102.124.78", tls: true, type: "vless", uuid: "79091265-a298-4205-a559-d04ed045c38b", network: "tcp", servername: "www.microsoft.com"}
-- {name: "🇺🇸 美国 01", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 02", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 03", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {name: "🇺🇸 美国 04", network: "ws", port: 443, server: "vless.zyttbywy.xyz", skip-cert-verify: false, tls: true, type: "vless", uuid: "b340d332-7ee9-450e-80e7-7aaf9ffbb302", ws-opts: {path: "/vws"}, client-fingerprint: "chrome", servername: "vless.zyttbywy.xyz"}
+- {name: "🇭🇰 香港 01", type: "vmess", server: "183.240.245.235", port: 49212, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, tls: false}
+- {type: "vless", name: "🇭🇰 香港 02", server: "210.123.143.214", port: 12280, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
+- {type: "vless", name: "🇯🇵 日本 01", server: "27.50.48.21", port: 443, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
+- {type: "vless", name: "🇯🇵 日本 02", server: "170.106.152.78", port: 443, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
+- {type: "vless", name: "🇸🇬 新加坡 01", server: "cloudflare.182682.xyz", port: 443, uuid: "a546c4de-2840-49b7-b914-98babd165bb1", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "de.xiejiang.dpdns.org"}, path: "/XYXY0721"}, servername: "de.xiejiang.dpdns.org"}
+- {type: "hysteria2", name: "🇸🇬 新加坡 02", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false}
+- {type: "vless", name: "🇺🇸 美国 01", server: "45.144.48.186", port: 2053, uuid: "f16b4261-e90e-4755-832b-c8a04d597b0e", tls: true, client-fingerprint: "random", alpn: ["http/1.1"], skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ss.nzvrn.com"}, path: "/?ed=2560&proxyip=ProxyIP.Oracle.cmliussss.net"}, servername: "ss.nzvrn.com"}
+- {name: "🇺🇸 美国 02", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
+- {client-fingerprint: "chrome", name: "🇺🇸 美国 03", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
+- {client-fingerprint: "chrome", name: "🇺🇸 美国 04", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {name: "🇺🇸 美国 05", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 06", password: "fea3ddf1-3c02-41b0-be1b-4b1d19a86a0c", port: 443, server: "tuntro005.instconn.com", skip-cert-verify: false, sni: "Phoenixrm2.686911.xyz", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 07", network: "ws", port: 8880, server: "103.133.1.188", tls: false, type: "vless", uuid: "583ceab3-4022-4553-9158-9bedc625ad4e", ws-opts: {headers: {Host: "ip.langmanshanxi.top"}, path: "/"}, client-fingerprint: "chrome", servername: "Telegram-channel-freecodes"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 01", network: "ws", port: 443, server: "172.67.114.195", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 02", network: "ws", port: 443, server: "104.18.164.69", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 03", network: "ws", port: 443, server: "104.24.87.184", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
@@ -97,20 +100,22 @@ proxies:
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 05", network: "ws", port: 443, server: "172.67.186.58", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 06", network: "ws", port: 443, server: "172.67.216.216", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 07", network: "ws", port: 443, server: "198.41.198.176", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {alpn: ["h2", "http/1.1"], client-fingerprint: "chrome", name: "🇨🇦 加拿大 08", network: "ws", port: 443, server: "jp.weyolo.com", tls: true, type: "vless", uuid: "b8c7ce41-d2bd-4205-933a-bc2b9c34dc03", ws-opts: {headers: {Host: "jp.weyolo.com"}, path: "/ws"}, servername: "jp.weyolo.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -118,7 +123,6 @@ proxy-groups:
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -126,13 +130,16 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -140,19 +147,21 @@ proxy-groups:
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -160,7 +169,6 @@ proxy-groups:
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -168,13 +176,16 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -182,20 +193,22 @@ proxy-groups:
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -203,19 +216,21 @@ proxy-groups:
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -223,7 +238,6 @@ proxy-groups:
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
