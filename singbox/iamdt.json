@@ -94,13 +94,8 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 01",
         "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇰🇷 韩国 01",
-        "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,13 +104,8 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇳🇱 荷兰 01",
         "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇰🇷 韩国 01",
-        "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -124,13 +114,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇳🇱 荷兰 01",
         "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇰🇷 韩国 01",
-        "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -141,13 +126,8 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇳🇱 荷兰 01",
         "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇰🇷 韩国 01",
-        "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,13 +137,8 @@
       "outbounds": [
         "direct",
         "select",
-        "🇳🇱 荷兰 01",
         "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇰🇷 韩国 01",
-        "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -172,13 +147,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇳🇱 荷兰 01",
         "🇯🇵 日本 01",
-        "🇯🇵 日本 02",
-        "🇭🇰 香港 01",
-        "🇰🇷 韩国 01",
-        "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -213,21 +183,6 @@
       }
     },
     {
-      "tag": "🇳🇱 荷兰 01",
-      "type": "hysteria2",
-      "server": "2001:470:1f15:728:6a5a:ce2:7583:1",
-      "server_port": 10015,
-      "password": "b96e7c07-78eb-40a1-89ad-de3d33dac98b",
-      "tls": {
-        "enabled": true,
-        "server_name": "2001:470:1f15:728:6a5a:ce2:7583:1",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
       "tag": "🇯🇵 日本 01",
       "type": "hysteria2",
       "server": "47.91.22.21",
@@ -248,50 +203,6 @@
       "tls": {
         "enabled": true,
         "server_name": "47.91.22.21",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "vmess",
-      "server": "43.159.199.247",
-      "server_port": 56465,
-      "uuid": "d6f854de-79f5-4860-f577-1a38279e9d46",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "tag": "🇰🇷 韩国 01",
-      "type": "shadowsocks",
-      "server": "glance.asuscomm.com",
-      "server_port": 10099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "12242"
-    },
-    {
-      "tag": "🇺🇸 美国 01",
-      "type": "hysteria2",
-      "server": "154.50.110.85",
-      "server_port": 63482,
-      "password": "b22f44be-11bc-483c-b5fa-69be7b59edd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.50.110.85",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "hysteria2",
-      "server": "gyus.aifjj.asia",
-      "server_port": 30204,
-      "password": "79dc600a-b63b-4406-bd79-f5f7fb0c0e52",
-      "tls": {
-        "enabled": true,
-        "server_name": "gyus.aifjj.asia",
         "insecure": true
       }
     }
