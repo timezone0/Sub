@@ -1,0 +1,604 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  respect-rules: true
+  nameserver:
+  - "https://dns.cloudflare.com/dns-query"
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
+- {name: "🇭🇰 香港 01", server: "8.218.107.214", port: 12332, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 02", server: "42.200.111.106", port: 20106, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 03", server: "43.199.68.55", port: 80, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 04", server: "219.76.13.177", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 05", server: "47.243.54.45", port: 18080, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 06", server: "103.96.74.18", port: 19000, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 07", server: "219.77.76.121", port: 12345, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 08", server: "45.39.198.43", port: 8080, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 09", server: "219.76.13.167", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇭🇰 香港 10", server: "34.92.248.117", port: 9444, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 01", server: "47.128.217.14", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 02", server: "150.109.11.223", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 03", server: "92.243.75.49", port: 2087, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 04", server: "27.50.48.154", port: 8443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 05", server: "92.243.74.3", port: 8443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 06", server: "27.50.49.231", port: 2083, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 07", server: "92.243.74.239", port: 8443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 08", server: "27.50.49.154", port: 2083, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 09", server: "27.50.49.104", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇸🇬 新加坡 10", server: "8.219.63.1", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 01", server: "45.66.130.58", port: 51002, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 02", server: "160.16.123.65", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 03", server: "138.2.49.197", port: 587, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 04", server: "158.101.89.113", port: 58443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 05", server: "168.138.197.147", port: 12345, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 06", server: "47.79.91.168", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 07", server: "168.138.205.58", port: 12535, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 08", server: "47.79.88.21", port: 6010, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 09", server: "132.226.8.109", port: 43257, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇯🇵 日本 10", server: "152.70.111.27", port: 40417, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 01", server: "220.135.202.250", port: 81, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 02", server: "114.32.9.249", port: 16443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 03", server: "60.249.114.181", port: 10244, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 04", server: "166.0.198.184", port: 4333, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 05", server: "118.163.37.32", port: 81, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 06", server: "210.61.97.241", port: 81, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 07", server: "122.117.174.80", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇨🇳 台湾 08", server: "114.34.202.224", port: 10004, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 01", server: "3.35.48.60", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 02", server: "211.33.238.198", port: 30473, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 03", server: "183.97.196.49", port: 12168, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 04", server: "210.123.143.214", port: 12280, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 05", server: "64.110.70.205", port: 23022, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 06", server: "119.203.38.84", port: 30015, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 07", server: "61.75.247.158", port: 10003, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 08", server: "211.43.79.152", port: 12371, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 09", server: "121.163.248.127", port: 50001, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇰🇷 韩国 10", server: "211.107.143.176", port: 50001, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 01", server: "108.165.152.98", port: 2087, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 02", server: "64.69.24.13", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 03", server: "23.105.198.177", port: 14995, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 04", server: "170.106.152.78", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 05", server: "209.94.90.87", port: 2087, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 06", server: "167.68.5.248", port: 2087, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 07", server: "103.116.7.103", port: 2083, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 08", server: "23.105.220.138", port: 20018, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 09", server: "95.169.26.188", port: 38557, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇺🇸 美国 10", server: "108.165.152.29", port: 2096, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 01", server: "86.110.56.71", port: 2053, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 02", server: "38.180.51.120", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 03", server: "45.144.51.180", port: 8443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 04", server: "86.110.56.94", port: 2053, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 05", server: "185.188.147.79", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 06", server: "176.105.253.98", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 07", server: "91.239.148.84", port: 2053, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 08", server: "193.124.41.165", port: 2053, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+- {name: "🇵🇱 波兰 09", server: "45.144.48.48", port: 443, type: "vless", uuid: "4d73a405-2010-4077-8715-6e353390946e", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/snippets?ip=tw.tp81.netlib.re:81&nat64=6to4", headers: {Host: "fd.ziluoluo.ggff.net"}}, servername: "fd.ziluoluo.ggff.net"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
+  - "🇰🇷 韩国 10"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇵🇱 波兰 01"
+  - "🇵🇱 波兰 02"
+  - "🇵🇱 波兰 03"
+  - "🇵🇱 波兰 04"
+  - "🇵🇱 波兰 05"
+  - "🇵🇱 波兰 06"
+  - "🇵🇱 波兰 07"
+  - "🇵🇱 波兰 08"
+  - "🇵🇱 波兰 09"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 180
+  tolerance: 50
+  proxies:
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
+  - "🇰🇷 韩国 10"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇵🇱 波兰 01"
+  - "🇵🇱 波兰 02"
+  - "🇵🇱 波兰 03"
+  - "🇵🇱 波兰 04"
+  - "🇵🇱 波兰 05"
+  - "🇵🇱 波兰 06"
+  - "🇵🇱 波兰 07"
+  - "🇵🇱 波兰 08"
+  - "🇵🇱 波兰 09"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
+  - "🇰🇷 韩国 10"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇵🇱 波兰 01"
+  - "🇵🇱 波兰 02"
+  - "🇵🇱 波兰 03"
+  - "🇵🇱 波兰 04"
+  - "🇵🇱 波兰 05"
+  - "🇵🇱 波兰 06"
+  - "🇵🇱 波兰 07"
+  - "🇵🇱 波兰 08"
+  - "🇵🇱 波兰 09"
+- name: "GOOGLEFCM"
+  type: "select"
+  proxies:
+  - "✨ fcm"
+  - "PROXY"
+  - "DIRECT"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
+  - "🇰🇷 韩国 10"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇵🇱 波兰 01"
+  - "🇵🇱 波兰 02"
+  - "🇵🇱 波兰 03"
+  - "🇵🇱 波兰 04"
+  - "🇵🇱 波兰 05"
+  - "🇵🇱 波兰 06"
+  - "🇵🇱 波兰 07"
+  - "🇵🇱 波兰 08"
+  - "🇵🇱 波兰 09"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
+  - "🇰🇷 韩国 10"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇵🇱 波兰 01"
+  - "🇵🇱 波兰 02"
+  - "🇵🇱 波兰 03"
+  - "🇵🇱 波兰 04"
+  - "🇵🇱 波兰 05"
+  - "🇵🇱 波兰 06"
+  - "🇵🇱 波兰 07"
+  - "🇵🇱 波兰 08"
+  - "🇵🇱 波兰 09"
+- name: "TIKTOK"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇰🇷 韩国 03"
+  - "🇰🇷 韩国 04"
+  - "🇰🇷 韩国 05"
+  - "🇰🇷 韩国 06"
+  - "🇰🇷 韩国 07"
+  - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
+  - "🇰🇷 韩国 10"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇵🇱 波兰 01"
+  - "🇵🇱 波兰 02"
+  - "🇵🇱 波兰 03"
+  - "🇵🇱 波兰 04"
+  - "🇵🇱 波兰 05"
+  - "🇵🇱 波兰 06"
+  - "🇵🇱 波兰 07"
+  - "🇵🇱 波兰 08"
+  - "🇵🇱 波兰 09"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
+- "DOMAIN-KEYWORD,mcdn.bilivideo.cn,REJECT"
+- "DOMAIN-KEYWORD,szbdyd.com,REJECT"
+- "DOMAIN-KEYWORD,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.starrails.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606,HOYO"
+- "DOMAIN-KEYWORD,hoyoverse.com,PROXY"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,GOOGLEFCM"
+- "GEOSITE,TIKTOK,TIKTOK"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOIP,CN,DIRECT"
+- "MATCH,PROXY"

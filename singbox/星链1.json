@@ -1,0 +1,701 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_keyword": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ]
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇺🇸 美国 01",
+        "🇨🇭 瑞士 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇧🇷 巴西 03",
+        "🇧🇷 巴西 04",
+        "🇧🇷 巴西 05",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇸🇮 斯洛文尼亚 02",
+        "🇸🇮 斯洛文尼亚 03",
+        "🇸🇮 斯洛文尼亚 04",
+        "🇸🇮 斯洛文尼亚 05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "3m",
+      "outbounds": [
+        "🇺🇸 美国 01",
+        "🇨🇭 瑞士 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇧🇷 巴西 03",
+        "🇧🇷 巴西 04",
+        "🇧🇷 巴西 05",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇸🇮 斯洛文尼亚 02",
+        "🇸🇮 斯洛文尼亚 03",
+        "🇸🇮 斯洛文尼亚 04",
+        "🇸🇮 斯洛文尼亚 05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇺🇸 美国 01",
+        "🇨🇭 瑞士 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇧🇷 巴西 03",
+        "🇧🇷 巴西 04",
+        "🇧🇷 巴西 05",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇸🇮 斯洛文尼亚 02",
+        "🇸🇮 斯洛文尼亚 03",
+        "🇸🇮 斯洛文尼亚 04",
+        "🇸🇮 斯洛文尼亚 05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "googlefcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇺🇸 美国 01",
+        "🇨🇭 瑞士 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇧🇷 巴西 03",
+        "🇧🇷 巴西 04",
+        "🇧🇷 巴西 05",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇸🇮 斯洛文尼亚 02",
+        "🇸🇮 斯洛文尼亚 03",
+        "🇸🇮 斯洛文尼亚 04",
+        "🇸🇮 斯洛文尼亚 05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇺🇸 美国 01",
+        "🇨🇭 瑞士 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇧🇷 巴西 03",
+        "🇧🇷 巴西 04",
+        "🇧🇷 巴西 05",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇸🇮 斯洛文尼亚 02",
+        "🇸🇮 斯洛文尼亚 03",
+        "🇸🇮 斯洛文尼亚 04",
+        "🇸🇮 斯洛文尼亚 05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇺🇸 美国 01",
+        "🇨🇭 瑞士 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇧🇷 巴西 03",
+        "🇧🇷 巴西 04",
+        "🇧🇷 巴西 05",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇸🇮 斯洛文尼亚 02",
+        "🇸🇮 斯洛文尼亚 03",
+        "🇸🇮 斯洛文尼亚 04",
+        "🇸🇮 斯洛文尼亚 05"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "172.245.152.39",
+      "server_port": 64144,
+      "password": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "obfs": {
+        "type": "salamander",
+        "password": "JNXRjUDYidh5wHg1"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇨🇭 瑞士 01",
+      "type": "vless",
+      "server": "167.17.181.233",
+      "server_port": 32623,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "xlOv_9f5zbMLBNY7PETkl7-Hp84dykpPTCMfvlXk-1w",
+          "short_id": "eeab6b4eecd3"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "vless",
+      "server": "46.20.109.108",
+      "server_port": 42152,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "KX9z19MZAGVdMGqUNUeAwFBP9N9jfs-A4VTSnD0_3zs",
+          "short_id": "28c361"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vless",
+      "server": "46.20.109.108",
+      "server_port": 62152,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "khSscoy9Kz1bIS5hwgTQZUaGsRvPD3YISsu4p4oqujE",
+          "short_id": "b3f45b"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "vless",
+      "server": "46.20.109.108",
+      "server_port": 32151,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "-CufnlLvZvrrYwRCXHGPXo5yAa0u54E7tN8AWFcpM1A",
+          "short_id": "7c4ebd368258"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇧🇷 巴西 01",
+      "type": "tuic",
+      "server": "194.87.198.32",
+      "server_port": 12536,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "password": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
+    },
+    {
+      "tag": "🇧🇷 巴西 02",
+      "type": "tuic",
+      "server": "194.87.198.32",
+      "server_port": 14536,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "password": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
+    },
+    {
+      "tag": "🇧🇷 巴西 03",
+      "type": "tuic",
+      "server": "194.87.198.32",
+      "server_port": 62436,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "password": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
+    },
+    {
+      "tag": "🇧🇷 巴西 04",
+      "type": "tuic",
+      "server": "194.87.198.32",
+      "server_port": 62316,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "password": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
+    },
+    {
+      "tag": "🇧🇷 巴西 05",
+      "type": "tuic",
+      "server": "194.87.198.32",
+      "server_port": 12517,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "password": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
+    },
+    {
+      "tag": "🇸🇮 斯洛文尼亚 01",
+      "type": "vless",
+      "server": "194.58.66.235",
+      "server_port": 41515,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "X-2MbflqRC-bX_0lg73L-CSg35SiBVUumWxn4V02CQw",
+          "short_id": "c5befa216b6af9ac"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇮 斯洛文尼亚 02",
+      "type": "vless",
+      "server": "194.58.66.235",
+      "server_port": 41615,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "X-2MbflqRC-bX_0lg73L-CSg35SiBVUumWxn4V02CQw",
+          "short_id": "c5befa216b6af9ac"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇮 斯洛文尼亚 03",
+      "type": "vless",
+      "server": "194.58.66.235",
+      "server_port": 61117,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "oSi6KQ09e8g-YvzofYxYAmRY5t8CJywUZSSUWd23j3c",
+          "short_id": "0cd0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇮 斯洛文尼亚 04",
+      "type": "vless",
+      "server": "194.58.66.235",
+      "server_port": 61531,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "UJ8zvbUEvqPWyl2Ny91NAWxKQwokjPaOx8IQXyODDH8",
+          "short_id": "d5ff9add383210e6"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇮 斯洛文尼亚 05",
+      "type": "vless",
+      "server": "194.58.66.235",
+      "server_port": 51541,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "DAp8mrKzf87XL06waRAOaMdZVuHDCA11OQVOksyp6zA",
+          "short_id": "c97327c690"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "googlefcm"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
