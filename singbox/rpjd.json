@@ -325,13 +325,13 @@
     {
       "tag": "🇭🇰 香港 04",
       "type": "trojan",
-      "server": "112.118.248.22",
+      "server": "1.64.115.53",
       "server_port": 443,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
-        "server_name": "www.nintendogames.net",
-        "insecure": false,
+        "server_name": "www.baidu.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -349,13 +349,13 @@
     {
       "tag": "🇭🇰 香港 06",
       "type": "trojan",
-      "server": "160.16.63.16",
+      "server": "160.16.70.180",
       "server_port": 447,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -365,11 +365,18 @@
     {
       "tag": "🇭🇰 香港 07",
       "type": "vmess",
-      "server": "183.240.180.47",
-      "server_port": 52512,
-      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "server": "697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com",
+      "server_port": 80,
+      "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
       "security": "auto",
-      "alter_id": 64
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "broadcastlv.chat.bilibili.com"
+        },
+        "path": "/"
+      }
     },
     {
       "tag": "🇯🇵 日本 01",
@@ -379,20 +386,10 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202509121565513-XAa9x2cfsM.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202509121565513-QOZnRQnbPm.download.microsoft.com"
     },
     {
       "tag": "🇯🇵 日本 02",
-      "type": "shadowsocks",
-      "server": "137.220.142.139",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "8808e9f11454",
-      "plugin": "v2ray-plugin",
-      "plugin_opts": "mode=websocket;host=jp5v1.lingjfjkm002.com;path=/nvcnjrmkggoy;tls;skip-cert-verify=false"
-    },
-    {
-      "tag": "🇯🇵 日本 03",
       "type": "trojan",
       "server": "153.121.45.139",
       "server_port": 327,
@@ -408,10 +405,20 @@
       }
     },
     {
+      "tag": "🇯🇵 日本 03",
+      "type": "shadowsocks",
+      "server": "137.220.142.139",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "8808e9f11454",
+      "plugin": "v2ray-plugin",
+      "plugin_opts": "mode=websocket;host=jp5v1.lingjfjkm002.com;path=/nvcnjrmkggoy;tls;skip-cert-verify=false"
+    },
+    {
       "tag": "🇯🇵 日本 04",
       "type": "trojan",
-      "server": "36.151.251.6",
-      "server_port": 1806,
+      "server": "160.16.72.33",
+      "server_port": 1924,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
@@ -434,8 +441,8 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "trojan",
-      "server": "36.151.251.6",
-      "server_port": 4801,
+      "server": "160.16.130.66",
+      "server_port": 2045,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
@@ -450,8 +457,8 @@
     {
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
-      "server": "36.151.251.6",
-      "server_port": 9160,
+      "server": "160.16.117.182",
+      "server_port": 4397,
       "password": "253bc477d4e43c209f2d427272968280",
       "tls": {
         "enabled": true,
@@ -487,7 +494,7 @@
       "method": "rc4-md5",
       "password": "efanccyun",
       "plugin": "obfs-local",
-      "plugin_opts": "obfs=http;obfs-host=202509121565513-XAa9x2cfsM.download.microsoft.com"
+      "plugin_opts": "obfs=http;obfs-host=202509121565513-QOZnRQnbPm.download.microsoft.com"
     },
     {
       "tag": "🇺🇸 美国 02",

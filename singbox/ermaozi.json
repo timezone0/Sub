@@ -95,7 +95,10 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇪 瑞典 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -105,7 +108,10 @@
       "interval": "3m",
       "outbounds": [
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇪 瑞典 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -115,7 +121,10 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇪 瑞典 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,7 +136,10 @@
         "select",
         "direct",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇪 瑞典 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -138,7 +150,10 @@
         "direct",
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇪 瑞典 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -148,7 +163,10 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02"
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇪 瑞典 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -185,34 +203,50 @@
     {
       "tag": "🇺🇸 美国 01",
       "type": "vmess",
-      "server": "v35.heduian.link",
-      "server_port": 30835,
+      "server": "v24.heduian.link",
+      "server_port": 30824,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "v35.heduian.link"
+          "Host": "v24.heduian.link"
         },
         "path": "/oooo"
       }
     },
     {
       "tag": "🇺🇸 美国 02",
-      "type": "vmess",
-      "server": "v29.heduian.link",
-      "server_port": 30829,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "ocbc.com"
-        },
-        "path": "/oooo"
-      }
+      "type": "shadowsocks",
+      "server": "104.192.226.106",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "shadowsocks",
+      "server": "62.100.205.48",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 01",
+      "type": "shadowsocks",
+      "server": "156.146.40.194",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇸🇪 瑞典 01",
+      "type": "shadowsocks",
+      "server": "192.71.166.100",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
     }
   ],
   "route": {
