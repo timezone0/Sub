@@ -94,9 +94,10 @@ proxies:
 - {name: "🇺🇸 美国 06", server: "remote.isquirrel.net", port: 28332, type: "trojan", password: "5S8YSYY7zDZ8RcqeD0A3pA32pg9j0ZwIFyK5Bnxua34gYXC33l3AywaaZSSaNp6lOelCD", skip-cert-verify: true, sni: "remote.isquirrel.net"}
 - {name: "🇺🇸 美国 07", server: "curtain.isquirrel.net", port: 28332, type: "trojan", password: "IlEAxD6a9y33jB8a3CxO3aYy6n8yq3Ke4ISEzBDYa0lS3aDDg6DOe8YZC38Ila2BYlqxxSlSS0uq3CD", skip-cert-verify: true, sni: "curtain.isquirrel.net"}
 - {name: "🇺🇸 美国 08", server: "cutting.appagent.net", port: 443, type: "trojan", password: "7YRNZC3T0SI5YFaRu63A3D3qylTx2wCnCe56DzDw9KEXSDINxZADOzSYOROcay8aXa43x", skip-cert-verify: true, sni: "cutting.appagent.net"}
-- {name: "🇺🇸 美国 09", server: "183.232.157.73", port: 20001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
-- {name: "🇺🇸 美国 10", server: "183.232.157.73", port: 20002, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
-- {name: "🇺🇸 美国 11", server: "183.232.157.73", port: 13035, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇺🇸 美国 09", server: "2001:bc8:32d7:302::10", port: 44579, type: "vmess", uuid: "8e34e170-13ae-4892-9d20-05962acc9f84", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "[2001:bc8:32d7:302::10]"}}}
+- {name: "🇺🇸 美国 10", server: "183.232.157.73", port: 20001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇺🇸 美国 11", server: "183.232.157.73", port: 20002, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇺🇸 美国 12", server: "183.232.157.73", port: 13035, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
 - {name: "🇸🇬 新加坡 01", server: "louber.missionsec.us", port: 443, type: "trojan", password: "BAu7ZSyD3IZppnCOxCzaFXje3SECzZgX83e3x7yZA8SDCacyagKFlEO6O0AlTSwDDe4SF", skip-cert-verify: true, sni: "louber.missionsec.us"}
 - {name: "🇸🇬 新加坡 02", server: "183.232.157.73", port: 11004, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
 - {name: "🇸🇬 新加坡 03", server: "183.232.157.73", port: 11007, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
@@ -130,6 +131,7 @@ proxy-groups:
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -164,6 +166,7 @@ proxy-groups:
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -196,6 +199,7 @@ proxy-groups:
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -230,6 +234,7 @@ proxy-groups:
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -263,6 +268,7 @@ proxy-groups:
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -295,6 +301,7 @@ proxy-groups:
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
   - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"

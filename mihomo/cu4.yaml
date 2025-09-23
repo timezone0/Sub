@@ -83,6 +83,9 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇭🇰 香港 01", server: "47.86.1.111", port: 20168, type: "ss", cipher: "aes-256-gcm", password: "LHD6009_AES_256_GCM"}
+- {name: "🇭🇰 香港 02", server: "183.232.157.73", port: 13037, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇭🇰 香港 03", server: "183.60.123.165", port: 11020, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇭🇰 香港 04", server: "103.216.253.50", port: 13035, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
 - {name: "🇺🇸 美国 01", server: "172.233.229.207", port: 10002, type: "vmess", uuid: "8afd259a-f6fe-478b-ba54-60c42510a7c1", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
 - {name: "🇺🇸 美国 02", server: "barater.appagent.net", port: 28334, type: "trojan", password: "RDR0TcCS6e3ZB8XaCq3O2OEFOYzZaIy63nx5ZXBDSuASSwEYqee7K5AlKDSZ3C4CSlua3", skip-cert-verify: true, sni: "barater.appagent.net"}
 - {name: "🇺🇸 美国 03", server: "kahorse.appagent.net", port: 443, type: "trojan", password: "ZYCORCAKISClBzZB2exOIC0cKAOZ4l98375aewpND0FpaeDwOXa8333ESc8YnFj23Xyyx", skip-cert-verify: true, sni: "kahorse.appagent.net"}
@@ -91,14 +94,32 @@ proxies:
 - {name: "🇺🇸 美国 06", server: "remote.isquirrel.net", port: 28332, type: "trojan", password: "5S8YSYY7zDZ8RcqeD0A3pA32pg9j0ZwIFyK5Bnxua34gYXC33l3AywaaZSSaNp6lOelCD", skip-cert-verify: true, sni: "remote.isquirrel.net"}
 - {name: "🇺🇸 美国 07", server: "curtain.isquirrel.net", port: 28332, type: "trojan", password: "IlEAxD6a9y33jB8a3CxO3aYy6n8yq3Ke4ISEzBDYa0lS3aDDg6DOe8YZC38Ila2BYlqxxSlSS0uq3CD", skip-cert-verify: true, sni: "curtain.isquirrel.net"}
 - {name: "🇺🇸 美国 08", server: "cutting.appagent.net", port: 443, type: "trojan", password: "7YRNZC3T0SI5YFaRu63A3D3qylTx2wCnCe56DzDw9KEXSDINxZADOzSYOROcay8aXa43x", skip-cert-verify: true, sni: "cutting.appagent.net"}
+- {name: "🇺🇸 美国 09", server: "2001:bc8:32d7:302::10", port: 44579, type: "vmess", uuid: "8e34e170-13ae-4892-9d20-05962acc9f84", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "[2001:bc8:32d7:302::10]"}}}
+- {name: "🇺🇸 美国 10", server: "183.232.157.73", port: 20001, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇺🇸 美国 11", server: "183.232.157.73", port: 20002, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇺🇸 美国 12", server: "183.232.157.73", port: 13035, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
 - {name: "🇸🇬 新加坡 01", server: "louber.missionsec.us", port: 443, type: "trojan", password: "BAu7ZSyD3IZppnCOxCzaFXje3SECzZgX83e3x7yZA8SDCacyagKFlEO6O0AlTSwDDe4SF", skip-cert-verify: true, sni: "louber.missionsec.us"}
+- {name: "🇸🇬 新加坡 02", server: "183.232.157.73", port: 11004, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇸🇬 新加坡 03", server: "183.232.157.73", port: 11007, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇸🇬 新加坡 04", server: "183.232.157.73", port: 11008, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
 - {name: "🇹🇬 多哥 01", server: "2001:470:1f15:728:6a5a:ce2:7583:1", port: 10015, type: "hysteria2", password: "b96e7c07-78eb-40a1-89ad-de3d33dac98b", auth: "b96e7c07-78eb-40a1-89ad-de3d33dac98b", skip-cert-verify: true, alpn: ["h3"]}
+- {name: "🇩🇪 德国 01", server: "183.232.157.73", port: 13038, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇲🇾 马来 01", server: "183.232.157.73", port: 13035, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇹🇭 泰国 01", server: "183.232.157.73", port: 13005, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇻🇳 越南 01", server: "183.232.157.73", port: 13010, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇰🇷 韩国 01", server: "183.232.157.73", port: 20003, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇰🇷 韩国 02", server: "183.232.157.73", port: 11002, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇨🇦 加拿大 01", server: "183.232.157.73", port: 13034, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
+- {name: "🇯🇵 日本 01", server: "183.232.157.73", port: 11003, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d4b8589e-a049-4be6-8604-3395553d8361"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -107,8 +128,23 @@ proxy-groups:
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇹🇬 多哥 01"
+  - "🇩🇪 德国 01"
+  - "🇲🇾 马来 01"
+  - "🇹🇭 泰国 01"
+  - "🇻🇳 越南 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -116,6 +152,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -124,13 +163,31 @@ proxy-groups:
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇹🇬 多哥 01"
+  - "🇩🇪 德国 01"
+  - "🇲🇾 马来 01"
+  - "🇹🇭 泰国 01"
+  - "🇻🇳 越南 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -139,8 +196,23 @@ proxy-groups:
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇹🇬 多哥 01"
+  - "🇩🇪 德国 01"
+  - "🇲🇾 马来 01"
+  - "🇹🇭 泰国 01"
+  - "🇻🇳 越南 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -148,6 +220,9 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -156,14 +231,32 @@ proxy-groups:
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇹🇬 多哥 01"
+  - "🇩🇪 德国 01"
+  - "🇲🇾 马来 01"
+  - "🇹🇭 泰国 01"
+  - "🇻🇳 越南 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -172,13 +265,31 @@ proxy-groups:
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇹🇬 多哥 01"
+  - "🇩🇪 德国 01"
+  - "🇲🇾 马来 01"
+  - "🇹🇭 泰国 01"
+  - "🇻🇳 越南 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -187,8 +298,23 @@ proxy-groups:
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇹🇬 多哥 01"
+  - "🇩🇪 德国 01"
+  - "🇲🇾 马来 01"
+  - "🇹🇭 泰国 01"
+  - "🇻🇳 越南 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇦 加拿大 01"
+  - "🇯🇵 日本 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
