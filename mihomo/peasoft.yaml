@@ -88,9 +88,10 @@ proxies:
 - {name: "🇭🇰 香港 04", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "202.181.103.246", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 05", port: 57586, server: "45.89.233.236", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "862d48d2-115b-432d-8115-f5aaa1a4b186", client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 06", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "160.16.236.32", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 07", network: "tcp", port: 57586, server: "45.89.233.236", tls: false, type: "vmess", uuid: "862d48d2-115b-432d-8115-f5aaa1a4b186", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "kcp", port: 5043, server: "47.242.186.1", tls: false, type: "vmess", uuid: "93c35277-ee3f-4ab2-9d9e-462b97a8795f", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 09", network: "tcp", port: 24939, server: "38.147.188.112", tls: false, type: "vmess", uuid: "928408df-3114-4b57-b852-f8d120ce056c", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 07", network: "http", port: 24939, server: "38.147.188.112", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", udp: true, uuid: "928408df-3114-4b57-b852-f8d120ce056c", client-fingerprint: "chrome", http-opts: {path: ["/"]}}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "tcp", port: 57586, server: "45.89.233.236", tls: false, type: "vmess", uuid: "862d48d2-115b-432d-8115-f5aaa1a4b186", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 09", network: "kcp", port: 5043, server: "47.242.186.1", tls: false, type: "vmess", uuid: "93c35277-ee3f-4ab2-9d9e-462b97a8795f", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 10", network: "tcp", port: 24939, server: "38.147.188.112", tls: false, type: "vmess", uuid: "928408df-3114-4b57-b852-f8d120ce056c", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {name: "🇨🇳 台湾 01", password: "90f45c05-917f-3b1b-a582-899cfe4cf7b3", port: 16327, server: "auto.wgnmdgfw.com", skip-cert-verify: false, sni: "eplcgame.com", type: "trojan", client-fingerprint: "chrome"}
 - {cipher: "rc4-md5", name: "🇯🇵 日本 01", password: "efanccyun", plugin: "obfs", plugin-opts: {host: "202509121565513-HpWeCj5Hza.download.microsoft.com", mode: "http"}, port: 8766, server: "cn01.efan8867801.xyz", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {cipher: "aes-256-gcm", name: "🇯🇵 日本 02", password: "8808e9f11454", plugin: "v2ray-plugin", plugin-opts: {host: "jp5v1.lingjfjkm002.com", mode: "websocket", mux: false, path: "/nvcnjrmkggoy", skip-cert-verify: false, tls: true}, port: 443, server: "137.220.142.139", tfo: false, type: "ss", client-fingerprint: "chrome"}
@@ -119,6 +120,7 @@ proxy-groups:
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
@@ -148,6 +150,7 @@ proxy-groups:
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
@@ -175,6 +178,7 @@ proxy-groups:
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
@@ -204,6 +208,7 @@ proxy-groups:
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
@@ -232,6 +237,7 @@ proxy-groups:
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
@@ -259,6 +265,7 @@ proxy-groups:
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
   - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
   - "🇨🇳 台湾 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
