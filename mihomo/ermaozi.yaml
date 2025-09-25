@@ -82,11 +82,12 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇬🇧 英国 01", type: "ss", server: "51.15.17.169", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇬🇧 英国 01", type: "ssr", server: "62.100.205.48", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", obfs: "plain", protocol: "origin"}
 - {name: "🇬🇧 英国 02", type: "ss", server: "62.100.205.48", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇬🇧 英国 03", type: "ssr", server: "62.100.205.48", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", obfs: "plain", protocol: "origin"}
-- {name: "🇩🇪 德国 01", type: "ss", server: "46.183.184.60", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇺🇸 美国 01", type: "ss", server: "38.165.233.93", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇬🇧 英国 03", type: "ss", server: "51.15.17.169", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇮🇳 印度 01", type: "ss", server: "134.209.147.198", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇸🇰 斯洛伐克 01", type: "ss", server: "156.146.40.194", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇮🇸 冰岛 01", type: "ss", server: "37.235.49.168", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -95,8 +96,9 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
-  - "🇩🇪 德国 01"
-  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
+  - "🇸🇰 斯洛伐克 01"
+  - "🇮🇸 冰岛 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -106,8 +108,9 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
-  - "🇩🇪 德国 01"
-  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
+  - "🇸🇰 斯洛伐克 01"
+  - "🇮🇸 冰岛 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -115,8 +118,9 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
-  - "🇩🇪 德国 01"
-  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
+  - "🇸🇰 斯洛伐克 01"
+  - "🇮🇸 冰岛 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -126,8 +130,9 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
-  - "🇩🇪 德国 01"
-  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
+  - "🇸🇰 斯洛伐克 01"
+  - "🇮🇸 冰岛 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -136,8 +141,9 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
-  - "🇩🇪 德国 01"
-  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
+  - "🇸🇰 斯洛伐克 01"
+  - "🇮🇸 冰岛 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -145,8 +151,9 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
-  - "🇩🇪 德国 01"
-  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
+  - "🇸🇰 斯洛伐克 01"
+  - "🇮🇸 冰岛 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
