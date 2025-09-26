@@ -95,6 +95,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
         "🇧🇷 巴西 01",
         "🇧🇷 巴西 02",
         "🇧🇷 巴西 03",
@@ -115,6 +116,7 @@
       "interval": "3m",
       "outbounds": [
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
         "🇧🇷 巴西 01",
         "🇧🇷 巴西 02",
         "🇧🇷 巴西 03",
@@ -135,6 +137,7 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
         "🇧🇷 巴西 01",
         "🇧🇷 巴西 02",
         "🇧🇷 巴西 03",
@@ -157,6 +160,7 @@
         "select",
         "direct",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
         "🇧🇷 巴西 01",
         "🇧🇷 巴西 02",
         "🇧🇷 巴西 03",
@@ -178,6 +182,7 @@
         "direct",
         "select",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
         "🇧🇷 巴西 01",
         "🇧🇷 巴西 02",
         "🇧🇷 巴西 03",
@@ -198,6 +203,7 @@
       "outbounds": [
         "select",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
         "🇧🇷 巴西 01",
         "🇧🇷 巴西 02",
         "🇧🇷 巴西 03",
@@ -262,6 +268,25 @@
       }
     },
     {
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "csdn.usdone.one",
+      "server_port": 443,
+      "uuid": "216b062f-c964-4bb2-b4a5-2ee9ee71d381",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "csdn.usdone.one",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "path": "/ddddddddd"
+      }
+    },
+    {
       "tag": "🇧🇷 巴西 01",
       "type": "vless",
       "server": "194.87.198.32",
@@ -278,7 +303,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -299,7 +324,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         }
       }
     },
@@ -320,7 +345,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         }
       }
     },
@@ -426,7 +451,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "ios"
         }
       }
     },
@@ -447,7 +472,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "safari"
         }
       }
     },
@@ -468,7 +493,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         }
       }
     }
