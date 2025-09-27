@@ -83,18 +83,24 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇺🇸 美国 01", type: "trojan", server: "uk-03.allhubb.info", port: 8443, password: "1ce1df7962f71c6f", sni: "uk-03.allhubb.info"}
-- {name: "🇬🇧 英国 01", type: "ss", server: "62.100.205.48", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇷🇺 俄罗斯 01", type: "ss", server: "156.146.40.194", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇺🇸 美国 02", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", skip-cert-verify: true, ws-opts: {path: "/oooo", headers: {Host: "v29.heduian.link"}}, alterId: 2}
+- {name: "🇩🇪 德国 01", type: "ss", server: "46.183.184.60", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 - {name: "🇸🇪 瑞典 01", type: "ss", server: "192.71.166.100", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇬🇧 英国 01", type: "ss", server: "62.100.205.48", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇬🇧 英国 02", type: "ssr", server: "62.100.205.48", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", obfs: "plain", protocol: "origin"}
+- {name: "🇰🇷 韩国 01", type: "ss", server: "154.223.16.212", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🇺🇸 美国 01"
-  - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇺🇸 美国 02"
+  - "🇩🇪 德国 01"
   - "🇸🇪 瑞典 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇰🇷 韩国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -102,17 +108,23 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🇺🇸 美国 01"
-  - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇺🇸 美国 02"
+  - "🇩🇪 德国 01"
   - "🇸🇪 瑞典 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇰🇷 韩国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇺🇸 美国 01"
-  - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇺🇸 美国 02"
+  - "🇩🇪 德国 01"
   - "🇸🇪 瑞典 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇰🇷 韩国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -120,26 +132,35 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🇺🇸 美国 01"
-  - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇺🇸 美国 02"
+  - "🇩🇪 德国 01"
   - "🇸🇪 瑞典 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇰🇷 韩国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🇺🇸 美国 01"
-  - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇺🇸 美国 02"
+  - "🇩🇪 德国 01"
   - "🇸🇪 瑞典 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇰🇷 韩国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇺🇸 美国 01"
-  - "🇬🇧 英国 01"
-  - "🇷🇺 俄罗斯 01"
+  - "🇺🇸 美国 02"
+  - "🇩🇪 德国 01"
   - "🇸🇪 瑞典 01"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇰🇷 韩国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
