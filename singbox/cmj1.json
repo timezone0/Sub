@@ -95,10 +95,9 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇮🇸 冰岛 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
+        "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
+        "🇭🇰 香港 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -114,10 +113,9 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇮🇸 冰岛 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
+        "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
+        "🇭🇰 香港 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -133,10 +131,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇮🇸 冰岛 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
+        "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
+        "🇭🇰 香港 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -154,10 +151,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇮🇸 冰岛 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
+        "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
+        "🇭🇰 香港 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -174,10 +170,9 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇮🇸 冰岛 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
+        "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
+        "🇭🇰 香港 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -193,10 +188,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇮🇸 冰岛 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
+        "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
+        "🇭🇰 香港 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -241,60 +235,56 @@
       "type": "vless",
       "server": "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz",
       "server_port": 443,
-      "uuid": "a84d8c47-7dad-49e9-8104-6581a6b44b0a",
+      "uuid": "346b670f-e6db-446d-9f8b-e056c9e2d7ca",
       "tls": {
         "enabled": true,
-        "server_name": "baipiao.CMLiussss.abrdns.com",
-        "insecure": true
+        "server_name": "vless.keepfuck.me",
+        "insecure": true,
+        "alpn": [
+          "h3%2Ch2%2Chttp%2F1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "baipiao.CMLiussss.abrdns.com"
+          "Host": "vless.keepfuck.me"
         },
-        "path": "/snippets"
+        "path": "/?mode=auto&direct"
       }
     },
     {
-      "tag": "🇮🇸 冰岛 01",
+      "tag": "🇹🇬 多哥 01",
       "type": "vless",
-      "server": "time.is",
-      "server_port": 443,
-      "uuid": "a84d8c47-7dad-49e9-8104-6581a6b44b0a",
-      "tls": {
-        "enabled": true,
-        "server_name": "baipiao.CMLiussss.abrdns.com",
-        "insecure": true
-      },
+      "server": "vless.keepfuck.me",
+      "server_port": 80,
+      "uuid": "346b670f-e6db-446d-9f8b-e056c9e2d7ca",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "baipiao.CMLiussss.abrdns.com"
+          "Host": "vless.keepfuck.me"
         },
-        "path": "/snippets"
+        "path": "/?mode=auto&direct"
       }
+    },
+    {
+      "tag": "🇫🇷 法国 01",
+      "type": "hysteria",
+      "server": "195.154.200.40",
+      "server_port": 15010,
+      "disable_mtu_discovery": false,
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "up_mbps": 100,
+      "down_mbps": 100
     },
     {
       "tag": "🇭🇰 香港 01",
-      "type": "vless",
-      "server": "icook.hk",
-      "server_port": 443,
-      "uuid": "a84d8c47-7dad-49e9-8104-6581a6b44b0a",
-      "tls": {
-        "enabled": true,
-        "server_name": "baipiao.CMLiussss.abrdns.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "baipiao.CMLiussss.abrdns.com"
-        },
-        "path": "/snippets"
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 02",
       "type": "vless",
       "server": "38.147.184.173",
       "server_port": 444,
@@ -318,23 +308,6 @@
         },
         "path": "/snippets?ip=proxyip:port(443)&nat64=6to4"
       }
-    },
-    {
-      "tag": "🇫🇷 法国 01",
-      "type": "hysteria",
-      "server": "195.154.200.40",
-      "server_port": 15010,
-      "disable_mtu_discovery": false,
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "up_mbps": 100,
-      "down_mbps": 100
     },
     {
       "tag": "🇺🇸 美国 01",
