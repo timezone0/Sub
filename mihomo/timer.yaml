@@ -82,19 +82,24 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", type: "vmess", server: "183.240.245.235", port: 49212, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, tls: false}
-- {type: "vless", name: "🇭🇰 香港 02", server: "hkt-ty-line-1.sudatech.store", port: 20880, uuid: "42ae15d8-bbb5-45a5-839f-38c1d0ee4f52", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "m57FFbYTpWMiDoXuKsGXiHLhBzn76IDE3iBpew2AqRM"}, network: "tcp", servername: "www.paypal.com"}
-- {skip-cert-verify: true, sni: "now-pages-sub-em4.pages.dev", client-fingerprint: "randomized", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "now-pages-sub-em4.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "123456", server: "31.57.93.141", port: 2053, name: "🇭🇰 香港 03"}
-- {skip-cert-verify: true, sni: "now-pages-sub-em4.pages.dev", client-fingerprint: "randomized", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "now-pages-sub-em4.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "123456", server: "31.57.93.172", port: 8443, name: "🇭🇰 香港 04"}
-- {skip-cert-verify: true, sni: "now-pages-sub-em4.pages.dev", client-fingerprint: "randomized", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "now-pages-sub-em4.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "123456", server: "31.57.93.4", port: 2053, name: "🇭🇰 香港 05"}
-- {type: "ss", server: "154.223.16.212", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", name: "🇭🇰 香港 06"}
-- {type: "vless", name: "🇸🇬 新加坡 01", server: "cloudflare.182682.xyz", port: 443, uuid: "a546c4de-2840-49b7-b914-98babd165bb1", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "de.xiejiang.dpdns.org"}, path: "/XYXY0721"}, servername: "de.xiejiang.dpdns.org"}
-- {type: "hysteria2", name: "🇸🇬 新加坡 02", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false}
-- {name: "🇺🇸 美国 01", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 02", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 03", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
-- {name: "🇺🇸 美国 04", password: "20050105zhu", port: 51541, server: "204.44.110.129", skip-cert-verify: true, sni: "www.bing.com", type: "hysteria2", client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇺🇸 美国 05", server: "us10.s2fjeyeeyafe.bond", port: 35789, password: "bc4d55c1-38df-43e6-8df7-3733e84d9399", sni: "us10.s2fjeyeeyafe.bond", skip-cert-verify: false, tfo: false}
+- {name: "🇭🇰 香港 01", type: "vmess", server: "183.240.245.235", port: 49212, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, tls: false, client-fingerprint: "chrome"}
+- {skip-cert-verify: true, sni: "now-pages-sub-em4.pages.dev", client-fingerprint: "randomized", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "now-pages-sub-em4.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "123456", server: "31.57.93.141", port: 2053, name: "🇭🇰 香港 02"}
+- {skip-cert-verify: true, sni: "now-pages-sub-em4.pages.dev", client-fingerprint: "randomized", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "now-pages-sub-em4.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "123456", server: "31.57.93.172", port: 8443, name: "🇭🇰 香港 03"}
+- {skip-cert-verify: true, sni: "now-pages-sub-em4.pages.dev", client-fingerprint: "randomized", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "now-pages-sub-em4.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "123456", server: "31.57.93.4", port: 2053, name: "🇭🇰 香港 04"}
+- {type: "ss", server: "154.223.16.212", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", name: "🇭🇰 香港 05", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇭🇰 香港 06", server: "27.50.48.102", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇭🇰 香港 07", server: "27.50.48.8", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇭🇰 香港 08", server: "27.50.48.2", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇭🇰 香港 09", server: "27.50.49.104", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇭🇰 香港 10", server: "154.218.15.1", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇭🇰 香港 11", server: "154.218.15.198", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "hysteria2", name: "🇸🇬 新加坡 01", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
+- {client-fingerprint: "chrome", name: "🇺🇸 美国 01", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
+- {client-fingerprint: "chrome", name: "🇺🇸 美国 02", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
+- {type: "hysteria2", name: "🇺🇸 美国 03", server: "216.133.149.223", port: 8652, password: "l6oxPE620nja7uH0", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 04", server: "104.16.246.132", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇺🇸 美国 05", server: "162.159.152.155", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
+- {type: "vless", name: "🇺🇸 美国 06", server: "104.18.86.131", port: 443, uuid: "29187857-4a1f-4d1e-88eb-0016771e0dbb", tls: true, client-fingerprint: "random", alpn: ["h3"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/usr/local/bin:/tmp/home/.pyenv/plugins/pyenv-virtualenv/shims:/tmp/home/.pyenv/shims:/tmp/home/.pyenv/bin:/tmp/home/.local/state/fnm_multishells/5_1758609015885/bin:/tmp/home/.local/share/fnm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}, encryption: "none", servername: "vless.keepfuck.me"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 01", network: "ws", port: 443, server: "172.67.114.195", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 02", network: "ws", port: 443, server: "104.18.164.69", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 03", network: "ws", port: 443, server: "104.24.87.184", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
@@ -103,10 +108,8 @@ proxies:
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 06", network: "ws", port: 443, server: "172.67.216.216", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 07", network: "ws", port: 443, server: "198.41.198.176", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {type: "vless", name: "🇯🇵 日本 01", server: "47.79.32.82", port: 42037, uuid: "1eff6d61-2f9f-4689-82a9-4232a8f48949", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "3XDxoCztHymlFMXbG1BtoHyWRHpZ9Uvzwa5z9JrQC1E", short-id: "e978d721cd", _spider-x: "/"}, network: "tcp", servername: "itunes.apple.com"}
-- {type: "hysteria2", name: "🇯🇵 日本 02", server: "jpcn286.s2fjeyeeyafe.bond", port: 35789, password: "bc4d55c1-38df-43e6-8df7-3733e84d9399", sni: "jpcn286.s2fjeyeeyafe.bond", skip-cert-verify: false, tfo: false}
-- {type: "hysteria2", name: "🇯🇵 日本 03", server: "jpiij1.s2fjeyeeyafe.bond", port: 35789, password: "bc4d55c1-38df-43e6-8df7-3733e84d9399", sni: "jpiij1.s2fjeyeeyafe.bond", skip-cert-verify: false, tfo: false}
-- {type: "hysteria2", name: "🇯🇵 日本 04", server: "jpcn286.s2fjeyeeyafe.bond", port: 35789, password: "bc4d55c1-38df-43e6-8df7-3733e84d9399", sni: "jpcn286.s2fjeyeeyafe.bond", skip-cert-verify: false, tfo: false}
-- {type: "ss", server: "103.186.154.27", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 01"}
+- {type: "ss", server: "103.186.155.28", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 01", client-fingerprint: "chrome"}
+- {type: "ss", server: "103.186.155.28", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 02", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -118,13 +121,18 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -133,10 +141,8 @@ proxy-groups:
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
   - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -149,13 +155,18 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -164,10 +175,8 @@ proxy-groups:
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
   - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -178,13 +187,18 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -193,10 +207,8 @@ proxy-groups:
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
   - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -209,13 +221,18 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -224,10 +241,8 @@ proxy-groups:
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
   - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -239,13 +254,18 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -254,10 +274,8 @@ proxy-groups:
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
   - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -268,13 +286,18 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -283,10 +306,8 @@ proxy-groups:
   - "🇨🇦 加拿大 06"
   - "🇨🇦 加拿大 07"
   - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
