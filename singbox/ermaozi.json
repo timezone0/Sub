@@ -94,7 +94,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -103,7 +103,7 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,7 +112,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,7 +123,7 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,7 +133,7 @@
       "outbounds": [
         "direct",
         "select",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,7 +142,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -177,12 +177,20 @@
       }
     },
     {
-      "tag": "🇮🇳 印度 01",
-      "type": "shadowsocks",
-      "server": "134.209.147.198",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
+      "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "v29.heduian.link",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "v29.heduian.link"
+        },
+        "path": "/oooo"
+      }
     }
   ],
   "route": {
