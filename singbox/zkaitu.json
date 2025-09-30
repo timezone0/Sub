@@ -94,11 +94,11 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇺🇸 美国 01"
+        "🇦🇪 阿联酋 01",
+        "🇧🇬 保加利亚 01",
+        "🇮🇳 印度 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,11 +107,11 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇺🇸 美国 01"
+        "🇦🇪 阿联酋 01",
+        "🇧🇬 保加利亚 01",
+        "🇮🇳 印度 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -120,11 +120,11 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇺🇸 美国 01"
+        "🇦🇪 阿联酋 01",
+        "🇧🇬 保加利亚 01",
+        "🇮🇳 印度 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -135,11 +135,11 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇺🇸 美国 01"
+        "🇦🇪 阿联酋 01",
+        "🇧🇬 保加利亚 01",
+        "🇮🇳 印度 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -149,11 +149,11 @@
       "outbounds": [
         "direct",
         "select",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇺🇸 美国 01"
+        "🇦🇪 阿联酋 01",
+        "🇧🇬 保加利亚 01",
+        "🇮🇳 印度 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -162,11 +162,11 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇺🇸 美国 01"
+        "🇦🇪 阿联酋 01",
+        "🇧🇬 保加利亚 01",
+        "🇮🇳 印度 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -201,71 +201,87 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "vmess",
-      "server": "eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com",
-      "server_port": 80,
-      "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com"
+      "tag": "🇦🇪 阿联酋 01",
+      "type": "vless",
+      "server": "ae1-5.9966662.xyz",
+      "server_port": 20223,
+      "uuid": "abf03bbd-ec5c-45d9-bf63-c1851a1f4c4d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "RsbED0LyE3f2byTPx5t-dQewju6z9R4xqTWrADM4WnM",
+          "short_id": "c6842be1"
         },
-        "path": "/"
-      }
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
     },
     {
-      "tag": "🇭🇰 香港 02",
-      "type": "vmess",
-      "server": "1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com",
-      "server_port": 80,
-      "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "broadcastlv.chat.bilibili.com"
+      "tag": "🇧🇬 保加利亚 01",
+      "type": "vless",
+      "server": "sunstar.astracat.ru",
+      "server_port": 433,
+      "uuid": "ea8a4fac-8b8a-4fa5-a7b4-63575499fffb",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdnjs.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "ttai5o9sL51jx8MWuQA2glnVnVRe0pzZmDbHnTzlynA",
+          "short_id": "1A2B3C4D5E6F7890"
         },
-        "path": "/"
-      }
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
     },
     {
-      "tag": "🇭🇰 香港 03",
+      "tag": "🇮🇳 印度 01",
       "type": "vmess",
-      "server": "1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com",
-      "server_port": 80,
-      "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
+      "server": "123.58.203.92",
+      "server_port": 18872,
+      "uuid": "edfe29a5-cc54-488d-a31d-ca71f39e38d4",
       "security": "auto",
-      "alter_id": 2,
+      "alter_id": 0,
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 04",
-      "type": "vmess",
-      "server": "1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com",
-      "server_port": 80,
-      "uuid": "93fb69fc-77cf-11ee-85ee-f23c91369f2d",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com"
-        },
+        "type": "http",
+        "headers": {},
+        "method": "GET",
         "path": "/"
       }
     },
     {
       "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "216.133.149.235",
+      "server_port": 30227,
+      "uuid": "9a54bad8-538d-4744-b7bc-640629840490",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "y0QO-mD8hrDE3rV7C8BX-gQiCANoasGKQlq2ReIVXkI"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇺🇸 美国 02",
       "type": "vless",
       "server": "signetprxyynode01.su",
       "server_port": 443,
