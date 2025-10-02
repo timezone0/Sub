@@ -100,7 +100,6 @@
         "🇩🇪 德国 04",
         "🇩🇪 德国 05",
         "🇩🇪 德国 06",
-        "🇩🇪 德国 07",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
         "🇳🇱 荷兰 03",
@@ -152,7 +151,6 @@
         "🇩🇪 德国 04",
         "🇩🇪 德国 05",
         "🇩🇪 德国 06",
-        "🇩🇪 德国 07",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
         "🇳🇱 荷兰 03",
@@ -204,7 +202,6 @@
         "🇩🇪 德国 04",
         "🇩🇪 德国 05",
         "🇩🇪 德国 06",
-        "🇩🇪 德国 07",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
         "🇳🇱 荷兰 03",
@@ -258,7 +255,6 @@
         "🇩🇪 德国 04",
         "🇩🇪 德国 05",
         "🇩🇪 德国 06",
-        "🇩🇪 德国 07",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
         "🇳🇱 荷兰 03",
@@ -311,7 +307,6 @@
         "🇩🇪 德国 04",
         "🇩🇪 德国 05",
         "🇩🇪 德国 06",
-        "🇩🇪 德国 07",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
         "🇳🇱 荷兰 03",
@@ -363,7 +358,6 @@
         "🇩🇪 德国 04",
         "🇩🇪 德国 05",
         "🇩🇪 德国 06",
-        "🇩🇪 德国 07",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
         "🇳🇱 荷兰 03",
@@ -473,11 +467,9 @@
       "tls": {
         "enabled": true,
         "server_name": "am10.amadebash.uk",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
+          "h3%2Ch2%2Chttp%2F1.1"
         ],
         "utls": {
           "enabled": true,
@@ -495,42 +487,34 @@
     {
       "tag": "🇩🇪 德国 04",
       "type": "vless",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "uuid": "telegram-id-Arfilter",
-      "tls": {
-        "enabled": true,
-        "server_name": "eh.arfilter.blog",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "eh.arfilter.blog"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2048,
-        "path": "/telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray"
-      }
-    },
-    {
-      "tag": "🇩🇪 德国 05",
-      "type": "vless",
       "server": "176.222.53.140",
       "server_port": 8000,
       "uuid": "b65f4df7-f6af-42b2-877a-cef33f21675e",
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "kejiland.freewarp.eu.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/snippets/ip=proxyip.fxxk.dedyn.io:443"
+      }
+    },
+    {
+      "tag": "🇩🇪 德国 05",
+      "type": "vless",
+      "server": "81.200.158.206",
+      "server_port": 8443,
+      "uuid": "b65f4df7-f6af-42b2-877a-cef33f21675e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kejiland.freewarp.eu.org",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -545,34 +529,13 @@
     {
       "tag": "🇩🇪 德国 06",
       "type": "vless",
-      "server": "81.200.158.206",
-      "server_port": 8443,
-      "uuid": "b65f4df7-f6af-42b2-877a-cef33f21675e",
-      "tls": {
-        "enabled": true,
-        "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "kejiland.freewarp.eu.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/snippets/ip=proxyip.fxxk.dedyn.io:443"
-      }
-    },
-    {
-      "tag": "🇩🇪 德国 07",
-      "type": "vless",
       "server": "89.168.43.31",
       "server_port": 2053,
       "uuid": "b65f4df7-f6af-42b2-877a-cef33f21675e",
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -597,18 +560,16 @@
       "tls": {
         "enabled": true,
         "server_name": "mooshali.arshiacomplus.dpdns.org",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+          "http%2F1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "mooshali.arshiacomplus.dpdns.org"
+        },
         "path": "/hishhhh123"
       }
     },
@@ -621,18 +582,16 @@
       "tls": {
         "enabled": true,
         "server_name": "mooshali.arshiacomplus.dpdns.org",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+          "http%2F1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "mooshali.arshiacomplus.dpdns.org"
+        },
         "path": "/hishhhh123"
       }
     },
@@ -645,18 +604,16 @@
       "tls": {
         "enabled": true,
         "server_name": "mooshali.arshiacomplus.dpdns.org",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+          "http%2F1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "mooshali.arshiacomplus.dpdns.org"
+        },
         "path": "/hishhhh123"
       }
     },
@@ -669,7 +626,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -704,7 +661,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -725,7 +682,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -748,7 +705,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -767,7 +724,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -788,7 +745,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -807,7 +764,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -832,7 +789,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -851,7 +808,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -870,7 +827,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -891,7 +848,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -912,7 +869,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -933,7 +890,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -954,7 +911,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -975,7 +932,7 @@
       "tls": {
         "enabled": true,
         "server_name": "tgju.org",
-        "insecure": false,
+        "insecure": true,
         "reality": {
           "enabled": true,
           "public_key": "-d7gZw19wFxZcnqRsf0L8gin2NcQC8Quub0Y-NUnaR4",
@@ -996,7 +953,7 @@
       "tls": {
         "enabled": true,
         "server_name": "www.speedtest.net",
-        "insecure": false,
+        "insecure": true,
         "reality": {
           "enabled": true,
           "public_key": "AdkdFL1GILtsxWSOcwdB-budJOiw2cXac8eIPxYIokw"
@@ -1016,7 +973,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -1039,7 +996,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kampong.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -1082,7 +1039,7 @@
       "tls": {
         "enabled": true,
         "server_name": "kejiland.freewarp.eu.org",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -1101,7 +1058,7 @@
       "tls": {
         "enabled": true,
         "server_name": "speed.cloudflare.com",
-        "insecure": false,
+        "insecure": true,
         "reality": {
           "enabled": true,
           "public_key": "GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA"
@@ -1208,7 +1165,7 @@
       "tls": {
         "enabled": true,
         "server_name": "conFiG-VOrteX55-AR5.pagES.deV",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -1233,7 +1190,7 @@
       "tls": {
         "enabled": true,
         "server_name": "api.company-target.com",
-        "insecure": false,
+        "insecure": true,
         "reality": {
           "enabled": true,
           "public_key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw"
@@ -1255,7 +1212,7 @@
       "tls": {
         "enabled": true,
         "server_name": "ml0724.ysds168.shop",
-        "insecure": false
+        "insecure": true
       }
     }
   ],
