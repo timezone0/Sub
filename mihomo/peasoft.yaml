@@ -94,6 +94,7 @@ proxies:
 - {name: "🇸🇬 新加坡 02", password: "253bc477d4e43c209f2d427272968280", port: 2173, server: "160.16.72.33", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 01", password: "253bc477d4e43c209f2d427272968280", port: 6752, server: "160.16.124.55", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", password: "253bc477d4e43c209f2d427272968280", port: 3296, server: "36.156.102.88", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 03", network: "ws", password: "T@_WvT8Ho@LW%w_,", port: 2053, server: "nop-55q.pages.dev", skip-cert-verify: false, sni: "NOp-55q.pAgEs.dEv", type: "trojan", udp: true, ws-opts: {headers: {Host: "NOp-55q.pAgEs.dEv"}, path: "/trGPZDfetEwuO25SAs", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.198", tfo: false, type: "ss", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
@@ -112,6 +113,7 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "AUTO"
   type: "url-test"
@@ -131,6 +133,7 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "AI"
   type: "select"
@@ -148,6 +151,7 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "GOOGLEFCM"
   type: "select"
@@ -167,6 +171,7 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "HOYO"
   type: "select"
@@ -185,6 +190,7 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "TIKTOK"
   type: "select"
@@ -202,6 +208,7 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
