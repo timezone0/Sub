@@ -94,7 +94,8 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 01"
+        "🇬🇧 英国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -103,7 +104,8 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇷🇺 俄罗斯 01"
+        "🇬🇧 英国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,7 +114,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇷🇺 俄罗斯 01"
+        "🇬🇧 英国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,7 +126,8 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇷🇺 俄罗斯 01"
+        "🇬🇧 英国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,7 +137,8 @@
       "outbounds": [
         "direct",
         "select",
-        "🇷🇺 俄罗斯 01"
+        "🇬🇧 英国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,7 +147,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇷🇺 俄罗斯 01"
+        "🇬🇧 英国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -177,9 +183,17 @@
       }
     },
     {
-      "tag": "🇷🇺 俄罗斯 01",
+      "tag": "🇬🇧 英国 01",
       "type": "shadowsocks",
-      "server": "185.231.233.112",
+      "server": "51.15.17.169",
+      "server_port": 989,
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇲🇩 摩尔多瓦 01",
+      "type": "shadowsocks",
+      "server": "185.153.197.5",
       "server_port": 989,
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3"
