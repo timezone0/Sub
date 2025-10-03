@@ -82,120 +82,169 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇸🇬 新加坡 01", server: "aws-linkhy11.liangxin1.xyz", port: 61602, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy11.liangxin1.xyz"}
-- {name: "🇸🇬 新加坡 02", server: "aws-linkhy10.liangxin1.xyz", port: 64516, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy10.liangxin1.xyz"}
-- {name: "🇺🇸 美国 01", server: "129.153.119.42", port: 43028, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true}
-- {name: "🇺🇸 美国 02", server: "132.226.117.48", port: 49431, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true}
-- {name: "🇭🇰 香港 01", server: "aws-linkhy3.liangxin1.xyz", port: 62686, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy3.liangxin1.xyz"}
-- {name: "🇭🇰 香港 02", server: "aws-linkhy2.liangxin1.xyz", port: 64023, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy2.liangxin1.xyz"}
-- {name: "🇬🇧 英国 01", server: "79.72.81.183", port: 30670, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true}
-- {name: "🇯🇵 日本 01", server: "aws-linkhy16.liangxin1.xyz", port: 64061, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy16.liangxin1.xyz"}
-- {name: "🇯🇵 日本 02", server: "aws-linkhy17.liangxin1.xyz", port: 63059, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy17.liangxin1.xyz"}
-- {name: "🇰🇷 韩国 01", server: "aws-linkhy21.liangxin1.xyz", port: 64241, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy21.liangxin1.xyz"}
-- {name: "🇰🇷 韩国 02", server: "aws-linkhy22.liangxin1.xyz", port: 60526, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy22.liangxin1.xyz"}
-- {name: "🇨🇳 台湾 01", server: "aws-linkhy23.liangxin1.xyz", port: 62621, type: "hysteria2", password: "474c3530-aa78-439f-b1d7-647a83bc6dde", auth: "474c3530-aa78-439f-b1d7-647a83bc6dde", skip-cert-verify: true, sni: "aws-linkhy23.liangxin1.xyz"}
+- {name: "🇨🇳 台湾 01", server: "laeg.hsymanuscript.top", port: 19502, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "laeg.hsymanuscript.top", port: 19501, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇭🇰 香港 02", server: "laeg.hsymanuscript.top", port: 49519, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇯🇵 日本 01", server: "laeg.hsymanuscript.top", port: 19503, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇯🇵 日本 02", server: "laeg.hsymanuscript.top", port: 49515, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 01", server: "laeg.hsymanuscript.top", port: 49510, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 02", server: "laeg.hsymanuscript.top", port: 49513, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "laeg.hsymanuscript.top", port: 49504, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇺🇸 美国 02", server: "laeg.hsymanuscript.top", port: 49512, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇲🇾 马来 01", server: "laeg.hsymanuscript.top", port: 49517, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇻🇳 越南 01", server: "laeg.hsymanuscript.top", port: 49521, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇹🇭 泰国 01", server: "laeg.hsymanuscript.top", port: 49518, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇨🇦 加拿大 01", server: "laeg.hsymanuscript.top", port: 49507, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇬🇧 英国 01", server: "laeg.hsymanuscript.top", port: 49506, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇩🇪 德国 01", server: "laeg.hsymanuscript.top", port: 49505, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇫🇷 法国 01", server: "laeg.hsymanuscript.top", port: 49525, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇰🇷 韩国 01", server: "laeg.hsymanuscript.top", port: 49511, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇦🇺 澳大利亚 01", server: "laeg.hsymanuscript.top", port: 49514, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇮🇳 印度 01", server: "laeg.hsymanuscript.top", port: 49508, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇲🇾 马来 01"
+  - "🇻🇳 越南 01"
+  - "🇹🇭 泰国 01"
+  - "🇨🇦 加拿大 01"
   - "🇬🇧 英国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
+  - "🇩🇪 德国 01"
+  - "🇫🇷 法国 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇨🇳 台湾 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇮🇳 印度 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
+  - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇲🇾 马来 01"
+  - "🇻🇳 越南 01"
+  - "🇹🇭 泰国 01"
+  - "🇨🇦 加拿大 01"
   - "🇬🇧 英国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
+  - "🇩🇪 德国 01"
+  - "🇫🇷 法国 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇨🇳 台湾 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇮🇳 印度 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇲🇾 马来 01"
+  - "🇻🇳 越南 01"
+  - "🇹🇭 泰国 01"
+  - "🇨🇦 加拿大 01"
   - "🇬🇧 英国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
+  - "🇩🇪 德国 01"
+  - "🇫🇷 法国 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇨🇳 台湾 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇮🇳 印度 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇲🇾 马来 01"
+  - "🇻🇳 越南 01"
+  - "🇹🇭 泰国 01"
+  - "🇨🇦 加拿大 01"
   - "🇬🇧 英国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
+  - "🇩🇪 德国 01"
+  - "🇫🇷 法国 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇨🇳 台湾 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇮🇳 印度 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇲🇾 马来 01"
+  - "🇻🇳 越南 01"
+  - "🇹🇭 泰国 01"
+  - "🇨🇦 加拿大 01"
   - "🇬🇧 英国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
+  - "🇩🇪 德国 01"
+  - "🇫🇷 法国 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇨🇳 台湾 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇮🇳 印度 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇲🇾 马来 01"
+  - "🇻🇳 越南 01"
+  - "🇹🇭 泰国 01"
+  - "🇨🇦 加拿大 01"
   - "🇬🇧 英国 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
+  - "🇩🇪 德国 01"
+  - "🇫🇷 法国 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇨🇳 台湾 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇮🇳 印度 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
