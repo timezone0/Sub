@@ -82,19 +82,14 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "14.18.253.178", port: 9003, type: "ss", cipher: "chacha20", password: "v5aUUtme3jxs"}
-- {name: "🇭🇰 香港 02", server: "202.181.24.70", port: 65056, type: "vless", uuid: "c9d0ddb5-f2c1-4111-a92d-9798a2348a56", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/yz"}}
-- {name: "🇭🇰 香港 03", server: "agaungzhou01.bumbleshrimp.com", port: 46716, type: "vless", uuid: "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY"}, client-fingerprint: "chrome", network: "tcp", servername: "www.nvidia.com"}
-- {name: "🇭🇰 香港 04", server: "www.visa.com.tw", port: 443, type: "vmess", uuid: "df7a96e2-c663-48ed-9713-1c144705f79e", alterId: 0, cipher: "none", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/vmess-argo", headers: {Host: "ee-boston-therapist-cleaning.trycloudflare.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "www.visa.com.tw"}
-- {name: "🇭🇰 香港 05", server: "34.92.65.82", port: 25791, type: "vless", uuid: "711007f1-9cdf-4fd9-b5d4-d67aee173281", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "wQ60CPfcCyz9yIyVBoswYyRP-fL4r6wTBEuCEHsflCU", short-id: "57d9de10de16538d"}, client-fingerprint: "safari", network: "tcp", servername: "cloudreve.mnm.pp.ua"}
-- {name: "🇨🇳 台湾 01", server: "167.68.4.223", port: 2096, type: "trojan", password: "Aimer", sni: "epcca.ambercc.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "epcca.ambercc.filegear-sg.me"}}}
-- {name: "🇯🇵 日本 01", server: "125.94.40.162", port: 21125, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k12.tudou211.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 01", server: "xd-sh.timiwc.com", port: 32702, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k36.tudou211.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "51.81.37.20", port: 443, type: "vless", uuid: "c4fa89d4-fcb9-48ba-adbc-665181cc817f", tls: true, tfo: false, skip-cert-verify: true, network: "tcp", servername: "147135010072.sec21org.com"}
-- {name: "🇺🇸 美国 02", server: "v4.heduian.link", port: 30804, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
-- {name: "🇺🇸 美国 03", server: "v32.heduian.link", port: 30832, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
-- {name: "🇺🇸 美国 04", server: "v8.heduian.link", port: 30808, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇭🇰 香港 01", server: "www.visa.com.tw", port: 443, type: "vmess", uuid: "df7a96e2-c663-48ed-9713-1c144705f79e", alterId: 0, cipher: "none", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/vmess-argo", headers: {Host: "ee-boston-therapist-cleaning.trycloudflare.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "www.visa.com.tw"}
+- {name: "🇭🇰 香港 02", server: "14.18.253.178", port: 9003, type: "ss", cipher: "chacha20", password: "v5aUUtme3jxs"}
+- {name: "🇺🇸 美国 01", server: "v8.heduian.link", port: 30808, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 02", server: "v32.heduian.link", port: 30832, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 03", server: "v4.heduian.link", port: 30804, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
 - {name: "🇫🇷 法国 01", server: "v37.heduian.link", port: 30837, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇸🇬 新加坡 01", server: "xd-sh.timiwc.com", port: 32702, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k36.tudou211.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "125.94.40.162", port: 21125, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k12.tudou211.com", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -102,17 +97,12 @@ proxy-groups:
   - "AUTO"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🇨🇳 台湾 01"
-  - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇫🇷 法国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -121,34 +111,24 @@ proxy-groups:
   proxies:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🇨🇳 台湾 01"
-  - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇫🇷 法国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🇨🇳 台湾 01"
-  - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇫🇷 法国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -157,17 +137,12 @@ proxy-groups:
   - "DIRECT"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🇨🇳 台湾 01"
-  - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇫🇷 法国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -175,34 +150,24 @@ proxy-groups:
   - "PROXY"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🇨🇳 台湾 01"
-  - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇫🇷 法国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
-  - "🇨🇳 台湾 01"
-  - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇫🇷 法国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇯🇵 日本 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"

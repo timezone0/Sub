@@ -82,67 +82,147 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "14.18.253.178", port: 9003, type: "ss", cipher: "chacha20", password: "v5aUUtme3jxs"}
-- {name: "🇭🇰 香港 02", server: "202.181.24.70", port: 65056, type: "vless", uuid: "c9d0ddb5-f2c1-4111-a92d-9798a2348a56", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/yz"}}
-- {name: "🇭🇰 香港 03", server: "agaungzhou01.bumbleshrimp.com", port: 46716, type: "vless", uuid: "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY"}, client-fingerprint: "chrome", network: "tcp", servername: "www.nvidia.com"}
-- {name: "🇭🇰 香港 04", server: "www.visa.com.tw", port: 443, type: "vmess", uuid: "df7a96e2-c663-48ed-9713-1c144705f79e", alterId: 0, cipher: "none", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/vmess-argo", headers: {Host: "ee-boston-therapist-cleaning.trycloudflare.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "www.visa.com.tw"}
-- {name: "🇭🇰 香港 05", server: "34.92.65.82", port: 25791, type: "vless", uuid: "711007f1-9cdf-4fd9-b5d4-d67aee173281", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "wQ60CPfcCyz9yIyVBoswYyRP-fL4r6wTBEuCEHsflCU", short-id: "57d9de10de16538d"}, client-fingerprint: "safari", network: "tcp", servername: "cloudreve.mnm.pp.ua"}
-- {name: "🇭🇰 香港 06", server: "lepl01.hgfast.cloud", port: 15324, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 07", server: "lepl02.hgfast.cloud", port: 15324, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 08", server: "lepl03.hgfast.cloud", port: 15324, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 09", server: "lepl01.hgfast.cloud", port: 44534, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 10", server: "lepl02.hgfast.cloud", port: 44534, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 11", server: "lepl03.hgfast.cloud", port: 44534, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 12", server: "lepl01.hgfast.cloud", port: 24767, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 13", server: "lepl02.hgfast.cloud", port: 24767, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 14", server: "lepl03.hgfast.cloud", port: 24767, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 15", server: "specialyanmin.klian.icu", port: 15180, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 16", server: "shdz1.xcone.xyz", port: 40615, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 17", server: "lepl01.hgfast.cloud", port: 62906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 18", server: "lepl02.hgfast.cloud", port: 62906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 01", server: "www.visa.com.tw", port: 443, type: "vmess", uuid: "df7a96e2-c663-48ed-9713-1c144705f79e", alterId: 0, cipher: "none", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/vmess-argo", headers: {Host: "ee-boston-therapist-cleaning.trycloudflare.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "www.visa.com.tw"}
+- {name: "🇭🇰 香港 02", server: "14.18.253.178", port: 9003, type: "ss", cipher: "chacha20", password: "v5aUUtme3jxs"}
+- {name: "🇭🇰 香港 03", server: "202.181.24.70", port: 65056, type: "vless", uuid: "c9d0ddb5-f2c1-4111-a92d-9798a2348a56", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/yz"}}
+- {name: "🇭🇰 香港 04", server: "agaungzhou01.bumbleshrimp.com", port: 46716, type: "vless", uuid: "459b4a80-bd61-4ecd-a26b-e9c1809d9e45", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY"}, client-fingerprint: "chrome", network: "tcp", servername: "www.nvidia.com"}
+- {name: "🇭🇰 香港 05", server: "www.visa.com.tw", port: 443, type: "vmess", uuid: "df7a96e2-c663-48ed-9713-1c144705f79e", alterId: 0, cipher: "none", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/vmess-argo", headers: {Host: "ee-boston-therapist-cleaning.trycloudflare.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "www.visa.com.tw"}
+- {name: "🇭🇰 香港 06", server: "34.92.65.82", port: 25791, type: "vless", uuid: "711007f1-9cdf-4fd9-b5d4-d67aee173281", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "wQ60CPfcCyz9yIyVBoswYyRP-fL4r6wTBEuCEHsflCU", short-id: "57d9de10de16538d"}, client-fingerprint: "safari", network: "tcp", servername: "cloudreve.mnm.pp.ua"}
+- {name: "🇭🇰 香港 07", server: "lepl01.hgfast.cloud", port: 15324, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 08", server: "lepl02.hgfast.cloud", port: 15324, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 09", server: "lepl03.hgfast.cloud", port: 15324, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 10", server: "lepl01.hgfast.cloud", port: 44534, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 11", server: "lepl02.hgfast.cloud", port: 44534, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 12", server: "lepl03.hgfast.cloud", port: 44534, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 13", server: "lepl01.hgfast.cloud", port: 24767, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 14", server: "lepl02.hgfast.cloud", port: 24767, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 15", server: "lepl03.hgfast.cloud", port: 24767, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 16", server: "specialyanmin.klian.icu", port: 15180, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 17", server: "shdz1.xcone.xyz", port: 40615, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 18", server: "lepl01.hgfast.cloud", port: 62906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇰 香港 19", server: "lepl02.hgfast.cloud", port: 62906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 20", server: "hkbn2g2.pmxu.link", port: 32432, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 21", server: "specialyanmin.klian.icu", port: 11192, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 22", server: "shdz1.xcone.xyz", port: 53521, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 23", server: "lepl01.hgfast.cloud", port: 44834, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 24", server: "lepl02.hgfast.cloud", port: 44834, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 25", server: "lepl03.hgfast.cloud", port: 44834, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 26", server: "hkbn.oshab.de", port: 30055, type: "ss", cipher: "2022-blake3-aes-128-gcm", password: "YmM1MGI1MjQ5Mjg5Yjg5Yw==:NzZlYTAyOGUtYWE4Ny00OQ=="}
-- {name: "🇭🇰 香港 27", server: "specialyanmin.klian.icu", port: 30868, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 28", server: "shdz1.xcone.xyz", port: 34051, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 29", server: "lepl01.hgfast.cloud", port: 17085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 30", server: "lepl02.hgfast.cloud", port: 17085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 31", server: "lepl03.hgfast.cloud", port: 17085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 32", server: "hkbn1g-vivi.pmxu.link", port: 32499, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 33", server: "specialyanmin.klian.icu", port: 15853, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 34", server: "shdz1.xcone.xyz", port: 49272, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 35", server: "lepl01.hgfast.cloud", port: 12378, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 36", server: "lepl02.hgfast.cloud", port: 12378, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 37", server: "lepl03.hgfast.cloud", port: 12378, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 38", server: "specialyanmin.klian.icu", port: 58814, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 39", server: "shdz1.xcone.xyz", port: 40207, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 40", server: "lepl01.hgfast.cloud", port: 40826, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 41", server: "lepl02.hgfast.cloud", port: 40826, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 20", server: "lepl02.hgfast.cloud", port: 62906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 21", server: "hkbn2g2.pmxu.link", port: 32432, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 22", server: "specialyanmin.klian.icu", port: 11192, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 23", server: "shdz1.xcone.xyz", port: 53521, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 24", server: "lepl01.hgfast.cloud", port: 44834, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 25", server: "lepl02.hgfast.cloud", port: 44834, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 26", server: "lepl03.hgfast.cloud", port: 44834, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 27", server: "hkbn.oshab.de", port: 30055, type: "ss", cipher: "2022-blake3-aes-128-gcm", password: "YmM1MGI1MjQ5Mjg5Yjg5Yw==:NzZlYTAyOGUtYWE4Ny00OQ=="}
+- {name: "🇭🇰 香港 28", server: "specialyanmin.klian.icu", port: 30868, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 29", server: "shdz1.xcone.xyz", port: 34051, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 30", server: "lepl01.hgfast.cloud", port: 17085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 31", server: "lepl02.hgfast.cloud", port: 17085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 32", server: "lepl03.hgfast.cloud", port: 17085, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 33", server: "hkbn1g-vivi.pmxu.link", port: 32499, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 34", server: "specialyanmin.klian.icu", port: 15853, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 35", server: "shdz1.xcone.xyz", port: 49272, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 36", server: "lepl01.hgfast.cloud", port: 12378, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 37", server: "lepl02.hgfast.cloud", port: 12378, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 38", server: "lepl03.hgfast.cloud", port: 12378, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 39", server: "specialyanmin.klian.icu", port: 58814, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 40", server: "shdz1.xcone.xyz", port: 40207, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 41", server: "lepl01.hgfast.cloud", port: 40826, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇰 香港 42", server: "lepl02.hgfast.cloud", port: 40826, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 43", server: "specialyanmin.klian.icu", port: 57390, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 44", server: "shdz1.xcone.xyz", port: 49809, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 45", server: "lepl01.hgfast.cloud", port: 60107, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 43", server: "lepl02.hgfast.cloud", port: 40826, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 44", server: "specialyanmin.klian.icu", port: 57390, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 45", server: "shdz1.xcone.xyz", port: 49809, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇰 香港 46", server: "lepl01.hgfast.cloud", port: 60107, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇰 香港 47", server: "lepl01.hgfast.cloud", port: 60107, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 48", server: "hkt1g-qf.pmxu.link", port: 34221, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 49", server: "specialyanmin.klian.icu", port: 26592, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 50", server: "shdz1.xcone.xyz", port: 55427, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 51", server: "lepl01.hgfast.cloud", port: 32368, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 52", server: "lepl02.hgfast.cloud", port: 32368, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 48", server: "lepl01.hgfast.cloud", port: 60107, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 49", server: "hkt1g-qf.pmxu.link", port: 34221, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 50", server: "specialyanmin.klian.icu", port: 26592, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 51", server: "shdz1.xcone.xyz", port: 55427, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 52", server: "lepl01.hgfast.cloud", port: 32368, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇰 香港 53", server: "lepl02.hgfast.cloud", port: 32368, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 54", server: "specialyanmin.klian.icu", port: 32592, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 55", server: "shdz1.xcone.xyz", port: 19004, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 56", server: "lepl01.hgfast.cloud", port: 49352, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 57", server: "lepl02.hgfast.cloud", port: 49352, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 58", server: "lepl03.hgfast.cloud", port: 49352, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇭🇰 香港 59", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hk01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
-- {name: "🇭🇰 香港 60", server: "laeg.hsymanuscript.top", port: 19501, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇭🇰 香港 61", server: "laeg.hsymanuscript.top", port: 49519, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇭🇰 香港 54", server: "lepl02.hgfast.cloud", port: 32368, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 55", server: "specialyanmin.klian.icu", port: 32592, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 56", server: "shdz1.xcone.xyz", port: 19004, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 57", server: "lepl01.hgfast.cloud", port: 49352, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 58", server: "lepl02.hgfast.cloud", port: 49352, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 59", server: "lepl03.hgfast.cloud", port: 49352, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇭🇰 香港 60", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hk01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
+- {name: "🇭🇰 香港 61", server: "laeg.hsymanuscript.top", port: 19501, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇭🇰 香港 62", server: "laeg.hsymanuscript.top", port: 49519, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇺🇸 美国 01", server: "v8.heduian.link", port: 30808, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 02", server: "v32.heduian.link", port: 30832, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 03", server: "v4.heduian.link", port: 30804, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇺🇸 美国 04", server: "51.81.37.20", port: 443, type: "vless", uuid: "c4fa89d4-fcb9-48ba-adbc-665181cc817f", tls: true, tfo: false, skip-cert-verify: true, network: "tcp", servername: "147135010072.sec21org.com"}
+- {name: "🇺🇸 美国 05", server: "v4.heduian.link", port: 30804, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇺🇸 美国 06", server: "v32.heduian.link", port: 30832, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 07", server: "v8.heduian.link", port: 30808, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
+- {name: "🇺🇸 美国 08", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "us01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
+- {name: "🇺🇸 美国 09", server: "shdz1.xcone.xyz", port: 21964, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 10", server: "specialyanmin.klian.icu", port: 25161, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 11", server: "shdz1.xcone.xyz", port: 25840, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 12", server: "specialyanmin.klian.icu", port: 14383, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 13", server: "shdz1.xcone.xyz", port: 32548, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 14", server: "specialyanmin.klian.icu", port: 30309, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 15", server: "app01.hgfast.cloud", port: 32432, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 16", server: "shdz1.xcone.xyz", port: 20081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 17", server: "shhh001.oraclenat.cc", port: 21313, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 18", server: "shdz1.xcone.xyz", port: 29014, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 19", server: "sanjose-02.oraclenat.cc", port: 23424, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 20", server: "shdz1.xcone.xyz", port: 20684, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 21", server: "shdz1.xcone.xyz", port: 22917, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 22", server: "shdz1.xcone.xyz", port: 57900, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 23", server: "shdz1.xcone.xyz", port: 49906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 24", server: "shdz1.xcone.xyz", port: 37441, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 25", server: "shdz1.xcone.xyz", port: 27717, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 26", server: "shdz1.xcone.xyz", port: 29048, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 27", server: "shdz1.xcone.xyz", port: 14989, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇺🇸 美国 28", server: "laeg.hsymanuscript.top", port: 49504, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇺🇸 美国 29", server: "laeg.hsymanuscript.top", port: 49512, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇫🇷 法国 01", server: "v37.heduian.link", port: 30837, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇫🇷 法国 02", server: "v37.heduian.link", port: 30837, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
+- {name: "🇫🇷 法国 03", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "de01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
+- {name: "🇫🇷 法国 04", server: "shdz1.xcone.xyz", port: 13604, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 05", server: "mar-01.oci.ee", port: 43535, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 06", server: "shdz1.xcone.xyz", port: 17549, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 07", server: "shdz1.xcone.xyz", port: 51250, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 08", server: "shdz1.xcone.xyz", port: 52446, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 09", server: "shdz1.xcone.xyz", port: 49087, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 10", server: "paris-1.oraclenat.cc", port: 43366, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇫🇷 法国 11", server: "laeg.hsymanuscript.top", port: 49525, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
+- {name: "🇸🇬 新加坡 01", server: "xd-sh.timiwc.com", port: 32702, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k36.tudou211.com", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 02", server: "xd-sh.timiwc.com", port: 32702, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k36.tudou211.com", skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 03", server: "specialyanmin.klian.icu", port: 44920, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 04", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sg01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
+- {name: "🇸🇬 新加坡 05", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "yhnsb01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
+- {name: "🇸🇬 新加坡 06", server: "shdz1.xcone.xyz", port: 49418, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 07", server: "specialyanmin.klian.icu", port: 20062, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 08", server: "sg2-b2.oraclenat.cc", port: 12666, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 09", server: "shdz1.xcone.xyz", port: 56277, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 10", server: "specialyanmin.klian.icu", port: 53229, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 11", server: "shdz1.xcone.xyz", port: 18171, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 12", server: "specialyanmin.klian.icu", port: 44467, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 13", server: "shdz1.xcone.xyz", port: 35986, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 14", server: "specialyanmin.klian.icu", port: 32621, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 15", server: "shdz1.xcone.xyz", port: 47519, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 16", server: "specialyanmin.klian.icu", port: 31233, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇬 新加坡 17", server: "laeg.hsymanuscript.top", port: 49510, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 18", server: "laeg.hsymanuscript.top", port: 49513, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "125.94.40.162", port: 21125, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k12.tudou211.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 02", server: "125.94.40.162", port: 21125, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k12.tudou211.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 03", server: "specialyanmin.klian.icu", port: 44920, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 04", server: "shdz1.xcone.xyz", port: 54653, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 05", server: "specialyanmin.klian.icu", port: 10569, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 06", server: "shdz1.xcone.xyz", port: 41853, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 07", server: "specialyanmin.klian.icu", port: 50809, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 08", server: "shdz1.xcone.xyz", port: 59973, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 09", server: "specialyanmin.klian.icu", port: 13726, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 10", server: "shdz1.xcone.xyz", port: 57013, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 11", server: "app03.hgfast.cloud", port: 23421, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 12", server: "shdz1.xcone.xyz", port: 59878, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 13", server: "specialyanmin.klian.icu", port: 17136, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 14", server: "shdz1.xcone.xyz", port: 47123, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 15", server: "specialyanmin.klian.icu", port: 42768, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 16", server: "shdz1.xcone.xyz", port: 39804, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 17", server: "specialyanmin.klian.icu", port: 17478, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 18", server: "shdz1.xcone.xyz", port: 18708, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 19", server: "specialyanmin.klian.icu", port: 29856, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇯🇵 日本 20", server: "laeg.hsymanuscript.top", port: 19503, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
+- {name: "🇯🇵 日本 21", server: "laeg.hsymanuscript.top", port: 49515, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
 - {name: "🇨🇳 台湾 01", server: "167.68.4.223", port: 2096, type: "trojan", password: "Aimer", sni: "epcca.ambercc.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "epcca.ambercc.filegear-sg.me"}}}
 - {name: "🇨🇳 台湾 02", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "kr01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
 - {name: "🇨🇳 台湾 03", server: "shdz1.xcone.xyz", port: 19053, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
@@ -161,82 +241,6 @@ proxies:
 - {name: "🇨🇳 台湾 16", server: "specialyanmin.klian.icu", port: 42014, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇨🇳 台湾 17", server: "tw-ty-line1-1-4.sudatech.store", port: 20252, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇨🇳 台湾 18", server: "laeg.hsymanuscript.top", port: 19502, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 01", server: "125.94.40.162", port: 21125, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k12.tudou211.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 02", server: "specialyanmin.klian.icu", port: 44920, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 03", server: "shdz1.xcone.xyz", port: 54653, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 04", server: "specialyanmin.klian.icu", port: 10569, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 05", server: "shdz1.xcone.xyz", port: 41853, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 06", server: "specialyanmin.klian.icu", port: 50809, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 07", server: "shdz1.xcone.xyz", port: 59973, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 08", server: "specialyanmin.klian.icu", port: 13726, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 09", server: "shdz1.xcone.xyz", port: 57013, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 10", server: "app03.hgfast.cloud", port: 23421, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 11", server: "shdz1.xcone.xyz", port: 59878, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 12", server: "specialyanmin.klian.icu", port: 17136, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 13", server: "shdz1.xcone.xyz", port: 47123, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 14", server: "specialyanmin.klian.icu", port: 42768, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 15", server: "shdz1.xcone.xyz", port: 39804, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 16", server: "specialyanmin.klian.icu", port: 17478, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 17", server: "shdz1.xcone.xyz", port: 18708, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 18", server: "specialyanmin.klian.icu", port: 29856, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇯🇵 日本 19", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "jp01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
-- {name: "🇯🇵 日本 20", server: "laeg.hsymanuscript.top", port: 19503, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 21", server: "laeg.hsymanuscript.top", port: 49515, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 01", server: "xd-sh.timiwc.com", port: 32702, type: "trojan", password: "f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11", sni: "k36.tudou211.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 02", server: "specialyanmin.klian.icu", port: 44920, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 03", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sg01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
-- {name: "🇸🇬 新加坡 04", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "yhnsb01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
-- {name: "🇸🇬 新加坡 05", server: "shdz1.xcone.xyz", port: 49418, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 06", server: "specialyanmin.klian.icu", port: 20062, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 07", server: "sg2-b2.oraclenat.cc", port: 12666, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 08", server: "shdz1.xcone.xyz", port: 56277, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 09", server: "specialyanmin.klian.icu", port: 53229, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 10", server: "shdz1.xcone.xyz", port: 18171, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 11", server: "specialyanmin.klian.icu", port: 44467, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 12", server: "shdz1.xcone.xyz", port: 35986, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 13", server: "specialyanmin.klian.icu", port: 32621, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 14", server: "shdz1.xcone.xyz", port: 47519, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 15", server: "specialyanmin.klian.icu", port: 31233, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇬 新加坡 16", server: "laeg.hsymanuscript.top", port: 49510, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 17", server: "laeg.hsymanuscript.top", port: 49513, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "51.81.37.20", port: 443, type: "vless", uuid: "c4fa89d4-fcb9-48ba-adbc-665181cc817f", tls: true, tfo: false, skip-cert-verify: true, network: "tcp", servername: "147135010072.sec21org.com"}
-- {name: "🇺🇸 美国 02", server: "v4.heduian.link", port: 30804, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
-- {name: "🇺🇸 美国 03", server: "v32.heduian.link", port: 30832, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
-- {name: "🇺🇸 美国 04", server: "v8.heduian.link", port: 30808, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "baidu.com"}}}
-- {name: "🇺🇸 美国 05", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "us01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
-- {name: "🇺🇸 美国 06", server: "shdz1.xcone.xyz", port: 21964, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 07", server: "specialyanmin.klian.icu", port: 25161, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 08", server: "shdz1.xcone.xyz", port: 25840, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 09", server: "specialyanmin.klian.icu", port: 14383, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 10", server: "shdz1.xcone.xyz", port: 32548, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 11", server: "specialyanmin.klian.icu", port: 30309, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 12", server: "app01.hgfast.cloud", port: 32432, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 13", server: "shdz1.xcone.xyz", port: 20081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 14", server: "shhh001.oraclenat.cc", port: 21313, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 15", server: "shdz1.xcone.xyz", port: 53738, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 16", server: "oci-chicago.oraclenat.cc", port: 48943, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 17", server: "shdz1.xcone.xyz", port: 29014, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 18", server: "sanjose-02.oraclenat.cc", port: 23424, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 19", server: "shdz1.xcone.xyz", port: 20684, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 20", server: "shdz1.xcone.xyz", port: 22917, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 21", server: "shdz1.xcone.xyz", port: 57900, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 22", server: "shdz1.xcone.xyz", port: 49906, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 23", server: "shdz1.xcone.xyz", port: 37441, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 24", server: "shdz1.xcone.xyz", port: 27717, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 25", server: "shdz1.xcone.xyz", port: 29048, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 26", server: "shdz1.xcone.xyz", port: 14989, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇺🇸 美国 27", server: "laeg.hsymanuscript.top", port: 49504, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇺🇸 美国 28", server: "laeg.hsymanuscript.top", port: 49512, type: "vmess", uuid: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇫🇷 法国 01", server: "v37.heduian.link", port: 30837, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}}
-- {name: "🇫🇷 法国 02", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "de01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
-- {name: "🇫🇷 法国 03", server: "shdz1.xcone.xyz", port: 13604, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 04", server: "mar-01.oci.ee", port: 43535, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 05", server: "shdz1.xcone.xyz", port: 17549, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 06", server: "shdz1.xcone.xyz", port: 51250, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 07", server: "shdz1.xcone.xyz", port: 52446, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 08", server: "shdz1.xcone.xyz", port: 49087, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 09", server: "paris-1.oraclenat.cc", port: 43366, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇫🇷 法国 10", server: "laeg.hsymanuscript.top", port: 49525, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e1d5b4f9-bf5f-4006-add5-4b12e9198ab5"}
 - {name: "🇹🇬 多哥 01", server: "specialyanmin.klian.icu", port: 44920, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇹🇬 多哥 02", server: "shdz1.xcone.xyz", port: 48600, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇻🇳 越南 01", server: "best.cdn.sqeven.cn", port: 8080, type: "vmess", uuid: "76ea028e-aa87-49c3-893b-49c5f961ddd6", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "ne01.hgfastglobal.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
@@ -280,12 +284,10 @@ proxies:
 - {name: "🇹🇷 土耳其 01", server: "shdz1.xcone.xyz", port: 42862, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇮🇪 爱尔兰 01", server: "shdz1.xcone.xyz", port: 43423, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇮🇪 爱尔兰 02", server: "shdz1.xcone.xyz", port: 54061, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇪 瑞典 01", server: "shdz1.xcone.xyz", port: 24814, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇸🇪 瑞典 02", server: "shdz1.xcone.xyz", port: 16526, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇸🇪 瑞典 01", server: "shdz1.xcone.xyz", port: 16526, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇳🇱 荷兰 01", server: "shdz1.xcone.xyz", port: 45954, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇳🇱 荷兰 02", server: "shdz1.xcone.xyz", port: 25965, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇳🇱 荷兰 03", server: "nl.mlampah-mlampah.eu.org", port: 32131, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇱🇻 拉脱维亚 01", server: "shdz1.xcone.xyz", port: 20301, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇪🇬 埃及 01", server: "shdz1.xcone.xyz", port: 48385, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇺 匈牙利 01", server: "shdz1.xcone.xyz", port: 58517, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇭🇺 匈牙利 02", server: "shdz1.xcone.xyz", port: 23099, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
@@ -326,9 +328,8 @@ proxies:
 - {name: "🇰🇬 吉尔吉斯斯坦 01", server: "shdz1.xcone.xyz", port: 57813, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇮🇱 以色列 01", server: "shdz1.xcone.xyz", port: 36527, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇮🇱 以色列 02", server: "jerusalem-d.oraclenat.cc", port: 12313, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇲🇽 墨西哥 01", server: "shdz1.xcone.xyz", port: 45147, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇲🇽 墨西哥 02", server: "shdz1.xcone.xyz", port: 29263, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🇲🇽 墨西哥 03", server: "mty-01.oci.ee", port: 23235, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇲🇽 墨西哥 01", server: "shdz1.xcone.xyz", port: 29263, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
+- {name: "🇲🇽 墨西哥 02", server: "mty-01.oci.ee", port: 23235, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇸🇦 沙特阿拉伯 01", server: "shdz1.xcone.xyz", port: 16007, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇸🇦 沙特阿拉伯 02", server: "jed.mlampah-mlampah.eu.org", port: 43531, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇦🇪 阿联酋 01", server: "shdz1.xcone.xyz", port: 56866, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
@@ -341,7 +342,6 @@ proxies:
 - {name: "🇨🇱 智利 04", server: "val-01.oci.ee", port: 12313, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇨🇿 捷克 01", server: "shdz1.xcone.xyz", port: 55362, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇨🇿 捷克 02", server: "shdz1.xcone.xyz", port: 16233, type: "ss", cipher: "aes-128-gcm", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
-- {name: "🏴‍☠️ 阿曼 01", server: "shdz1.xcone.xyz", port: 49255, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇵🇱 波兰 01", server: "shdz1.xcone.xyz", port: 26097, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇨🇴 哥伦比亚 01", server: "shdz1.xcone.xyz", port: 42587, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
 - {name: "🇨🇴 哥伦比亚 02", server: "bogota11.oci.ee", port: 23424, type: "ss", cipher: "chacha20-ietf-poly1305", password: "76ea028e-aa87-49c3-893b-49c5f961ddd6"}
@@ -412,62 +412,7 @@ proxy-groups:
   - "🇭🇰 香港 59"
   - "🇭🇰 香港 60"
   - "🇭🇰 香港 61"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
-  - "🇨🇳 台湾 12"
-  - "🇨🇳 台湾 13"
-  - "🇨🇳 台湾 14"
-  - "🇨🇳 台湾 15"
-  - "🇨🇳 台湾 16"
-  - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇯🇵 日本 11"
-  - "🇯🇵 日本 12"
-  - "🇯🇵 日本 13"
-  - "🇯🇵 日本 14"
-  - "🇯🇵 日本 15"
-  - "🇯🇵 日本 16"
-  - "🇯🇵 日本 17"
-  - "🇯🇵 日本 18"
-  - "🇯🇵 日本 19"
-  - "🇯🇵 日本 20"
-  - "🇯🇵 日本 21"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
+  - "🇭🇰 香港 62"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -496,6 +441,7 @@ proxy-groups:
   - "🇺🇸 美国 26"
   - "🇺🇸 美国 27"
   - "🇺🇸 美国 28"
+  - "🇺🇸 美国 29"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -506,6 +452,64 @@ proxy-groups:
   - "🇫🇷 法国 08"
   - "🇫🇷 法国 09"
   - "🇫🇷 法国 10"
+  - "🇫🇷 法国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇯🇵 日本 11"
+  - "🇯🇵 日本 12"
+  - "🇯🇵 日本 13"
+  - "🇯🇵 日本 14"
+  - "🇯🇵 日本 15"
+  - "🇯🇵 日本 16"
+  - "🇯🇵 日本 17"
+  - "🇯🇵 日本 18"
+  - "🇯🇵 日本 19"
+  - "🇯🇵 日本 20"
+  - "🇯🇵 日本 21"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
   - "🇹🇬 多哥 01"
   - "🇹🇬 多哥 02"
   - "🇻🇳 越南 01"
@@ -550,11 +554,9 @@ proxy-groups:
   - "🇮🇪 爱尔兰 01"
   - "🇮🇪 爱尔兰 02"
   - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇱🇻 拉脱维亚 01"
   - "🇪🇬 埃及 01"
   - "🇭🇺 匈牙利 01"
   - "🇭🇺 匈牙利 02"
@@ -597,7 +599,6 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇲🇽 墨西哥 01"
   - "🇲🇽 墨西哥 02"
-  - "🇲🇽 墨西哥 03"
   - "🇸🇦 沙特阿拉伯 01"
   - "🇸🇦 沙特阿拉伯 02"
   - "🇦🇪 阿联酋 01"
@@ -610,7 +611,6 @@ proxy-groups:
   - "🇨🇱 智利 04"
   - "🇨🇿 捷克 01"
   - "🇨🇿 捷克 02"
-  - "🏴‍☠️ 阿曼 01"
   - "🇵🇱 波兰 01"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
@@ -682,62 +682,7 @@ proxy-groups:
   - "🇭🇰 香港 59"
   - "🇭🇰 香港 60"
   - "🇭🇰 香港 61"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
-  - "🇨🇳 台湾 12"
-  - "🇨🇳 台湾 13"
-  - "🇨🇳 台湾 14"
-  - "🇨🇳 台湾 15"
-  - "🇨🇳 台湾 16"
-  - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇯🇵 日本 11"
-  - "🇯🇵 日本 12"
-  - "🇯🇵 日本 13"
-  - "🇯🇵 日本 14"
-  - "🇯🇵 日本 15"
-  - "🇯🇵 日本 16"
-  - "🇯🇵 日本 17"
-  - "🇯🇵 日本 18"
-  - "🇯🇵 日本 19"
-  - "🇯🇵 日本 20"
-  - "🇯🇵 日本 21"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
+  - "🇭🇰 香港 62"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -766,6 +711,7 @@ proxy-groups:
   - "🇺🇸 美国 26"
   - "🇺🇸 美国 27"
   - "🇺🇸 美国 28"
+  - "🇺🇸 美国 29"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -776,6 +722,64 @@ proxy-groups:
   - "🇫🇷 法国 08"
   - "🇫🇷 法国 09"
   - "🇫🇷 法国 10"
+  - "🇫🇷 法国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇯🇵 日本 11"
+  - "🇯🇵 日本 12"
+  - "🇯🇵 日本 13"
+  - "🇯🇵 日本 14"
+  - "🇯🇵 日本 15"
+  - "🇯🇵 日本 16"
+  - "🇯🇵 日本 17"
+  - "🇯🇵 日本 18"
+  - "🇯🇵 日本 19"
+  - "🇯🇵 日本 20"
+  - "🇯🇵 日本 21"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
   - "🇹🇬 多哥 01"
   - "🇹🇬 多哥 02"
   - "🇻🇳 越南 01"
@@ -820,11 +824,9 @@ proxy-groups:
   - "🇮🇪 爱尔兰 01"
   - "🇮🇪 爱尔兰 02"
   - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇱🇻 拉脱维亚 01"
   - "🇪🇬 埃及 01"
   - "🇭🇺 匈牙利 01"
   - "🇭🇺 匈牙利 02"
@@ -867,7 +869,6 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇲🇽 墨西哥 01"
   - "🇲🇽 墨西哥 02"
-  - "🇲🇽 墨西哥 03"
   - "🇸🇦 沙特阿拉伯 01"
   - "🇸🇦 沙特阿拉伯 02"
   - "🇦🇪 阿联酋 01"
@@ -880,7 +881,6 @@ proxy-groups:
   - "🇨🇱 智利 04"
   - "🇨🇿 捷克 01"
   - "🇨🇿 捷克 02"
-  - "🏴‍☠️ 阿曼 01"
   - "🇵🇱 波兰 01"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
@@ -950,62 +950,7 @@ proxy-groups:
   - "🇭🇰 香港 59"
   - "🇭🇰 香港 60"
   - "🇭🇰 香港 61"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
-  - "🇨🇳 台湾 12"
-  - "🇨🇳 台湾 13"
-  - "🇨🇳 台湾 14"
-  - "🇨🇳 台湾 15"
-  - "🇨🇳 台湾 16"
-  - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇯🇵 日本 11"
-  - "🇯🇵 日本 12"
-  - "🇯🇵 日本 13"
-  - "🇯🇵 日本 14"
-  - "🇯🇵 日本 15"
-  - "🇯🇵 日本 16"
-  - "🇯🇵 日本 17"
-  - "🇯🇵 日本 18"
-  - "🇯🇵 日本 19"
-  - "🇯🇵 日本 20"
-  - "🇯🇵 日本 21"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
+  - "🇭🇰 香港 62"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1034,6 +979,7 @@ proxy-groups:
   - "🇺🇸 美国 26"
   - "🇺🇸 美国 27"
   - "🇺🇸 美国 28"
+  - "🇺🇸 美国 29"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -1044,6 +990,64 @@ proxy-groups:
   - "🇫🇷 法国 08"
   - "🇫🇷 法国 09"
   - "🇫🇷 法国 10"
+  - "🇫🇷 法国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇯🇵 日本 11"
+  - "🇯🇵 日本 12"
+  - "🇯🇵 日本 13"
+  - "🇯🇵 日本 14"
+  - "🇯🇵 日本 15"
+  - "🇯🇵 日本 16"
+  - "🇯🇵 日本 17"
+  - "🇯🇵 日本 18"
+  - "🇯🇵 日本 19"
+  - "🇯🇵 日本 20"
+  - "🇯🇵 日本 21"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
   - "🇹🇬 多哥 01"
   - "🇹🇬 多哥 02"
   - "🇻🇳 越南 01"
@@ -1088,11 +1092,9 @@ proxy-groups:
   - "🇮🇪 爱尔兰 01"
   - "🇮🇪 爱尔兰 02"
   - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇱🇻 拉脱维亚 01"
   - "🇪🇬 埃及 01"
   - "🇭🇺 匈牙利 01"
   - "🇭🇺 匈牙利 02"
@@ -1135,7 +1137,6 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇲🇽 墨西哥 01"
   - "🇲🇽 墨西哥 02"
-  - "🇲🇽 墨西哥 03"
   - "🇸🇦 沙特阿拉伯 01"
   - "🇸🇦 沙特阿拉伯 02"
   - "🇦🇪 阿联酋 01"
@@ -1148,7 +1149,6 @@ proxy-groups:
   - "🇨🇱 智利 04"
   - "🇨🇿 捷克 01"
   - "🇨🇿 捷克 02"
-  - "🏴‍☠️ 阿曼 01"
   - "🇵🇱 波兰 01"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
@@ -1220,62 +1220,7 @@ proxy-groups:
   - "🇭🇰 香港 59"
   - "🇭🇰 香港 60"
   - "🇭🇰 香港 61"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
-  - "🇨🇳 台湾 12"
-  - "🇨🇳 台湾 13"
-  - "🇨🇳 台湾 14"
-  - "🇨🇳 台湾 15"
-  - "🇨🇳 台湾 16"
-  - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇯🇵 日本 11"
-  - "🇯🇵 日本 12"
-  - "🇯🇵 日本 13"
-  - "🇯🇵 日本 14"
-  - "🇯🇵 日本 15"
-  - "🇯🇵 日本 16"
-  - "🇯🇵 日本 17"
-  - "🇯🇵 日本 18"
-  - "🇯🇵 日本 19"
-  - "🇯🇵 日本 20"
-  - "🇯🇵 日本 21"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
+  - "🇭🇰 香港 62"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1304,6 +1249,7 @@ proxy-groups:
   - "🇺🇸 美国 26"
   - "🇺🇸 美国 27"
   - "🇺🇸 美国 28"
+  - "🇺🇸 美国 29"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -1314,6 +1260,64 @@ proxy-groups:
   - "🇫🇷 法国 08"
   - "🇫🇷 法国 09"
   - "🇫🇷 法国 10"
+  - "🇫🇷 法国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇯🇵 日本 11"
+  - "🇯🇵 日本 12"
+  - "🇯🇵 日本 13"
+  - "🇯🇵 日本 14"
+  - "🇯🇵 日本 15"
+  - "🇯🇵 日本 16"
+  - "🇯🇵 日本 17"
+  - "🇯🇵 日本 18"
+  - "🇯🇵 日本 19"
+  - "🇯🇵 日本 20"
+  - "🇯🇵 日本 21"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
   - "🇹🇬 多哥 01"
   - "🇹🇬 多哥 02"
   - "🇻🇳 越南 01"
@@ -1358,11 +1362,9 @@ proxy-groups:
   - "🇮🇪 爱尔兰 01"
   - "🇮🇪 爱尔兰 02"
   - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇱🇻 拉脱维亚 01"
   - "🇪🇬 埃及 01"
   - "🇭🇺 匈牙利 01"
   - "🇭🇺 匈牙利 02"
@@ -1405,7 +1407,6 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇲🇽 墨西哥 01"
   - "🇲🇽 墨西哥 02"
-  - "🇲🇽 墨西哥 03"
   - "🇸🇦 沙特阿拉伯 01"
   - "🇸🇦 沙特阿拉伯 02"
   - "🇦🇪 阿联酋 01"
@@ -1418,7 +1419,6 @@ proxy-groups:
   - "🇨🇱 智利 04"
   - "🇨🇿 捷克 01"
   - "🇨🇿 捷克 02"
-  - "🏴‍☠️ 阿曼 01"
   - "🇵🇱 波兰 01"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
@@ -1489,62 +1489,7 @@ proxy-groups:
   - "🇭🇰 香港 59"
   - "🇭🇰 香港 60"
   - "🇭🇰 香港 61"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
-  - "🇨🇳 台湾 12"
-  - "🇨🇳 台湾 13"
-  - "🇨🇳 台湾 14"
-  - "🇨🇳 台湾 15"
-  - "🇨🇳 台湾 16"
-  - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇯🇵 日本 11"
-  - "🇯🇵 日本 12"
-  - "🇯🇵 日本 13"
-  - "🇯🇵 日本 14"
-  - "🇯🇵 日本 15"
-  - "🇯🇵 日本 16"
-  - "🇯🇵 日本 17"
-  - "🇯🇵 日本 18"
-  - "🇯🇵 日本 19"
-  - "🇯🇵 日本 20"
-  - "🇯🇵 日本 21"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
+  - "🇭🇰 香港 62"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1573,6 +1518,7 @@ proxy-groups:
   - "🇺🇸 美国 26"
   - "🇺🇸 美国 27"
   - "🇺🇸 美国 28"
+  - "🇺🇸 美国 29"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -1583,6 +1529,64 @@ proxy-groups:
   - "🇫🇷 法国 08"
   - "🇫🇷 法国 09"
   - "🇫🇷 法国 10"
+  - "🇫🇷 法国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇯🇵 日本 11"
+  - "🇯🇵 日本 12"
+  - "🇯🇵 日本 13"
+  - "🇯🇵 日本 14"
+  - "🇯🇵 日本 15"
+  - "🇯🇵 日本 16"
+  - "🇯🇵 日本 17"
+  - "🇯🇵 日本 18"
+  - "🇯🇵 日本 19"
+  - "🇯🇵 日本 20"
+  - "🇯🇵 日本 21"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
   - "🇹🇬 多哥 01"
   - "🇹🇬 多哥 02"
   - "🇻🇳 越南 01"
@@ -1627,11 +1631,9 @@ proxy-groups:
   - "🇮🇪 爱尔兰 01"
   - "🇮🇪 爱尔兰 02"
   - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇱🇻 拉脱维亚 01"
   - "🇪🇬 埃及 01"
   - "🇭🇺 匈牙利 01"
   - "🇭🇺 匈牙利 02"
@@ -1674,7 +1676,6 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇲🇽 墨西哥 01"
   - "🇲🇽 墨西哥 02"
-  - "🇲🇽 墨西哥 03"
   - "🇸🇦 沙特阿拉伯 01"
   - "🇸🇦 沙特阿拉伯 02"
   - "🇦🇪 阿联酋 01"
@@ -1687,7 +1688,6 @@ proxy-groups:
   - "🇨🇱 智利 04"
   - "🇨🇿 捷克 01"
   - "🇨🇿 捷克 02"
-  - "🏴‍☠️ 阿曼 01"
   - "🇵🇱 波兰 01"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
@@ -1757,62 +1757,7 @@ proxy-groups:
   - "🇭🇰 香港 59"
   - "🇭🇰 香港 60"
   - "🇭🇰 香港 61"
-  - "🇨🇳 台湾 01"
-  - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇨🇳 台湾 06"
-  - "🇨🇳 台湾 07"
-  - "🇨🇳 台湾 08"
-  - "🇨🇳 台湾 09"
-  - "🇨🇳 台湾 10"
-  - "🇨🇳 台湾 11"
-  - "🇨🇳 台湾 12"
-  - "🇨🇳 台湾 13"
-  - "🇨🇳 台湾 14"
-  - "🇨🇳 台湾 15"
-  - "🇨🇳 台湾 16"
-  - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇯🇵 日本 09"
-  - "🇯🇵 日本 10"
-  - "🇯🇵 日本 11"
-  - "🇯🇵 日本 12"
-  - "🇯🇵 日本 13"
-  - "🇯🇵 日本 14"
-  - "🇯🇵 日本 15"
-  - "🇯🇵 日本 16"
-  - "🇯🇵 日本 17"
-  - "🇯🇵 日本 18"
-  - "🇯🇵 日本 19"
-  - "🇯🇵 日本 20"
-  - "🇯🇵 日本 21"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
-  - "🇸🇬 新加坡 07"
-  - "🇸🇬 新加坡 08"
-  - "🇸🇬 新加坡 09"
-  - "🇸🇬 新加坡 10"
-  - "🇸🇬 新加坡 11"
-  - "🇸🇬 新加坡 12"
-  - "🇸🇬 新加坡 13"
-  - "🇸🇬 新加坡 14"
-  - "🇸🇬 新加坡 15"
-  - "🇸🇬 新加坡 16"
-  - "🇸🇬 新加坡 17"
+  - "🇭🇰 香港 62"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1841,6 +1786,7 @@ proxy-groups:
   - "🇺🇸 美国 26"
   - "🇺🇸 美国 27"
   - "🇺🇸 美国 28"
+  - "🇺🇸 美国 29"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -1851,6 +1797,64 @@ proxy-groups:
   - "🇫🇷 法国 08"
   - "🇫🇷 法国 09"
   - "🇫🇷 法国 10"
+  - "🇫🇷 法国 11"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
+  - "🇸🇬 新加坡 12"
+  - "🇸🇬 新加坡 13"
+  - "🇸🇬 新加坡 14"
+  - "🇸🇬 新加坡 15"
+  - "🇸🇬 新加坡 16"
+  - "🇸🇬 新加坡 17"
+  - "🇸🇬 新加坡 18"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇯🇵 日本 07"
+  - "🇯🇵 日本 08"
+  - "🇯🇵 日本 09"
+  - "🇯🇵 日本 10"
+  - "🇯🇵 日本 11"
+  - "🇯🇵 日本 12"
+  - "🇯🇵 日本 13"
+  - "🇯🇵 日本 14"
+  - "🇯🇵 日本 15"
+  - "🇯🇵 日本 16"
+  - "🇯🇵 日本 17"
+  - "🇯🇵 日本 18"
+  - "🇯🇵 日本 19"
+  - "🇯🇵 日本 20"
+  - "🇯🇵 日本 21"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇨🇳 台湾 05"
+  - "🇨🇳 台湾 06"
+  - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
+  - "🇨🇳 台湾 12"
+  - "🇨🇳 台湾 13"
+  - "🇨🇳 台湾 14"
+  - "🇨🇳 台湾 15"
+  - "🇨🇳 台湾 16"
+  - "🇨🇳 台湾 17"
+  - "🇨🇳 台湾 18"
   - "🇹🇬 多哥 01"
   - "🇹🇬 多哥 02"
   - "🇻🇳 越南 01"
@@ -1895,11 +1899,9 @@ proxy-groups:
   - "🇮🇪 爱尔兰 01"
   - "🇮🇪 爱尔兰 02"
   - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇱🇻 拉脱维亚 01"
   - "🇪🇬 埃及 01"
   - "🇭🇺 匈牙利 01"
   - "🇭🇺 匈牙利 02"
@@ -1942,7 +1944,6 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇲🇽 墨西哥 01"
   - "🇲🇽 墨西哥 02"
-  - "🇲🇽 墨西哥 03"
   - "🇸🇦 沙特阿拉伯 01"
   - "🇸🇦 沙特阿拉伯 02"
   - "🇦🇪 阿联酋 01"
@@ -1955,7 +1956,6 @@ proxy-groups:
   - "🇨🇱 智利 04"
   - "🇨🇿 捷克 01"
   - "🇨🇿 捷克 02"
-  - "🏴‍☠️ 阿曼 01"
   - "🇵🇱 波兰 01"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
