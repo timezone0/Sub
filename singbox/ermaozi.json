@@ -94,7 +94,10 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇸🇰 斯洛伐克 01",
         "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
@@ -104,7 +107,10 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇬🇧 英国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇸🇰 斯洛伐克 01",
         "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
@@ -114,7 +120,10 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇬🇧 英国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇸🇰 斯洛伐克 01",
         "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
@@ -126,7 +135,10 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇬🇧 英国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇸🇰 斯洛伐克 01",
         "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
@@ -137,7 +149,10 @@
       "outbounds": [
         "direct",
         "select",
-        "🇬🇧 英国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇸🇰 斯洛伐克 01",
         "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
@@ -147,7 +162,10 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇬🇧 英国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇸🇰 斯洛伐克 01",
         "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
@@ -183,9 +201,49 @@
       }
     },
     {
-      "tag": "🇬🇧 英国 01",
+      "tag": "🇺🇸 美国 01",
       "type": "shadowsocks",
-      "server": "51.15.17.169",
+      "server": "mm.huawei-api.top",
+      "server_port": 19583,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c3ffd605-d9fb-42b7-98f2-a29fb999e5b6"
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "v24.heduian.link",
+      "server_port": 30824,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "v24.heduian.link"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vmess",
+      "server": "v29.heduian.link",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocbc.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇸🇰 斯洛伐克 01",
+      "type": "shadowsocks",
+      "server": "156.146.40.194",
       "server_port": 989,
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3"
