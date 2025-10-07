@@ -82,64 +82,33 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇺🇸 美国 01", type: "vless", server: "113.192.61.49", port: 37574, uuid: "6fbe7126-3a4b-4d4b-bef3-86afba728edf", network: "tcp", tls: false, skip-cert-verify: true, servername: "www.iij.ad.jp"}
-- {name: "🇺🇸 美国 02", type: "hysteria2", server: "wmg2.wanlidag.top", port: 5555, password: "179ef5a2-bad2-4b60-9e14-8600a3cd2d9e", sni: "wmg2.wanlidag.top", skip-cert-verify: true}
-- {name: "🇺🇸 美国 03", type: "vless", server: "104.17.210.171", port: 443, uuid: "c98a16e4-0dc5-42f0-b3db-30f04525c123", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "vless10-9sc.pages.dev"}}, servername: "vless10-9sc.pages.dev"}
-- {name: "🇺🇸 美国 04", type: "vless", server: "162.159.43.92", port: 443, uuid: "0c0537c3-f0fb-40e6-bd59-f5038e1855ed", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "juzi.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "juzi.634676.xyz"}
-- {name: "🇺🇸 美国 05", type: "vless", server: "162.159.142.252", port: 2083, uuid: "d2965257-0536-4811-a0d5-cdce54e90326", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "fei.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "fei.634676.xyz"}
-- {name: "🇺🇸 美国 06", type: "hysteria2", server: "us-nb-05.linlujs.pw", port: 25438, password: "97797e2a-134d-41a3-867e-51400ce7a26e", sni: "us-nb-05.linlujs.pw", skip-cert-verify: false}
-- {name: "🇺🇸 美国 07", type: "hysteria2", server: "us-nb-03.linlujs.pw", port: 25411, password: "97797e2a-134d-41a3-867e-51400ce7a26e", sni: "us-nb-03.linlujs.pw", skip-cert-verify: false}
-- {name: "🇸🇪 瑞典 01", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "7a46b06c-0a4a-4e83-b326-d87420a8b32e", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
-- {name: "🇸🇪 瑞典 02", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "e4673069-d85b-40b4-9689-618c0e609c16", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
-- {name: "🇸🇪 瑞典 03", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "9d738627-cf9e-4bab-a59b-542e5537b44c", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
-- {name: "🇸🇪 瑞典 04", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "b679ffd9-8362-4d95-a318-356aa58714ba", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
-- {name: "🇸🇪 瑞典 05", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "0dbd9cd0-747b-421d-bfd3-13a4b9f594b1", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
-- {name: "🇸🇪 瑞典 06", type: "vless", server: "cloudflare-dns.bpbtgds.dpdns.org", port: 443, uuid: "3c0eac6b-d2f1-4c3c-b39f-168c5d1a902a", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/snippets/?mode=s5&s5=123456:123456@8.217.84.188:1080", headers: {Host: "cloudflare-snippets.tgdaosheng.ggff.net"}}, servername: "cloudflare-snippets.tgdaosheng.ggff.net"}
-- {name: "🇨🇦 加拿大 01", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "f0c7dcaf-9abd-4950-957a-0e1ecd5bf82a", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
 - {name: "🇯🇵 日本 01", type: "vmess", server: "olej.ffymanuscript.top", port: 59501, uuid: "d91ef1b1-ae29-4220-9394-d3eb957c23ce", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
-- {name: "🇯🇵 日本 02", type: "vmess", server: "olej.ffymanuscript.top", port: 59501, uuid: "7ea0861b-6902-4c35-acf9-6f0510df015f", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
-- {name: "🇯🇵 日本 03", type: "vmess", server: "olej.ffymanuscript.top", port: 59501, uuid: "d56072de-384a-4e41-a154-ceaf2996feae", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
-- {name: "🇯🇵 日本 04", type: "vmess", server: "olej.ffymanuscript.top", port: 59501, uuid: "32724863-63bc-4222-9ecc-665578c4a0af", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
-- {name: "🇯🇵 日本 05", type: "vmess", server: "olej.ffymanuscript.top", port: 59501, uuid: "83690db0-5da6-46a3-8d3f-09730ac3be75", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
-- {name: "🇯🇵 日本 06", type: "vmess", server: "olej.ffymanuscript.top", port: 59501, uuid: "4eadab55-f0bf-45f4-accd-201bafab2c0a", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
-- {name: "🇨🇱 智利 01", type: "vless", server: "194.87.31.155", port: 8080, uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", network: "tcp", tls: false, skip-cert-verify: true, servername: "yandex.com"}
-- {name: "🇨🇱 智利 02", type: "hysteria2", server: "108.165.213.197", port: 23891, password: "c232f411-96b5-4b07-b2f7-66a434725ffb", sni: "fus01.mistea.top", skip-cert-verify: true}
-- {name: "🇨🇱 智利 03", type: "vless", server: "66.90.90.10", port: 443, uuid: "d4e4c02a-d969-47a6-ba0f-3d433fdac206", network: "tcp", tls: false, skip-cert-verify: true, servername: "wa.sfasti.ru"}
-- {name: "🇨🇱 智利 04", type: "vless", server: "84.22.150.195", port: 8080, uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", network: "tcp", tls: false, skip-cert-verify: true, servername: "yandex.com"}
-- {name: "🇨🇱 智利 05", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma3.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma3.wanlidag.top", skip-cert-verify: true}
-- {name: "🇨🇱 智利 06", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma5.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma5.wanlidag.top", skip-cert-verify: true}
-- {name: "🇨🇱 智利 07", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma4.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma4.wanlidag.top", skip-cert-verify: true}
-- {name: "🇨🇱 智利 08", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma6.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma6.wanlidag.top", skip-cert-verify: true}
-- {name: "🇨🇱 智利 09", type: "hysteria2", server: "sub-us-2.yangxiansheng.online", port: 41951, password: "c6bccea3-2f03-4f3e-80f4-d6757f1f3f46", sni: "www.bing.com", skip-cert-verify: true}
-- {name: "🇨🇱 智利 10", type: "vless", server: "77.110.114.1", port: 8080, uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", network: "tcp", tls: false, skip-cert-verify: true, servername: "yandex.com"}
-- {name: "🇨🇱 智利 11", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma7.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma7.wanlidag.top", skip-cert-verify: true}
-- {name: "🇨🇱 智利 12", type: "vless", server: "45.95.232.10", port: 8080, uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", network: "tcp", tls: false, skip-cert-verify: true, servername: "yandex.com"}
-- {name: "🇹🇭 泰国 01", type: "vless", server: "162.159.38.67", port: 8880, uuid: "998dab68-7bb7-41ba-bc32-53604629cc4a", network: "ws", tls: false, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hidden-limit-342f.cft1.workers.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}}
+- {name: "🇸🇪 瑞典 01", type: "hysteria2", server: "pepslgy2.pepsl.top", port: 14568, password: "7a46b06c-0a4a-4e83-b326-d87420a8b32e", sni: "pepslgy2.pepsl.top", skip-cert-verify: true}
+- {name: "🇸🇪 瑞典 02", type: "vless", server: "cloudflare-dns.bpbtgds.dpdns.org", port: 443, uuid: "3c0eac6b-d2f1-4c3c-b39f-168c5d1a902a", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/snippets/?mode=s5&s5=123456:123456@8.217.84.188:1080", headers: {Host: "cloudflare-snippets.tgdaosheng.ggff.net"}}, servername: "cloudflare-snippets.tgdaosheng.ggff.net"}
+- {name: "🇺🇸 美国 01", type: "vless", server: "113.192.61.49", port: 37574, uuid: "6fbe7126-3a4b-4d4b-bef3-86afba728edf", network: "tcp", tls: false, skip-cert-verify: true, servername: "www.iij.ad.jp"}
+- {name: "🇺🇸 美国 02", type: "vless", server: "162.159.43.92", port: 443, uuid: "0c0537c3-f0fb-40e6-bd59-f5038e1855ed", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "juzi.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "juzi.634676.xyz"}
+- {name: "🇺🇸 美国 03", type: "hysteria2", server: "us-nb-03.linlujs.pw", port: 25411, password: "97797e2a-134d-41a3-867e-51400ce7a26e", sni: "us-nb-03.linlujs.pw", skip-cert-verify: false}
+- {name: "🇺🇸 美国 04", type: "hysteria2", server: "us-nb-05.linlujs.pw", port: 25438, password: "97797e2a-134d-41a3-867e-51400ce7a26e", sni: "us-nb-05.linlujs.pw", skip-cert-verify: false}
+- {name: "🇨🇱 智利 01", type: "hysteria2", server: "wels1.wanlidag.top", port: 5555, password: "d8bcc931-9118-4b2d-b5a0-3c69f12d8a00", sni: "wels1.wanlidag.top", skip-cert-verify: true}
+- {name: "🇨🇱 智利 02", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma4.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma4.wanlidag.top", skip-cert-verify: true}
+- {name: "🇨🇱 智利 03", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma5.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma5.wanlidag.top", skip-cert-verify: true}
+- {name: "🇨🇱 智利 04", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma3.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma3.wanlidag.top", skip-cert-verify: true}
+- {name: "🇨🇱 智利 05", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma6.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma6.wanlidag.top", skip-cert-verify: true}
+- {name: "🇨🇱 智利 06", type: "hysteria2", server: "sub-us-2.yangxiansheng.online", port: 41951, password: "c6bccea3-2f03-4f3e-80f4-d6757f1f3f46", sni: "www.bing.com", skip-cert-verify: true}
+- {name: "🇨🇱 智利 07", type: "hysteria2", server: "banmabanmabanmabanmabanmabanma7.wanlidag.top", port: 54265, password: "5f4ba37a-bb3c-4f8e-962e-850f624ad131", sni: "banmabanmabanmabanmabanmabanma7.wanlidag.top", skip-cert-verify: true}
+- {name: "🇳🇬 尼日利亚 01", type: "vmess", server: "zhuli.jineng.buzz", port: 80, uuid: "77cf0cde-fd6c-4336-86de-4c60b797e712", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sg.jineng.buzz"}}}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
-  - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
-  - "🇸🇪 瑞典 05"
-  - "🇸🇪 瑞典 06"
-  - "🇨🇦 加拿大 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
   - "🇨🇱 智利 01"
   - "🇨🇱 智利 02"
   - "🇨🇱 智利 03"
@@ -147,38 +116,20 @@ proxy-groups:
   - "🇨🇱 智利 05"
   - "🇨🇱 智利 06"
   - "🇨🇱 智利 07"
-  - "🇨🇱 智利 08"
-  - "🇨🇱 智利 09"
-  - "🇨🇱 智利 10"
-  - "🇨🇱 智利 11"
-  - "🇨🇱 智利 12"
-  - "🇹🇭 泰国 01"
+  - "🇳🇬 尼日利亚 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
-  - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
-  - "🇸🇪 瑞典 05"
-  - "🇸🇪 瑞典 06"
-  - "🇨🇦 加拿大 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
   - "🇨🇱 智利 01"
   - "🇨🇱 智利 02"
   - "🇨🇱 智利 03"
@@ -186,36 +137,18 @@ proxy-groups:
   - "🇨🇱 智利 05"
   - "🇨🇱 智利 06"
   - "🇨🇱 智利 07"
-  - "🇨🇱 智利 08"
-  - "🇨🇱 智利 09"
-  - "🇨🇱 智利 10"
-  - "🇨🇱 智利 11"
-  - "🇨🇱 智利 12"
-  - "🇹🇭 泰国 01"
+  - "🇳🇬 尼日利亚 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
-  - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
-  - "🇸🇪 瑞典 05"
-  - "🇸🇪 瑞典 06"
-  - "🇨🇦 加拿大 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
   - "🇨🇱 智利 01"
   - "🇨🇱 智利 02"
   - "🇨🇱 智利 03"
@@ -223,38 +156,20 @@ proxy-groups:
   - "🇨🇱 智利 05"
   - "🇨🇱 智利 06"
   - "🇨🇱 智利 07"
-  - "🇨🇱 智利 08"
-  - "🇨🇱 智利 09"
-  - "🇨🇱 智利 10"
-  - "🇨🇱 智利 11"
-  - "🇨🇱 智利 12"
-  - "🇹🇭 泰国 01"
+  - "🇳🇬 尼日利亚 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
-  - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
-  - "🇸🇪 瑞典 05"
-  - "🇸🇪 瑞典 06"
-  - "🇨🇦 加拿大 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
   - "🇨🇱 智利 01"
   - "🇨🇱 智利 02"
   - "🇨🇱 智利 03"
@@ -262,37 +177,19 @@ proxy-groups:
   - "🇨🇱 智利 05"
   - "🇨🇱 智利 06"
   - "🇨🇱 智利 07"
-  - "🇨🇱 智利 08"
-  - "🇨🇱 智利 09"
-  - "🇨🇱 智利 10"
-  - "🇨🇱 智利 11"
-  - "🇨🇱 智利 12"
-  - "🇹🇭 泰国 01"
+  - "🇳🇬 尼日利亚 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
-  - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
-  - "🇸🇪 瑞典 05"
-  - "🇸🇪 瑞典 06"
-  - "🇨🇦 加拿大 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
   - "🇨🇱 智利 01"
   - "🇨🇱 智利 02"
   - "🇨🇱 智利 03"
@@ -300,36 +197,18 @@ proxy-groups:
   - "🇨🇱 智利 05"
   - "🇨🇱 智利 06"
   - "🇨🇱 智利 07"
-  - "🇨🇱 智利 08"
-  - "🇨🇱 智利 09"
-  - "🇨🇱 智利 10"
-  - "🇨🇱 智利 11"
-  - "🇨🇱 智利 12"
-  - "🇹🇭 泰国 01"
+  - "🇳🇬 尼日利亚 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
-  - "🇺🇸 美国 05"
-  - "🇺🇸 美国 06"
-  - "🇺🇸 美国 07"
-  - "🇸🇪 瑞典 01"
-  - "🇸🇪 瑞典 02"
-  - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
-  - "🇸🇪 瑞典 05"
-  - "🇸🇪 瑞典 06"
-  - "🇨🇦 加拿大 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
   - "🇨🇱 智利 01"
   - "🇨🇱 智利 02"
   - "🇨🇱 智利 03"
@@ -337,12 +216,7 @@ proxy-groups:
   - "🇨🇱 智利 05"
   - "🇨🇱 智利 06"
   - "🇨🇱 智利 07"
-  - "🇨🇱 智利 08"
-  - "🇨🇱 智利 09"
-  - "🇨🇱 智利 10"
-  - "🇨🇱 智利 11"
-  - "🇨🇱 智利 12"
-  - "🇹🇭 泰国 01"
+  - "🇳🇬 尼日利亚 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
