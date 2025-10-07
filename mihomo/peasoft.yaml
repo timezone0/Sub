@@ -97,8 +97,10 @@ proxies:
 - {name: "🇸🇬 新加坡 02", password: "253bc477d4e43c209f2d427272968280", port: 2200, server: "182.237.0.26", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇸🇬 新加坡 03", port: 49513, server: "laeg.hsymanuscript.top", skip-cert-verify: false, tfo: false, tls: false, type: "vmess", uuid: "55a374b6-3108-4b65-a987-a0926ddbfba6", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇸🇬 新加坡 04", network: "tcp", port: 49513, server: "laeg.hsymanuscript.top", tls: false, type: "vmess", uuid: "55a374b6-3108-4b65-a987-a0926ddbfba6", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇸🇬 新加坡 05", network: "ws", password: "wb6368", port: 2087, server: "92.243.75.49", skip-cert-verify: false, sni: "hsdgbuys.pages.dev", type: "trojan", udp: true, ws-opts: {headers: {Host: "hsdgbuys.pages.dev"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 01", password: "253bc477d4e43c209f2d427272968280", port: 4234, server: "153.121.39.240", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", password: "253bc477d4e43c209f2d427272968280", port: 1177, server: "182.237.0.26", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 03", network: "ws", password: "YwuvGJk36B", port: 2053, server: "creativecommons.org", skip-cert-verify: false, sni: "kotlet.arshiacomplus.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "kotlet.arshiacomplus.dpdns.org"}, path: "/yamtekodasayahhh"}, client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.155.233", tfo: false, type: "ss", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
@@ -120,8 +122,10 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "AUTO"
   type: "url-test"
@@ -144,8 +148,10 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "AI"
   type: "select"
@@ -166,8 +172,10 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "GOOGLEFCM"
   type: "select"
@@ -190,8 +198,10 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "HOYO"
   type: "select"
@@ -213,8 +223,10 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "TIKTOK"
   type: "select"
@@ -235,8 +247,10 @@ proxy-groups:
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
+  - "🇸🇬 新加坡 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
