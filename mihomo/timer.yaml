@@ -83,25 +83,26 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇭🇰 香港 01", type: "vmess", server: "183.240.245.235", port: 49212, cipher: "auto", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, tls: false, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 02", server: "baigou1.kkieo555.cn", port: 21863, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇭🇰 香港 03", server: "baigou1.kkieo555.cn", port: 21866, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇭🇰 香港 04", server: "baigou1.kkieo555.cn", port: 21863, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇭🇰 香港 05", server: "baigou1.kkieo555.cn", port: 21866, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {type: "hysteria2", name: "🇸🇬 新加坡 01", server: "yapc-1.adamhayward.co.uk", port: 36300, password: "Yet-Another-Public-Config-1", sni: "YAPC-1.afshin.ir", obfs: "salamander", obfs-password: "Yet-Another-Public-Config-1", skip-cert-verify: false, tfo: false, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 02", server: "baigou1.kkieo555.cn", port: 21877, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 03", server: "baigou1.kkieo555.cn", port: 21877, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 04", server: "baigou1.kkieo555.cn", port: 21877, client-fingerprint: "chrome", type: "trojan", password: "a39e056c-5bde-4c56-9178-44c135efb55d", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 05", server: "baigou1.kkieo555.cn", port: 21877, client-fingerprint: "chrome", type: "trojan", password: "35703011-ed89-4c91-8aa0-31da31e9330a", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 06", server: "baigou1.kkieo555.cn", port: 21877, client-fingerprint: "chrome", type: "trojan", password: "ab66e548-5daa-42af-a733-5ae5e0e664e0", sni: "douyin.com", skip-cert-verify: true}
+- {name: "🇭🇰 香港 02", server: "43.198.204.35", port: 443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇭🇰 香港 03", server: "47.86.52.94", port: 39738, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇭🇰 香港 04", server: "45.136.12.224", port: 21678, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇭🇰 香港 05", server: "116.206.178.228", port: 38980, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇭🇰 香港 06", server: "8.218.125.141", port: 39738, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇭🇰 香港 07", server: "149.62.47.27", port: 55345, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
 - {client-fingerprint: "chrome", name: "🇺🇸 美国 01", network: "ws", port: 443, server: "162.159.251.165", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇺🇸 美国 02", network: "ws", port: 443, server: "162.159.249.49", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {type: "hysteria2", name: "🇺🇸 美国 03", server: "216.133.149.223", port: 8652, password: "l6oxPE620nja7uH0", sni: "bing.com", skip-cert-verify: true, tfo: false, client-fingerprint: "chrome"}
 - {type: "vless", name: "🇺🇸 美国 04", server: "143.14.221.91", port: 18351, uuid: "b28f5b36-ce47-4738-a221-93e1358e7052", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "gAY1_lX085k0K8yxOpt06LMNOaEdYlTBZSRuwCFGoiY", short-id: "1d2619431700", _spider-x: "/"}, network: "tcp", servername: "yahoo.com"}
-- {name: "🇺🇸 美国 05", server: "baigou1.kkieo555.cn", port: 21864, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 06", server: "baigou1.kkieo555.cn", port: 21865, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 07", server: "baigou1.kkieo555.cn", port: 27865, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 08", server: "baigou1.kkieo555.cn", port: 21864, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 09", server: "baigou1.kkieo555.cn", port: 21865, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 05", server: "47.79.84.221", port: 8000, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 06", server: "185.183.84.233", port: 443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 07", server: "154.17.6.38", port: 59638, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 08", server: "173.242.113.174", port: 8012, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 09", server: "104.224.158.96", port: 443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 10", server: "104.224.177.224", port: 8443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 11", server: "45.159.51.252", port: 24485, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 12", server: "38.114.103.207", port: 21010, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 13", server: "45.62.117.157", port: 443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇺🇸 美国 14", server: "38.207.183.237", port: 10358, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 01", network: "ws", port: 443, server: "172.67.114.195", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 02", network: "ws", port: 443, server: "104.18.164.69", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 03", network: "ws", port: 443, server: "104.24.87.184", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
@@ -111,34 +112,22 @@ proxies:
 - {client-fingerprint: "chrome", name: "🇨🇦 加拿大 07", network: "ws", port: 443, server: "198.41.198.176", tls: true, type: "vless", udp: false, uuid: "b940be1b-3998-45d2-bf7b-06e7b6c4987a", ws-opts: {headers: {Host: "c379b284.vs-494.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "c379b284.vs-494.pages.dev"}
 - {type: "ss", server: "103.186.155.28", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 01", client-fingerprint: "chrome"}
 - {type: "ss", server: "103.186.155.28", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 02", client-fingerprint: "chrome"}
-- {name: "🇻🇳 越南 03", server: "baigou1.kkieo555.cn", port: 21870, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇻🇳 越南 04", server: "baigou1.kkieo555.cn", port: 21870, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇻🇳 越南 05", server: "baigou1.kkieo555.cn", port: 21870, client-fingerprint: "chrome", type: "trojan", password: "a39e056c-5bde-4c56-9178-44c135efb55d", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 01", server: "baigou1.kkieo555.cn", port: 21867, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 02", server: "baigou1.kkieo555.cn", port: 21868, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 03", server: "baigou1.kkieo555.cn", port: 21869, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 04", server: "baigou1.kkieo555.cn", port: 21867, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 05", server: "baigou1.kkieo555.cn", port: 21868, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇨🇳 台湾 01", server: "baigou1.kkieo555.cn", port: 21878, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇨🇳 台湾 02", server: "baigou1.kkieo555.cn", port: 21878, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇨🇳 台湾 03", server: "baigou1.kkieo555.cn", port: 21878, client-fingerprint: "chrome", type: "trojan", password: "a39e056c-5bde-4c56-9178-44c135efb55d", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇨🇳 台湾 04", server: "baigou1.kkieo555.cn", port: 21878, client-fingerprint: "chrome", type: "trojan", password: "35703011-ed89-4c91-8aa0-31da31e9330a", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇨🇳 台湾 05", server: "baigou1.kkieo555.cn", port: 21878, client-fingerprint: "chrome", type: "trojan", password: "ab66e548-5daa-42af-a733-5ae5e0e664e0", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇰🇷 韩国 01", server: "baigou1.kkieo555.cn", port: 21871, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇰🇷 韩国 02", server: "baigou1.kkieo555.cn", port: 21871, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇰🇷 韩国 03", server: "baigou1.kkieo555.cn", port: 21871, client-fingerprint: "chrome", type: "trojan", password: "a39e056c-5bde-4c56-9178-44c135efb55d", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇰🇷 韩国 04", server: "baigou1.kkieo555.cn", port: 21871, client-fingerprint: "chrome", type: "trojan", password: "35703011-ed89-4c91-8aa0-31da31e9330a", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇰🇷 韩国 05", server: "baigou1.kkieo555.cn", port: 21871, client-fingerprint: "chrome", type: "trojan", password: "ab66e548-5daa-42af-a733-5ae5e0e664e0", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇹🇭 泰国 01", server: "baigou1.kkieo555.cn", port: 21874, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇹🇭 泰国 02", server: "baigou1.kkieo555.cn", port: 21874, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇹🇭 泰国 03", server: "baigou1.kkieo555.cn", port: 21874, client-fingerprint: "chrome", type: "trojan", password: "a39e056c-5bde-4c56-9178-44c135efb55d", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇹🇭 泰国 04", server: "baigou1.kkieo555.cn", port: 21874, client-fingerprint: "chrome", type: "trojan", password: "35703011-ed89-4c91-8aa0-31da31e9330a", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇹🇭 泰国 05", server: "baigou1.kkieo555.cn", port: 21874, client-fingerprint: "chrome", type: "trojan", password: "ab66e548-5daa-42af-a733-5ae5e0e664e0", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇬🇧 英国 01", server: "baigou1.kkieo555.cn", port: 21876, client-fingerprint: "chrome", type: "trojan", password: "6ab1c698-8795-45bf-beab-9150e34c42e9", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇬🇧 英国 02", server: "baigou1.kkieo555.cn", port: 21876, client-fingerprint: "chrome", type: "trojan", password: "144bfafa-73c6-4bab-bc6f-bf8b92fbaf09", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇬🇧 英国 03", server: "baigou1.kkieo555.cn", port: 21876, client-fingerprint: "chrome", type: "trojan", password: "a39e056c-5bde-4c56-9178-44c135efb55d", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇬🇧 英国 04", server: "baigou1.kkieo555.cn", port: 21876, client-fingerprint: "chrome", type: "trojan", password: "35703011-ed89-4c91-8aa0-31da31e9330a", sni: "douyin.com", skip-cert-verify: true}
-- {name: "🇬🇧 英国 05", server: "baigou1.kkieo555.cn", port: 21876, client-fingerprint: "chrome", type: "trojan", password: "ab66e548-5daa-42af-a733-5ae5e0e664e0", sni: "douyin.com", skip-cert-verify: true}
+- {name: "🏴‍☠️ 中非共和国 01", server: "cf-cname.xingpingcn.top", port: 443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇰🇷 韩国 01", server: "tp50000.kr.proxyip.fgfw.eu.org", port: 50000, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇰🇷 韩国 02", server: "211.48.77.114", port: 12312, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇯🇵 日本 01", server: "103.150.8.160", port: 50888, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇯🇵 日本 02", server: "8.209.231.39", port: 39738, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇯🇵 日本 03", server: "45.89.235.225", port: 27950, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇯🇵 日本 04", server: "103.238.129.163", port: 16617, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇯🇵 日本 05", server: "147.79.20.47", port: 4439, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇯🇵 日本 06", server: "185.200.66.2", port: 33699, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇸🇬 新加坡 01", server: "129.226.150.167", port: 443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇸🇬 新加坡 02", server: "137.220.151.95", port: 39738, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇸🇬 新加坡 03", server: "185.115.207.147", port: 39738, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇸🇬 新加坡 04", server: "8.222.213.91", port: 39738, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇨🇳 台湾 01", server: "103.148.72.110", port: 60443, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇨🇳 台湾 02", server: "154.26.186.164", port: 19071, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
+- {name: "🇩🇪 德国 01", server: "185.217.109.43", port: 16252, type: "vless", uuid: "b5544203-55e3-426e-92f1-0684c93f9829", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.site"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "snippet.danfeng.site"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -149,12 +138,8 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -164,6 +149,11 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -173,34 +163,22 @@ proxy-groups:
   - "🇨🇦 加拿大 07"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
+  - "🏴‍☠️ 中非共和国 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇹🇭 泰国 03"
-  - "🇹🇭 泰国 04"
-  - "🇹🇭 泰国 05"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
+  - "🇩🇪 德国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -212,12 +190,8 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -227,6 +201,11 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -236,34 +215,22 @@ proxy-groups:
   - "🇨🇦 加拿大 07"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
+  - "🏴‍☠️ 中非共和国 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇹🇭 泰国 03"
-  - "🇹🇭 泰国 04"
-  - "🇹🇭 泰国 05"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
+  - "🇩🇪 德国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -273,12 +240,8 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -288,6 +251,11 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -297,34 +265,22 @@ proxy-groups:
   - "🇨🇦 加拿大 07"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
+  - "🏴‍☠️ 中非共和国 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇹🇭 泰国 03"
-  - "🇹🇭 泰国 04"
-  - "🇹🇭 泰国 05"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
+  - "🇩🇪 德国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -336,12 +292,8 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -351,6 +303,11 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -360,34 +317,22 @@ proxy-groups:
   - "🇨🇦 加拿大 07"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
+  - "🏴‍☠️ 中非共和国 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇹🇭 泰国 03"
-  - "🇹🇭 泰国 04"
-  - "🇹🇭 泰国 05"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
+  - "🇩🇪 德国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -398,12 +343,8 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -413,6 +354,11 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -422,34 +368,22 @@ proxy-groups:
   - "🇨🇦 加拿大 07"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
+  - "🏴‍☠️ 中非共和国 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇹🇭 泰国 03"
-  - "🇹🇭 泰国 04"
-  - "🇹🇭 泰国 05"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
+  - "🇩🇪 德国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -459,12 +393,8 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
-  - "🇸🇬 新加坡 05"
-  - "🇸🇬 新加坡 06"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -474,6 +404,11 @@ proxy-groups:
   - "🇺🇸 美国 07"
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
   - "🇨🇦 加拿大 03"
@@ -483,34 +418,22 @@ proxy-groups:
   - "🇨🇦 加拿大 07"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
+  - "🏴‍☠️ 中非共和国 01"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
+  - "🇯🇵 日本 06"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
-  - "🇨🇳 台湾 03"
-  - "🇨🇳 台湾 04"
-  - "🇨🇳 台湾 05"
-  - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇹🇭 泰国 01"
-  - "🇹🇭 泰国 02"
-  - "🇹🇭 泰国 03"
-  - "🇹🇭 泰国 04"
-  - "🇹🇭 泰国 05"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
+  - "🇩🇪 德国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
