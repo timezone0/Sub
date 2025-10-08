@@ -94,10 +94,13 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,10 +109,13 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,10 +124,13 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -132,10 +141,13 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -145,10 +157,13 @@
       "outbounds": [
         "direct",
         "select",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,10 +172,13 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
         "🇺🇸 美国 04",
-        "🇮🇳 印度 01"
+        "🇺🇸 美国 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -195,7 +213,39 @@
       }
     },
     {
+      "tag": "🇩🇪 德国 01",
+      "type": "shadowsocks",
+      "server": "45.87.175.177",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "cvII85TrW6n0OGyfpHVS1u"
+    },
+    {
+      "tag": "🇩🇪 德国 02",
+      "type": "shadowsocks",
+      "server": "45.87.175.193",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "cvII85TrW6n0OGyfpHVS1u"
+    },
+    {
       "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "v24.heduian.link",
+      "server_port": 30824,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "v24.heduian.link"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
       "type": "vmess",
       "server": "v8.heduian.link",
       "server_port": 30808,
@@ -211,45 +261,42 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 02",
-      "type": "trojan",
-      "server": "creativecommons.org",
-      "server_port": 2053,
-      "password": "YwuvGJk36B",
-      "tls": {
-        "enabled": true,
-        "server_name": "kotlet.arshiacomplus.dpdns.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {},
-        "path": "/yamtekodasayahhh"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 04",
+      "tag": "🇺🇸 美国 03",
       "type": "vmess",
-      "server": "v29.heduian.link",
-      "server_port": 30829,
+      "server": "v5.heduian.link",
+      "server_port": 30805,
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "ocbc.com"
+          "Host": "v5.heduian.link"
         },
         "path": "/oooo"
       }
     },
     {
-      "tag": "🇮🇳 印度 01",
+      "tag": "🇺🇸 美国 04",
       "type": "shadowsocks",
-      "server": "134.209.147.198",
+      "server": "104.192.226.106",
       "server_port": 989,
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "vmess",
+      "server": "212.192.15.244",
+      "server_port": 23185,
+      "uuid": "5115c9e9-a90c-4f9f-a38d-5985a5e52ebd",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "path": "/"
+      }
     }
   ],
   "route": {
