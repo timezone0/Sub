@@ -82,84 +82,79 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇦🇪 阿联酋 01", server: "185.158.133.43", port: 2096, type: "vless", uuid: "01997b9d-a1f7-e188-981a-c665b723cfef", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets&freecodes@节点狂魔", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇦🇪 阿联酋 02", server: "5.44.42.60", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
+- {name: "🇦🇪 阿联酋 01", server: "185.158.133.43", port: 2096, type: "vless", uuid: "01997b9d-a1f7-e188-981a-c665b723cfef", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets&freecodes@节点狂魔/", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇦🇪 阿联酋 02", server: "185.158.133.43", port: 2096, type: "vless", uuid: "01997b9d-a1f7-e188-981a-c665b723cfef", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets&freecodes@节点狂魔", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇦🇪 阿联酋 03", server: "185.158.133.43", port: 2096, type: "vless", uuid: "01997b9d-a1f7-e188-981a-c665b723cfef", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇦🇪 阿联酋 04", server: "5.44.42.60", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
 - {name: "🇦🇹 奥地利 01", server: "cf-insights.api.cyberscaler.net", port: 443, type: "vless", uuid: "2cd36c8e-38f6-4c2f-9ec0-eb5f79a1ed2c", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "zMeFpcu-ppUKh_am7bNYWtLehvtvhjocEPP8efg1Jg4", short-id: "c8a7f2e491"}, udp: true, network: "tcp", servername: "static.cloudflareinsights.com"}
-- {name: "🇦🇹 奥地利 02", server: "mengying.eu.org", port: 25801, type: "vless", uuid: "4c7f66da-af49-4e6d-b60c-f6a0eaa00919", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iC7qQK0Yu8sQsiIj5JPTGDVTrFkZDoesDUn24pDwgQk"}, udp: true, network: "tcp", servername: "updates.cdn-apple.com"}
-- {name: "🇦🇺 澳大利亚 01", server: "185.207.197.253", port: 2096, type: "vless", uuid: "6e433a29-22ac-4061-ae8b-f1731715d0d9", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "vlesspro.llengcugit.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "vlesspro.llengcugit.sbs"}
-- {name: "🇦🇺 澳大利亚 02", server: "185.207.196.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇦🇺 澳大利亚 03", server: "185.207.197.253", port: 2096, type: "vless", uuid: "6e433a29-22ac-4061-ae8b-f1731715d0d9", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegramsecurity=tls", headers: {Host: "vlesspro.llengcugit.sbs"}}, udp: true, servername: "vlesspro.llengcugit.sbs"}
-- {name: "🇦🇺 澳大利亚 04", server: "185.207.197.253", port: 2096, type: "vless", uuid: "6e433a29-22ac-4061-ae8b-f1731715d0d9", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram", headers: {Host: "vlesspro.llengcugit.sbs"}}, udp: true, servername: "vlesspro.llengcugit.sbs"}
-- {name: "🇧🇷 巴西 01", server: "185.133.35.95", port: 443, type: "vless", uuid: "52ed75e2-70a2-41a0-b258-58ca4b200be9", tls: true, skip-cert-verify: false, client-fingerprint: "ios", network: "ws", ws-opts: {path: "/djjc/us4", headers: {Host: "d-us4.djwstlsweb.top"}}, udp: true, servername: "d-us4.djwstlsweb.top"}
-- {name: "🇧🇷 巴西 02", server: "185.133.35.95", port: 443, type: "vless", uuid: "52ed75e2-70a2-41a0-b258-58ca4b200be9", tls: true, skip-cert-verify: false, client-fingerprint: "ios", network: "ws", ws-opts: {path: "/djjc/us3", headers: {Host: "d-us3.djwstlsweb.top"}}, udp: true, servername: "d-us3.djwstlsweb.top"}
-- {name: "🇧🇷 巴西 03", server: "185.133.35.95", port: 443, type: "vless", uuid: "52ed75e2-70a2-41a0-b258-58ca4b200be9", tls: true, skip-cert-verify: false, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/djjc/jp1", headers: {Host: "d-jp1.djwstlsweb.top"}}, udp: true, servername: "d-jp1.djwstlsweb.top"}
-- {name: "🇨🇦 加拿大 01", server: "79.127.233.170", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3", udp: true}
-- {name: "🇨🇦 加拿大 02", server: "150.230.28.100", port: 26113, type: "vless", uuid: "cfe032e4-1bc3-454f-9d09-301b0aea08ff", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng", short-id: "1fbd20fd"}, udp: true, network: "tcp", servername: "www.yahoo.com"}
-- {name: "🇨🇦 加拿大 03", server: "132.145.108.97", port: 42557, type: "vless", uuid: "2429bee3-e0c1-47dd-b420-75e6512b184b", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo", short-id: "f430927d"}, udp: true, network: "tcp", servername: "www.yahoo.com"}
-- {name: "🇨🇭 瑞士 01", server: "45.95.232.10", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
+- {name: "🇧🇬 保加利亚 01", server: "147.78.140.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/snippets&freecodes @节点狂魔", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
 - {name: "🇩🇪 德国 01", server: "91.149.223.242", port: 443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇩🇪 德国 02", server: "84.201.4.247", port: 1591, type: "vless", uuid: "494e4d9d-e1e6-42be-a9df-8a6fbd46b650", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "Q7B94qjnMk48_2054jmhOKdPbqRkyUbLIHSNLb8Zz2w", short-id: "90658dac0f08c239"}, udp: true, network: "tcp", servername: "refersion.com"}
+- {name: "🇩🇪 德国 03", server: "5.10.214.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇩🇪 德国 04", server: "91.149.223.242", port: 443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇪🇸 西班牙 01", server: "185.251.83.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇪🇸 西班牙 02", server: "185.251.80.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇪🇸 西班牙 03", server: "185.251.81.253", port: 2096, type: "vless", uuid: "2456f90c-5183-476d-b069-16ae74ce120f", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3", headers: {Host: "fast01.0860852.xyz"}}, udp: true, servername: "fast01.0860852.xyz"}
+- {name: "🇫🇮 芬兰 01", server: "139.28.221.213", port: 48004, type: "vless", uuid: "01999036-500a-f27f-ee32-ee78844f2e4d", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇫🇮 芬兰 02", server: "139.28.221.213", port: 48004, type: "vless", uuid: "01999036-500a-f27f-ee32-ee78844f2e4d", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
 - {name: "🇫🇷 法国 01", server: "185.7.240.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇬🇧 英国 01", server: "132.145.62.88", port: 443, type: "vless", uuid: "52ed75e2-70a2-41a0-b258-58ca4b200be9", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "ios", reality-opts: {public-key: "qkP2pqQ3NHNBkyzqsC2W9wChp3OfeXdVjOhUv8vQW0o", short-id: "aac4df9d05a5ba8f"}, udp: true, network: "tcp", servername: "iosapps.itunes.apple.com"}
-- {name: "🇬🇧 英国 02", server: "178.20.215.2", port: 443, type: "vless", uuid: "192ea2c7-d7d0-6676-2929-b04a072b387d", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA"}, udp: true, network: "tcp", servername: "speed.cloudflare.com"}
-- {name: "🇭🇰 香港 01", server: "47.242.90.210", port: 31212, type: "vmess", uuid: "3a4271fb-2718-4489-da78-80a8e7701aa5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
-- {name: "🇭🇰 香港 02", server: "213.176.94.129", port: 443, type: "vless", uuid: "81e9e522-2efd-4709-996d-74e46f4edaf8", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY", short-id: "53ba1e37"}, udp: true, network: "tcp", servername: "www.amazon.com"}
+- {name: "🇫🇷 法国 02", server: "185.7.240.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippetssecurity=tls", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇫🇷 法国 03", server: "141.11.203.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇫🇷 法国 04", server: "38.54.122.118", port: 443, type: "vless", uuid: "9f4b9824-df02-49c3-a976-d4f9a31f81fe", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "21MNt-O8tq9gP9o7yeT9iVQslHPdNVHtqI9Kg5p-lHo"}, udp: true, network: "tcp", servername: "dash.cloudflare.com"}
+- {name: "🇬🇧 英国 01", server: "178.20.215.2", port: 443, type: "vless", uuid: "192ea2c7-d7d0-6676-2929-b04a072b387d", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA"}, udp: true, network: "tcp", servername: "speed.cloudflare.com"}
+- {name: "🇬🇧 英国 02", server: "185.193.31.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇬🇧 英国 03", server: "159.65.94.176", port: 8080, type: "vless", uuid: "01996549-6892-dbf0-0453-f700236936bd", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇬🇷 希腊 01", server: "ru-nl01-vlr01.tcp-reset-club.net", port: 443, type: "vless", uuid: "e9847818-c872-4456-9a02-e2348adf0564", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg", short-id: "d3b13f31"}, udp: true, network: "tcp", servername: "hls-svod.itunes.apple.com"}
+- {name: "🇬🇷 希腊 02", server: "ru-nl01-vlr01.tcp-reset-club.net", port: 443, type: "vless", uuid: "c80bbc09-837d-495f-bebc-3e8ac5dede41", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg", short-id: "86e999a2cdc2"}, udp: true, network: "tcp", servername: "hls-svod.itunes.apple.com"}
+- {name: "🇭🇰 香港 01", server: "45.192.223.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
 - {name: "🇮🇱 以色列 01", server: "ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz", port: 443, type: "vless", uuid: "0e8a6896-ad90-4a3b-89a3-77d64aa409e2", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE", short-id: "55e6af1a35e64a98"}, udp: true, network: "tcp", servername: "i2pd.website"}
 - {name: "🇮🇳 印度 01", server: "65.20.82.22", port: 443, type: "vless", uuid: "01996549-6892-dbf0-0453-f700236936bd", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇮🇳 印度 02", server: "140.245.14.34", port: 443, type: "vless", uuid: "52ed75e2-70a2-41a0-b258-58ca4b200be9", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "safari", reality-opts: {public-key: "qkP2pqQ3NHNBkyzqsC2W9wChp3OfeXdVjOhUv8vQW0o", short-id: "aac4df9d05a5ba8f"}, udp: true, network: "tcp", servername: "musicstatus.apps.apple.com"}
-- {name: "🇮🇷 伊朗 01", server: "193.151.135.21", port: 44443, type: "vless", uuid: "53fff6cc-b4ec-43e8-ade5-e0c42972fc33", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ"}, udp: true, network: "tcp", servername: "www.speedtest.net"}
-- {name: "🇮🇷 伊朗 02", server: "hybrid.arvancloud.online", port: 44443, type: "vless", uuid: "53fff6cc-b4ec-43e8-ade5-e0c42972fc33", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ"}, udp: true, network: "tcp", servername: "www.speedtest.net"}
-- {name: "🇮🇷 伊朗 03", server: "62.60.232.40", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
-- {name: "🇯🇵 日本 01", server: "60.83.190.248", port: 443, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "www.nintendogames.net", skip-cert-verify: true, udp: true}
-- {name: "🇯🇵 日本 02", server: "140.238.62.82", port: 1443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇯🇵 日本 03", server: "160.16.136.130", port: 4451, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "www.nintendogames.net", skip-cert-verify: false, udp: true}
-- {name: "🇰🇷 韩国 01", server: "218.237.185.230", port: 4652, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", udp: true}
-- {name: "🇰🇷 韩国 02", server: "testkr3.ssv.vc", port: 30446, type: "http", username: "test", password: "test.+", tls: true, skip-cert-verify: true, udp: true, sni: "testkr3.ssv.vc"}
-- {name: "🇰🇷 韩国 03", server: "154.90.62.168", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true}
-- {name: "🇰🇿 哈萨克斯坦 01", server: "91.147.92.153", port: 443, type: "vless", uuid: "c80bbc09-837d-495f-bebc-3e8ac5dede41", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg", short-id: "f79448a30d"}, udp: true, network: "tcp", servername: "hls-svod.itunes.apple.com"}
-- {name: "🏴‍☠️ 黎巴嫩 01", server: "77.110.114.1", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
-- {name: "🇱🇻 拉脱维亚 01", server: "138.124.182.204", port: 443, type: "vless", uuid: "01996549-6892-dbf0-0453-f700236936bd", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇳🇱 荷兰 01", server: "194.87.31.155", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
-- {name: "🇳🇱 荷兰 02", server: "176.222.53.140", port: 8000, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇳🇱 荷兰 03", server: "176.222.53.140", port: 8000, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇳🇱 荷兰 04", server: "146.103.33.38", port: 443, type: "vless", uuid: "01996549-6892-dbf0-0453-f700236936bd", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇳🇱 荷兰 05", server: "94.131.107.201", port: 8443, type: "vless", uuid: "896c451b-addc-4c9e-ad9b-4cd63d80b2ab", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "rwXlON1aDW3CM1wfNYMWb-hpPYqvH0kHHOBDatkuCSE", short-id: "26a70553"}, udp: true, network: "tcp", servername: "anydesk.com"}
-- {name: "🇳🇱 荷兰 06", server: "91.201.113.193", port: 443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇳🇱 荷兰 07", server: "38.180.249.152", port: 443, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "www.nintendogames.net", skip-cert-verify: true, udp: true}
-- {name: "🇵🇹 葡萄牙 01", server: "31.129.22.117", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
-- {name: "🇷🇺 俄罗斯 01", server: "84.22.150.195", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
+- {name: "🇮🇷 伊朗 01", server: "94.182.137.12", port: 20532, type: "vless", uuid: "8496c102-4094-4dd3-ad63-7bb7a35cbaee", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["Telewebion.com"]}}, udp: true, servername: "Telewebion.com"}
+- {name: "🇮🇷 伊朗 02", server: "193.151.135.21", port: 44443, type: "vless", uuid: "53fff6cc-b4ec-43e8-ade5-e0c42972fc33", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ"}, udp: true, network: "tcp", servername: "www.speedtest.net"}
+- {name: "🇮🇷 伊朗 03", server: "hybrid.arvancloud.online", port: 44443, type: "vless", uuid: "53fff6cc-b4ec-43e8-ade5-e0c42972fc33", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ"}, udp: true, network: "tcp", servername: "www.speedtest.net"}
+- {name: "🇯🇵 日本 01", server: "140.238.62.82", port: 1443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇯🇵 日本 02", server: "160.16.117.182", port: 5328, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "www.nintendogames.net", skip-cert-verify: true, udp: true}
+- {name: "🇯🇵 日本 03", server: "153.121.51.29", port: 5041, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "www.nintendogames.net", skip-cert-verify: true, udp: true}
+- {name: "🇰🇷 韩国 01", server: "testkr3.ssv.vc", port: 30446, type: "http", username: "test", password: "test.+", tls: true, skip-cert-verify: true, udp: true, sni: "testkr3.ssv.vc"}
+- {name: "🇱🇹 立陶宛 01", server: "86.38.214.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇲🇾 马来 01", server: "38.54.98.110", port: 2052, type: "vmess", uuid: "665d9b8f-153d-4907-adac-de12afd9c851", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, udp: true}
+- {name: "🇲🇾 马来 02", server: "38.54.98.110", port: 2052, type: "vmess", uuid: "665d9b8f-153d-4907-adac-de12afd9c851", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, udp: true, servername: "ml0724.ysds168.shop"}
+- {name: "🇳🇱 荷兰 01", server: "146.103.33.38", port: 443, type: "vless", uuid: "01996549-6892-dbf0-0453-f700236936bd", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇳🇱 荷兰 02", server: "176.222.53.140", port: 8000, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇳🇱 荷兰 03", server: "91.201.113.193", port: 443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇷🇺 俄罗斯 01", server: "188.42.145.253", port: 2096, type: "vless", uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @WangCai2 /", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "gaosir.unfeeling.sbs"}
+- {name: "🇷🇺 俄罗斯 02", server: "84.22.150.195", port: 8080, type: "vless", uuid: "1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs", short-id: "27cfa05000c23cc4"}, udp: true, network: "tcp", servername: "yandex.com"}
+- {name: "🇷🇺 俄罗斯 03", server: "188.42.145.253", port: 2096, type: "vless", uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "gaosir.unfeeling.sbs"}
+- {name: "🇷🇺 俄罗斯 04", server: "ruunion.ru", port: 443, type: "vless", uuid: "7f74ad83-4aaf-419b-8caf-ff66c354bcbc", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "9qaBiJ3zMogUBKByaq71xT9xDu1dmN1b47rXOYUy6Rw", short-id: "6650429727ca"}, udp: true, network: "tcp", servername: "yahoo.com"}
+- {name: "🇷🇺 俄罗斯 05", server: "univovh.iskra-connect.xyz", port: 443, type: "vless", uuid: "2e532561-7a61-4fdf-a534-706682c2e209", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "V6i1V9804ZfgT8nutUwDs5IDQdcY9pK5uO075SW4ml4", short-id: "2d46a79deebf50fd"}, udp: true, network: "tcp", servername: "deepl.com"}
+- {name: "🇸🇦 沙特阿拉伯 01", server: "91.209.253.43", port: 2096, type: "vless", uuid: "01997b9d-a1f7-e188-981a-c665b723cfef", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇸🇪 瑞典 01", server: "77.221.137.105", port: 8443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇸🇪 瑞典 02", server: "77.221.137.105", port: 8443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
 - {name: "🇸🇬 新加坡 01", server: "92.243.75.49", port: 2087, type: "trojan", password: "wb6368", sni: "hsdgbuys.pages.dev", skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "hsdgbuys.pages.dev"}}, udp: true}
-- {name: "🇸🇬 新加坡 02", server: "178.128.223.26", port: 25801, type: "vless", uuid: "e1d5bfa9-cf32-454a-b746-b1b6b796ccfb", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "gmha_iOyNgQ8D3BgHnz9bn51qvuvaNLyfUZphycu_HQ"}, udp: true, network: "tcp", servername: "updates.cdn-apple.com"}
-- {name: "🇸🇬 新加坡 03", server: "test.sachix.online", port: 80, type: "vless", uuid: "522d0d20-40a3-49d8-af63-37c347b184ed", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "speedtest.net"}}, udp: true, servername: "speedtest.net"}
-- {name: "🇸🇬 新加坡 04", server: "test.sachix.online", port: 80, type: "vless", uuid: "522d0d20-40a3-49d8-af63-37c347b184ed", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "test.sachix.online"}}, udp: true, servername: "test.sachix.online"}
-- {name: "🇺🇸 美国 01", server: "162.159.43.92", port: 443, type: "vless", uuid: "0c0537c3-f0fb-40e6-bd59-f5038e1855ed", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "juzi.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "juzi.634676.xyz"}
-- {name: "🇺🇸 美国 02", server: "104.16.246.85", port: 443, type: "vless", uuid: "0c0537c3-f0fb-40e6-bd59-f5038e1855ed", tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "juzi.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "juzi.634676.xyz"}
-- {name: "🇺🇸 美国 03", server: "162.159.142.252", port: 2083, type: "vless", uuid: "d2965257-0536-4811-a0d5-cdce54e90326", tls: true, skip-cert-verify: false, client-fingerprint: "random", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "fei.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "fei.634676.xyz"}
-- {name: "🇺🇸 美国 04", server: "registry.cyou", port: 443, type: "vless", uuid: "01995fbf-d383-154f-98a0-5ff16ca40a79", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets", headers: {Host: "sni.wwxgxn.cfd"}}, udp: true, servername: "sni.wwxgxn.cfd"}
-- {name: "🇺🇸 美国 05", server: "nl.vip-get.ru", port: 443, type: "vless", uuid: "b88a2e58-aebb-41c2-b1aa-509e6bbff335", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "d4nrz5jZn6OcMGmRr4H-2v6hKexlwe4hKaDMgMqSV3A", short-id: "305b25f707eb"}, udp: true, network: "tcp", servername: "yahoo.com"}
-- {name: "🇺🇸 美国 06", server: "166.62.111.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇺🇸 美国 07", server: "209.46.30.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇺🇸 美国 08", server: "64.188.97.209", port: 443, type: "vless", uuid: "b88a2e58-aebb-41c2-b1aa-509e6bbff335", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "d4nrz5jZn6OcMGmRr4H-2v6hKexlwe4hKaDMgMqSV3A", short-id: "305b25f707eb"}, udp: true, network: "tcp", servername: "yahoo.com"}
-- {name: "🇺🇸 美国 09", server: "170.114.45.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇺🇸 美国 10", server: "103.133.1.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇺🇸 美国 11", server: "199.34.229.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippetsfp", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇺🇸 美国 12", server: "129.153.210.227", port: 443, type: "vless", uuid: "52ed75e2-70a2-41a0-b258-58ca4b200be9", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "ios", reality-opts: {public-key: "qkP2pqQ3NHNBkyzqsC2W9wChp3OfeXdVjOhUv8vQW0o", short-id: "aac4df9d05a5ba8f"}, udp: true, network: "tcp", servername: "iosapps.itunes.apple.com"}
-- {name: "🇺🇸 美国 13", server: "198.46.143.134", port: 443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
-- {name: "🇺🇸 美国 14", server: "158.101.11.204", port: 15805, type: "trojan", password: "iwangjie", sni: "nodes.830901.xyz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "nodes.830901.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true}
-- {name: "🇺🇸 美国 15", server: "mstr.fastly80.hosting-ip.com", port: 80, type: "vless", uuid: "857b7905-8b11-4987-994d-09bcbf7979df", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/admin", headers: {Host: "Gn8656.io"}}, udp: true, servername: "Gn8656.io"}
-- {name: "🇺🇸 美国 16", server: "158.101.11.204", port: 15805, type: "trojan", password: "iwangjie", sni: "nodes.830901.xyz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "nodes.830901.xyz"}}, udp: true}
-- {name: "🇻🇳 越南 01", server: "103.186.155.209", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 02", server: "103.186.154.196", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 03", server: "103.186.155.60", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 04", server: "103.186.155.237", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 05", server: "103.186.154.194", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 06", server: "103.186.154.175", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 07", server: "103.186.155.202", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 08", server: "103.186.155.15", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 09", server: "103.186.155.213", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 10", server: "103.186.155.12", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 11", server: "103.186.155.26", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 12", server: "103.186.155.28", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 13", server: "103.186.155.77", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇨🇳 台湾 01", server: "twmoon1-cdn-route.couldflare-cdn.com", port: 1443, type: "http", username: "mrwdfNTD8M79LCukCieldrqZWqs=", password: "exaxgqkKkd0TAMrCxeonWg==", tls: true, udp: true, sni: "twmoon1-cdn-route.couldflare-cdn.com"}
+- {name: "🇺🇸 美国 01", server: "162.159.142.252", port: 2083, type: "vless", uuid: "d2965257-0536-4811-a0d5-cdce54e90326", tls: true, skip-cert-verify: false, client-fingerprint: "random", alpn: ["h3"], network: "ws", ws-opts: {path: "/", headers: {Host: "fei.634676.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "fei.634676.xyz"}
+- {name: "🇺🇸 美国 02", server: "adf.ly", port: 443, type: "vless", uuid: "1679af35-6dd6-4c09-ae3b-18f239217f3e", tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "rAyAn-007.pArViN.DpDnS.OrG"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "rAyAn-007.pArViN.DpDnS.OrG"}
+- {name: "🇺🇸 美国 03", server: "mybb.com", port: 443, type: "vless", uuid: "aebe5a70-0ca3-46ce-8208-8b5bab1346ce", tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "rAyAn-007.nAsTaRaN.DpDnS.OrG"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "rAyAn-007.nAsTaRaN.DpDnS.OrG"}
+- {name: "🇺🇸 美国 04", server: "199.68.156.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 05", server: "104.16.161.143", port: 2096, type: "vless", uuid: "f690c2da-bdc3-4538-999e-d2bb8a541188", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "baomei.pages.dev"}}, udp: true, servername: "baomei.pages.dev"}
+- {name: "🇺🇸 美国 06", server: "23.227.194.19", port: 443, type: "trojan", password: "253bc477d4e43c209f2d427272968280", sni: "www.nintendogames.net", skip-cert-verify: false, udp: true}
+- {name: "🇺🇸 美国 07", server: "159.255.33.66", port: 2053, type: "vless", uuid: "01996549-6892-dbf0-0453-f700236936bd", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 08", server: "www.speedtest.net", port: 2082, type: "vless", uuid: "befa4610-3c87-4a78-f2a3-92d323ecb4ec", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn", headers: {Host: "novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top."}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2082}, udp: true, servername: "novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top."}
+- {name: "🇺🇸 美国 09", server: "192.0.54.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 10", server: "155.46.167.43", port: 2096, type: "vless", uuid: "01997b9d-a1f7-e188-981a-c665b723cfef", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 11", server: "139.64.235.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 12", server: "209.46.30.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 13", server: "170.114.45.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/snippetsfp=chrome", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 14", server: "103.133.1.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 15", server: "199.34.229.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippetsfpsecurity=tls", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 16", server: "209.46.30.44", port: 2096, type: "vless", uuid: "12345678-1234-1234-1234-123456789123", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippetssecurity=tls", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 17", server: "198.46.143.134", port: 443, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets/ip=proxyip.fxxk.dedyn.io:443", headers: {Host: "kejiland.freewarp.eu.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 18", server: "google.sosorg.nyc.mn", port: 443, type: "vless", uuid: "0199889f-d499-8cad-99f7-7507ed9a819b", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippets", headers: {Host: "bpg.307986.dpdns.org"}}, udp: true, servername: "bpg.307986.dpdns.org"}
+- {name: "🇺🇸 美国 19", server: "103.133.1.32", port: 2096, type: "vless", uuid: "b65f4df7-f6af-42b2-877a-cef33f21675e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/snippetssecurity=tls", headers: {Host: "kejiland.freewarp.eu.org"}}, udp: true, servername: "kejiland.freewarp.eu.org"}
+- {name: "🇺🇸 美国 20", server: "188.114.97.202", port: 8443, type: "vless", uuid: "c2e177d4-e610-4abd-85cd-1a869d158751", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "teslakit1.pages.dev"}}, udp: true, servername: "teslakit1.pages.dev"}
+- {name: "🇺🇸 美国 21", server: "104.16.53.11", port: 2053, type: "vless", uuid: "97fc44dd-c88c-4470-8d66-1752089c0183", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", alpn: ["h2", "http/1.1"], network: "ws", ws-opts: {path: "/", headers: {Host: "frAgeU2.cpI2HIdd.eu.ORG"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, udp: true, servername: "frAgeU2.cpI2HIdd.eu.ORG"}
+- {name: "🇺🇸 美国 22", server: "www.wodophonex.blog", port: 55877, type: "vless", uuid: "53b581f3-0bc8-4f4f-a4a2-c3011f773715", tls: true, skip-cert-verify: false, alpn: ["h2", "http/1.1"], network: "ws", udp: true, ws-opts: {path: "/"}, servername: "www.wodophonex.blog"}
+- {name: "🇻🇳 越南 01", server: "103.186.154.175", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -167,28 +162,31 @@ proxy-groups:
   - "AUTO"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
   - "🇦🇹 奥地利 01"
-  - "🇦🇹 奥地利 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇦🇺 澳大利亚 03"
-  - "🇦🇺 澳大利亚 04"
-  - "🇧🇷 巴西 01"
-  - "🇧🇷 巴西 02"
-  - "🇧🇷 巴西 03"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇭 瑞士 01"
+  - "🇧🇬 保加利亚 01"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
   - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇷 希腊 01"
+  - "🇬🇷 希腊 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇮🇱 以色列 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇮🇷 伊朗 01"
   - "🇮🇷 伊朗 02"
   - "🇮🇷 伊朗 03"
@@ -196,24 +194,22 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🏴‍☠️ 黎巴嫩 01"
-  - "🇱🇻 拉脱维亚 01"
+  - "🇱🇹 立陶宛 01"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇳🇱 荷兰 06"
-  - "🇳🇱 荷兰 07"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
+  - "🇸🇦 沙特阿拉伯 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -230,19 +226,13 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
-  - "🇻🇳 越南 06"
-  - "🇻🇳 越南 07"
-  - "🇻🇳 越南 08"
-  - "🇻🇳 越南 09"
-  - "🇻🇳 越南 10"
-  - "🇻🇳 越南 11"
-  - "🇻🇳 越南 12"
-  - "🇻🇳 越南 13"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -251,28 +241,31 @@ proxy-groups:
   proxies:
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
   - "🇦🇹 奥地利 01"
-  - "🇦🇹 奥地利 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇦🇺 澳大利亚 03"
-  - "🇦🇺 澳大利亚 04"
-  - "🇧🇷 巴西 01"
-  - "🇧🇷 巴西 02"
-  - "🇧🇷 巴西 03"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇭 瑞士 01"
+  - "🇧🇬 保加利亚 01"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
   - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇷 希腊 01"
+  - "🇬🇷 希腊 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇮🇱 以色列 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇮🇷 伊朗 01"
   - "🇮🇷 伊朗 02"
   - "🇮🇷 伊朗 03"
@@ -280,24 +273,22 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🏴‍☠️ 黎巴嫩 01"
-  - "🇱🇻 拉脱维亚 01"
+  - "🇱🇹 立陶宛 01"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇳🇱 荷兰 06"
-  - "🇳🇱 荷兰 07"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
+  - "🇸🇦 沙特阿拉伯 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -314,47 +305,44 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
-  - "🇻🇳 越南 06"
-  - "🇻🇳 越南 07"
-  - "🇻🇳 越南 08"
-  - "🇻🇳 越南 09"
-  - "🇻🇳 越南 10"
-  - "🇻🇳 越南 11"
-  - "🇻🇳 越南 12"
-  - "🇻🇳 越南 13"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
   - "🇦🇹 奥地利 01"
-  - "🇦🇹 奥地利 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇦🇺 澳大利亚 03"
-  - "🇦🇺 澳大利亚 04"
-  - "🇧🇷 巴西 01"
-  - "🇧🇷 巴西 02"
-  - "🇧🇷 巴西 03"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇭 瑞士 01"
+  - "🇧🇬 保加利亚 01"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
   - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇷 希腊 01"
+  - "🇬🇷 希腊 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇮🇱 以色列 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇮🇷 伊朗 01"
   - "🇮🇷 伊朗 02"
   - "🇮🇷 伊朗 03"
@@ -362,24 +350,22 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🏴‍☠️ 黎巴嫩 01"
-  - "🇱🇻 拉脱维亚 01"
+  - "🇱🇹 立陶宛 01"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇳🇱 荷兰 06"
-  - "🇳🇱 荷兰 07"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
+  - "🇸🇦 沙特阿拉伯 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -396,19 +382,13 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
-  - "🇻🇳 越南 06"
-  - "🇻🇳 越南 07"
-  - "🇻🇳 越南 08"
-  - "🇻🇳 越南 09"
-  - "🇻🇳 越南 10"
-  - "🇻🇳 越南 11"
-  - "🇻🇳 越南 12"
-  - "🇻🇳 越南 13"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -417,28 +397,31 @@ proxy-groups:
   - "DIRECT"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
   - "🇦🇹 奥地利 01"
-  - "🇦🇹 奥地利 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇦🇺 澳大利亚 03"
-  - "🇦🇺 澳大利亚 04"
-  - "🇧🇷 巴西 01"
-  - "🇧🇷 巴西 02"
-  - "🇧🇷 巴西 03"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇭 瑞士 01"
+  - "🇧🇬 保加利亚 01"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
   - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇷 希腊 01"
+  - "🇬🇷 希腊 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇮🇱 以色列 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇮🇷 伊朗 01"
   - "🇮🇷 伊朗 02"
   - "🇮🇷 伊朗 03"
@@ -446,24 +429,22 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🏴‍☠️ 黎巴嫩 01"
-  - "🇱🇻 拉脱维亚 01"
+  - "🇱🇹 立陶宛 01"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇳🇱 荷兰 06"
-  - "🇳🇱 荷兰 07"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
+  - "🇸🇦 沙特阿拉伯 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -480,19 +461,13 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
-  - "🇻🇳 越南 06"
-  - "🇻🇳 越南 07"
-  - "🇻🇳 越南 08"
-  - "🇻🇳 越南 09"
-  - "🇻🇳 越南 10"
-  - "🇻🇳 越南 11"
-  - "🇻🇳 越南 12"
-  - "🇻🇳 越南 13"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -500,28 +475,31 @@ proxy-groups:
   - "PROXY"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
   - "🇦🇹 奥地利 01"
-  - "🇦🇹 奥地利 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇦🇺 澳大利亚 03"
-  - "🇦🇺 澳大利亚 04"
-  - "🇧🇷 巴西 01"
-  - "🇧🇷 巴西 02"
-  - "🇧🇷 巴西 03"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇭 瑞士 01"
+  - "🇧🇬 保加利亚 01"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
   - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇷 希腊 01"
+  - "🇬🇷 希腊 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇮🇱 以色列 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇮🇷 伊朗 01"
   - "🇮🇷 伊朗 02"
   - "🇮🇷 伊朗 03"
@@ -529,24 +507,22 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🏴‍☠️ 黎巴嫩 01"
-  - "🇱🇻 拉脱维亚 01"
+  - "🇱🇹 立陶宛 01"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇳🇱 荷兰 06"
-  - "🇳🇱 荷兰 07"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
+  - "🇸🇦 沙特阿拉伯 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -563,47 +539,44 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
-  - "🇻🇳 越南 06"
-  - "🇻🇳 越南 07"
-  - "🇻🇳 越南 08"
-  - "🇻🇳 越南 09"
-  - "🇻🇳 越南 10"
-  - "🇻🇳 越南 11"
-  - "🇻🇳 越南 12"
-  - "🇻🇳 越南 13"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
+  - "🇦🇪 阿联酋 03"
+  - "🇦🇪 阿联酋 04"
   - "🇦🇹 奥地利 01"
-  - "🇦🇹 奥地利 02"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇦🇺 澳大利亚 03"
-  - "🇦🇺 澳大利亚 04"
-  - "🇧🇷 巴西 01"
-  - "🇧🇷 巴西 02"
-  - "🇧🇷 巴西 03"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇭 瑞士 01"
+  - "🇧🇬 保加利亚 01"
   - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇫🇮 芬兰 01"
+  - "🇫🇮 芬兰 02"
   - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇷 希腊 01"
+  - "🇬🇷 希腊 02"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇮🇱 以色列 01"
   - "🇮🇳 印度 01"
-  - "🇮🇳 印度 02"
   - "🇮🇷 伊朗 01"
   - "🇮🇷 伊朗 02"
   - "🇮🇷 伊朗 03"
@@ -611,24 +584,22 @@ proxy-groups:
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇰🇷 韩国 03"
-  - "🇰🇿 哈萨克斯坦 01"
-  - "🏴‍☠️ 黎巴嫩 01"
-  - "🇱🇻 拉脱维亚 01"
+  - "🇱🇹 立陶宛 01"
+  - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
-  - "🇳🇱 荷兰 06"
-  - "🇳🇱 荷兰 07"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
+  - "🇸🇦 沙特阿拉伯 01"
+  - "🇸🇪 瑞典 01"
+  - "🇸🇪 瑞典 02"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇸🇬 新加坡 04"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -645,19 +616,13 @@ proxy-groups:
   - "🇺🇸 美国 14"
   - "🇺🇸 美国 15"
   - "🇺🇸 美国 16"
+  - "🇺🇸 美国 17"
+  - "🇺🇸 美国 18"
+  - "🇺🇸 美国 19"
+  - "🇺🇸 美国 20"
+  - "🇺🇸 美国 21"
+  - "🇺🇸 美国 22"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
-  - "🇻🇳 越南 06"
-  - "🇻🇳 越南 07"
-  - "🇻🇳 越南 08"
-  - "🇻🇳 越南 09"
-  - "🇻🇳 越南 10"
-  - "🇻🇳 越南 11"
-  - "🇻🇳 越南 12"
-  - "🇻🇳 越南 13"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"

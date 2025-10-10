@@ -92,18 +92,12 @@ proxies:
 - {name: "🇯🇵 日本 01", password: "253bc477d4e43c209f2d427272968280", port: 3271, server: "160.16.63.16", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 2, cipher: "auto", name: "🇯🇵 日本 02", network: "ws", port: 30806, server: "v6.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "ocbc.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {name: "🇯🇵 日本 03", password: "253bc477d4e43c209f2d427272968280", port: 3160, server: "160.16.63.16", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇯🇵 日本 04", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "60.83.190.248", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
-- {name: "🇯🇵 日本 05", password: "253bc477d4e43c209f2d427272968280", port: 4451, server: "160.16.136.130", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 04", password: "253bc477d4e43c209f2d427272968280", port: 5041, server: "153.121.51.29", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 05", password: "253bc477d4e43c209f2d427272968280", port: 5328, server: "160.16.117.182", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇰🇷 韩国 01", password: "qwerREWQ@@", port: 4652, server: "218.237.185.230", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 01", password: "253bc477d4e43c209f2d427272968280", port: 5041, server: "153.121.51.29", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 02", password: "253bc477d4e43c209f2d427272968280", port: 5328, server: "160.16.117.182", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 03", network: "ws", password: "wb6368", port: 2087, server: "92.243.75.49", skip-cert-verify: false, sni: "hsdgbuys.pages.dev", type: "trojan", udp: true, ws-opts: {headers: {Host: "hsdgbuys.pages.dev"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 01", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "23.227.194.19", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 02", password: "253bc477d4e43c209f2d427272968280", port: 6752, server: "36.156.102.84", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 03", network: "ws", password: "iwangjie", port: 15805, server: "158.101.11.204", skip-cert-verify: true, sni: "nodes.830901.xyz", type: "trojan", udp: true, ws-opts: {headers: {Host: "nodes.830901.xyz"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 04", network: "ws", password: "iwangjie", port: 15805, server: "158.101.11.204", skip-cert-verify: true, sni: "nodes.830901.xyz", type: "trojan", udp: true, ws-opts: {headers: {Host: "nodes.830901.xyz"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 01", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "23.227.194.19", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.182", tfo: false, type: "ss", client-fingerprint: "chrome"}
-- {name: "🇳🇱 荷兰 01", password: "253bc477d4e43c209f2d427272968280", port: 443, server: "38.180.249.152", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇸🇬 新加坡 01", network: "ws", password: "wb6368", port: 2087, server: "92.243.75.49", skip-cert-verify: false, sni: "hsdgbuys.pages.dev", type: "trojan", udp: true, ws-opts: {headers: {Host: "hsdgbuys.pages.dev"}, path: "/"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -122,15 +116,9 @@ proxy-groups:
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
   - "🇰🇷 韩国 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇻🇳 越南 01"
-  - "🇳🇱 荷兰 01"
+  - "🇸🇬 新加坡 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -150,15 +138,9 @@ proxy-groups:
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
   - "🇰🇷 韩国 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇻🇳 越南 01"
-  - "🇳🇱 荷兰 01"
+  - "🇸🇬 新加坡 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -176,15 +158,9 @@ proxy-groups:
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
   - "🇰🇷 韩国 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇻🇳 越南 01"
-  - "🇳🇱 荷兰 01"
+  - "🇸🇬 新加坡 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -204,15 +180,9 @@ proxy-groups:
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
   - "🇰🇷 韩国 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇻🇳 越南 01"
-  - "🇳🇱 荷兰 01"
+  - "🇸🇬 新加坡 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -231,15 +201,9 @@ proxy-groups:
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
   - "🇰🇷 韩国 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇻🇳 越南 01"
-  - "🇳🇱 荷兰 01"
+  - "🇸🇬 新加坡 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -257,15 +221,9 @@ proxy-groups:
   - "🇯🇵 日本 04"
   - "🇯🇵 日本 05"
   - "🇰🇷 韩国 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
   - "🇻🇳 越南 01"
-  - "🇳🇱 荷兰 01"
+  - "🇸🇬 新加坡 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
