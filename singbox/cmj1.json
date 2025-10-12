@@ -96,7 +96,8 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇸🇬 新加坡 01"
+        "🇸🇬 新加坡 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,7 +108,8 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇸🇬 新加坡 01"
+        "🇸🇬 新加坡 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,7 +120,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇸🇬 新加坡 01"
+        "🇸🇬 新加坡 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -131,7 +134,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇸🇬 新加坡 01"
+        "🇸🇬 新加坡 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -143,7 +147,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇸🇬 新加坡 01"
+        "🇸🇬 新加坡 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -154,7 +159,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇸🇬 新加坡 01"
+        "🇸🇬 新加坡 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -227,7 +233,7 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "vless",
-      "server": "172.104.188.73",
+      "server": "172.237.73.24",
       "server_port": 443,
       "uuid": "d2965257-0536-4811-a0d5-cdce54e90326",
       "tls": {
@@ -243,6 +249,29 @@
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560,
         "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "104.17.190.137",
+      "server_port": 443,
+      "uuid": "897a4bec-26b8-11e8-94be-00505695472c",
+      "tls": {
+        "enabled": true,
+        "server_name": "xv6.jpmj.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "xv6.jpmj.dpdns.org"
+        },
+        "path": "/bbs?ed=2048security=tls"
       }
     }
   ],
