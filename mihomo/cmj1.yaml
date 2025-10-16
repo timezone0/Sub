@@ -84,11 +84,11 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇩🇪 德国 01", server: "linux.do", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "freedom.pusytroller.cf"}}}
-- {name: "🇩🇪 德国 02", server: "172.66.40.99", port: 443, type: "vless", uuid: "ba5d4a8a-43c0-4c2c-b1de-42f7e807d149", tls: true, alpn: ["h2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7", headers: {Host: "www.dollardoon.com"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "www.dollardoon.com"}
-- {name: "🇭🇰 香港 01", server: "openai.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "freedom.pusytroller.cf"}}}
-- {name: "🇸🇬 新加坡 01", server: "www.wto.org", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "freedom.pusytroller.cf"}}}
-- {name: "🇺🇸 美国 01", server: "developers.cloudflare.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "freedom.pusytroller.cf"}}}
+- {name: "🇦🇺 澳大利亚 01", server: "3.25.198.142", port: 443, type: "ss", cipher: "aes-256-cfb", password: "amazonskr05"}
+- {name: "🇬🇧 英国 01", server: "blog.cloudflare.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "freedom.pusytroller.cf"}}}
+- {name: "🇭🇰 香港 01", server: "221.164.142.10", port: 50001, type: "vmess", uuid: "ffde381b-4a30-41d4-90eb-151f228b06ea", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/qq"}, servername: "aa.nbee.pp.ua"}
+- {name: "🇸🇬 新加坡 01", server: "openai.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "freedom.pusytroller.cf"}}}
+- {name: "🇸🇬 新加坡 02", server: "174.138.29.1", port: 60523, type: "ss", cipher: "chacha20-ietf-poly1305", password: "X2UQXuTGxwxE1ZMaTQwtxS"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -96,11 +96,11 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -109,22 +109,22 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 02"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 02"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -133,11 +133,11 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -145,22 +145,22 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"

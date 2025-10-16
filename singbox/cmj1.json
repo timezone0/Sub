@@ -96,11 +96,11 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
+        "🇦🇺 澳大利亚 01",
+        "🇬🇧 英国 01",
         "🇭🇰 香港 01",
         "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -111,11 +111,11 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
+        "🇦🇺 澳大利亚 01",
+        "🇬🇧 英国 01",
         "🇭🇰 香港 01",
         "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,11 +126,11 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
+        "🇦🇺 澳大利亚 01",
+        "🇬🇧 英国 01",
         "🇭🇰 香港 01",
         "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -143,11 +143,11 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
+        "🇦🇺 澳大利亚 01",
+        "🇬🇧 英国 01",
         "🇭🇰 香港 01",
         "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -159,11 +159,11 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
+        "🇦🇺 澳大利亚 01",
+        "🇬🇧 英国 01",
         "🇭🇰 香港 01",
         "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -174,11 +174,11 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
+        "🇦🇺 澳大利亚 01",
+        "🇬🇧 英国 01",
         "🇭🇰 香港 01",
         "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -249,9 +249,17 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
+      "tag": "🇦🇺 澳大利亚 01",
+      "type": "shadowsocks",
+      "server": "3.25.198.142",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇬🇧 英国 01",
       "type": "vless",
-      "server": "linux.do",
+      "server": "blog.cloudflare.com",
       "server_port": 2095,
       "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
       "transport": {
@@ -263,35 +271,26 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 02",
-      "type": "vless",
-      "server": "172.66.40.99",
-      "server_port": 443,
-      "uuid": "ba5d4a8a-43c0-4c2c-b1de-42f7e807d149",
+      "tag": "🇭🇰 香港 01",
+      "type": "vmess",
+      "server": "221.164.142.10",
+      "server_port": 50001,
+      "uuid": "ffde381b-4a30-41d4-90eb-151f228b06ea",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "www.dollardoon.com",
-        "insecure": true,
-        "alpn": [
-          "h2%2Chttp%2F1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "aa.nbee.pp.ua",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "www.dollardoon.com"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2048,
-        "path": "/@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7"
+        "headers": {},
+        "path": "/qq"
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
+      "tag": "🇸🇬 新加坡 01",
       "type": "vless",
       "server": "openai.com",
       "server_port": 2095,
@@ -305,32 +304,12 @@
       }
     },
     {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "www.wto.org",
-      "server_port": 2095,
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "freedom.pusytroller.cf"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 01",
-      "type": "vless",
-      "server": "developers.cloudflare.com",
-      "server_port": 2095,
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "freedom.pusytroller.cf"
-        },
-        "path": "/"
-      }
+      "tag": "🇸🇬 新加坡 02",
+      "type": "shadowsocks",
+      "server": "174.138.29.1",
+      "server_port": 60523,
+      "method": "chacha20-ietf-poly1305",
+      "password": "X2UQXuTGxwxE1ZMaTQwtxS"
     }
   ],
   "route": {
