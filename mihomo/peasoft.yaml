@@ -99,6 +99,7 @@ proxies:
 - {cipher: "chacha20-ietf-poly1305", name: "🇸🇬 新加坡 06", password: "X2UQXuTGxwxE1ZMaTQwtxS", port: 60523, server: "174.138.29.1", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 01", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 2381, server: "160.16.106.144", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 2467, server: "160.16.106.144", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 03", network: "ws", password: "d0728e94-82c2-456b-b5d4-eeab540599df", port: 443, server: "172.67.192.215", skip-cert-verify: false, sni: "joss.krikkrik.xyz", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.krikkrik.xyz"}, path: "/Free-VPN-CF-Geo-Project/AE5"}, client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.234", tfo: false, type: "ss", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
@@ -123,6 +124,7 @@ proxy-groups:
   - "🇸🇬 新加坡 06"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "AUTO"
   type: "url-test"
@@ -148,6 +150,7 @@ proxy-groups:
   - "🇸🇬 新加坡 06"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "AI"
   type: "select"
@@ -171,6 +174,7 @@ proxy-groups:
   - "🇸🇬 新加坡 06"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "GOOGLEFCM"
   type: "select"
@@ -196,6 +200,7 @@ proxy-groups:
   - "🇸🇬 新加坡 06"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "HOYO"
   type: "select"
@@ -220,6 +225,7 @@ proxy-groups:
   - "🇸🇬 新加坡 06"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 - name: "TIKTOK"
   type: "select"
@@ -243,6 +249,7 @@ proxy-groups:
   - "🇸🇬 新加坡 06"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
   - "🇻🇳 越南 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
