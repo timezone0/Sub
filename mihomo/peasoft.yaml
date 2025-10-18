@@ -84,7 +84,6 @@ proxies:
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 01", network: "ws", port: 30809, server: "v9.heduian.link", skip-cert-verify: true, tfo: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", ws-opts: {headers: {Host: "baidu.com"}, path: "/oooo"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
 - {cipher: "aes-256-gcm", name: "🇭🇰 香港 02", password: "ccf426f1fe78", plugin: "v2ray-plugin", plugin-opts: {host: "newroot2v1.dsjsapp.com", mode: "websocket", mux: true, path: "/zksuapgx", skip-cert-verify: false, tls: true}, port: 443, server: "103.103.245.158", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 03", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 443, server: "58.152.30.92", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 04", password: "BxceQaOe", port: 4556, server: "36.151.195.112", skip-cert-verify: true, type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 01", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 1331, server: "160.16.131.243", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 02", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 316, server: "160.16.131.243", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇸🇬 新加坡 01", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 5041, server: "153.121.41.97", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
@@ -94,7 +93,8 @@ proxies:
 - {cipher: "chacha20-ietf-poly1305", name: "🇸🇬 新加坡 05", password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", plugin: "obfs", plugin-opts: {host: "874b20d:48331", mode: "tls"}, port: 2377, server: "5.44.249.42", tfo: false, type: "ss", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 01", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 2381, server: "153.121.41.97", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", password: "c53647f3153f784b3c695ffbe5fb43c0", port: 2467, server: "153.121.41.97", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 03", network: "ws", password: "d0728e94-82c2-456b-b5d4-eeab540599df", port: 443, server: "172.67.192.215", skip-cert-verify: false, sni: "joss.krikkrik.xyz", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.krikkrik.xyz"}, path: "/Free-VPN-CF-Geo-Project/AE5"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 03", network: "ws", password: "trojan", port: 8443, server: "www.visa.com.sg", skip-cert-verify: false, sni: "azadnet-f03.pages.dev", type: "trojan", udp: true, ws-opts: {headers: {Host: "azadnet-f03.pages.dev"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
+- {name: "🇨🇳 台湾 01", password: "890c928b-9ceb-4048-aff2-944461463ee8", port: 25502, server: "cdnfire.xiaomispeed.com", skip-cert-verify: true, sni: "cdnfire.xiaomispeed.com", type: "trojan", udp: true, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -103,7 +103,6 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
@@ -114,6 +113,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇨🇳 台湾 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -123,7 +123,6 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
@@ -134,6 +133,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇨🇳 台湾 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -141,7 +141,6 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
@@ -152,6 +151,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇨🇳 台湾 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -161,7 +161,6 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
@@ -172,6 +171,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇨🇳 台湾 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -180,7 +180,6 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
@@ -191,6 +190,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇨🇳 台湾 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -198,7 +198,6 @@ proxy-groups:
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇸🇬 新加坡 01"
@@ -209,6 +208,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇨🇳 台湾 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
