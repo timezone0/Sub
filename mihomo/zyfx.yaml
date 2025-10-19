@@ -115,6 +115,7 @@ proxies:
 - {name: "🇩🇪 德国 20", server: "n001.xunxunmimisbs.sbs", port: 17000, type: "trojan", password: "40c46535-2df7-448b-9dd0-88c9d54b2875", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇩🇪 德国 21", server: "n001.xunxunmimisbs.sbs", port: 17000, type: "trojan", password: "b0868ef1-270f-4eb8-88ba-14ac92cefb17", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇩🇪 德国 22", server: "n001.xunxunmimisbs.sbs", port: 25100, type: "trojan", password: "c8c27e02-b2cf-43d0-bd88-d3dc1f91b0e9", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {type: "vless", name: "🇩🇪 德国 23", server: "80.75.218.223", port: 33333, uuid: "51a6b7d2-6909-4bda-8bd3-49b478a4e058", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "qq", skip-cert-verify: false, reality-opts: {public-key: "46NdCm_LhhtVYBQyHrz5ZQ8Db7dKTxXd_d4H5NjxVlo", short-id: "21066f082effb5", _spider-x: "/"}, network: "tcp", encryption: "none", servername: "www.amazon.com"}
 - {name: "🇦🇪 阿联酋 01", server: "n002.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "0b9a7ce9-a9df-41d0-8f35-64cc053f3e4b", sni: "db01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇦🇪 阿联酋 02", server: "n002.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "2ca412fd-90e2-48f9-9534-27bf689335b9", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇦🇪 阿联酋 03", server: "n002.xunxunmimisbs.sbs", port: 49100, type: "trojan", password: "1a069420-6cea-44d7-87a5-e37952a0544d", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
@@ -180,6 +181,8 @@ proxies:
 - {name: "🇺🇸 美国 30", server: "www.speedtest.net", port: 8443, type: "vless", uuid: "b1addf1e-6c1d-4410-bfa5-cf26328319d9", tls: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/CmxkS1704Zcx8p3M", headers: {Host: "0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV"}}, udp: true, servername: "0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV"}
 - {name: "🇺🇸 美国 31", server: "banmabanmabanmabanmabanmabanma6.wanlidag.top", port: 54265, type: "hysteria2", password: "fe2e1fca-8a24-4d27-921a-9f06df38f4d5", auth: "fe2e1fca-8a24-4d27-921a-9f06df38f4d5", sni: "banmabanmabanmabanmabanmabanma6.wanlidag.top", skip-cert-verify: true, udp: true}
 - {name: "🇺🇸 美国 32", server: "212.192.15.176", port: 22125, type: "vmess", uuid: "654598c0-95ae-4f7f-b101-0dfe18253718", alterId: 0, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/"}, udp: true}
+- {type: "hysteria2", name: "🇺🇸 美国 33", server: "208.84.102.87", port: 33333, password: "dc28fd40-ad52-41fb-badd-90d34c6553eb", skip-cert-verify: true, tfo: false}
+- {name: "🇺🇸 美国 34", type: "socks5", tls: false, server: "38.63.252.242", port: 20000, username: "admin", password: "admin"}
 - {name: "🇯🇵 日本 01", server: "cdnfire.xiaomispeed.com", port: 24401, type: "trojan", password: "db574be4-3113-48ef-8f08-ab898821b5c9", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true}
 - {name: "🇯🇵 日本 02", server: "haa.dashuai.cyou", port: 45056, type: "vmess", uuid: "c82cb0d7-01d8-46e2-9200-cac75ebc6da3", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
 - {name: "🇯🇵 日本 03", server: "n002.xunxunmimisbs.sbs", port: 42101, type: "trojan", password: "15dec4cc-4254-41bc-8eb2-5c1f3de77806", sni: "jp02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
@@ -231,6 +234,7 @@ proxies:
 - {name: "🇬🇧 英国 01", server: "104.17.238.123", port: 2087, type: "vless", uuid: "7fc5337c-2639-42d3-b6ad-ff44277098d8", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/socks://123:123@138.68.166.48:1080", headers: {Host: "anime.11160321.xyz"}}, udp: true, servername: "anime.11160321.xyz"}
 - {name: "🇬🇧 英国 02", server: "n002.xunxunmimisbs.sbs", port: 44100, type: "trojan", password: "229d350c-6917-429d-9c89-9b0a3cffa7a8", sni: "uk01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇬🇧 英国 03", server: "n001.xunxunmimisbs.sbs", port: 44100, type: "trojan", password: "15dec4cc-4254-41bc-8eb2-5c1f3de77806", sni: "uk01.xxxxyyyysbs.sbs", udp: true}
+- {type: "vless", name: "🇦🇱 阿尔巴尼亚 01", server: "38.252.8.208", port: 12143, uuid: "87023a88-d08f-419e-9100-bf4b99d29d54", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "firefox", skip-cert-verify: false, reality-opts: {public-key: "Og22mCU3ox0A2huEnkFi35BLucYlkxeFLdt0IswxonY"}, network: "tcp", encryption: "none", servername: "updates.cdn-apple.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -270,6 +274,7 @@ proxy-groups:
   - "🇩🇪 德国 20"
   - "🇩🇪 德国 21"
   - "🇩🇪 德国 22"
+  - "🇩🇪 德国 23"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -335,6 +340,8 @@ proxy-groups:
   - "🇺🇸 美国 30"
   - "🇺🇸 美国 31"
   - "🇺🇸 美国 32"
+  - "🇺🇸 美国 33"
+  - "🇺🇸 美国 34"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -386,6 +393,7 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
+  - "🇦🇱 阿尔巴尼亚 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -426,6 +434,7 @@ proxy-groups:
   - "🇩🇪 德国 20"
   - "🇩🇪 德国 21"
   - "🇩🇪 德国 22"
+  - "🇩🇪 德国 23"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -491,6 +500,8 @@ proxy-groups:
   - "🇺🇸 美国 30"
   - "🇺🇸 美国 31"
   - "🇺🇸 美国 32"
+  - "🇺🇸 美国 33"
+  - "🇺🇸 美国 34"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -542,6 +553,7 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
+  - "🇦🇱 阿尔巴尼亚 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -580,6 +592,7 @@ proxy-groups:
   - "🇩🇪 德国 20"
   - "🇩🇪 德国 21"
   - "🇩🇪 德国 22"
+  - "🇩🇪 德国 23"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -645,6 +658,8 @@ proxy-groups:
   - "🇺🇸 美国 30"
   - "🇺🇸 美国 31"
   - "🇺🇸 美国 32"
+  - "🇺🇸 美国 33"
+  - "🇺🇸 美国 34"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -696,6 +711,7 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
+  - "🇦🇱 阿尔巴尼亚 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -736,6 +752,7 @@ proxy-groups:
   - "🇩🇪 德国 20"
   - "🇩🇪 德国 21"
   - "🇩🇪 德国 22"
+  - "🇩🇪 德国 23"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -801,6 +818,8 @@ proxy-groups:
   - "🇺🇸 美国 30"
   - "🇺🇸 美国 31"
   - "🇺🇸 美国 32"
+  - "🇺🇸 美国 33"
+  - "🇺🇸 美国 34"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -852,6 +871,7 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
+  - "🇦🇱 阿尔巴尼亚 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -891,6 +911,7 @@ proxy-groups:
   - "🇩🇪 德国 20"
   - "🇩🇪 德国 21"
   - "🇩🇪 德国 22"
+  - "🇩🇪 德国 23"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -956,6 +977,8 @@ proxy-groups:
   - "🇺🇸 美国 30"
   - "🇺🇸 美国 31"
   - "🇺🇸 美国 32"
+  - "🇺🇸 美国 33"
+  - "🇺🇸 美国 34"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1007,6 +1030,7 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
+  - "🇦🇱 阿尔巴尼亚 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -1045,6 +1069,7 @@ proxy-groups:
   - "🇩🇪 德国 20"
   - "🇩🇪 德国 21"
   - "🇩🇪 德国 22"
+  - "🇩🇪 德国 23"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -1110,6 +1135,8 @@ proxy-groups:
   - "🇺🇸 美国 30"
   - "🇺🇸 美国 31"
   - "🇺🇸 美国 32"
+  - "🇺🇸 美国 33"
+  - "🇺🇸 美国 34"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1161,6 +1188,7 @@ proxy-groups:
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
+  - "🇦🇱 阿尔巴尼亚 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
