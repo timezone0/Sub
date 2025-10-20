@@ -94,8 +94,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 01",
-        "🇭🇺 匈牙利 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -104,8 +105,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 01",
-        "🇭🇺 匈牙利 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -114,8 +116,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇲🇩 摩尔多瓦 01",
-        "🇭🇺 匈牙利 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,8 +129,9 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇲🇩 摩尔多瓦 01",
-        "🇭🇺 匈牙利 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,8 +141,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🇲🇩 摩尔多瓦 01",
-        "🇭🇺 匈牙利 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,8 +152,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇲🇩 摩尔多瓦 01",
-        "🇭🇺 匈牙利 01"
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,20 +189,42 @@
       }
     },
     {
-      "tag": "🇲🇩 摩尔多瓦 01",
-      "type": "shadowsocks",
-      "server": "185.153.197.5",
-      "server_port": 989,
-      "method": "aes-256-cfb",
-      "password": "f8f7aCzcPKbsF8p3"
+      "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "v29.heduian.link",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocbc.com"
+        },
+        "path": "/oooo"
+      }
     },
     {
-      "tag": "🇭🇺 匈牙利 01",
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "212.192.15.176",
+      "server_port": 25169,
+      "uuid": "566bf452-a086-41f0-a474-d7ae067956ee",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇳🇱 荷兰 01",
       "type": "shadowsocks",
-      "server": "109.61.39.28",
-      "server_port": 990,
+      "server": "178.208.78.170",
+      "server_port": 23822,
       "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "password": "6hWNCD6EzQuP3V2aEFURwS"
     }
   ],
   "route": {
