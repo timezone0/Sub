@@ -83,9 +83,7 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇫🇷 法国 01", server: "195.154.200.40", port: 15010, type: "hysteria", auth_str: "", auth-str: "", up: 100, down: 100, fast-open: false, protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"]}
-- {name: "🇭🇰 香港 01", server: "47.242.90.210", port: 31212, type: "vmess", uuid: "3a4271fb-2718-4489-da78-80a8e7701aa5", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇵🇹 葡萄牙 01", server: "onhkzoom.dlayernet.xyz", port: 1053, type: "ss", cipher: "aes-128-gcm", password: "7af26eae-63c7-43c8-b335-e3528f790459"}
+- {name: "🇸🇬 新加坡 01", server: "36.156.102.115", port: 2088, type: "trojan", password: "BxceQaOe", sni: "36.156.102.115", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -93,9 +91,7 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇫🇷 法国 01"
-  - "🇭🇰 香港 01"
-  - "🇵🇹 葡萄牙 01"
+  - "🇸🇬 新加坡 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -104,18 +100,14 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇫🇷 法国 01"
-  - "🇭🇰 香港 01"
-  - "🇵🇹 葡萄牙 01"
+  - "🇸🇬 新加坡 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇫🇷 法国 01"
-  - "🇭🇰 香港 01"
-  - "🇵🇹 葡萄牙 01"
+  - "🇸🇬 新加坡 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -124,9 +116,7 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇫🇷 法国 01"
-  - "🇭🇰 香港 01"
-  - "🇵🇹 葡萄牙 01"
+  - "🇸🇬 新加坡 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -134,18 +124,14 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇫🇷 法国 01"
-  - "🇭🇰 香港 01"
-  - "🇵🇹 葡萄牙 01"
+  - "🇸🇬 新加坡 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇫🇷 法国 01"
-  - "🇭🇰 香港 01"
-  - "🇵🇹 葡萄牙 01"
+  - "🇸🇬 新加坡 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
