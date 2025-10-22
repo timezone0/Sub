@@ -82,7 +82,8 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇯🇵 日本 01", type: "trojan", server: "36.156.102.115", port: 26876, password: "BxceQaOe", skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", type: "ss", server: "13.38.44.116", port: 443, cipher: "aes-256-cfb", password: "amazonskr05"}
+- {name: "🇺🇸 美国 01", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2}
+- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "185.153.197.5", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -90,6 +91,7 @@ proxy-groups:
   - "AUTO"
   - "🇯🇵 日本 01"
   - "🇺🇸 美国 01"
+  - "🇲🇩 摩尔多瓦 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -98,12 +100,14 @@ proxy-groups:
   proxies:
   - "🇯🇵 日本 01"
   - "🇺🇸 美国 01"
+  - "🇲🇩 摩尔多瓦 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇯🇵 日本 01"
   - "🇺🇸 美国 01"
+  - "🇲🇩 摩尔多瓦 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -112,6 +116,7 @@ proxy-groups:
   - "DIRECT"
   - "🇯🇵 日本 01"
   - "🇺🇸 美国 01"
+  - "🇲🇩 摩尔多瓦 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -119,12 +124,14 @@ proxy-groups:
   - "PROXY"
   - "🇯🇵 日本 01"
   - "🇺🇸 美国 01"
+  - "🇲🇩 摩尔多瓦 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇯🇵 日本 01"
   - "🇺🇸 美国 01"
+  - "🇲🇩 摩尔多瓦 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"

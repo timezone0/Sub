@@ -95,7 +95,8 @@
       "outbounds": [
         "auto",
         "🇯🇵 日本 01",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -105,7 +106,8 @@
       "interval": "3m",
       "outbounds": [
         "🇯🇵 日本 01",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -115,7 +117,8 @@
       "outbounds": [
         "select",
         "🇯🇵 日本 01",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,7 +130,8 @@
         "select",
         "direct",
         "🇯🇵 日本 01",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -138,7 +142,8 @@
         "direct",
         "select",
         "🇯🇵 日本 01",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -148,7 +153,8 @@
       "outbounds": [
         "select",
         "🇯🇵 日本 01",
-        "🇺🇸 美国 01"
+        "🇺🇸 美国 01",
+        "🇲🇩 摩尔多瓦 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -196,11 +202,27 @@
     },
     {
       "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "v29.heduian.link",
+      "server_port": 30829,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "ocbc.com"
+        },
+        "path": "/oooo"
+      }
+    },
+    {
+      "tag": "🇲🇩 摩尔多瓦 01",
       "type": "shadowsocks",
-      "server": "13.38.44.116",
-      "server_port": 443,
+      "server": "185.153.197.5",
+      "server_port": 989,
       "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "password": "f8f7aCzcPKbsF8p3"
     }
   ],
   "route": {
