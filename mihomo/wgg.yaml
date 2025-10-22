@@ -83,14 +83,14 @@ proxies:
     padding: true
 - {type: "ss", server: "56.228.80.83", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 01"}
 - {type: "ss", server: "51.20.184.165", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 02"}
-- {type: "ss", server: "18.116.24.97", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 01"}
-- {type: "ss", server: "3.12.120.55", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 02"}
-- {type: "ss", server: "18.218.220.83", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 03"}
-- {type: "ss", server: "16.170.173.73", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
-- {type: "ss", server: "35.178.211.150", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
+- {type: "ss", server: "18.171.186.242", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
+- {type: "ss", server: "3.12.120.55", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 01"}
+- {type: "ss", server: "18.218.220.83", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 02"}
+- {type: "ss", server: "13.58.236.227", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 03"}
+- {type: "ss", server: "13.62.47.101", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
+- {type: "ss", server: "3.17.166.143", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇦 加拿大 01"}
+- {type: "ss", server: "3.79.189.65", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
 - {type: "ss", server: "35.178.48.198", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇸🇬 新加坡 01"}
-- {type: "ss", server: "18.221.122.241", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇦 加拿大 01"}
-- {type: "ss", server: "18.175.239.111", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -98,14 +98,14 @@ proxy-groups:
   - "AUTO"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇭🇰 香港 01"
+  - "🇨🇦 加拿大 01"
   - "🇨🇳 台湾 01"
   - "🇸🇬 新加坡 01"
-  - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -114,28 +114,28 @@ proxy-groups:
   proxies:
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇭🇰 香港 01"
+  - "🇨🇦 加拿大 01"
   - "🇨🇳 台湾 01"
   - "🇸🇬 新加坡 01"
-  - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇭🇰 香港 01"
+  - "🇨🇦 加拿大 01"
   - "🇨🇳 台湾 01"
   - "🇸🇬 新加坡 01"
-  - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -144,14 +144,14 @@ proxy-groups:
   - "DIRECT"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇭🇰 香港 01"
+  - "🇨🇦 加拿大 01"
   - "🇨🇳 台湾 01"
   - "🇸🇬 新加坡 01"
-  - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -159,28 +159,28 @@ proxy-groups:
   - "PROXY"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇭🇰 香港 01"
+  - "🇨🇦 加拿大 01"
   - "🇨🇳 台湾 01"
   - "🇸🇬 新加坡 01"
-  - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇭🇰 香港 01"
+  - "🇨🇦 加拿大 01"
   - "🇨🇳 台湾 01"
   - "🇸🇬 新加坡 01"
-  - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
