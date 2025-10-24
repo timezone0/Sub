@@ -97,11 +97,8 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇸🇬 新加坡 01",
         "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
@@ -114,11 +111,8 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇸🇬 新加坡 01",
         "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
@@ -131,11 +125,8 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇸🇬 新加坡 01",
         "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
@@ -150,11 +141,8 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇸🇬 新加坡 01",
         "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
@@ -168,11 +156,8 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇸🇬 新加坡 01",
         "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
@@ -185,11 +170,8 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇸🇬 新加坡 01",
         "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
@@ -262,121 +244,81 @@
     },
     {
       "tag": "🇫🇷 法国 01",
-      "type": "hysteria2",
-      "server": "163.172.21.105",
-      "server_port": 5355,
-      "password": "dongtaiwang.com",
+      "type": "vless",
+      "server": "www.visasoutheasteurope.com",
+      "server_port": 443,
+      "uuid": "5915f034-a53b-4b63-b0e7-b29194de3fe9",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇫🇷 法国 02",
-      "type": "hysteria",
-      "server": "195.154.200.40",
-      "server_port": 15010,
-      "disable_mtu_discovery": false,
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG",
         "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
-      "up_mbps": 100,
-      "down_mbps": 100
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rAyAn-cOnFiG-uk-1.pArIsA.DpDnS.OrG"
+        },
+        "path": "/ws"
+      }
     },
     {
       "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "cn.eans.top",
-      "server_port": 7008,
-      "uuid": "f6631199-cb64-4737-bdd2-657baa36f232",
+      "server": "36.50.90.241",
+      "server_port": 35951,
+      "uuid": "f61a4285-7264-4d07-9408-7b9ba1922c26",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "gaosir.unfeeling.sbs",
         "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs",
-          "short_id": "806ba558"
-        },
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇭🇰 香港 02",
-      "type": "vless",
-      "server": "cn.eans.top",
-      "server_port": 7008,
-      "uuid": "3228eeee-fef2-43e4-a39b-2bbd6e6501ea",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs",
-          "short_id": "806ba558"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇭🇰 香港 03",
-      "type": "vless",
-      "server": "cn.eans.top",
-      "server_port": 7008,
-      "uuid": "f71c1fd7-001d-4306-946f-e2c1033cd809",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs",
-          "short_id": "806ba558"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "shadowsocks",
-      "server": "103.36.91.32",
-      "server_port": 8388,
-      "method": "chacha20-ietf",
-      "password": "asd123456"
-    },
-    {
-      "tag": "🇺🇸 美国 01",
-      "type": "vless",
-      "server": "104.21.81.174",
-      "server_port": 80,
-      "uuid": "23b3cbba-e6ac-485a-9481-342a0415eab9",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "DaWn-lAKE-d5E3.WocoYA4320.wOrkERs.DeV"
+          "Host": "gaosir.unfeeling.sbs"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560,
-        "path": "/wP3dwCyRAVyMJFfW"
+        "path": "/Telegram🇨🇳 @WangCai2 /"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "shadowsocks",
+      "server": "ss.019.node-for-bigairport.win",
+      "server_port": 15097,
+      "method": "aes-256-gcm",
+      "password": "c69374da-2208-4cbd-b81e-cdf88b5e7f53"
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "wto.org",
+      "server_port": 443,
+      "uuid": "97b5343c-f8bd-40f2-b32d-7c98e1c196d4",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "floral-vol-lexington-liverpool.trycloudflare.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "wto.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048,
+        "path": "/97b5343c-f8bd-40f2-b32d-7c98e1c196d4-vm"
       }
     }
   ],
