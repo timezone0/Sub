@@ -89,7 +89,6 @@ proxies:
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 06", port: 10055, server: "node2.mangging.com", skip-cert-verify: false, tfo: false, tls: true, type: "vmess", uuid: "353d4c13-a756-46dd-ba6f-3dfecfeb37fc", client-fingerprint: "chrome", servername: "node2.mangging.com"}
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 07", network: "tcp", port: 59516, server: "43.247.134.213", tls: false, type: "vmess", uuid: "2906e19e-c99f-456e-bcb3-c5472fd594e5", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
 - {alterId: 0, cipher: "auto", name: "🇭🇰 香港 08", network: "tcp", port: 10055, server: "node2.mangging.com", tls: true, type: "vmess", uuid: "353d4c13-a756-46dd-ba6f-3dfecfeb37fc", client-fingerprint: "chrome", servername: "node2.mangging.com"}
-- {name: "🇭🇰 香港 09", password: "ea39fa94f1ee00999337ea1fd3318e69", port: 443, server: "58.152.110.83", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 01", password: "BxceQaOe", port: 1821, server: "36.150.215.237", skip-cert-verify: true, type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 02", password: "ea39fa94f1ee00999337ea1fd3318e69", port: 4452, server: "160.16.131.243", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 03", password: "ea39fa94f1ee00999337ea1fd3318e69", port: 3161, server: "160.16.131.243", skip-cert-verify: true, sni: "www.baidu.com", type: "trojan", client-fingerprint: "chrome"}
@@ -98,7 +97,6 @@ proxies:
 - {name: "🇺🇸 美国 01", password: "ea39fa94f1ee00999337ea1fd3318e69", port: 2467, server: "160.16.131.243", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", password: "ea39fa94f1ee00999337ea1fd3318e69", port: 2381, server: "160.16.131.243", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 03", password: "BxceQaOe", port: 27409, server: "36.150.215.241", skip-cert-verify: true, type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 04", network: "ws", password: "T@_WvT8Ho@LW%w_,", port: 2053, server: "nop-55q.pages.dev", skip-cert-verify: false, sni: "NOp-55q.pAgEs.dEv", type: "trojan", udp: true, ws-opts: {headers: {Host: "NOp-55q.pAgEs.dEv"}, path: "/trGPZDfetEwuO25SAs"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -112,7 +110,6 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
-  - "🇭🇰 香港 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -121,7 +118,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -136,7 +132,6 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
-  - "🇭🇰 香港 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -145,7 +140,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
 - name: "AI"
   type: "select"
   proxies:
@@ -158,7 +152,6 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
-  - "🇭🇰 香港 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -167,7 +160,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -182,7 +174,6 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
-  - "🇭🇰 香港 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -191,7 +182,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -205,7 +195,6 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
-  - "🇭🇰 香港 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -214,7 +203,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -227,7 +215,6 @@ proxy-groups:
   - "🇭🇰 香港 06"
   - "🇭🇰 香港 07"
   - "🇭🇰 香港 08"
-  - "🇭🇰 香港 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -236,7 +223,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇺🇸 美国 04"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
