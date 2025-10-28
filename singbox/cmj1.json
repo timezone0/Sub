@@ -361,7 +361,9 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3%2Ch2%2Chttp%2F1.1"
+          "h3",
+          "h2",
+          "http/1.1"
         ]
       },
       "transport": {
@@ -430,8 +432,10 @@
           "h3"
         ]
       },
+      "auth_str": "dongtaiwang.com",
       "up_mbps": 100,
-      "down_mbps": 100
+      "down_mbps": 100,
+      "recv_window": "276824064"
     },
     {
       "tag": "🇫🇷 法国 02",
@@ -693,13 +697,11 @@
       "tls": {
         "enabled": true,
         "server_name": "floral-vol-lexington-liverpool.trycloudflare.com",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "wto.org"
-        },
+        "headers": {},
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2048,
         "path": "/97b5343c-f8bd-40f2-b32d-7c98e1c196d4-vm"
@@ -764,7 +766,10 @@
         "enabled": true,
         "server_name": "16004295-t4x400-t4zzea-d6ar.la.shifen.uk",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "20000:50000"
+      ]
     },
     {
       "tag": "🇺🇸 美国 13",
