@@ -107,6 +107,7 @@
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03"
@@ -131,6 +132,7 @@
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03"
@@ -155,6 +157,7 @@
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03"
@@ -181,6 +184,7 @@
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03"
@@ -206,6 +210,7 @@
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03"
@@ -230,6 +235,7 @@
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03"
@@ -355,19 +361,17 @@
     {
       "tag": "🇭🇰 香港 07",
       "type": "vmess",
-      "server": "node2.mangging.com",
-      "server_port": 10055,
-      "uuid": "353d4c13-a756-46dd-ba6f-3dfecfeb37fc",
+      "server": "9438890c-t4whs0-t6blpv-1ldl3.hk.p5pv.com",
+      "server_port": 80,
+      "uuid": "fd224a6c-addc-11ed-a8bf-f23c91cfbbc9",
       "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "node2.mangging.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+      "alter_id": 2,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "broadcastlv.chat.bilibili.com"
+        },
+        "path": "/"
       }
     },
     {
@@ -389,9 +393,9 @@
     {
       "tag": "🇯🇵 日本 02",
       "type": "trojan",
-      "server": "160.16.131.243",
+      "server": "160.16.240.91",
       "server_port": 4452,
-      "password": "ea39fa94f1ee00999337ea1fd3318e69",
+      "password": "bca467b8c15211d189008a93c7519d3b",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net",
@@ -405,13 +409,13 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "trojan",
-      "server": "160.16.131.243",
+      "server": "160.16.240.91",
       "server_port": 3161,
-      "password": "ea39fa94f1ee00999337ea1fd3318e69",
+      "password": "bca467b8c15211d189008a93c7519d3b",
       "tls": {
         "enabled": true,
         "server_name": "www.baidu.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -421,13 +425,13 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "trojan",
-      "server": "160.16.131.243",
-      "server_port": 5321,
-      "password": "ea39fa94f1ee00999337ea1fd3318e69",
+      "server": "160.16.204.136",
+      "server_port": 2283,
+      "password": "bca467b8c15211d189008a93c7519d3b",
       "tls": {
         "enabled": true,
-        "server_name": "www.nintendogames.net",
-        "insecure": false,
+        "server_name": "www.baidu.com",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -437,9 +441,9 @@
     {
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
-      "server": "160.16.131.243",
+      "server": "160.16.124.55",
       "server_port": 5041,
-      "password": "ea39fa94f1ee00999337ea1fd3318e69",
+      "password": "bca467b8c15211d189008a93c7519d3b",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net",
@@ -467,9 +471,17 @@
       }
     },
     {
+      "tag": "🇸🇬 新加坡 04",
+      "type": "shadowsocks",
+      "server": "113.99.143.139",
+      "server_port": 26470,
+      "method": "aes-128-gcm",
+      "password": "b637f2e47b7827b308ebf399008075d2"
+    },
+    {
       "tag": "🇺🇸 美国 01",
       "type": "trojan",
-      "server": "160.16.131.243",
+      "server": "160.16.236.32",
       "server_port": 2467,
       "password": "ea39fa94f1ee00999337ea1fd3318e69",
       "tls": {
@@ -485,7 +497,7 @@
     {
       "tag": "🇺🇸 美国 02",
       "type": "trojan",
-      "server": "160.16.131.243",
+      "server": "160.16.236.32",
       "server_port": 2381,
       "password": "ea39fa94f1ee00999337ea1fd3318e69",
       "tls": {
