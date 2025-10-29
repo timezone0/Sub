@@ -89,6 +89,7 @@ proxies:
 - {name: "🇰🇷 韩国 06", type: "vless", server: "116.93.199.28", port: 12136, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/X@节点狂魔/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇰🇷 韩国 07", type: "vless", server: "222.113.18.211", port: 14443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/freecodes/", headers: {Host: "gaosir.unfeeling.sbs"}}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇰🇷 韩国 08", type: "vmess", server: "show.bilibilicloud01.com", port: 50111, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇰🇷 韩国 09", type: "ss", server: "ua085.jd.kunlunpx.com", port: 45583, cipher: "chacha20-ietf-poly1305", password: "4f308f8c43ae78a779f5"}
 - {name: "🇯🇵 日本 01", type: "vmess", server: "manga.bilibilicloud01.net", port: 36676, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇯🇵 日本 02", type: "vmess", server: "manga.bilibilicloud01.net", port: 48752, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇯🇵 日本 03", type: "vmess", server: "manga.bilibilicloud01.net", port: 41765, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
@@ -127,6 +128,11 @@ proxies:
 - {name: "🇯🇵 日本 36", type: "vmess", server: "game.jp03.bilibilicloud01.com", port: 50189, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇯🇵 日本 37", type: "vmess", server: "game.jp01.bilibilicloud01.com", port: 50187, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇯🇵 日本 38", type: "vmess", server: "game.jp04.bilibilicloud01.com", port: 50191, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇯🇵 日本 39", type: "ss", server: "jp07.jd.kunlunpx.com", port: 45572, cipher: "aes-128-gcm", password: "722a54414ae6ee706ac9"}
+- {name: "🇯🇵 日本 40", type: "ss", server: "jp029.jd.kunlunpx.com", port: 45913, cipher: "aes-128-gcm", password: "c8960ca4a0add435fc34"}
+- {name: "🇯🇵 日本 41", type: "ss", server: "jp050.jd.kunlunpx.com", port: 45939, cipher: "aes-128-gcm", password: "97b53b570db0917935e0"}
+- {name: "🇯🇵 日本 42", type: "ss", server: "jp083.jd.kunlunpx.com", port: 45581, cipher: "aes-128-gcm", password: "6014caa3a323920c7fd0"}
+- {name: "🇯🇵 日本 43", type: "ss", server: "jp027.jd.kunlunpx.com", port: 45911, cipher: "aes-128-gcm", password: "69dc0306f1bfb1af49a5"}
 - {name: "🇨🇴 哥伦比亚 01", type: "vmess", server: "manga.bilibilicloud01.com", port: 47533, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇨🇴 哥伦比亚 02", type: "vmess", server: "manga.bilibilicloud01.com", port: 47534, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇨🇴 哥伦比亚 03", type: "vmess", server: "manga.bilibilicloud01.com", port: 53127, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
@@ -166,6 +172,7 @@ proxies:
 - {name: "🇸🇪 瑞典 03", type: "vless", server: "fin01-vlr02.tcp-reset-club.net", port: 8443, uuid: "466cdb16-8d8a-46f8-b61d-fcd226a820fd", network: "tcp", tls: false, skip-cert-verify: true, servername: "stats.vk-portal.net"}
 - {name: "🇸🇪 瑞典 04", type: "vless", server: "178.160.211.182", port: 20155, uuid: "dc28e2d3-7c69-47c6-b5b0-f76914454294", network: "tcp", tls: false, skip-cert-verify: true}
 - {name: "🇿🇦 南非 01", type: "ss", server: "113.99.143.139", port: 26470, cipher: "aes-128-gcm", password: "b637f2e47b7827b308ebf399008075d2"}
+- {name: "🇿🇦 南非 02", type: "ss", server: "kz092.jd.kunlunpx.com", port: 45588, cipher: "chacha20-ietf-poly1305", password: "05ff48fd41178ed790ec"}
 - {name: "🇭🇰 香港 01", type: "trojan", server: "36.151.251.23", port: 4451, password: "BxceQaOe", sni: "36.151.251.23", skip-cert-verify: true}
 - {name: "🇭🇰 香港 02", type: "trojan", server: "oss-cn-shanghai.letssepub.com", port: 20021, password: "adbac894-90b9-4913-b77e-a715a8d4ebc8", sni: "dingding-doc.com", skip-cert-verify: true}
 - {name: "🇭🇰 香港 03", type: "vless", server: "47.76.218.163", port: 443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/Telegram🇨🇳@WangCai2/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
@@ -392,6 +399,15 @@ proxies:
 - {name: "🇭🇰 香港 224", type: "hysteria2", server: "42.200.230.54", port: 21297, password: "b7098638-9f0e-444d-88cd-bf4de70c3f00", sni: "hk.xn--9kqw1xbnu.shop", skip-cert-verify: true}
 - {name: "🇭🇰 香港 225", type: "hysteria2", server: "42.200.230.54", port: 21298, password: "b7098638-9f0e-444d-88cd-bf4de70c3f00", sni: "hk.xn--9kqw1xbnu.shop", skip-cert-verify: true}
 - {name: "🇭🇰 香港 226", type: "hysteria2", server: "42.200.230.54", port: 21299, password: "b7098638-9f0e-444d-88cd-bf4de70c3f00", sni: "hk.xn--9kqw1xbnu.shop", skip-cert-verify: true}
+- {name: "🇭🇰 香港 227", type: "ss", server: "hk021.jd.kunlunpx.com", port: 45905, cipher: "aes-128-gcm", password: "777bc05be0dd624959fb"}
+- {name: "🇭🇰 香港 228", type: "ss", server: "hk008.jd.kunlunpx.com", port: 45936, cipher: "aes-128-gcm", password: "a643f6f3733c9962851d"}
+- {name: "🇭🇰 香港 229", type: "ss", server: "hk077.jd.kunlunpx.com", port: 45578, cipher: "chacha20-ietf-poly1305", password: "7243745919d6de49a5db"}
+- {name: "🇭🇰 香港 230", type: "ss", server: "hk018.jd.kunlunpx.com", port: 45902, cipher: "aes-128-gcm", password: "0a74c9e4565e935cf1ac"}
+- {name: "🇭🇰 香港 231", type: "ss", server: "hk016.jd.kunlunpx.com", port: 45901, cipher: "aes-128-gcm", password: "7338d988d71591d76b3f"}
+- {name: "🇭🇰 香港 232", type: "ss", server: "hk017.jd.kunlunpx.com", port: 45900, cipher: "aes-128-gcm", password: "51f8c7454c93d0d83c29"}
+- {name: "🇭🇰 香港 233", type: "ss", server: "hk019.jd.kunlunpx.com", port: 45903, cipher: "aes-128-gcm", password: "b16cb18d8992f3b83b7d"}
+- {name: "🇭🇰 香港 234", type: "ss", server: "hk077.jd.kunlunpx.com", port: 45936, cipher: "aes-128-gcm", password: "a643f6f3733c9962851d"}
+- {name: "🇭🇰 香港 235", type: "ss", server: "kr037.jd.kunlunpx.com", port: 45921, cipher: "aes-128-gcm", password: "d7577ca6729babe0790f"}
 - {name: "🇸🇬 新加坡 01", type: "trojan", server: "36.151.251.35", port: 24392, password: "BxceQaOe", sni: "36.151.251.35", skip-cert-verify: true}
 - {name: "🇸🇬 新加坡 02", type: "vless", server: "31.192.238.71", port: 2053, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/Telegram@节点狂魔/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇸🇬 新加坡 03", type: "vmess", server: "manga.bilibilicloud01.net", port: 36676, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
@@ -401,6 +417,8 @@ proxies:
 - {name: "🇸🇬 新加坡 07", type: "vmess", server: "manga.bilibilicloud01.com", port: 47534, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇸🇬 新加坡 08", type: "vmess", server: "manga.bilibilicloud01.com", port: 47533, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇸🇬 新加坡 09", type: "vless", server: "89.34.227.238", port: 57606, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/Telegram🇨🇳@WangCai2/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
+- {name: "🇸🇬 新加坡 10", type: "ss", server: "sg034.jd.kunlunpx.com", port: 45918, cipher: "aes-128-gcm", password: "1d8e4861b251c8c4ce78"}
+- {name: "🇸🇬 新加坡 11", type: "ss", server: "sg032.jd.kunlunpx.com", port: 45917, cipher: "aes-128-gcm", password: "f4cd0a554e9d0558c581"}
 - {name: "🇺🇸 美国 01", type: "vless", server: "188.42.145.253", port: 2096, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/TelegramU0001F1E8U0001F1F3@WangCai2/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇺🇸 美国 02", type: "trojan", server: "36.150.215.241", port: 26373, password: "BxceQaOe", sni: "36.150.215.241", skip-cert-verify: true}
 - {name: "🇺🇸 美国 03", type: "vless", server: "59.25.160.141", port: 50008, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/telegram @freecodes /", headers: {Host: "gaosir.unfeeling.sbs"}}, servername: "gaosir.unfeeling.sbs"}
@@ -438,6 +456,13 @@ proxies:
 - {name: "🇺🇸 美国 35", type: "vless", server: "211.197.161.123", port: 10041, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/freecodes/", headers: {Host: "gaosir.unfeeling.sbs"}}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇺🇸 美国 36", type: "vless", server: "218.151.91.131", port: 12151, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/x@节点狂魔/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇺🇸 美国 37", type: "vless", server: "130.162.130.105", port: 443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/Telegram🇨🇳@WangCai2/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
+- {name: "🇺🇸 美国 38", type: "ss", server: "us084.jd.kunlunpx.com", port: 45580, cipher: "chacha20-ietf-poly1305", password: "e6db72e9415e60e35892"}
+- {name: "🇺🇸 美国 39", type: "ss", server: "us086.jd.kunlunpx.com", port: 45584, cipher: "chacha20-ietf-poly1305", password: "4605c34b957ab8e1001b"}
+- {name: "🇺🇸 美国 40", type: "ss", server: "us038.jd.kunlunpx.com", port: 45922, cipher: "aes-128-gcm", password: "c1ee5895686790a383fb"}
+- {name: "🇺🇸 美国 41", type: "ss", server: "us039.jd.kunlunpx.com", port: 45923, cipher: "aes-128-gcm", password: "2b7df6aadc759756b0cd"}
+- {name: "🇺🇸 美国 42", type: "ss", server: "us040.jd.kunlunpx.com", port: 45924, cipher: "aes-128-gcm", password: "0a0fb8dbfb8cc2f25f02"}
+- {name: "🇺🇸 美国 43", type: "ss", server: "us067.jd.kunlunpx.com", port: 45935, cipher: "aes-128-gcm", password: "8bf642be1622a09558bb"}
+- {name: "🇺🇸 美国 44", type: "ss", server: "us069.jd.kunlunpx.com", port: 45938, cipher: "aes-128-gcm", password: "3938bfae997974860251"}
 - {name: "🇵🇱 波兰 01", type: "vless", server: "91.224.75.112", port: 443, uuid: "88b9b7e2-7d97-4a6c-9c19-7e9d1da82183", network: "tcp", tls: false, skip-cert-verify: true, servername: "poland24.clearorbitllc.com"}
 - {name: "🇵🇱 波兰 02", type: "vless", server: "91.224.75.112", port: 443, uuid: "88b9b7e2-7d97-4a6c-9c19-7e9d1da82183", network: "tcp", tls: false, skip-cert-verify: true, servername: "poland24.clearorbitllc.com"}
 - {name: "🇵🇱 波兰 03", type: "vless", server: "91.224.75.112", port: 443, uuid: "88b9b7e2-7d97-4a6c-9c19-7e9d1da82183", network: "tcp", tls: false, skip-cert-verify: true, servername: "poland24.clearorbitllc.com"}
@@ -448,10 +473,15 @@ proxies:
 - {name: "🇨🇳 台湾 05", type: "vmess", server: "manga.bilibilicloud01.net", port: 41765, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇨🇳 台湾 06", type: "vmess", server: "manga.bilibilicloud01.com", port: 49484, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇨🇳 台湾 07", type: "vmess", server: "manga.bilibilicloud01.com", port: 53137, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇨🇳 台湾 08", type: "ss", server: "tw065.jd.kunlunpx.com", port: 45916, cipher: "aes-128-gcm", password: "cfc6f3f75f5ef7b2665c"}
+- {name: "🇨🇳 台湾 09", type: "ss", server: "tw031.jd.kunlunpx.com", port: 45915, cipher: "aes-128-gcm", password: "b74518fb49bd645e6ce7"}
+- {name: "🇨🇳 台湾 10", type: "ss", server: "tw030.jd.kunlunpx.com", port: 45914, cipher: "aes-128-gcm", password: "b270fd77db2ecb7acbc8"}
+- {name: "🇨🇳 台湾 11", type: "ss", server: "tw080.jd.kunlunpx.com", port: 45573, cipher: "aes-128-gcm", password: "3e26a8cfb09fda219b36"}
 - {name: "🇩🇪 德国 01", type: "vless", server: "46.20.111.246", port: 33534, uuid: "4d6ef6fc-29f6-455d-bd93-39d506669b28", network: "tcp", tls: false, skip-cert-verify: true}
 - {name: "🇩🇪 德国 02", type: "vless", server: "91.98.164.168", port: 40647, uuid: "c3980834-0e40-43a5-9d8c-ce9389ab9d70", network: "grpc", tls: false, skip-cert-verify: true, grpc-opts: {grpc-service-name: "91.98.164.168"}, servername: "iranhost.com"}
 - {name: "🇩🇪 德国 03", type: "vless", server: "de.vip-get.ru", port: 443, uuid: "89bf7903-b90d-4c8a-aad7-bea7a276654c", network: "tcp", tls: false, skip-cert-verify: true, servername: "yahoo.com"}
 - {name: "🇩🇪 德国 04", type: "vmess", server: "live.bilibilicloud01.com", port: 53943, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇩🇪 德国 05", type: "ss", server: "de044.jd.kunlunpx.com", port: 45928, cipher: "aes-128-gcm", password: "bd62dac6636078647014"}
 - {name: "🇳🇱 荷兰 01", type: "vless", server: "nl.crynasty.ru", port: 443, uuid: "dfb01e06-7538-424b-8e83-b24d9760ef55", network: "tcp", tls: false, skip-cert-verify: true, servername: "nl.crynasty.ru"}
 - {name: "🇳🇱 荷兰 02", type: "vless", server: "nl.crynasty.ru", port: 443, uuid: "dfb01e06-7538-424b-8e83-b24d9760ef55", network: "tcp", tls: false, skip-cert-verify: true, servername: "nl.crynasty.ru"}
 - {name: "🇳🇱 荷兰 03", type: "ss", server: "xce11lxz.pet0er23mh21qq.com", port: 1080, cipher: "chacha20-ietf-poly1305", password: "aYEzEWyquHob4y8-ZzJ6aw"}
@@ -459,25 +489,42 @@ proxies:
 - {name: "🇫🇷 法国 01", type: "vless", server: "realdom-fr.panelfreedom.com", port: 20810, uuid: "1c4193bb-5130-46b3-9e78-3a2703979c4e", network: "tcp", tls: false, skip-cert-verify: true, servername: "refersion.com"}
 - {name: "🇫🇷 法国 02", type: "vmess", server: "live.bilibilicloud01.com", port: 34765, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇫🇷 法国 03", type: "vless", server: "172.64.144.20", port: 443, uuid: "db2c8a95-f751-46e3-b05e-d2def66850fb", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/http://37.187.124.25:8187/", headers: {Host: "ayanamirei.11160321.xyz"}}, servername: "ayanamirei.11160321.xyz"}
+- {name: "🇫🇷 法国 04", type: "ss", server: "fr034.jd.kunlunpx.com", port: 45927, cipher: "aes-128-gcm", password: "8141b20c775ce63fab96"}
 - {name: "🇨🇦 加拿大 01", type: "vless", server: "95.164.6.65", port: 8880, uuid: "df0680ca-e43c-498d-ed86-8e196eedd012", network: "grpc", tls: false, skip-cert-verify: true, grpc-opts: {grpc-service-name: null}}
 - {name: "🇨🇦 加拿大 02", type: "vmess", server: "live.bilibilicloud01.com", port: 48764, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇨🇦 加拿大 03", type: "ss", server: "ca070.jd.kunlunpx.com", port: 45910, cipher: "aes-128-gcm", password: "3fb1d360ec0c4c7a5054"}
 - {name: "🇬🇧 英国 01", type: "vless", server: "64.188.74.120", port: 443, uuid: "b7437f7a-783f-4e6f-a555-a2a589f42b5a", network: "tcp", tls: false, skip-cert-verify: true, servername: "www.amd.com"}
 - {name: "🇬🇧 英国 02", type: "vmess", server: "live.bilibilicloud01.com", port: 53125, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇬🇧 英国 03", type: "ss", server: "uk045.jd.kunlunpx.com", port: 45929, cipher: "aes-128-gcm", password: "c8a1d0a69902859d209f"}
+- {name: "🇬🇧 英国 04", type: "ss", server: "uk081.jd.kunlunpx.com", port: 45570, cipher: "aes-128-gcm", password: "b252e75cc98799d5b2d1"}
 - {name: "🇲🇾 马来 01", type: "vmess", server: "live.bilibilicloud01.com", port: 25841, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇲🇾 马来 02", type: "ss", server: "my076.jd.kunlunpx.com", port: 45577, cipher: "chacha20-ietf-poly1305", password: "ec1a4ba66999975262e2"}
+- {name: "🇲🇾 马来 03", type: "ss", server: "my075.jd.kunlunpx.com", port: 45576, cipher: "aes-128-gcm", password: "fe51727afe2fca582ebf"}
 - {name: "🇻🇳 越南 01", type: "vmess", server: "live.bilibilicloud01.com", port: 47606, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇻🇳 越南 02", type: "ss", server: "vn047.jd.kunlunpx.com", port: 45931, cipher: "aes-128-gcm", password: "3e79196cf9e970671245"}
 - {name: "🇹🇭 泰国 01", type: "vmess", server: "live.bilibilicloud01.com", port: 48414, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇹🇭 泰国 02", type: "vless", server: "159.112.235.174", port: 2082, uuid: "47e9a0db-50c6-4522-8819-502c55b06dde", network: "ws", tls: false, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "workerr.schodog1.workers.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}}
 - {name: "🇹🇭 泰国 03", type: "vless", server: "www.visa.com.sg", port: 8443, uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "azadnet-dbi.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "azadnet-dbi.pages.dev"}
 - {name: "🇹🇭 泰国 04", type: "vless", server: "217.60.248.66", port: 443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
+- {name: "🇹🇭 泰国 05", type: "ss", server: "th041.jd.kunlunpx.com", port: 45925, cipher: "aes-128-gcm", password: "1a402babc02465f45bea"}
 - {name: "🇦🇺 澳大利亚 01", type: "vmess", server: "live.bilibilicloud01.com", port: 60317, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇦🇺 澳大利亚 02", type: "ss", server: "au071.jd.kunlunpx.com", port: 45934, cipher: "aes-128-gcm", password: "ec39dd066cc142fbb81c"}
 - {name: "🇨🇭 瑞士 01", type: "vmess", server: "live.bilibilicloud01.com", port: 21961, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
 - {name: "🇨🇭 瑞士 02", type: "vless", server: "222.113.18.214", port: 12158, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/telegram@freecodes/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇨🇭 瑞士 03", type: "vless", server: "121.165.101.69", port: 19413, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/Telegram@freecodes/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇨🇭 瑞士 04", type: "vless", server: "175.208.202.41", port: 20583, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/X@freecodes/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
 - {name: "🇨🇭 瑞士 05", type: "vless", server: "220.90.247.28", port: 50001, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/x@节点狂魔/", headers: {Host: "gaosir.unfeeling.sbs"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "gaosir.unfeeling.sbs"}
+- {name: "🇨🇭 瑞士 06", type: "ss", server: "ch087.jd.kunlunpx.com", port: 45582, cipher: "chacha20-ietf-poly1305", password: "c9fa2bcffa379937679e"}
 - {name: "🇮🇹 意大利 01", type: "vmess", server: "live.bilibilicloud01.com", port: 45794, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇮🇹 意大利 02", type: "ss", server: "it091.jd.kunlunpx.com", port: 45587, cipher: "chacha20-ietf-poly1305", password: "6180d9dc7075e7fe509b"}
 - {name: "🇷🇺 俄罗斯 01", type: "vless", server: "38.180.26.205", port: 443, uuid: "677615f7-87d5-5019-a44d-4fc3ff8d59d7", network: "tcp", tls: false, skip-cert-verify: true, servername: "nspk.ru"}
+- {name: "🇷🇺 俄罗斯 02", type: "ss", server: "ru046.jd.kunlunpx.com", port: 45930, cipher: "aes-128-gcm", password: "11575f448fb4021fc611"}
 - {name: "🇹🇷 土耳其 01", type: "vmess", server: "live.bilibilicloud01.com", port: 25842, uuid: "e512350f-e4cc-3fad-b1fc-81baf4c9b223", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp"}
+- {name: "🇹🇷 土耳其 02", type: "ss", server: "tr042.jd.kunlunpx.com", port: 45926, cipher: "aes-128-gcm", password: "7452c550383bf60ac9d3"}
+- {name: "🇧🇷 巴西 01", type: "ss", server: "br093.jd.kunlunpx.com", port: 45589, cipher: "chacha20-ietf-poly1305", password: "e3d6f327d91656f89f07"}
+- {name: "🇮🇩 印尼 01", type: "ss", server: "id094.jd.kunlunpx.com", port: 45590, cipher: "chacha20-ietf-poly1305", password: "b8dd96a81eac14b376c3"}
+- {name: "🇵🇭 菲律宾 01", type: "ss", server: "ph05.jd.kunlunpx.com", port: 45574, cipher: "aes-128-gcm", password: "22046a35aa74890b48f5"}
+- {name: "🇮🇳 印度 01", type: "ss", server: "in048.jd.kunlunpx.com", port: 45932, cipher: "aes-128-gcm", password: "1954df8a5f3876000ea6"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -491,6 +538,7 @@ proxy-groups:
   - "🇰🇷 韩国 06"
   - "🇰🇷 韩国 07"
   - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -529,6 +577,11 @@ proxy-groups:
   - "🇯🇵 日本 36"
   - "🇯🇵 日本 37"
   - "🇯🇵 日本 38"
+  - "🇯🇵 日本 39"
+  - "🇯🇵 日本 40"
+  - "🇯🇵 日本 41"
+  - "🇯🇵 日本 42"
+  - "🇯🇵 日本 43"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
   - "🇨🇴 哥伦比亚 03"
@@ -568,6 +621,7 @@ proxy-groups:
   - "🇸🇪 瑞典 03"
   - "🇸🇪 瑞典 04"
   - "🇿🇦 南非 01"
+  - "🇿🇦 南非 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -794,6 +848,15 @@ proxy-groups:
   - "🇭🇰 香港 224"
   - "🇭🇰 香港 225"
   - "🇭🇰 香港 226"
+  - "🇭🇰 香港 227"
+  - "🇭🇰 香港 228"
+  - "🇭🇰 香港 229"
+  - "🇭🇰 香港 230"
+  - "🇭🇰 香港 231"
+  - "🇭🇰 香港 232"
+  - "🇭🇰 香港 233"
+  - "🇭🇰 香港 234"
+  - "🇭🇰 香港 235"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -803,6 +866,8 @@ proxy-groups:
   - "🇸🇬 新加坡 07"
   - "🇸🇬 新加坡 08"
   - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -840,6 +905,13 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
   - "🇵🇱 波兰 01"
   - "🇵🇱 波兰 02"
   - "🇵🇱 波兰 03"
@@ -850,10 +922,15 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -861,25 +938,42 @@ proxy-groups:
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
   - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇲🇾 马来 03"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
   - "🇹🇭 泰国 04"
+  - "🇹🇭 泰国 05"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
   - "🇨🇭 瑞士 04"
   - "🇨🇭 瑞士 05"
+  - "🇨🇭 瑞士 06"
   - "🇮🇹 意大利 01"
+  - "🇮🇹 意大利 02"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
+  - "🇮🇩 印尼 01"
+  - "🇵🇭 菲律宾 01"
+  - "🇮🇳 印度 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -894,6 +988,7 @@ proxy-groups:
   - "🇰🇷 韩国 06"
   - "🇰🇷 韩国 07"
   - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -932,6 +1027,11 @@ proxy-groups:
   - "🇯🇵 日本 36"
   - "🇯🇵 日本 37"
   - "🇯🇵 日本 38"
+  - "🇯🇵 日本 39"
+  - "🇯🇵 日本 40"
+  - "🇯🇵 日本 41"
+  - "🇯🇵 日本 42"
+  - "🇯🇵 日本 43"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
   - "🇨🇴 哥伦比亚 03"
@@ -971,6 +1071,7 @@ proxy-groups:
   - "🇸🇪 瑞典 03"
   - "🇸🇪 瑞典 04"
   - "🇿🇦 南非 01"
+  - "🇿🇦 南非 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -1197,6 +1298,15 @@ proxy-groups:
   - "🇭🇰 香港 224"
   - "🇭🇰 香港 225"
   - "🇭🇰 香港 226"
+  - "🇭🇰 香港 227"
+  - "🇭🇰 香港 228"
+  - "🇭🇰 香港 229"
+  - "🇭🇰 香港 230"
+  - "🇭🇰 香港 231"
+  - "🇭🇰 香港 232"
+  - "🇭🇰 香港 233"
+  - "🇭🇰 香港 234"
+  - "🇭🇰 香港 235"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -1206,6 +1316,8 @@ proxy-groups:
   - "🇸🇬 新加坡 07"
   - "🇸🇬 新加坡 08"
   - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1243,6 +1355,13 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
   - "🇵🇱 波兰 01"
   - "🇵🇱 波兰 02"
   - "🇵🇱 波兰 03"
@@ -1253,10 +1372,15 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1264,25 +1388,42 @@ proxy-groups:
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
   - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇲🇾 马来 03"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
   - "🇹🇭 泰国 04"
+  - "🇹🇭 泰国 05"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
   - "🇨🇭 瑞士 04"
   - "🇨🇭 瑞士 05"
+  - "🇨🇭 瑞士 06"
   - "🇮🇹 意大利 01"
+  - "🇮🇹 意大利 02"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
+  - "🇮🇩 印尼 01"
+  - "🇵🇭 菲律宾 01"
+  - "🇮🇳 印度 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -1295,6 +1436,7 @@ proxy-groups:
   - "🇰🇷 韩国 06"
   - "🇰🇷 韩国 07"
   - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1333,6 +1475,11 @@ proxy-groups:
   - "🇯🇵 日本 36"
   - "🇯🇵 日本 37"
   - "🇯🇵 日本 38"
+  - "🇯🇵 日本 39"
+  - "🇯🇵 日本 40"
+  - "🇯🇵 日本 41"
+  - "🇯🇵 日本 42"
+  - "🇯🇵 日本 43"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
   - "🇨🇴 哥伦比亚 03"
@@ -1372,6 +1519,7 @@ proxy-groups:
   - "🇸🇪 瑞典 03"
   - "🇸🇪 瑞典 04"
   - "🇿🇦 南非 01"
+  - "🇿🇦 南非 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -1598,6 +1746,15 @@ proxy-groups:
   - "🇭🇰 香港 224"
   - "🇭🇰 香港 225"
   - "🇭🇰 香港 226"
+  - "🇭🇰 香港 227"
+  - "🇭🇰 香港 228"
+  - "🇭🇰 香港 229"
+  - "🇭🇰 香港 230"
+  - "🇭🇰 香港 231"
+  - "🇭🇰 香港 232"
+  - "🇭🇰 香港 233"
+  - "🇭🇰 香港 234"
+  - "🇭🇰 香港 235"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -1607,6 +1764,8 @@ proxy-groups:
   - "🇸🇬 新加坡 07"
   - "🇸🇬 新加坡 08"
   - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1644,6 +1803,13 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
   - "🇵🇱 波兰 01"
   - "🇵🇱 波兰 02"
   - "🇵🇱 波兰 03"
@@ -1654,10 +1820,15 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1665,25 +1836,42 @@ proxy-groups:
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
   - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇲🇾 马来 03"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
   - "🇹🇭 泰国 04"
+  - "🇹🇭 泰国 05"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
   - "🇨🇭 瑞士 04"
   - "🇨🇭 瑞士 05"
+  - "🇨🇭 瑞士 06"
   - "🇮🇹 意大利 01"
+  - "🇮🇹 意大利 02"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
+  - "🇮🇩 印尼 01"
+  - "🇵🇭 菲律宾 01"
+  - "🇮🇳 印度 01"
 - name: "GOOGLEFCM"
   type: "select"
   proxies:
@@ -1698,6 +1886,7 @@ proxy-groups:
   - "🇰🇷 韩国 06"
   - "🇰🇷 韩国 07"
   - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1736,6 +1925,11 @@ proxy-groups:
   - "🇯🇵 日本 36"
   - "🇯🇵 日本 37"
   - "🇯🇵 日本 38"
+  - "🇯🇵 日本 39"
+  - "🇯🇵 日本 40"
+  - "🇯🇵 日本 41"
+  - "🇯🇵 日本 42"
+  - "🇯🇵 日本 43"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
   - "🇨🇴 哥伦比亚 03"
@@ -1775,6 +1969,7 @@ proxy-groups:
   - "🇸🇪 瑞典 03"
   - "🇸🇪 瑞典 04"
   - "🇿🇦 南非 01"
+  - "🇿🇦 南非 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2001,6 +2196,15 @@ proxy-groups:
   - "🇭🇰 香港 224"
   - "🇭🇰 香港 225"
   - "🇭🇰 香港 226"
+  - "🇭🇰 香港 227"
+  - "🇭🇰 香港 228"
+  - "🇭🇰 香港 229"
+  - "🇭🇰 香港 230"
+  - "🇭🇰 香港 231"
+  - "🇭🇰 香港 232"
+  - "🇭🇰 香港 233"
+  - "🇭🇰 香港 234"
+  - "🇭🇰 香港 235"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -2010,6 +2214,8 @@ proxy-groups:
   - "🇸🇬 新加坡 07"
   - "🇸🇬 新加坡 08"
   - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -2047,6 +2253,13 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
   - "🇵🇱 波兰 01"
   - "🇵🇱 波兰 02"
   - "🇵🇱 波兰 03"
@@ -2057,10 +2270,15 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -2068,25 +2286,42 @@ proxy-groups:
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
   - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇲🇾 马来 03"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
   - "🇹🇭 泰国 04"
+  - "🇹🇭 泰国 05"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
   - "🇨🇭 瑞士 04"
   - "🇨🇭 瑞士 05"
+  - "🇨🇭 瑞士 06"
   - "🇮🇹 意大利 01"
+  - "🇮🇹 意大利 02"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
+  - "🇮🇩 印尼 01"
+  - "🇵🇭 菲律宾 01"
+  - "🇮🇳 印度 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -2100,6 +2335,7 @@ proxy-groups:
   - "🇰🇷 韩国 06"
   - "🇰🇷 韩国 07"
   - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -2138,6 +2374,11 @@ proxy-groups:
   - "🇯🇵 日本 36"
   - "🇯🇵 日本 37"
   - "🇯🇵 日本 38"
+  - "🇯🇵 日本 39"
+  - "🇯🇵 日本 40"
+  - "🇯🇵 日本 41"
+  - "🇯🇵 日本 42"
+  - "🇯🇵 日本 43"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
   - "🇨🇴 哥伦比亚 03"
@@ -2177,6 +2418,7 @@ proxy-groups:
   - "🇸🇪 瑞典 03"
   - "🇸🇪 瑞典 04"
   - "🇿🇦 南非 01"
+  - "🇿🇦 南非 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2403,6 +2645,15 @@ proxy-groups:
   - "🇭🇰 香港 224"
   - "🇭🇰 香港 225"
   - "🇭🇰 香港 226"
+  - "🇭🇰 香港 227"
+  - "🇭🇰 香港 228"
+  - "🇭🇰 香港 229"
+  - "🇭🇰 香港 230"
+  - "🇭🇰 香港 231"
+  - "🇭🇰 香港 232"
+  - "🇭🇰 香港 233"
+  - "🇭🇰 香港 234"
+  - "🇭🇰 香港 235"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -2412,6 +2663,8 @@ proxy-groups:
   - "🇸🇬 新加坡 07"
   - "🇸🇬 新加坡 08"
   - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -2449,6 +2702,13 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
   - "🇵🇱 波兰 01"
   - "🇵🇱 波兰 02"
   - "🇵🇱 波兰 03"
@@ -2459,10 +2719,15 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -2470,25 +2735,42 @@ proxy-groups:
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
   - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇲🇾 马来 03"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
   - "🇹🇭 泰国 04"
+  - "🇹🇭 泰国 05"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
   - "🇨🇭 瑞士 04"
   - "🇨🇭 瑞士 05"
+  - "🇨🇭 瑞士 06"
   - "🇮🇹 意大利 01"
+  - "🇮🇹 意大利 02"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
+  - "🇮🇩 印尼 01"
+  - "🇵🇭 菲律宾 01"
+  - "🇮🇳 印度 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -2501,6 +2783,7 @@ proxy-groups:
   - "🇰🇷 韩国 06"
   - "🇰🇷 韩国 07"
   - "🇰🇷 韩国 08"
+  - "🇰🇷 韩国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -2539,6 +2822,11 @@ proxy-groups:
   - "🇯🇵 日本 36"
   - "🇯🇵 日本 37"
   - "🇯🇵 日本 38"
+  - "🇯🇵 日本 39"
+  - "🇯🇵 日本 40"
+  - "🇯🇵 日本 41"
+  - "🇯🇵 日本 42"
+  - "🇯🇵 日本 43"
   - "🇨🇴 哥伦比亚 01"
   - "🇨🇴 哥伦比亚 02"
   - "🇨🇴 哥伦比亚 03"
@@ -2578,6 +2866,7 @@ proxy-groups:
   - "🇸🇪 瑞典 03"
   - "🇸🇪 瑞典 04"
   - "🇿🇦 南非 01"
+  - "🇿🇦 南非 02"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2804,6 +3093,15 @@ proxy-groups:
   - "🇭🇰 香港 224"
   - "🇭🇰 香港 225"
   - "🇭🇰 香港 226"
+  - "🇭🇰 香港 227"
+  - "🇭🇰 香港 228"
+  - "🇭🇰 香港 229"
+  - "🇭🇰 香港 230"
+  - "🇭🇰 香港 231"
+  - "🇭🇰 香港 232"
+  - "🇭🇰 香港 233"
+  - "🇭🇰 香港 234"
+  - "🇭🇰 香港 235"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -2813,6 +3111,8 @@ proxy-groups:
   - "🇸🇬 新加坡 07"
   - "🇸🇬 新加坡 08"
   - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -2850,6 +3150,13 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
+  - "🇺🇸 美国 38"
+  - "🇺🇸 美国 39"
+  - "🇺🇸 美国 40"
+  - "🇺🇸 美国 41"
+  - "🇺🇸 美国 42"
+  - "🇺🇸 美国 43"
+  - "🇺🇸 美国 44"
   - "🇵🇱 波兰 01"
   - "🇵🇱 波兰 02"
   - "🇵🇱 波兰 03"
@@ -2860,10 +3167,15 @@ proxy-groups:
   - "🇨🇳 台湾 05"
   - "🇨🇳 台湾 06"
   - "🇨🇳 台湾 07"
+  - "🇨🇳 台湾 08"
+  - "🇨🇳 台湾 09"
+  - "🇨🇳 台湾 10"
+  - "🇨🇳 台湾 11"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
   - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -2871,25 +3183,42 @@ proxy-groups:
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
   - "🇨🇦 加拿大 01"
   - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
   - "🇲🇾 马来 01"
+  - "🇲🇾 马来 02"
+  - "🇲🇾 马来 03"
   - "🇻🇳 越南 01"
+  - "🇻🇳 越南 02"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
   - "🇹🇭 泰国 04"
+  - "🇹🇭 泰国 05"
   - "🇦🇺 澳大利亚 01"
+  - "🇦🇺 澳大利亚 02"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
   - "🇨🇭 瑞士 04"
   - "🇨🇭 瑞士 05"
+  - "🇨🇭 瑞士 06"
   - "🇮🇹 意大利 01"
+  - "🇮🇹 意大利 02"
   - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇹🇷 土耳其 01"
+  - "🇹🇷 土耳其 02"
+  - "🇧🇷 巴西 01"
+  - "🇮🇩 印尼 01"
+  - "🇵🇭 菲律宾 01"
+  - "🇮🇳 印度 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "DOMAIN-KEYWORD,mcdn.bilivideo.com,REJECT"
