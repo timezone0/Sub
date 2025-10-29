@@ -109,6 +109,7 @@
         "🇺🇸 美国 13",
         "🇺🇸 美国 14",
         "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
         "🇫🇷 法国 01",
         "🇸🇬 新加坡 01",
         "🇬🇧 英国 01",
@@ -139,6 +140,7 @@
         "🇺🇸 美国 13",
         "🇺🇸 美国 14",
         "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
         "🇫🇷 法国 01",
         "🇸🇬 新加坡 01",
         "🇬🇧 英国 01",
@@ -169,6 +171,7 @@
         "🇺🇸 美国 13",
         "🇺🇸 美国 14",
         "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
         "🇫🇷 法国 01",
         "🇸🇬 新加坡 01",
         "🇬🇧 英国 01",
@@ -201,6 +204,7 @@
         "🇺🇸 美国 13",
         "🇺🇸 美国 14",
         "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
         "🇫🇷 法国 01",
         "🇸🇬 新加坡 01",
         "🇬🇧 英国 01",
@@ -232,6 +236,7 @@
         "🇺🇸 美国 13",
         "🇺🇸 美国 14",
         "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
         "🇫🇷 法国 01",
         "🇸🇬 新加坡 01",
         "🇬🇧 英国 01",
@@ -262,6 +267,7 @@
         "🇺🇸 美国 13",
         "🇺🇸 美国 14",
         "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
         "🇫🇷 法国 01",
         "🇸🇬 新加坡 01",
         "🇬🇧 英国 01",
@@ -311,7 +317,7 @@
       "tls": {
         "enabled": true,
         "server_name": "gaosir.unfeeling.sbs",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -336,7 +342,7 @@
       "tls": {
         "enabled": true,
         "server_name": "d48dac10-t4v9c0-tdtx5w-au6.la.shifen.uk",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -348,7 +354,7 @@
       "tls": {
         "enabled": true,
         "server_name": "gaosir.unfeeling.sbs",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -379,7 +385,11 @@
       "tls": {
         "enabled": true,
         "server_name": "36.150.215.241",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -391,8 +401,11 @@
       "tls": {
         "enabled": true,
         "server_name": "f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk",
-        "insecure": true
-      }
+        "insecure": false
+      },
+      "server_ports": [
+        "20000:50000"
+      ]
     },
     {
       "tag": "🇺🇸 美国 07",
@@ -403,7 +416,7 @@
       "tls": {
         "enabled": true,
         "server_name": "fe1d6996-t4v9c0-tcl9of-5fdt.la.shifen.uk",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -509,6 +522,35 @@
       "down_mbps": 55
     },
     {
+      "tag": "🇳🇱 荷兰 02",
+      "type": "vless",
+      "server": "bm.boulvarmoein.shop",
+      "server_port": 2095,
+      "uuid": "v2rayng_76",
+      "tls": {
+        "enabled": true,
+        "server_name": "bm.boulvarmoein.shop",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bm.boulvarmoein.shop"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/Telegram@v2rayng_76="
+      }
+    },
+    {
       "tag": "🇫🇷 法国 01",
       "type": "hysteria",
       "server": "62.210.127.217",
@@ -555,7 +597,7 @@
       "tls": {
         "enabled": true,
         "server_name": "poland24.clearorbitllc.com",
-        "insecure": true,
+        "insecure": false,
         "reality": {
           "enabled": true,
           "public_key": "e83edrY4QdUvXdmwO2iQbgyTeYjemYh7tpCzwJUZAw8",
@@ -577,7 +619,7 @@
       "tls": {
         "enabled": true,
         "server_name": "yandex.ru",
-        "insecure": true,
+        "insecure": false,
         "reality": {
           "enabled": true,
           "public_key": "Y-XS7D8QuxFKaaOmJHjAmMEhSTSDbKeZxbJBXU0MqUQ",
@@ -598,7 +640,7 @@
       "tls": {
         "enabled": true,
         "server_name": "refersion.com",
-        "insecure": true,
+        "insecure": false,
         "reality": {
           "enabled": true,
           "public_key": "Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU",
@@ -620,7 +662,7 @@
       "tls": {
         "enabled": true,
         "server_name": "iij.mggl.wang",
-        "insecure": true
+        "insecure": false
       }
     }
   ],
