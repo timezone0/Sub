@@ -37,7 +37,8 @@
           },
           {
             "rule_set": [
-              "geosite-category-ads-all"
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
             ]
           }
         ],
@@ -162,7 +163,7 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "googlefcm",
+      "tag": "fcm",
       "type": "selector",
       "outbounds": [
         "✨ fcm",
@@ -193,6 +194,31 @@
       "outbounds": [
         "direct",
         "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -536,6 +562,18 @@
         "outbound": "direct"
       },
       {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "fcm"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
@@ -568,15 +606,9 @@
       },
       {
         "rule_set": [
-          "geosite-category-ai-!cn"
+          "geosite-spotify"
         ],
-        "outbound": "ai"
-      },
-      {
-        "rule_set": [
-          "geosite-googlefcm"
-        ],
-        "outbound": "googlefcm"
+        "outbound": "spotify"
       },
       {
         "rule_set": [
@@ -618,6 +650,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
@@ -632,9 +671,16 @@
       },
       {
         "type": "remote",
-        "tag": "geosite-category-ads-all",
+        "tag": "geosite-spotify",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {

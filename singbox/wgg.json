@@ -37,7 +37,8 @@
           },
           {
             "rule_set": [
-              "geosite-category-ads-all"
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
             ]
           }
         ],
@@ -94,15 +95,14 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 01",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
         "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -111,15 +111,14 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇨🇦 加拿大 01",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
         "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -128,34 +127,32 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇨🇦 加拿大 01",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
         "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
     {
-      "tag": "googlefcm",
+      "tag": "fcm",
       "type": "selector",
       "outbounds": [
         "✨ fcm",
         "select",
         "direct",
-        "🇨🇦 加拿大 01",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
         "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -165,15 +162,31 @@
       "outbounds": [
         "direct",
         "select",
-        "🇨🇦 加拿大 01",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
         "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇰🇷 韩国 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇨🇳 台湾 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇺🇸 美国 01",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
+        "🇭🇰 香港 01",
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -182,15 +195,14 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇨🇦 加拿大 01",
         "🇨🇳 台湾 01",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
-        "🇰🇷 韩国 01",
         "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
+        "🇸🇬 新加坡 01",
+        "🇨🇦 加拿大 01",
         "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -225,14 +237,6 @@
       }
     },
     {
-      "tag": "🇨🇦 加拿大 01",
-      "type": "shadowsocks",
-      "server": "3.147.66.58",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "tag": "🇨🇳 台湾 01",
       "type": "shadowsocks",
       "server": "3.68.198.234",
@@ -243,7 +247,7 @@
     {
       "tag": "🇯🇵 日本 01",
       "type": "shadowsocks",
-      "server": "18.130.105.171",
+      "server": "18.175.147.245",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -257,33 +261,9 @@
       "password": "amazonskr05"
     },
     {
-      "tag": "🇰🇷 韩国 01",
-      "type": "shadowsocks",
-      "server": "13.61.143.121",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "tag": "🇺🇸 美国 01",
       "type": "shadowsocks",
-      "server": "18.116.40.29",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇺🇸 美国 02",
-      "type": "shadowsocks",
-      "server": "3.129.194.11",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "18.170.218.19",
+      "server": "3.17.166.143",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -291,7 +271,31 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "shadowsocks",
-      "server": "18.184.173.223",
+      "server": "15.157.66.237",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇨🇦 加拿大 01",
+      "type": "shadowsocks",
+      "server": "3.148.213.139",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "shadowsocks",
+      "server": "13.61.143.121",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "shadowsocks",
+      "server": "18.170.66.163",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -317,6 +321,18 @@
       {
         "clash_mode": "Direct",
         "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "fcm"
       },
       {
         "type": "logical",
@@ -351,15 +367,9 @@
       },
       {
         "rule_set": [
-          "geosite-category-ai-!cn"
+          "geosite-spotify"
         ],
-        "outbound": "ai"
-      },
-      {
-        "rule_set": [
-          "geosite-googlefcm"
-        ],
-        "outbound": "googlefcm"
+        "outbound": "spotify"
       },
       {
         "rule_set": [
@@ -401,6 +411,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
@@ -415,9 +432,16 @@
       },
       {
         "type": "remote",
-        "tag": "geosite-category-ads-all",
+        "tag": "geosite-spotify",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {
