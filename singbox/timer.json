@@ -37,7 +37,8 @@
           },
           {
             "rule_set": [
-              "geosite-category-ads-all"
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
             ]
           }
         ],
@@ -162,7 +163,7 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "googlefcm",
+      "tag": "fcm",
       "type": "selector",
       "outbounds": [
         "✨ fcm",
@@ -237,6 +238,31 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -268,34 +294,18 @@
     },
     {
       "tag": "🇭🇰 香港 01",
-      "type": "vless",
-      "server": "47.238.1.82",
-      "server_port": 39738,
-      "uuid": "b5544203-55e3-426e-92f1-0684c93f9829",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.site",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.site"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
+      "type": "vmess",
+      "server": "183.240.245.235",
+      "server_port": 49212,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "tag": "🇭🇰 香港 02",
       "type": "vless",
-      "server": "43.161.239.49",
-      "server_port": 10001,
+      "server": "47.238.1.82",
+      "server_port": 39738,
       "uuid": "b5544203-55e3-426e-92f1-0684c93f9829",
       "tls": {
         "enabled": true,
@@ -729,13 +739,19 @@
         "rule_set": [
           "geosite-googlefcm"
         ],
-        "outbound": "googlefcm"
+        "outbound": "fcm"
       },
       {
         "rule_set": [
           "geosite-tiktok"
         ],
         "outbound": "tiktok"
+      },
+      {
+        "rule_set": [
+          "geosite-spotify"
+        ],
+        "outbound": "spotify"
       },
       {
         "type": "logical",
@@ -795,6 +811,20 @@
         "tag": "geosite-tiktok",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       }
     ],
