@@ -81,6 +81,14 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
+- {name: "🇯🇵 日本 01", server: "62.164.193.47", port: 30303, type: "hysteria2", password: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", auth: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", skip-cert-verify: true}
+- {name: "🇯🇵 日本 02", server: "62.164.193.125", port: 443, type: "hysteria2", password: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", auth: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", skip-cert-verify: true}
+- {name: "🇯🇵 日本 03", server: "74.82.194.233", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🇩🇪 德国 01", server: "185.254.96.183", port: 39175, type: "hysteria2", password: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", auth: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "oracleus.yuwan.link", port: 30303, type: "hysteria2", password: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", auth: "22621bda-e6bf-48e1-b4bd-f15c5bff5944", skip-cert-verify: true, sni: "oracleus.yuwan.link"}
+- {name: "🇺🇸 美国 02", server: "cname.xirancdn.us", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🇺🇸 美国 03", server: "cname.xirancdn.us", port: 80, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}}
+- {name: "🇺🇸 美国 04", server: "104.17.144.0", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
 - {name: "🏴‍☠️ 莱索托 01", server: "c.iamdt.dpdns.org", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
 - {name: "🏴‍☠️ 莱索托 02", server: "cloudflare.182682.xyz", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
 - {name: "🏴‍☠️ 莱索托 03", server: "speed.marisalnc.com", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
@@ -102,56 +110,52 @@ proxies:
 - {name: "🏴‍☠️ 莱索托 19", server: "cdn.tzpro.xyz", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
 - {name: "🏴‍☠️ 莱索托 20", server: "cf.877771.xyz", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
 - {name: "🏴‍☠️ 莱索托 21", server: "xn--b6gac.eu.org", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 22", server: "104.20.47.171", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 23", server: "104.21.29.126", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 24", server: "104.17.237.151", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 25", server: "172.67.79.194", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 26", server: "104.24.255.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 27", server: "104.18.94.168", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 28", server: "104.16.109.83", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 29", server: "104.16.79.164", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 30", server: "104.17.206.63", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 31", server: "172.66.1.220", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 32", server: "172.64.145.222", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 33", server: "104.21.109.144", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 34", server: "172.64.32.44", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 35", server: "2606:4700:8dda::2f36:5243", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 36", server: "2606:4700:8cad::2f9e:6bf0", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 37", server: "2606:4700:8dda::1187:933", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 38", server: "2606:4700:8ded::293:490c", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 39", server: "2606:4700:8d76::277d:2d48", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 40", server: "2606:4700:440e::54ee:6c13", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 41", server: "2606:4700:4402::32bb:7742", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 42", server: "2606:4700:440b::2576:1adb", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 43", server: "2606:4700:4401::5c37:24ab", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 44", server: "2606:4700:4700::3fe9:550d", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 45", server: "cf.877774.xyz", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 46", server: "104.18.35.42", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 47", server: "104.18.32.42", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 48", server: "104.18.33.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 49", server: "104.18.38.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 50", server: "104.18.40.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 51", server: "104.18.41.46", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 52", server: "104.18.42.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 53", server: "104.18.43.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 54", server: "104.18.44.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 55", server: "104.18.45.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 56", server: "104.18.46.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 57", server: "104.18.47.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 58", server: "104.18.39.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 59", server: "104.18.35.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🏴‍☠️ 莱索托 60", server: "172.64.152.0", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🇺🇸 美国 01", server: "cname.xirancdn.us", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
-- {name: "🇺🇸 美国 02", server: "cname.xirancdn.us", port: 80, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}}
-- {name: "🇺🇸 美国 03", server: "104.17.144.0", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 22", server: "104.24.239.71", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 23", server: "104.19.78.77", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 24", server: "104.16.63.193", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 25", server: "104.27.29.83", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 26", server: "104.21.29.168", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 27", server: "104.18.223.44", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 28", server: "104.21.239.247", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 29", server: "104.16.254.24", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 30", server: "172.67.110.238", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 31", server: "104.16.157.95", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 32", server: "2606:4700:90de::1107:5f6c", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 33", server: "2606:4700:8cae::3c89:22f5", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 34", server: "2606:4700:9add::26bd:6ec3", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 35", server: "2606:4700:9adf::2405:3790", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 36", server: "2606:4700:8d9f::7c99:1f97", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/%2F%3Fed%3D2048", headers: {Host: "c.iamdt.dpdns.org"}}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 37", server: "cf.877774.xyz", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 38", server: "104.18.35.42", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 39", server: "104.18.32.42", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 40", server: "104.18.33.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 41", server: "104.18.38.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 42", server: "104.18.40.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 43", server: "104.18.41.46", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 44", server: "104.18.42.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 45", server: "104.18.43.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 46", server: "104.18.44.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 47", server: "104.18.45.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 48", server: "104.18.46.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 49", server: "104.18.47.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 50", server: "104.18.39.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 51", server: "104.18.35.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
+- {name: "🏴‍☠️ 莱索托 52", server: "172.64.152.0", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
 - {name: "🇮🇱 以色列 01", server: "104.17.48.0", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
 - {name: "🇦🇹 奥地利 01", server: "104.18.37.4", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
-- {name: "🇯🇵 日本 01", server: "74.82.194.233", port: 443, type: "vless", uuid: "53342b53-157e-4475-9f3a-40439434e689", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "c.iamdt.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "c.iamdt.dpdns.org"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -204,26 +208,22 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -276,24 +276,20 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -346,26 +342,22 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 - name: "FCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -418,25 +410,21 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -489,25 +477,21 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -560,24 +544,20 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇩🇪 德国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🏴‍☠️ 莱索托 01"
   - "🏴‍☠️ 莱索托 02"
   - "🏴‍☠️ 莱索托 03"
@@ -630,20 +610,8 @@ proxy-groups:
   - "🏴‍☠️ 莱索托 50"
   - "🏴‍☠️ 莱索托 51"
   - "🏴‍☠️ 莱索托 52"
-  - "🏴‍☠️ 莱索托 53"
-  - "🏴‍☠️ 莱索托 54"
-  - "🏴‍☠️ 莱索托 55"
-  - "🏴‍☠️ 莱索托 56"
-  - "🏴‍☠️ 莱索托 57"
-  - "🏴‍☠️ 莱索托 58"
-  - "🏴‍☠️ 莱索托 59"
-  - "🏴‍☠️ 莱索托 60"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
   - "🇮🇱 以色列 01"
   - "🇦🇹 奥地利 01"
-  - "🇯🇵 日本 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
