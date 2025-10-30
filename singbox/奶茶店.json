@@ -37,7 +37,8 @@
           },
           {
             "rule_set": [
-              "geosite-category-ads-all"
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
             ]
           }
         ],
@@ -98,8 +99,7 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,8 +112,7 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -126,13 +125,12 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
     {
-      "tag": "googlefcm",
+      "tag": "fcm",
       "type": "selector",
       "outbounds": [
         "✨ fcm",
@@ -142,8 +140,7 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,8 +154,21 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01"
+        "🇸🇬 新加坡 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇺🇸 美国 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -171,8 +181,7 @@
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
         "🇺🇸 美国 01",
-        "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -217,15 +226,15 @@
     {
       "tag": "🇭🇰 香港 02",
       "type": "shadowsocks",
-      "server": "180.188.43.69",
-      "server_port": 55556,
+      "server": "27.152.180.32",
+      "server_port": 55567,
       "method": "aes-256-gcm",
       "password": "cbbae268-e129-41fa-80d5-9f115f5a0a4b"
     },
     {
       "tag": "🇭🇰 香港 03",
       "type": "vless",
-      "server": "46.3.104.215",
+      "server": "46.3.104.171",
       "server_port": 65301,
       "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
       "tls": {
@@ -239,7 +248,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -261,7 +270,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "edge"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -271,28 +280,6 @@
       "type": "vless",
       "server": "172.99.138.107",
       "server_port": 65300,
-      "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "gamedownloads-rockstargames-com.akamaized.net",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "UwObpjthXR56McGdJewxXsrNYygmiPl6cZxN84OVRTY",
-          "short_id": "0c08d8ba"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇯🇵 日本 01",
-      "type": "vless",
-      "server": "47.79.34.187",
-      "server_port": 65400,
       "uuid": "cbbae268-e129-41fa-80d5-9f115f5a0a4b",
       "tls": {
         "enabled": true,
@@ -333,6 +320,18 @@
         "outbound": "direct"
       },
       {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "fcm"
+      },
+      {
         "type": "logical",
         "mode": "or",
         "rules": [
@@ -365,15 +364,9 @@
       },
       {
         "rule_set": [
-          "geosite-category-ai-!cn"
+          "geosite-spotify"
         ],
-        "outbound": "ai"
-      },
-      {
-        "rule_set": [
-          "geosite-googlefcm"
-        ],
-        "outbound": "googlefcm"
+        "outbound": "spotify"
       },
       {
         "rule_set": [
@@ -415,6 +408,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
@@ -429,9 +429,16 @@
       },
       {
         "type": "remote",
-        "tag": "geosite-category-ads-all",
+        "tag": "geosite-spotify",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {
