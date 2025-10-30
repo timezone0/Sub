@@ -87,7 +87,6 @@ proxies:
 - {name: "🇳🇱 荷兰 01", server: "31.207.44.210", port: 32155, type: "vless", uuid: "2e23b585-a486-4541-83d8-5832a1409c6e", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "6-b7u_t7wG_jbda_lucHW4Au9biBl1E0tA2Zkqm8mSw", short-id: "737af772"}, udp: true, network: "tcp", servername: "yahoo.com"}
 - {name: "🇷🇺 俄罗斯 01", server: "usa.savanet.pro", port: 443, type: "vless", uuid: "87eff1bd-d55f-4df2-a5ad-863368a16cb7", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "s1YS6OaMKypumOxq7u22Pf_FaSjEbRvgLrJf1iTOKWY", short-id: "bce24697c04e"}, udp: true, network: "tcp", servername: "yandex.com"}
 - {name: "🇺🇸 美国 01", server: "172.238.22.96", port: 25599, type: "vless", uuid: "ff06f97b-09f6-4b8b-8a12-7d2f51b28a75", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "SsbeZ_JdMe3r2IqTESBWRSUMrcm3PdpFzlab5xrKUlU"}, udp: true, network: "tcp", servername: "www.cloudflare.com"}
-- {name: "🇺🇸 美国 02", server: "wangcai215.000444.cn", port: 8880, type: "vless", uuid: "db2c8a95-f751-46e3-b05e-d2def66850fb", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2", headers: {Host: "ayanamirei.11160321.xyz"}}, udp: true, servername: "Telegram-channel-WangCai2"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -99,7 +98,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -112,7 +110,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -123,7 +120,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "FCM"
   type: "select"
   proxies:
@@ -136,7 +132,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -148,7 +143,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -160,7 +154,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -171,7 +164,6 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
