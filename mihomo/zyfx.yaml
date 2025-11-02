@@ -119,8 +119,6 @@ proxies:
 - {name: "🇨🇦 加拿大 36", server: "wa.xunyunnode.sbs", port: 50737, type: "ss", cipher: "chacha20-ietf-poly1305", password: "6398da48-cc3f-4ed7-bf80-5cc70d1b9393", udp: true}
 - {name: "🇨🇦 加拿大 37", server: "wa.xunyunnode.sbs", port: 50737, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5d48bee7-2395-48fc-bced-137e638b5770", udp: true}
 - {name: "🇨🇦 加拿大 38", server: "wa.xunyunnode.sbs", port: 50737, type: "ss", cipher: "chacha20-ietf-poly1305", password: "926b9cfe-ad2e-4d06-bac3-62d8c14b8bfe", udp: true}
-- {name: "🇨🇦 加拿大 39", server: "haa.dashuai.cyou", port: 45064, type: "vmess", uuid: "e4897b0b-7925-4bf3-a2f2-72f0de4371fb", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {name: "🇨🇦 加拿大 40", server: "40.233.118.103", port: 42557, type: "vless", uuid: "2429bee3-e0c1-47dd-b420-75e6512b184b", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo", short-id: "f430927d"}, client-fingerprint: "chrome", network: "tcp", udp: true, servername: "www.yahoo.com"}
 - {name: "🇬🇧 英国 01", server: "n001.xunxunmimisbs.sbs", port: 23100, type: "trojan", password: "c7623b2e-d773-4b4a-aebb-076cb82a1c9f", sni: "uk01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇬🇧 英国 02", server: "01.xunyunnode.sbs", port: 17587, type: "ss", cipher: "chacha20-ietf-poly1305", password: "11298d27-99f2-4b47-9366-4894962306d6", udp: true}
 - {name: "🇬🇧 英国 03", server: "haa.dashuai.cyou", port: 45066, type: "vmess", uuid: "27d937bb-9543-4188-a010-d97295b896e0", alterId: 0, cipher: "auto", tls: false, udp: true}
@@ -183,6 +181,8 @@ proxies:
 - {name: "🇬🇧 英国 60", server: "02.xunyunnode.sbs", port: 59406, type: "ss", cipher: "chacha20-ietf-poly1305", password: "11298d27-99f2-4b47-9366-4894962306d6", udp: true}
 - {name: "🇬🇧 英国 61", server: "xc.xunyunnode.sbs", port: 43421, type: "ss", cipher: "chacha20-ietf-poly1305", password: "172baa5c-3cf2-4bf3-ae99-3c86da9e6f2b", udp: true}
 - {name: "🇬🇧 英国 62", server: "n002.xunxunmimisbs.sbs", port: 52000, type: "trojan", password: "6b016ce2-e533-436b-b645-5c633e359e91", sni: "uk01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇬🇧 英国 63", server: "n002.xunxunmimisbs.sbs", port: 23100, type: "trojan", password: "e2616e14-e942-4a69-9a5c-045a64f17bc7", sni: "uk01.xxxxyyyysbs.sbs", udp: true}
+- {name: "🇬🇧 英国 64", server: "n001.xunxunmimisbs.sbs", port: 23100, type: "trojan", password: "0a3b290b-77b7-47a2-b813-704dfc012ae9", sni: "uk01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
 - {name: "🇻🇳 越南 01", server: "wa.xunyunnode.sbs", port: 43680, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5d48bee7-2395-48fc-bced-137e638b5770", udp: true}
 - {name: "🇻🇳 越南 02", server: "n001.xunxunmimisbs.sbs", port: 57200, type: "trojan", password: "7b34fce4-d0b7-49ad-af70-e2a8ec2f9349", sni: "vn01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇻🇳 越南 03", server: "n001.xunxunmimisbs.sbs", port: 57200, type: "trojan", password: "87c26f16-96e2-4988-9d81-f70f7fde4bbf", sni: "vn01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
@@ -238,12 +238,7 @@ proxies:
 - {name: "🇻🇳 越南 53", server: "n002.xunxunmimisbs.sbs", port: 19010, type: "trojan", password: "e0f18d97-20a5-4a4d-839c-a40efa80a6d2", sni: "vn01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇻🇳 越南 54", server: "wa.xunyunnode.sbs", port: 43680, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d5252099-222b-4ca7-918e-3fea8b5ba585", udp: true}
 - {name: "🇻🇳 越南 55", server: "n002.xunxunmimisbs.sbs", port: 49110, type: "trojan", password: "831b6c74-5d8f-4ae5-9395-8494ba3a248f", sni: "vn01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇻🇳 越南 56", server: "103.186.155.223", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 57", server: "n001.xunxunmimisbs.sbs", port: 28200, type: "trojan", password: "89d1967d-03c6-4f5c-8a92-4107cd85cc11", sni: "vn01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇻🇳 越南 58", server: "n002.xunxunmimisbs.sbs", port: 49110, type: "trojan", password: "ef03ba7d-4d56-4a6e-a9da-5c15cc2977b9", sni: "vn01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇻🇳 越南 59", server: "n002.xunxunmimisbs.sbs", port: 28200, type: "trojan", password: "e987cad5-7d72-494e-b833-7228854fae4a", sni: "vn01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇻🇳 越南 60", server: "n001.xunxunmimisbs.sbs", port: 28200, type: "trojan", password: "6e841997-473d-4a8b-81c2-25936478bf14", sni: "vn01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
-- {type: "vless", name: "🇻🇳 越南 61", server: "djt.cf.090227.xyz", port: 2053, uuid: "2523c510-9ff0-415b-9582-93949bfae7e3", tls: true, client-fingerprint: "randomized", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "snippets.ekt.me"}, path: "/socks5://admin:admin@116.96.39.84:20002"}, encryption: "none", servername: "snippets.ekt.me"}
+- {type: "vless", name: "🇻🇳 越南 56", server: "djt.cf.090227.xyz", port: 2053, uuid: "2523c510-9ff0-415b-9582-93949bfae7e3", tls: true, client-fingerprint: "randomized", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "snippets.ekt.me"}, path: "/socks5://admin:admin@116.96.39.84:20002"}, encryption: "none", servername: "snippets.ekt.me"}
 - {name: "🇸🇬 新加坡 01", server: "02.xunyunnode.sbs", port: 10463, type: "ss", cipher: "chacha20-ietf-poly1305", password: "6398da48-cc3f-4ed7-bf80-5cc70d1b9393", udp: true}
 - {name: "🇸🇬 新加坡 02", server: "n001.xunxunmimisbs.sbs", port: 31100, type: "trojan", password: "831b6c74-5d8f-4ae5-9395-8494ba3a248f", sni: "sg01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇸🇬 新加坡 03", server: "01.xunyunnode.sbs", port: 14195, type: "ss", cipher: "chacha20-ietf-poly1305", password: "17f669fa-5d87-42a4-9d72-307739b96871", udp: true}
@@ -342,9 +337,15 @@ proxies:
 - {name: "🇸🇬 新加坡 96", server: "cdnfire.xiaomispeed.com", port: 23301, type: "trojan", password: "a62cd72e-2197-4f78-9fd0-929814fe738a", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true}
 - {name: "🇸🇬 新加坡 97", server: "01.xunyunnode.sbs", port: 14195, type: "ss", cipher: "chacha20-ietf-poly1305", password: "5d48bee7-2395-48fc-bced-137e638b5770", udp: true}
 - {name: "🇸🇬 新加坡 98", server: "xc.xunyunnode.sbs", port: 18416, type: "ss", cipher: "chacha20-ietf-poly1305", password: "172baa5c-3cf2-4bf3-ae99-3c86da9e6f2b", udp: true}
-- {name: "🇸🇬 新加坡 99", server: "n002.xunxunmimisbs.sbs", port: 31200, type: "trojan", password: "ad52639b-d3d0-448b-bed5-354c131b65da", sni: "sg01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇸🇬 新加坡 100", server: "haa.dashuai.cyou", port: 45054, type: "vmess", uuid: "4fcfb80d-e97c-4fb5-96af-537d8eed6088", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {type: "vless", name: "🇸🇬 新加坡 101", server: "31.192.238.71", port: 8443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/Telegram@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
+- {name: "🇸🇬 新加坡 99", server: "wangcai247.cloudflare.182682.xyz", port: 2096, type: "vless", uuid: "188f8a72-6b58-4cf2-ab66-766a9388e6ba", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "5c8d.fsafasdfas.online"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "5c8d.fsafasdfas.online"}
+- {name: "🇸🇬 新加坡 100", server: "n001.xunxunmimisbs.sbs", port: 31201, type: "trojan", password: "6e841997-473d-4a8b-81c2-25936478bf14", sni: "sg02.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇸🇬 新加坡 101", server: "n002.xunxunmimisbs.sbs", port: 31201, type: "trojan", password: "38718e2c-ec87-42e6-b792-3bfeafad4f7b", sni: "sg02.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇸🇬 新加坡 102", server: "wangcai136.000444.cn", port: 2096, type: "vless", uuid: "188f8a72-6b58-4cf2-ab66-766a9388e6ba", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "5c8d.fsafasdfas.online"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "5c8d.fsafasdfas.online"}
+- {name: "🇸🇬 新加坡 103", server: "n001.xunxunmimisbs.sbs", port: 31200, type: "trojan", password: "ad52639b-d3d0-448b-bed5-354c131b65da", sni: "sg01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇸🇬 新加坡 104", server: "efan8998.efan-dns78655.com", port: 6004, type: "vmess", uuid: "5af37c85-67d9-4955-ac57-1d682855d0ed", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇸🇬 新加坡 105", server: "wangcai196.000444.cn", port: 2096, type: "vless", uuid: "188f8a72-6b58-4cf2-ab66-766a9388e6ba", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "5c8d.fsafasdfas.online"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "5c8d.fsafasdfas.online"}
+- {name: "🇸🇬 新加坡 106", server: "openai.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "sbfangbinxing.fuckingfangbinxing.workers.dev"}}, udp: true}
+- {type: "vless", name: "🇸🇬 新加坡 107", server: "31.192.238.71", port: 8443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/Telegram@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
 - {name: "🇺🇸 美国 01", server: "n002.xunxunmimisbs.sbs", port: 53000, type: "trojan", password: "6b016ce2-e533-436b-b645-5c633e359e91", sni: "us01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇺🇸 美国 02", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "c1c44969-ac26-4b98-82e9-44afab79a4fb", auth: "c1c44969-ac26-4b98-82e9-44afab79a4fb", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
 - {name: "🇺🇸 美国 03", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "77d909f4-e2e0-4c3c-8d19-ab68b547dd46", auth: "77d909f4-e2e0-4c3c-8d19-ab68b547dd46", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
@@ -507,68 +508,90 @@ proxies:
 - {name: "🇺🇸 美国 160", server: "01.xunyunnode.sbs", port: 45823, type: "ss", cipher: "chacha20-ietf-poly1305", password: "d5252099-222b-4ca7-918e-3fea8b5ba585", udp: true}
 - {name: "🇺🇸 美国 161", server: "zl-us01.xxxxyyyysbs.sbs", port: 52800, type: "trojan", password: "e0f18d97-20a5-4a4d-839c-a40efa80a6d2", skip-cert-verify: true, udp: true, sni: "zl-us01.xxxxyyyysbs.sbs"}
 - {name: "🇺🇸 美国 162", server: "haa.dashuai.cyou", port: 45052, type: "vmess", uuid: "778ee456-81ae-48f5-8780-2de88424a372", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇺🇸 美国 163", server: "22ef36ab-t57ls0-thd0h1-1rz5s.us.hyhuawei.com", port: 443, type: "hysteria2", password: "40e084d6-0316-11f0-90e2-f23c913c8d2b", auth: "40e084d6-0316-11f0-90e2-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "22ef36ab-t57ls0-thd0h1-1rz5s.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 164", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "1df2c0f9-7aae-4a9b-bcd0-1433bea7430c", auth: "1df2c0f9-7aae-4a9b-bcd0-1433bea7430c", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 165", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "335344bb-2768-4a8c-a94f-231241ccb0f8", auth: "335344bb-2768-4a8c-a94f-231241ccb0f8", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 166", server: "wangcai224.000444.cn", port: 2096, type: "vless", uuid: "188f8a72-6b58-4cf2-ab66-766a9388e6ba", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "5c8d.fsafasdfas.online"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "5c8d.fsafasdfas.online"}
-- {name: "🇺🇸 美国 167", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "0c6af622-c47d-428b-9717-6b1ee2f96d0a", auth: "0c6af622-c47d-428b-9717-6b1ee2f96d0a", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 168", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "448bd471-9659-4b6c-a648-c330f71599a3", auth: "448bd471-9659-4b6c-a648-c330f71599a3", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 169", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "61e269ed-0fbd-4b35-8435-db61d1da2afd", auth: "61e269ed-0fbd-4b35-8435-db61d1da2afd", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 170", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "228575ae-2ac6-488d-8a0f-1787b8db452b", auth: "228575ae-2ac6-488d-8a0f-1787b8db452b", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 171", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "3da48067-3641-4a53-bf8e-3f633630223a", auth: "3da48067-3641-4a53-bf8e-3f633630223a", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 172", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "9e8af28b-7489-42e7-bb76-375d84bbf04e", auth: "9e8af28b-7489-42e7-bb76-375d84bbf04e", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 173", server: "wangcai144.000444.cn", port: 2096, type: "vless", uuid: "188f8a72-6b58-4cf2-ab66-766a9388e6ba", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "5c8d.fsafasdfas.online"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "5c8d.fsafasdfas.online"}
-- {name: "🇺🇸 美国 174", server: "44c299ab-t57ls0-teqqcv-1rc6n.us.hyhuawei.com", port: 443, type: "hysteria2", password: "32bd96d6-186b-11f0-9a65-f23c9164ca5d", auth: "32bd96d6-186b-11f0-9a65-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "44c299ab-t57ls0-teqqcv-1rc6n.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 175", server: "banmabanmabanmabanmabanmabanma5.wanlidag.top", port: 54265, type: "hysteria2", password: "7f47298b-b933-4ffb-ad3f-f87b620edec7", auth: "7f47298b-b933-4ffb-ad3f-f87b620edec7", sni: "banmabanmabanmabanmabanmabanma5.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 176", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "909727d6-c919-48a0-b428-44ce368bd7de", auth: "909727d6-c919-48a0-b428-44ce368bd7de", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 177", server: "banmabanmabanmabanmabanmabanma5.wanlidag.top", port: 54265, type: "hysteria2", password: "f1d87ff9-614c-4e6a-8ac2-91f7ad6d3501", auth: "f1d87ff9-614c-4e6a-8ac2-91f7ad6d3501", sni: "banmabanmabanmabanmabanmabanma5.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 178", server: "eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk", port: 1743, type: "hysteria2", password: "1b609740-eec2-11ef-8543-f23c93136cb3", auth: "1b609740-eec2-11ef-8543-f23c93136cb3", skip-cert-verify: false, udp: true, sni: "eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk"}
-- {name: "🇺🇸 美国 179", server: "banmabanmabanmabanmabanmabanma4.wanlidag.top", port: 54265, type: "hysteria2", password: "1e9faa34-1cfb-48e3-a0a6-3d8780e15837", auth: "1e9faa34-1cfb-48e3-a0a6-3d8780e15837", sni: "banmabanmabanmabanmabanmabanma4.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 180", server: "ea037179-t55r40-t7hu58-1q1la.us.hyhuawei.com", port: 443, type: "hysteria2", password: "25b46954-9a33-11ee-8b86-f23c91cfbbc9", auth: "25b46954-9a33-11ee-8b86-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "ea037179-t55r40-t7hu58-1q1la.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 181", server: "sfjmg4.sufujia.top", port: 57300, type: "hysteria2", password: "78f2c8c4-f08a-4262-adeb-073758edaf01", auth: "78f2c8c4-f08a-4262-adeb-073758edaf01", sni: "sfjmg4.sufujia.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 182", server: "2194730c-t57ls0-tkp3tl-1s09x.us.hyhuawei.com", port: 443, type: "hysteria2", password: "62b7824e-47dc-11ef-9f2d-f23c9164ca5d", auth: "62b7824e-47dc-11ef-9f2d-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "2194730c-t57ls0-tkp3tl-1s09x.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 183", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "47781afc-389d-41cb-82c6-6fe8d3505ca6", auth: "47781afc-389d-41cb-82c6-6fe8d3505ca6", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 184", server: "sfjmg4.sufujia.top", port: 57300, type: "hysteria2", password: "61139adb-9689-41cb-8924-9b12ff63af9c", auth: "61139adb-9689-41cb-8924-9b12ff63af9c", sni: "sfjmg4.sufujia.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 185", server: "banmabanmabanmabanmabanmabanma3.wanlidag.top", port: 54265, type: "hysteria2", password: "03db03ad-1c17-4019-b598-27c7501b68c0", auth: "03db03ad-1c17-4019-b598-27c7501b68c0", sni: "banmabanmabanmabanmabanmabanma3.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 186", server: "a9bc980e-t57ls0-t8wh4m-1hpo0.us.hyhuawei.com", port: 443, type: "hysteria2", password: "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9", auth: "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "a9bc980e-t57ls0-t8wh4m-1hpo0.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 187", server: "b0ddc75a-t55r40-t5fh9u-1uni.us.hyhuawei.com", port: 443, type: "hysteria2", password: "adbd0a82-3336-11ed-bd7c-f23c913c8d2b", auth: "adbd0a82-3336-11ed-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "b0ddc75a-t55r40-t5fh9u-1uni.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 188", server: "8ea950a6-t55r40-t6gkbz-mv7m.us.hyhuawei.com", port: 443, type: "hysteria2", password: "94d40708-8273-11ea-8fc9-f23c913c8d2b", auth: "94d40708-8273-11ea-8fc9-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "8ea950a6-t55r40-t6gkbz-mv7m.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 189", server: "92761548-t57ls0-tn57fp-5ifr.us.hyhuawei.com", port: 443, type: "hysteria2", password: "ecfab6c8-df5b-11ed-98a7-f23c913c8d2b", auth: "ecfab6c8-df5b-11ed-98a7-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "92761548-t57ls0-tn57fp-5ifr.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 190", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "9b6dffc3-b349-4b17-b2ee-7a007bd85745", auth: "9b6dffc3-b349-4b17-b2ee-7a007bd85745", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 191", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "34589107-af36-4e17-8f5e-b203aa2ba6bc", auth: "34589107-af36-4e17-8f5e-b203aa2ba6bc", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 192", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "70f44486-cda5-4750-9bf5-ca8826ee9bcc", auth: "70f44486-cda5-4750-9bf5-ca8826ee9bcc", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 193", server: "4b371227-t57ls0-t7m3jq-1rnrp.us.hyhuawei.com", port: 443, type: "hysteria2", password: "989aa406-ea9b-11ef-97da-f23c91cfbbc9", auth: "989aa406-ea9b-11ef-97da-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "4b371227-t57ls0-t7m3jq-1rnrp.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 194", server: "e29ede5b-t55r40-t7fz1r-8rja.us.hyhuawei.com", port: 443, type: "hysteria2", password: "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b", auth: "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "e29ede5b-t55r40-t7fz1r-8rja.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 195", server: "rb1.oxdtangx.top", port: 11112, type: "hysteria2", password: "53048057-1b02-409c-8037-a390ec12193f", auth: "53048057-1b02-409c-8037-a390ec12193f", sni: "rb1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 196", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "83a975a6-37c4-4b7a-9458-a7ebd99b6d71", auth: "83a975a6-37c4-4b7a-9458-a7ebd99b6d71", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 197", server: "banmabanmabanmabanmabanmabanma5.wanlidag.top", port: 54265, type: "hysteria2", password: "027d85d2-3152-438b-b697-5552a52d3bc0", auth: "027d85d2-3152-438b-b697-5552a52d3bc0", sni: "banmabanmabanmabanmabanmabanma5.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 198", server: "886befd9-t53wg0-thcykv-14au8.us.hyhuawei.com", port: 443, type: "hysteria2", password: "44811728-ebd8-11ec-adf5-f23c91cfbbc9", auth: "44811728-ebd8-11ec-adf5-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "886befd9-t53wg0-thcykv-14au8.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 199", server: "695c92cf-t55r40-tbpu76-1thmd.us.hyhuawei.com", port: 443, type: "hysteria2", password: "2d8c38cc-fc12-11ef-94aa-f23c913c8d2b", auth: "2d8c38cc-fc12-11ef-94aa-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "695c92cf-t55r40-tbpu76-1thmd.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 200", server: "49ca2772-t53wg0-tgl02u-1jr1u.us.hyhuawei.com", port: 443, type: "hysteria2", password: "2c01eae6-0b6a-11ee-a058-f23c91369f2d", auth: "2c01eae6-0b6a-11ee-a058-f23c91369f2d", ports: "30000-60000", udp: true, sni: "49ca2772-t53wg0-tgl02u-1jr1u.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 201", server: "7da7de34-t53wg0-t525pa-ach1.us.hyhuawei.com", port: 443, type: "hysteria2", password: "b9c9905c-1627-11ec-a0fc-f23c913c8d2b", auth: "b9c9905c-1627-11ec-a0fc-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "7da7de34-t53wg0-t525pa-ach1.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 202", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "c6499074-faa4-4d08-b630-8db684a6e0d0", auth: "c6499074-faa4-4d08-b630-8db684a6e0d0", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 203", server: "21af5dc3-t57ls0-tjsm26-6gn6.us.hyhuawei.com", port: 443, type: "hysteria2", password: "c12f73f6-e8c7-11ed-9246-f23c9164ca5d", auth: "c12f73f6-e8c7-11ed-9246-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "21af5dc3-t57ls0-tjsm26-6gn6.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 204", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "bf47336b-1642-4db6-b1fe-8401e0f2405e", auth: "bf47336b-1642-4db6-b1fe-8401e0f2405e", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 205", server: "95175aff-t57ls0-td5oia-1m49t.us.hyhuawei.com", port: 443, type: "hysteria2", password: "c357a728-1211-11f0-9a65-f23c9164ca5d", auth: "c357a728-1211-11f0-9a65-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "95175aff-t57ls0-td5oia-1m49t.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 206", server: "f0f46d51-t55r40-tkn6t8-1i3g8.us.hyhuawei.com", port: 443, type: "hysteria2", password: "437cef58-f10b-11ef-8eaf-f23c9164ca5d", auth: "437cef58-f10b-11ef-8eaf-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "f0f46d51-t55r40-tkn6t8-1i3g8.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 207", server: "b70876f8-t53wg0-tighxj-12hj8.us.hyhuawei.com", port: 443, type: "hysteria2", password: "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d", auth: "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "b70876f8-t53wg0-tighxj-12hj8.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 208", server: "d8bd206b-t53wg0-t8kd6j-1c9em.us.hyhuawei.com", port: 443, type: "hysteria2", password: "336501b6-51d2-11ee-a993-f23c9164ca5d", auth: "336501b6-51d2-11ee-a993-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "d8bd206b-t53wg0-t8kd6j-1c9em.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 209", server: "n001.xunxunmimisbs.sbs", port: 45100, type: "trojan", password: "e5c6f812-a640-4474-9fc9-9d48b2e26bb5", sni: "us01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇺🇸 美国 210", server: "749af71d-t53wg0-tc9wl2-py5w.us.hyhuawei.com", port: 443, type: "hysteria2", password: "ae5338ae-9a70-58c9-3d47-7d54a5675715", auth: "ae5338ae-9a70-58c9-3d47-7d54a5675715", ports: "30000-60000", udp: true, sni: "749af71d-t53wg0-tc9wl2-py5w.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 211", server: "eb7c40a5-t57ls0-tcop2n-tl32.us.hyhuawei.com", port: 443, type: "hysteria2", password: "5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b", auth: "5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "eb7c40a5-t57ls0-tcop2n-tl32.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 212", server: "xdd.dashuai.cyou", port: 45053, type: "vmess", uuid: "59fbdd15-60b9-4e88-982a-04fba544dc81", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 213", server: "02591bdd-t53wg0-tcinla-hrtf.us.hyhuawei.com", port: 443, type: "hysteria2", password: "0da8651e-e1f6-11ec-bd7c-f23c913c8d2b", auth: "0da8651e-e1f6-11ec-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "02591bdd-t53wg0-tcinla-hrtf.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 214", server: "rb1.oxdtangx.top", port: 11112, type: "hysteria2", password: "fdb5648c-a06b-4264-acaf-4cc8ca172163", auth: "fdb5648c-a06b-4264-acaf-4cc8ca172163", sni: "rb1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 215", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "50217f78-ac9c-441e-8962-6b909740559b", auth: "50217f78-ac9c-441e-8962-6b909740559b", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 216", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "48090ef9-7ff0-41b6-be54-a831cb9bb1a0", auth: "48090ef9-7ff0-41b6-be54-a831cb9bb1a0", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 217", server: "59435a27-t57ls0-tnkuks-wujn.us.hyhuawei.com", port: 443, type: "hysteria2", password: "51362ab6-b5e6-11ea-ad28-f23c913c8d2b", auth: "51362ab6-b5e6-11ea-ad28-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "59435a27-t57ls0-tnkuks-wujn.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 218", server: "banmabanmabanmabanmabanmabanma6.wanlidag.top", port: 54265, type: "hysteria2", password: "e1a8f2f9-b567-4678-8e26-5b03733f1d67", auth: "e1a8f2f9-b567-4678-8e26-5b03733f1d67", sni: "banmabanmabanmabanmabanmabanma6.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 219", server: "8fb56d0b-t55r40-t6k7h7-1rcxl.us.hyhuawei.com", port: 443, type: "hysteria2", password: "9141f048-0b70-11ef-9eb1-f23c91cfbbc9", auth: "9141f048-0b70-11ef-9eb1-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "8fb56d0b-t55r40-t6k7h7-1rcxl.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 220", server: "89f5a1b5-t53wg0-tn57fp-5ifr.us.hyhuawei.com", port: 443, type: "hysteria2", password: "ecfab6c8-df5b-11ed-98a7-f23c913c8d2b", auth: "ecfab6c8-df5b-11ed-98a7-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "89f5a1b5-t53wg0-tn57fp-5ifr.us.hyhuawei.com"}
-- {name: "🇺🇸 美国 221", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "8161cbdf-4bed-4018-9b08-410c620e1d33", auth: "8161cbdf-4bed-4018-9b08-410c620e1d33", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 222", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "80538b74-de70-4d95-90bf-5eb0a7785996", auth: "80538b74-de70-4d95-90bf-5eb0a7785996", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
-- {type: "ss", server: "switcher-nick-croquet.freesocks.work", port: 443, cipher: "chacha20-ietf-poly1305", password: "9tqhMdIrTkgQ46PvhyAtMH", name: "🇺🇸 美国 223"}
-- {name: "🇺🇸 美国 224", type: "vmess", server: "103.243.26.209", port: 10086, cipher: "auto", uuid: "c5ec2e3f-c058-46a8-a148-1831824bb94b", alterId: 0, tls: false, network: "http", http-opts: {path: ["/"], headers: {}}, client-fingerprint: ""}
+- {name: "🇺🇸 美国 163", server: "f43bd983-t55r40-t5ain7-zn8y.us.hyhuawei.com", port: 443, type: "hysteria2", password: "44e76f8c-7362-11ec-bb74-f23c9164ca5d", auth: "44e76f8c-7362-11ec-bb74-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "f43bd983-t55r40-t5ain7-zn8y.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 164", server: "02746725-t55r40-t7pmvm-17xo8.us.hyhuawei.com", port: 443, type: "hysteria2", password: "b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d", auth: "b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "02746725-t55r40-t7pmvm-17xo8.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 165", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "409843f5-3e2b-4e24-8d41-5d5dde496420", auth: "409843f5-3e2b-4e24-8d41-5d5dde496420", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 166", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "231ecd99-b094-4167-b829-c746db3a29f8", auth: "231ecd99-b094-4167-b829-c746db3a29f8", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 167", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "c6499074-faa4-4d08-b630-8db684a6e0d0", auth: "c6499074-faa4-4d08-b630-8db684a6e0d0", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 168", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "d9129051-53d7-4eb4-b4cd-ebb9aaeffe08", auth: "d9129051-53d7-4eb4-b4cd-ebb9aaeffe08", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 169", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "9e8af28b-7489-42e7-bb76-375d84bbf04e", auth: "9e8af28b-7489-42e7-bb76-375d84bbf04e", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 170", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "9e8af28b-7489-42e7-bb76-375d84bbf04e", auth: "9e8af28b-7489-42e7-bb76-375d84bbf04e", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 171", server: "5bca447b-t53wg0-t92wi1-1qkeg.us.hyhuawei.com", port: 443, type: "hysteria2", password: "a305ac08-d136-11ee-b6db-f23c91cfbbc9", auth: "a305ac08-d136-11ee-b6db-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "5bca447b-t53wg0-t92wi1-1qkeg.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 172", server: "0d7a4e1e-t53wg0-tgzvop-hns7.us.hyhuawei.com", port: 443, type: "hysteria2", password: "6857f1bc-f27b-11ea-87ad-f23c913c8d2b", auth: "6857f1bc-f27b-11ea-87ad-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "0d7a4e1e-t53wg0-tgzvop-hns7.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 173", server: "825eee23-t4un40-tcj7b6-d70y.la.shifen.uk", port: 1743, type: "hysteria2", password: "537d7098-fdbe-11ef-8ebc-f23c93141fad", auth: "537d7098-fdbe-11ef-8ebc-f23c93141fad", skip-cert-verify: false, udp: true, sni: "825eee23-t4un40-tcj7b6-d70y.la.shifen.uk"}
+- {name: "🇺🇸 美国 174", server: "69.84.182.18", port: 443, type: "vless", uuid: "a25ff90c-964c-485a-b72a-858864a27dc0", tls: true, network: "ws", ws-opts: {path: "/profile/sharenode", headers: {Host: "cdn-node-oss-63.paofu.de"}}, udp: true, servername: "cdn-node-oss-63.paofu.de"}
+- {name: "🇺🇸 美国 175", server: "45c8acef-t55r40-t5ixb5-1rk0x.us.hyhuawei.com", port: 443, type: "hysteria2", password: "7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9", auth: "7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "45c8acef-t55r40-t5ixb5-1rk0x.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 176", server: "7d06ea84-t57ls0-t72h4q-1spnr.us.hyhuawei.com", port: 443, type: "hysteria2", password: "127e3f92-f714-11ef-bbb0-f23c91cfbbc9", auth: "127e3f92-f714-11ef-bbb0-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "7d06ea84-t57ls0-t72h4q-1spnr.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 177", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "e8b0e431-2a0a-4b48-b37c-20525ce1278f", auth: "e8b0e431-2a0a-4b48-b37c-20525ce1278f", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 178", server: "xjp1.xinlancloud.top", port: 2222, type: "hysteria2", password: "e2c4b8ed-5968-4c23-aeb5-60551c09c9a6", auth: "e2c4b8ed-5968-4c23-aeb5-60551c09c9a6", sni: "xjp1.xinlancloud.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 179", server: "16aa65d8-t53wg0-t5wcb1-13x18.us.hyhuawei.com", port: 443, type: "hysteria2", password: "e4499a62-0cfe-11eb-ad8c-f23c9164ca5d", auth: "e4499a62-0cfe-11eb-ad8c-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "16aa65d8-t53wg0-t5wcb1-13x18.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 180", server: "e5f0ca54-t57ls0-t5h706-dnss.la.shifen.uk", port: 1743, type: "hysteria2", password: "16955d72-1794-11f0-a035-f23c95b6f51d", auth: "16955d72-1794-11f0-a035-f23c95b6f51d", ports: "20000-50000", udp: true, sni: "e5f0ca54-t57ls0-t5h706-dnss.la.shifen.uk"}
+- {name: "🇺🇸 美国 181", server: "d2ab175b-t55r40-tgzvop-hns7.us.hyhuawei.com", port: 443, type: "hysteria2", password: "6857f1bc-f27b-11ea-87ad-f23c913c8d2b", auth: "6857f1bc-f27b-11ea-87ad-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "d2ab175b-t55r40-tgzvop-hns7.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 182", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "8c9b7575-f238-4c9e-997d-6e07d91249af", auth: "8c9b7575-f238-4c9e-997d-6e07d91249af", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 183", server: "2c5b252e-t57ls0-tfvcxz-1nq4g.us.hyhuawei.com", port: 443, type: "hysteria2", password: "80aa5178-f936-11ed-8ce6-f23c91369f2d", auth: "80aa5178-f936-11ed-8ce6-f23c91369f2d", ports: "30000-60000", udp: true, sni: "2c5b252e-t57ls0-tfvcxz-1nq4g.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 184", server: "wangcai213.cloudflare.182682.xyz", port: 2096, type: "vless", uuid: "188f8a72-6b58-4cf2-ab66-766a9388e6ba", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /", headers: {Host: "5c8d.fsafasdfas.online"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "5c8d.fsafasdfas.online"}
+- {name: "🇺🇸 美国 185", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "54153723-0ba3-4888-996c-64e093bb80eb", auth: "54153723-0ba3-4888-996c-64e093bb80eb", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 186", server: "47b21ed5-t57ls0-t8jzg2-1hd7v.us.hyhuawei.com", port: 443, type: "hysteria2", password: "f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b", auth: "f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "47b21ed5-t57ls0-t8jzg2-1hd7v.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 187", server: "tw1.oxdtangx.top", port: 11112, type: "hysteria2", password: "6e074827-17d2-465d-a015-91167e66c90b", auth: "6e074827-17d2-465d-a015-91167e66c90b", sni: "tw1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 188", server: "a8b3799f-t57ls0-tnqudu-1mim2.us.hyhuawei.com", port: 443, type: "hysteria2", password: "6e3ee1de-381f-11ee-87f9-f23c91cfbbc9", auth: "6e3ee1de-381f-11ee-87f9-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "a8b3799f-t57ls0-tnqudu-1mim2.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 189", server: "7fc5d58e-t53wg0-t5xs0q-1462e.us.hyhuawei.com", port: 443, type: "hysteria2", password: "a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9", auth: "a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "7fc5d58e-t53wg0-t5xs0q-1462e.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 190", server: "18456625-t55r40-t5s93b-1swry.us.hyhuawei.com", port: 443, type: "hysteria2", password: "8a5d58a0-c50e-11ef-a46e-f23c913c8d2b", auth: "8a5d58a0-c50e-11ef-a46e-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "18456625-t55r40-t5s93b-1swry.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 191", server: "n001.xunxunmimisbs.sbs", port: 24100, type: "trojan", password: "38718e2c-ec87-42e6-b792-3bfeafad4f7b", sni: "us01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇺🇸 美国 192", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "47781afc-389d-41cb-82c6-6fe8d3505ca6", auth: "47781afc-389d-41cb-82c6-6fe8d3505ca6", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 193", server: "026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk", port: 1743, type: "hysteria2", password: "6286105c-fb6d-11ef-be96-f23c93136cb3", auth: "6286105c-fb6d-11ef-be96-f23c93136cb3", skip-cert-verify: false, ports: "20000-50000", udp: true, sni: "026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk"}
+- {name: "🇺🇸 美国 194", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "a0c0a773-a127-4cf2-9238-a2c85095d661", auth: "a0c0a773-a127-4cf2-9238-a2c85095d661", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 195", server: "tw1.oxdtangx.top", port: 11112, type: "hysteria2", password: "70f44486-cda5-4750-9bf5-ca8826ee9bcc", auth: "70f44486-cda5-4750-9bf5-ca8826ee9bcc", sni: "tw1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 196", server: "8996d84d-t53wg0-tcdlur-1qwom.us.hyhuawei.com", port: 443, type: "hysteria2", password: "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9", auth: "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "8996d84d-t53wg0-tcdlur-1qwom.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 197", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "1c4a05b0-f6bc-4256-98a4-79a2db4056d2", auth: "1c4a05b0-f6bc-4256-98a4-79a2db4056d2", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 198", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "d50337bb-fc99-45ca-bf68-d55a770895f7", auth: "d50337bb-fc99-45ca-bf68-d55a770895f7", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 199", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "96399c64-052a-4fcf-a8cc-82577bcf8361", auth: "96399c64-052a-4fcf-a8cc-82577bcf8361", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 200", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "f508daac-003a-4005-bbdb-03e28841206b", auth: "f508daac-003a-4005-bbdb-03e28841206b", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 201", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "f0456d01-11d5-4ce4-adbc-906fc280161c", auth: "f0456d01-11d5-4ce4-adbc-906fc280161c", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 202", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "67b6c870-ff4a-4260-9d61-b61a3d251743", auth: "67b6c870-ff4a-4260-9d61-b61a3d251743", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 203", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "84038c3f-0073-4f9c-b2c5-9cb27834a3c9", auth: "84038c3f-0073-4f9c-b2c5-9cb27834a3c9", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 204", server: "n002.xunxunmimisbs.sbs", port: 24100, type: "trojan", password: "ad52639b-d3d0-448b-bed5-354c131b65da", sni: "us01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 205", server: "oracleus.yuwan.link", port: 30303, type: "hysteria2", password: "07502194-d80e-4f7e-92df-e549f1212b85", auth: "07502194-d80e-4f7e-92df-e549f1212b85", sni: "v3-prime-xg-web-pc.ixigua.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 206", server: "tw1.oxdtangx.top", port: 11112, type: "hysteria2", password: "f508daac-003a-4005-bbdb-03e28841206b", auth: "f508daac-003a-4005-bbdb-03e28841206b", sni: "tw1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 207", server: "rb1.oxdtangx.top", port: 11112, type: "hysteria2", password: "af411408-cefc-4b33-b7b6-ef43fe944001", auth: "af411408-cefc-4b33-b7b6-ef43fe944001", sni: "rb1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 208", server: "banmabanmabanmabanmabanmabanma4.wanlidag.top", port: 54265, type: "hysteria2", password: "1cebc3e7-ab8c-4838-b5b4-fd1479d20d52", auth: "1cebc3e7-ab8c-4838-b5b4-fd1479d20d52", sni: "banmabanmabanmabanmabanmabanma4.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 209", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "4cbcd751-2ee6-4694-922a-cf5e1d5a51ce", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 210", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "34589107-af36-4e17-8f5e-b203aa2ba6bc", auth: "34589107-af36-4e17-8f5e-b203aa2ba6bc", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 211", server: "4f5fdd2c-t57ls0-tcp4th-1c4g6.us.hyhuawei.com", port: 443, type: "hysteria2", password: "676c67c6-5e73-11ee-9a79-f23c9164ca5d", auth: "676c67c6-5e73-11ee-9a79-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "4f5fdd2c-t57ls0-tcp4th-1c4g6.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 212", server: "f5f98d8e-t57ls0-t7fz1r-8rja.us.hyhuawei.com", port: 443, type: "hysteria2", password: "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b", auth: "d18bcaf4-1323-11ec-a0fc-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "f5f98d8e-t57ls0-t7fz1r-8rja.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 213", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "96399c64-052a-4fcf-a8cc-82577bcf8361", auth: "96399c64-052a-4fcf-a8cc-82577bcf8361", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 214", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "0c6af622-c47d-428b-9717-6b1ee2f96d0a", auth: "0c6af622-c47d-428b-9717-6b1ee2f96d0a", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 215", server: "tw1.oxdtangx.top", port: 11112, type: "hysteria2", password: "32c3b4bb-4be4-4541-b2b5-1689c1278794", auth: "32c3b4bb-4be4-4541-b2b5-1689c1278794", sni: "tw1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 216", server: "6ad353d8-t53wg0-tm23vf-1jk6u.us.hyhuawei.com", port: 443, type: "hysteria2", password: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", auth: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "6ad353d8-t53wg0-tm23vf-1jk6u.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 217", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "67b6c870-ff4a-4260-9d61-b61a3d251743", auth: "67b6c870-ff4a-4260-9d61-b61a3d251743", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 218", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "32c3b4bb-4be4-4541-b2b5-1689c1278794", auth: "32c3b4bb-4be4-4541-b2b5-1689c1278794", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 219", server: "2acafd03-t55r40-tc9wl2-py5w.us.hyhuawei.com", port: 443, type: "hysteria2", password: "ae5338ae-9a70-58c9-3d47-7d54a5675715", auth: "ae5338ae-9a70-58c9-3d47-7d54a5675715", ports: "30000-60000", udp: true, sni: "2acafd03-t55r40-tc9wl2-py5w.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 220", server: "8ab214f5-t57ls0-tee612-2r82.us.hyhuawei.com", port: 443, type: "hysteria2", password: "03573f46-e944-11eb-a8bf-f23c91cfbbc9", auth: "03573f46-e944-11eb-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "8ab214f5-t57ls0-tee612-2r82.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 221", server: "a6c531ce-t57ls0-t6570q-1q3dm.us.hyhuawei.com", port: 443, type: "hysteria2", password: "c1785de0-212f-11ef-92aa-f23c9164ca5d", auth: "c1785de0-212f-11ef-92aa-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "a6c531ce-t57ls0-t6570q-1q3dm.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 222", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "50217f78-ac9c-441e-8962-6b909740559b", auth: "50217f78-ac9c-441e-8962-6b909740559b", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 223", server: "68ba4ebd-t53wg0-tc2sod-1tizo.us.hyhuawei.com", port: 443, type: "hysteria2", password: "bf36227c-0191-11f0-aee1-f23c91cfbbc9", auth: "bf36227c-0191-11f0-aee1-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "68ba4ebd-t53wg0-tc2sod-1tizo.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 224", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "03db03ad-1c17-4019-b598-27c7501b68c0", auth: "03db03ad-1c17-4019-b598-27c7501b68c0", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 225", server: "1975ba19-t55r40-tb224g-1h0r9.us.hyhuawei.com", port: 443, type: "hysteria2", password: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", auth: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "1975ba19-t55r40-tb224g-1h0r9.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 226", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "21b25680-a408-4fb3-916c-e8d0b9e2983f", auth: "21b25680-a408-4fb3-916c-e8d0b9e2983f", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 227", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "53048057-1b02-409c-8037-a390ec12193f", auth: "53048057-1b02-409c-8037-a390ec12193f", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 228", server: "195193dc-t55r40-tnfe2z-1s4hc.us.hyhuawei.com", port: 443, type: "hysteria2", password: "aafedc64-9c23-11ef-a79f-f23c91cfbbc9", auth: "aafedc64-9c23-11ef-a79f-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "195193dc-t55r40-tnfe2z-1s4hc.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 229", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "253d7904-49fb-4d14-8ca7-938178063e75", auth: "253d7904-49fb-4d14-8ca7-938178063e75", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 230", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "f5ec2aee-e158-4ef0-b783-d98742b0020d", auth: "f5ec2aee-e158-4ef0-b783-d98742b0020d", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 231", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "27f28dd2-6fb0-4911-aed1-ad534b550666", auth: "27f28dd2-6fb0-4911-aed1-ad534b550666", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 232", server: "rb1.oxdtangx.top", port: 11112, type: "hysteria2", password: "a45cdb0f-db6f-4c86-81c4-dbab19df5c29", auth: "a45cdb0f-db6f-4c86-81c4-dbab19df5c29", sni: "rb1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 233", server: "yg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "77c4bf09-3827-46f7-95e1-bd3f9e30aed1", auth: "77c4bf09-3827-46f7-95e1-bd3f9e30aed1", sni: "yg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 234", server: "84469d24-t53wg0-t67sv3-1snfs.us.hyhuawei.com", port: 443, type: "hysteria2", password: "b79d79ae-8bce-11ef-a2b8-f23c9164ca5d", auth: "b79d79ae-8bce-11ef-a2b8-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "84469d24-t53wg0-t67sv3-1snfs.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 235", server: "cd398a18-t57ls0-tc2sod-1tizo.us.hyhuawei.com", port: 443, type: "hysteria2", password: "bf36227c-0191-11f0-aee1-f23c91cfbbc9", auth: "bf36227c-0191-11f0-aee1-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "cd398a18-t57ls0-tc2sod-1tizo.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 236", server: "us1.oxdtangx.top", port: 11112, type: "hysteria2", password: "c7a10d95-ac5a-4ae6-8aec-d3f36670e91f", auth: "c7a10d95-ac5a-4ae6-8aec-d3f36670e91f", sni: "us1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 237", server: "xdd.dashuai.cyou", port: 45053, type: "vmess", uuid: "361ac654-7aec-434f-bbe7-bb0054ffb017", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 238", server: "us2.oxdtangx.top", port: 11112, type: "hysteria2", password: "4623af89-13d4-4a7f-8972-1ebbe2bae142", auth: "4623af89-13d4-4a7f-8972-1ebbe2bae142", sni: "us2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 239", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "bfef1ed1-5fb7-48bf-8230-b28b21d91437", auth: "bfef1ed1-5fb7-48bf-8230-b28b21d91437", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 240", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "8727de34-435d-4d00-8e88-ca2a6232ea93", auth: "8727de34-435d-4d00-8e88-ca2a6232ea93", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 241", server: "xjp1.oxdtangx.top", port: 11112, type: "hysteria2", password: "f5e7858a-ab72-4255-a93e-be8a6809fbdd", auth: "f5e7858a-ab72-4255-a93e-be8a6809fbdd", sni: "xjp1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 242", server: "1c11dded-t53wg0-tcmken-19les.us.hyhuawei.com", port: 443, type: "hysteria2", password: "d095ecc6-7b69-11eb-b77b-f23c913c8d2b", auth: "d095ecc6-7b69-11eb-b77b-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "1c11dded-t53wg0-tcmken-19les.us.hyhuawei.com"}
+- {name: "🇺🇸 美国 243", server: "hg1.oxdtangx.top", port: 11112, type: "hysteria2", password: "54153723-0ba3-4888-996c-64e093bb80eb", auth: "54153723-0ba3-4888-996c-64e093bb80eb", sni: "hg1.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 244", server: "tw2.oxdtangx.top", port: 11112, type: "hysteria2", password: "32c3b4bb-4be4-4541-b2b5-1689c1278794", auth: "32c3b4bb-4be4-4541-b2b5-1689c1278794", sni: "tw2.oxdtangx.top", skip-cert-verify: true, udp: true}
+- {type: "ss", server: "switcher-nick-croquet.freesocks.work", port: 443, cipher: "chacha20-ietf-poly1305", password: "9tqhMdIrTkgQ46PvhyAtMH", name: "🇺🇸 美国 245"}
+- {name: "🇺🇸 美国 246", type: "vmess", server: "103.243.26.209", port: 10086, cipher: "auto", uuid: "c5ec2e3f-c058-46a8-a148-1831824bb94b", alterId: 0, tls: false, network: "http", http-opts: {path: ["/"], headers: {}}, client-fingerprint: ""}
 - {name: "🇰🇷 韩国 01", server: "146.56.132.194", port: 30001, type: "ss", cipher: "aes-256-gcm", password: "a366b602-02ce-45f6-91bf-e8faaabab1c0", udp: true}
 - {name: "🇰🇷 韩国 02", server: "n002.xunxunmimisbs.sbs", port: 51000, type: "trojan", password: "7b34fce4-d0b7-49ad-af70-e2a8ec2f9349", sni: "kr01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇰🇷 韩国 03", server: "n001.xunxunmimisbs.sbs", port: 22100, type: "trojan", password: "0b8939c0-a80e-4991-b3af-62e6b8999342", sni: "kr01.xxxxyyyysbs.sbs", udp: true}
@@ -623,10 +646,11 @@ proxies:
 - {name: "🇰🇷 韩国 52", server: "n002.xunxunmimisbs.sbs", port: 51000, type: "trojan", password: "41b3628a-3de8-4da6-a894-d085e4b5d604", sni: "kr01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇰🇷 韩国 53", server: "zf-cu.bgblwow.org", port: 55064, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2abc2c3d-0530-448a-adca-52e68491292a", udp: true}
 - {name: "🇰🇷 韩国 54", server: "146.56.132.194", port: 30001, type: "ss", cipher: "aes-256-gcm", password: "67538e9d-ec4f-48c0-bd36-ec57d0e83804", udp: true}
-- {name: "🇰🇷 韩国 55", server: "haa.dashuai.cyou", port: 45076, type: "vmess", uuid: "4fcfb80d-e97c-4fb5-96af-537d8eed6088", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {name: "🇰🇷 韩国 56", server: "n001.xunxunmimisbs.sbs", port: 22100, type: "trojan", password: "1abd0aa1-6f01-4c33-b416-0fb287c2db15", sni: "kr01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇰🇷 韩国 57", server: "210.183.11.2", port: 50001, type: "trojan", password: "Aimer", sni: "epge.muarua.filegear-sg.me", skip-cert-verify: false, network: "ws", ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: "epge.muarua.filegear-sg.me"}}, udp: true}
-- {type: "vless", name: "🇰🇷 韩国 58", server: "111.118.118.177", port: 12319, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/Telegram@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
+- {name: "🇰🇷 韩国 55", server: "n002.xunxunmimisbs.sbs", port: 22100, type: "trojan", password: "e2616e14-e942-4a69-9a5c-045a64f17bc7", sni: "kr01.xxxxyyyysbs.sbs", udp: true}
+- {name: "🇰🇷 韩国 56", server: "n001.xunxunmimisbs.sbs", port: 43100, type: "trojan", password: "e5c6f812-a640-4474-9fc9-9d48b2e26bb5", sni: "kr01.xxxxyyyysbs.sbs", udp: true}
+- {name: "🇰🇷 韩国 57", server: "n002.xunxunmimisbs.sbs", port: 22100, type: "trojan", password: "89d1967d-03c6-4f5c-8a92-4107cd85cc11", sni: "kr01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇰🇷 韩国 58", server: "n001.xunxunmimisbs.sbs", port: 43100, type: "trojan", password: "0c122446-42c8-4bc9-a746-8ef2890f72e8", sni: "kr01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {type: "vless", name: "🇰🇷 韩国 59", server: "111.118.118.177", port: 12319, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/Telegram@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
 - {name: "🇩🇪 德国 01", server: "n002.xunxunmimisbs.sbs", port: 54000, type: "trojan", password: "6b016ce2-e533-436b-b645-5c633e359e91", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇩🇪 德国 02", server: "n002.xunxunmimisbs.sbs", port: 54000, type: "trojan", password: "87c26f16-96e2-4988-9d81-f70f7fde4bbf", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇩🇪 德国 03", server: "n002.xunxunmimisbs.sbs", port: 25100, type: "trojan", password: "c7623b2e-d773-4b4a-aebb-076cb82a1c9f", sni: "de01.xxxxyyyysbs.sbs", udp: true}
@@ -660,7 +684,8 @@ proxies:
 - {name: "🇩🇪 德国 31", server: "n002.xunxunmimisbs.sbs", port: 46100, type: "trojan", password: "831b6c74-5d8f-4ae5-9395-8494ba3a248f", sni: "de01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇩🇪 德国 32", server: "n002.xunxunmimisbs.sbs", port: 25100, type: "trojan", password: "cc13a00a-4e6d-4dda-b106-213b9d346dbf", sni: "de01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇩🇪 德国 33", server: "n002.xunxunmimisbs.sbs", port: 54000, type: "trojan", password: "41b3628a-3de8-4da6-a894-d085e4b5d604", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 34", server: "n001.xunxunmimisbs.sbs", port: 25100, type: "trojan", password: "6e841997-473d-4a8b-81c2-25936478bf14", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇩🇪 德国 34", server: "n002.xunxunmimisbs.sbs", port: 46100, type: "trojan", password: "952a20d2-e5e1-442d-bc59-5cb60c3c1e81", sni: "de01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 35", server: "n001.xunxunmimisbs.sbs", port: 46100, type: "trojan", password: "b91587a6-bb98-4dcf-9edf-9df10cb47c6b", sni: "de01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇯🇵 日本 01", server: "n001.xunxunmimisbs.sbs", port: 42100, type: "trojan", password: "bcfedd90-8f1b-41df-813f-cee360857f04", sni: "jp01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇯🇵 日本 02", server: "n002.xunxunmimisbs.sbs", port: 41001, type: "trojan", password: "e0f18d97-20a5-4a4d-839c-a40efa80a6d2", sni: "jp02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇯🇵 日本 03", server: "zf-cu.bgblwow.org", port: 59719, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2abc2c3d-0530-448a-adca-52e68491292a", udp: true}
@@ -768,12 +793,14 @@ proxies:
 - {name: "🇯🇵 日本 105", server: "n002.xunxunmimisbs.sbs", port: 42100, type: "trojan", password: "bcfedd90-8f1b-41df-813f-cee360857f04", sni: "jp01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇯🇵 日本 106", server: "xdd.dashuai.cyou", port: 45057, type: "vmess", uuid: "3deb5923-9cf5-471b-a66a-888d0635def7", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇯🇵 日本 107", server: "vpsjp.yueyun.de", port: 13036, type: "trojan", password: "70166125-2780-49cc-978b-08b9dad39571", sni: "vpsjp.yueyun.de", skip-cert-verify: true, udp: true}
-- {name: "🇯🇵 日本 108", server: "f862i-g06.jp01-nn-vm0.entry.fr0528.art", port: 21586, type: "vmess", uuid: "8e0c2bc2-705f-375f-a246-82955b5165ef", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: false, udp: true, servername: "f862i-g06.jp01-nn-vm0.entry.fr0528.art"}
-- {name: "🇯🇵 日本 109", server: "0aklk-g05.jp03-j7-vm0.entry.fr0528.art", port: 21585, type: "vmess", uuid: "8133667f-a211-30d9-8aec-bf1034c6e11e", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: false, udp: true, servername: "0aklk-g05.jp03-j7-vm0.entry.fr0528.art"}
-- {name: "🇯🇵 日本 110", server: "l67me-g01.jp04-1d-vm0.entry.fr0528.art", port: 444, type: "vmess", uuid: "e30e0cfb-61c5-39aa-ba45-c6835b01f236", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
-- {name: "🇯🇵 日本 111", server: "n001.xunxunmimisbs.sbs", port: 41300, type: "trojan", password: "38718e2c-ec87-42e6-b792-3bfeafad4f7b", sni: "jp01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {skip-cert-verify: true, sni: "douyin.com", type: "trojan", password: "e735d5a4-c4f9-46fc-97e8-39a4024a5b8b", server: "baigou1.kkieo555.cn", port: 21869, name: "🇯🇵 日本 112"}
-- {type: "vless", name: "🇯🇵 日本 113", server: "113.37.149.36", port: 12553, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/Telegram@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
+- {name: "🇯🇵 日本 108", server: "n001.xunxunmimisbs.sbs", port: 42101, type: "trojan", password: "b91587a6-bb98-4dcf-9edf-9df10cb47c6b", sni: "jp02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇯🇵 日本 109", server: "n002.xunxunmimisbs.sbs", port: 42100, type: "trojan", password: "8cf1f0b1-c447-4a9d-ab49-315c5d832414", sni: "jp01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇯🇵 日本 110", server: "13ehc-g05.jp02-e3-vm0.entry.fr0528.art", port: 11777, type: "vmess", uuid: "8133667f-a211-30d9-8aec-bf1034c6e11e", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {name: "🇯🇵 日本 111", server: "n001.xunxunmimisbs.sbs", port: 42100, type: "trojan", password: "952a20d2-e5e1-442d-bc59-5cb60c3c1e81", sni: "jp01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇯🇵 日本 112", server: "dkzx4-g01.jp01-nn-vm0.entry.fr0528.art", port: 21581, type: "vmess", uuid: "1a9f857f-9a07-3a8c-a155-f9ab3c457343", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: false, udp: true, servername: "dkzx4-g01.jp01-nn-vm0.entry.fr0528.art"}
+- {name: "🇯🇵 日本 113", server: "9wzy0-g05.jp02-e3-vm0.entry.fr0528.art", port: 11777, type: "vmess", uuid: "8133667f-a211-30d9-8aec-bf1034c6e11e", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: false, udp: true}
+- {skip-cert-verify: true, sni: "douyin.com", type: "trojan", password: "e735d5a4-c4f9-46fc-97e8-39a4024a5b8b", server: "baigou1.kkieo555.cn", port: 21869, name: "🇯🇵 日本 114"}
+- {type: "vless", name: "🇯🇵 日本 115", server: "113.37.149.36", port: 12553, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/Telegram@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
 - {name: "🇮🇳 印度 01", server: "haa.dashuai.cyou", port: 45074, type: "vmess", uuid: "f6d6b63d-11c5-4d4a-8e4b-95800276ee62", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇮🇳 印度 02", server: "n001.xunxunmimisbs.sbs", port: 27100, type: "trojan", password: "c7623b2e-d773-4b4a-aebb-076cb82a1c9f", sni: "in01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇮🇳 印度 03", server: "n001.xunxunmimisbs.sbs", port: 56000, type: "trojan", password: "41b3628a-3de8-4da6-a894-d085e4b5d604", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
@@ -808,9 +835,8 @@ proxies:
 - {name: "🇮🇳 印度 32", server: "n001.xunxunmimisbs.sbs", port: 56000, type: "trojan", password: "6b016ce2-e533-436b-b645-5c633e359e91", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇮🇳 印度 33", server: "n001.xunxunmimisbs.sbs", port: 47100, type: "trojan", password: "bcfedd90-8f1b-41df-813f-cee360857f04", sni: "in01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇮🇳 印度 34", server: "haa.dashuai.cyou", port: 45074, type: "vmess", uuid: "27d937bb-9543-4188-a010-d97295b896e0", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇮🇳 印度 35", server: "n002.xunxunmimisbs.sbs", port: 27100, type: "trojan", password: "38718e2c-ec87-42e6-b792-3bfeafad4f7b", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
-- {name: "🇮🇳 印度 36", server: "n001.xunxunmimisbs.sbs", port: 47100, type: "trojan", password: "ef03ba7d-4d56-4a6e-a9da-5c15cc2977b9", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇮🇳 印度 37", server: "n001.xunxunmimisbs.sbs", port: 27100, type: "trojan", password: "38718e2c-ec87-42e6-b792-3bfeafad4f7b", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇮🇳 印度 35", server: "n002.xunxunmimisbs.sbs", port: 27100, type: "trojan", password: "6e841997-473d-4a8b-81c2-25936478bf14", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇮🇳 印度 36", server: "n002.xunxunmimisbs.sbs", port: 27100, type: "trojan", password: "0a3b290b-77b7-47a2-b813-704dfc012ae9", sni: "in01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
 - {name: "🇹🇭 泰国 01", server: "n002.xunxunmimisbs.sbs", port: 19020, type: "trojan", password: "e0f18d97-20a5-4a4d-839c-a40efa80a6d2", sni: "tai01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇹🇭 泰国 02", server: "n001.xunxunmimisbs.sbs", port: 57300, type: "trojan", password: "7b34fce4-d0b7-49ad-af70-e2a8ec2f9349", sni: "tai01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇹🇭 泰国 03", server: "n002.xunxunmimisbs.sbs", port: 28300, type: "trojan", password: "c7623b2e-d773-4b4a-aebb-076cb82a1c9f", sni: "tai01.xxxxyyyysbs.sbs", udp: true}
@@ -837,9 +863,8 @@ proxies:
 - {name: "🇹🇭 泰国 24", server: "n002.xunxunmimisbs.sbs", port: 49120, type: "trojan", password: "8a9f23b9-8614-4533-bd46-dfb27c565077", sni: "tai01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇹🇭 泰国 25", server: "slur.izenny.com", port: 28675, type: "ss", cipher: "chacha20-ietf-poly1305", password: "62fde6d8-549d-4bf5-80ab-01b4d409039a", udp: true}
 - {name: "🇹🇭 泰国 26", server: "n002.xunxunmimisbs.sbs", port: 28300, type: "trojan", password: "cc13a00a-4e6d-4dda-b106-213b9d346dbf", sni: "tai01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇹🇭 泰国 27", server: "n001.xunxunmimisbs.sbs", port: 28300, type: "trojan", password: "e987cad5-7d72-494e-b833-7228854fae4a", sni: "tai01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇹🇭 泰国 28", server: "n002.xunxunmimisbs.sbs", port: 49120, type: "trojan", password: "8cf1f0b1-c447-4a9d-ab49-315c5d832414", sni: "tai01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇹🇭 泰国 29", server: "n002.xunxunmimisbs.sbs", port: 49120, type: "trojan", password: "0c122446-42c8-4bc9-a746-8ef2890f72e8", sni: "tai01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇹🇭 泰国 27", server: "n002.xunxunmimisbs.sbs", port: 28300, type: "trojan", password: "0a3b290b-77b7-47a2-b813-704dfc012ae9", sni: "tai01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇹🇭 泰国 28", server: "n001.xunxunmimisbs.sbs", port: 28300, type: "trojan", password: "0a3b290b-77b7-47a2-b813-704dfc012ae9", sni: "tai01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
 - {name: "🇦🇪 阿联酋 01", server: "n001.xunxunmimisbs.sbs", port: 57000, type: "trojan", password: "87c26f16-96e2-4988-9d81-f70f7fde4bbf", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇦🇪 阿联酋 02", server: "n002.xunxunmimisbs.sbs", port: 18000, type: "trojan", password: "e0f18d97-20a5-4a4d-839c-a40efa80a6d2", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇦🇪 阿联酋 03", server: "n002.xunxunmimisbs.sbs", port: 49100, type: "trojan", password: "bcfedd90-8f1b-41df-813f-cee360857f04", sni: "db01.xxxxyyyysbs.sbs", udp: true}
@@ -864,9 +889,9 @@ proxies:
 - {name: "🇦🇪 阿联酋 22", server: "n001.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "0b8939c0-a80e-4991-b3af-62e6b8999342", sni: "db01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇦🇪 阿联酋 23", server: "n001.xunxunmimisbs.sbs", port: 49100, type: "trojan", password: "8a9f23b9-8614-4533-bd46-dfb27c565077", sni: "db01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇦🇪 阿联酋 24", server: "n002.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "cc13a00a-4e6d-4dda-b106-213b9d346dbf", sni: "db01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇦🇪 阿联酋 25", server: "n001.xunxunmimisbs.sbs", port: 49100, type: "trojan", password: "952a20d2-e5e1-442d-bc59-5cb60c3c1e81", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇦🇪 阿联酋 26", server: "n002.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "1abd0aa1-6f01-4c33-b416-0fb287c2db15", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇦🇪 阿联酋 27", server: "n001.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "89d1967d-03c6-4f5c-8a92-4107cd85cc11", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇦🇪 阿联酋 25", server: "n001.xunxunmimisbs.sbs", port: 49100, type: "trojan", password: "b91587a6-bb98-4dcf-9edf-9df10cb47c6b", sni: "db01.xxxxyyyysbs.sbs", udp: true}
+- {name: "🇦🇪 阿联酋 26", server: "n001.xunxunmimisbs.sbs", port: 28100, type: "trojan", password: "0a3b290b-77b7-47a2-b813-704dfc012ae9", sni: "db01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
+- {name: "🇦🇪 阿联酋 27", server: "n001.xunxunmimisbs.sbs", port: 49100, type: "trojan", password: "e5c6f812-a640-4474-9fc9-9d48b2e26bb5", sni: "db01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇨🇳 台湾 01", server: "haa.dashuai.cyou", port: 45078, type: "vmess", uuid: "27d937bb-9543-4188-a010-d97295b896e0", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇨🇳 台湾 02", server: "wa.xunyunnode.sbs", port: 12009, type: "ss", cipher: "chacha20-ietf-poly1305", password: "11298d27-99f2-4b47-9366-4894962306d6", udp: true}
 - {name: "🇨🇳 台湾 03", server: "xc.xunyunnode.sbs", port: 28886, type: "ss", cipher: "chacha20-ietf-poly1305", password: "11298d27-99f2-4b47-9366-4894962306d6", udp: true}
@@ -940,11 +965,9 @@ proxies:
 - {name: "🇨🇳 台湾 71", server: "n002.xunxunmimisbs.sbs", port: 57400, type: "trojan", password: "7b34fce4-d0b7-49ad-af70-e2a8ec2f9349", sni: "tw01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇨🇳 台湾 72", server: "haa.dashuai.cyou", port: 45078, type: "vmess", uuid: "778ee456-81ae-48f5-8780-2de88424a372", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇨🇳 台湾 73", server: "n001.xunxunmimisbs.sbs", port: 57400, type: "trojan", password: "87c26f16-96e2-4988-9d81-f70f7fde4bbf", sni: "tw01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇨🇳 台湾 74", server: "n001.xunxunmimisbs.sbs", port: 49130, type: "trojan", password: "952a20d2-e5e1-442d-bc59-5cb60c3c1e81", sni: "tw01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇨🇳 台湾 75", server: "xdd.dashuai.cyou", port: 45077, type: "vmess", uuid: "59fbdd15-60b9-4e88-982a-04fba544dc81", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {name: "🇨🇳 台湾 76", server: "haa.dashuai.cyou", port: 45078, type: "vmess", uuid: "e4897b0b-7925-4bf3-a2f2-72f0de4371fb", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {skip-cert-verify: true, sni: "douyin.com", type: "trojan", password: "e735d5a4-c4f9-46fc-97e8-39a4024a5b8b", server: "baigou1.kkieo555.cn", port: 21878, name: "🇨🇳 台湾 77"}
-- {type: "vless", name: "🇨🇳 台湾 78", server: "210.61.97.241", port: 81, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/X@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
+- {name: "🇨🇳 台湾 74", server: "n001.xunxunmimisbs.sbs", port: 49130, type: "trojan", password: "8cf1f0b1-c447-4a9d-ab49-315c5d832414", sni: "tw01.xxxxyyyysbs.sbs", udp: true}
+- {skip-cert-verify: true, sni: "douyin.com", type: "trojan", password: "e735d5a4-c4f9-46fc-97e8-39a4024a5b8b", server: "baigou1.kkieo555.cn", port: 21878, name: "🇨🇳 台湾 75"}
+- {type: "vless", name: "🇨🇳 台湾 76", server: "210.61.97.241", port: 81, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/X@freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
 - {name: "🇭🇰 香港 01", server: "greenhk1.616626.xyz", port: 10506, type: "vmess", uuid: "70166125-2780-49cc-978b-08b9dad39571", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇭🇰 香港 02", server: "n001.xunxunmimisbs.sbs", port: 21301, type: "trojan", password: "6b016ce2-e533-436b-b645-5c633e359e91", sni: "hk02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇭🇰 香港 03", server: "hkvm4.656888.xyz", port: 30026, type: "trojan", password: "182539a4-8399-4245-8be7-b0cac2b972af", sni: "hkvm4.656888.xyz", skip-cert-verify: true, udp: true}
@@ -1031,63 +1054,43 @@ proxies:
 - {name: "🇭🇰 香港 84", server: "xc.xunyunnode.sbs", port: 26200, type: "ss", cipher: "chacha20-ietf-poly1305", password: "926b9cfe-ad2e-4d06-bac3-62d8c14b8bfe", udp: true}
 - {name: "🇭🇰 香港 85", server: "n002.xunxunmimisbs.sbs", port: 21301, type: "trojan", password: "41b3628a-3de8-4da6-a894-d085e4b5d604", sni: "hk02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
 - {name: "🇭🇰 香港 86", server: "n001.xunxunmimisbs.sbs", port: 21301, type: "trojan", password: "7b34fce4-d0b7-49ad-af70-e2a8ec2f9349", sni: "hk02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 87", server: "7e73bd7f-t53wg0-tcp4th-1c4g6.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "676c67c6-5e73-11ee-9a79-f23c9164ca5d", auth: "676c67c6-5e73-11ee-9a79-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "7e73bd7f-t53wg0-tcp4th-1c4g6.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 88", server: "3b0c082a-t57ls0-tbnucr-1thfv.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b", auth: "0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "3b0c082a-t57ls0-tbnucr-1thfv.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 89", server: "c653d21e-t57ls0-tb74a6-1q9g2.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", auth: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "c653d21e-t57ls0-tb74a6-1q9g2.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 90", server: "277d7100-t55r40-th9kx9-1os43.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "96c798f6-4645-11ee-b8a1-f23c9164ca5d", auth: "96c798f6-4645-11ee-b8a1-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "277d7100-t55r40-th9kx9-1os43.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 91", server: "3e1c8e0d-t55r40-ta64ri-1qzi1.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "8f99107c-f091-11ee-9935-f23c9164ca5d", auth: "8f99107c-f091-11ee-9935-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "3e1c8e0d-t55r40-ta64ri-1qzi1.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 92", server: "3706af1b-t57ls0-t6570q-1q3dm.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "c1785de0-212f-11ef-92aa-f23c9164ca5d", auth: "c1785de0-212f-11ef-92aa-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "3706af1b-t57ls0-t6570q-1q3dm.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 93", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "7dbbc412-750a-4028-a193-3c953fbc7da2", auth: "7dbbc412-750a-4028-a193-3c953fbc7da2", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
-- {name: "🇭🇰 香港 94", server: "cdnfire.xiaomispeed.com", port: 21101, type: "trojan", password: "4cbcd751-2ee6-4694-922a-cf5e1d5a51ce", sni: "cdnfire.xiaomispeed.com", udp: true}
-- {name: "🇭🇰 香港 95", server: "n001.xunxunmimisbs.sbs", port: 21100, type: "trojan", password: "0c122446-42c8-4bc9-a746-8ef2890f72e8", sni: "hk01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 96", server: "30b872fb-t53wg0-t5l33r-cq5n.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "fb3d8bb2-e288-11ec-b2b4-f23c91cfbbc9", auth: "fb3d8bb2-e288-11ec-b2b4-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "30b872fb-t53wg0-t5l33r-cq5n.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 97", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "78c018d8-ed59-4e9a-aa7b-84796fc845e3", auth: "78c018d8-ed59-4e9a-aa7b-84796fc845e3", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
-- {name: "🇭🇰 香港 98", server: "43.154.231.72", port: 23989, type: "vless", uuid: "6082f5df-1038-4f30-9fb0-4f16038dc1e2", tls: false, network: "ws", ws-opts: {path: "/"}, udp: true}
-- {name: "🇭🇰 香港 99", server: "5483d306-t57ls0-t5jnf1-n09f.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "89b0ea8c-806b-11ed-94ba-f23c913c8d2b", auth: "89b0ea8c-806b-11ed-94ba-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "5483d306-t57ls0-t5jnf1-n09f.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 100", server: "d1a7c0b0-t57ls0-tb36ag-1jfq7.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "baa46fd6-63c1-11ed-8ea9-f23c913c8d2b", auth: "baa46fd6-63c1-11ed-8ea9-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "d1a7c0b0-t57ls0-tb36ag-1jfq7.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 101", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "a32ff77b-3320-4a11-b949-ff3eeeb75079", auth: "a32ff77b-3320-4a11-b949-ff3eeeb75079", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
-- {name: "🇭🇰 香港 102", server: "ef0fe369-t55r40-t5ixb5-1rk0x.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9", auth: "7960b6cc-1c95-11ef-ac7f-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "ef0fe369-t55r40-t5ixb5-1rk0x.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 103", server: "b2808692-t57ls0-tm23vf-1jk6u.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", auth: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "b2808692-t57ls0-tm23vf-1jk6u.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 104", server: "ac2bae5c-t57ls0-t5vuan-1rgxu.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "ea93064c-176c-11f0-885d-f23c91cfbbc9", auth: "ea93064c-176c-11f0-885d-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "ac2bae5c-t57ls0-t5vuan-1rgxu.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 105", server: "cbca53b5-t57ls0-tds6bp-1hzyr.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "3be8cba8-b721-11ec-8b04-f23c91cfbbc9", auth: "3be8cba8-b721-11ec-8b04-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "cbca53b5-t57ls0-tds6bp-1hzyr.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 106", server: "n002.xunxunmimisbs.sbs", port: 21200, type: "trojan", password: "1abd0aa1-6f01-4c33-b416-0fb287c2db15", sni: "hk01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 107", server: "cdnfire.xiaomispeed.com", port: 21103, type: "trojan", password: "4cbcd751-2ee6-4694-922a-cf5e1d5a51ce", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 108", server: "40aef1bf-t53wg0-tm23vf-1jk6u.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", auth: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "40aef1bf-t53wg0-tm23vf-1jk6u.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 109", server: "9184ff75-t57ls0-t7hmka-1plv4.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "28213b50-7ed5-11ee-add6-f23c91369f2d", auth: "28213b50-7ed5-11ee-add6-f23c91369f2d", ports: "30000-60000", udp: true, sni: "9184ff75-t57ls0-t7hmka-1plv4.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 110", server: "71477f9c-t53wg0-t95ncr-1slop.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "520b9126-9870-11ef-81b0-f23c9164ca5d", auth: "520b9126-9870-11ef-81b0-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "71477f9c-t53wg0-t95ncr-1slop.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 111", server: "58dddfe9-t57ls0-t67p0i-4lg6.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d", auth: "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "58dddfe9-t57ls0-t67p0i-4lg6.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 112", server: "3b47ef30-t53wg0-t85e8f-141tv.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b", auth: "bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "3b47ef30-t53wg0-t85e8f-141tv.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 113", server: "745d8fce-t57ls0-tbvl5i-1mebs.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "80f73b42-8264-11ef-8dc4-f23c91cfbbc9", auth: "80f73b42-8264-11ef-8dc4-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "745d8fce-t57ls0-tbvl5i-1mebs.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 114", server: "4bc7dd37-t57ls0-tcmken-19les.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "d095ecc6-7b69-11eb-b77b-f23c913c8d2b", auth: "d095ecc6-7b69-11eb-b77b-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "4bc7dd37-t57ls0-tcmken-19les.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 115", server: "81debade-t57ls0-tcw58g-1p0be.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "55cce5a4-56b7-11ee-af82-f23c9164ca5d", auth: "55cce5a4-56b7-11ee-af82-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "81debade-t57ls0-tcw58g-1p0be.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 116", server: "xdd.dashuai.cyou", port: 45051, type: "vmess", uuid: "59fbdd15-60b9-4e88-982a-04fba544dc81", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 117", server: "597b9b36-t55r40-t8kd6j-1c9em.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "336501b6-51d2-11ee-a993-f23c9164ca5d", auth: "336501b6-51d2-11ee-a993-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "597b9b36-t55r40-t8kd6j-1c9em.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 118", server: "xg3.dreamlinkc.top", port: 47301, type: "hysteria2", password: "55148967-7659-418e-9614-576256aff318", auth: "55148967-7659-418e-9614-576256aff318", sni: "xg3.dreamlinkc.top", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 119", server: "490114ac-t53wg0-teqqcv-1rc6n.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "32bd96d6-186b-11f0-9a65-f23c9164ca5d", auth: "32bd96d6-186b-11f0-9a65-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "490114ac-t53wg0-teqqcv-1rc6n.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 120", server: "n002.xunxunmimisbs.sbs", port: 21201, type: "trojan", password: "38718e2c-ec87-42e6-b792-3bfeafad4f7b", sni: "hk02.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
-- {name: "🇭🇰 香港 121", server: "7fa33e89-t55r40-t66zs1-1pq44.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "3f194e88-8eac-11ee-be7f-f23c9164ca5d", auth: "3f194e88-8eac-11ee-be7f-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "7fa33e89-t55r40-t66zs1-1pq44.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 122", server: "2d857c93-t57ls0-t9i7o2-1lt20.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "bf4ec108-f2b7-11ef-b654-f23c91cfbbc9", auth: "bf4ec108-f2b7-11ef-b654-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "2d857c93-t57ls0-t9i7o2-1lt20.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 123", server: "81711e47-t57ls0-tgl02u-1jr1u.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "2c01eae6-0b6a-11ee-a058-f23c91369f2d", auth: "2c01eae6-0b6a-11ee-a058-f23c91369f2d", ports: "30000-60000", udp: true, sni: "81711e47-t57ls0-tgl02u-1jr1u.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 124", server: "772a1af1-t57ls0-t8wh4m-1hpo0.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9", auth: "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "772a1af1-t57ls0-t8wh4m-1hpo0.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 125", server: "19ad851a-t53wg0-tbcla6-194tt.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "602e99aa-718d-11eb-b77b-f23c913c8d2b", auth: "602e99aa-718d-11eb-b77b-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "19ad851a-t53wg0-tbcla6-194tt.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 126", server: "d83eb7c2-t57ls0-tdfzix-fm2v.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "3fed19ea-1671-11f0-bd2e-f23c9164ca5d", auth: "3fed19ea-1671-11f0-bd2e-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "d83eb7c2-t57ls0-tdfzix-fm2v.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 127", server: "fe12b722-t53wg0-tcp4th-1c4g6.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "676c67c6-5e73-11ee-9a79-f23c9164ca5d", auth: "676c67c6-5e73-11ee-9a79-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "fe12b722-t53wg0-tcp4th-1c4g6.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 128", server: "f798c2b3-t57ls0-td5oia-1m49t.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "c357a728-1211-11f0-9a65-f23c9164ca5d", auth: "c357a728-1211-11f0-9a65-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "f798c2b3-t57ls0-td5oia-1m49t.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 129", server: "193a8586-t57ls0-t6570q-1q3dm.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "c1785de0-212f-11ef-92aa-f23c9164ca5d", auth: "c1785de0-212f-11ef-92aa-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "193a8586-t57ls0-t6570q-1q3dm.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 130", server: "99d80c6b-t57ls0-t8kd6j-1c9em.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "336501b6-51d2-11ee-a993-f23c9164ca5d", auth: "336501b6-51d2-11ee-a993-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "99d80c6b-t57ls0-t8kd6j-1c9em.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 131", server: "c5dc3a57-t53wg0-t5xs0q-1462e.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9", auth: "a6cf58d6-14d1-11eb-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "c5dc3a57-t53wg0-t5xs0q-1462e.hk2.hyhuawei.com"}
-- {name: "🇭🇰 香港 132", server: "n002.xunxunmimisbs.sbs", port: 21201, type: "trojan", password: "89d1967d-03c6-4f5c-8a92-4107cd85cc11", sni: "hk02.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 133", server: "4282f62f-t57ls0-t85e8f-141tv.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b", auth: "bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "4282f62f-t57ls0-t85e8f-141tv.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 134", server: "446f0d08-t55r40-tbnk1n-ueq.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "91df5a86-fcdd-11ef-94aa-f23c913c8d2b", auth: "91df5a86-fcdd-11ef-94aa-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "446f0d08-t55r40-tbnk1n-ueq.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 135", server: "cd475c3a-t55r40-tmynyz-1s3mx.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", auth: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "cd475c3a-t55r40-tmynyz-1s3mx.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 136", server: "haa.dashuai.cyou", port: 45050, type: "vmess", uuid: "bbee0196-7a72-406a-b3bc-f6e12a25064b", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 137", server: "47a351b7-t57ls0-tighxj-12hj8.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d", auth: "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "47a351b7-t57ls0-tighxj-12hj8.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 138", server: "30a3a154-t57ls0-tei4of-1qxa1.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "f609abb4-ed17-11ee-9fa2-f23c9164ca5d", auth: "f609abb4-ed17-11ee-9fa2-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "30a3a154-t57ls0-tei4of-1qxa1.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 139", server: "d6ce962e-t57ls0-tdcdb7-1k27l.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b", auth: "ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "d6ce962e-t57ls0-tdcdb7-1k27l.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 140", server: "f456ce63-t53wg0-tb224g-1h0r9.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", auth: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "f456ce63-t53wg0-tb224g-1h0r9.hk1.hyhuawei.com"}
-- {name: "🇭🇰 香港 141", server: "haa.dashuai.cyou", port: 45050, type: "vmess", uuid: "361ac654-7aec-434f-bbe7-bb0054ffb017", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {skip-cert-verify: true, sni: "douyin.com", type: "trojan", password: "e735d5a4-c4f9-46fc-97e8-39a4024a5b8b", server: "baigou1.kkieo555.cn", port: 21863, name: "🇭🇰 香港 142"}
-- {type: "vless", name: "🇭🇰 香港 143", server: "210.6.207.42", port: 18622, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/X@节点狂魔/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
+- {name: "🇭🇰 香港 87", server: "b451305d-t55r40-t61ki5-1smhu.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "62f2374c-891b-11ef-a3f6-f23c9164ca5d", auth: "62f2374c-891b-11ef-a3f6-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "b451305d-t55r40-t61ki5-1smhu.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 88", server: "24d25dfe-t53wg0-tc67m2-1tjc4.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "fac704ae-0304-11f0-a2ef-f23c91cfbbc9", auth: "fac704ae-0304-11f0-a2ef-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "24d25dfe-t53wg0-tc67m2-1tjc4.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 89", server: "n001.xunxunmimisbs.sbs", port: 21100, type: "trojan", password: "ef03ba7d-4d56-4a6e-a9da-5c15cc2977b9", sni: "hk01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
+- {name: "🇭🇰 香港 90", server: "944fb258-t57ls0-t61yf1-11p9g.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "384d1b42-655f-11ed-a8bf-f23c91cfbbc9", auth: "384d1b42-655f-11ed-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "944fb258-t57ls0-t61yf1-11p9g.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 91", server: "fd32e13f-t57ls0-tb016b-1m7l4.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "bd515574-3b10-11ee-ac14-f23c9164ca5d", auth: "bd515574-3b10-11ee-ac14-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "fd32e13f-t57ls0-tb016b-1m7l4.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 92", server: "ebea1aee-t55r40-tiqsce-t6fv.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "af7ddbb2-3567-11ec-bd7c-f23c913c8d2b", auth: "af7ddbb2-3567-11ec-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "ebea1aee-t55r40-tiqsce-t6fv.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 93", server: "e75de924-t53wg0-t7enwo-1f1f1.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "61c4be90-6235-11ec-a8bf-f23c91cfbbc9", auth: "61c4be90-6235-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "e75de924-t53wg0-t7enwo-1f1f1.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 94", server: "fef33da0-t55r40-tiaexf-ufc0.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "22308988-8548-11ea-a22e-f23c91cfbbc9", auth: "22308988-8548-11ea-a22e-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "fef33da0-t55r40-tiaexf-ufc0.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 95", server: "01347313-t57ls0-t7dv8l-1szgv.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "448aff24-b2e6-11ef-97e0-f23c9164ca5d", auth: "448aff24-b2e6-11ef-97e0-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "01347313-t57ls0-t7dv8l-1szgv.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 96", server: "a5da1538-t57ls0-tcdlur-1qwom.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9", auth: "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "a5da1538-t57ls0-tcdlur-1qwom.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 97", server: "4201e59d-t53wg0-taklwz-12bd.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9", auth: "ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "4201e59d-t53wg0-taklwz-12bd.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 98", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "7f4cb3ef-63a1-4094-b24c-522ea2848231", auth: "7f4cb3ef-63a1-4094-b24c-522ea2848231", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
+- {name: "🇭🇰 香港 99", server: "65c2986a-t53wg0-t6xrvm-1qaek.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "98cedeca-99a0-11ef-bb64-f23c913c8d2b", auth: "98cedeca-99a0-11ef-bb64-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "65c2986a-t53wg0-t6xrvm-1qaek.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 100", server: "819a1c51-t57ls0-t5dm27-1t5n1.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b", auth: "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "819a1c51-t57ls0-t5dm27-1t5n1.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 101", server: "3d58bb5f-t57ls0-tc61cs-1tja8.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d", auth: "d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "3d58bb5f-t57ls0-tc61cs-1tja8.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 102", server: "f3be4d46-t57ls0-tiuylw-46gc.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "225d1cca-d744-11ef-b790-f23c91cfbbc9", auth: "225d1cca-d744-11ef-b790-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "f3be4d46-t57ls0-tiuylw-46gc.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 103", server: "957ba27d-t55r40-tasftf-duku.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9", auth: "8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "957ba27d-t55r40-tasftf-duku.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 104", server: "428f818b-t57ls0-t623um-yjq0.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "25b2699a-e18e-11ec-8e69-f23c91cfbbc9", auth: "25b2699a-e18e-11ec-8e69-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "428f818b-t57ls0-t623um-yjq0.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 105", server: "9fb7ef3f-t57ls0-tcmtfl-1qudp.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "99129cef-f705-11ee-ada6-f23c91cfbbc9", auth: "99129cef-f705-11ee-ada6-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "9fb7ef3f-t57ls0-tcmtfl-1qudp.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 106", server: "577799a4-t57ls0-t588iw-jjv2.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "31676725-b0fd-fed2-c857-2da8ce5a6e4f", auth: "31676725-b0fd-fed2-c857-2da8ce5a6e4f", ports: "30000-60000", udp: true, sni: "577799a4-t57ls0-t588iw-jjv2.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 107", server: "dd68cad9-t57ls0-tee612-2r82.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "03573f46-e944-11eb-a8bf-f23c91cfbbc9", auth: "03573f46-e944-11eb-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "dd68cad9-t57ls0-tee612-2r82.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 108", server: "57097b4f-t57ls0-t8jzg2-1hd7v.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b", auth: "f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "57097b4f-t57ls0-t8jzg2-1hd7v.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 109", server: "d35182f3-t57ls0-tbe46y-1la7v.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "460749c2-bcef-11ee-89fc-f23c913c8d2b", auth: "460749c2-bcef-11ee-89fc-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "d35182f3-t57ls0-tbe46y-1la7v.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 110", server: "e38f5657-t57ls0-t7fl9b-1q16i.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "94614d84-9986-11ee-be7f-f23c9164ca5d", auth: "94614d84-9986-11ee-be7f-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "e38f5657-t57ls0-t7fl9b-1q16i.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 111", server: "c39250b3-t57ls0-tnjsrz-h8vf.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "4fb15f9c-f078-11ed-814b-f23c91369f2d", auth: "4fb15f9c-f078-11ed-814b-f23c91369f2d", ports: "30000-60000", udp: true, sni: "c39250b3-t57ls0-tnjsrz-h8vf.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 112", server: "212.192.13.86", port: 33079, type: "hysteria2", password: "5e8deb38-70b8-4a26-8905-901fa3cf3c15", auth: "5e8deb38-70b8-4a26-8905-901fa3cf3c15", up: 100, down: 100, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
+- {name: "🇭🇰 香港 113", server: "aff989a5-t57ls0-t8izjf-20qs.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "e668cd78-6892-11eb-a8bf-f23c91cfbbc9", auth: "e668cd78-6892-11eb-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "aff989a5-t57ls0-t8izjf-20qs.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 114", server: "81249379-t53wg0-t69l7r-1teuc.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "a5a81a34-f257-11ef-ba82-f23c913c8d2b", auth: "a5a81a34-f257-11ef-ba82-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "81249379-t53wg0-t69l7r-1teuc.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 115", server: "f296790c-t57ls0-t76x2i-wj6v.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9", auth: "847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "f296790c-t57ls0-t76x2i-wj6v.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 116", server: "982b876f-t57ls0-td5oia-1m49t.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "c357a728-1211-11f0-9a65-f23c9164ca5d", auth: "c357a728-1211-11f0-9a65-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "982b876f-t57ls0-td5oia-1m49t.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 117", server: "7420739b-t55r40-tifnix-1ro8s.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "a18ef18e-293a-11ef-b76e-f23c91cfbbc9", auth: "a18ef18e-293a-11ef-b76e-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "7420739b-t55r40-tifnix-1ro8s.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 118", server: "070dd3b4-t57ls0-tb224g-1h0r9.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", auth: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "070dd3b4-t57ls0-tb224g-1h0r9.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 119", server: "26e7dc8b-t55r40-t8hh31-amya.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "ee1b9e94-9b95-11ef-8967-f23c91cfbbc9", auth: "ee1b9e94-9b95-11ef-8967-f23c91cfbbc9", ports: "30000-60000", udp: true, sni: "26e7dc8b-t55r40-t8hh31-amya.hk2.hyhuawei.com"}
+- {name: "🇭🇰 香港 120", server: "e87d95fc-t55r40-tdahby-1tnab.hk1.hyhuawei.com", port: 443, type: "hysteria2", password: "ca9c0c54-1513-11f0-8a7b-f23c913c8d2b", auth: "ca9c0c54-1513-11f0-8a7b-f23c913c8d2b", ports: "30000-60000", udp: true, sni: "e87d95fc-t55r40-tdahby-1tnab.hk1.hyhuawei.com"}
+- {name: "🇭🇰 香港 121", server: "ea3354b7-t55r40-tnt75r-1k8ga.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "f860f2da-5035-11ed-bb74-f23c9164ca5d", auth: "f860f2da-5035-11ed-bb74-f23c9164ca5d", ports: "30000-60000", udp: true, sni: "ea3354b7-t55r40-tnt75r-1k8ga.hk2.hyhuawei.com"}
+- {skip-cert-verify: true, sni: "douyin.com", type: "trojan", password: "e735d5a4-c4f9-46fc-97e8-39a4024a5b8b", server: "baigou1.kkieo555.cn", port: 21863, name: "🇭🇰 香港 122"}
+- {type: "vless", name: "🇭🇰 香港 123", server: "210.6.207.42", port: 18622, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/X@节点狂魔/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
 - {name: "🇫🇷 法国 01", server: "n001.xunxunmimisbs.sbs", port: 48100, type: "trojan", password: "bcfedd90-8f1b-41df-813f-cee360857f04", sni: "fr01.xxxxyyyysbs.sbs", udp: true}
 - {name: "🇫🇷 法国 02", server: "zf-ct.bgblwow.org", port: 59720, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2abc2c3d-0530-448a-adca-52e68491292a", udp: true}
 - {name: "🇫🇷 法国 03", server: "n002.xunxunmimisbs.sbs", port: 55000, type: "trojan", password: "e6f3fb9f-099c-4b00-92ef-7846ad58e398", sni: "fr01.xxxxyyyysbs.sbs", skip-cert-verify: true, udp: true}
@@ -1123,10 +1126,9 @@ proxies:
 - {name: "🇫🇷 法国 33", server: "xdd.dashuai.cyou", port: 45071, type: "vmess", uuid: "f6d6b63d-11c5-4d4a-8e4b-95800276ee62", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇫🇷 法国 34", server: "xdd.dashuai.cyou", port: 45071, type: "vmess", uuid: "27d937bb-9543-4188-a010-d97295b896e0", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇫🇷 法国 35", server: "xdd.dashuai.cyou", port: 45071, type: "vmess", uuid: "8088b255-e9bb-4b1c-a7d7-cc8ab9103a3f", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇫🇷 法国 36", server: "n002.xunxunmimisbs.sbs", port: 26100, type: "trojan", password: "6e841997-473d-4a8b-81c2-25936478bf14", sni: "fr01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
-- {name: "🇫🇷 法国 37", server: "n002.xunxunmimisbs.sbs", port: 48100, type: "trojan", password: "8cf1f0b1-c447-4a9d-ab49-315c5d832414", sni: "fr01.xxxxyyyysbs.sbs", udp: true}
-- {name: "🇫🇷 法国 38", server: "n001.xunxunmimisbs.sbs", port: 26100, type: "trojan", password: "6e841997-473d-4a8b-81c2-25936478bf14", sni: "fr01.xxxxyyyysbs.sbs", skip-cert-verify: false, udp: true}
-- {name: "🇫🇷 法国 39", type: "vmess", server: "2001:bc8:32d7:302::10", port: 44579, cipher: "auto", uuid: "8e34e170-13ae-4892-9d20-05962acc9f84", alterId: 0, tls: false, network: "ws", ws-opts: {path: "/", headers: {}}, client-fingerprint: ""}
+- {name: "🇫🇷 法国 36", server: "xdd.dashuai.cyou", port: 45071, type: "vmess", uuid: "bbee0196-7a72-406a-b3bc-f6e12a25064b", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇫🇷 法国 37", server: "195.154.119.77", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true}
+- {name: "🇫🇷 法国 38", type: "vmess", server: "2001:bc8:32d7:302::10", port: 44579, cipher: "auto", uuid: "8e34e170-13ae-4892-9d20-05962acc9f84", alterId: 0, tls: false, network: "ws", ws-opts: {path: "/", headers: {}}, client-fingerprint: ""}
 - {name: "🇳🇱 荷兰 01", server: "naran3.616626.xyz", port: 22308, type: "vmess", uuid: "182539a4-8399-4245-8be7-b0cac2b972af", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇳🇱 荷兰 02", server: "naran1.616626.xyz", port: 22305, type: "vmess", uuid: "70166125-2780-49cc-978b-08b9dad39571", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇳🇱 荷兰 03", server: "naran4.616626.xyz", port: 22310, type: "vmess", uuid: "182539a4-8399-4245-8be7-b0cac2b972af", alterId: 0, cipher: "auto", tls: false, udp: true}
@@ -1145,7 +1147,7 @@ proxies:
 - {name: "🇦🇺 澳大利亚 08", server: "xdd.dashuai.cyou", port: 45063, type: "vmess", uuid: "8088b255-e9bb-4b1c-a7d7-cc8ab9103a3f", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇦🇺 澳大利亚 09", server: "haa.dashuai.cyou", port: 45062, type: "vmess", uuid: "8088b255-e9bb-4b1c-a7d7-cc8ab9103a3f", alterId: 0, cipher: "auto", tls: false, udp: true}
 - {name: "🇦🇺 澳大利亚 10", server: "xdd.dashuai.cyou", port: 45063, type: "vmess", uuid: "778ee456-81ae-48f5-8780-2de88424a372", alterId: 0, cipher: "auto", tls: false, udp: true}
-- {name: "🇦🇺 澳大利亚 11", server: "haa.dashuai.cyou", port: 45062, type: "vmess", uuid: "4fcfb80d-e97c-4fb5-96af-537d8eed6088", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
+- {name: "🇦🇺 澳大利亚 11", server: "xdd.dashuai.cyou", port: 45063, type: "vmess", uuid: "e4897b0b-7925-4bf3-a2f2-72f0de4371fb", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
 - {name: "🇮🇸 冰岛 01", server: "slur.izenny.com", port: 32009, type: "ss", cipher: "chacha20-ietf-poly1305", password: "62fde6d8-549d-4bf5-80ab-01b4d409039a", udp: true}
 - {name: "🇮🇸 冰岛 02", server: "slur.izenny.com", port: 32009, type: "ss", cipher: "chacha20-ietf-poly1305", password: "b1308c97-d731-4345-ab0f-c0a23ba942d2", udp: true}
 - {name: "🏴‍☠️ 摩纳哥 01", server: "empty.node", port: 443, type: "trojan", password: "b6bcfa84-7183-46c1-a9ec-11b8bd7c87f9", sni: "empty.node", skip-cert-verify: false, udp: true}
@@ -1160,9 +1162,7 @@ proxies:
 - {name: "🇮🇱 以色列 02", server: "slur.izenny.com", port: 30348, type: "ss", cipher: "chacha20-ietf-poly1305", password: "62fde6d8-549d-4bf5-80ab-01b4d409039a", udp: true}
 - {name: "🇹🇷 土耳其 01", server: "slur.izenny.com", port: 54693, type: "ss", cipher: "chacha20-ietf-poly1305", password: "b1308c97-d731-4345-ab0f-c0a23ba942d2", udp: true}
 - {name: "🇹🇷 土耳其 02", server: "slur.izenny.com", port: 54693, type: "ss", cipher: "chacha20-ietf-poly1305", password: "62fde6d8-549d-4bf5-80ab-01b4d409039a", udp: true}
-- {name: "🇹🇷 土耳其 03", server: "38.180.105.12", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "tJlEWh2PzDMew8qo9YkPEA", udp: true}
 - {name: "🇹🇳 突尼斯 01", server: "cdnfire.xiaomispeed.com", port: 443, type: "trojan", password: "a62cd72e-2197-4f78-9fd0-929814fe738a", sni: "cdntwa.xiaomispeed.com", udp: true}
-- {name: "🇵🇹 葡萄牙 01", server: "185.231.233.112", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true}
 - {type: "vless", name: "🇷🇺 俄罗斯 01", server: "31.192.238.71", port: 8443, uuid: "f61a4285-7264-4d07-9408-7b9ba1922c26", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "gaosir.unfeeling.sbs"}, path: "/freecodes/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "gaosir.unfeeling.sbs"}
 proxy-groups:
 - name: "PROXY"
@@ -1207,8 +1207,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -1271,6 +1269,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -1327,11 +1327,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -1433,6 +1428,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1657,6 +1658,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -1715,6 +1738,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -1749,6 +1773,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1862,6 +1887,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -1898,7 +1925,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -1927,7 +1953,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -2031,8 +2056,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2156,26 +2179,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -2214,7 +2217,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -2248,9 +2250,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
@@ -2296,8 +2296,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -2360,6 +2358,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -2416,11 +2416,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -2522,6 +2517,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -2746,6 +2747,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -2804,6 +2827,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -2838,6 +2862,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -2951,6 +2976,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -2987,7 +3014,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -3016,7 +3042,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -3120,8 +3145,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -3245,26 +3268,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -3303,7 +3306,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -3337,9 +3339,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
@@ -3383,8 +3383,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -3447,6 +3445,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -3503,11 +3503,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -3609,6 +3604,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -3833,6 +3834,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -3891,6 +3914,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -3925,6 +3949,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -4038,6 +4063,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -4074,7 +4101,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -4103,7 +4129,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -4207,8 +4232,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -4332,26 +4355,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -4390,7 +4393,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -4424,9 +4426,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 - name: "FCM"
   type: "select"
@@ -4472,8 +4472,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -4536,6 +4534,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -4592,11 +4592,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -4698,6 +4693,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -4922,6 +4923,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -4980,6 +5003,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -5014,6 +5038,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -5127,6 +5152,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -5163,7 +5190,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -5192,7 +5218,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -5296,8 +5321,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -5421,26 +5444,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -5479,7 +5482,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -5513,9 +5515,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
@@ -5560,8 +5560,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -5624,6 +5622,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -5680,11 +5680,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -5786,6 +5781,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -6010,6 +6011,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -6068,6 +6091,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -6102,6 +6126,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -6215,6 +6240,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -6251,7 +6278,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -6280,7 +6306,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -6384,8 +6409,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -6509,26 +6532,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -6567,7 +6570,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -6601,9 +6603,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 - name: "SPOTIFY"
   type: "select"
@@ -6648,8 +6648,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -6712,6 +6710,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -6768,11 +6768,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -6874,6 +6869,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -7098,6 +7099,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -7156,6 +7179,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -7190,6 +7214,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -7303,6 +7328,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -7339,7 +7366,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -7368,7 +7394,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -7472,8 +7497,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -7597,26 +7620,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -7655,7 +7658,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -7689,9 +7691,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 - name: "TIKTOK"
   type: "select"
@@ -7735,8 +7735,6 @@ proxy-groups:
   - "🇨🇦 加拿大 36"
   - "🇨🇦 加拿大 37"
   - "🇨🇦 加拿大 38"
-  - "🇨🇦 加拿大 39"
-  - "🇨🇦 加拿大 40"
   - "🇬🇧 英国 01"
   - "🇬🇧 英国 02"
   - "🇬🇧 英国 03"
@@ -7799,6 +7797,8 @@ proxy-groups:
   - "🇬🇧 英国 60"
   - "🇬🇧 英国 61"
   - "🇬🇧 英国 62"
+  - "🇬🇧 英国 63"
+  - "🇬🇧 英国 64"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -7855,11 +7855,6 @@ proxy-groups:
   - "🇻🇳 越南 54"
   - "🇻🇳 越南 55"
   - "🇻🇳 越南 56"
-  - "🇻🇳 越南 57"
-  - "🇻🇳 越南 58"
-  - "🇻🇳 越南 59"
-  - "🇻🇳 越南 60"
-  - "🇻🇳 越南 61"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -7961,6 +7956,12 @@ proxy-groups:
   - "🇸🇬 新加坡 99"
   - "🇸🇬 新加坡 100"
   - "🇸🇬 新加坡 101"
+  - "🇸🇬 新加坡 102"
+  - "🇸🇬 新加坡 103"
+  - "🇸🇬 新加坡 104"
+  - "🇸🇬 新加坡 105"
+  - "🇸🇬 新加坡 106"
+  - "🇸🇬 新加坡 107"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -8185,6 +8186,28 @@ proxy-groups:
   - "🇺🇸 美国 222"
   - "🇺🇸 美国 223"
   - "🇺🇸 美国 224"
+  - "🇺🇸 美国 225"
+  - "🇺🇸 美国 226"
+  - "🇺🇸 美国 227"
+  - "🇺🇸 美国 228"
+  - "🇺🇸 美国 229"
+  - "🇺🇸 美国 230"
+  - "🇺🇸 美国 231"
+  - "🇺🇸 美国 232"
+  - "🇺🇸 美国 233"
+  - "🇺🇸 美国 234"
+  - "🇺🇸 美国 235"
+  - "🇺🇸 美国 236"
+  - "🇺🇸 美国 237"
+  - "🇺🇸 美国 238"
+  - "🇺🇸 美国 239"
+  - "🇺🇸 美国 240"
+  - "🇺🇸 美国 241"
+  - "🇺🇸 美国 242"
+  - "🇺🇸 美国 243"
+  - "🇺🇸 美国 244"
+  - "🇺🇸 美国 245"
+  - "🇺🇸 美国 246"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
@@ -8243,6 +8266,7 @@ proxy-groups:
   - "🇰🇷 韩国 56"
   - "🇰🇷 韩国 57"
   - "🇰🇷 韩国 58"
+  - "🇰🇷 韩国 59"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -8277,6 +8301,7 @@ proxy-groups:
   - "🇩🇪 德国 32"
   - "🇩🇪 德国 33"
   - "🇩🇪 德国 34"
+  - "🇩🇪 德国 35"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -8390,6 +8415,8 @@ proxy-groups:
   - "🇯🇵 日本 111"
   - "🇯🇵 日本 112"
   - "🇯🇵 日本 113"
+  - "🇯🇵 日本 114"
+  - "🇯🇵 日本 115"
   - "🇮🇳 印度 01"
   - "🇮🇳 印度 02"
   - "🇮🇳 印度 03"
@@ -8426,7 +8453,6 @@ proxy-groups:
   - "🇮🇳 印度 34"
   - "🇮🇳 印度 35"
   - "🇮🇳 印度 36"
-  - "🇮🇳 印度 37"
   - "🇹🇭 泰国 01"
   - "🇹🇭 泰国 02"
   - "🇹🇭 泰国 03"
@@ -8455,7 +8481,6 @@ proxy-groups:
   - "🇹🇭 泰国 26"
   - "🇹🇭 泰国 27"
   - "🇹🇭 泰国 28"
-  - "🇹🇭 泰国 29"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
@@ -8559,8 +8584,6 @@ proxy-groups:
   - "🇨🇳 台湾 74"
   - "🇨🇳 台湾 75"
   - "🇨🇳 台湾 76"
-  - "🇨🇳 台湾 77"
-  - "🇨🇳 台湾 78"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -8684,26 +8707,6 @@ proxy-groups:
   - "🇭🇰 香港 121"
   - "🇭🇰 香港 122"
   - "🇭🇰 香港 123"
-  - "🇭🇰 香港 124"
-  - "🇭🇰 香港 125"
-  - "🇭🇰 香港 126"
-  - "🇭🇰 香港 127"
-  - "🇭🇰 香港 128"
-  - "🇭🇰 香港 129"
-  - "🇭🇰 香港 130"
-  - "🇭🇰 香港 131"
-  - "🇭🇰 香港 132"
-  - "🇭🇰 香港 133"
-  - "🇭🇰 香港 134"
-  - "🇭🇰 香港 135"
-  - "🇭🇰 香港 136"
-  - "🇭🇰 香港 137"
-  - "🇭🇰 香港 138"
-  - "🇭🇰 香港 139"
-  - "🇭🇰 香港 140"
-  - "🇭🇰 香港 141"
-  - "🇭🇰 香港 142"
-  - "🇭🇰 香港 143"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -8742,7 +8745,6 @@ proxy-groups:
   - "🇫🇷 法国 36"
   - "🇫🇷 法国 37"
   - "🇫🇷 法国 38"
-  - "🇫🇷 法国 39"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -8776,9 +8778,7 @@ proxy-groups:
   - "🇮🇱 以色列 02"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇹🇷 土耳其 03"
   - "🇹🇳 突尼斯 01"
-  - "🇵🇹 葡萄牙 01"
   - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
