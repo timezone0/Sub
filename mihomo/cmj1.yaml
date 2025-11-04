@@ -81,14 +81,14 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {type: "vless", name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3", "h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/?mode=auto&direct"}, encryption: "none", servername: "vless.keepfuck.me"}
-- {type: "vless", name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3", "h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/?mode=auto&direct"}, encryption: "none", servername: "vless.keepfuck.me"}
-- {skip-cert-verify: true, sni: "dingding-doc.com", type: "trojan", password: "adbac894-90b9-4913-b77e-a715a8d4ebc8", server: "oss-cn-shanghai.letssepub.com", port: 20021, name: "🇭🇰 香港 01"}
-- {skip-cert-verify: true, sni: "36.150.215.239", type: "trojan", password: "BxceQaOe", server: "36.150.215.239", port: 1924, name: "🇯🇵 日本 01"}
-- {skip-cert-verify: true, sni: "www.nintendogames.net", client-fingerprint: "chrome", type: "trojan", password: "e4e262d453466988575c397a30562337", server: "117.172.176.24", port: 4452, name: "🇯🇵 日本 02"}
-- {type: "hysteria2", name: "🇺🇸 美国 01", server: "424fe97f-t53wg0-tdps9l-155d9.us.hyhuawei.com", port: 443, ports: "30000-60000", password: "34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9", sni: "424fe97f-t53wg0-tdps9l-155d9.us.hyhuawei.com", skip-cert-verify: true, tfo: false}
-- {type: "hysteria2", name: "🇺🇸 美国 02", server: "c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com", port: 443, ports: "30000-60000", password: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", sni: "c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com", skip-cert-verify: true, tfo: false}
-- {type: "hysteria2", name: "🇺🇸 美国 03", server: "us2.oomz.ru", port: 30000, password: "faa8b629-13ea-4ccd-94dd-ff1615cb1ba1", sni: "bing.com", skip-cert-verify: true, tfo: false}
+- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
+- {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
+- {name: "🇭🇰 香港 01", server: "oss-cn-shanghai.letssepub.com", port: 20021, type: "trojan", password: "adbac894-90b9-4913-b77e-a715a8d4ebc8", sni: "dingding-doc.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "36.150.215.239", port: 1924, type: "trojan", password: "BxceQaOe", sni: "36.150.215.239", skip-cert-verify: true}
+- {name: "🇯🇵 日本 02", server: "117.172.176.24", port: 4452, type: "trojan", password: "e4e262d453466988575c397a30562337", sni: "www.nintendogames.net", skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "424fe97f-t53wg0-tdps9l-155d9.us.hyhuawei.com", port: 443, type: "hysteria2", password: "34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9", auth: "34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9", sni: "424fe97f-t53wg0-tdps9l-155d9.us.hyhuawei.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 02", server: "c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com", port: 443, type: "hysteria2", password: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", auth: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", sni: "c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 03", server: "us2.oomz.ru", port: 30000, type: "hysteria2", password: "faa8b629-13ea-4ccd-94dd-ff1615cb1ba1", auth: "faa8b629-13ea-4ccd-94dd-ff1615cb1ba1", sni: "bing.com", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
