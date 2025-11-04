@@ -83,12 +83,8 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇭🇰 香港 01", server: "oss-cn-shanghai.letssepub.com", port: 20021, type: "trojan", password: "adbac894-90b9-4913-b77e-a715a8d4ebc8", sni: "dingding-doc.com", skip-cert-verify: true}
-- {name: "🇯🇵 日本 01", server: "36.150.215.239", port: 1924, type: "trojan", password: "BxceQaOe", sni: "36.150.215.239", skip-cert-verify: true}
-- {name: "🇯🇵 日本 02", server: "117.172.176.24", port: 4452, type: "trojan", password: "e4e262d453466988575c397a30562337", sni: "www.nintendogames.net", skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "424fe97f-t53wg0-tdps9l-155d9.us.hyhuawei.com", port: 443, type: "hysteria2", password: "34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9", auth: "34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9", sni: "424fe97f-t53wg0-tdps9l-155d9.us.hyhuawei.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 02", server: "c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com", port: 443, type: "hysteria2", password: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", auth: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", sni: "c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 03", server: "us2.oomz.ru", port: 30000, type: "hysteria2", password: "faa8b629-13ea-4ccd-94dd-ff1615cb1ba1", auth: "faa8b629-13ea-4ccd-94dd-ff1615cb1ba1", sni: "bing.com", skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "828e6a50-t59gg0-t6lp0p-1lkt0.hk2.hyhuawei.com", port: 443, type: "hysteria2", password: "cd1b0ae0-4010-11ee-953a-f23c9164ca5d", auth: "cd1b0ae0-4010-11ee-953a-f23c9164ca5d", sni: "828e6a50-t59gg0-t6lp0p-1lkt0.hk2.hyhuawei.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "30e22d14-t59gg0-t6pk5f-f1v1.us.hyhuawei.com", port: 443, type: "hysteria2", password: "9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b", auth: "9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b", sni: "30e22d14-t59gg0-t6pk5f-f1v1.us.hyhuawei.com", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -97,11 +93,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -111,11 +103,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "AI"
   type: "select"
   proxies:
@@ -123,11 +111,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "FCM"
   type: "select"
   proxies:
@@ -137,11 +121,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -150,11 +130,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -163,11 +139,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -175,11 +147,7 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
   - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
