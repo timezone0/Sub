@@ -81,81 +81,105 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇰🇷 韩国 01", server: "testkr3.ssv.vc", port: 30446, type: "http", username: "test", password: "test.+", tls: true, skip-cert-verify: true, udp: true, sni: "testkr3.ssv.vc"}
-- {name: "🇨🇳 台湾 01", server: "twmoon1-cdn-route.couldflare-cdn.com", port: 1443, type: "http", username: "mrwdfNTD8M79LCukCieldrqZWqs=", password: "exaxgqkKkd0TAMrCxeonWg==", tls: true, udp: true, sni: "twmoon1-cdn-route.couldflare-cdn.com"}
-- {name: "🇺🇸 美国 01", server: "usa32.clearorbitllc.com", port: 443, type: "vless", uuid: "9daf8f3e-089b-4989-9502-dd3d727edb6c", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "firefox", reality-opts: {public-key: "9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns", short-id: "c7f3cc"}, udp: true, network: "tcp", servername: "usa32.clearorbitllc.com"}
-- {name: "🇻🇳 越南 01", server: "103.197.185.149", port: 23806, type: "vmess", uuid: "841550b4-d4bf-4e3e-de9c-cff7baa47df3", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
-- {name: "🇻🇳 越南 02", server: "103.186.154.67", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇫🇷 法国 01", server: "fd7388fc-t5bb40-tdvaex-1ixuf.fr.cdnkuaishou.com", port: 8443, type: "http", username: "dcbaee4d-2204-11ed-b659-f23c91cfbbc9", password: "dcbaee4d-2204-11ed-b659-f23c91cfbbc9", tls: true, skip-cert-verify: true, udp: true, sni: "fd7388fc-t5bb40-tdvaex-1ixuf.fr.cdnkuaishou.com"}
+- {name: "🇫🇷 法国 02", server: "7b3fb675-t5bb40-t6tn6w-jjv2.fr.cdnkuaishou.com", port: 8443, type: "http", username: "31676725-b0fd-fed2-c857-2da8ce5a6e4f", password: "31676725-b0fd-fed2-c857-2da8ce5a6e4f", tls: true, skip-cert-verify: true, udp: true, sni: "7b3fb675-t5bb40-t6tn6w-jjv2.fr.cdnkuaishou.com"}
+- {name: "🇭🇰 香港 01", server: "203.198.122.129", port: 443, type: "trojan", password: "BxceQaOe", sni: "t.me/ripaojiedian", skip-cert-verify: true, udp: true}
+- {name: "🇷🇺 俄罗斯 01", server: "ru1.nodea6a6.skynode.me", port: 80, type: "vmess", uuid: "c3f95b7e-0fc7-3311-9a3d-e34e675632d4", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/download", headers: {Host: "node-59-175-206-86.speedtest.cn"}}, udp: true}
+- {name: "🇸🇬 新加坡 01", server: "1.32.216.163", port: 30344, type: "vmess", uuid: "f3c3251b-463c-4ffb-b030-7f8c07ab608c", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
+- {name: "🇺🇸 美国 01", server: "usvless.yydzx.xyz", port: 17597, type: "vless", uuid: "4741863d-e3ac-4b9d-8185-466f437b3fa8", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", udp: true, network: "tcp", servername: "usvless.yydzx.xyz"}
+- {name: "🇺🇸 美国 02", server: "linux.do", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "fangbinxingnmsl.pusytroller.cf"}}, udp: true, servername: "fangbinxingnmsl.pusytroller.cf"}
+- {name: "🇺🇸 美国 03", server: "www.npmjs.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "fangbinxingnmsl.pusytroller.cf"}}, udp: true, servername: "fangbinxingnmsl.pusytroller.cf"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 - name: "FCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇰🇷 韩国 01"
-  - "🇨🇳 台湾 01"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇭🇰 香港 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇸🇬 新加坡 01"
   - "🇺🇸 美国 01"
-  - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
