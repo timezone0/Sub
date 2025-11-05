@@ -233,7 +233,9 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3%2Ch2%2Chttp%2F1.1"
+          "h3",
+          "h2",
+          "http/1.1"
         ]
       },
       "transport": {
@@ -266,7 +268,7 @@
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "t.me%2Fripaojiedian",
+        "server_name": "t.me/ripaojiedian",
         "insecure": true
       }
     },
@@ -293,13 +295,11 @@
       "tls": {
         "enabled": true,
         "server_name": "floral-vol-lexington-liverpool.trycloudflare.com",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "wto.org"
-        },
+        "headers": {},
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2048,
         "path": "/97b5343c-f8bd-40f2-b32d-7c98e1c196d4-vm"
