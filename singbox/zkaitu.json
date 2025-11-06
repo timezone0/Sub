@@ -95,9 +95,8 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,9 +105,8 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -117,9 +115,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -130,9 +127,8 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,9 +138,8 @@
       "outbounds": [
         "direct",
         "select",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -154,9 +149,8 @@
       "outbounds": [
         "select",
         "direct",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -165,9 +159,8 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇨🇳 台湾 01"
+        "🇨🇳 台湾 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -202,50 +195,6 @@
       }
     },
     {
-      "tag": "🇷🇺 俄罗斯 01",
-      "type": "vless",
-      "server": "g72oiqhd.tun.nodeflex.cc",
-      "server_port": 30865,
-      "uuid": "d43bc5b9-21f8-42a7-adf8-8db943de75eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.varejaodasmaquinas.com",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "RQGgenaHaaros5JI8XOnAuv4k7t43Gug_mpHjQTRdjE",
-          "short_id": "a242c9aa"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇷🇺 俄罗斯 02",
-      "type": "vless",
-      "server": "g72oiqhd.tun.nodeflex.cc",
-      "server_port": 30866,
-      "uuid": "1922fd72-8ebf-44f8-86ea-a032be1d26d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.varejaodasmaquinas.com",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "RQGgenaHaaros5JI8XOnAuv4k7t43Gug_mpHjQTRdjE",
-          "short_id": "a242c9aa"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
       "tag": "🇨🇳 台湾 01",
       "type": "http",
       "server": "twmoon1-cdn-route.couldflare-cdn.com",
@@ -257,6 +206,14 @@
       },
       "username": "mrwdfNTD8M79LCukCieldrqZWqs=",
       "password": "exaxgqkKkd0TAMrCxeonWg=="
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "shadowsocks",
+      "server": "13.59.110.241",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     }
   ],
   "route": {
