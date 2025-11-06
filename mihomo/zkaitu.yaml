@@ -82,24 +82,24 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇨🇦 加拿大 01", server: "132.145.99.18", port: 40106, type: "vless", uuid: "dcdd09ad-4519-46f7-8107-4c4290a9b2a3", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "gqmHb9i4USmQ78auzhAFJMQIrUpnq8QaykJgnjHDTBg", short-id: "f44fd3dd"}, udp: true, network: "tcp", servername: "apple.com"}
-- {name: "🇰🇷 韩国 01", server: "testkr3.ssv.vc", port: 30446, type: "http", username: "test", password: "test.+", tls: true, skip-cert-verify: true, udp: true, sni: "testkr3.ssv.vc"}
 - {name: "🏴‍☠️ 黎巴嫩 01", server: "77.110.119.225", port: 443, type: "vless", uuid: "4819860c-0e62-4804-9c59-967e5c2bed7a", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "hnec5SxCD6Os-u0FNi_YS5CML1a_oWb0niZJ1mGuFBo", short-id: "07e904766d29b958"}, udp: true, network: "tcp", servername: "st.ozone.ru"}
+- {name: "🇷🇺 俄罗斯 01", server: "g72oiqhd.tun.nodeflex.cc", port: 30866, type: "vless", uuid: "1922fd72-8ebf-44f8-86ea-a032be1d26d7", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "qq", reality-opts: {public-key: "RQGgenaHaaros5JI8XOnAuv4k7t43Gug_mpHjQTRdjE", short-id: "a242c9aa"}, udp: true, network: "tcp", servername: "www.varejaodasmaquinas.com"}
+- {name: "🇷🇺 俄罗斯 02", server: "g72oiqhd.tun.nodeflex.cc", port: 30865, type: "vless", uuid: "d43bc5b9-21f8-42a7-adf8-8db943de75eb", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "firefox", reality-opts: {public-key: "RQGgenaHaaros5JI8XOnAuv4k7t43Gug_mpHjQTRdjE", short-id: "a242c9aa"}, udp: true, network: "tcp", servername: "www.varejaodasmaquinas.com"}
 - {name: "🇨🇳 台湾 01", server: "twmoon1-cdn-route.couldflare-cdn.com", port: 1443, type: "http", username: "mrwdfNTD8M79LCukCieldrqZWqs=", password: "exaxgqkKkd0TAMrCxeonWg==", tls: true, udp: true, sni: "twmoon1-cdn-route.couldflare-cdn.com"}
 - {name: "🇺🇸 美国 01", server: "3.145.46.227", port: 443, type: "ss", cipher: "aes-256-cfb", password: "amazonskr05", udp: true}
-- {name: "🇺🇸 美国 02", server: "104.18.255.7", port: 80, type: "vless", uuid: "ac90a749-1b0d-4978-a767-ab07b0f3f98f", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "vpn13.sakeva2327.workers.dev"}}, udp: true, servername: "vpn13.sakeva2327.workers.dev"}
-- {name: "🇺🇸 美国 03", server: "172.66.156.81", port: 80, type: "vless", uuid: "4fd5c113-c44a-4af3-a113-9752bea94155", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy", headers: {Host: "websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz."}}, udp: true, servername: "websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.xyz."}
+- {name: "🇺🇸 美国 02", server: "167.68.4.199", port: 2053, type: "trojan", password: "Aimer", sni: "epge.muarua.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "epge.muarua.filegear-sg.me"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -107,23 +107,23 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "FCM"
   type: "select"
   proxies:
@@ -131,47 +131,47 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🇨🇦 加拿大 01"
-  - "🇰🇷 韩国 01"
   - "🏴‍☠️ 黎巴嫩 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
   - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
