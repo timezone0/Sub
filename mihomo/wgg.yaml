@@ -81,24 +81,24 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {type: "ss", server: "18.199.91.56", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
-- {type: "ss", server: "18.175.147.212", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
-- {type: "ss", server: "18.175.217.31", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 01"}
-- {type: "ss", server: "99.79.161.29", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 02"}
-- {type: "ss", server: "3.79.230.6", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇸🇬 新加坡 01"}
-- {type: "ss", server: "3.79.57.79", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
+- {type: "ss", server: "99.79.161.29", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 01"}
+- {type: "ss", server: "18.199.91.56", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 02"}
+- {type: "ss", server: "18.133.239.161", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
+- {type: "ss", server: "18.175.147.212", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇸🇬 新加坡 01"}
+- {type: "ss", server: "3.120.183.20", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
+- {type: "ss", server: "3.72.9.162", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
 - {type: "ss", server: "18.188.17.133", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 01"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 - name: "AUTO"
   type: "url-test"
@@ -106,23 +106,23 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 - name: "FCM"
   type: "select"
@@ -130,47 +130,47 @@ proxy-groups:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇰🇷 韩国 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇰🇷 韩国 01"
   - "🇸🇬 新加坡 01"
   - "🇨🇳 台湾 01"
+  - "🇭🇰 香港 01"
   - "🇺🇸 美国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
