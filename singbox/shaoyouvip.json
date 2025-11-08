@@ -95,10 +95,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -108,10 +105,7 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -121,10 +115,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -136,10 +127,7 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -150,10 +138,7 @@
       "outbounds": [
         "direct",
         "select",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -164,10 +149,7 @@
       "outbounds": [
         "select",
         "direct",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -177,10 +159,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
         "🇸🇬 新加坡 01",
-        "🇯🇵 日本 01",
         "🇳🇱 荷兰 01"
       ],
       "interrupt_exist_connections": true
@@ -216,42 +195,6 @@
       }
     },
     {
-      "tag": "🇫🇷 法国 01",
-      "type": "hysteria",
-      "server": "62.210.10.186",
-      "server_port": 50011,
-      "disable_mtu_discovery": false,
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "auth_str": "dongtaiwang.com",
-      "up_mbps": 11,
-      "down_mbps": 55
-    },
-    {
-      "tag": "🇫🇷 法国 02",
-      "type": "hysteria",
-      "server": "62.210.10.186",
-      "server_port": 35511,
-      "disable_mtu_discovery": false,
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "auth_str": "dongtaiwang.com",
-      "up_mbps": 11,
-      "down_mbps": 55
-    },
-    {
       "tag": "🇸🇬 新加坡 01",
       "type": "tuic",
       "server": "sgtuic01.yydzx.xyz",
@@ -266,53 +209,22 @@
       "congestion_control": "bbr"
     },
     {
-      "tag": "🇯🇵 日本 01",
-      "type": "vmess",
-      "server": "jp3.nodea6a6.skynode.me",
-      "server_port": 8443,
-      "uuid": "c3f95b7e-0fc7-3311-9a3d-e34e675632d4",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "node-59-175-206-86.speedtest.cn"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/download"
-      }
-    },
-    {
       "tag": "🇳🇱 荷兰 01",
-      "type": "vless",
-      "server": "ium3uojslvj2shb1yh8zu7etc34vmyfb.z8f5hmu0ue.workers.dev",
-      "server_port": 443,
-      "uuid": "b0e5da32-8bb4-4e65-94f1-99ddeefeaa5e",
+      "type": "hysteria",
+      "server": "51.159.226.1",
+      "server_port": 49003,
+      "disable_mtu_discovery": false,
       "tls": {
         "enabled": true,
-        "server_name": "PmlMyazd.pagEs.Dev",
-        "insecure": false,
+        "server_name": "apple.com",
+        "insecure": true,
         "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        }
+          "h3"
+        ]
       },
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "pmlmyazd.pages.dev",
-          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/XqtZ2JB0WH2bmNOL"
-      }
+      "auth_str": "dongtaiwang.com",
+      "up_mbps": 11,
+      "down_mbps": 55
     }
   ],
   "route": {
