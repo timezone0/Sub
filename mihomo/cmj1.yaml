@@ -83,13 +83,9 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇫🇷 法国 01", server: "195.154.200.40", port: 15010, type: "hysteria", auth_str: "", auth-str: "", up: 100, down: 100, fast-open: false, protocol: "udp", sni: "apple.com", skip-cert-verify: true, alpn: ["h3"]}
-- {name: "🇫🇷 法国 02", server: "163.172.21.105", port: 5355, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true}
-- {name: "🇭🇰 香港 01", server: "219.76.13.166", port: 443, type: "vmess", uuid: "ffde381b-4a30-41d4-90eb-151f228b06ea", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/qq"}, servername: "aa.nbee.pp.ua"}
+- {name: "🇫🇷 法国 01", server: "163.172.21.105", port: 5355, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "medium.com", port: 443, type: "vless", uuid: "f2a73750-3087-48ff-a763-1348c15dce68", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "rAyAn-007.mAxImA.DpDnS.OrG"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "rAyAn-007.mAxImA.DpDnS.OrG"}
 - {name: "🇳🇱 荷兰 01", server: "51.158.218.2", port: 50066, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true}
-- {name: "🇵🇹 葡萄牙 01", server: "nkang2replace.airlineshoma.com", port: 443, type: "vless", uuid: "b754b53a-aaf5-475c-eeed-46806c2aa63f", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "nkang2replace.airlineshoma.com"}}, servername: "nkang2replace.airlineshoma.com"}
-- {name: "🇺🇸 美国 01", server: "36.151.251.38", port: 25891, type: "trojan", password: "BxceQaOe", sni: "36.151.251.38", skip-cert-verify: true}
-- {name: "🇺🇸 美国 02", server: "67e01b04-t3dk00-tcm6ys-deip.la.shifen.uk", port: 1743, type: "hysteria2", password: "7a2512b4-09ee-11f0-8d46-f23c9313b177", auth: "7a2512b4-09ee-11f0-8d46-f23c9313b177", sni: "67e01b04-t3dk00-tcm6ys-deip.la.shifen.uk", skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -98,12 +94,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -113,12 +105,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -126,12 +114,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "FCM"
   type: "select"
   proxies:
@@ -141,12 +125,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -155,12 +135,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -169,12 +145,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -182,12 +154,8 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
   - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇭🇰 香港 01"
+  - "🇯🇵 日本 01"
   - "🇳🇱 荷兰 01"
-  - "🇵🇹 葡萄牙 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
