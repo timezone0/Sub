@@ -95,7 +95,16 @@
       "type": "selector",
       "outbounds": [
         "auto",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -105,7 +114,16 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -115,7 +133,16 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -127,7 +154,16 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -138,7 +174,16 @@
       "outbounds": [
         "direct",
         "select",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -149,7 +194,16 @@
       "outbounds": [
         "select",
         "direct",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -159,7 +213,16 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 03",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02",
+        "🇯🇵 日本 01",
         "🇩🇪 德国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 04",
         "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
@@ -195,19 +258,218 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
-      "type": "vless",
-      "server": "89.23.96.122",
-      "server_port": 443,
-      "uuid": "9d97c649-47a5-47e2-aa33-65e30e74bc76",
+      "tag": "🇳🇱 荷兰 01",
+      "type": "hysteria2",
+      "server": "51.158.218.2",
+      "server_port": 50066,
+      "password": "dongtaiwang.com",
       "tls": {
         "enabled": true,
-        "server_name": "stats.vk-portal.net",
+        "server_name": "www.bing.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇳🇱 荷兰 03",
+      "type": "shadowsocks",
+      "server": "194.87.216.121",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "piv97XS1Cval86vfwHPD5j"
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "1760516058.tencentapp.cn",
+      "server_port": 443,
+      "uuid": "6911bb2c-a220-45a6-94fb-1ea8d9a1e94e",
+      "tls": {
+        "enabled": true,
+        "server_name": "stall3.sni2026.netlib.re",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stall3.sni2026.netlib.re",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+        },
+        "path": "/proxyip=tw.soso.edu.kg:43"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vless",
+      "server": "8.35.211.250",
+      "server_port": 2083,
+      "uuid": "6911bb2c-a220-45a6-94fb-1ea8d9a1e94e",
+      "tls": {
+        "enabled": true,
+        "server_name": "stall3.sni2026.netlib.re",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stall3.sni2026.netlib.re",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
+        },
+        "path": "/proxyip=tw.soso.edu.kg:43"
+      }
+    },
+    {
+      "tag": "🇦🇹 奥地利 01",
+      "type": "vless",
+      "server": "152.53.147.191",
+      "server_port": 37876,
+      "uuid": "29397c5b-be3b-41d9-8a49-21575668e915",
+      "tls": {
+        "enabled": true,
+        "server_name": "yelp.com",
         "insecure": false,
         "reality": {
           "enabled": true,
-          "public_key": "6_Fj5F7wmZoehHhk7X0su7zMfN9J5SiQa4GNgXtJl1o",
-          "short_id": "69fa4297"
+          "public_key": "ldoGIafEPJu2W4gODAoLjobXOOe9NKb-110WCz1-EwM",
+          "short_id": "907e"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇦🇹 奥地利 02",
+      "type": "vless",
+      "server": "152.53.147.69",
+      "server_port": 22925,
+      "uuid": "0226ef52-e556-4f36-ab0f-6c9f5414942a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ilovepdf.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "Pzsb-3zlxbYLJwRE0ACSqzTL7h3ubqREGMEs17q_1z4",
+          "short_id": "886d"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vless",
+      "server": "13.115.249.234",
+      "server_port": 443,
+      "uuid": "6911bb2c-a220-45a6-94fb-1ea8d9a1e94e",
+      "tls": {
+        "enabled": true,
+        "server_name": "stall3.sni2026.netlib.re",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stall3.sni2026.netlib.re",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
+        },
+        "path": "/proxyip=tw.soso.edu.kg:43"
+      }
+    },
+    {
+      "tag": "🇩🇪 德国 01",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2082,
+      "uuid": "6031c60f-a162-4fd4-c05e-f880ccc36725",
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2082,
+        "path": "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "23.185.168.144",
+      "server_port": 8602,
+      "uuid": "6911bb2c-a220-45a6-94fb-1ea8d9a1e94e",
+      "tls": {
+        "enabled": true,
+        "server_name": "stall3.sni2026.netlib.re",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stall3.sni2026.netlib.re",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36"
+        },
+        "path": "/proxyip=tw.soso.edu.kg:43"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vless",
+      "server": "us.cloudconvert.top",
+      "server_port": 443,
+      "uuid": "258a5f07-d07e-4de4-90b6-69a0ca34bab7",
+      "tls": {
+        "enabled": true,
+        "server_name": "us.cloudconvert.top",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "X8bSZA_Q-ReshpPEd17oMU7YfZlHWoOEGB7HM8ZSmXk",
+          "short_id": "abc82912"
         },
         "utls": {
           "enabled": true,
@@ -220,26 +482,29 @@
     {
       "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "djt.cf.090227.xyz",
-      "server_port": 2053,
-      "uuid": "2e619a4f-ba54-4faa-49e0-ed801d72cdf6",
+      "server": "38.47.122.75",
+      "server_port": 30005,
+      "uuid": "6911bb2c-a220-45a6-94fb-1ea8d9a1e94e",
       "tls": {
         "enabled": true,
-        "server_name": "cm.yumige.dpdns.org",
+        "server_name": "stall3.sni2026.netlib.re",
         "insecure": false,
+        "alpn": [
+          "h3"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         }
       },
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "cm.yumige.dpdns.org",
-          "User-Agent": "Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36"
+          "Host": "stall3.sni2026.netlib.re",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
         },
-        "path": "/http://16.162.8.119:10003/"
+        "path": "/proxyip=tw.soso.edu.kg:43"
       }
     }
   ],
