@@ -254,7 +254,9 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3%2Ch2%2Chttp%2F1.1"
+          "h3",
+          "h2",
+          "http/1.1"
         ]
       },
       "transport": {
@@ -293,8 +295,10 @@
           "h3"
         ]
       },
+      "auth_str": "dongtaiwang.com",
       "up_mbps": 100,
-      "down_mbps": 100
+      "down_mbps": 100,
+      "recv_window": "276824064"
     },
     {
       "tag": "🇫🇷 法国 02",
@@ -319,7 +323,7 @@
       "tls": {
         "enabled": true,
         "server_name": "aa.nbee.pp.ua",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -346,7 +350,12 @@
       "server_port": 53784,
       "uuid": "3a480a7d-a4b3-46e1-d4c4-04256b77f045",
       "security": "auto",
-      "alter_id": 0
+      "alter_id": 0,
+      "transport": {
+        "type": "http",
+        "headers": {},
+        "path": "/"
+      }
     },
     {
       "tag": "🇸🇬 新加坡 02",
@@ -359,7 +368,7 @@
       "tls": {
         "enabled": true,
         "server_name": "aio.unlimited.biz.id",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
