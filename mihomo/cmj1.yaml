@@ -81,12 +81,12 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {type: "vless", name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3", "h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/?mode=auto&direct"}, encryption: "none", servername: "vless.keepfuck.me"}
-- {type: "vless", name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3", "h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/?mode=auto&direct"}, encryption: "none", servername: "vless.keepfuck.me"}
-- {type: "hysteria2", name: "🇳🇱 荷兰 01", server: "51.158.218.2", port: 50066, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true, tfo: false}
-- {name: "🇺🇸 美国 01", type: "vmess", server: "wto.org", port: 443, cipher: "auto", uuid: "97b5343c-f8bd-40f2-b32d-7c98e1c196d4", alterId: 0, tls: true, network: "ws", ws-opts: {path: "/97b5343c-f8bd-40f2-b32d-7c98e1c196d4-vm", headers: {}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "floral-vol-lexington-liverpool.trycloudflare.com"}
-- {type: "vless", name: "🇺🇸 美国 02", server: "104.21.9.137", port: 443, uuid: "e159a810-7d2c-4ce6-bc22-9727feb12fac", tls: true, client-fingerprint: "chrome", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site"}, path: "/0SCvfqSaeeB74kgXZ"}, servername: "ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site"}
-- {type: "vless", name: "🇺🇸 美国 03", server: "us.cloudconvert.top", port: 443, uuid: "258a5f07-d07e-4de4-90b6-69a0ca34bab7", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "X8bSZA_Q-ReshpPEd17oMU7YfZlHWoOEGB7HM8ZSmXk", short-id: "abc82912"}, network: "tcp", servername: "us.cloudconvert.top"}
+- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
+- {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
+- {name: "🇳🇱 荷兰 01", server: "51.158.218.2", port: 50066, type: "hysteria2", password: "dongtaiwang.com", auth: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "wto.org", port: 443, type: "vmess", uuid: "97b5343c-f8bd-40f2-b32d-7c98e1c196d4", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/97b5343c-f8bd-40f2-b32d-7c98e1c196d4-vm", headers: {Host: "wto.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, servername: "floral-vol-lexington-liverpool.trycloudflare.com"}
+- {name: "🇺🇸 美国 02", server: "104.21.9.137", port: 443, type: "vless", uuid: "e159a810-7d2c-4ce6-bc22-9727feb12fac", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/0SCvfqSaeeB74kgXZ", headers: {Host: "ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site"}}, servername: "ec51ebe7-9b61-2397-41bf-1f00f6163852.huangshang.site"}
+- {name: "🇷🇺 俄罗斯 01", server: "us.cloudconvert.top", port: 443, type: "vless", uuid: "258a5f07-d07e-4de4-90b6-69a0ca34bab7", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "X8bSZA_Q-ReshpPEd17oMU7YfZlHWoOEGB7HM8ZSmXk", short-id: "abc82912"}, client-fingerprint: "chrome", network: "tcp", servername: "us.cloudconvert.top"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -97,7 +97,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -109,7 +109,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -119,7 +119,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -131,7 +131,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -142,7 +142,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -153,7 +153,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -163,7 +163,7 @@ proxy-groups:
   - "🇳🇱 荷兰 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
+  - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
