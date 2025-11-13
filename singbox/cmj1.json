@@ -254,7 +254,9 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3%2Ch2%2Chttp%2F1.1"
+          "h3",
+          "h2",
+          "http/1.1"
         ]
       },
       "transport": {
@@ -310,7 +312,7 @@
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "t.me%2Fripaojiedian",
+        "server_name": "t.me/ripaojiedian",
         "insecure": true
       }
     },
@@ -375,7 +377,7 @@
       "tls": {
         "enabled": true,
         "server_name": "rncf.xinxiwang.eu.org",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
