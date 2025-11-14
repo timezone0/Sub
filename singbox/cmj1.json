@@ -97,7 +97,6 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -109,7 +108,6 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -121,7 +119,6 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -135,7 +132,6 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -148,7 +144,6 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -161,7 +156,6 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -173,7 +167,6 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
         "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
@@ -245,35 +238,21 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "103.149.183.154",
-      "server_port": 8388,
-      "method": "chacha20-ietf",
-      "password": "asd123456"
-    },
-    {
       "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "xn--ktff-jt6hr36l.tencentapp.cn",
-      "server_port": 443,
-      "uuid": "dea991b4-696f-4e9e-9761-1e1b31bb02de",
+      "type": "tuic",
+      "server": "sgtuic01.yydzx.xyz",
+      "server_port": 13347,
+      "uuid": "5b7124d0-7092-466c-b9fa-c13be64f0cb0",
+      "password": "5b7124d0-7092-466c-b9fa-c13be64f0cb0",
       "tls": {
         "enabled": true,
-        "server_name": "2.294294.xyz",
+        "server_name": "sgtuic01.yydzx.xyz",
         "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "h3"
+        ]
       },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "2.294294.xyz"
-        },
-        "path": "/snippets"
-      }
+      "congestion_control": "bbr"
     }
   ],
   "route": {
