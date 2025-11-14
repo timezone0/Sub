@@ -95,9 +95,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,9 +106,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -117,9 +117,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -130,9 +130,9 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,9 +142,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -154,9 +154,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -165,9 +165,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇦🇱 阿尔巴尼亚 01"
+        "🇨🇦 加拿大 01",
+        "🇺🇸 美国 01",
+        "🇨🇿 捷克 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -202,48 +202,51 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
-      "type": "tuic",
-      "server": "detuic.yydzx.xyz",
-      "server_port": 15863,
-      "uuid": "5b7124d0-7092-466c-b9fa-c13be64f0cb0",
-      "password": "5b7124d0-7092-466c-b9fa-c13be64f0cb0",
+      "tag": "🇨🇦 加拿大 01",
+      "type": "hysteria2",
+      "server": "140.238.137.165",
+      "server_port": 30102,
+      "password": "338ce171-d764-4610-8fd5-6688b0d321f0",
       "tls": {
         "enabled": true,
-        "server_name": "detuic.yydzx.xyz",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "congestion_control": "bbr"
+        "server_name": "du.wish.ml",
+        "insecure": true
+      }
     },
     {
-      "tag": "🇩🇪 德国 02",
-      "type": "vless",
-      "server": "91.99.182.255",
-      "server_port": 57917,
-      "uuid": "3a5cee54-b846-492a-bf85-9113b7fbfc35",
-      "packet_encoding": "xudp"
+      "tag": "🇺🇸 美国 01",
+      "type": "vmess",
+      "server": "aflzzul.meiquankongjian.com",
+      "server_port": 52513,
+      "uuid": "342bacfd-2b8f-3f49-a16e-439db5b0b9d5",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "aflzzul.meiquankongjian.com"
+        },
+        "path": "/564dfa20/"
+      }
     },
     {
-      "tag": "🇦🇱 阿尔巴尼亚 01",
+      "tag": "🇨🇿 捷克 01",
       "type": "vless",
-      "server": "185.177.238.80",
-      "server_port": 443,
-      "uuid": "1762a070-294a-4999-9c59-05aa4922feed",
+      "server": "czech.marzxo.biz",
+      "server_port": 8094,
+      "uuid": "95e1187b-447f-2dac-d18f-6e183922d12a",
       "tls": {
         "enabled": true,
-        "server_name": "nl3.truservice.top",
+        "server_name": "refersion.com",
         "insecure": false,
         "reality": {
           "enabled": true,
-          "public_key": "VA5-XSH73WyopK0i8jc2i-23N0VPVwmN8w7TX1MnVyg",
-          "short_id": "9df18b8856e52959"
+          "public_key": "Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU",
+          "short_id": "828348fc6d8e49cf"
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "packet_encoding": "xudp",
