@@ -97,11 +97,8 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -112,11 +109,8 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,11 +121,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -144,11 +135,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -160,11 +148,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -176,11 +161,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -191,11 +173,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇬🇧 英国 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇮🇪 爱尔兰 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -240,7 +219,9 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3%2Ch2%2Chttp%2F1.1"
+          "h3",
+          "h2",
+          "http/1.1"
         ]
       },
       "transport": {
@@ -266,98 +247,38 @@
       }
     },
     {
-      "tag": "🇬🇧 英国 01",
-      "type": "vless",
-      "server": "delilah.ns.cloudflare.com",
-      "server_port": 443,
-      "uuid": "53f0bca8-f170-4ef7-8031-c7d441189dbf",
+      "tag": "🇯🇵 日本 01",
+      "type": "tuic",
+      "server": "jptuic01.yydzx.xyz",
+      "server_port": 14958,
+      "uuid": "e715f8e2-664c-4f6e-bb71-56d967cebb96",
+      "password": "e715f8e2-664c-4f6e-bb71-56d967cebb96",
       "tls": {
         "enabled": true,
-        "server_name": "638987378208894304.sentra-amshr.info",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "638987378208894304.sentra-amshr.info"
-        },
-        "path": "/cahttingws"
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "103.149.182.203",
-      "server_port": 8388,
-      "method": "chacha20-ietf",
-      "password": "asd123456"
-    },
-    {
-      "tag": "🇭🇰 香港 02",
-      "type": "vmess",
-      "server": "219.76.13.166",
-      "server_port": 443,
-      "uuid": "ffde381b-4a30-41d4-90eb-151f228b06ea",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "aa.nbee.pp.ua",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {},
-        "path": "/qq"
-      }
-    },
-    {
-      "tag": "🇮🇪 爱尔兰 01",
-      "type": "vless",
-      "server": "34.254.224.37",
-      "server_port": 48056,
-      "uuid": "d811ecf9-4029-4794-a43e-3611c3575b9e",
-      "tls": {
-        "enabled": true,
-        "server_name": "34.254.224.37",
+        "server_name": "jptuic01.yydzx.xyz",
         "insecure": true,
         "alpn": [
-          "h2%2Chttp%2F1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+          "h3"
+        ]
       },
-      "transport": {
-        "type": "grpc",
-        "service_name": "www.bing.com"
-      }
+      "congestion_control": "bbr"
     },
     {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "43.160.246.221",
-      "server_port": 46920,
-      "uuid": "33a0c07b-82c7-40c8-aac7-4ab2071bcc03",
+      "tag": "🇨🇳 台湾 01",
+      "type": "tuic",
+      "server": "twtuic01.yydzx.xyz",
+      "server_port": 15968,
+      "uuid": "e715f8e2-664c-4f6e-bb71-56d967cebb96",
+      "password": "e715f8e2-664c-4f6e-bb71-56d967cebb96",
       "tls": {
         "enabled": true,
-        "server_name": "aws.amazon.com",
+        "server_name": "twtuic01.yydzx.xyz",
         "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "26jcWQerQE3ryBAm1OCcC7MrgGlI5I-gpdel1xf2Hx8"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "h3"
+        ]
       },
-      "flow": "xtls-rprx-vision"
+      "congestion_control": "bbr"
     }
   ],
   "route": {
