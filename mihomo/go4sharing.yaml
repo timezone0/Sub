@@ -81,69 +81,70 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "103.141.221.88", type: "ss", country: "🇭🇰HK", port: 8388, password: "asd123456", cipher: "chacha20-ietf", delay: 110}
-- {name: "🇹🇷 土耳其 01", server: "tr-1.stunnel.cc", type: "ss", country: "🇨🇿CZ", port: 8444, password: "tunnel-fbrof", cipher: "chacha20-ietf-poly1305", delay: 808}
-- {name: "🇩🇪 德国 01", server: "18.158.20.161", type: "trojan", country: "🇩🇪DE", port: 22223, udp: true, password: "telegram-id-directvpn", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, delay: 672}
-- {name: "🇩🇪 德国 02", server: "18.158.20.161", type: "trojan", country: "🇩🇪DE", port: 22222, password: "telegram-id-privatevpns", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, udp: true, delay: 1363}
-- {name: "🇲🇩 摩尔多瓦 01", server: "185.153.197.5", type: "ss", country: "🇷🇺RU", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 638}
-- {name: "🇸🇬 新加坡 01", server: "sl.fgmcx.top", type: "ss", country: "🇨🇳CN", port: 41047, password: "014e90df-a3ee-4654-a9f6-d118e02dd02a", cipher: "chacha20-ietf-poly1305", delay: 2246}
-- {name: "🇸🇪 瑞典 01", server: "dir.lightnright.com", type: "vmess", country: "🇸🇪SE", port: 5228, uuid: "6202ab997f570a6a180ae980b41f5789", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 574}
-- {name: "🇺🇸 美国 01", server: "116.49.237.130", type: "trojan", country: "🇭🇰HK", port: 4094, password: "BxceQaOe", sni: "t.me/ripaojiedian", skip-cert-verify: true, udp: true, delay: 1570}
-- {name: "🇺🇸 美国 02", server: "cgroup.node5.s2.nodelist-airport.com", type: "ss", country: "🇺🇸US", port: 27232, password: "8f3a835c-8a45-480d-ae35-1deb2c52dcae", cipher: "aes-256-gcm", delay: 534}
-- {name: "🇪🇸 西班牙 01", server: "213.159.67.124", type: "ss", country: "🇲🇩MD", port: 443, password: "mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp", cipher: "chacha20-ietf-poly1305", delay: 540}
-- {name: "🇻🇳 越南 01", server: "103.186.155.104", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 950}
-- {name: "🇻🇳 越南 02", server: "103.186.155.76", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 282}
-- {name: "🇻🇳 越南 03", server: "103.186.154.248", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1304}
-- {name: "🇻🇳 越南 04", server: "103.186.155.211", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 270}
-- {name: "🇻🇳 越南 05", server: "103.186.155.81", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1209}
-- {name: "🇻🇳 越南 06", server: "103.186.154.165", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 439}
-- {name: "🇻🇳 越南 07", server: "103.186.155.229", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 515}
-- {name: "🇻🇳 越南 08", server: "103.186.154.41", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 283}
-- {name: "🇻🇳 越南 09", server: "103.186.155.39", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 306}
-- {name: "🇻🇳 越南 10", server: "103.186.154.66", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 737}
-- {name: "🇻🇳 越南 11", server: "103.186.154.201", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 689}
-- {name: "🇻🇳 越南 12", server: "103.186.154.235", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1307}
-- {name: "🇻🇳 越南 13", server: "103.186.154.150", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 303}
-- {name: "🇻🇳 越南 14", server: "103.186.155.214", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 318}
-- {name: "🇻🇳 越南 15", server: "103.186.155.78", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 694}
-- {name: "🇻🇳 越南 16", server: "103.186.154.233", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2635}
-- {name: "🇻🇳 越南 17", server: "103.186.154.143", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 320}
-- {name: "🇻🇳 越南 18", server: "103.186.155.118", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 277}
-- {name: "🇻🇳 越南 19", server: "103.186.155.31", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 347}
-- {name: "🇻🇳 越南 20", server: "103.186.155.13", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 251}
-- {name: "🇻🇳 越南 21", server: "103.186.154.253", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 589}
-- {name: "🇻🇳 越南 22", server: "103.186.155.111", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 280}
-- {name: "🇻🇳 越南 23", server: "103.186.154.62", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1275}
-- {name: "🇻🇳 越南 24", server: "103.186.154.227", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 304}
-- {name: "🇻🇳 越南 25", server: "103.186.155.218", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 688}
-- {name: "🇻🇳 越南 26", server: "103.186.154.74", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 316}
-- {name: "🇻🇳 越南 27", server: "103.186.155.12", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1303}
-- {name: "🇻🇳 越南 28", server: "103.186.154.20", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 276}
-- {name: "🇻🇳 越南 29", server: "103.186.154.187", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 607}
-- {name: "🇻🇳 越南 30", server: "103.186.155.34", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 320}
-- {name: "🇻🇳 越南 31", server: "103.186.154.195", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 333}
-- {name: "🇻🇳 越南 32", server: "103.186.155.226", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 296}
-- {name: "🇻🇳 越南 33", server: "103.186.155.156", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 282}
-- {name: "🇻🇳 越南 34", server: "103.186.154.178", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 310}
-- {name: "🇻🇳 越南 35", server: "103.186.155.137", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 301}
-- {name: "🇻🇳 越南 36", server: "103.186.154.183", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 719}
-- {name: "🇻🇳 越南 37", server: "103.186.155.59", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2327}
-- {name: "🇰🇷 韩国 01", server: "221.139.79.57", type: "ss", country: "🇰🇷KR", port: 37008, password: "qwerREWQ@@", cipher: "aes-256-cfb", delay: 268}
+- {name: "🏴‍☠️ 埃塞俄比亚 01", server: "14.18.106.88", type: "ss", country: "🇨🇳CN", port: 6100, password: "123", cipher: "aes-256-gcm", delay: 437}
+- {name: "🇭🇰 香港 01", server: "103.149.182.79", type: "ss", country: "🇭🇰HK", port: 8388, password: "asd123456", cipher: "chacha20-ietf", delay: 225}
+- {name: "🇺🇦 乌克兰 01", server: "216.227.168.157", type: "vmess", country: "🇺🇸US", port: 45229, uuid: "469e0b31-30c3-4dab-800d-711232634ce1", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 802}
+- {name: "🇹🇷 土耳其 01", server: "tr-1.stunnel.cc", type: "ss", country: "🇨🇿CZ", port: 8444, password: "tunnel-fbrof", cipher: "chacha20-ietf-poly1305", delay: 1009}
+- {name: "🇧🇷 巴西 01", server: "213.159.66.206", type: "ss", country: "🇷🇺RU", port: 443, password: "pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu", cipher: "chacha20-ietf-poly1305", delay: 1336}
+- {name: "🇩🇪 德国 01", server: "63.180.120.57", type: "trojan", country: "🇺🇸US", port: 22223, password: "telegram-id-directvpn", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, udp: true, delay: 1048}
+- {name: "🇩🇪 德国 02", server: "63.180.120.57", type: "trojan", country: "🇺🇸US", port: 22222, password: "telegram-id-privatevpns", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, udp: true, delay: 2719}
+- {name: "🇲🇩 摩尔多瓦 01", server: "185.153.197.5", type: "ss", country: "🇷🇺RU", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 763}
+- {name: "🇫🇷 法国 01", server: "15.188.0.98", type: "trojan", country: "🇫🇷FR", port: 22223, udp: true, password: "telegram-id-directvpn", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, delay: 732}
+- {name: "🇺🇸 美国 01", server: "154.38.116.8", type: "vmess", country: "🇺🇸US", port: 443, uuid: "4bf075f5-4d5e-4d39-f5ab-b32a86250f0e", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/aa", headers: {HOST: "hk.nbee.pp.ua"}}, delay: 709, servername: "hk.nbee.pp.ua"}
+- {name: "🇺🇸 美国 02", server: "23.247.137.165", type: "ss", country: "🇧🇭 BH", port: 2377, password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", cipher: "chacha20-ietf-poly1305", plugin: "obfs", plugin-opts: {host: "(TG @WangCai2)32cf132:178330", mode: "tls"}, delay: 926}
+- {name: "🇺🇸 美国 03", server: "23.247.137.72", type: "ss", country: "🇧🇭 BH", port: 2377, password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", cipher: "chacha20-ietf-poly1305", plugin: "obfs", plugin-opts: {host: "(TG @WangCai2)32cf132:178330", mode: "tls"}, delay: 1439}
+- {name: "🇺🇸 美国 04", server: "23.247.137.64", type: "ss", country: "🇧🇭 BH", port: 2377, password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", cipher: "chacha20-ietf-poly1305", plugin: "obfs", plugin-opts: {host: "(TG @WangCai2)32cf132:178330", mode: "tls"}, delay: 474}
+- {name: "🇺🇸 美国 05", server: "23.247.137.76", type: "ss", country: "🇧🇭 BH", port: 2377, password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv", cipher: "chacha20-ietf-poly1305", plugin: "obfs", plugin-opts: {host: "(TG @WangCai2)32cf132:178330", mode: "tls"}, delay: 469}
+- {name: "🇳🇱 荷兰 01", server: "51.158.204.165", type: "ss", port: 443, udp: true, password: "0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG", cipher: "chacha20-ietf-poly1305", delay: 507}
+- {name: "🇵🇹 葡萄牙 01", server: "185.231.233.112", type: "ss", country: "🇵🇹PT", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 1236}
+- {name: "🇻🇳 越南 01", server: "103.186.155.139", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 666}
+- {name: "🇻🇳 越南 02", server: "103.186.155.224", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1799}
+- {name: "🇻🇳 越南 03", server: "103.186.155.105", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 866}
+- {name: "🇻🇳 越南 04", server: "103.186.154.194", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 515}
+- {name: "🇻🇳 越南 05", server: "103.186.155.103", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 492}
+- {name: "🇻🇳 越南 06", server: "103.186.155.67", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 533}
+- {name: "🇻🇳 越南 07", server: "103.186.155.237", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 519}
+- {name: "🇻🇳 越南 08", server: "103.186.154.148", type: "ss", port: 38388, udp: true, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1274}
+- {name: "🇻🇳 越南 09", server: "103.186.154.243", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 311}
+- {name: "🇻🇳 越南 10", server: "103.186.154.196", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 289}
+- {name: "🇻🇳 越南 11", server: "103.186.154.184", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 292}
+- {name: "🇻🇳 越南 12", server: "103.186.154.78", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 673}
+- {name: "🇻🇳 越南 13", server: "103.186.154.204", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 468}
+- {name: "🇻🇳 越南 14", server: "103.186.154.49", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 463}
+- {name: "🇻🇳 越南 15", server: "103.186.154.225", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 528}
+- {name: "🇻🇳 越南 16", server: "103.186.155.16", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 482}
+- {name: "🇻🇳 越南 17", server: "103.186.154.36", type: "ss", country: "🏁 ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 267}
+- {name: "🇻🇳 越南 18", server: "103.186.154.193", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1154}
+- {name: "🇻🇳 越南 19", server: "103.186.154.198", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 975}
+- {name: "🇻🇳 越南 20", server: "103.186.155.154", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2120}
+- {name: "🇻🇳 越南 21", server: "103.186.154.43", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 673}
+- {name: "🇻🇳 越南 22", server: "103.186.154.249", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 661}
+- {name: "🇻🇳 越南 23", server: "103.186.154.53", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 699}
+- {name: "🇻🇳 越南 24", server: "103.186.155.29", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 848}
+- {name: "🇻🇳 越南 25", server: "103.186.154.237", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2671}
+- {name: "🇻🇳 越南 26", server: "103.186.155.43", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 609}
+- {name: "🇰🇷 韩国 01", server: "154.90.62.168", type: "ss", country: "🇺🇸 US", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 2807}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -170,17 +171,6 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 - name: "AUTO"
   type: "url-test"
@@ -188,16 +178,22 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -224,32 +220,27 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -276,17 +267,6 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 - name: "FCM"
   type: "select"
@@ -294,16 +274,22 @@ proxy-groups:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -330,33 +316,28 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -383,33 +364,28 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -436,32 +412,27 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
+  - "🏴‍☠️ 埃塞俄比亚 01"
   - "🇭🇰 香港 01"
+  - "🇺🇦 乌克兰 01"
   - "🇹🇷 土耳其 01"
+  - "🇧🇷 巴西 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇲🇩 摩尔多瓦 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇪 瑞典 01"
+  - "🇫🇷 法国 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇪🇸 西班牙 01"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇳🇱 荷兰 01"
+  - "🇵🇹 葡萄牙 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -488,17 +459,6 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇻🇳 越南 29"
-  - "🇻🇳 越南 30"
-  - "🇻🇳 越南 31"
-  - "🇻🇳 越南 32"
-  - "🇻🇳 越南 33"
-  - "🇻🇳 越南 34"
-  - "🇻🇳 越南 35"
-  - "🇻🇳 越南 36"
-  - "🇻🇳 越南 37"
   - "🇰🇷 韩国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
