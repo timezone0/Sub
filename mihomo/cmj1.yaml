@@ -83,10 +83,9 @@ proxies:
     padding: true
 - {type: "vless", name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3", "h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/?mode=auto&direct"}, encryption: "none", servername: "vless.keepfuck.me"}
 - {type: "vless", name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3", "h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "vless.keepfuck.me"}, path: "/?mode=auto&direct"}, encryption: "none", servername: "vless.keepfuck.me"}
-- {type: "hysteria2", name: "🇯🇵 日本 01", server: "jp4.dexlos.com", port: 7940, password: "95D27EEF-B7AE-4076-BA39-40FDFA3D0F61", sni: "jp4.dexlos.com", skip-cert-verify: true, tfo: false}
+- {type: "hysteria2", name: "🇯🇵 日本 01", server: "jp6.oomz.ru", port: 30000, password: "e7965e64-e001-4e8c-8273-39c61ff4a094", sni: "bing.com", skip-cert-verify: true, tfo: false}
 - {type: "hysteria2", name: "🇸🇬 新加坡 01", server: "sg3.oomz.ru", port: 30000, password: "e7965e64-e001-4e8c-8273-39c61ff4a094", sni: "bing.com", skip-cert-verify: true, tfo: false}
-- {type: "hysteria2", name: "🇺🇸 美国 01", server: "us9.dexlos.com", port: 17375, password: "95D27EEF-B7AE-4076-BA39-40FDFA3D0F61", sni: "us9.dexlos.com", skip-cert-verify: true, tfo: false}
-- {type: "hysteria2", name: "🇺🇸 美国 02", server: "us7.dexlos.com", port: 13554, password: "95D27EEF-B7AE-4076-BA39-40FDFA3D0F61", sni: "us7.dexlos.com", skip-cert-verify: true, tfo: false}
+- {name: "🇭🇰 香港 01", type: "vmess", server: "219.76.13.166", port: 443, cipher: "auto", uuid: "ffde381b-4a30-41d4-90eb-151f228b06ea", alterId: 0, tls: true, network: "ws", ws-opts: {path: "/qq", headers: {}}, servername: "aa.nbee.pp.ua"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -96,8 +95,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -108,8 +106,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -118,8 +115,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -130,8 +126,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -141,8 +136,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -152,8 +146,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -162,8 +155,7 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
