@@ -95,14 +95,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -111,14 +106,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,14 +117,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -145,14 +130,9 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -162,14 +142,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -179,14 +154,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -195,14 +165,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇯🇵 日本 01",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
-        "🇷🇺 俄罗斯 01",
-        "🇩🇪 德国 01"
+        "🇲🇽 墨西哥 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -237,132 +202,39 @@
       }
     },
     {
-      "tag": "🇯🇵 日本 01",
-      "type": "hysteria2",
-      "server": "jp4.dexlos.com",
-      "server_port": 7940,
-      "password": "95D27EEF-B7AE-4076-BA39-40FDFA3D0F61",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp4.dexlos.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇳🇱 荷兰 01",
-      "type": "hysteria",
-      "server": "51.159.226.1",
-      "server_port": 49003,
-      "disable_mtu_discovery": false,
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "auth_str": "dongtaiwang.com",
-      "up_mbps": 11,
-      "down_mbps": 55
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "103.149.182.203",
-      "server_port": 8388,
-      "method": "chacha20-ietf",
-      "password": "asd123456"
-    },
-    {
-      "tag": "🇭🇰 香港 02",
-      "type": "vmess",
-      "server": "749bd19a-sv4n40-svq7uu-1gevg.hk3.p5pv.com",
-      "server_port": 80,
-      "uuid": "f02ee2b4-d760-11ec-bd7c-f23c913c8d2b",
-      "security": "auto",
-      "alter_id": 2,
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "broadcastlv.chat.bilibili.com"
-        },
-        "path": "/"
-      }
-    },
-    {
       "tag": "🇺🇸 美国 01",
-      "type": "trojan",
-      "server": "167.68.4.199",
-      "server_port": 2053,
-      "password": "Aimer",
+      "type": "hysteria2",
+      "server": "07b6fd2c-t63340-tao3bn-ggww.us.hyhuawei.com",
+      "server_port": 443,
+      "password": "bcc58e88-e147-11ec-b286-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "epge.muarua.filegear-sg.me",
+        "server_name": "07b6fd2c-t63340-tao3bn-ggww.us.hyhuawei.com",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "epge.muarua.filegear-sg.me"
-        },
-        "path": "/?ed=2560&proxyip=ts.hpc.tw"
-      }
+      "server_ports": [
+        "30000:60000"
+      ]
     },
     {
       "tag": "🇺🇸 美国 02",
+      "type": "hysteria2",
+      "server": "2f09a1f8-t63340-t7hjku-1rgxu.us.hyhuawei.com",
+      "server_port": 443,
+      "password": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "2f09a1f8-t63340-t7hjku-1rgxu.us.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
+      "tag": "🇲🇽 墨西哥 01",
       "type": "shadowsocks",
-      "server": "3.22.241.41",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇷🇺 俄罗斯 01",
-      "type": "vless",
-      "server": "217.12.40.91",
-      "server_port": 443,
-      "uuid": "74946f36-45d7-436c-b24e-ba5002cad041",
-      "tls": {
-        "enabled": true,
-        "server_name": "m.vk.ru",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "UEKLXjQmUAh_6hhHqB4fmCo68a15hC18hgRCWbzr3UE",
-          "short_id": "27e53bbcab7593d7"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇩🇪 德国 01",
-      "type": "vless",
-      "server": "109.176.202.75",
-      "server_port": 443,
-      "uuid": "9997f548-4be6-441e-89f4-c74ffa6f2011",
-      "tls": {
-        "enabled": true,
-        "server_name": "refersion.com",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "V_HeKEXJ3CrfQTchko5HdBuRTv_c6YYj-oU-0baOrVY",
-          "short_id": "9dff1712eccd71"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision"
+      "server": "slur.izenny.com",
+      "server_port": 48907,
+      "method": "chacha20-ietf-poly1305",
+      "password": "d9b85218-da37-42a7-8906-67bab810252c"
     }
   ],
   "route": {
