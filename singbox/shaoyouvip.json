@@ -95,13 +95,7 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -110,13 +104,7 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -125,13 +113,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,13 +124,7 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -158,13 +134,7 @@
       "outbounds": [
         "direct",
         "select",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -174,13 +144,7 @@
       "outbounds": [
         "select",
         "direct",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -189,13 +153,7 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇳🇱 荷兰 01",
-        "🇭🇰 香港 01",
-        "🇮🇷 伊朗 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇫🇮 芬兰 01"
+        "🇧🇬 保加利亚 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -230,119 +188,27 @@
       }
     },
     {
-      "tag": "🇳🇱 荷兰 01",
-      "type": "hysteria",
-      "server": "51.159.226.1",
-      "server_port": 49003,
-      "disable_mtu_discovery": false,
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "auth_str": "dongtaiwang.com",
-      "up_mbps": 11,
-      "down_mbps": 55
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "103.149.182.38",
-      "server_port": 8388,
-      "method": "chacha20-ietf",
-      "password": "asd123456"
-    },
-    {
-      "tag": "🇮🇷 伊朗 01",
+      "tag": "🇧🇬 保加利亚 01",
       "type": "vless",
-      "server": "de.nodes.rocketnetwork.ru",
-      "server_port": 443,
-      "uuid": "bccbecc9-c1d2-45d1-b3fa-771a19b9831c",
+      "server": "de-2.shvurgceo.online",
+      "server_port": 38395,
+      "uuid": "0f8e2cfc-fdf2-46c7-bfcd-ce8273d5ff13",
       "tls": {
         "enabled": true,
-        "server_name": "fr.nodes.rocketnetwork.ru",
+        "server_name": "vk.com",
         "insecure": false,
         "reality": {
           "enabled": true,
-          "public_key": "Mn0DIMKW6zu0_D3E1qKO7xMlIVZvB-rqO_-f7Le2vAs",
-          "short_id": "428ef87fd47a3a32"
+          "public_key": "DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA",
+          "short_id": "ab12cd34"
         },
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
+      "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇩🇪 德国 01",
-      "type": "vless",
-      "server": "www.speedtest.net",
-      "server_port": 2082,
-      "uuid": "e1c54109-3a96-48f6-9efe-f2b8e4f1b64a",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.",
-          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2082,
-        "path": "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn"
-      }
-    },
-    {
-      "tag": "🇩🇪 德国 02",
-      "type": "vless",
-      "server": "167.235.249.196",
-      "server_port": 443,
-      "uuid": "Warpi-Free-Vpn-In-GooglePlay",
-      "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇩🇪 德国 03",
-      "type": "vless",
-      "server": "namemc.com",
-      "server_port": 2095,
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "114514.pusytroller.cf",
-          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇫🇮 芬兰 01",
-      "type": "vmess",
-      "server": "free.best-antiaging-reviews.com",
-      "server_port": 2083,
-      "uuid": "1cb2b225-1604-49b2-8897-eef86fd6dcf5",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "free.best-antiaging-reviews.com",
-        "insecure": false,
-        "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
-        ]
-      },
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {},
-        "path": "/"
-      }
     }
   ],
   "route": {

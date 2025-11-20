@@ -81,113 +81,49 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {alpn: ["h3"], auth-str: "dongtaiwang.com", down: "55", name: "🇳🇱 荷兰 01", port: 49003, protocol: "udp", server: "51.159.226.1", skip-cert-verify: true, sni: "apple.com", type: "hysteria", up: "11"}
-- {cipher: "chacha20-ietf", country: "🇭🇰HK", delay: 131, name: "🇭🇰 香港 01", password: "asd123456", port: 8388, server: "103.149.182.38", type: "ss"}
-- {client-fingerprint: "chrome", encryption: "none", flow: "xtls-rprx-vision", name: "🇮🇷 伊朗 01", network: "tcp", port: 443, reality-opts: {public-key: "Mn0DIMKW6zu0_D3E1qKO7xMlIVZvB-rqO_-f7Le2vAs", short-id: "428ef87fd47a3a32"}, server: "de.nodes.rocketnetwork.ru", tls: true, type: "vless", uuid: "bccbecc9-c1d2-45d1-b3fa-771a19b9831c", servername: "fr.nodes.rocketnetwork.ru"}
-- {encryption: "none", name: "🇩🇪 德国 01", network: "ws", port: 2082, server: "www.speedtest.net", type: "vless", udp: true, uuid: "e1c54109-3a96-48f6-9efe-f2b8e4f1b64a", ws-opts: {headers: {Host: "novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.", User-Agent: "Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36"}, path: "/@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2082}, xudp: true}
-- {http-opts: {headers: {}, path: ["/"]}, name: "🇩🇪 德国 02", network: "tcp", port: 443, server: "167.235.249.196", type: "vless", udp: true, uuid: "Warpi-Free-Vpn-In-GooglePlay", xudp: true}
-- {encryption: "none", name: "🇩🇪 德国 03", network: "ws", port: 2095, server: "namemc.com", type: "vless", udp: true, uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", ws-opts: {headers: {Host: "114514.pusytroller.cf", User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: "/"}, xudp: true}
-- {alterId: 0, cipher: "auto", country: "🇺🇸 US", h2-opts: {}, http-opts: {}, name: "🇱🇹 立陶宛 01", network: "none", port: 19365, server: "2.59.62.63", skip-cert-verify: true, type: "vmess", uuid: "9583a647-b0ba-47b0-d4b0-4e12a0201d67"}
-- {client-fingerprint: "chrome", name: "🇺🇸 美国 01", network: "ws", password: "er668", port: 443, server: "kfjdi.pages.dev", skip-cert-verify: false, type: "trojan", udp: true, ws-opts: {headers: {User-Agent: "Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"}, path: "/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN"}, sni: "kfjdi.pages.dev"}
-- {alpn: ["h3", "h2", "http/1.1"], alterId: "0", cipher: "auto", name: "🇫🇮 芬兰 01", network: "ws", port: 2083, server: "free.best-antiaging-reviews.com", skip-cert-verify: false, tls: true, type: "vmess", udp: true, uuid: "1cb2b225-1604-49b2-8897-eef86fd6dcf5", ws-opts: {headers: {}, path: "/"}, xudp: true, servername: "free.best-antiaging-reviews.com"}
+- {client-fingerprint: "chrome", encryption: "none", flow: "xtls-rprx-vision", name: "🇧🇬 保加利亚 01", network: "tcp", port: 38395, reality-opts: {public-key: "DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA", short-id: "ab12cd34"}, server: "de-2.shvurgceo.online", tls: true, type: "vless", udp: true, uuid: "0f8e2cfc-fdf2-46c7-bfcd-ce8273d5ff13", xudp: true, servername: "vk.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 - name: "FCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇳🇱 荷兰 01"
-  - "🇭🇰 香港 01"
-  - "🇮🇷 伊朗 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇱🇹 立陶宛 01"
-  - "🇺🇸 美国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇧🇬 保加利亚 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
