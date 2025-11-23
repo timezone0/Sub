@@ -268,7 +268,9 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3%2Ch2%2Chttp%2F1.1"
+          "h3",
+          "h2",
+          "http/1.1"
         ]
       },
       "transport": {
@@ -326,7 +328,10 @@
         "enabled": true,
         "server_name": "jp8.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "15000:16000"
+      ]
     },
     {
       "tag": "🇯🇵 日本 02",
@@ -338,7 +343,10 @@
         "enabled": true,
         "server_name": "jp2.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "3000:4000"
+      ]
     },
     {
       "tag": "🇯🇵 日本 03",
@@ -371,7 +379,10 @@
         "enabled": true,
         "server_name": "jp9.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "17000:18000"
+      ]
     },
     {
       "tag": "🇯🇵 日本 05",
@@ -383,7 +394,10 @@
         "enabled": true,
         "server_name": "jp7.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "13000:14000"
+      ]
     },
     {
       "tag": "🇺🇸 美国 01",
@@ -395,7 +409,10 @@
         "enabled": true,
         "server_name": "us6.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "11000:12000"
+      ]
     },
     {
       "tag": "🇺🇸 美国 02",
@@ -407,7 +424,10 @@
         "enabled": true,
         "server_name": "us4.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "7000:8000"
+      ]
     },
     {
       "tag": "🇺🇸 美国 03",
@@ -419,7 +439,10 @@
         "enabled": true,
         "server_name": "us7.dexlos.com",
         "insecure": true
-      }
+      },
+      "server_ports": [
+        "13000:14000"
+      ]
     }
   ],
   "route": {
