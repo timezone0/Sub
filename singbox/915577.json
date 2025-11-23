@@ -239,7 +239,7 @@
       "tls": {
         "enabled": true,
         "server_name": "joss.gpj1.web.id",
-        "insecure": true
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -274,7 +274,7 @@
       "tls": {
         "enabled": true,
         "server_name": "yandex.ru",
-        "insecure": true,
+        "insecure": false,
         "reality": {
           "enabled": true,
           "public_key": "QLOalXjMmrryGjcV7-jMDyWD2E7I23r9A95nqaP0Pho",
@@ -295,8 +295,11 @@
       "tls": {
         "enabled": true,
         "server_name": "ebae8aba-t66sg0-t7kvg3-1mij.us.hyhuawei.com",
-        "insecure": true
-      }
+        "insecure": false
+      },
+      "server_ports": [
+        "30000:60000"
+      ]
     }
   ],
   "route": {
