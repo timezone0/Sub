@@ -86,7 +86,6 @@ proxies:
 - {name: "🇭🇰 香港 03", password: "2cf6d686799e6fa95316394064f26c0a", port: 443, server: "58.152.110.92", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 04", password: "BxceQaOe", port: 443, server: "58.152.18.95", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 05", password: "BxceQaOe", port: 443, server: "58.152.53.22", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 06", password: "dd2f25b4c70689de8bc0f7fa9d6591cb", port: 443, server: "58.152.110.92", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 01", password: "BxceQaOe", port: 2145, server: "153.121.67.215", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 02", password: "2cf6d686799e6fa95316394064f26c0a", port: 3169, server: "160.16.57.238", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 03", password: "2cf6d686799e6fa95316394064f26c0a", port: 3093, server: "160.16.144.208", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
@@ -98,14 +97,15 @@ proxies:
 - {name: "🇺🇸 美国 03", password: "BxceQaOe", port: 2569, server: "18.162.97.46", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 04", port: 180, server: "82.198.246.97", skip-cert-verify: false, tls: false, type: "vmess", uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 05", network: "tcp", port: 180, server: "82.198.246.97", tls: false, type: "vmess", uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇺🇸 美国 06", password: "telegram-id-privatevpns", port: 22222, server: "51.45.12.251", skip-cert-verify: true, sni: "trojan.burgerip.co.uk", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 07", password: "telegram-id-directvpn", port: 22223, server: "51.45.12.251", skip-cert-verify: true, sni: "trojan.burgerip.co.uk", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇧🇪 比利时 01", network: "ws", password: "29ca24a5-e8aa-4cbd-9bcb-f96aba1d6f15", port: 443, server: "34.22.190.30", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/34.22.190.30=443"}, client-fingerprint: "chrome"}
 - {name: "🇨🇦 加拿大 01", network: "ws", password: "8001fbf7-4b59-4415-a4bd-8bfded02c9c6", port: 443, server: "69.28.82.253", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/69.28.82.253=443"}, client-fingerprint: "chrome"}
-- {name: "🇩🇪 德国 01", password: "telegram-id-privatevpns", port: 22222, server: "52.57.38.0", skip-cert-verify: true, sni: "trojan.burgerip.co.uk", type: "trojan", udp: true, client-fingerprint: "chrome"}
-- {name: "🇩🇪 德国 02", password: "telegram-id-directvpn", port: 22223, server: "52.57.38.0", skip-cert-verify: true, sni: "trojan.burgerip.co.uk", type: "trojan", udp: true, client-fingerprint: "chrome"}
+- {name: "🇨🇭 瑞士 01", network: "ws", password: "8d047125-8467-4724-bb62-ef64405dca78", port: 443, server: "91.192.102.92", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/91.192.102.92=443"}, client-fingerprint: "chrome"}
+- {name: "🇪🇪 爱沙尼亚 01", network: "ws", password: "3208e968-b862-4e2e-ad90-2b49e7ce7afb", port: 443, server: "37.252.5.75", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/37.252.5.75=443"}, client-fingerprint: "chrome"}
 - {name: "🇪🇸 西班牙 01", network: "ws", password: "9ccc3e1d-3df5-4348-aa05-738310149cc3", port: 443, server: "45.86.229.28", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/45.86.229.28=443"}, client-fingerprint: "chrome"}
-- {name: "🇫🇷 法国 01", network: "ws", password: "e6f0e8b0-3dc5-4d53-a23a-86c02d5ba098", port: 443, server: "51.15.210.1", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/51.15.210.1=443"}, client-fingerprint: "chrome"}
-- {name: "🇮🇹 意大利 01", network: "ws", password: "e04af4a8-ce76-4026-8480-82d0e35dd239", port: 8443, server: "94.177.199.119", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/94.177.199.119=8443"}, client-fingerprint: "chrome"}
-- {name: "🇳🇱 荷兰 01", network: "ws", password: "ee339912-0c35-4fac-8d85-180b65bcd49c", port: 443, server: "81.22.132.183", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/81.22.132.183=443"}, client-fingerprint: "chrome"}
-- {name: "🇳🇱 荷兰 02", network: "ws", password: "35f8e682-54bd-42c7-b537-94a8e4c84bcd", port: 443, server: "89.110.120.197", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/89.110.120.197=443"}, client-fingerprint: "chrome"}
+- {name: "🇳🇱 荷兰 01", network: "ws", password: "e683d757-b855-44c3-b0b6-22586444914a", port: 443, server: "86.107.197.239", skip-cert-verify: false, sni: "joss.gpj1.web.id", type: "trojan", udp: true, ws-opts: {headers: {Host: "joss.gpj1.web.id"}, path: "/Free-VPN-CF-Geo-Project/86.107.197.239=443"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 01", password: "Qzy7tgpRhu", port: 443, server: "37.18.14.33", skip-cert-verify: true, sni: "m.vk.com", type: "trojan", udp: true, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -116,7 +116,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -128,14 +127,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -147,7 +147,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -159,14 +158,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -176,7 +176,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -188,14 +187,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -207,7 +207,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -219,14 +218,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -237,7 +237,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -249,14 +248,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -267,7 +267,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -279,14 +278,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -296,7 +296,6 @@ proxy-groups:
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
-  - "🇭🇰 香港 06"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -308,14 +307,15 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇧🇪 比利时 01"
   - "🇨🇦 加拿大 01"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
+  - "🇨🇭 瑞士 01"
+  - "🇪🇪 爱沙尼亚 01"
   - "🇪🇸 西班牙 01"
-  - "🇫🇷 法国 01"
-  - "🇮🇹 意大利 01"
   - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
+  - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
