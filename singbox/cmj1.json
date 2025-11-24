@@ -226,9 +226,7 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
+          "h3%2Ch2%2Chttp%2F1.1"
         ]
       },
       "transport": {
@@ -273,16 +271,14 @@
         "server_name": "c03237cb.ba73fe85.netlib.re",
         "insecure": true,
         "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
+          "http%2F1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "c03237cb.ba73fe85.netlib.re"
+        },
         "path": "/"
       }
     },
@@ -297,11 +293,13 @@
       "tls": {
         "enabled": true,
         "server_name": "sg.hietamei-qingzeuyq.top",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "www.ub888.cc"
+        },
         "path": "/"
       }
     }
