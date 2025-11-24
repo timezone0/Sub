@@ -310,9 +310,7 @@
         "server_name": "vless.keepfuck.me",
         "insecure": true,
         "alpn": [
-          "h3",
-          "h2",
-          "http/1.1"
+          "h3%2Ch2%2Chttp%2F1.1"
         ]
       },
       "transport": {
@@ -618,15 +616,13 @@
       "tls": {
         "enabled": true,
         "server_name": "joss.gpj1.web.id",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "headers": {},
+        "headers": {
+          "Host": "joss.gpj1.web.id"
+        },
         "path": "/Free-VPN-CF-Geo-Project/81.91.214.85=443"
       }
     }
