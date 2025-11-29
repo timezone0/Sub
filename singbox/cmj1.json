@@ -97,7 +97,7 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -108,7 +108,7 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -119,7 +119,7 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -132,7 +132,7 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -144,7 +144,7 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -156,7 +156,7 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,7 +167,7 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -238,25 +238,14 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "vless",
-      "server": "202.85.53.160",
-      "server_port": 7000,
-      "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
-      "tls": {
-        "enabled": true,
-        "server_name": "kuangbao.xiejiang.dpdns.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "kuangbao.xiejiang.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
+      "tag": "🇺🇸 美国 01",
+      "type": "shadowsocks",
+      "server": "gd.bjnet2.com",
+      "server_port": 36608,
+      "method": "aes-128-gcm",
+      "password": "84d85af8-2807-4306-a701-f784676b77c3",
+      "plugin": "obfs-local",
+      "plugin_opts": "obfs=http;obfs-host=de5bdbffa87896a4b126f8b62150bb4e.baidu.com"
     }
   ],
   "route": {
