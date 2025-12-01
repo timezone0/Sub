@@ -97,7 +97,9 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -108,7 +110,9 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -119,7 +123,9 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -132,7 +138,9 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -144,7 +152,9 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -156,7 +166,9 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,7 +179,9 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03"
       ],
       "interrupt_exist_connections": true
     },
@@ -239,11 +253,70 @@
     },
     {
       "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "a001.standard-nodes-chickenfarms.com",
-      "server_port": 50000,
-      "method": "aes-256-gcm",
-      "password": "176c983f-6a7f-4a96-9865-891a6c48ec86"
+      "type": "vmess",
+      "server": "n1749032179.kzxds.cn",
+      "server_port": 443,
+      "uuid": "e1830fac-d81f-4799-826c-297bc25273d5",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "n1749032179.kzxds.cn",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "n1749032179.kzxds.cn"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vless",
+      "server": "202.85.53.160",
+      "server_port": 7000,
+      "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kuangbao.xiejiang.dpdns.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "kuangbao.xiejiang.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "vless",
+      "server": "202.85.53.77",
+      "server_port": 7000,
+      "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kuangbao.xiejiang.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "kuangbao.xiejiang.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
     }
   ],
   "route": {
