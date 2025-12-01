@@ -83,13 +83,8 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇭🇰 香港 01", server: "202.85.53.77", port: 7000, type: "vless", uuid: "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "kuangbao.xiejiang.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "kuangbao.xiejiang.dpdns.org"}
-- {name: "🇭🇰 香港 02", server: "101.32.72.125", port: 443, type: "vless", uuid: "e258977b-e413-4718-a3af-02d75492c349", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "www.x-aniu---hk.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "www.x-aniu---hk.netlib.re"}
-- {name: "🇯🇵 日本 01", server: "uirk9-g05.jp03-j7-vm0.entry.fr0528.art", port: 21585, type: "vmess", uuid: "8ee65c79-4487-32ff-b896-62c8dce05921", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: true, servername: "uirk9-g05.jp03-j7-vm0.entry.fr0528.art"}
-- {name: "🇯🇵 日本 02", server: "h6zks-g01.jp05-h6-vm0.entry.fr0528.art", port: 46482, type: "vmess", uuid: "763e08a1-c289-3a41-aa80-e63a56bc1447", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 03", server: "78smy-g01.jp05-h6-vm0.entry.fr0528.art", port: 46482, type: "vmess", uuid: "1a9f857f-9a07-3a8c-a155-f9ab3c457343", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 04", server: "5tzjp-g03.jp01-nn-vm0.entry.fr0528.art", port: 21583, type: "vmess", uuid: "339cf625-ef70-3be4-8965-5a1e3f384d9f", alterId: 1, cipher: "auto", tls: true, skip-cert-verify: true, servername: "5tzjp-g03.jp01-nn-vm0.entry.fr0528.art"}
-- {name: "🇸🇬 新加坡 01", server: "129.150.49.58", port: 18650, type: "vless", uuid: "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "kuangbao.xiejiang.dpdns.org"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "kuangbao.xiejiang.dpdns.org"}
+- {name: "🇯🇵 日本 01", server: "ss.029.node-for-bigairport.win", port: 36887, type: "ss", cipher: "aes-256-gcm", password: "c69374da-2208-4cbd-b81e-cdf88b5e7f53"}
+- {name: "🇯🇵 日本 02", server: "blidt-g03.jp05-h6-vm0.entry.fr0528.art", port: 46484, type: "vmess", uuid: "339cf625-ef70-3be4-8965-5a1e3f384d9f", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -97,13 +92,8 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -112,26 +102,16 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -140,13 +120,8 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -154,13 +129,8 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -168,26 +138,16 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇸🇬 新加坡 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
