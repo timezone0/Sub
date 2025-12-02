@@ -97,8 +97,8 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,8 +109,8 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -121,8 +121,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -135,8 +135,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -148,8 +148,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -161,8 +161,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -173,8 +173,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01",
-        "🇸🇬 新加坡 01"
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -245,52 +245,25 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "vless",
-      "server": "202.85.53.160",
-      "server_port": 7000,
-      "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+      "tag": "🇯🇵 日本 01",
+      "type": "trojan",
+      "server": "os-3.tr202501.com",
+      "server_port": 443,
+      "password": "3tKOYNqAiP0Url9JDX",
       "tls": {
         "enabled": true,
-        "server_name": "kuangbao.xiejiang.dpdns.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "kuangbao.xiejiang.dpdns.org"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
+        "server_name": "os-3.tr202501.com",
+        "insecure": true
       }
     },
     {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "8.35.211.162",
-      "server_port": 443,
-      "uuid": "54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58",
-      "tls": {
-        "enabled": true,
-        "server_name": "bp.suoni.nyc.mn",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "bp.suoni.nyc.mn"
-        },
-        "path": "/proxyip=ProxyIP.SG.CMLiussss.net"
-      }
+      "tag": "🇯🇵 日本 02",
+      "type": "vmess",
+      "server": "7cmy5-g03.jp04-1d-vm0.entry.fr0528.art",
+      "server_port": 446,
+      "uuid": "0a503c30-d319-31c1-9346-038ecbb13de8",
+      "security": "auto",
+      "alter_id": 1
     }
   ],
   "route": {
