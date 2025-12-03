@@ -106,14 +106,10 @@ proxies:
 - {name: "🇯🇵 日本 23", server: "52.193.212.153", port: 20230, type: "vless", tls: true, packet-encoding: "xudp", uuid: "90e7b2f3-fb61-4fd7-959f-176e9a51d8d7", network: "grpc", grpc-opts: {grpc-mode: "gun", grpc-service-name: "tj"}, reality-opts: {public-key: "yNOemxnmT-HQ2HiR9fdHSN2B8HpHsRyMIsir_iAlaHE", short-id: "5c3c9f11"}, client-fingerprint: "random", skip-cert-verify: true, udp: true, tfo: true, servername: "www.nvidia.com"}
 - {name: "🇯🇵 日本 24", server: "18.179.46.188", port: 20230, type: "trojan", password: "58176021-8165-48d5-94b1-ad3e96e71e8b", sni: "www.alibaba.com", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "www.alibaba.com"}}, udp: true, tfo: true}
 - {name: "🇯🇵 日本 25", server: "13.231.198.25", port: 20230, type: "vless", tls: true, packet-encoding: "xudp", uuid: "90e7b2f3-fb61-4fd7-959f-176e9a51d8d7", network: "grpc", grpc-opts: {grpc-mode: "gun", grpc-service-name: "tj"}, reality-opts: {public-key: "4DQqVav-gK4Y1cMDDt4qyVpQf0GB6NkPgCPnjwude3c", short-id: "d3b6f0c3"}, client-fingerprint: "random", skip-cert-verify: true, udp: true, tfo: true, servername: "www.nvidia.com"}
-- {name: "🇯🇵 日本 26", server: "sfdhgseffswqefw.jgpyjc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "sfdhgseffswqefw.jgpyjc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "MWM0NDYzYmVjY2Q2YWFlNA=="}
-- {name: "🇯🇵 日本 27", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/", headers: {Host: "xxxxxxxxxxxxknmamdnhnj.jgpyjc.top"}}, encryption: "mlkem768x25519plus.random.0rtt.vVcSKlsGAcOlD_XsbJyJVRuYo9nQ9nzRT124M_Aa8j0", servername: "xxxxxxxxxxxxknmamdnhnj.jgpyjc.top"}
-- {name: "🇯🇵 日本 28", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/", headers: {Host: "xxxxxxxxxxxxknmamdnhnj.jgpyjc.top"}}, encryption: "mlkem768x25519plus.random.0rtt.vVcSKlsGAcOlD_XsbJyJVRuYo9nQ9nzRT124M_Aa8j0", servername: "xxxxxxxxxxxxknmamdnhnj.jgpyjc.top"}
-- {name: "🇯🇵 日本 29", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/", headers: {Host: "xxxxxxxxxxxxknmamdnhnj.jgpyjc.top"}}, encryption: "mlkem768x25519plus.random.0rtt.vVcSKlsGAcOlD_XsbJyJVRuYo9nQ9nzRT124M_Aa8j0", servername: "xxxxxxxxxxxxknmamdnhnj.jgpyjc.top"}
-- {name: "🇯🇵 日本 30", type: "vmess", server: "planb.mojcn.com", port: 16617, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇯🇵 日本 31", type: "vmess", server: "m.cnmjin.net", port: 16617, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇯🇵 日本 32", type: "vmess", server: "t.cnmjcn.cyou", port: 16617, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇯🇵 日本 33", server: "jp.mjhy2.com", port: 1443, sni: "jp.mjhy2.com", up: 10000, down: 10000, skip-cert-verify: true, type: "hysteria2", password: "77439561-dcef-4e45-803a-743cfa7d20c2"}
+- {name: "🇯🇵 日本 26", type: "vmess", server: "planb.mojcn.com", port: 16617, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇯🇵 日本 27", type: "vmess", server: "m.cnmjin.net", port: 16617, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇯🇵 日本 28", type: "vmess", server: "t.cnmjcn.cyou", port: 16617, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇯🇵 日本 29", server: "jp.mjhy2.com", port: 1443, sni: "jp.mjhy2.com", up: 10000, down: 10000, skip-cert-verify: true, type: "hysteria2", password: "77439561-dcef-4e45-803a-743cfa7d20c2"}
 - {name: "🇦🇹 奥地利 01", type: "vless", server: "de2.ultima.foundation", port: 22231, udp: true, uuid: "2dfa740c-8069-4993-8b96-c3e5dc540593", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng"}, client-fingerprint: "chrome", servername: "nl.ultima.foundation"}
 - {name: "🇦🇹 奥地利 02", type: "vless", server: "152.53.17.170", port: 22231, udp: true, uuid: "2dfa740c-8069-4993-8b96-c3e5dc540593", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng", short-id: "a9725715bf4c62ff"}, client-fingerprint: "chrome", servername: "at.ultima.foundation"}
 - {name: "🇦🇹 奥地利 03", type: "vless", server: "152.53.115.178", port: 22231, udp: true, uuid: "2dfa740c-8069-4993-8b96-c3e5dc540593", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng", short-id: "a9725715bf4c62ff"}, client-fingerprint: "chrome", servername: "at.ultima.foundation"}
@@ -139,17 +135,9 @@ proxies:
 - {type: "vless", name: "🇩🇪 德国 15", server: "185.103.252.54", port: 2053, uuid: "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kuangbao.xiejiang.dpdns.org"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", tfo: false, fast-open: false, servername: "kuangbao.xiejiang.dpdns.org"}
 - {name: "🇩🇪 德国 16", server: "36.141.40.59", port: 18049, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
 - {name: "🇩🇪 德国 17", server: "120.240.178.100", port: 45928, type: "ss", cipher: "aes-128-gcm", password: "bd62dac6636078647014", plugin: "obfs", plugin-opts: {mode: "http", host: "cec3d53bba4d2d1e8239.microsoft.com"}, udp: true, tfo: true}
-- {name: "🇩🇪 德国 18", server: "sfdfsdfdssg.jgpyjc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "sfdfsdfdssg.jgpyjc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "ZDQxZDhjZDk4ZjAwYjIwNA=="}
-- {name: "🇩🇪 德国 19", server: "fgsgfgffggfqa.qishuijc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "fgsgfgffggfqa.qishuijc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "MWM0NDYzYmVjY2Q2YWFlNA=="}
-- {name: "🇩🇪 德国 20", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/fsgssdgbfgswwshgd", headers: {Host: "nalfmxakmksadn.sytcloud.top"}}, encryption: "mlkem768x25519plus.random.0rtt.DHt2CfdLn4LtTa3YN-PWXo7gm8RGA2T3MtuDP5sNJSo", servername: "nalfmxakmksadn.sytcloud.top"}
-- {name: "🇩🇪 德国 21", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/fsgssdgbfgswwshgd", headers: {Host: "nalfmxakmksadn.sytcloud.top"}}, encryption: "mlkem768x25519plus.random.0rtt.DHt2CfdLn4LtTa3YN-PWXo7gm8RGA2T3MtuDP5sNJSo", servername: "nalfmxakmksadn.sytcloud.top"}
-- {name: "🇩🇪 德国 22", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/fsgssdgbfgswwshgd", headers: {Host: "nalfmxakmksadn.sytcloud.top"}}, encryption: "mlkem768x25519plus.random.0rtt.DHt2CfdLn4LtTa3YN-PWXo7gm8RGA2T3MtuDP5sNJSo", servername: "nalfmxakmksadn.sytcloud.top"}
-- {name: "🇩🇪 德国 23", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/mscjckfsc", headers: {Host: "dddgds.jjzcloud.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.OqZr4mKYyjYwsd-tXA95l7-IPjWHLCKA970lJGO51UI", servername: "dddgds.jjzcloud.top"}
-- {name: "🇩🇪 德国 24", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/mscjckfsc", headers: {Host: "dddgds.jjzcloud.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.OqZr4mKYyjYwsd-tXA95l7-IPjWHLCKA970lJGO51UI", servername: "dddgds.jjzcloud.top"}
-- {name: "🇩🇪 德国 25", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/mscjckfsc", headers: {Host: "dddgds.jjzcloud.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.OqZr4mKYyjYwsd-tXA95l7-IPjWHLCKA970lJGO51UI", servername: "dddgds.jjzcloud.top"}
-- {name: "🇩🇪 德国 26", server: "de.mjhy2.com", port: 1443, up: 10000, down: 10000, skip-cert-verify: true, type: "hysteria2", password: "77439561-dcef-4e45-803a-743cfa7d20c2", sni: "de.mjhy2.com"}
-- {name: "🇩🇪 德国 27", type: "vmess", server: "planb.mojcn.com", port: 16644, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇩🇪 德国 28", type: "vmess", server: "m.cnmjcn.com", port: 16644, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇩🇪 德国 18", server: "de.mjhy2.com", port: 1443, up: 10000, down: 10000, skip-cert-verify: true, type: "hysteria2", password: "77439561-dcef-4e45-803a-743cfa7d20c2", sni: "de.mjhy2.com"}
+- {name: "🇩🇪 德国 19", type: "vmess", server: "planb.mojcn.com", port: 16644, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇩🇪 德国 20", type: "vmess", server: "m.cnmjcn.com", port: 16644, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
 - {name: "🇭🇰 香港 01", type: "trojan", server: "58.152.18.192", port: 443, udp: true, password: "79314e99f0a473fe86efc7827942ad00", sni: "www.nintendogames.net", skip-cert-verify: true}
 - {name: "🇭🇰 香港 02", type: "trojan", server: "58.152.18.95", port: 443, udp: true, password: "BxceQaOe", sni: "t.me/ripaojiedian", skip-cert-verify: true}
 - {name: "🇭🇰 香港 03", type: "trojan", server: "112.118.116.66", port: 443, udp: true, password: "BxceQaOe", sni: "t.me/ripaojiedian", skip-cert-verify: true}
@@ -292,16 +280,9 @@ proxies:
 - {name: "🇺🇸 美国 96", server: "35.87.12.77", port: 20230, type: "vless", tls: true, packet-encoding: "xudp", uuid: "90e7b2f3-fb61-4fd7-959f-176e9a51d8d7", network: "grpc", grpc-opts: {grpc-mode: "gun", grpc-service-name: "tj"}, reality-opts: {public-key: "Bq_RQyPwxp7zTYywC37jLxmcjV9npNN6H6_1d_R6GT0", short-id: "c9916730"}, client-fingerprint: "random", skip-cert-verify: true, udp: true, tfo: true, servername: "www.nvidia.com"}
 - {name: "🇺🇸 美国 97", server: "36.150.27.99", port: 30402, type: "ssr", cipher: "aes-256-cfb", password: "hrkycyiepu", protocol: "auth_aes128_sha1", obfs: "plain", protocol-param: "502:DzrH8M", obfs-param: "0f2a3502.ikea.com", udp: true, tfo: true}
 - {name: "🇺🇸 美国 98", server: "27.152.180.142", port: 1081, type: "ssr", cipher: "chacha20-ietf", password: "bxsnucrgk6hfish", protocol: "auth_aes128_sha1", obfs: "plain", protocol-param: "34664:gAqN8z", obfs-param: "e4e3434664.microsoft.com", udp: true, tfo: true}
-- {name: "🇺🇸 美国 99", server: "mmnmzxhjadskfefuhn.jgpyjc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "mmnmzxhjadskfefuhn.jgpyjc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "NTIwN2U5MjA3OTIzZTM2OQ=="}
-- {name: "🇺🇸 美国 100", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/", headers: {Host: "fwhrtdnhjscds.jgpyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.IR-E_lzUgfFKfqtqoW6eua3v9QP6ED-r0AUkbMpE40Y", servername: "fwhrtdnhjscds.jgpyjc.top"}
-- {name: "🇺🇸 美国 101", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/", headers: {Host: "fwhrtdnhjscds.jgpyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.IR-E_lzUgfFKfqtqoW6eua3v9QP6ED-r0AUkbMpE40Y", servername: "fwhrtdnhjscds.jgpyjc.top"}
-- {name: "🇺🇸 美国 102", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/", headers: {Host: "fwhrtdnhjscds.jgpyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.IR-E_lzUgfFKfqtqoW6eua3v9QP6ED-r0AUkbMpE40Y", servername: "fwhrtdnhjscds.jgpyjc.top"}
-- {name: "🇺🇸 美国 103", type: "vless", server: "yh1.jgpyjc.top", port: 8443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/msdnkxaberugfsdndcg", headers: {Host: "gsfgmafnvdkjf.xjyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.zIIZ7tY9kJZSzfmMzk78u_IR7nMF2HkBenCxZPn3A3U", servername: "gsfgmafnvdkjf.xjyjc.top"}
-- {name: "🇺🇸 美国 104", type: "vless", server: "yh2.jgpyjc.top", port: 8443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/msdnkxaberugfsdndcg", headers: {Host: "gsfgmafnvdkjf.xjyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.zIIZ7tY9kJZSzfmMzk78u_IR7nMF2HkBenCxZPn3A3U", servername: "gsfgmafnvdkjf.xjyjc.top"}
-- {name: "🇺🇸 美国 105", type: "vless", server: "yh3.jgpyjc.top", port: 8443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "edge", network: "ws", ws-opts: {path: "/msdnkxaberugfsdndcg", headers: {Host: "gsfgmafnvdkjf.xjyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.zIIZ7tY9kJZSzfmMzk78u_IR7nMF2HkBenCxZPn3A3U", servername: "gsfgmafnvdkjf.xjyjc.top"}
-- {name: "🇺🇸 美国 106", type: "vmess", server: "planb.mojcn.com", port: 16648, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇺🇸 美国 107", type: "vmess", server: "m.cnmjin.net", port: 16648, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇺🇸 美国 108", type: "vmess", server: "t.cnmjcn.cyou", port: 16648, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇺🇸 美国 99", type: "vmess", server: "planb.mojcn.com", port: 16648, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇺🇸 美国 100", type: "vmess", server: "m.cnmjin.net", port: 16648, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇺🇸 美国 101", type: "vmess", server: "t.cnmjcn.cyou", port: 16648, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
 - {name: "🇩🇰 丹麦 01", type: "vless", server: "141.227.172.96", port: 56089, uuid: "2d535288-d08e-4de4-b674-fd8cb3c6e4d3", tls: false, network: "grpc"}
 - {name: "🇳🇱 荷兰 01", type: "vless", server: "46.17.103.204", port: 443, udp: true, uuid: "f7312d02-d520-4e15-8266-fb2ec831ac66", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "CRsbpFGd_TrUqw6knw03PGXOAPByyMIeNOar9ncY-2g", short-id: "e849c8958a546357"}, client-fingerprint: "chrome", servername: "www.microsoft.com"}
 - {name: "🇳🇱 荷兰 02", type: "vless", server: "193.36.132.87", port: 443, udp: true, uuid: "793099c5-0712-4ea0-bbe1-455da88fc671", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ", short-id: "21181028b56c8702"}, client-fingerprint: "chrome", servername: "www.apple.com"}
@@ -337,10 +318,6 @@ proxies:
 - {type: "vless", name: "🇷🇺 俄罗斯 04", server: "98.70.151.190", port: 443, uuid: "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "kuangbao.xiejiang.dpdns.org"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", tfo: false, fast-open: false, servername: "kuangbao.xiejiang.dpdns.org"}
 - {name: "🇷🇺 俄罗斯 05", server: "36.141.40.59", port: 18121, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
 - {name: "🇷🇺 俄罗斯 06", server: "45.251.1.12", port: 45930, type: "ss", cipher: "aes-128-gcm", password: "11575f448fb4021fc611", plugin: "obfs", plugin-opts: {mode: "http", host: "cec3d53bba4d2d1e8239.microsoft.com"}, udp: true, tfo: true}
-- {name: "🇷🇺 俄罗斯 07", server: "xbly.qishuijc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "xbly.qishuijc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "MWM0NDYzYmVjY2Q2YWFlNA=="}
-- {name: "🇷🇺 俄罗斯 08", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "android", network: "ws", ws-opts: {path: "/mscjckjkjfsc", headers: {Host: "xblyfddds.xiaohuolongjc.top"}}, encryption: "mlkem768x25519plus.random.0rtt.zOJpNlrFa99pYZOkfTGCc-AMaHj3RV6bosjzPNrO1m4", servername: "xblyfddds.xiaohuolongjc.top"}
-- {name: "🇷🇺 俄罗斯 09", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "android", network: "ws", ws-opts: {path: "/mscjckjkjfsc", headers: {Host: "xblyfddds.xiaohuolongjc.top"}}, encryption: "mlkem768x25519plus.random.0rtt.zOJpNlrFa99pYZOkfTGCc-AMaHj3RV6bosjzPNrO1m4", servername: "xblyfddds.xiaohuolongjc.top"}
-- {name: "🇷🇺 俄罗斯 10", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "android", network: "ws", ws-opts: {path: "/mscjckjkjfsc", headers: {Host: "xblyfddds.xiaohuolongjc.top"}}, encryption: "mlkem768x25519plus.random.0rtt.zOJpNlrFa99pYZOkfTGCc-AMaHj3RV6bosjzPNrO1m4", servername: "xblyfddds.xiaohuolongjc.top"}
 - {name: "🇫🇷 法国 01", type: "hysteria2", server: "163.172.21.105", port: 5355, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true}
 - {name: "🇫🇷 法国 02", type: "hysteria2", server: "163.172.21.105", port: 5355, password: "dongtaiwang.com", sni: "www.bing.com", skip-cert-verify: true}
 - {type: "vless", name: "🇫🇷 法国 03", server: "141.227.134.128", port: 14407, uuid: "8b78a1cb-fe3b-47b8-bbb6-ad78af4cb581", tls: false, skip-cert-verify: false, network: "grpc", grpc-opts: {grpc-service-name: "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}, encryption: "none", tfo: false, fast-open: false}
@@ -449,12 +426,9 @@ proxies:
 - {name: "🇨🇦 加拿大 01", server: "103.181.165.243", port: 26114, type: "vmess", uuid: "aa15b97a-24b1-3a31-824a-bc52f5a15bac", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
 - {name: "🇨🇦 加拿大 02", server: "45.251.1.12", port: 45910, type: "ss", cipher: "aes-128-gcm", password: "3fb1d360ec0c4c7a5054", plugin: "obfs", plugin-opts: {mode: "http", host: "cec3d53bba4d2d1e8239.microsoft.com"}, udp: true, tfo: true}
 - {name: "🇨🇦 加拿大 03", server: "36.141.40.59", port: 18952, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
-- {name: "🇨🇦 加拿大 04", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "firefox", network: "ws", ws-opts: {path: "/", headers: {Host: "jnd.youxixia.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.nn84LuywL8Ez88oa4rdNM5Js0g6rfKRJRiB0cTVMRjg", servername: "jnd.youxixia.top"}
-- {name: "🇨🇦 加拿大 05", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "firefox", network: "ws", ws-opts: {path: "/", headers: {Host: "jnd.youxixia.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.nn84LuywL8Ez88oa4rdNM5Js0g6rfKRJRiB0cTVMRjg", servername: "jnd.youxixia.top"}
-- {name: "🇨🇦 加拿大 06", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "firefox", network: "ws", ws-opts: {path: "/", headers: {Host: "jnd.youxixia.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.nn84LuywL8Ez88oa4rdNM5Js0g6rfKRJRiB0cTVMRjg", servername: "jnd.youxixia.top"}
-- {name: "🇨🇦 加拿大 07", type: "vmess", server: "planb.mojcn.com", port: 16641, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇨🇦 加拿大 08", type: "vmess", server: "m.cnmjcn.com", port: 16641, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
-- {name: "🇨🇦 加拿大 09", type: "vmess", server: "t.cnmjcn.cyou", port: 16641, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇨🇦 加拿大 04", type: "vmess", server: "planb.mojcn.com", port: 16641, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇨🇦 加拿大 05", type: "vmess", server: "m.cnmjcn.com", port: 16641, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
+- {name: "🇨🇦 加拿大 06", type: "vmess", server: "t.cnmjcn.cyou", port: 16641, uuid: "77439561-dcef-4e45-803a-743cfa7d20c2", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/", headers: {Host: "9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com"}}}
 - {name: "🇨🇭 瑞士 01", server: "45.251.1.12", port: 45582, type: "ss", cipher: "chacha20-ietf-poly1305", password: "c9fa2bcffa379937679e", plugin: "obfs", plugin-opts: {mode: "http", host: "cec3d53bba4d2d1e8239.microsoft.com"}, udp: true, tfo: true}
 - {name: "🇨🇭 瑞士 02", server: "36.141.40.59", port: 18946, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
 - {name: "🇨🇭 瑞士 03", server: "103.181.165.243", port: 26104, type: "vmess", uuid: "aa15b97a-24b1-3a31-824a-bc52f5a15bac", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
@@ -509,15 +483,7 @@ proxies:
 - {name: "🇹🇭 泰国 02", server: "36.141.40.59", port: 18022, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
 - {name: "🇺🇦 乌克兰 01", server: "36.141.40.59", port: 18124, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
 - {name: "🇻🇳 越南 01", server: "120.240.178.100", port: 45931, type: "ss", cipher: "aes-128-gcm", password: "3e79196cf9e970671245", plugin: "obfs", plugin-opts: {mode: "http", host: "cec3d53bba4d2d1e8239.microsoft.com"}, udp: true, tfo: true}
-- {name: "🇻🇳 越南 02", server: "ptyn.jgpyjc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "ptyn.jgpyjc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "ZDQxZDhjZDk4ZjAwYjIwNA=="}
-- {name: "🇻🇳 越南 03", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/", headers: {Host: "gdhbfdgfgdtwwda.jgpyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.grKDw6HcRfVxCvbeCRmyPUlPt8T6kuBf6_DmO1Fqcjc", servername: "gdhbfdgfgdtwwda.jgpyjc.top"}
-- {name: "🇻🇳 越南 04", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/", headers: {Host: "gdhbfdgfgdtwwda.jgpyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.1NNr_0Zgs1i3xBAvbmnpSwzNKfdDTNhP--53uyYuDEY", servername: "gdhbfdgfgdtwwda.jgpyjc.top"}
-- {name: "🇻🇳 越南 05", type: "vless", server: "yh3.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "safari", network: "ws", ws-opts: {path: "/", headers: {Host: "gdhbfdgfgdtwwda.jgpyjc.top"}}, encryption: "mlkem768x25519plus.native.0rtt.ip1aQCQh_gHdIo05gZZtWcUGbwUtsq243IZAt_toZF8", servername: "gdhbfdgfgdtwwda.jgpyjc.top"}
 - {name: "🇿🇦 南非 01", server: "36.141.40.59", port: 18066, type: "vmess", uuid: "24912953-d8e5-4761-95a0-a707651cc423", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true, tfo: true}
-- {name: "🇮🇷 伊朗 01", server: "yl.jgpyjc.top", port: 40400, ports: "40400-42450", mport: "40400-42450", udp: true, skip-cert-verify: false, sni: "yl.jgpyjc.top", type: "hysteria2", password: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", obfs: "salamander", obfs-password: "NTIwN2U5MjA3OTIzZTM2OQ=="}
-- {name: "🇮🇷 伊朗 02", type: "vless", server: "yh1.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "dsbvsvfdbvggf.laibajc.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.IfHFTygQMcsriyYVvflhhDOJhIxlhVD-Rv3E1j_xbEU", servername: "dsbvsvfdbvggf.laibajc.top"}
-- {name: "🇮🇷 伊朗 03", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "dsbvsvfdbvggf.laibajc.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.IfHFTygQMcsriyYVvflhhDOJhIxlhVD-Rv3E1j_xbEU", servername: "dsbvsvfdbvggf.laibajc.top"}
-- {name: "🇮🇷 伊朗 04", type: "vless", server: "yh2.jgpyjc.top", port: 443, uuid: "78e8d15f-6e0e-43be-8d8e-6bcad8c9d740", udp: true, tls: true, skip-cert-verify: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "dsbvsvfdbvggf.laibajc.top"}}, encryption: "mlkem768x25519plus.xorpub.0rtt.IfHFTygQMcsriyYVvflhhDOJhIxlhVD-Rv3E1j_xbEU", servername: "dsbvsvfdbvggf.laibajc.top"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -552,10 +518,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -584,14 +546,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -737,13 +691,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -779,10 +726,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -894,9 +837,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -951,15 +891,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -995,10 +927,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -1027,14 +955,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -1180,13 +1100,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -1222,10 +1135,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -1337,9 +1246,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -1394,15 +1300,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 - name: "AI"
   type: "select"
   proxies:
@@ -1436,10 +1334,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -1468,14 +1362,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -1621,13 +1507,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -1663,10 +1542,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -1778,9 +1653,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -1835,15 +1707,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 - name: "FCM"
   type: "select"
   proxies:
@@ -1879,10 +1743,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -1911,14 +1771,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2064,13 +1916,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -2106,10 +1951,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -2221,9 +2062,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -2278,15 +2116,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -2321,10 +2151,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -2353,14 +2179,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2506,13 +2324,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -2548,10 +2359,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -2663,9 +2470,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -2720,15 +2524,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -2763,10 +2559,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -2795,14 +2587,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -2948,13 +2732,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -2990,10 +2767,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -3105,9 +2878,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -3162,15 +2932,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -3204,10 +2966,6 @@ proxy-groups:
   - "🇯🇵 日本 27"
   - "🇯🇵 日本 28"
   - "🇯🇵 日本 29"
-  - "🇯🇵 日本 30"
-  - "🇯🇵 日本 31"
-  - "🇯🇵 日本 32"
-  - "🇯🇵 日本 33"
   - "🇦🇹 奥地利 01"
   - "🇦🇹 奥地利 02"
   - "🇦🇹 奥地利 03"
@@ -3236,14 +2994,6 @@ proxy-groups:
   - "🇩🇪 德国 18"
   - "🇩🇪 德国 19"
   - "🇩🇪 德国 20"
-  - "🇩🇪 德国 21"
-  - "🇩🇪 德国 22"
-  - "🇩🇪 德国 23"
-  - "🇩🇪 德国 24"
-  - "🇩🇪 德国 25"
-  - "🇩🇪 德国 26"
-  - "🇩🇪 德国 27"
-  - "🇩🇪 德国 28"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -3389,13 +3139,6 @@ proxy-groups:
   - "🇺🇸 美国 99"
   - "🇺🇸 美国 100"
   - "🇺🇸 美国 101"
-  - "🇺🇸 美国 102"
-  - "🇺🇸 美国 103"
-  - "🇺🇸 美国 104"
-  - "🇺🇸 美国 105"
-  - "🇺🇸 美国 106"
-  - "🇺🇸 美国 107"
-  - "🇺🇸 美国 108"
   - "🇩🇰 丹麦 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
@@ -3431,10 +3174,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 04"
   - "🇷🇺 俄罗斯 05"
   - "🇷🇺 俄罗斯 06"
-  - "🇷🇺 俄罗斯 07"
-  - "🇷🇺 俄罗斯 08"
-  - "🇷🇺 俄罗斯 09"
-  - "🇷🇺 俄罗斯 10"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇷 法国 03"
@@ -3546,9 +3285,6 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
   - "🇨🇭 瑞士 01"
   - "🇨🇭 瑞士 02"
   - "🇨🇭 瑞士 03"
@@ -3603,15 +3339,7 @@ proxy-groups:
   - "🇹🇭 泰国 02"
   - "🇺🇦 乌克兰 01"
   - "🇻🇳 越南 01"
-  - "🇻🇳 越南 02"
-  - "🇻🇳 越南 03"
-  - "🇻🇳 越南 04"
-  - "🇻🇳 越南 05"
   - "🇿🇦 南非 01"
-  - "🇮🇷 伊朗 01"
-  - "🇮🇷 伊朗 02"
-  - "🇮🇷 伊朗 03"
-  - "🇮🇷 伊朗 04"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
