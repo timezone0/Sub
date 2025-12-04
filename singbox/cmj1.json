@@ -98,8 +98,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -111,8 +110,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -124,8 +122,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,8 +136,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -153,8 +149,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,8 +162,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -180,8 +174,7 @@
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -253,68 +246,33 @@
     },
     {
       "tag": "🇯🇵 日本 01",
-      "type": "vless",
-      "server": "medium.com",
-      "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "type": "vmess",
+      "server": "5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art",
+      "server_port": 28787,
+      "uuid": "b0e1254b-6ac6-3d12-bd6e-bd719eaab486",
+      "security": "auto",
+      "alter_id": 1,
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
+        "server_name": "5vpif-g05.jp06-7c5a-vm0.entry.fr0307a.art",
+        "insecure": true
       }
     },
     {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "x.cf.090227.xyz",
-      "server_port": 2096,
-      "uuid": "e258977b-e413-4718-a3af-02d75492c349",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.x-aniu-j-p.netlib.re",
-        "insecure": true
-      },
+      "tag": "🇯🇵 日本 02",
+      "type": "vmess",
+      "server": "awsjp1.iamlazy.vip",
+      "server_port": 80,
+      "uuid": "f1d9d662-7fc9-4995-b047-05c98ad05286",
+      "security": "auto",
+      "alter_id": 0,
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "www.x-aniu-j-p.netlib.re"
+          "Host": "awsjp1.iamlazy.vip"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 02",
-      "type": "vless",
-      "server": "x.cf.090227.xyz",
-      "server_port": 2096,
-      "uuid": "e258977b-e413-4718-a3af-02d75492c349",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.x-aniu--tw.netlib.re",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "www.x-aniu--tw.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
+        "max_early_data": 2048,
         "path": "/"
       }
     }
