@@ -96,7 +96,8 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,7 +107,8 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -116,7 +118,8 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -128,7 +131,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,7 +143,8 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -150,7 +155,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -160,7 +166,8 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -228,6 +235,24 @@
           "Host": "vless.keepfuck.me"
         },
         "path": "/?mode=auto&direct"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vmess",
+      "server": "awsjp1.iamlazy.vip",
+      "server_port": 80,
+      "uuid": "f1d9d662-7fc9-4995-b047-05c98ad05286",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "awsjp1.iamlazy.vip"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048,
+        "path": "/"
       }
     }
   ],
