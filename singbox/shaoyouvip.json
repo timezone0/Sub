@@ -95,16 +95,6 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -114,16 +104,6 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -133,16 +113,6 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -154,16 +124,6 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -174,16 +134,6 @@
       "outbounds": [
         "direct",
         "select",
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -194,16 +144,6 @@
       "outbounds": [
         "select",
         "direct",
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -213,16 +153,6 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇺🇸 美国 01",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇨🇳 台湾 01",
-        "🇯🇵 日本 01",
         "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
@@ -258,160 +188,34 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
-      "type": "hysteria2",
-      "server": "134.195.101.191",
-      "server_port": 35000,
-      "password": "02fe8dae-73b7-4f1d-a992-f0e226a98f27",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "insecure": true
-      },
-      "server_ports": [
-        "35000:39000"
-      ]
-    },
-    {
-      "tag": "🇫🇷 法国 01",
-      "type": "trojan",
-      "server": "35.181.195.31",
-      "server_port": 22222,
-      "password": "telegram-id-privatevpns",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇫🇷 法国 02",
-      "type": "vless",
-      "server": "141.227.172.96",
-      "server_port": 56089,
-      "uuid": "2d535288-d08e-4de4-b674-fd8cb3c6e4d3",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
-      }
-    },
-    {
-      "tag": "🇫🇷 法国 03",
-      "type": "vless",
-      "server": "141.227.136.51",
-      "server_port": 25687,
-      "uuid": "a03e540d-7fa2-4187-b0d0-5202a22cf9a0",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "hysteria2",
-      "server": "21230cae-t6r5s0-tk4rx8-1n7d9.hk2.hyhuawei.com",
-      "server_port": 443,
-      "password": "48e51dfa-db8f-11ed-a23f-f23c91369f2d",
-      "tls": {
-        "enabled": true,
-        "server_name": "21230cae-t6r5s0-tk4rx8-1n7d9.hk2.hyhuawei.com",
-        "insecure": false
-      },
-      "server_ports": [
-        "30000:60000"
-      ]
-    },
-    {
-      "tag": "🇭🇰 香港 02",
-      "type": "hysteria2",
-      "server": "89ac33ca-t6pb40-tbcla6-194tt.hk2.hyhuawei.com",
-      "server_port": 443,
-      "password": "602e99aa-718d-11eb-b77b-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "89ac33ca-t6pb40-tbcla6-194tt.hk2.hyhuawei.com",
-        "insecure": false
-      },
-      "server_ports": [
-        "30000:60000"
-      ]
-    },
-    {
-      "tag": "🇭🇰 香港 03",
-      "type": "hysteria2",
-      "server": "d7cf6fa1-t6t0g0-t85ssw-1bonh.hk2.hyhuawei.com",
-      "server_port": 443,
-      "password": "e8a960d8-14f5-11ec-a0fc-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "d7cf6fa1-t6t0g0-t85ssw-1bonh.hk2.hyhuawei.com",
-        "insecure": false
-      },
-      "server_ports": [
-        "30000:60000"
-      ]
-    },
-    {
-      "tag": "🇭🇰 香港 04",
-      "type": "http",
-      "server": "8.218.207.5",
-      "server_port": 20344,
-      "username": "kZXMC3Z1",
-      "password": "nOEy3w0R"
-    },
-    {
-      "tag": "🇨🇳 台湾 01",
-      "type": "http",
-      "server": "twmoon1-cdn-route.couldflare-cdn.com",
-      "server_port": 1443,
-      "tls": {
-        "enabled": true,
-        "server_name": "twmoon1-cdn-route.couldflare-cdn.com",
-        "insecure": false
-      },
-      "username": "mrwdfNTD8M79LCukCieldrqZWqs=",
-      "password": "exaxgqkKkd0TAMrCxeonWg=="
-    },
-    {
-      "tag": "🇯🇵 日本 01",
-      "type": "vmess",
-      "server": "aflzzul.meiquankongjian.com",
-      "server_port": 52512,
-      "uuid": "342bacfd-2b8f-3f49-a16e-439db5b0b9d5",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "HOST": "aflzzul.meiquankongjian.com",
-          "Host": "aflzzul.meiquankongjian.com"
-        },
-        "path": "/564dfa20/"
-      }
-    },
-    {
       "tag": "🇩🇪 德国 01",
       "type": "vless",
-      "server": "de.gpairnetwork369.de",
-      "server_port": 3020,
-      "uuid": "f6b74f9a-0ac7-43f0-a4cc-5cee6f1eaf7f",
+      "server": "Alfpha.yas-nowin.ir",
+      "server_port": 443,
+      "uuid": "2262a35d-a6c7-4621-f957-5a7f1d330e16",
       "tls": {
         "enabled": true,
-        "server_name": "www.refersion.com",
+        "server_name": "Alfpha.yas-nowin.ir",
         "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "NVjEaDFrdzaFQHvMt8BPORsLFR3iD8NA31Dpn-1HRFk",
-          "short_id": "ecd8d10c1518fb7b"
-        },
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
-      "packet_encoding": "xudp"
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "Alfpha.yas-nowin.ir",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 443,
+        "path": "/@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config"
+      }
     }
   ],
   "route": {
