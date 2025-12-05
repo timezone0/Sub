@@ -95,7 +95,14 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -104,7 +111,14 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -113,7 +127,14 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -124,7 +145,14 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -134,7 +162,14 @@
       "outbounds": [
         "direct",
         "select",
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -144,7 +179,14 @@
       "outbounds": [
         "select",
         "direct",
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -153,7 +195,14 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01"
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇬🇧 英国 01",
+        "🇵🇱 波兰 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -188,34 +237,140 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
+      "tag": "🇳🇱 荷兰 01",
+      "type": "shadowsocks",
+      "server": "82.38.31.210",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "tag": "🇳🇱 荷兰 02",
+      "type": "shadowsocks",
+      "server": "151.242.251.147",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj"
+    },
+    {
+      "tag": "🇳🇱 荷兰 03",
       "type": "vless",
-      "server": "Alfpha.yas-nowin.ir",
+      "server": "84.32.64.39",
       "server_port": 443,
-      "uuid": "2262a35d-a6c7-4621-f957-5a7f1d330e16",
+      "uuid": "793099c5-0712-4ea0-bbe1-455da88fc671",
       "tls": {
         "enabled": true,
-        "server_name": "Alfpha.yas-nowin.ir",
+        "server_name": "www.apple.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "reality": {
+          "enabled": true,
+          "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
+          "short_id": "21181028b56c8702"
+        },
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇳🇱 荷兰 04",
+      "type": "hysteria",
+      "server": "51.159.226.1",
+      "server_port": 49003,
+      "disable_mtu_discovery": false,
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "auth_str": "dongtaiwang.com",
+      "up_mbps": 11,
+      "down_mbps": 55
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "us01-vlr01-gmn03.vpnvezdehod.net",
+      "server_port": 443,
+      "uuid": "c52e7342-2c31-4f0b-83e9-007ad8d1691a",
+      "tls": {
+        "enabled": true,
+        "server_name": "hls-svod.itunes.apple.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+          "short_id": "86e999a2cdc2"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vmess",
+      "server": "107.174.82.102.sslip.io",
+      "server_port": 443,
+      "uuid": "bb824a22-b7ce-427b-9ed6-1adf0751da02",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "107.174.82.102.sslip.io",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "Alfpha.yas-nowin.ir",
-          "User-Agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+          "Host": "107.174.82.102.sslip.io"
         },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 443,
-        "path": "/@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config"
+        "path": "/Ov7HrgwlEcRugowKV"
       }
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "vless",
+      "server": "t23.qifei.app",
+      "server_port": 1443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇵🇱 波兰 01",
+      "type": "shadowsocks",
+      "server": "clr.ducks.tel",
+      "server_port": 17844,
+      "method": "chacha20-ietf-poly1305",
+      "password": "907560230"
     }
   ],
   "route": {
