@@ -96,7 +96,9 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,7 +108,9 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -116,7 +120,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -128,7 +134,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,7 +147,9 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -150,7 +160,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -160,7 +172,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇭🇰 香港 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -228,6 +242,30 @@
           "Host": "vless.keepfuck.me"
         },
         "path": "/?mode=auto&direct"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "shadowsocks",
+      "server": "103.149.182.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf",
+      "password": "asd123456"
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vmess",
+      "server": "planb.mojcn.com",
+      "server_port": 16618,
+      "uuid": "a560e498-e1f6-4a93-822e-a4ea2cf57f21",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "planb.mojcn.com"
+        },
+        "path": "/"
       }
     }
   ],
