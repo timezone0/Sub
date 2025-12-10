@@ -81,292 +81,302 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {type: "vless", name: "🇺🇸 美国 01", server: "64.227.93.102", port: 28899, uuid: "f61d9aee-63b8-439e-bebf-afaa53c015fd", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "UcJ-s55xl9msAtzJcBghDUTSnyilzB6d7NpUfkHoQmY", _spider-x: "/"}, network: "tcp", encryption: "none", servername: "s0.awsstatic.com"}
-- {name: "🇺🇸 美国 02", server: "104.192.226.106", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
-- {type: "hysteria2", name: "🇺🇸 美国 03", server: "208.87.242.77", port: 35000, password: "1347acec-0c12-46c0-9436-19603093d9ab", sni: "www.apple.com", skip-cert-verify: true, tfo: false}
-- {name: "🇺🇸 美国 04", type: "vless", network: "ws", server: "openai.com", port: 2095, uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", skip-cert-verify: true, tls: false, tfo: false, client-fingerprint: "randomized", ws-opts: {headers: {Host: "freedom.pusytroller.cf"}, path: "/"}}
+- {type: "vless", name: "🇺🇸 美国 01", server: "139.144.199.41", port: 33873, uuid: "ffb5a850-edbc-4831-ad0b-e29483949ea8", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "RV6FhlbDmMyc_qCuuTbUZt3QMUsKZU7EjyjGkYxHS34", short-id: "de550428"}, network: "tcp", encryption: "none", servername: "www.nokia.com"}
+- {name: "🇺🇸 美国 02", server: "156.146.38.168", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
+- {name: "🇺🇸 美国 03", server: "156.146.38.169", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
+- {name: "🇺🇸 美国 04", server: "156.146.38.167", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
 - {type: "vless", name: "🇺🇸 美国 05", server: "166.62.114.253", port: 2096, uuid: "7556317c-dff6-46e8-ad29-b408f2a6456e", network: "ws", tls: true, encryption: "none", ws-opts: {path: "/Telegram🇨🇳+@WangCai2+/", headers: {Host: "vless.muzheng.top"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", servername: "vless.muzheng.top"}
 - {name: "🇺🇸 美国 06", type: "vless", network: "ws", server: "blog.cloudflare.com", port: 2095, uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", skip-cert-verify: true, tls: false, tfo: false, client-fingerprint: "randomized", ws-opts: {headers: {Host: "freedom.pusytroller.cf"}, path: "/"}}
-- {name: "🇺🇸 美国 07", server: "104.192.226.106", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇺🇸 美国 08", type: "vless", network: "ws", server: "198.202.211.61", port: 2096, uuid: "12345678-1234-1234-1234-123456789123", skip-cert-verify: true, tls: true, udp: true, tfo: true, client-fingerprint: "chrome", ws-opts: {headers: {Host: "vless.hubp.de", User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}, path: "/snippets"}, servername: "vless.hubp.de"}
-- {name: "🇺🇸 美国 09", type: "vmess", network: "tcp", server: "165.140.216.141", port: 443, uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d", skip-cert-verify: true, udp: true, tfo: true, alterId: 0, cipher: "auto", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 10", type: "vless", network: "ws", server: "104.18.86.131", port: 443, uuid: "c98a16e4-0dc5-42f0-b3db-30f04525c123", skip-cert-verify: false, tls: true, udp: true, tfo: false, client-fingerprint: "chrome", ws-opts: {headers: {Host: "vless5-edu.pages.dev"}, path: "/?ed"}, servername: "vless5-edu.pages.dev"}
-- {name: "🇺🇸 美国 11", server: "156.146.38.168", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
-- {name: "🇺🇸 美国 12", server: "156.146.38.169", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
-- {name: "🇺🇸 美国 13", server: "156.146.38.167", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
+- {name: "🇺🇸 美国 07", type: "vless", network: "ws", server: "104.18.86.131", port: 443, uuid: "c98a16e4-0dc5-42f0-b3db-30f04525c123", skip-cert-verify: false, tls: true, udp: true, tfo: false, client-fingerprint: "chrome", ws-opts: {headers: {Host: "vless5-edu.pages.dev"}, path: "/?ed"}, servername: "vless5-edu.pages.dev"}
+- {name: "🇺🇸 美国 08", server: "156.146.38.170", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
+- {name: "🇺🇸 美国 09", type: "vless", network: "ws", server: "198.202.211.61", port: 2096, uuid: "12345678-1234-1234-1234-123456789123", skip-cert-verify: true, tls: true, udp: true, tfo: true, client-fingerprint: "chrome", ws-opts: {headers: {Host: "vless.hubp.de", User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}, path: "/snippets"}, servername: "vless.hubp.de"}
+- {name: "🇺🇸 美国 10", type: "vless", network: "ws", server: "openai.com", port: 2095, uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", skip-cert-verify: true, tls: false, tfo: false, client-fingerprint: "randomized", ws-opts: {headers: {Host: "freedom.pusytroller.cf"}, path: "/"}}
+- {name: "🇺🇸 美国 11", server: "104.192.226.106", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇺🇸 美国 12", type: "vmess", network: "ws", server: "38.99.82.193", port: 443, uuid: "03fcc618-b93d-6796-6aed-8a38c975d581", skip-cert-verify: true, tls: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "tilebani.com"}, path: "/linkvws"}, client-fingerprint: "chrome", servername: "tilebani.com"}
+- {name: "🇺🇸 美国 13", server: "50.3.90.21", port: 10019, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2606}
 - {name: "🇺🇸 美国 14", server: "173.234.29.2", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
-- {name: "🇺🇸 美国 15", server: "107.174.253.233", port: 20080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1855}
-- {name: "🇺🇸 美国 16", server: "107.151.182.253", port: 8080, type: "ss", cipher: "rc4-md5", password: "14fFPrbezE3HDZzsMOr6"}
-- {name: "🇺🇸 美国 17", server: "156.146.38.170", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
-- {type: "vless", name: "🇺🇸 美国 18", server: "139.144.199.41", port: 33873, uuid: "ffb5a850-edbc-4831-ad0b-e29483949ea8", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "RV6FhlbDmMyc_qCuuTbUZt3QMUsKZU7EjyjGkYxHS34", short-id: "de550428"}, network: "tcp", encryption: "none", servername: "www.nokia.com"}
-- {name: "🇺🇸 美国 19", server: "167.160.90.178", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
-- {name: "🇺🇸 美国 20", type: "vmess", network: "ws", server: "15.235.85.147", port: 443, uuid: "03fcc618-b93d-6796-6aed-8a38c975d581", skip-cert-verify: true, tls: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "pelang.org"}, path: "/linkvws"}, client-fingerprint: "chrome", servername: "pelang.org"}
-- {name: "🇺🇸 美国 21", server: "45.150.52.40", type: "vmess", port: 443, uuid: "c31777a1-2ee6-4864-db4c-a79fcbc8188b", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/c31777a1"}, delay: 1144, servername: "xsj011-3.facai2024.com"}
-- {name: "🇺🇸 美国 22", type: "vmess", network: "ws", server: "38.99.82.193", port: 443, uuid: "03fcc618-b93d-6796-6aed-8a38c975d581", skip-cert-verify: true, tls: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "tilebani.com"}, path: "/linkvws"}, client-fingerprint: "chrome", servername: "tilebani.com"}
-- {name: "🇺🇸 美国 23", server: "50.3.90.21", port: 10019, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2606}
-- {type: "ssr", server: "107.151.182.253", port: 8080, protocol: "origin", cipher: "rc4-md5", obfs: "plain", password: "14fFPrbezE3HDZzsMOr6", name: "🇺🇸 美国 24"}
-- {name: "🇺🇸 美国 25", server: "23.95.75.146", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "NDRySIABARbErNIVsCNVkyYAHiBzhveT", udp: true}
-- {name: "🇺🇸 美国 26", type: "vmess", network: "ws", server: "134.195.198.147", port: 443, uuid: "03fcc618-b93d-6796-6aed-8a38c975d581", skip-cert-verify: true, tls: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "inna.cfd"}, path: "/linkvws"}, client-fingerprint: "chrome", servername: "inna.cfd"}
-- {type: "vless", name: "🇺🇸 美国 27", server: "103.35.190.51", port: 4443, uuid: "3121850a-24aa-41f9-936d-dbdf10a3b31f", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE", short-id: "aa7e96542880027a", _spider-x: "/---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---"}, network: "tcp", encryption: "none", servername: "github.com"}
-- {name: "🇺🇸 美国 28", server: "64.44.177.238", port: 10010, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2767}
-- {name: "🇺🇸 美国 29", server: "23.94.111.50", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2860}
-- {name: "🇺🇸 美国 30", type: "vless", server: "wangcai.cf.877774.xyz", port: 443, uuid: "16e80f38-e97e-4b14-ba89-77d87a3e637f", tls: true, network: "ws", ws-opts: {path: "/sg-orcl", headers: {Host: "ex3r.qzz.io"}}, servername: "ex3r.qzz.io"}
+- {name: "🇺🇸 美国 15", server: "104.192.226.106", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇺🇸 美国 16", type: "vmess", network: "tcp", server: "165.140.216.141", port: 443, uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d", skip-cert-verify: true, udp: true, tfo: true, alterId: 0, cipher: "auto", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 17", server: "64.227.93.102", port: 28899, uuid: "f61d9aee-63b8-439e-bebf-afaa53c015fd", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "UcJ-s55xl9msAtzJcBghDUTSnyilzB6d7NpUfkHoQmY", _spider-x: "/"}, network: "tcp", encryption: "none", servername: "s0.awsstatic.com"}
+- {name: "🇺🇸 美国 18", type: "vmess", network: "ws", server: "134.195.198.147", port: 443, uuid: "03fcc618-b93d-6796-6aed-8a38c975d581", skip-cert-verify: true, tls: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "inna.cfd"}, path: "/linkvws"}, client-fingerprint: "chrome", servername: "inna.cfd"}
+- {name: "🇺🇸 美国 19", server: "23.95.75.146", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "NDRySIABARbErNIVsCNVkyYAHiBzhveT", udp: true}
+- {name: "🇺🇸 美国 20", server: "167.160.90.178", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
+- {type: "hysteria2", name: "🇺🇸 美国 21", server: "208.87.242.77", port: 35000, password: "1347acec-0c12-46c0-9436-19603093d9ab", sni: "www.apple.com", skip-cert-verify: true, tfo: false}
+- {name: "🇺🇸 美国 22", type: "vless", server: "wangcai.cf.877774.xyz", port: 443, uuid: "16e80f38-e97e-4b14-ba89-77d87a3e637f", tls: true, network: "ws", ws-opts: {path: "/sg-orcl", headers: {Host: "ex3r.qzz.io"}}, servername: "ex3r.qzz.io"}
+- {name: "🇺🇸 美国 23", server: "64.44.177.238", port: 10010, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2767}
+- {name: "🇺🇸 美国 24", server: "5.180.24.187", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1464}
+- {name: "🇺🇸 美国 25", server: "107.151.182.253", port: 8080, type: "ss", cipher: "rc4-md5", password: "14fFPrbezE3HDZzsMOr6"}
+- {name: "🇺🇸 美国 26", server: "107.174.253.233", port: 20080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1855}
+- {type: "ssr", server: "107.151.182.253", port: 8080, protocol: "origin", cipher: "rc4-md5", obfs: "plain", password: "14fFPrbezE3HDZzsMOr6", name: "🇺🇸 美国 27"}
+- {type: "trojan", name: "🇺🇸 美国 28", server: "141.193.213.199", port: 443, password: "a544940a-2c1c-4723-96cc-d03053a95530", udp: true, skip-cert-verify: true, sni: "26z68w0ecxbuyf89.ukgogo202511.top", network: "ws", ws-opts: {path: "/images", headers: {Host: "26z68w0ecxbuyf89.ukgogo202511.top"}}}
+- {name: "🇺🇸 美国 29", type: "vmess", network: "ws", server: "15.235.85.147", port: 443, uuid: "03fcc618-b93d-6796-6aed-8a38c975d581", skip-cert-verify: true, tls: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "pelang.org"}, path: "/linkvws"}, client-fingerprint: "chrome", servername: "pelang.org"}
+- {name: "🇺🇸 美国 30", server: "50.3.90.2", port: 10000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1584}
 - {name: "🇺🇸 美国 31", type: "vless", server: "de.yxzbp.click", port: 80, uuid: "b018ca65-3c1d-462b-f83e-279d6b54ca3b", tls: false, network: "ws", ws-opts: {path: "/de", headers: {Host: "de.yxzbp.click"}}, disable-sni: true, skip-cert-verify: true, servername: ""}
-- {type: "vless", name: "🇺🇸 美国 32", server: "154.21.203.45", port: 8443, uuid: "e258977b-e413-4718-a3af-02d75492c349", network: "ws", tls: true, encryption: "none", ws-opts: {path: "/", headers: {Host: "www.x-aniu---jp.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "www.x-aniu---jp.netlib.re"}
-- {type: "trojan", name: "🇺🇸 美国 33", server: "141.193.213.199", port: 443, password: "a544940a-2c1c-4723-96cc-d03053a95530", udp: true, skip-cert-verify: true, sni: "26z68w0ecxbuyf89.ukgogo202511.top", network: "ws", ws-opts: {path: "/images", headers: {Host: "26z68w0ecxbuyf89.ukgogo202511.top"}}}
+- {name: "🇺🇸 美国 32", type: "ss", server: "209.74.81.149", port: 21166, password: "q92MrrP9oJ3lMEzbQFpyuU", cipher: "chacha20-ietf-poly1305"}
+- {type: "vless", name: "🇺🇸 美国 33", server: "138.2.16.61", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", network: "ws", tls: true, encryption: "none", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "ak.suoni.nyc.mn"}}, client-fingerprint: "random", servername: "ak.suoni.nyc.mn"}
 - {type: "vless", name: "🇺🇸 美国 34", server: "172.233.108.62", port: 7443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, servername: "ak.suoni.nyc.mn"}
-- {name: "🇺🇸 美国 35", password: "76d630f2af6619c4a5de0ef953df3c6a", port: 2890, server: "202.181.103.235", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 36", password: "76d630f2af6619c4a5de0ef953df3c6a", port: 2890, server: "160.16.214.6", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 37", server: "213.159.66.206", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu", udp: true}
-- {name: "🇫🇷 法国 01", server: "38.14.99.163", port: 59807, type: "vmess", uuid: "418048af-a293-4b99-9b0c-98ca3580dd24", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, udp: true}
-- {type: "ss", server: "51.159.106.175", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", name: "🇫🇷 法国 02"}
-- {name: "🇫🇷 法国 03", server: "195.154.119.77", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇫🇷 法国 04", server: "185.193.17.80", port: 2066, type: "vless", uuid: "44830663-914e-4127-a9b3-412406f59cbe", tls: true, skip-cert-verify: false, reality-opts: {public-key: "-Z0BnqW2MHBXjDsB2a8-KPfg8GqTO1uIPXriHQAMhSY", short-id: "6b245ab1"}, client-fingerprint: "chrome", network: "tcp", servername: "yahoo.com"}
-- {name: "🇫🇷 法国 05", server: "185.253.116.133", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1792}
+- {type: "vless", name: "🇺🇸 美国 35", server: "154.21.203.45", port: 8443, uuid: "e258977b-e413-4718-a3af-02d75492c349", network: "ws", tls: true, encryption: "none", ws-opts: {path: "/", headers: {Host: "www.x-aniu---jp.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "www.x-aniu---jp.netlib.re"}
+- {name: "🇺🇸 美国 36", server: "23.94.111.50", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2860}
+- {type: "ss", server: "15.204.247.49", port: 12000, cipher: "aes-256-gcm", password: "8JCsPssfgS8tiRwiMlhARg==", name: "🇺🇸 美国 37"}
+- {name: "🇺🇸 美国 38", server: "213.159.66.206", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "pl2XtR0pzwknQOGwewbwXtPYDw1zn9Vu", udp: true}
+- {name: "🇨🇦 加拿大 01", server: "142.4.216.225", port: 80, type: "ss", cipher: "chacha20-ietf-poly1305", password: "JIhN6rBKkaEboLNXVSv5rq"}
+- {name: "🇨🇦 加拿大 02", server: "137.184.174.93", port: 8080, type: "ss", cipher: "rc4-md5", password: "14fFPrbezE3HDZzsMOr6"}
+- {name: "🇨🇦 加拿大 03", server: "86.107.168.100", port: 7070, type: "vless", uuid: "be32c9ad-92e1-485b-dc74-2a65e9dae480", tls: true, alpn: ["h2,http/1.1"], skip-cert-verify: false, client-fingerprint: "chrome", network: "tcp", servername: "src.smnsoft.com"}
+- {name: "🇨🇦 加拿大 04", server: "ca225.vpnbook.com", port: 80, type: "ss", cipher: "chacha20-ietf-poly1305", password: "JIhN6rBKkaEboLNXVSv5rq"}
+- {name: "🇨🇦 加拿大 05", server: "79.127.233.170", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
+- {type: "anytls", name: "🇨🇦 加拿大 06", server: "co-00fd98-20.9966663.xyz", port: 20132, sni: "co-00fd98-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {name: "🇨🇦 加拿大 07", server: "79.127.233.170", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {type: "anytls", name: "🇨🇦 加拿大 08", server: "co-00fd98-20.9966663.xyz", port: 20135, sni: "co-00fd98-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {name: "🇨🇦 加拿大 09", type: "vmess", network: "ws", server: "51.79.102.253", port: 80, uuid: "58fe1542-5290-40ad-815a-77707a81afe5", skip-cert-verify: true, udp: true, tfo: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"}, path: "/IOebhLMhl1CTbFHbL95myfRX2"}, client-fingerprint: "chrome"}
+- {name: "🇨🇦 加拿大 10", server: "107.174.93.186", port: 2025, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2848}
+- {name: "🇨🇦 加拿大 11", server: "45.154.98.52", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2096}
+- {name: "🇨🇦 加拿大 12", server: "5.255.122.223", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1594}
+- {type: "anytls", name: "🇨🇦 加拿大 13", server: "co-00fd98-20.9966663.xyz", port: 20131, sni: "co-00fd98-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {type: "vless", name: "🇨🇦 加拿大 14", server: "195.133.79.154", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, servername: "ak.suoni.nyc.mn"}
+- {name: "🇨🇦 加拿大 15", server: "speedtest.net.za", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1861}
+- {type: "anytls", name: "🇨🇦 加拿大 16", server: "co-00fd98-20.9966663.xyz", port: 20133, sni: "co-00fd98-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {name: "🇨🇦 加拿大 17", server: "139.180.193.88", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1913}
+- {sni: "diningtable.electricbanana.click", type: "trojan", password: "6pRjKQJ0CWyFtG.9", server: "198.57.27.27", port: 12990, name: "🇷🇴 罗马尼亚 01"}
+- {sni: "shoppingmall.electricbanana.click", type: "trojan", password: ".ie4rghJuMkcf0oF", server: "38.96.254.102", port: 18509, name: "🇷🇴 罗马尼亚 02"}
+- {sni: "_acme-challenge.2go.cloudns.be", network: "ws", ws-opts: {path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", server: "cf.877774.xyz", port: 443, name: "🇷🇴 罗马尼亚 03"}
+- {sni: "softpillow.silentrocket.click", type: "trojan", password: "BaeSzHdfJIR13l67", server: "70.34.218.149", port: 11930, name: "🇷🇴 罗马尼亚 04"}
+- {skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", password: "76d630f2af6619c4a5de0ef953df3c6a", server: "153.121.73.102", port: 1331, name: "🇷🇴 罗马尼亚 05"}
 - {name: "🇧🇷 巴西 01", type: "vless", network: "ws", server: "188.114.97.11", port: 2087, uuid: "b9b8cf4c-29a3-4288-9c6c-8811dc37beec", skip-cert-verify: false, tls: true, udp: true, tfo: false, client-fingerprint: "chrome", ws-opts: {headers: {Host: "Xlz767V2Ray.PAGEs.DEv"}, path: "/bethzrzkz5ljs32v", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "Xlz767V2Ray.PAGEs.DEv"}
-- {name: "🇪🇸 西班牙 01", type: "vless", network: "ws", server: "185.251.81.253", port: 2096, uuid: "2456f90c-5183-476d-b069-16ae74ce120f", skip-cert-verify: false, tls: true, udp: true, tfo: false, ws-opts: {headers: {Host: "fast01.0860852.xyz"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "fast01.0860852.xyz"}
-- {type: "vless", name: "🇪🇸 西班牙 02", server: "45.92.176.55", port: 2243, uuid: "d7e2c1ec-b2ba-4a4c-a73a-c08f5bd7923b", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "_ee-ouMazAzx7Q4_cYhWbu6pw53-8VVpt7tuBuCXziU", short-id: "e3cbc70477", _spider-x: "/---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET"}, network: "tcp", encryption: "none", servername: "rontgen.fasssst.ru"}
-- {type: "vless", name: "🇪🇸 西班牙 03", server: "45.92.176.55", port: 1243, uuid: "d29bde62-daa4-4804-9c69-6e23a4150006", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "jcJeCbLo5JtfveFIQLV6WNm1148XzxDc0Rzy336hXy0", short-id: "ff3cef7cdcf9"}, network: "tcp", encryption: "none", servername: "rontgen.fasssst.ru"}
-- {type: "vless", name: "🇪🇸 西班牙 04", server: "45.131.185.234", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, servername: "ak.suoni.nyc.mn"}
-- {name: "🇳🇱 荷兰 01", type: "vless", network: "ws", server: "45.131.211.253", port: 2096, uuid: "2456f90c-5183-476d-b069-16ae74ce120f", skip-cert-verify: false, tls: true, udp: true, tfo: false, ws-opts: {headers: {Host: "fast01.0860852.xyz"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "fast01.0860852.xyz"}
-- {name: "🇳🇱 荷兰 02", type: "vless", network: "ws", server: "185.193.31.253", port: 2096, uuid: "2456f90c-5183-476d-b069-16ae74ce120f", skip-cert-verify: false, tls: true, udp: true, tfo: false, ws-opts: {headers: {Host: "fast01.0860852.xyz"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "fast01.0860852.xyz"}
-- {name: "🇳🇱 荷兰 03", server: "193.29.139.240", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇳🇱 荷兰 01", type: "vless", network: "ws", server: "185.193.31.253", port: 2096, uuid: "2456f90c-5183-476d-b069-16ae74ce120f", skip-cert-verify: false, tls: true, udp: true, tfo: false, ws-opts: {headers: {Host: "fast01.0860852.xyz"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "fast01.0860852.xyz"}
+- {name: "🇳🇱 荷兰 02", type: "vless", network: "ws", server: "45.131.211.253", port: 2096, uuid: "2456f90c-5183-476d-b069-16ae74ce120f", skip-cert-verify: false, tls: true, udp: true, tfo: false, ws-opts: {headers: {Host: "fast01.0860852.xyz"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "fast01.0860852.xyz"}
+- {name: "🇳🇱 荷兰 03", server: "82.38.31.184", type: "ss", country: "🇬🇧GB", port: 8080, password: "k1dBOmOB4oqi7Ump37a1bQ", cipher: "chacha20-ietf-poly1305", delay: 426}
 - {name: "🇳🇱 荷兰 04", server: "109.201.152.181", port: 443, type: "ss", cipher: "aes-128-cfb", password: "shadowsocks"}
-- {name: "🇳🇱 荷兰 05", server: "193.29.139.217", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
-- {name: "🇳🇱 荷兰 06", server: "193.29.139.202", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇳🇱 荷兰 07", server: "82.38.31.184", type: "ss", country: "🇬🇧GB", port: 8080, password: "k1dBOmOB4oqi7Ump37a1bQ", cipher: "chacha20-ietf-poly1305", delay: 426}
-- {name: "🇳🇱 荷兰 08", server: "193.29.139.251", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {type: "ss", server: "193.29.139.173", port: 8080, cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa", name: "🇳🇱 荷兰 09"}
-- {name: "🇳🇱 荷兰 10", server: "193.29.139.227", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
-- {name: "🇳🇱 荷兰 11", server: "193.29.139.157", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa"}
-- {name: "🇳🇱 荷兰 12", server: "45.87.175.166", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "1RWwXhwfAB5gAEozU4G2Pg", udp: true}
-- {name: "🇳🇱 荷兰 13", server: "45.87.175.193", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "cvII85TrW6n0OGyfpHVS1u", udp: true}
-- {type: "ss", server: "193.29.139.143", port: 8080, cipher: "chacha20-ietf-poly1305", password: "1RWwXhwfAB5gAEozU4G2Pg", name: "🇳🇱 荷兰 14"}
-- {name: "🇳🇱 荷兰 15", server: "193.29.139.189", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "cvII85TrW6n0OGyfpHVS1u"}
-- {name: "🇳🇱 荷兰 16", server: "51.15.17.169", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {type: "anytls", name: "🇳🇱 荷兰 17", server: "co-f0ba91-20.9966663.xyz", port: 20131, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
-- {name: "🇳🇱 荷兰 18", server: "193.29.139.179", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "cvII85TrW6n0OGyfpHVS1u"}
-- {name: "🇳🇱 荷兰 19", server: "185.186.244.184", port: 81, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1346}
-- {type: "anytls", name: "🇳🇱 荷兰 20", server: "co-f0ba91-20.9966663.xyz", port: 20132, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
-- {name: "🇳🇱 荷兰 21", server: "208.67.105.196", port: 42029, type: "ss", cipher: "chacha20-ietf-poly1305", password: "SjdGCHwafjktt1rzpGxTKYTvVBWb8Xa6E5DTr6MzbdHQSwvpLiDczj3n6MBjy2uyFSzgqgvCWsDQmpM4VQzfPzyGYF58wdyD"}
-- {name: "🇳🇱 荷兰 22", server: "87.121.221.87", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2827}
-- {name: "🇳🇱 荷兰 23", server: "185.186.244.219", port: 81, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1242}
-- {name: "🇳🇱 荷兰 24", server: "185.246.152.65", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2382}
-- {name: "🇳🇱 荷兰 25", server: "4.210.166.177", port: 442, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2114}
-- {type: "anytls", name: "🇳🇱 荷兰 26", server: "co-f0ba91-20.9966663.xyz", port: 20133, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
-- {name: "🇳🇱 荷兰 27", server: "64.235.33.58", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2624}
-- {name: "🇳🇱 荷兰 28", server: "185.186.244.41", port: 80, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1371}
-- {name: "🇳🇱 荷兰 29", server: "2.58.56.31", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1529}
-- {name: "🇳🇱 荷兰 30", server: "141.11.182.13", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2817}
-- {sni: "shoppingmall.electricbanana.click", type: "trojan", password: ".ie4rghJuMkcf0oF", server: "38.96.254.102", port: 18509, name: "🇷🇴 罗马尼亚 01"}
-- {sni: "diningtable.electricbanana.click", type: "trojan", password: "6pRjKQJ0CWyFtG.9", server: "198.57.27.27", port: 12990, name: "🇷🇴 罗马尼亚 02"}
-- {skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", password: "76d630f2af6619c4a5de0ef953df3c6a", server: "153.121.73.102", port: 1331, name: "🇷🇴 罗马尼亚 03"}
-- {sni: "_acme-challenge.2go.cloudns.be", network: "ws", ws-opts: {path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", server: "cf.877774.xyz", port: 443, name: "🇷🇴 罗马尼亚 04"}
-- {sni: "softpillow.silentrocket.click", type: "trojan", password: "BaeSzHdfJIR13l67", server: "70.34.218.149", port: 11930, name: "🇷🇴 罗马尼亚 05"}
-- {name: "🇨🇦 加拿大 01", server: "speedtest.net.za", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1861}
-- {name: "🇨🇦 加拿大 02", server: "79.127.233.170", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇨🇦 加拿大 03", server: "79.127.233.170", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇨🇦 加拿大 04", server: "142.4.216.225", port: 80, type: "ss", cipher: "chacha20-ietf-poly1305", password: "JIhN6rBKkaEboLNXVSv5rq"}
-- {name: "🇨🇦 加拿大 05", server: "137.184.174.93", port: 8080, type: "ss", cipher: "rc4-md5", password: "14fFPrbezE3HDZzsMOr6"}
-- {name: "🇨🇦 加拿大 06", server: "ca225.vpnbook.com", port: 80, type: "ss", cipher: "chacha20-ietf-poly1305", password: "JIhN6rBKkaEboLNXVSv5rq"}
-- {name: "🇨🇦 加拿大 07", server: "107.174.93.186", port: 2025, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2848}
-- {name: "🇨🇦 加拿大 08", server: "86.107.168.100", port: 7070, type: "vless", uuid: "be32c9ad-92e1-485b-dc74-2a65e9dae480", tls: true, alpn: ["h2,http/1.1"], skip-cert-verify: false, client-fingerprint: "chrome", network: "tcp", servername: "src.smnsoft.com"}
-- {type: "vless", name: "🇨🇦 加拿大 09", server: "195.133.79.154", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, servername: "ak.suoni.nyc.mn"}
-- {type: "anytls", name: "🇨🇦 加拿大 10", server: "co-00fd98-20.9966663.xyz", port: 20135, sni: "co-00fd98-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
-- {type: "anytls", name: "🇨🇦 加拿大 11", server: "co-00fd98-20.9966663.xyz", port: 20133, sni: "co-00fd98-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
-- {name: "🇨🇦 加拿大 12", server: "31.214.157.113", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1835}
-- {name: "🇨🇦 加拿大 13", server: "139.180.193.88", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1913}
-- {name: "🇨🇦 加拿大 14", server: "23.95.76.59", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
-- {name: "🇨🇦 加拿大 15", type: "vmess", network: "ws", server: "51.79.102.253", port: 80, uuid: "58fe1542-5290-40ad-815a-77707a81afe5", skip-cert-verify: true, udp: true, tfo: true, alterId: 0, cipher: "auto", ws-opts: {headers: {Host: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"}, path: "/IOebhLMhl1CTbFHbL95myfRX2"}, client-fingerprint: "chrome"}
-- {type: "ssr", server: "79.127.233.170", port: 989, protocol: "origin", cipher: "aes-256-cfb", obfs: "plain", password: "f8f7aCzcPKbsF8p3", name: "🇬🇧 英国 01"}
-- {name: "🇬🇧 英国 02", server: "82.38.31.205", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇬🇧 英国 03", server: "82.38.31.218", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇬🇧 英国 04", server: "82.38.31.202", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇬🇧 英国 05", server: "141.98.101.178", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
-- {type: "ss", server: "141.98.101.182", port: 443, cipher: "aes-128-gcm", password: "shadowsocks", name: "🇬🇧 英国 06"}
-- {type: "anytls", name: "🇬🇧 英国 07", server: "co-7be4b6-20.9966663.xyz", port: 20133, sni: "co-7be4b6-20.9966663.xyz", client-fingerprint: "chrome", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", fp: "chrome", allowInsecure: "1"}
-- {type: "vless", name: "🇬🇧 英国 08", server: "94.72.99.160", port: 8443, uuid: "f5d7d068-3325-43d8-85bd-e8ed665abcd5", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "CsPJilX_bL4eatrPYHcBbnDEERssJU-2Igrnm8mir0Q", short-id: "8f79818e36afd892"}, network: "tcp", encryption: "none", servername: "www.microsoft.com"}
-- {name: "🇬🇧 英国 09", server: "51.89.226.133", port: 2053, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1880}
-- {name: "🇬🇧 英国 10", server: "23.81.34.186", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2525}
-- {name: "🇷🇺 俄罗斯 01", server: "23.95.72.81", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "UAMVtHm54uahd6SiN5WcD16rsPSdabPG", udp: true}
-- {name: "🇷🇺 俄罗斯 02", type: "ss", server: "109.71.246.210", port: 56689, password: "YQCSKoCF3QazW8YlvDBWA4", cipher: "chacha20-ietf-poly1305"}
-- {type: "ss", server: "83.217.9.17", port: 25232, cipher: "chacha20-ietf-poly1305", password: "YHtXD4pojvormVWRiHgIfv", name: "🇷🇺 俄罗斯 03"}
-- {name: "🇷🇺 俄罗斯 04", server: "213.159.67.124", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp", udp: true}
-- {type: "vless", name: "🇷🇺 俄罗斯 05", server: "51.250.20.121", port: 443, uuid: "20cf5921-f7fa-47c5-81ae-947fbef83a4d", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo", short-id: "a20d3ed244c76426"}, network: "tcp", encryption: "none", servername: "ads.x5.ru"}
-- {name: "🇷🇺 俄罗斯 06", type: "vless", server: "178.171.122.65", port: 443, udp: true, uuid: "0a97c5f3-68de-4d5e-bac2-c6bd94551fb6", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "I0fwGRiSwcXazqFy0qmyhMzaN3JOOBafmvDM6A-AaUs", short-id: "9c2378562188c3cb"}, client-fingerprint: "random", servername: "msk.capybara.press"}
-- {name: "🇯🇵 日本 01", server: "149.22.87.204", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
-- {name: "🇯🇵 日本 02", server: "18.180.249.33", port: 10005, type: "vless", uuid: "aa7f42cc-616f-4550-9a87-4b85bb409121", tls: true, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/?ed=2560&Telegram🇨🇳+@WangCai2", headers: {Host: "vless3.datatestvless.click"}}, servername: "vless3.datatestvless.click"}
-- {name: "🇯🇵 日本 03", server: "141.147.185.15", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2987}
-- {name: "🇯🇵 日本 04", server: "47.79.88.131", port: 1030, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1968}
+- {name: "🇳🇱 荷兰 05", server: "193.29.139.227", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
+- {name: "🇳🇱 荷兰 06", server: "193.29.139.157", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa"}
+- {name: "🇳🇱 荷兰 07", server: "193.29.139.251", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {type: "anytls", name: "🇳🇱 荷兰 08", server: "co-f0ba91-20.9966663.xyz", port: 20135, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {type: "ss", server: "193.29.139.143", port: 8080, cipher: "chacha20-ietf-poly1305", password: "1RWwXhwfAB5gAEozU4G2Pg", name: "🇳🇱 荷兰 09"}
+- {name: "🇳🇱 荷兰 10", server: "51.15.17.169", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {type: "anytls", name: "🇳🇱 荷兰 11", server: "co-f0ba91-20.9966663.xyz", port: 20131, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {type: "anytls", name: "🇳🇱 荷兰 12", server: "co-f0ba91-20.9966663.xyz", port: 20133, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {name: "🇳🇱 荷兰 13", server: "88.119.168.221", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2269}
+- {name: "🇳🇱 荷兰 14", server: "45.154.98.100", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2070}
+- {name: "🇳🇱 荷兰 15", server: "79.133.126.83", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2239}
+- {name: "🇳🇱 荷兰 16", server: "45.142.164.17", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2062}
+- {name: "🇳🇱 荷兰 17", server: "193.123.37.121", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1392}
+- {name: "🇳🇱 荷兰 18", server: "185.186.244.93", port: 81, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1263}
+- {name: "🇳🇱 荷兰 19", server: "45.154.98.54", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1530}
+- {name: "🇳🇱 荷兰 20", server: "4.210.166.177", port: 442, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2114}
+- {name: "🇳🇱 荷兰 21", server: "199.247.24.14", port: 2040, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2382}
+- {name: "🇳🇱 荷兰 22", server: "146.190.236.144", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1733}
+- {name: "🇳🇱 荷兰 23", server: "87.121.221.87", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2827}
+- {name: "🇳🇱 荷兰 24", server: "64.235.33.58", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2624}
+- {name: "🇳🇱 荷兰 25", server: "185.186.244.184", port: 81, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1346}
+- {name: "🇳🇱 荷兰 26", server: "2.58.56.31", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1529}
+- {name: "🇳🇱 荷兰 27", server: "185.186.244.191", port: 81, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1971}
+- {name: "🇳🇱 荷兰 28", server: "5.255.104.192", port: 2020, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2394}
+- {name: "🇳🇱 荷兰 29", server: "89.39.70.116", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1230}
+- {name: "🇳🇱 荷兰 30", server: "185.246.152.65", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2382}
+- {name: "🇳🇱 荷兰 31", server: "193.29.139.240", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇳🇱 荷兰 32", server: "95.164.62.196", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2777}
+- {name: "🇳🇱 荷兰 33", server: "91.211.249.58", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1691}
+- {name: "🇳🇱 荷兰 34", server: "185.186.244.41", port: 80, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1371}
+- {type: "ss", server: "193.29.139.173", port: 8080, cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa", name: "🇳🇱 荷兰 35"}
+- {type: "anytls", name: "🇳🇱 荷兰 36", server: "co-f0ba91-20.9966663.xyz", port: 20132, sni: "co-f0ba91-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
+- {name: "🇳🇱 荷兰 37", server: "147.45.174.205", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2532}
+- {type: "vless", name: "🇳🇱 荷兰 38", server: "eng25.netliberated.org", port: 443, uuid: "3513666b-d8ca-414f-856b-4ce192a0071b", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs"}, network: "tcp", encryption: "none", servername: "www.halfords.com"}
+- {name: "🇳🇱 荷兰 39", server: "193.29.139.202", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇳🇱 荷兰 40", server: "185.186.244.219", port: 81, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1242}
+- {name: "🇪🇸 西班牙 01", type: "vless", network: "ws", server: "185.251.81.253", port: 2096, uuid: "2456f90c-5183-476d-b069-16ae74ce120f", skip-cert-verify: false, tls: true, udp: true, tfo: false, ws-opts: {headers: {Host: "fast01.0860852.xyz"}, path: "/Telegram🇨🇳"}, client-fingerprint: "chrome", servername: "fast01.0860852.xyz"}
+- {type: "vless", name: "🇪🇸 西班牙 02", server: "141.227.140.217", port: 23991, uuid: "d016da91-83a9-42dc-a246-b27c192e40af", tls: false, skip-cert-verify: false, network: "grpc", grpc-opts: {grpc-service-name: "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}, encryption: "none"}
+- {type: "vless", name: "🇪🇸 西班牙 03", server: "141.227.178.242", port: 29803, uuid: "aa4f8c93-e4ec-48fe-8043-2f8e4f1c006d", tls: false, skip-cert-verify: false, network: "grpc", grpc-opts: {grpc-service-name: "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}, encryption: "none"}
+- {type: "vless", name: "🇪🇸 西班牙 04", server: "146.103.113.79", port: 4443, uuid: "3121850a-24aa-41f9-936d-dbdf10a3b31f", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE", short-id: "aa7e96542880027a"}, network: "tcp", encryption: "none", servername: "github.com"}
+- {type: "vless", name: "🇪🇸 西班牙 05", server: "147.45.234.51", port: 443, uuid: "fd0718a1-c463-4297-8ba9-a7f4b93ce436", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "GjFTD96cethyxcRuToHUwv741QoDB9-V7LRsxEh6jTU", short-id: "ab1cd2"}, network: "tcp", encryption: "none", servername: "www.vk.com"}
+- {type: "vless", name: "🇪🇸 西班牙 06", server: "72.56.73.5", port: 443, uuid: "90c9c25c-df6c-4438-83d3-ef97166a9184", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "yP1V_oAX1Sehc_102nMHuQgTOYk7T9KbJQmTlK4maVE", short-id: "d88b8adda0f82083"}, network: "tcp", encryption: "none", servername: "sun6-22.userapi.com"}
+- {type: "vless", name: "🇪🇸 西班牙 07", server: "45.131.185.234", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, servername: "ak.suoni.nyc.mn"}
+- {type: "anytls", name: "🇮🇳 印度 01", server: "co-74c5a9-20.9966663.xyz", port: 20133, sni: "co-74c5a9-20.9966663.xyz", skip-cert-verify: true, password: "33201095-a59e-4f4d-bfc6-3de921adb8d3", allowInsecure: "1"}
+- {type: "anytls", name: "🇮🇳 印度 02", server: "co-74c5a9-20.9966663.xyz", port: 20134, sni: "co-74c5a9-20.9966663.xyz", skip-cert-verify: true, password: "33201095-a59e-4f4d-bfc6-3de921adb8d3", allowInsecure: "1"}
 - {type: "anytls", name: "🇿🇦 南非 01", server: "co-74c5a9-20.9966663.xyz", port: 20132, sni: "co-74c5a9-20.9966663.xyz", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", allowInsecure: "1"}
 - {name: "🇿🇦 南非 02", server: "156.38.168.58", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
-- {type: "anytls", name: "🇮🇳 印度 01", server: "co-74c5a9-20.9966663.xyz", port: 20134, sni: "co-74c5a9-20.9966663.xyz", skip-cert-verify: true, password: "33201095-a59e-4f4d-bfc6-3de921adb8d3", allowInsecure: "1"}
-- {name: "🇧🇬 保加利亚 01", server: "95.164.10.228", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo"}
-- {name: "🇱🇹 立陶宛 01", server: "45.87.175.164", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "1RWwXhwfAB5gAEozU4G2Pg"}
-- {name: "🇱🇹 立陶宛 02", server: "45.87.175.197", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇱🇹 立陶宛 03", server: "45.87.175.65", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 04", server: "45.87.175.58", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 05", server: "45.87.175.199", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa"}
-- {name: "🇱🇹 立陶宛 06", server: "45.87.175.92", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 07", server: "45.87.175.69", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 08", server: "45.158.171.66", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 09", server: "45.87.175.155", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇱🇹 立陶宛 10", server: "45.87.175.174", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇱🇹 立陶宛 11", server: "45.87.175.22", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 12", server: "45.87.175.171", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa"}
+- {name: "🇱🇹 立陶宛 01", server: "45.87.175.35", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇱🇹 立陶宛 02", server: "45.87.175.65", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇱🇹 立陶宛 03", server: "45.87.175.164", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "1RWwXhwfAB5gAEozU4G2Pg"}
+- {name: "🇱🇹 立陶宛 04", server: "45.158.171.66", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇱🇹 立陶宛 05", server: "45.87.175.22", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇱🇹 立陶宛 06", server: "45.87.175.58", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇱🇹 立陶宛 07", server: "45.87.175.199", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa"}
+- {name: "🇱🇹 立陶宛 08", server: "45.87.175.92", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇱🇹 立陶宛 09", server: "45.87.175.197", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
+- {name: "🇱🇹 立陶宛 10", server: "45.87.175.155", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
+- {name: "🇱🇹 立陶宛 11", server: "45.87.175.171", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4a2rfixophdjffa8KVA4Aa"}
+- {name: "🇱🇹 立陶宛 12", server: "45.87.175.174", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
 - {name: "🇱🇹 立陶宛 13", server: "45.158.171.70", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇱🇹 立陶宛 14", server: "45.87.175.35", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
-- {name: "🇦🇪 阿联酋 01", server: "151.242.251.152", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇦🇪 阿联酋 02", server: "151.242.251.147", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
-- {name: "🇦🇪 阿联酋 03", server: "151.242.251.131", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
-- {name: "🇦🇪 阿联酋 04", server: "151.242.251.153", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
-- {name: "🇦🇪 阿联酋 05", server: "151.242.251.133", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
-- {name: "🇩🇪 德国 01", type: "vmess", network: "tcp", server: "85.195.101.122", port: 40878, uuid: "f3d4167e-b15e-4e46-82e9-9286ef93fda7", skip-cert-verify: true, udp: true, tfo: true, alterId: 0, cipher: "auto", client-fingerprint: "chrome"}
-- {type: "vless", name: "🇩🇪 德国 02", server: "m65a.vip784.com", port: 33801, uuid: "dfac7622-66ca-4efe-9976-76f04f4e5d8b", tls: false, skip-cert-verify: false, network: "http", http-opts: {headers: {Host: ["varzesh3.ir"]}, path: ["/"]}, encryption: "none"}
-- {type: "vless", name: "🇩🇪 德国 03", server: "lovetea.parsianboton.ir", port: 3002, uuid: "4fbf976a-ecff-42e6-a100-0436ef96ee46", skip-cert-verify: false, network: "tcp", encryption: "none"}
-- {name: "🇩🇪 德国 04", server: "85.209.53.170", port: 443, type: "hysteria2", password: "b486a4bc-3913-4136-b360-c3588066ea0a", auth: "b486a4bc-3913-4136-b360-c3588066ea0a", up: 2, down: 2, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
-- {name: "🇩🇪 德国 05", server: "3.67.8.221", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2442}
-- {name: "🇩🇪 德国 06", server: "45.145.43.48", port: 2096, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2117}
-- {name: "🇩🇪 德国 07", server: "185.94.29.212", port: 2017, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1739}
-- {name: "🇩🇪 德国 08", server: "85.234.94.186", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2108}
-- {name: "🇩🇪 德国 09", server: "213.176.114.86", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1860}
-- {name: "🇩🇪 德国 10", server: "37.120.187.246", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2146}
-- {name: "🇩🇪 德国 11", server: "194.26.192.251", port: 2026, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2439}
-- {name: "🇩🇪 德国 12", server: "89.168.110.240", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2107}
-- {name: "🇩🇪 德国 13", server: "37.120.187.246", port: 3001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2812}
-- {name: "🇩🇪 德国 14", server: "2.59.135.223", port: 1029, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1525}
-- {name: "🇩🇪 德国 15", server: "2.59.135.223", port: 1028, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1645}
-- {name: "🇩🇪 德国 16", server: "91.107.128.71", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1869}
-- {name: "🇩🇪 德国 17", server: "89.58.14.243", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2933}
-- {name: "🇩🇪 德国 18", server: "89.58.14.243", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2386}
-- {name: "🇩🇪 德国 19", server: "193.31.28.79", port: 20001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2915}
-- {name: "🇩🇪 德国 20", server: "194.26.192.217", port: 8001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1408}
-- {name: "🇩🇪 德国 21", server: "45.154.98.100", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2247}
-- {name: "🇩🇪 德国 22", server: "202.61.200.220", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1759}
-- {name: "🇩🇪 德国 23", server: "152.53.118.199", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1278}
-- {name: "🇩🇪 德国 24", server: "91.107.171.181", port: 8008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2328}
-- {name: "🇩🇪 德国 25", server: "45.147.49.88", port: 12321, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1058}
-- {name: "🇩🇪 德国 26", server: "89.58.26.175", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1365}
-- {name: "🇩🇪 德国 27", server: "45.154.98.120", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2358}
-- {name: "🇩🇪 德国 28", server: "91.107.255.199", port: 8086, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2472}
-- {name: "🇩🇪 德国 29", server: "49.13.53.126", port: 2222, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2081}
-- {name: "🇩🇪 德国 30", server: "88.99.60.34", port: 2053, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1334}
-- {name: "🇩🇪 德国 31", server: "78.47.146.151", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1834}
-- {name: "🇩🇪 德国 32", server: "91.107.243.237", port: 2052, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1610}
-- {name: "🇩🇪 德国 33", server: "49.13.220.86", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1596}
-- {name: "🇩🇪 德国 34", server: "194.26.192.125", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1180}
-- {name: "🇩🇪 德国 35", server: "91.107.203.137", port: 990, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1698}
-- {name: "🇩🇪 德国 36", server: "194.26.192.251", port: 1008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1339}
-- {name: "🇩🇪 德国 37", server: "5.75.204.208", port: 8000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2635}
-- {name: "🇩🇪 德国 38", server: "91.107.243.237", port: 2086, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1372}
-- {name: "🇩🇪 德国 39", server: "94.130.72.184", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1368}
-- {name: "🇩🇪 德国 40", server: "194.26.192.125", port: 2013, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1485}
-- {name: "🇩🇪 德国 41", server: "82.115.19.143", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2164}
-- {name: "🇩🇪 德国 42", server: "194.26.192.125", port: 1033, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1746}
-- {name: "🇩🇪 德国 43", server: "142.132.178.99", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2545}
-- {name: "🇩🇪 德国 44", server: "194.26.192.251", port: 3001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2283}
-- {name: "🇩🇪 德国 45", server: "194.26.192.251", port: 5007, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1832}
-- {name: "🇩🇪 德国 46", server: "45.154.98.230", port: 5008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2046}
-- {name: "🇩🇪 德国 47", server: "45.154.98.133", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1226}
-- {name: "🇩🇪 德国 48", server: "194.26.192.251", port: 5008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2377}
-- {name: "🇩🇪 德国 49", server: "176.96.138.203", port: 8000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1325}
-- {name: "🇩🇪 德国 50", server: "194.26.192.251", port: 4001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2724}
-- {name: "🇩🇪 德国 51", server: "185.94.29.156", port: 14001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1916}
-- {name: "🇩🇪 德国 52", server: "45.145.42.170", port: 8005, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2711}
-- {name: "🇩🇪 德国 53", server: "152.53.15.208", port: 4006, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2633}
-- {name: "🇩🇪 德国 54", server: "5.75.220.207", port: 7991, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1898}
-- {name: "🇩🇪 德国 55", server: "152.53.12.23", port: 5007, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1679}
-- {name: "🇩🇪 德国 56", server: "195.201.252.144", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1586}
-- {name: "🇩🇪 德国 57", server: "193.23.216.248", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1260}
-- {name: "🇩🇪 德国 58", server: "91.107.139.23", port: 2000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1387}
-- {name: "🇩🇪 德国 59", server: "91.99.235.21", port: 2233, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2826}
-- {name: "🇩🇪 德国 60", server: "91.99.155.167", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2667}
-- {name: "🇩🇪 德国 61", server: "45.154.98.133", port: 14001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2359}
-- {name: "🇩🇪 德国 62", server: "45.133.74.6", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2134}
-- {name: "🇩🇪 德国 63", server: "91.107.151.39", port: 2053, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2313}
-- {name: "🇩🇪 德国 64", server: "2.58.56.170", port: 1032, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2044}
-- {name: "🇩🇪 德国 65", server: "45.154.98.230", port: 5003, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2337}
-- {name: "🇩🇪 德国 66", server: "163.5.187.149", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1359}
-- {name: "🇩🇪 德国 67", server: "45.154.98.100", port: 3002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1701}
-- {name: "🇩🇪 德国 68", server: "2.59.134.207", port: 8008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1835}
-- {name: "🇩🇪 德国 69", server: "91.107.245.83", port: 3085, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2236}
-- {name: "🇩🇪 德国 70", server: "89.58.34.230", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1456}
-- {name: "🇩🇪 德国 71", server: "194.26.192.251", port: 1013, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2545}
-- {name: "🇩🇪 德国 72", server: "91.98.119.52", port: 2233, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2185}
-- {name: "🇩🇪 德国 73", server: "194.26.192.125", port: 3001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1446}
-- {name: "🇩🇪 德国 74", server: "5.75.214.255", port: 2095, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2271}
-- {name: "🇩🇪 德国 75", server: "194.26.192.217", port: 8004, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2062}
-- {name: "🇩🇪 德国 76", server: "194.26.192.217", port: 8003, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1293}
-- {name: "🇩🇪 德国 77", server: "194.26.192.251", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1648}
-- {name: "🇩🇪 德国 78", server: "194.26.192.125", port: 2007, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2722}
-- {name: "🇩🇪 德国 79", server: "45.154.98.230", port: 2003, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2410}
-- {type: "vless", name: "🇩🇪 德国 80", server: "45.150.32.240", port: 37007, uuid: "8cde876d-7628-4587-bbb7-0535a7d177ce", skip-cert-verify: false, network: "tcp"}
-- {name: "🇩🇪 德国 81", server: "194.26.192.251", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1540}
-- {name: "🇩🇪 德国 82", server: "62.60.239.218", port: 3085, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1556}
-- {name: "🇩🇪 德国 83", server: "2.58.56.170", port: 5008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2365}
-- {name: "🇩🇪 德国 84", server: "202.61.200.220", port: 8088, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1872}
-- {type: "vless", name: "🇩🇪 德国 85", server: "168.119.104.156", port: 10200, uuid: "b786d9bd-b9f7-4587-a580-eb8a219f19f3", skip-cert-verify: false, network: "ws", ws-opts: {path: "/"}}
-- {name: "🇩🇪 德国 86", server: "209.38.115.143", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1906}
-- {name: "🇩🇪 德国 87", server: "94.141.123.232", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2165}
-- {name: "🇩🇪 德国 88", server: "176.96.138.17", port: 8205, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2159}
-- {name: "🇩🇪 德国 89", server: "128.140.64.14", port: 990, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1392}
-- {name: "🇩🇪 德国 90", server: "45.154.98.120", port: 2013, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1378}
-- {name: "🇩🇪 德国 91", server: "194.26.192.251", port: 2025, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2456}
-- {name: "🇩🇪 德国 92", server: "152.53.12.23", port: 5005, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1260}
-- {name: "🇩🇪 德国 93", server: "188.245.165.71", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1703}
-- {name: "🇩🇪 德国 94", server: "152.53.12.112", port: 12001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2434}
-- {name: "🇩🇪 德国 95", server: "194.26.192.125", port: 3002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1176}
-- {name: "🇩🇪 德国 96", server: "45.154.98.127", port: 2002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2335}
-- {name: "🇩🇪 德国 97", server: "194.26.192.125", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2808}
-- {name: "🇩🇪 德国 98", server: "45.94.31.56", port: 10322, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1665}
-- {name: "🇩🇪 德国 99", server: "45.154.98.133", port: 5005, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1764}
-- {type: "vless", name: "🇩🇪 德国 100", server: "us1.candyfans.win", port: 443, uuid: "d82baa81-c138-49fc-b81e-7ef0eb7ff063", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "us1.candyfans.win"}, path: "/cgunws"}, encryption: "none", servername: "us1.candyfans.win"}
+- {name: "🇱🇹 立陶宛 14", server: "45.87.175.69", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "oZIoA69Q8yhcQV8ka3Pa3A"}
+- {name: "🇧🇬 保加利亚 01", server: "95.164.10.228", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo"}
+- {name: "🇦🇪 阿联酋 01", server: "151.242.251.131", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
+- {name: "🇦🇪 阿联酋 02", server: "151.242.251.133", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
+- {name: "🇦🇪 阿联酋 03", server: "151.242.251.147", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "QCXDxuDlTTMD7jtgHUjIoj"}
+- {type: "ssr", server: "79.127.233.170", port: 989, protocol: "origin", cipher: "aes-256-cfb", obfs: "plain", password: "f8f7aCzcPKbsF8p3", name: "🇬🇧 英国 01"}
+- {type: "vless", name: "🇬🇧 英国 02", server: "141.227.174.26", port: 32418, uuid: "aab74025-0737-410c-b048-bcbde3bc1852", skip-cert-verify: false, network: "grpc", grpc-opts: {grpc-service-name: "ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}, encryption: "none"}
+- {type: "vless", name: "🇬🇧 英国 03", server: "144.126.196.165", port: 28899, uuid: "f61d9aee-63b8-439e-bebf-afaa53c015fd", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "UcJ-s55xl9msAtzJcBghDUTSnyilzB6d7NpUfkHoQmY", _spider-x: "/"}, network: "tcp", encryption: "none", servername: "s0.awsstatic.com"}
+- {type: "anytls", name: "🇬🇧 英国 04", server: "co-7be4b6-20.9966663.xyz", port: 20133, sni: "co-7be4b6-20.9966663.xyz", client-fingerprint: "chrome", skip-cert-verify: true, password: "2e73ef78-ee16-4f30-9fc1-556d9f70f84a", fp: "chrome", allowInsecure: "1"}
+- {type: "vless", name: "🇬🇧 英国 05", server: "94.72.99.160", port: 8443, uuid: "f5d7d068-3325-43d8-85bd-e8ed665abcd5", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "CsPJilX_bL4eatrPYHcBbnDEERssJU-2Igrnm8mir0Q", short-id: "8f79818e36afd892"}, network: "tcp", encryption: "none", servername: "www.microsoft.com"}
+- {type: "vless", name: "🇬🇧 英国 06", server: "84.8.145.58", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, servername: "ak.suoni.nyc.mn"}
+- {name: "🇬🇧 英国 07", server: "82.38.31.205", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ"}
+- {name: "🇬🇧 英国 08", server: "51.89.226.133", port: 2053, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1880}
+- {name: "🇬🇧 英国 09", server: "23.81.34.186", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2525}
+- {type: "vless", name: "🇬🇧 英国 10", server: "212.192.212.74", port: 443, uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ak.suoni.nyc.mn"}, path: "/proxyip=sjc.o00o.ooo"}, encryption: "none", servername: "ak.suoni.nyc.mn"}
 - {name: "🇮🇹 意大利 01", server: "212.102.54.45", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
+- {name: "🇷🇺 俄罗斯 01", type: "ss", server: "109.71.246.210", port: 56689, password: "YQCSKoCF3QazW8YlvDBWA4", cipher: "chacha20-ietf-poly1305"}
+- {name: "🇷🇺 俄罗斯 02", server: "23.95.72.81", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "UAMVtHm54uahd6SiN5WcD16rsPSdabPG", udp: true}
+- {name: "🇷🇺 俄罗斯 03", server: "213.159.67.124", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp", udp: true}
+- {name: "🇷🇺 俄罗斯 04", type: "vless", server: "178.171.122.65", port: 443, udp: true, uuid: "0a97c5f3-68de-4d5e-bac2-c6bd94551fb6", tls: true, flow: "xtls-rprx-vision", network: "tcp", reality-opts: {public-key: "I0fwGRiSwcXazqFy0qmyhMzaN3JOOBafmvDM6A-AaUs", short-id: "9c2378562188c3cb"}, client-fingerprint: "random", servername: "msk.capybara.press"}
+- {type: "vless", name: "🇷🇺 俄罗斯 05", server: "51.250.20.121", port: 443, uuid: "20cf5921-f7fa-47c5-81ae-947fbef83a4d", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "bYPDMM7Z7s3brAUozWIqspE24dQwgHyI60lDRZvscVo", short-id: "a20d3ed244c76426"}, network: "tcp", encryption: "none", servername: "ads.x5.ru"}
+- {type: "vless", name: "🇩🇪 德国 01", server: "m65a.vip784.com", port: 33801, uuid: "dfac7622-66ca-4efe-9976-76f04f4e5d8b", tls: false, skip-cert-verify: false, network: "http", http-opts: {headers: {Host: ["varzesh3.ir"]}, path: ["/"]}, encryption: "none"}
+- {name: "🇩🇪 德国 02", type: "vmess", network: "tcp", server: "85.195.101.122", port: 40878, uuid: "f3d4167e-b15e-4e46-82e9-9286ef93fda7", skip-cert-verify: true, udp: true, tfo: true, alterId: 0, cipher: "auto", client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 03", server: "45.133.74.6", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2134}
+- {type: "vless", name: "🇩🇪 德国 04", server: "168.119.104.156", port: 10200, uuid: "b786d9bd-b9f7-4587-a580-eb8a219f19f3", skip-cert-verify: false, network: "ws", ws-opts: {path: "/"}}
+- {name: "🇩🇪 德国 05", server: "45.147.49.88", port: 12321, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1058}
+- {name: "🇩🇪 德国 06", server: "176.96.138.203", port: 8000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1325}
+- {name: "🇩🇪 德国 07", server: "194.26.192.125", port: 3002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1176}
+- {name: "🇩🇪 德国 08", server: "194.26.192.251", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1648}
+- {name: "🇩🇪 德国 09", server: "209.38.115.143", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1906}
+- {name: "🇩🇪 德国 10", server: "91.107.255.199", port: 8086, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2472}
+- {name: "🇩🇪 德国 11", server: "91.98.119.52", port: 2233, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2185}
+- {name: "🇩🇪 德国 12", server: "152.53.225.203", port: 1020, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2772}
+- {name: "🇩🇪 德国 13", server: "176.96.138.17", port: 8205, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2159}
+- {name: "🇩🇪 德国 14", server: "152.53.118.199", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1278}
+- {name: "🇩🇪 德国 15", server: "91.99.155.167", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2667}
+- {name: "🇩🇪 德国 16", server: "202.61.200.220", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1759}
+- {name: "🇩🇪 德国 17", server: "185.94.29.156", port: 14001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1916}
+- {name: "🇩🇪 德国 18", server: "37.120.187.246", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2146}
+- {name: "🇩🇪 德国 19", server: "194.26.192.217", port: 8001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1408}
+- {name: "🇩🇪 德国 20", server: "2.59.134.116", port: 2013, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1355}
+- {name: "🇩🇪 德国 21", server: "2.59.135.223", port: 1029, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1525}
+- {name: "🇩🇪 德国 22", server: "152.53.12.23", port: 5007, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1679}
+- {name: "🇩🇪 德国 23", server: "202.61.200.220", port: 8088, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1872}
+- {name: "🇩🇪 德国 24", server: "193.23.216.248", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1260}
+- {name: "🇩🇪 德国 25", server: "91.107.151.39", port: 2053, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2313}
+- {name: "🇩🇪 德国 26", server: "78.47.146.151", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1834}
+- {name: "🇩🇪 德国 27", server: "194.26.192.251", port: 1013, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2545}
+- {name: "🇩🇪 德国 28", server: "5.75.214.255", port: 2095, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2271}
+- {name: "🇩🇪 德国 29", server: "91.107.128.71", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1869}
+- {name: "🇩🇪 德国 30", server: "45.154.98.100", port: 3002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1701}
+- {name: "🇩🇪 德国 31", server: "194.26.192.125", port: 1033, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1746}
+- {name: "🇩🇪 德国 32", server: "152.53.12.23", port: 5005, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1260}
+- {name: "🇩🇪 德国 33", server: "194.26.192.125", port: 2013, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1485}
+- {name: "🇩🇪 德国 34", server: "89.58.14.243", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2933}
+- {name: "🇩🇪 德国 35", server: "188.245.165.71", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1703}
+- {name: "🇩🇪 德国 36", server: "89.58.14.243", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2386}
+- {name: "🇩🇪 德国 37", server: "194.26.192.217", port: 8004, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2062}
+- {name: "🇩🇪 德国 38", server: "85.234.94.186", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2108}
+- {name: "🇩🇪 德国 39", server: "5.75.204.208", port: 8000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2635}
+- {name: "🇩🇪 德国 40", server: "91.99.235.21", port: 2233, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2826}
+- {name: "🇩🇪 德国 41", server: "152.53.15.208", port: 4006, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2633}
+- {name: "🇩🇪 德国 42", server: "82.115.19.143", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2164}
+- {name: "🇩🇪 德国 43", server: "91.107.243.237", port: 2086, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1372}
+- {name: "🇩🇪 德国 44", server: "194.26.192.251", port: 5008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2377}
+- {name: "🇩🇪 德国 45", server: "91.107.245.83", port: 3085, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2236}
+- {name: "🇩🇪 德国 46", server: "2.59.134.207", port: 8008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1835}
+- {name: "🇩🇪 德国 47", server: "2.59.135.223", port: 1028, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1645}
+- {name: "🇩🇪 德国 48", server: "94.141.123.232", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2165}
+- {name: "🇩🇪 德国 49", server: "194.26.192.125", port: 2007, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2722}
+- {name: "🇩🇪 德国 50", server: "62.60.239.218", port: 3085, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1556}
+- {name: "🇩🇪 德国 51", server: "185.94.29.212", port: 2017, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1739}
+- {name: "🇩🇪 德国 52", server: "45.145.43.48", port: 2096, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2117}
+- {name: "🇩🇪 德国 53", server: "194.26.192.251", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1540}
+- {name: "🇩🇪 德国 54", server: "37.120.187.246", port: 3001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2812}
+- {name: "🇩🇪 德国 55", server: "89.58.34.230", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1456}
+- {name: "🇩🇪 德国 56", server: "85.209.53.170", port: 443, type: "hysteria2", password: "b486a4bc-3913-4136-b360-c3588066ea0a", auth: "b486a4bc-3913-4136-b360-c3588066ea0a", up: 2, down: 2, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
+- {name: "🇩🇪 德国 57", server: "38.244.166.207", port: 8000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1492}
+- {name: "🇩🇪 德国 58", server: "45.145.42.170", port: 8005, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2711}
+- {name: "🇩🇪 德国 59", server: "193.31.28.79", port: 20001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2915}
+- {name: "🇩🇪 德国 60", server: "128.140.64.14", port: 990, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1392}
+- {name: "🇩🇪 德国 61", server: "195.201.252.144", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1586}
+- {name: "🇩🇪 德国 62", server: "194.26.192.217", port: 8003, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1293}
+- {name: "🇩🇪 德国 63", server: "5.75.220.207", port: 7991, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1898}
+- {name: "🇩🇪 德国 64", server: "194.26.192.251", port: 1008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1339}
+- {name: "🇩🇪 德国 65", server: "142.132.178.99", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2545}
+- {name: "🇩🇪 德国 66", server: "194.26.192.251", port: 2026, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2439}
+- {name: "🇩🇪 德国 67", server: "194.26.192.125", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1180}
+- {name: "🇩🇪 德国 68", server: "163.5.187.149", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1359}
+- {name: "🇩🇪 德国 69", server: "45.154.98.100", port: 1001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2247}
+- {name: "🇩🇪 德国 70", server: "3.67.8.221", port: 8080, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2442}
+- {name: "🇩🇪 德国 71", server: "194.26.192.125", port: 3001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1446}
+- {name: "🇩🇪 德国 72", server: "94.130.72.184", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1368}
+- {name: "🇩🇪 德国 73", server: "194.26.192.251", port: 4001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2724}
+- {type: "vless", name: "🇩🇪 德国 74", server: "45.150.32.240", port: 37007, uuid: "8cde876d-7628-4587-bbb7-0535a7d177ce", skip-cert-verify: false, network: "tcp"}
+- {name: "🇩🇪 德国 75", server: "91.107.203.137", port: 990, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1698}
+- {name: "🇩🇪 德国 76", server: "194.26.192.251", port: 5007, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1832}
+- {name: "🇩🇪 德国 77", server: "213.176.114.86", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1860}
+- {name: "🇩🇪 德国 78", server: "194.26.192.251", port: 3001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2283}
+- {name: "🇩🇪 德国 79", server: "49.13.220.86", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1596}
+- {name: "🇩🇪 德国 80", server: "91.107.243.237", port: 2052, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1610}
+- {name: "🇩🇪 德国 81", server: "194.26.192.251", port: 2025, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2456}
+- {name: "🇩🇪 德国 82", server: "91.107.171.181", port: 8008, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2328}
+- {name: "🇩🇪 德国 83", server: "89.58.26.175", port: 2083, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1365}
+- {name: "🇩🇪 德国 84", server: "152.53.12.112", port: 12001, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2434}
+- {name: "🇩🇪 德国 85", server: "91.107.139.23", port: 2000, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1387}
+- {name: "🇩🇪 德国 86", server: "45.154.98.230", port: 2003, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2410}
+- {name: "🇩🇪 德国 87", server: "88.99.60.34", port: 2053, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1334}
+- {name: "🇩🇪 德国 88", server: "45.94.31.56", port: 10322, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1665}
+- {name: "🇩🇪 德国 89", server: "45.154.98.230", port: 5003, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2337}
+- {type: "vless", name: "🇩🇪 德国 90", server: "masterserver1.heloisfood.ir", port: 6423, uuid: "71a712db-3843-4d24-b4c4-724ee0813044", skip-cert-verify: false, network: "grpc", grpc-opts: {grpc-service-name: "@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1--@MaSTeRSeRVeR1"}, encryption: "none"}
+- {name: "🇩🇪 德国 91", server: "49.13.53.126", port: 2222, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2081}
+- {name: "🇩🇪 德国 92", server: "89.168.110.240", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2107}
+- {name: "🇩🇪 德国 93", server: "194.26.192.125", port: 2012, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2808}
+- {name: "🇩🇪 德国 94", server: "2.58.56.170", port: 1032, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2044}
+- {name: "🇩🇪 德国 95", server: "45.154.98.120", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 2358}
+- {name: "🇩🇪 德国 96", server: "45.154.98.133", port: 1002, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1226}
 - {name: "🇨🇿 捷克 01", server: "195.181.160.6", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
-- {name: "🇭🇰 香港 01", server: "8.218.105.196", type: "vmess", port: 52752, uuid: "925bdbf5-72be-4437-bebf-441c61089f6b", alterId: 0, cipher: "auto", network: "none", http-opts: {}, h2-opts: {}, delay: 404}
-- {name: "🇭🇰 香港 02", server: "216.250.97.82", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
-- {name: "🇭🇰 香港 03", server: "372220e7-t4jj40-tnnrly-g43g.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "6ddb6a68-d5f5-ca30-3943-cf0c9876d50c", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "372220e7-t4jj40-tnnrly-g43g.hkt.gotochinatown.net"}}, servername: "🇭🇰HK-220.246.173.91-7555 | 5.617MB"}
-- {name: "🇭🇰 香港 04", server: "afb0ccd7-t70f40-tkn6t8-1i3g8.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "437cef58-f10b-11ef-8eaf-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true}
+- {name: "🇫🇷 法国 01", server: "195.154.119.77", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {type: "ss", server: "51.159.106.175", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", name: "🇫🇷 法国 02"}
+- {type: "vless", name: "🇫🇷 法国 03", server: "par1.vpntype.dev", port: 8443, uuid: "a6fd4548-23da-4bb8-a91f-6013c5cd8e2f", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "ExvhqXfyAWkqInK6hAY_ePlR-WggXgpSy0phURcuwU8"}, network: "tcp", encryption: "none", servername: "google.com"}
+- {name: "🇫🇷 法国 04", server: "185.193.17.80", port: 2066, type: "vless", uuid: "44830663-914e-4127-a9b3-412406f59cbe", tls: true, skip-cert-verify: false, reality-opts: {public-key: "-Z0BnqW2MHBXjDsB2a8-KPfg8GqTO1uIPXriHQAMhSY", short-id: "6b245ab1"}, client-fingerprint: "chrome", network: "tcp", servername: "yahoo.com"}
+- {name: "🇫🇷 法国 05", server: "185.253.116.133", port: 8443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1792}
+- {name: "🇯🇵 日本 01", server: "149.22.87.204", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks"}
+- {type: "ss", server: "5.253.41.46", port: 443, cipher: "chacha20-ietf-poly1305", password: "xgoOsyyBv2Yn4w0hSqjsNqf5IGbIETZ6", name: "🇯🇵 日本 02"}
+- {type: "vless", name: "🇯🇵 日本 03", server: "139.162.83.106", port: 4399, uuid: "aa7f42cc-616f-4550-9a87-4b85bb409121", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "vless3.datatestvless.click"}, path: "/"}, encryption: "none", servername: "vless3.datatestvless.click"}
+- {name: "🇯🇵 日本 04", server: "47.79.88.131", port: 1030, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1968}
+- {name: "🇯🇵 日本 05", server: "18.180.249.33", port: 10005, type: "vless", uuid: "aa7f42cc-616f-4550-9a87-4b85bb409121", tls: true, tfo: false, skip-cert-verify: false, network: "ws", ws-opts: {path: "/?ed=2560&Telegram🇨🇳+@WangCai2", headers: {Host: "vless3.datatestvless.click"}}, servername: "vless3.datatestvless.click"}
+- {type: "ss", server: "217.30.10.18", port: 9025, cipher: "aes-256-cfb", password: "XPtzA9sCug3SPR4c", name: "🇵🇱 波兰 01"}
 - {name: "🇲🇩 摩尔多瓦 01", server: "176.123.1.175", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
 - {name: "🇲🇩 摩尔多瓦 02", server: "213.159.76.21", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "pNqnYf3kHesOpCchRvUZxfwTafRsOj7g"}
 - {name: "🇵🇷 波多黎各 01", server: "185.47.255.22", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
-- {type: "vless", name: "🇸🇪 瑞典 01", server: "fs.ir-sub.fun", port: 80, uuid: "2e9177ce-d1cc-45cd-b27f-f16f8fbc117a", tls: false, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "zedd.global.ssl.fastly.net"}, path: "/ZEDMODEON-ZEDMODEON-bia-ZEDMODEON"}, encryption: "none"}
-- {name: "🇸🇪 瑞典 02", server: "51.120.240.39", port: 443, type: "vless", uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "ak.suoni.nyc.mn"}}, udp: true, servername: "ak.suoni.nyc.mn"}
+- {name: "🇭🇰 香港 01", server: "8.218.105.196", type: "vmess", port: 52752, uuid: "925bdbf5-72be-4437-bebf-441c61089f6b", alterId: 0, cipher: "auto", network: "none", http-opts: {}, h2-opts: {}, delay: 404}
+- {name: "🇭🇰 香港 02", server: "afb0ccd7-t70f40-tkn6t8-1i3g8.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "437cef58-f10b-11ef-8eaf-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true}
+- {type: "vless", name: "🇭🇰 香港 03", server: "43.161.222.97", port: 443, uuid: "e258977b-e413-4718-a3af-02d75492c349", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "www.x-aniu---jp.netlib.re"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "www.x-aniu---jp.netlib.re"}
+- {type: "ss", server: "95.173.218.203", port: 990, cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=", name: "🇸🇬 新加坡 01"}
+- {type: "ss", server: "209.74.82.196", port: 48918, cipher: "chacha20-ietf-poly1305", password: "8Ij4seif85QQHfLmR0zYkQ", name: "🇸🇬 新加坡 02"}
+- {type: "ss", server: "209.74.82.227", port: 26515, cipher: "chacha20-ietf-poly1305", password: "uA1rLP5m0mMOQ8FcxRXxgr", name: "🇸🇬 新加坡 03"}
+- {name: "🇸🇪 瑞典 01", server: "51.120.240.39", port: 443, type: "vless", uuid: "78fc9ba9-9c68-4b49-891f-ea9e38bd3b56", tls: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "ak.suoni.nyc.mn"}}, udp: true, servername: "ak.suoni.nyc.mn"}
+- {name: "🇸🇪 瑞典 02", server: "185.96.163.220", port: 442, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1562}
 - {name: "🇸🇪 瑞典 03", server: "13.53.207.157", port: 443, type: "trojan", password: "trojan", sni: "tianjiu.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tianjiu.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, delay: 1511}
-- {name: "🇬🇷 希腊 01", server: "192.71.166.100", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 - {name: "🇵🇾 巴拉圭 01", server: "38.165.233.18", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "f8f7aCzcPKbsF8p3"}
 - {name: "🇵🇾 巴拉圭 02", server: "38.165.233.93", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇬🇷 希腊 01", server: "192.71.166.100", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
+- {name: "🇻🇳 越南 01", server: "103.186.155.137", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 02", server: "103.186.155.228", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+- {type: "ss", server: "103.186.154.32", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 03"}
+- {name: "🇻🇳 越南 04", server: "103.186.155.104", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1772}
+- {name: "🇻🇳 越南 05", server: "103.186.154.182", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 871}
+- {name: "🇻🇳 越南 06", server: "103.186.155.222", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 864}
+- {name: "🇻🇳 越南 07", server: "103.186.155.46", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 08", server: "103.186.155.239", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 846}
+- {name: "🇻🇳 越南 09", server: "103.186.154.184", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
+- {name: "🇻🇳 越南 10", server: "103.186.155.79", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 870}
+- {type: "ss", server: "103.186.155.138", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 11"}
+- {name: "🇻🇳 越南 12", server: "103.186.154.25", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {type: "ss", server: "103.186.155.25", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 13"}
+- {name: "🇻🇳 越南 14", server: "103.186.154.246", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 837}
+- {type: "ss", server: "103.186.154.52", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 15"}
+- {name: "🇻🇳 越南 16", server: "103.186.154.204", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {type: "ss", server: "103.186.154.18", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 17"}
+- {name: "🇻🇳 越南 18", server: "103.186.154.237", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 19", server: "103.186.154.192", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 20", server: "103.186.155.50", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 21", server: "103.186.155.120", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 969}
+- {name: "🇻🇳 越南 22", server: "103.186.154.198", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 847}
+- {name: "🇻🇳 越南 23", server: "103.186.154.35", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
+- {name: "🇻🇳 越南 24", server: "103.186.155.213", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1844}
+- {name: "🇻🇳 越南 25", type: "ss", server: "103.186.154.215", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 825}
+- {name: "🇻🇳 越南 26", server: "103.186.155.71", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 833}
 - {name: "🇰🇷 韩国 01", server: "154.90.63.177", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
-- {type: "ss", server: "217.30.10.18", port: 9025, cipher: "aes-256-cfb", password: "XPtzA9sCug3SPR4c", name: "🇵🇱 波兰 01"}
-- {name: "🇻🇳 越南 01", server: "103.186.155.239", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 846}
-- {type: "ss", server: "103.186.154.18", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 02"}
-- {name: "🇻🇳 越南 03", server: "103.186.155.50", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 04", server: "103.186.155.137", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 05", server: "103.186.154.35", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 06", server: "103.186.155.46", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 07", server: "103.186.155.222", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 864}
-- {name: "🇻🇳 越南 08", server: "103.186.155.71", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 833}
-- {name: "🇻🇳 越南 09", server: "103.186.155.79", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 870}
-- {name: "🇻🇳 越南 10", server: "103.186.154.237", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 11", server: "103.186.154.246", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 837}
-- {name: "🇻🇳 越南 12", server: "103.186.154.182", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 871}
-- {name: "🇻🇳 越南 13", server: "103.186.154.184", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
-- {name: "🇻🇳 越南 14", server: "103.186.154.204", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 15", server: "103.186.154.25", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {type: "ss", server: "103.186.154.32", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 16"}
-- {name: "🇻🇳 越南 17", server: "103.186.155.120", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 969}
-- {type: "ss", server: "103.186.154.52", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 18"}
-- {name: "🇻🇳 越南 19", server: "103.186.154.198", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 847}
-- {type: "ss", server: "103.186.155.138", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 20"}
-- {type: "ss", server: "103.186.155.25", port: 38388, cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", name: "🇻🇳 越南 21"}
-- {name: "🇻🇳 越南 22", type: "ss", server: "103.186.154.215", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 825}
-- {name: "🇻🇳 越南 23", server: "103.186.155.121", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 815}
-- {name: "🇻🇳 越南 24", server: "103.186.155.104", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1772}
-- {name: "🇻🇳 越南 25", server: "103.186.155.228", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"}
-- {name: "🇻🇳 越南 26", server: "103.186.154.192", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true}
-- {name: "🇻🇳 越南 27", server: "103.186.155.213", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1844}
-- {name: "🇻🇳 越南 28", server: "103.186.155.42", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 864}
-- {type: "vless", name: "🇸🇬 新加坡 01", server: "sg.fluxcommunity.my.id", port: 2082, uuid: "ff831988-b64a-4bc3-93dd-58389c91a03a", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "sg.fluxcommunity.my.id"}, path: "/vless"}}
 - {name: "🇪🇬 埃及 01", server: "38.54.59.180", port: 990, type: "ss", cipher: "chacha20-ietf-poly1305", password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="}
 proxy-groups:
 - name: "PROXY"
@@ -410,16 +420,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -450,50 +474,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -508,11 +509,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -609,27 +625,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -656,9 +678,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 - name: "AUTO"
   type: "url-test"
@@ -703,16 +723,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -743,50 +777,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -801,11 +812,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -902,27 +928,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -949,9 +981,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 - name: "AI"
   type: "select"
@@ -994,16 +1024,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1034,50 +1078,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -1092,11 +1113,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -1193,27 +1229,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -1240,9 +1282,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 - name: "FCM"
   type: "select"
@@ -1287,16 +1327,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1327,50 +1381,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -1385,11 +1416,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -1486,27 +1532,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -1533,9 +1585,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 - name: "HOYO"
   type: "select"
@@ -1579,16 +1629,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1619,50 +1683,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -1677,11 +1718,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -1778,27 +1834,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -1825,9 +1887,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 - name: "SPOTIFY"
   type: "select"
@@ -1871,16 +1931,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -1911,50 +1985,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -1969,11 +2020,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -2070,27 +2136,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -2117,9 +2189,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 - name: "TIKTOK"
   type: "select"
@@ -2162,16 +2232,30 @@ proxy-groups:
   - "🇺🇸 美国 35"
   - "🇺🇸 美国 36"
   - "🇺🇸 美国 37"
-  - "🇫🇷 法国 01"
-  - "🇫🇷 法国 02"
-  - "🇫🇷 法国 03"
-  - "🇫🇷 法国 04"
-  - "🇫🇷 法国 05"
+  - "🇺🇸 美国 38"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇨🇦 加拿大 03"
+  - "🇨🇦 加拿大 04"
+  - "🇨🇦 加拿大 05"
+  - "🇨🇦 加拿大 06"
+  - "🇨🇦 加拿大 07"
+  - "🇨🇦 加拿大 08"
+  - "🇨🇦 加拿大 09"
+  - "🇨🇦 加拿大 10"
+  - "🇨🇦 加拿大 11"
+  - "🇨🇦 加拿大 12"
+  - "🇨🇦 加拿大 13"
+  - "🇨🇦 加拿大 14"
+  - "🇨🇦 加拿大 15"
+  - "🇨🇦 加拿大 16"
+  - "🇨🇦 加拿大 17"
+  - "🇷🇴 罗马尼亚 01"
+  - "🇷🇴 罗马尼亚 02"
+  - "🇷🇴 罗马尼亚 03"
+  - "🇷🇴 罗马尼亚 04"
+  - "🇷🇴 罗马尼亚 05"
   - "🇧🇷 巴西 01"
-  - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
-  - "🇪🇸 西班牙 03"
-  - "🇪🇸 西班牙 04"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
@@ -2202,50 +2286,27 @@ proxy-groups:
   - "🇳🇱 荷兰 28"
   - "🇳🇱 荷兰 29"
   - "🇳🇱 荷兰 30"
-  - "🇷🇴 罗马尼亚 01"
-  - "🇷🇴 罗马尼亚 02"
-  - "🇷🇴 罗马尼亚 03"
-  - "🇷🇴 罗马尼亚 04"
-  - "🇷🇴 罗马尼亚 05"
-  - "🇨🇦 加拿大 01"
-  - "🇨🇦 加拿大 02"
-  - "🇨🇦 加拿大 03"
-  - "🇨🇦 加拿大 04"
-  - "🇨🇦 加拿大 05"
-  - "🇨🇦 加拿大 06"
-  - "🇨🇦 加拿大 07"
-  - "🇨🇦 加拿大 08"
-  - "🇨🇦 加拿大 09"
-  - "🇨🇦 加拿大 10"
-  - "🇨🇦 加拿大 11"
-  - "🇨🇦 加拿大 12"
-  - "🇨🇦 加拿大 13"
-  - "🇨🇦 加拿大 14"
-  - "🇨🇦 加拿大 15"
-  - "🇬🇧 英国 01"
-  - "🇬🇧 英国 02"
-  - "🇬🇧 英国 03"
-  - "🇬🇧 英国 04"
-  - "🇬🇧 英国 05"
-  - "🇬🇧 英国 06"
-  - "🇬🇧 英国 07"
-  - "🇬🇧 英国 08"
-  - "🇬🇧 英国 09"
-  - "🇬🇧 英国 10"
-  - "🇷🇺 俄罗斯 01"
-  - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇷🇺 俄罗斯 04"
-  - "🇷🇺 俄罗斯 05"
-  - "🇷🇺 俄罗斯 06"
-  - "🇯🇵 日本 01"
-  - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
+  - "🇳🇱 荷兰 31"
+  - "🇳🇱 荷兰 32"
+  - "🇳🇱 荷兰 33"
+  - "🇳🇱 荷兰 34"
+  - "🇳🇱 荷兰 35"
+  - "🇳🇱 荷兰 36"
+  - "🇳🇱 荷兰 37"
+  - "🇳🇱 荷兰 38"
+  - "🇳🇱 荷兰 39"
+  - "🇳🇱 荷兰 40"
+  - "🇪🇸 西班牙 01"
+  - "🇪🇸 西班牙 02"
+  - "🇪🇸 西班牙 03"
+  - "🇪🇸 西班牙 04"
+  - "🇪🇸 西班牙 05"
+  - "🇪🇸 西班牙 06"
+  - "🇪🇸 西班牙 07"
+  - "🇮🇳 印度 01"
+  - "🇮🇳 印度 02"
   - "🇿🇦 南非 01"
   - "🇿🇦 南非 02"
-  - "🇮🇳 印度 01"
-  - "🇧🇬 保加利亚 01"
   - "🇱🇹 立陶宛 01"
   - "🇱🇹 立陶宛 02"
   - "🇱🇹 立陶宛 03"
@@ -2260,11 +2321,26 @@ proxy-groups:
   - "🇱🇹 立陶宛 12"
   - "🇱🇹 立陶宛 13"
   - "🇱🇹 立陶宛 14"
+  - "🇧🇬 保加利亚 01"
   - "🇦🇪 阿联酋 01"
   - "🇦🇪 阿联酋 02"
   - "🇦🇪 阿联酋 03"
-  - "🇦🇪 阿联酋 04"
-  - "🇦🇪 阿联酋 05"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇬🇧 英国 05"
+  - "🇬🇧 英国 06"
+  - "🇬🇧 英国 07"
+  - "🇬🇧 英国 08"
+  - "🇬🇧 英国 09"
+  - "🇬🇧 英国 10"
+  - "🇮🇹 意大利 01"
+  - "🇷🇺 俄罗斯 01"
+  - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
+  - "🇷🇺 俄罗斯 05"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -2361,27 +2437,33 @@ proxy-groups:
   - "🇩🇪 德国 94"
   - "🇩🇪 德国 95"
   - "🇩🇪 德国 96"
-  - "🇩🇪 德国 97"
-  - "🇩🇪 德国 98"
-  - "🇩🇪 德国 99"
-  - "🇩🇪 德国 100"
-  - "🇮🇹 意大利 01"
   - "🇨🇿 捷克 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
-  - "🇭🇰 香港 03"
-  - "🇭🇰 香港 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇫🇷 法国 03"
+  - "🇫🇷 法国 04"
+  - "🇫🇷 法国 05"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇯🇵 日本 05"
+  - "🇵🇱 波兰 01"
   - "🇲🇩 摩尔多瓦 01"
   - "🇲🇩 摩尔多瓦 02"
   - "🇵🇷 波多黎各 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇬🇷 希腊 01"
   - "🇵🇾 巴拉圭 01"
   - "🇵🇾 巴拉圭 02"
-  - "🇰🇷 韩国 01"
-  - "🇵🇱 波兰 01"
+  - "🇬🇷 希腊 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -2408,9 +2490,7 @@ proxy-groups:
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
   - "🇻🇳 越南 26"
-  - "🇻🇳 越南 27"
-  - "🇻🇳 越南 28"
-  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
   - "🇪🇬 埃及 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
