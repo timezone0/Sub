@@ -81,45 +81,61 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "92321024-t729s0-t85e8f-141tv.hk3.p5pv.com", type: "vmess", port: 80, udp: true, uuid: "bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 372}
-- {name: "🇭🇰 香港 02", server: "4e1cec09-t6ngg0-td1l1t-1s824.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "6d4abac0-86e6-11ef-83cc-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "4e1cec09-t6ngg0-td1l1t-1s824.hk3.p5pv.com"}}, delay: 2802, servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 03", server: "385c1dd2-t729s0-tmynyz-1s3mx.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "385c1dd2-t729s0-tmynyz-1s3mx.hk3.p5pv.com"}}, delay: 1702, servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 04", server: "7e30538e-sv0xs0-t2y63q-1jk6u.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "7e30538e-sv0xs0-t2y63q-1jk6u.hk3.p5pv.com", Host: "7e30538e-sv0xs0-t2y63q-1jk6u.hk3.p5pv.com"}}, delay: 1963, servername: "7e30538e-sv0xs0-t2y63q-1jk6u.hk3.p5pv.com"}
-- {name: "🇭🇰 香港 05", server: "06e6b075-sum4g0-sx1cxx-1tfjk.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "49396d98-f4b4-11ef-8c3f-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "06e6b075-sum4g0-sx1cxx-1tfjk.hk3.p5pv.com"}}, delay: 1196, servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 06", server: "103.149.182.105", type: "ss", country: "🇭🇰HK", port: 8388, password: "asd123456", cipher: "chacha20-ietf", delay: 492}
-- {type: "tuic", name: "🇩🇪 德国 01", server: "2a01:4f8:211:2312:1234:4321:a16c:1", port: 46056, password: "884fd251-1af7-473a-84c4-88fdfae84485", uuid: "884fd251-1af7-473a-84c4-88fdfae84485", alpn: ["h3"], skip-cert-verify: true, allowInsecure: "1", congestion-controller: "bbr", tfo: false, fast-open: false, version: 5, delay: 2644}
-- {name: "🇲🇩 摩尔多瓦 01", server: "185.153.197.5", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true, delay: 1159}
-- {name: "🇺🇸 美国 01", server: "cgroup.node5.s.nodelist-airport.com", type: "ss", country: "🇺🇸US", port: 5003, password: "8f3a835c-8a45-480d-ae35-1deb2c52dcae", cipher: "aes-256-gcm", delay: 1989}
-- {name: "🇳🇱 荷兰 01", server: "feisha-other.kunlun06dns.com", type: "trojan", country: "🏁ZZ", port: 15031, password: "9e5d7ec6-d24d-41dc-848d-54a2e3429d2f", sni: "openssl.nodesni.com", skip-cert-verify: true, udp: true, delay: 1705}
-- {name: "🇳🇱 荷兰 02", server: "82.38.31.194", type: "ss", country: "🇬🇧GB", port: 8080, password: "k1dBOmOB4oqi7Ump37a1bQ", cipher: "chacha20-ietf-poly1305", delay: 1122}
-- {name: "🇳🇱 荷兰 03", server: "82.38.31.191", type: "ss", country: "🇬🇧GB", port: 8080, password: "k1dBOmOB4oqi7Ump37a1bQ", cipher: "chacha20-ietf-poly1305", delay: 1833}
-- {name: "🇳🇱 荷兰 04", server: "82.38.31.217", type: "ss", country: "🇬🇧GB", port: 8080, password: "k1dBOmOB4oqi7Ump37a1bQ", cipher: "chacha20-ietf-poly1305", delay: 2795}
-- {name: "🇳🇱 荷兰 05", server: "77.246.97.187", type: "ss", country: "🇷🇺 RU", port: 7749, password: "7kJQs2RYHhViTYWaf1RobB", cipher: "chacha20-ietf-poly1305", delay: 710}
-- {name: "🇻🇳 越南 01", server: "103.186.155.146", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1124}
-- {name: "🇻🇳 越南 02", server: "103.186.154.50", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 954}
-- {name: "🇻🇳 越南 03", server: "103.186.154.14", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 987}
-- {name: "🇻🇳 越南 04", server: "103.186.154.23", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1685}
-- {name: "🇻🇳 越南 05", server: "103.186.154.161", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2388}
-- {name: "🇻🇳 越南 06", server: "103.186.154.40", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2109}
-- {name: "🇻🇳 越南 07", server: "103.186.155.224", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1886}
-- {name: "🇻🇳 越南 08", server: "103.186.155.112", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 849}
-- {name: "🇻🇳 越南 09", server: "103.186.154.237", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 802}
-- {name: "🇻🇳 越南 10", server: "103.186.154.213", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 822}
-- {name: "🇻🇳 越南 11", server: "103.186.154.73", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1019}
-- {name: "🇻🇳 越南 12", server: "103.186.155.129", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1072}
-- {name: "🇻🇳 越南 13", server: "103.186.154.26", type: "ss", country: "🏁 ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1153}
-- {name: "🇻🇳 越南 14", server: "103.186.155.53", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1190}
-- {name: "🇻🇳 越南 15", server: "103.186.155.8", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2050}
-- {name: "🇻🇳 越南 16", server: "103.186.154.34", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2217}
-- {name: "🇻🇳 越南 17", server: "103.186.154.12", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1020}
-- {name: "🇻🇳 越南 18", server: "103.186.154.232", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1490}
-- {name: "🇻🇳 越南 19", server: "103.186.155.4", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 988}
-- {name: "🇻🇳 越南 20", server: "103.186.155.5", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 952}
-- {name: "🇻🇳 越南 21", server: "103.186.154.206", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1484}
-- {name: "🇻🇳 越南 22", server: "103.186.155.62", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2113}
-- {name: "🇻🇳 越南 23", server: "103.186.154.66", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2454}
-- {name: "🇻🇳 越南 24", server: "103.186.155.83", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2207}
-- {name: "🇻🇳 越南 25", server: "103.186.154.235", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 964}
+- {name: "🇭🇰 香港 01", server: "feisha-us.kunlun06dns.com", type: "trojan", country: "🏁ZZ", port: 15015, password: "9e5d7ec6-d24d-41dc-848d-54a2e3429d2f", sni: "openssl.nodesni.com", skip-cert-verify: true, udp: true, delay: 1846}
+- {name: "🇭🇰 香港 02", server: "73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com", port: 80, type: "vmess", uuid: "7699767c-44ae-11ef-80c7-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com"}}, udp: true, delay: 1178, servername: "73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com"}
+- {name: "🇭🇰 香港 03", server: "0f70f75e-t6t0g0-tmynyz-1s3mx.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "0f70f75e-t6t0g0-tmynyz-1s3mx.hk3.p5pv.com"}}, delay: 1711, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 04", server: "a43eb4de-t6ngg0-t9eu8q-tlhh.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "bdf3e15e-c64c-11ea-82ef-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "a43eb4de-t6ngg0-t9eu8q-tlhh.hk3.p5pv.com"}}, delay: 639, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 05", server: "548481b2-sv2sg0-t2hqlr-1s3mx.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "548481b2-sv2sg0-t2hqlr-1s3mx.hk3.p5pv.com"}}, delay: 776, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 06", server: "ba4465aa-t6wps0-tpn98f-1rcxl.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "9141f048-0b70-11ef-9eb1-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "ba4465aa-t6wps0-tpn98f-1rcxl.hk3.p5pv.com", Host: "ba4465aa-t6wps0-tpn98f-1rcxl.hk3.p5pv.com"}}, delay: 699, servername: "ba4465aa-t6wps0-tpn98f-1rcxl.hk3.p5pv.com"}
+- {name: "🇭🇰 香港 07", server: "1ca646ae-t729s0-tnbkh1-1ejce.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "e534d120-d32f-11ef-bdb9-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "1ca646ae-t729s0-tnbkh1-1ejce.hk3.p5pv.com"}}, delay: 1544, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 08", server: "bafcae19-t729s0-t7luxf-tng5.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "2ec58858-976b-11ea-82ef-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "bafcae19-t729s0-t7luxf-tng5.hk3.p5pv.com"}}, delay: 2634, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 09", server: "ac9735cb-t6t0g0-tkn6t8-1i3g8.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "437cef58-f10b-11ef-8eaf-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "ac9735cb-t6t0g0-tkn6t8-1i3g8.hk3.p5pv.com"}}, delay: 1055, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 10", server: "b7e95232-t729s0-t72h4q-1spnr.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "127e3f92-f714-11ef-bbb0-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "b7e95232-t729s0-t72h4q-1spnr.hk3.p5pv.com"}}, delay: 1767, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 11", server: "f28ea6b4-t6ngg0-teivih-1rz31.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "7699767c-44ae-11ef-80c7-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "f28ea6b4-t6ngg0-teivih-1rz31.hk3.p5pv.com"}}, delay: 2630, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 12", server: "749bd19a-sv4n40-svq7uu-1gevg.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "f02ee2b4-d760-11ec-bd7c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "749bd19a-sv4n40-svq7uu-1gevg.hk3.p5pv.com"}}, delay: 2809, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 13", server: "24671c5a-sv4n40-swjbgr-1kcpe.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "24671c5a-sv4n40-swjbgr-1kcpe.hk3.p5pv.com"}}, delay: 2068, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 14", server: "04b28253-t6ngg0-tdcdb7-1k27l.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "04b28253-t6ngg0-tdcdb7-1k27l.hk3.p5pv.com", Host: "04b28253-t6ngg0-tdcdb7-1k27l.hk3.p5pv.com"}}, delay: 1649, servername: "04b28253-t6ngg0-tdcdb7-1k27l.hk3.p5pv.com"}
+- {name: "🇭🇰 香港 15", server: "3708ae6a-t6ngg0-tjsm26-6gn6.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "c12f73f6-e8c7-11ed-9246-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "3708ae6a-t6ngg0-tjsm26-6gn6.hk3.p5pv.com"}}, delay: 2794, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 16", server: "e6842a34-t729s0-tdcdb7-1k27l.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "e6842a34-t729s0-tdcdb7-1k27l.hk3.p5pv.com"}}, delay: 573, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 17", server: "bef2c376-t6r5s0-t7hsj2-1gevg.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "f02ee2b4-d760-11ec-bd7c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "bef2c376-t6r5s0-t7hsj2-1gevg.hk3.p5pv.com"}}, delay: 1952, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 18", server: "c9b11370-t6t0g0-tdcdb7-1k27l.hk3.p5pv.com", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "c9b11370-t6t0g0-tdcdb7-1k27l.hk3.p5pv.com"}}, delay: 1926, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇷🇺 俄罗斯 01", server: "45.129.2.185", type: "ss", country: "🇷🇺RU", port: 10081, password: "c5fcdf7829112cb4", cipher: "aes-256-gcm", delay: 937}
+- {name: "🇹🇷 土耳其 01", server: "tr-1.stunnel.cc", type: "ss", country: "🇹🇷TR", port: 8444, password: "tunnel-fbrof", cipher: "chacha20-ietf-poly1305", delay: 1255}
+- {type: "tuic", name: "🇩🇪 德国 01", server: "2a01:4f8:211:2312:1234:4321:a16c:1", port: 46056, password: "884fd251-1af7-473a-84c4-88fdfae84485", uuid: "884fd251-1af7-473a-84c4-88fdfae84485", alpn: ["h3"], skip-cert-verify: true, allowInsecure: "1", congestion-controller: "bbr", tfo: false, fast-open: false, version: 5, delay: 1441}
+- {congestion-controller: "bbr", disable-sni: false, name: "🇦🇺 澳大利亚 01", password: "4e084535-bd62-458b-84a2-a0dc57c957aa", port: 13174, reduce-rtt: false, request-timeout: 0, server: "sgtuic01.yydzx.xyz", sni: "sgtuic01.yydzx.xyz", type: "tuic", uuid: "4e084535-bd62-458b-84a2-a0dc57c957aa", version: 5, delay: 1749}
+- {name: "🇳🇱 荷兰 01", server: "82.38.31.194", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ", udp: true, delay: 649}
+- {name: "🇳🇱 荷兰 02", server: "82.38.31.191", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "k1dBOmOB4oqi7Ump37a1bQ", udp: true, delay: 1788}
+- {name: "🇳🇱 荷兰 03", server: "77.246.97.187", port: 7749, type: "ss", cipher: "chacha20-ietf-poly1305", password: "7kJQs2RYHhViTYWaf1RobB", udp: true, delay: 897}
+- {name: "🇻🇳 越南 01", server: "103.186.155.33", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1262}
+- {name: "🇻🇳 越南 02", server: "103.186.154.68", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2014}
+- {name: "🇻🇳 越南 03", server: "103.186.154.161", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1743}
+- {name: "🇻🇳 越南 04", server: "103.186.154.23", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2380}
+- {name: "🇻🇳 越南 05", server: "103.186.154.166", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1618}
+- {name: "🇻🇳 越南 06", server: "103.186.155.19", type: "ss", country: "🏁 ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1867}
+- {name: "🇻🇳 越南 07", server: "103.186.155.62", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1785}
+- {name: "🇻🇳 越南 08", server: "103.186.155.108", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1901}
+- {name: "🇻🇳 越南 09", server: "103.186.155.112", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1475}
+- {name: "🇻🇳 越南 10", server: "103.186.154.59", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1414}
+- {name: "🇻🇳 越南 11", server: "103.186.154.237", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1966}
+- {name: "🇻🇳 越南 12", server: "103.186.155.58", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1282}
+- {name: "🇻🇳 越南 13", server: "103.186.155.53", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1421}
+- {name: "🇻🇳 越南 14", server: "103.186.154.53", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2451}
+- {name: "🇻🇳 越南 15", server: "103.186.155.77", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2901}
+- {name: "🇻🇳 越南 16", server: "103.186.154.12", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2357}
+- {name: "🇻🇳 越南 17", server: "103.186.154.4", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2098}
+- {name: "🇻🇳 越南 18", server: "103.186.154.224", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2057}
+- {name: "🇻🇳 越南 19", server: "103.186.154.232", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2144}
+- {name: "🇻🇳 越南 20", server: "103.186.155.119", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1257}
+- {name: "🇻🇳 越南 21", server: "103.186.155.63", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1339}
+- {name: "🇻🇳 越南 22", server: "103.186.155.205", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1360}
+- {name: "🇻🇳 越南 23", server: "103.186.154.213", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1251}
+- {name: "🇻🇳 越南 24", server: "103.186.155.44", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1407}
+- {name: "🇻🇳 越南 25", server: "103.186.154.235", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1265}
+- {name: "🇻🇳 越南 26", server: "103.186.155.83", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1247}
+- {name: "🇻🇳 越南 27", server: "103.186.155.129", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2856}
+- {name: "🇻🇳 越南 28", server: "103.186.154.14", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1861}
+- {name: "🇻🇳 越南 29", server: "103.186.154.158", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2263}
+- {name: "🇰🇷 韩国 01", server: "121.169.46.116", port: 1090, type: "socks5", skip-cert-verify: true, udp: true, delay: 724}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -131,14 +147,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -164,6 +191,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -176,14 +208,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -209,6 +252,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -219,14 +267,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -252,6 +311,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -264,14 +328,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -297,6 +372,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -308,14 +388,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -341,6 +432,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -352,14 +448,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -385,6 +492,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -395,14 +507,25 @@ proxy-groups:
   - "🇭🇰 香港 04"
   - "🇭🇰 香港 05"
   - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🇭🇰 香港 08"
+  - "🇭🇰 香港 09"
+  - "🇭🇰 香港 10"
+  - "🇭🇰 香港 11"
+  - "🇭🇰 香港 12"
+  - "🇭🇰 香港 13"
+  - "🇭🇰 香港 14"
+  - "🇭🇰 香港 15"
+  - "🇭🇰 香港 16"
+  - "🇭🇰 香港 17"
+  - "🇭🇰 香港 18"
+  - "🇷🇺 俄罗斯 01"
+  - "🇹🇷 土耳其 01"
   - "🇩🇪 德国 01"
-  - "🇲🇩 摩尔多瓦 01"
-  - "🇺🇸 美国 01"
+  - "🇦🇺 澳大利亚 01"
   - "🇳🇱 荷兰 01"
   - "🇳🇱 荷兰 02"
   - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -428,6 +551,11 @@ proxy-groups:
   - "🇻🇳 越南 23"
   - "🇻🇳 越南 24"
   - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇰🇷 韩国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
