@@ -239,17 +239,26 @@
     },
     {
       "tag": "🇭🇰 香港 01",
-      "type": "vmess",
-      "server": "planb.mojcn.com",
-      "server_port": 16632,
-      "uuid": "a560e498-e1f6-4a93-822e-a4ea2cf57f21",
-      "security": "auto",
-      "alter_id": 0,
+      "type": "vless",
+      "server": "108.162.198.11",
+      "server_port": 2096,
+      "uuid": "5aba5b77-48eb-4ae2-b60d-5bfee7ac169e",
+      "tls": {
+        "enabled": true,
+        "server_name": "kuangbao.xiejiang.dpdns.org",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "planb.mojcn.com"
+          "Host": "kuangbao.xiejiang.dpdns.org"
         },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
         "path": "/"
       }
     }
