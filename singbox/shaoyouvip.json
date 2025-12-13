@@ -95,12 +95,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,12 +106,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,12 +117,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,12 +130,9 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -154,12 +142,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -169,12 +154,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,12 +165,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇫🇷 法国 01",
-        "🇫🇷 法国 02",
-        "🇫🇷 法国 03",
-        "🇩🇪 德国 01",
         "🇮🇪 爱尔兰 01",
-        "🇭🇰 香港 01"
+        "🇫🇷 法国 01",
+        "🇨🇳 台湾 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -223,34 +202,18 @@
       }
     },
     {
-      "tag": "🇫🇷 法国 01",
-      "type": "vless",
-      "server": "my-fr-raiv2mmr-telegram-join.koyeb.app",
+      "tag": "🇮🇪 爱尔兰 01",
+      "type": "shadowsocks",
+      "server": "3.253.99.197",
       "server_port": 443,
-      "uuid": "5c9b6087-f955-4506-9c1d-67a5aae44bc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "my-fr-raiv2mmr-telegram-join.koyeb.app",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "grpc",
-        "service_name": "Join-bede-Raiv2mmr"
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
-      "tag": "🇫🇷 法国 02",
+      "tag": "🇫🇷 法国 01",
       "type": "hysteria",
-      "server": "62.210.10.186",
-      "server_port": 35511,
+      "server": "62.210.196.68",
+      "server_port": 26691,
       "disable_mtu_discovery": false,
       "tls": {
         "enabled": true,
@@ -265,52 +228,28 @@
       "down_mbps": 55
     },
     {
-      "tag": "🇫🇷 法国 03",
-      "type": "shadowsocks",
-      "server": "15.236.142.160",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇩🇪 德国 01",
+      "tag": "🇨🇳 台湾 01",
       "type": "vless",
-      "server": "104.26.3.125",
-      "server_port": 2052,
-      "uuid": "e8d06b09-acd9-448c-9874-3c36151d36ee",
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "icy-wildflower-2590.lihuifeng595.workers.dev",
-          "User-Agent": "Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
-        },
-        "path": "/🔒 [By EbraSha]"
-      }
-    },
-    {
-      "tag": "🇮🇪 爱尔兰 01",
-      "type": "shadowsocks",
-      "server": "54.246.35.116",
+      "server": "store.ubi.com",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "vmess",
-      "server": "eb894086-t70f40-t7luxf-tng5.hkt.gotochinatown.net",
-      "server_port": 80,
-      "uuid": "2ec58858-976b-11ea-82ef-f23c9164ca5d",
-      "security": "auto",
-      "alter_id": 2,
+      "uuid": "77f2b653-a749-48f2-9cca-ea4011a14a20",
+      "tls": {
+        "enabled": true,
+        "server_name": "nnn.buyi.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "packet_encoding": "xudp",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "broadcastlv.chat.bilibili.com"
+          "Host": "nnn.buyi.de5.net",
+          "User-Agent": "Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36"
         },
-        "path": "/"
+        "path": "/77f2b653"
       }
     }
   ],
