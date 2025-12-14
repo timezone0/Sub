@@ -111,6 +111,8 @@ proxies:
 - {name: "🇺🇸 美国 04", password: "76d630f2af6619c4a5de0ef953df3c6a", port: 4054, server: "160.16.151.196", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 05", password: "76d630f2af6619c4a5de0ef953df3c6a", port: 4054, server: "160.16.81.84", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 06", password: "BxceQaOe", port: 4569, server: "43.198.243.183", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 07", network: "ws", password: "b1fec179-3d5a-4ec5-bf3c-e10668543b4b", port: 8443, server: "69.84.182.108", skip-cert-verify: false, sni: "cdn-node-oss-61.anycdn.de", type: "trojan", udp: true, ws-opts: {headers: {Host: "cdn-node-oss-61.anycdn.de"}, path: "/profile/us1"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 08", network: "ws", password: "b1fec179-3d5a-4ec5-bf3c-e10668543b4b", port: 8443, server: "69.84.182.18", skip-cert-verify: false, sni: "cdn-node-oss-62.anycdn.de", type: "trojan", udp: true, ws-opts: {headers: {Host: "cdn-node-oss-62.anycdn.de"}, path: "/profile/us2"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -146,6 +148,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -182,6 +186,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "AI"
   type: "select"
   proxies:
@@ -216,6 +222,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "FCM"
   type: "select"
   proxies:
@@ -252,6 +260,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -287,6 +297,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -322,6 +334,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -356,6 +370,8 @@ proxy-groups:
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
