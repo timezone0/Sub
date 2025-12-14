@@ -83,8 +83,10 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇭🇰 香港 01", server: "fcsssusss.fcnode.net", port: 53502, type: "trojan", password: "aecee766-b07e-49d8-a8a0-cdfb23eada45", sni: "fcsssusss.fcnode.net", skip-cert-verify: true}
-- {name: "🇭🇰 香港 02", server: "fcsssusss.fcnode.net", port: 53505, type: "trojan", password: "aecee766-b07e-49d8-a8a0-cdfb23eada45", sni: "fcsssusss.fcnode.net", skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "ee1b9e94-9b95-11ef-8967-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}}
+- {name: "🇭🇰 香港 02", server: "4333a411-t7bj40-tkka1f-1k25p.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "4333a411-t7bj40-tkka1f-1k25p.hkt.gotochinatown.net"}}}
+- {name: "🇭🇰 香港 03", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "bdf3e15e-c64c-11ea-82ef-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}}
+- {name: "🇭🇰 香港 04", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "ee1b9e94-9b95-11ef-8967-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -94,6 +96,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -104,6 +108,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 - name: "AI"
   type: "select"
   proxies:
@@ -112,6 +118,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 - name: "FCM"
   type: "select"
   proxies:
@@ -122,6 +130,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -131,6 +141,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -140,6 +152,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -148,6 +162,8 @@ proxy-groups:
   - "🇹🇬 多哥 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
