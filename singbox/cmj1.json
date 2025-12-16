@@ -97,7 +97,8 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -108,7 +109,8 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -119,7 +121,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -132,7 +135,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -144,7 +148,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -156,7 +161,8 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,7 +173,8 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇹🇬 多哥 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -238,12 +245,32 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "ss.020.node-for-bigairport.win",
-      "server_port": 11688,
-      "method": "aes-256-gcm",
-      "password": "b0c9d775-32f7-459a-b24d-ecda7c9f3720"
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "143.198.222.68",
+      "server_port": 42409,
+      "uuid": "7519638e-b786-4279-baaf-8501548caf1f",
+      "transport": {
+        "type": "ws",
+        "headers": {},
+        "path": "/FREE By Tharuwa (0767597317)"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vless",
+      "server": "go.inmobi.com",
+      "server_port": 8080,
+      "uuid": "7d47ff30-74b2-47c7-b5bd-b06ef8b8f80e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "spring-flower-3254.magicnight101.workers.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/9PnUgtdLG8Br"
+      }
     }
   ],
   "route": {
