@@ -96,7 +96,9 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,7 +108,9 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -116,7 +120,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -128,7 +134,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,7 +147,9 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -150,7 +160,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -160,7 +172,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇹🇬 多哥 01"
+        "🇹🇬 多哥 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -228,6 +242,37 @@
           "Host": "vless.keepfuck.me"
         },
         "path": "/?mode=auto&direct"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "shadowsocks",
+      "server": "68.183.227.45",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vless",
+      "server": "8.39.125.124",
+      "server_port": 443,
+      "uuid": "54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58",
+      "tls": {
+        "enabled": true,
+        "server_name": "bp.suoni.nyc.mn",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "bp.suoni.nyc.mn"
+        },
+        "path": "/proxyip=ProxyIP.SG.CMLiussss.net"
       }
     }
   ],
