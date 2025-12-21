@@ -101,6 +101,7 @@ proxies:
 - {name: "🇺🇸 美国 03", password: "BxceQaOe", port: 4569, server: "3.112.30.103", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 04", port: 180, server: "82.198.246.97", skip-cert-verify: false, tls: false, type: "vmess", uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552", client-fingerprint: "chrome"}
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 05", network: "tcp", port: 180, server: "82.198.246.97", tls: false, type: "vmess", uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
+- {name: "🇷🇺 俄罗斯 01", network: "ws", password: "5a2c16f9", port: 443, server: "freeyx.cloudflare88.eu.org", skip-cert-verify: false, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -126,6 +127,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -152,6 +154,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -176,6 +179,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -202,6 +206,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -227,6 +232,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -252,6 +258,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -276,6 +283,7 @@ proxy-groups:
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
   - "🇺🇸 美国 05"
+  - "🇷🇺 俄罗斯 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
