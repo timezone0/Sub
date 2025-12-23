@@ -103,6 +103,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -127,6 +128,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -151,6 +153,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -177,6 +180,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -202,6 +206,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -227,6 +232,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -251,6 +257,7 @@
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -303,16 +310,24 @@
     },
     {
       "tag": "🇭🇰 香港 02",
-      "type": "shadowsocks",
-      "server": "216.250.97.82",
-      "server_port": 38388,
-      "method": "aes-256-cfb",
-      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+      "type": "vmess",
+      "server": "111.47.247.196",
+      "server_port": 16632,
+      "uuid": "f93123ed-84e2-4165-aaaa-db46a6eceb69",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "abfba8affeca9988664697aab83c3851.mobgslb.tbcache.com"
+        },
+        "path": "/"
+      }
     },
     {
       "tag": "🇭🇰 香港 03",
       "type": "trojan",
-      "server": "58.152.110.104",
+      "server": "112.118.116.8",
       "server_port": 443,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
@@ -348,7 +363,7 @@
     {
       "tag": "🇯🇵 日本 01",
       "type": "trojan",
-      "server": "3.112.233.197",
+      "server": "18.177.141.4",
       "server_port": 2762,
       "password": "BxceQaOe",
       "tls": {
@@ -360,7 +375,7 @@
     {
       "tag": "🇯🇵 日本 02",
       "type": "trojan",
-      "server": "3.112.16.3",
+      "server": "160.16.107.37",
       "server_port": 3169,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
@@ -372,7 +387,7 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "trojan",
-      "server": "160.16.242.183",
+      "server": "160.16.107.37",
       "server_port": 3093,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
@@ -382,21 +397,30 @@
       }
     },
     {
+      "tag": "🇯🇵 日本 04",
+      "type": "vmess",
+      "server": "v6.hdacd.com",
+      "server_port": 30806,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "tag": "🇸🇬 新加坡 01",
       "type": "trojan",
-      "server": "153.121.39.240",
+      "server": "160.16.116.227",
       "server_port": 2760,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
-      "server": "160.16.63.16",
+      "server": "160.16.57.238",
       "server_port": 2760,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
@@ -408,7 +432,7 @@
     {
       "tag": "🇸🇬 新加坡 03",
       "type": "trojan",
-      "server": "57.180.15.254",
+      "server": "57.180.28.48",
       "server_port": 804,
       "password": "BxceQaOe",
       "tls": {
@@ -420,8 +444,8 @@
     {
       "tag": "🇺🇸 美国 01",
       "type": "trojan",
-      "server": "160.16.63.16",
-      "server_port": 2890,
+      "server": "160.16.116.227",
+      "server_port": 4054,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
         "enabled": true,
@@ -432,25 +456,25 @@
     {
       "tag": "🇺🇸 美国 02",
       "type": "trojan",
-      "server": "153.121.39.240",
-      "server_port": 4054,
+      "server": "160.16.204.136",
+      "server_port": 2890,
       "password": "44e660b0ee21cf3ac66aee2c08af85d2",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "tag": "🇺🇸 美国 03",
       "type": "trojan",
-      "server": "43.206.210.137",
-      "server_port": 1221,
+      "server": "95.40.14.227",
+      "server_port": 1112,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
         "server_name": "t.me%2Fripaojiedian",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -465,7 +489,7 @@
     {
       "tag": "🇻🇳 越南 01",
       "type": "shadowsocks",
-      "server": "103.186.155.145",
+      "server": "103.186.155.23",
       "server_port": 38388,
       "method": "aes-256-cfb",
       "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
