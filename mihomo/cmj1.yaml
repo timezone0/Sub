@@ -83,7 +83,16 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: true, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
 - {name: "🇹🇬 多哥 01", server: "vless.keepfuck.me", port: 80, type: "vless", uuid: "346b670f-e6db-446d-9f8b-e056c9e2d7ca", tls: false, alpn: ["h3%2Ch2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/?mode=auto&direct", headers: {Host: "vless.keepfuck.me"}}, servername: "vless.keepfuck.me"}
-- {name: "🇯🇵 日本 01", server: "ct.877774.xyz", port: 443, type: "trojan", password: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91", sni: "cm2-bpg.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/proxyip=210.61.97.241:81", headers: {Host: "cm2-bpg.filegear-sg.me"}}}
+- {name: "🇭🇰 香港 01", server: "104.17.202.10", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, servername: "snippets.kkii.eu.org"}
+- {name: "🇭🇰 香港 02", server: "cf.zhetengsha.eu.org", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.2go.cloudns.be", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.2go.cloudns.be"}}}
+- {name: "🇭🇰 香港 03", server: "www.shopify.com", port: 2053, type: "trojan", password: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91", sni: "cm2-bpg.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/proxyip=210.61.97.241:81", headers: {Host: "cm2-bpg.filegear-sg.me"}}}
+- {name: "🇭🇰 香港 04", server: "mfa.gov.ua", port: 2096, type: "trojan", password: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91", sni: "cm2-bpg.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/proxyip=210.61.97.241:81", headers: {Host: "cm2-bpg.filegear-sg.me"}}}
+- {name: "🇭🇰 香港 05", server: "172.64.229.205", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, servername: "snippets.kkii.eu.org"}
+- {name: "🇭🇰 香港 06", server: "198.41.208.234", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, servername: "snippets.kkii.eu.org"}
+- {name: "🇭🇰 香港 07", server: "n1747624280.lie5d.cyou", port: 443, type: "vmess", uuid: "49dcf4b4-81eb-4fe2-91d3-86dc2e27ced5", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "n1747624280.lie5d.cyou"}}, servername: "n1747624280.lie5d.cyou"}
+- {name: "🏴‍☠️ 冈比亚 01", server: "freev2.cloudflare.182682.xyz", port: 443, type: "vless", uuid: "0683c778-56f1-4290-bd4e-85bf4c0f5fe0", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/announcement", headers: {Host: "oracle-id-batam.064288.xyz"}}, servername: "oracle-id-batam.064288.xyz"}
+- {name: "🇯🇵 日本 01", server: "172.64.53.226", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, servername: "snippets.kkii.eu.org"}
+- {name: "🇸🇬 新加坡 01", server: "cf.877774.xyz", port: 2087, type: "trojan", password: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91", sni: "cm2-bpg.filegear-sg.me", skip-cert-verify: true, network: "ws", ws-opts: {path: "/proxyip=210.61.97.241:81", headers: {Host: "cm2-bpg.filegear-sg.me"}}}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -91,7 +100,16 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -100,14 +118,32 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -116,7 +152,16 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -124,7 +169,16 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -132,14 +186,32 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇹🇬 多哥 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇭🇰 香港 05"
+  - "🇭🇰 香港 06"
+  - "🇭🇰 香港 07"
+  - "🏴‍☠️ 冈比亚 01"
   - "🇯🇵 日本 01"
+  - "🇸🇬 新加坡 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
