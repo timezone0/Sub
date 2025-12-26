@@ -95,12 +95,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,12 +106,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -123,12 +117,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -139,12 +130,9 @@
         "✨ fcm",
         "select",
         "direct",
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -154,12 +142,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -169,12 +154,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -183,12 +165,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🇩🇪 德国 01",
+        "🇭🇰 香港 01",
         "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇸🇬 新加坡 01",
-        "🇺🇸 美国 01"
+        "🇷🇺 俄罗斯 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -223,65 +202,29 @@
       }
     },
     {
-      "tag": "🇩🇪 德国 01",
+      "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "77.37.33.169",
-      "server_port": 80,
-      "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "vless.hubp.de"
+      "server": "1.36.189.217",
+      "server_port": 10122,
+      "uuid": "7f60f6e7-8419-4cff-9e1b-14179f677a5e",
+      "tls": {
+        "enabled": true,
+        "server_name": "music.apple.com",
+        "insecure": false,
+        "reality": {
+          "enabled": true,
+          "public_key": "TU2OTQBiMyK-mKCI3G6fENadfG-fdNlWJF7Qv9ywkFY",
+          "short_id": "8a6394aa28d6"
         },
-        "path": "/"
-      }
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
     },
     {
       "tag": "🇷🇺 俄罗斯 01",
-      "type": "vless",
-      "server": "158.160.201.80",
-      "server_port": 8443,
-      "uuid": "3d4525a8-3345-4743-a1dd-0e6cca32b6e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "m.vk.com",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
-          "short_id": "8f222b3475800821"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇷🇺 俄罗斯 02",
-      "type": "vless",
-      "server": "158.160.201.80",
-      "server_port": 443,
-      "uuid": "3d4525a8-3345-4743-a1dd-0e6cca32b6e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "m.vk.com",
-        "insecure": false,
-        "reality": {
-          "enabled": true,
-          "public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
-          "short_id": "887c0d72e771a934"
-        },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇷🇺 俄罗斯 03",
       "type": "trojan",
       "server": "freeyx.cloudflare88.eu.org",
       "server_port": 443,
@@ -300,26 +243,7 @@
       }
     },
     {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "34.143.159.175",
-      "server_port": 443,
-      "uuid": "e258977b-e413-4718-a3af-02d75492c349",
-      "tls": {
-        "enabled": true,
-        "server_name": "qqq-3t8.pages.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "qqq-3t8.pages.dev"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇺🇸 美国 01",
+      "tag": "🇷🇺 俄罗斯 02",
       "type": "trojan",
       "server": "cf.130519.xyz",
       "server_port": 443,
