@@ -81,89 +81,105 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇭🇰 香港 01", server: "203.198.84.221", port: 443, type: "trojan", password: "BxceQaOe", sni: "t.me/ripaojiedian", skip-cert-verify: true, udp: true}
-- {name: "🇭🇰 香港 02", server: "1.36.189.217", port: 10122, type: "vless", uuid: "7f60f6e7-8419-4cff-9e1b-14179f677a5e", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "TU2OTQBiMyK-mKCI3G6fENadfG-fdNlWJF7Qv9ywkFY", short-id: "8a6394aa28d6"}, udp: true, network: "tcp", servername: "music.apple.com"}
-- {name: "🇷🇺 俄罗斯 01", server: "51.250.4.181", port: 443, type: "vless", uuid: "846c5d45-936c-42f6-9120-2d13830d5fa0", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "t0Gj0moa6d8jMp9LazLtWPenE3wl_M9tMHveifor8GU", short-id: "4d4421a0bac569"}, udp: true, network: "tcp", servername: "eh.vk.com"}
-- {name: "🇷🇺 俄罗斯 02", server: "78.159.246.66", port: 443, type: "vless", uuid: "2c8adcaa-e428-4cea-9c88-e88166651ab3", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", short-id: "d1579a8745398e34"}, udp: true, network: "tcp", servername: "eh.vk.com"}
-- {name: "🇷🇺 俄罗斯 03", server: "89.169.137.193", port: 443, type: "vless", uuid: "2c8adcaa-e428-4cea-9c88-e88166651ab3", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", short-id: "d1579a8745398e34"}, udp: true, network: "tcp", servername: "eh.vk.com"}
-- {name: "🇺🇸 美国 01", server: "64.94.95.118", port: 57142, type: "trojan", password: "kkzh2prsyr2ik47as615", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 01", server: "45.67.139.241", port: 20353, type: "vless", uuid: "5fc5ac13-d170-43d8-acb0-e180552346f2", tls: true, skip-cert-verify: false, client-fingerprint: "firefox", reality-opts: {public-key: "mTMw2UT1oDEP9mTcL2TjeHCEXxFgT6AOQvThcJNTjlw", short-id: "7e4dbc4a91460d"}, udp: true, network: "tcp", servername: "tgju.org"}
+- {name: "🇬🇧 英国 01", server: "78.129.140.11", port: 443, type: "ss", cipher: "chacha20-ietf-poly1305", password: "fpvLevkhnWoYCMJPICKuUv", udp: true}
+- {name: "🇭🇰 香港 01", server: "8.210.184.105", port: 40374, type: "vmess", uuid: "36b76373-7a4f-4669-9113-7d247bcf2704", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"]}, udp: true}
+- {name: "🇮🇷 伊朗 01", server: "apple.land200.netmeli.com", port: 51921, type: "vless", uuid: "1374476c-f07c-47c3-86ba-a8c10dc87050", tls: false, skip-cert-verify: false, network: "http", http-opts: {method: "GET", path: ["/"], headers: {Host: ["JouRNaloFbIgdATA.SpRinGeropEn.coM"]}}, udp: true, servername: "JouRNaloFbIgdATA.SpRinGeropEn.coM"}
+- {name: "🇰🇷 韩国 01", server: "testkr3.ssv.vc", port: 30446, type: "http", username: "test", password: "test.+", tls: true, skip-cert-verify: true, udp: true, sni: "testkr3.ssv.vc"}
+- {name: "🇳🇱 荷兰 01", server: "104.248.203.234", port: 1080, type: "socks5", udp: true}
+- {name: "🇷🇺 俄罗斯 01", server: "89.169.137.193", port: 443, type: "vless", uuid: "2c8adcaa-e428-4cea-9c88-e88166651ab3", flow: "xtls-rprx-vision", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", short-id: "d1579a8745398e34"}, udp: true, network: "tcp", servername: "eh.vk.com"}
+- {name: "🇷🇺 俄罗斯 02", server: "51.250.4.181", port: 443, type: "vless", uuid: "846c5d45-936c-42f6-9120-2d13830d5fa0", tls: true, skip-cert-verify: false, client-fingerprint: "chrome", reality-opts: {public-key: "t0Gj0moa6d8jMp9LazLtWPenE3wl_M9tMHveifor8GU", short-id: "4d4421a0bac569"}, udp: true, network: "tcp", servername: "eh.vk.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 - name: "FCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
+  - "🇩🇪 德国 01"
+  - "🇬🇧 英国 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇮🇷 伊朗 01"
+  - "🇰🇷 韩国 01"
+  - "🇳🇱 荷兰 01"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
-  - "🇷🇺 俄罗斯 03"
-  - "🇺🇸 美国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
