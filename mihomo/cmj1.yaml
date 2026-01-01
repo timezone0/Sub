@@ -82,16 +82,8 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}}
-- {name: "🇯🇵 日本 01", server: "jp5.dexlos.com", port: 443, type: "hysteria2", password: "A8069A5B-E992-44E8-917E-7246CFD19F61", auth: "A8069A5B-E992-44E8-917E-7246CFD19F61", sni: "jp5.dexlos.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3"}
-- {name: "🇯🇵 日本 02", server: "jp3.dexlos.com", port: 443, type: "hysteria2", password: "A8069A5B-E992-44E8-917E-7246CFD19F61", auth: "A8069A5B-E992-44E8-917E-7246CFD19F61", sni: "jp3.dexlos.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3"}
-- {name: "🇯🇵 日本 03", server: "172.64.229.169", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}}
-- {name: "🇯🇵 日本 04", server: "m0bqz-g01.jp07-sh-vm0.entry.fr0528.art", port: 28783, type: "vmess", uuid: "6ad7034c-bcba-3f4b-9386-99bccd49bbdc", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 05", server: "3wmyp-g01.jp02-e3-vm0.entry.fr0528.art", port: 11773, type: "vmess", uuid: "6ad7034c-bcba-3f4b-9386-99bccd49bbdc", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 06", server: "a54b5-g01.jp07-sh-vm0.entry.fr0528.art", port: 28783, type: "vmess", uuid: "91f34ad8-b60e-3955-8de4-39da56944866", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 07", server: "loww1-g01.jp02-e3-vm0.entry.fr0528.art", port: 11773, type: "vmess", uuid: "763e08a1-c289-3a41-aa80-e63a56bc1447", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇯🇵 日本 08", server: "6q2m0-g06.jp02-e3-vm0.entry.fr0528.art", port: 11778, type: "vmess", uuid: "95062dc1-df89-3922-ae56-4ccffc712ed2", alterId: 1, cipher: "auto", tls: false, skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "us3.dexlos.com", port: 443, type: "hysteria2", password: "A8069A5B-E992-44E8-917E-7246CFD19F61", auth: "A8069A5B-E992-44E8-917E-7246CFD19F61", sni: "us3.dexlos.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3"}
-- {name: "🇺🇸 美国 02", server: "us7.dexlos.com", port: 443, type: "hysteria2", password: "A8069A5B-E992-44E8-917E-7246CFD19F61", auth: "A8069A5B-E992-44E8-917E-7246CFD19F61", sni: "us7.dexlos.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3"}
+- {name: "🇯🇵 日本 01", server: "jp2.dexlos.com", port: 443, type: "hysteria2", password: "A8069A5B-E992-44E8-917E-7246CFD19F61", auth: "A8069A5B-E992-44E8-917E-7246CFD19F61", sni: "jp2.dexlos.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3"}
+- {name: "🇯🇵 日本 02", server: "172.64.53.226", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, servername: "snippets.kkii.eu.org"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -100,14 +92,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -117,14 +101,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "AI"
   type: "select"
   proxies:
@@ -132,14 +108,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "FCM"
   type: "select"
   proxies:
@@ -149,14 +117,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -165,14 +125,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -181,14 +133,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -196,14 +140,6 @@ proxy-groups:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
-  - "🇯🇵 日本 04"
-  - "🇯🇵 日本 05"
-  - "🇯🇵 日本 06"
-  - "🇯🇵 日本 07"
-  - "🇯🇵 日本 08"
-  - "🇺🇸 美国 01"
-  - "🇺🇸 美国 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
