@@ -82,11 +82,11 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🇭🇰 香港 01", server: "103.149.182.191", type: "ss", country: "🇭🇰 HK", port: 8388, password: "asd123456", cipher: "chacha20-ietf", delay: 2401}
-- {name: "🇭🇰 香港 02", server: "58.152.18.147", port: 443, type: "trojan", password: "f36f4495b4b26cc2fe346cfa23e05b1b", sni: "www.nintendogames.net", skip-cert-verify: true, udp: true, delay: 1146}
-- {name: "🇭🇰 香港 03", server: "green2.cdntencentmusic.com", type: "trojan", port: 31101, password: "d0ef8c56-712c-4d95-bb21-11369165d684", sni: "green2.cdntencentmusic.com", udp: true, delay: 1739}
-- {name: "🇭🇰 香港 04", server: "green2.cdntencentmusic.com", type: "trojan", port: 31103, password: "a2e929d1-f684-40df-a4e5-15c3361e8668", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, delay: 762}
-- {name: "🇨🇦 加拿大 01", server: "gy3.hdcloud.link", type: "trojan", port: 443, password: "9b6419f8-8120-442e-a48c-6bf52aef0abf", sni: "gy3.hdcloud.link", udp: true, delay: 1619}
-- {name: "🇨🇦 加拿大 02", server: "16.52.164.13", type: "trojan", country: "🇺🇸US", port: 443, password: "38f169d6-d202-4b1b-8db8-e6eb1648f5cf", skip-cert-verify: true, udp: true, delay: 2555}
+- {name: "🇭🇰 香港 02", server: "58.152.18.147", port: 443, type: "trojan", password: "f36f4495b4b26cc2fe346cfa23e05b1b", sni: "www.nintendogames.net", skip-cert-verify: true, udp: true, delay: 1146, network: "tcp"}
+- {name: "🇭🇰 香港 03", server: "green2.cdntencentmusic.com", type: "trojan", port: 31101, password: "d0ef8c56-712c-4d95-bb21-11369165d684", sni: "green2.cdntencentmusic.com", udp: true, delay: 1739, network: "tcp"}
+- {name: "🇭🇰 香港 04", server: "green2.cdntencentmusic.com", type: "trojan", port: 31103, password: "a2e929d1-f684-40df-a4e5-15c3361e8668", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, delay: 762, network: "tcp"}
+- {name: "🇨🇦 加拿大 01", server: "gy3.hdcloud.link", type: "trojan", port: 443, password: "9b6419f8-8120-442e-a48c-6bf52aef0abf", sni: "gy3.hdcloud.link", udp: true, delay: 1619, network: "tcp"}
+- {name: "🇨🇦 加拿大 02", server: "16.52.164.13", type: "trojan", country: "🇺🇸US", port: 443, password: "38f169d6-d202-4b1b-8db8-e6eb1648f5cf", skip-cert-verify: true, udp: true, delay: 2555, network: "tcp"}
 - {name: "🇨🇦 加拿大 03", type: "trojan", server: "freeyx.cloudflare88.eu.org", port: 443, udp: true, password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: false, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, delay: 2819}
 - {name: "🇩🇪 德国 01", server: "de1.bitrixcdn.pro", type: "ss", country: "🇧🇬BG", port: 443, password: "VlMkRBnhzJ6coREaUurPV4G+CiwwwQRiHJf3j2SNQp6bYKIeVZMgYRkCPVJKnUA=", cipher: "chacha20-ietf-poly1305", delay: 1266}
 - {name: "🇩🇪 德国 02", server: "x.mr-pinkman.blue", type: "vmess", country: "🇮🇷IR", port: 20363, uuid: "bfde09c0-e351-4d0e-8e92-00c2bcb77693", alterId: 0, cipher: "auto", network: "tcp", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1718}
@@ -100,7 +100,7 @@ proxies:
 - {name: "🇺🇸 美国 04", type: "hysteria2", server: "us6.dexlos.com", port: 443, password: "A8069A5B-E992-44E8-917E-7246CFD19F61", udp: true, skip-cert-verify: false, sni: "us6.dexlos.com", obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3", mtu: 1350, up: "40 Mbps", down: "500 Mbps", client-fingerprint: "chrome", delay: 2650}
 - {name: "🇺🇸 美国 05", type: "hysteria2", server: "us8.dexlos.com", port: 443, password: "A8069A5B-E992-44E8-917E-7246CFD19F61", udp: true, skip-cert-verify: false, sni: "us8.dexlos.com", obfs: "salamander", obfs-password: "xK9mN2pLq5vR8wB3", mtu: 1350, up: "40 Mbps", down: "500 Mbps", client-fingerprint: "chrome", delay: 2654}
 - {name: "🇺🇸 美国 06", type: "trojan", server: "one.cf.cdn.hyli.xyz", port: 443, udp: true, password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: false, network: "ws", ws-opts: {path: "//", headers: {Host: "snippets.kkii.eu.org"}}, delay: 1670}
-- {name: "🇺🇸 美国 07", server: "green2.cdntencentmusic.com", type: "trojan", port: 35502, password: "23874568-c305-4c6f-bcf9-8d3800c50ba5", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, delay: 1350}
+- {name: "🇺🇸 美国 07", server: "green2.cdntencentmusic.com", type: "trojan", port: 35502, password: "23874568-c305-4c6f-bcf9-8d3800c50ba5", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, delay: 1350, network: "tcp"}
 proxy-groups:
 - name: "PROXY"
   type: "select"

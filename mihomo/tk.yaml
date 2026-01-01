@@ -226,7 +226,7 @@ proxies:
 - {name: "🇸🇬 新加坡 06", type: "hysteria2", server: "111.91.27.107", port: 46107, password: "miaoge110", sni: "www.bing.com", skip-cert-verify: true}
 - {name: "🇸🇬 新加坡 07", type: "ss", server: "sl.fgmcx.top", port: 41047, cipher: "chacha20-ietf-poly1305", password: "014e90df-a3ee-4654-a9f6-d118e02dd02a"}
 - {name: "🇹🇭 泰国 01", type: "vless", server: "ip.sb", port: 443, uuid: "6fd62709-54d9-43aa-bf9e-00776a0a25d3", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/x0nlkw0wqjljeqwv/mti5lje1ms4ymdquote=", headers: {Host: "81715dc4.se-8ea.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "81715dc4.se-8ea.pages.dev"}
-- {name: "🇹🇭 泰国 02", type: "trojan", server: "azadnet-9ya.pages.dev", port: 443, password: "trojan", sni: "azadnet-9ya.pages.dev", skip-cert-verify: true}
+- {name: "🇹🇭 泰国 02", type: "trojan", server: "azadnet-9ya.pages.dev", port: 443, password: "trojan", sni: "azadnet-9ya.pages.dev", skip-cert-verify: true, network: "tcp"}
 - {name: "🇹🇭 泰国 03", type: "vless", server: "www.visa.com.sg", port: 8443, uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "azadnet-4n9.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "azadnet-4n9.pages.dev"}
 - {name: "🇹🇭 泰国 04", type: "vless", server: "acxxrp.460110.xyz", port: 443, uuid: "670d1cd0-7097-416c-a5da-7936af95cfac", network: "ws", tls: true, skip-cert-verify: true, ws-opts: {path: "/?mode=auto", headers: {Host: "vless.ghp.cloudns.biz"}}, servername: "vless.ghp.cloudns.biz"}
 - {name: "🇰🇷 韩国 01", type: "hysteria2", server: "kr4.oomz.ru", port: 30000, password: "937f8940-ad8a-409f-93c3-4d6249af628f", sni: "bing.com", skip-cert-verify: true}
@@ -243,7 +243,7 @@ proxies:
 - {name: "🇭🇰 香港 01", type: "vless", server: "156.224.78.8", port: 10001, uuid: "9c79aceb-4649-44ea-9698-b5e9ecf6d6da", network: "tcp", tls: false, skip-cert-verify: true, servername: "www.icloud.com"}
 - {name: "🇭🇰 香港 02", type: "vless", server: "85.208.104.42", port: 10001, uuid: "9c79aceb-4649-44ea-9698-b5e9ecf6d6da", network: "tcp", tls: false, skip-cert-verify: true, servername: "www.icloud.com"}
 - {name: "🇸🇪 瑞典 01", type: "hysteria2", server: "us1.shigure.eu.org", port: 8870, password: "bc5e171b-fe66-47af-a600-b972104fe995", sni: "us1.shigure.eu.org", skip-cert-verify: true}
-- {name: "🇸🇪 瑞典 02", type: "trojan", server: "oss-cn-shanghai.letssepub.com", port: 20021, password: "adbac894-90b9-4913-b77e-a715a8d4ebc8", sni: "dingding-doc.com", skip-cert-verify: true}
+- {name: "🇸🇪 瑞典 02", type: "trojan", server: "oss-cn-shanghai.letssepub.com", port: 20021, password: "adbac894-90b9-4913-b77e-a715a8d4ebc8", sni: "dingding-doc.com", skip-cert-verify: true, network: "tcp"}
 - {name: "🇹🇷 土耳其 01", type: "hysteria2", server: "tr1.oomz.ru", port: 30000, password: "937f8940-ad8a-409f-93c3-4d6249af628f", sni: "bing.com", skip-cert-verify: true}
 - {name: "🇨🇳 台湾 01", type: "hysteria2", server: "tw.oomz.ru", port: 30000, password: "937f8940-ad8a-409f-93c3-4d6249af628f", sni: "bing.com", skip-cert-verify: true}
 proxy-groups:
