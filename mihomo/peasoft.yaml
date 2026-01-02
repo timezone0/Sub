@@ -130,6 +130,7 @@ proxies:
 - {name: "🇺🇸 美国 05", network: "tcp", password: "f36f4495b4b26cc2fe346cfa23e05b1b", port: 1281, server: "52.198.241.226", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 06", network: "tcp", password: "f36f4495b4b26cc2fe346cfa23e05b1b", port: 1281, server: "153.121.44.99", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 07", network: "tcp", password: "BxceQaOe", port: 1221, server: "3.113.31.15", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 08", network: "ws", password: "iwangjie", port: 15805, server: "158.101.11.204", skip-cert-verify: false, sni: "nodes.830901.xyz", type: "trojan", udp: true, ws-opts: {headers: {Host: "nodes.830901.xyz"}, path: "/"}, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -184,6 +185,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -239,6 +241,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "AI"
   type: "select"
   proxies:
@@ -292,6 +295,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "FCM"
   type: "select"
   proxies:
@@ -347,6 +351,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -401,6 +406,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -455,6 +461,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -508,6 +515,7 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
