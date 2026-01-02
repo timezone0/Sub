@@ -96,8 +96,11 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,8 +110,11 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,8 +124,11 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -131,8 +140,11 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -143,8 +155,11 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -155,8 +170,11 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -166,8 +184,11 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇯🇵 日本 02"
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05"
       ],
       "interrupt_exist_connections": true
     },
@@ -221,35 +242,97 @@
       }
     },
     {
-      "tag": "🇯🇵 日本 01",
-      "type": "hysteria2",
-      "server": "jp2.dexlos.com",
+      "tag": "🇭🇰 香港 01",
+      "type": "trojan",
+      "server": "104.17.162.3",
       "server_port": 443,
-      "password": "A8069A5B-E992-44E8-917E-7246CFD19F61",
-      "obfs": {
-        "type": "salamander",
-        "password": "xK9mN2pLq5vR8wB3"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jp2.dexlos.com",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇯🇵 日本 02",
-      "type": "vless",
-      "server": "172.64.53.226",
-      "server_port": 443,
-      "uuid": "5a2c16f9-e365-4080-8d38-6924c3835586",
+      "password": "5a2c16f9",
       "tls": {
         "enabled": true,
         "server_name": "snippets.kkii.eu.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippets.kkii.eu.org"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vmess",
+      "server": "n1761214907.74qxv.top",
+      "server_port": 443,
+      "uuid": "4c17399f-c93d-4527-8ace-5bdc2f0901f3",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "n1761214907.74qxv.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "n1761214907.74qxv.top"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "vless",
+      "server": "bestcf.030101.xyz",
+      "server_port": 2053,
+      "uuid": "695648e5-1f93-4ae9-375b-30f1b277ed71",
+      "tls": {
+        "enabled": true,
+        "server_name": "stallorg.saass.ccwu.cc",
         "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stallorg.saass.ccwu.cc"
+        },
+        "path": "/proxyip=sjc.o00o.ooo"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 04",
+      "type": "trojan",
+      "server": "104.19.220.22",
+      "server_port": 443,
+      "password": "5a2c16f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippets.kkii.eu.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippets.kkii.eu.org"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 05",
+      "type": "vless",
+      "server": "108.162.198.185",
+      "server_port": 443,
+      "uuid": "5a2c16f9-e365-4080-8d38-6924c3835586",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippets.kkii.eu.org",
+        "insecure": true
       },
       "transport": {
         "type": "ws",
