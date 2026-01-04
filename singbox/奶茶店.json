@@ -172,6 +172,18 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "udp",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇺🇸 美国 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -218,7 +230,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -240,7 +252,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -262,7 +274,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "ios"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -344,6 +356,12 @@
           "geosite-tiktok"
         ],
         "outbound": "tiktok"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
       },
       {
         "type": "logical",
