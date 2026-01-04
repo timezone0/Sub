@@ -110,6 +110,11 @@ proxy-groups:
     type: select
     proxies:
       - PROXY
+  - name: UDP
+    type: select
+    proxies:
+      - DIRECT
+      - PROXY
 rules:
   - GEOSITE,CATEGORY-ADS-ALL,REJECT
   - GEOSITE,SPOTIFY-ADS,REJECT
@@ -128,6 +133,7 @@ rules:
   - DOMAIN-KEYWORD,hoyoverse.com,PROXY
   - GEOSITE,SPOTIFY,SPOTIFY
   - GEOSITE,TIKTOK,TIKTOK
+  - NETWORK,udp,UDP
   - GEOSITE,PRIVATE,DIRECT
   - GEOSITE,CN,DIRECT
   - GEOIP,PRIVATE,DIRECT,no-resolve

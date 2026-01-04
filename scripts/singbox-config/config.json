@@ -150,6 +150,15 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "udp",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "type": "shadowsocks",
       "tag": "✨ fcm",
       "method": "2022-blake3-aes-128-gcm",
@@ -256,6 +265,12 @@
           "geosite-tiktok"
         ],
         "outbound": "tiktok"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
       },
       {
         "type": "logical",
