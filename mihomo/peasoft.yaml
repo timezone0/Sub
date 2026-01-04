@@ -124,7 +124,7 @@ proxies:
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 41", network: "ws", port: 80, server: "76dc4cf6-t70f40-tn57fp-5ifr.hkt.gotochinatown.net", tls: false, type: "vmess", uuid: "ecfab6c8-df5b-11ed-98a7-f23c913c8d2b", ws-opts: {headers: {Host: "broadcastlv.chat.bilibili.com"}, path: "/"}, client-fingerprint: "chrome"}
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 42", port: 30807, server: "v10.hdacd.com", skip-cert-verify: false, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", network: "tcp"}
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 43", network: "ws", port: 80, server: "hkt.gotochinatown.net", skip-cert-verify: true, tls: false, type: "vmess", uuid: "2d8c38cc-fc12-11ef-94aa-f23c913c8d2b", ws-opts: {headers: {Host: "hkt.gotochinatown.net"}, path: "/"}, client-fingerprint: "chrome", disable-sni: true, servername: ""}
-- {name: "🇭🇰 香港 44", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 443, server: "58.152.110.104", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 44", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 443, server: "58.152.110.104", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", udp: true, client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 45", network: "tcp", password: "BxceQaOe", port: 443, server: "58.152.25.86", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 46", network: "tcp", password: "BxceQaOe", port: 443, server: "58.152.25.236", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {alterId: 2, cipher: "auto", name: "🇭🇰 香港 47", network: "tcp", port: 30807, server: "v10.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", disable-sni: true, skip-cert-verify: true, servername: ""}
@@ -145,9 +145,15 @@ proxies:
 - {name: "🇺🇸 美国 05", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 1281, server: "13.231.188.173", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 06", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 1281, server: "153.121.44.99", skip-cert-verify: false, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 07", network: "tcp", password: "BxceQaOe", port: 1221, server: "13.231.188.173", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 08", network: "ws", password: "Aimer", port: 2053, server: "167.68.4.199", skip-cert-verify: false, sni: "epge.muarua.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epge.muarua.filegear-sg.me"}, path: "/"}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 09", network: "ws", password: "Aimer", port: 2053, server: "167.68.4.199", skip-cert-verify: false, sni: "epge.muarua.filegear-sg.me", type: "trojan", udp: true, ws-opts: {headers: {Host: "epge.muarua.filegear-sg.me"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 10", network: "ws", password: "5a2c16f9", port: 2096, server: "135.84.73.238", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 08", network: "ws", password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", port: 443, server: "64.181.227.82", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 09", network: "ws", password: "5a2c16f9", port: 443, server: "one.cf.cdn.hyli.xyz", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 10", network: "ws", password: "5a2c16f9", port: 443, server: "104.17.237.219", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 11", network: "ws", password: "5a2c16f9", port: 443, server: "172.64.229.55", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 12", network: "ws", password: "5a2c16f9", port: 2096, server: "135.84.73.238", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 13", network: "ws", password: "5a2c16f9", port: 443, server: "cf.130519.xyz", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 14", network: "ws", password: "5a2c16f9", port: 2096, server: "135.84.73.238", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/TelegramU0001F1E8U0001F1F3WangCai2"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 15", network: "ws", password: "5a2c16f9", port: 2053, server: "199.119.137.77", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram@V2rayAlpha"}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 16", network: "ws", password: "5a2c16f9", port: 443, server: "172.64.229.65", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/"}, client-fingerprint: "chrome"}
 - {name: "🇩🇪 德国 01", password: "telegram-id-privatevpns", port: 22222, server: "18.198.145.155", skip-cert-verify: true, sni: "18.198.145.155", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇩🇪 德国 02", password: "telegram-id-privatevpns", port: 22222, server: "18.198.145.155", skip-cert-verify: true, sni: "trojan.burgerip.co.uk", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇩🇪 德国 03", password: "telegram-id-privatevpns", port: 22222, server: "18.196.24.56", skip-cert-verify: true, sni: "trojan.burgerip.co.uk", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
@@ -156,6 +162,8 @@ proxies:
 - {name: "🇩🇪 德国 06", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 443, server: "starlink-de1.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇩🇪 德国 07", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 443, server: "starlink-de2.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇩🇪 德国 08", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10025, server: "z-eu1.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
+- {name: "🇩🇪 德国 09", network: "ws", password: "554f139b-f31f-41c4-99f9-73d60647db26", port: 8443, server: "178.250.187.3", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 10", network: "ws", password: "554f139b-f31f-41c4-99f9-73d60647db26", port: 443, server: "193.23.197.183", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
 - {name: "🇮🇩 印尼 01", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10007, server: "z-sg1.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇮🇩 印尼 02", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10007, server: "z-sg2.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇮🇩 印尼 03", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10002, server: "z-sg1.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
@@ -202,6 +210,8 @@ proxies:
 - {name: "🇺🇦 乌克兰 02", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10006, server: "z-eu2.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇷🇺 俄罗斯 01", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10010, server: "z-eu1.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇷🇺 俄罗斯 02", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10010, server: "z-eu2.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
+- {name: "🇷🇺 俄罗斯 03", network: "ws", password: "554f139b-f31f-41c4-99f9-73d60647db26", port: 2096, server: "45.135.235.238", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
+- {name: "🇷🇺 俄罗斯 04", network: "ws", password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", port: 2096, server: "45.135.235.238", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
 - {name: "🇮🇱 以色列 01", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10002, server: "z-eu2.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇮🇱 以色列 02", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10030, server: "z-eu1.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
 - {name: "🇮🇱 以色列 03", password: "smart@-PhVxMdT5OVnjtTecU-kZoej", port: 10030, server: "z-eu2.2513142.xyz", skip-cert-verify: true, sni: "www.cloudflare.com", type: "trojan", client-fingerprint: "chrome", network: "tcp"}
@@ -216,7 +226,6 @@ proxies:
 - {name: "🇸🇬 新加坡 03", network: "tcp", password: "BxceQaOe", port: 804, server: "18.163.28.248", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome"}
 - {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.154.248", type: "ss", client-fingerprint: "chrome"}
 - {name: "🇦🇪 阿联酋 01", network: "ws", password: "5a2c16f9", port: 2096, server: "94.140.0.238", skip-cert-verify: true, sni: "snippets.kkii.eu.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "snippets.kkii.eu.org"}, path: "/Telegram🇨🇳WangCai2"}, client-fingerprint: "chrome"}
-- {name: "🇬🇧 英国 01", password: "R8ufkVqwRZAgtwjyrA", port: 443, server: "uk-1.fishchipsexpress.com", skip-cert-verify: true, sni: "uk-1.fishchipsexpress.com", type: "trojan", udp: true, client-fingerprint: "chrome", network: "tcp"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -289,6 +298,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -297,6 +312,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -343,6 +360,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -357,7 +376,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -431,6 +449,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -439,6 +463,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -485,6 +511,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -499,7 +527,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -571,6 +598,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -579,6 +612,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -625,6 +660,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -639,7 +676,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -713,6 +749,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -721,6 +763,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -767,6 +811,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -781,7 +827,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -854,6 +899,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -862,6 +913,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -908,6 +961,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -922,7 +977,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -995,6 +1049,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -1003,6 +1063,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -1049,6 +1111,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -1063,7 +1127,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -1135,6 +1198,12 @@ proxy-groups:
   - "🇺🇸 美国 08"
   - "🇺🇸 美国 09"
   - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇺🇸 美国 13"
+  - "🇺🇸 美国 14"
+  - "🇺🇸 美国 15"
+  - "🇺🇸 美国 16"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
   - "🇩🇪 德国 03"
@@ -1143,6 +1212,8 @@ proxy-groups:
   - "🇩🇪 德国 06"
   - "🇩🇪 德国 07"
   - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -1189,6 +1260,8 @@ proxy-groups:
   - "🇺🇦 乌克兰 02"
   - "🇷🇺 俄罗斯 01"
   - "🇷🇺 俄罗斯 02"
+  - "🇷🇺 俄罗斯 03"
+  - "🇷🇺 俄罗斯 04"
   - "🇮🇱 以色列 01"
   - "🇮🇱 以色列 02"
   - "🇮🇱 以色列 03"
@@ -1203,7 +1276,6 @@ proxy-groups:
   - "🇸🇬 新加坡 03"
   - "🇻🇳 越南 01"
   - "🇦🇪 阿联酋 01"
-  - "🇬🇧 英国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
