@@ -96,7 +96,10 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -111,7 +114,10 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -126,7 +132,10 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -143,7 +152,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -159,7 +171,10 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -175,7 +190,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -190,7 +208,10 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -206,7 +227,10 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -265,11 +289,30 @@
       }
     },
     {
-      "tag": "🇯🇵 日本 01",
-      "type": "vless",
-      "server": "172.64.53.226",
+      "tag": "🇭🇰 香港 01",
+      "type": "trojan",
+      "server": "172.64.147.211",
+      "server_port": 2096,
+      "password": "5a2c16f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippets.kkii.eu.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippets.kkii.eu.org"
+        },
+        "path": "/Telegram🇨🇳WangCai2"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "trojan",
+      "server": "172.64.229.39",
       "server_port": 443,
-      "uuid": "5a2c16f9-e365-4080-8d38-6924c3835586",
+      "password": "5a2c16f9",
       "tls": {
         "enabled": true,
         "server_name": "snippets.kkii.eu.org",
@@ -284,45 +327,64 @@
       }
     },
     {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "trojan",
-      "server": "172.64.146.113",
-      "server_port": 2096,
-      "password": "5a2c16f9",
+      "tag": "🇯🇵 日本 01",
+      "type": "tuic",
+      "server": "db1.nezhasu.com",
+      "server_port": 60113,
+      "uuid": "d9812081-7f61-456d-9340-a1fb8dfd603b",
+      "password": "d9812081-7f61-456d-9340-a1fb8dfd603b",
+      "tls": {
+        "enabled": true,
+        "server_name": "db1.nezhasu.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vless",
+      "server": "nrtcfdns.zone.id",
+      "server_port": 443,
+      "uuid": "5a2c16f9-e365-4080-8d38-6924c3835586",
       "tls": {
         "enabled": true,
         "server_name": "snippets.kkii.eu.org",
-        "insecure": true
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "headers": {
           "Host": "snippets.kkii.eu.org"
         },
-        "path": "/Telegram🇨🇳WangCai2"
+        "path": "/fp=chrome"
       }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "tuic",
+      "server": "singapore.nezhasu.com",
+      "server_port": 50675,
+      "uuid": "d9812081-7f61-456d-9340-a1fb8dfd603b",
+      "password": "d9812081-7f61-456d-9340-a1fb8dfd603b",
+      "tls": {
+        "enabled": true,
+        "server_name": "singapore.nezhasu.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      },
+      "congestion_control": "bbr"
     },
     {
       "tag": "🇸🇬 新加坡 02",
-      "type": "trojan",
-      "server": "172.64.144.115",
-      "server_port": 2096,
-      "password": "5a2c16f9",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippets.kkii.eu.org"
-        },
-        "path": "/Telegram🇨🇳WangCai2"
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 03",
       "type": "trojan",
       "server": "172.64.145.89",
       "server_port": 2096,
@@ -341,9 +403,28 @@
       }
     },
     {
+      "tag": "🇸🇬 新加坡 03",
+      "type": "trojan",
+      "server": "172.64.145.130",
+      "server_port": 2096,
+      "password": "5a2c16f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippets.kkii.eu.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippets.kkii.eu.org"
+        },
+        "path": "/Telegram🇨🇳WangCai2"
+      }
+    },
+    {
       "tag": "🇸🇬 新加坡 04",
       "type": "trojan",
-      "server": "172.64.144.131",
+      "server": "172.64.145.156",
       "server_port": 2096,
       "password": "5a2c16f9",
       "tls": {
@@ -361,22 +442,20 @@
     },
     {
       "tag": "🇸🇬 新加坡 05",
-      "type": "trojan",
-      "server": "172.64.144.220",
-      "server_port": 2096,
-      "password": "5a2c16f9",
+      "type": "tuic",
+      "server": "singaporex-1.nezhasu.cn",
+      "server_port": 57489,
+      "uuid": "d9812081-7f61-456d-9340-a1fb8dfd603b",
+      "password": "d9812081-7f61-456d-9340-a1fb8dfd603b",
       "tls": {
         "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
-        "insecure": true
+        "server_name": "singaporex-1.nezhasu.cn",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
       },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippets.kkii.eu.org"
-        },
-        "path": "/Telegram🇨🇳WangCai2"
-      }
+      "congestion_control": "bbr"
     }
   ],
   "route": {
