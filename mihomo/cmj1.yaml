@@ -82,15 +82,22 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
-- {name: "🇭🇰 香港 01", server: "172.64.147.211", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
-- {name: "🇭🇰 香港 02", server: "172.64.229.39", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
-- {name: "🇯🇵 日本 01", server: "db1.nezhasu.com", port: 60113, type: "tuic", password: "d9812081-7f61-456d-9340-a1fb8dfd603b", uuid: "d9812081-7f61-456d-9340-a1fb8dfd603b", sni: "db1.nezhasu.com", skip-cert-verify: true, alpn: ["h3"], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: "native", congestion-controller: "bbr", udp: true, version: 5}
-- {name: "🇯🇵 日本 02", server: "nrtcfdns.zone.id", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/fp=chrome", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, servername: "snippets.kkii.eu.org"}
-- {name: "🇸🇬 新加坡 01", server: "singapore.nezhasu.com", port: 50675, type: "tuic", password: "d9812081-7f61-456d-9340-a1fb8dfd603b", uuid: "d9812081-7f61-456d-9340-a1fb8dfd603b", sni: "singapore.nezhasu.com", skip-cert-verify: true, alpn: ["h3"], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: "native", congestion-controller: "bbr", udp: true, version: 5}
-- {name: "🇸🇬 新加坡 02", server: "172.64.145.89", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
-- {name: "🇸🇬 新加坡 03", server: "172.64.145.130", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
-- {name: "🇸🇬 新加坡 04", server: "172.64.145.156", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
-- {name: "🇸🇬 新加坡 05", server: "singaporex-1.nezhasu.cn", port: 57489, type: "tuic", password: "d9812081-7f61-456d-9340-a1fb8dfd603b", uuid: "d9812081-7f61-456d-9340-a1fb8dfd603b", sni: "singaporex-1.nezhasu.cn", skip-cert-verify: true, alpn: ["h3"], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: "native", congestion-controller: "bbr", udp: true, version: 5}
+- {name: "🇭🇰 香港 01", server: "47.112.189.21", port: 11234, type: "ss", cipher: "aes-256-gcm", password: "31ff2918-9330-4c11-afe0-d6c8b370684e", udp: true, skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", server: "172.64.53.226", port: 443, type: "vless", uuid: "5a2c16f9-e365-4080-8d38-6924c3835586", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, servername: "snippets.kkii.eu.org"}
+- {name: "🇯🇵 日本 02", server: "db1.nezhasu.com", port: 60113, type: "tuic", password: "d9812081-7f61-456d-9340-a1fb8dfd603b", uuid: "d9812081-7f61-456d-9340-a1fb8dfd603b", sni: "db1.nezhasu.com", skip-cert-verify: true, alpn: ["h3"], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: "native", congestion-controller: "bbr", udp: true, version: 5}
+- {name: "🇯🇵 日本 03", server: "172.64.229.10", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇯🇵 日本 04", server: "ss.022.node-for-bigairport.win", port: 15099, type: "ss", cipher: "aes-256-gcm", password: "c69374da-2208-4cbd-b81e-cdf88b5e7f53", udp: true, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 01", server: "172.64.146.75", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 02", server: "172.64.144.220", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 03", server: "singaporex-1.nezhasu.cn", port: 57489, type: "tuic", password: "d9812081-7f61-456d-9340-a1fb8dfd603b", uuid: "d9812081-7f61-456d-9340-a1fb8dfd603b", sni: "singaporex-1.nezhasu.cn", skip-cert-verify: true, alpn: ["h3"], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: "native", congestion-controller: "bbr", udp: true, version: 5}
+- {name: "🇸🇬 新加坡 04", server: "172.64.146.113", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 05", server: "172.64.146.144", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 06", server: "172.64.145.156", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 07", server: "172.64.145.130", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 08", server: "singapore.nezhasu.com", port: 50675, type: "tuic", password: "d9812081-7f61-456d-9340-a1fb8dfd603b", uuid: "d9812081-7f61-456d-9340-a1fb8dfd603b", sni: "singapore.nezhasu.com", skip-cert-verify: true, alpn: ["h3"], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: "native", congestion-controller: "bbr", udp: true, version: 5}
+- {name: "🇸🇬 新加坡 09", server: "172.64.145.67", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 10", server: "172.64.145.189", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
+- {name: "🇸🇬 新加坡 11", server: "172.64.147.69", port: 2096, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/Telegram🇨🇳WangCai2", headers: {Host: "snippets.kkii.eu.org"}}, udp: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -98,14 +105,21 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -114,28 +128,42 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "FCM"
   type: "select"
   proxies:
@@ -144,14 +172,21 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -159,14 +194,21 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -174,28 +216,42 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 - name: "UDP"
   type: "select"
   proxies:
@@ -203,14 +259,21 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
   - "🇸🇬 新加坡 04"
   - "🇸🇬 新加坡 05"
+  - "🇸🇬 新加坡 06"
+  - "🇸🇬 新加坡 07"
+  - "🇸🇬 新加坡 08"
+  - "🇸🇬 新加坡 09"
+  - "🇸🇬 新加坡 10"
+  - "🇸🇬 新加坡 11"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
