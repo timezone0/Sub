@@ -3,8 +3,8 @@ import argparse
 import os
 import requests
 
+# 设置工作目录为脚本所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
 
 def download_json_from_url(url):
     try:
@@ -16,40 +16,35 @@ def download_json_from_url(url):
         print(f"🎃下载 JSON 文件时发生网络错误 (URL：{url})：{e}")
         raise
     except json.JSONDecodeError:
-        print(
-            f"🎃解析 JSON 文件时发生错误，请确保 URL 提供的是有效的 JSON 数据 (URL：{url})"
-        )
+        print(f"🎃解析 JSON 文件时发生错误，请确保 URL 提供的是有效的 JSON 数据 (URL：{url})")
         raise
 
-
-def replace_outbounds_in_fixed_target(source_data, output_file):
-    target_file = "singbox-config/config.json"
-    if not os.path.exists(target_file):
-        raise FileNotFoundError(f"配置文件 '{target_file}' 未找到")
+def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
+    # 检查传入的模板配置文件是否存在
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f"基础配置文件 '{config_path}' 未找到")
+    
     try:
-        with open(target_file, "r", encoding="utf-8") as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             target_data = json.load(f)
-    except FileNotFoundError:
-        print(f"🎃未找到配置文件：{target_file}")
-        raise
     except json.JSONDecodeError:
-        print(
-            f"🎃读取配置文件时发生错误，请检查配置文件内容是否有效 (文件路径: {target_file})"
-        )
+        print(f"🎃读取配置文件时发生错误，请检查内容格式 (路径: {config_path})")
         raise
 
     try:
+        # 过滤掉不需要的类型和特定的加密方法
         skip_types = {"direct", "block", "dns", "urltest", "selector"}
-
         new_outbounds = [
             o
             for o in source_data.get("outbounds", [])
             if o.get("type") not in skip_types and o.get("method") != "chacha20"
         ]
 
+        # 合并出站代理
         existing_outbounds = target_data.get("outbounds", [])
         target_data["outbounds"] = existing_outbounds + new_outbounds
 
+        # 更新 selector 或 urltest 等组中的节点列表
         for outbound in target_data["outbounds"]:
             if "outbounds" in outbound:
                 for new_outbound in new_outbounds:
@@ -60,6 +55,7 @@ def replace_outbounds_in_fixed_target(source_data, output_file):
         print(f"🎃替换 outbounds 时发生错误：{e}")
         raise
 
+    # 确保输出目录存在
     output_dir = os.path.dirname(output_file)
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -72,30 +68,45 @@ def replace_outbounds_in_fixed_target(source_data, output_file):
         print(f"🎃保存文件时发生错误：{e}")
         raise
 
-
 def main():
-    parser = argparse.ArgumentParser(description="通过 URL 下载 JSON 文件")
-    parser.add_argument("url", help="需要下载的 JSON 文件的 URL ")
-    parser.add_argument("output", help="保存结果的路径")
+    parser = argparse.ArgumentParser(description="通过 URL 下载 JSON 并合并到本地 sing-box 配置")
+    
+    # 将 url 改为可选参数 -u/--url，设置为必填
+    parser.add_argument(
+        "-u", "--url", 
+        required=True, 
+        help="订阅链接 (JSON 格式的 URL)"
+    )
+    
+    # 将 output 改为可选参数 -o/--output，设置为必填
+    parser.add_argument(
+        "-o", "--output", 
+        required=True, 
+        help="生成后的配置文件保存路径"
+    )
+    
+    # 基础模板配置路径保持不变
+    parser.add_argument(
+        "-c", "--config", 
+        default="singbox-config/config-android.json", 
+        help="基础模板配置文件路径 (默认: singbox-config/config-android.json)"
+    )
+    
     args = parser.parse_args()
 
-    if not os.path.dirname(args.output):
+    # 处理输出路径，如果不是绝对路径则基于当前工作目录
+    if not os.path.isabs(args.output):
         args.output = os.path.join(os.getcwd(), args.output)
 
     try:
-        print(f"正在下载 JSON 文件：{args.url}")
+        print(f"正在从模板加载：{args.config}")
+        print(f"正在下载订阅数据：{args.url}")
+        
         source_data = download_json_from_url(args.url)
-        replace_outbounds_in_fixed_target(source_data, args.output)
-    except FileNotFoundError as e:
-        print(f"🎃文件操作时发生错误：{e}")
-    except requests.exceptions.RequestException as e:
-        print(f"🎃网络请求时发生错误：{e}")
-    except json.JSONDecodeError as e:
-        print(f"🎃JSON 解析时发生错误：{e}")
+        replace_outbounds_in_fixed_target(source_data, args.config, args.output)
+        
     except Exception as e:
-        print(f"🎃处理过程中发生未知错误：{e}")
-
+        print(f"🎃运行出错：{e}")
 
 if __name__ == "__main__":
     main()
-

@@ -12,7 +12,7 @@ SUBSTORE_PORT = 3003
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
 
-# 切换到脚本所在目录
+# 设置工作目录为脚本所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -22,10 +22,12 @@ def log(msg):
 
 
 def encode_gitlab_url(raw_url):
-    return raw_url.replace("%", "%25").replace("%", "%25")
+    """处理 GitLab 特殊 URL 编码"""
+    return raw_url.replace("%", "%25")
 
 
 def wait_for_port(host, port, timeout=10):
+    """等待端口就绪"""
     start_time = time.time()
     while time.time() - start_time < timeout:
         try:
@@ -37,6 +39,7 @@ def wait_for_port(host, port, timeout=10):
 
 
 def start_substore_backend():
+    """启动 SubStore 后端"""
     if wait_for_port(SUBSTORE_HOST, SUBSTORE_PORT, timeout=1):
         log("✅ SubStore 后端已在运行")
         return
@@ -62,6 +65,7 @@ def start_substore_backend():
 
 
 def refresh_backend():
+    """刷新后端缓存"""
     try:
         log("▶ 正在刷新后端资源缓存...")
         res = requests.get(f"{API_BASE}/api/utils/refresh")
@@ -72,13 +76,15 @@ def refresh_backend():
 
 
 def get_output_paths(name, mihomo_dir, singbox_dir):
+    """生成输出文件的绝对路径"""
     return (
-        os.path.join(mihomo_dir, f"{name}.yaml"),
-        os.path.join(singbox_dir, f"{name}.json"),
+        os.path.abspath(os.path.join(mihomo_dir, f"{name}.yaml")),
+        os.path.abspath(os.path.join(singbox_dir, f"{name}.json")),
     )
 
 
-def handle_one(name, url, mihomo_dir, singbox_dir):
+def handle_one(name, url, mihomo_dir, singbox_dir, mihomo_config, singbox_config):
+    """处理单个订阅并传递所有必要参数"""
     log(f"▶ 开始处理订阅：{name}")
 
     encoded_url = (
@@ -90,19 +96,31 @@ def handle_one(name, url, mihomo_dir, singbox_dir):
 
     mihomo_out, singbox_out = get_output_paths(name, mihomo_dir, singbox_dir)
 
+    # 生成 Mihomo 配置，显式传递 -u, -o, -c 参数
     try:
-        log("▶ 正在生成 Mihomo 配置...")
+        log(f"▶ 正在生成 Mihomo 配置 (模板: {mihomo_config})...")
         subprocess.run(
-            ["python", "scripts/mihomo-remote-generate.py", local_url, mihomo_out],
+            [
+                "python", "scripts/mihomo-remote-generate.py",
+                "-u", local_url,
+                "-o", mihomo_out,
+                "-c", mihomo_config
+            ],
             check=True,
         )
     except subprocess.CalledProcessError as e:
         log(f"❌ 生成 Mihomo 配置失败：{e}")
 
+    # 生成 Singbox 配置，显式传递 -u, -o, -c 参数
     try:
-        log("▶ 正在生成 Singbox 配置...")
+        log(f"▶ 正在生成 Singbox 配置 (模板: {singbox_config})...")
         subprocess.run(
-            ["python", "scripts/singbox-remote-generate.py", local_url, singbox_out],
+            [
+                "python", "scripts/singbox-remote-generate.py",
+                "-u", local_url,
+                "-o", singbox_out,
+                "-c", singbox_config
+            ],
             check=True,
         )
     except subprocess.CalledProcessError as e:
@@ -111,7 +129,8 @@ def handle_one(name, url, mihomo_dir, singbox_dir):
     log("-----------------------------")
 
 
-def handle_json(json_input, mihomo_dir, singbox_dir):
+def handle_json(json_input, mihomo_dir, singbox_dir, mihomo_config, singbox_config):
+    """批量处理 JSON 中的项"""
     refresh_backend()
 
     try:
@@ -135,7 +154,7 @@ def handle_json(json_input, mihomo_dir, singbox_dir):
         name = item.get("name")
         url = item.get("url")
         if name and url:
-            handle_one(name, url, mihomo_dir, singbox_dir)
+            handle_one(name, url, mihomo_dir, singbox_dir, mihomo_config, singbox_config)
         else:
             log(f"⚠️ 跳过无效项：{item}")
 
@@ -149,17 +168,28 @@ if __name__ == "__main__":
     group.add_argument("--json", help="JSON 文件路径或 URL（包含 name/url）")
     group.add_argument("--name", help="订阅名称（需配合 --url）")
     parser.add_argument("--url", help="订阅地址")
+    
+    # 增加对不同模板路径的支持
     parser.add_argument("--mihomo-dir", default="../mihomo", help="Mihomo 配置输出目录")
+    parser.add_argument("--singbox-dir", default="../singbox", help="Singbox 配置输出目录")
     parser.add_argument(
-        "--singbox-dir", default="../singbox", help="Singbox 配置输出目录"
+        "--mihomo-config", 
+        default="mihomo-config/config-android.yaml", 
+        help="Mihomo 基础模板路径"
+    )
+    parser.add_argument(
+        "--singbox-config", 
+        default="singbox-config/config-android.json", 
+        help="Singbox 基础模板路径"
     )
 
     args = parser.parse_args()
 
+    # 统一调用参数
     if args.json:
-        handle_json(args.json, args.mihomo_dir, args.singbox_dir)
+        handle_json(args.json, args.mihomo_dir, args.singbox_dir, args.mihomo_config, args.singbox_config)
     elif args.name and args.url:
         refresh_backend()
-        handle_one(args.name, args.url, args.mihomo_dir, args.singbox_dir)
+        handle_one(args.name, args.url, args.mihomo_dir, args.singbox_dir, args.mihomo_config, args.singbox_config)
     else:
-        log("❌ 参数不完整，请使用 --json 或 --name 与 --url")
+        log("❌ 参数错误: 使用 --name 时必须配合 --url")

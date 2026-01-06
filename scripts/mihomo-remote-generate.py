@@ -5,8 +5,8 @@ import re
 import ruamel.yaml
 from ruamel.yaml.scalarstring import DoubleQuotedScalarString
 
+# 设置工作目录为脚本所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
 
 def download_yaml(url):
     try:
@@ -18,7 +18,6 @@ def download_yaml(url):
         print(f"🎃下载 YAML 文件时发生错误 (URL：{url})：{e}")
         raise
 
-
 def preprocess_yaml(yaml_content):
     try:
         content = re.sub(r"!\<str\>", "", yaml_content)
@@ -26,7 +25,6 @@ def preprocess_yaml(yaml_content):
     except re.error as e:
         print(f"🎃预处理 YAML 内容时发生错误：{e}")
         raise
-
 
 def extract_proxies(yaml_content):
     try:
@@ -50,7 +48,6 @@ def extract_proxies(yaml_content):
         print(f"🎃提取代理时发生错误：{e}")
         raise
 
-
 def load_config(config_path):
     try:
         yaml = ruamel.yaml.YAML(typ="rt")
@@ -66,12 +63,11 @@ def load_config(config_path):
         print(f"🎃读取配置文件时发生未知错误：{e}")
         raise
 
-
 def insert_proxies_to_config(config_data, new_proxies):
     try:
         if "proxies" in config_data:
             existing_proxies = config_data.get("proxies", [])
-            config_data["proxies"] = existing_proxies + new_proxies
+            config_data["proxies"] = (existing_proxies if existing_proxies else []) + new_proxies
         else:
             proxy_groups_index = None
             for idx, key in enumerate(config_data.keys()):
@@ -92,7 +88,6 @@ def insert_proxies_to_config(config_data, new_proxies):
         print(f"🎃插入代理到配置文件时发生错误：{e}")
         raise
 
-
 def insert_names_into_proxy_groups(config_data):
     try:
         proxies = config_data.get("proxies", [])
@@ -112,13 +107,14 @@ def insert_names_into_proxy_groups(config_data):
                 if not group["proxies"]:
                     group["proxies"] = proxy_names
                 else:
-                    group["proxies"].extend(proxy_names)
+                    # 避免重复添加
+                    current_names = set(group["proxies"])
+                    group["proxies"].extend([n for n in proxy_names if n not in current_names])
 
         return config_data
     except Exception as e:
         print(f"🎃更新代理组时发生错误：{e}")
         raise
-
 
 def apply_quotes_to_strings(data):
     try:
@@ -133,7 +129,6 @@ def apply_quotes_to_strings(data):
     except Exception as e:
         print(f"🎃应用双引号时发生错误：{e}")
         raise
-
 
 def save_result(config_data, result_path):
     try:
@@ -153,14 +148,14 @@ def save_result(config_data, result_path):
         print(f"🎃保存结果时发生未知错误：{e}")
         raise
 
-
-def main(url, result_path):
+def main(url, config_path, result_path):
     try:
+        print(f"正在从模板加载：{config_path}")
         print(f"正在下载 YAML 文件：{url}")
+        
         yaml_content = download_yaml(url)
         proxies = extract_proxies(yaml_content)
 
-        config_path = "mihomo-config/config.yaml"
         config_data = load_config(config_path)
 
         updated_config = insert_proxies_to_config(config_data, proxies)
@@ -170,12 +165,36 @@ def main(url, result_path):
         print(f"✅处理完成，文件已保存至：{ os.path.abspath(result_path) }")
     except Exception as e:
         print(f"🎃执行脚本时发生错误：{e}")
-
-
+    
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="通过 URL 下载 YAML 文件")
-    parser.add_argument("url", help="需要下载的 YAML 文件的 URL ")
-    parser.add_argument("result_path", help="保存结果的路径")
+    parser = argparse.ArgumentParser(description="通过 URL 下载 YAML 文件并合并到本地 Mihomo 配置")
+    
+    # 将订阅链接改为可选参数 --url, 简写 -u
+    parser.add_argument(
+        "-u", "--url", 
+        required=True, 
+        help="订阅链接 (YAML 格式的 URL)"
+    )
+    
+    # 将输出路径改为可选参数 --output, 简写 -o
+    parser.add_argument(
+        "-o", "--output", 
+        required=True, 
+        help="生成后的配置文件保存路径"
+    )
+    
+    # 基础模板配置路径保持不变
+    parser.add_argument(
+        "-c", "--config", 
+        default="mihomo-config/config-android.yaml", 
+        help="基础模板配置文件路径 (默认: mihomo-config/config-android.yaml)"
+    )
+    
     args = parser.parse_args()
 
-    main(args.url, args.result_path)
+    # 处理输出路径（现在使用 args.output）
+    if not os.path.isabs(args.output):
+        args.output = os.path.join(os.getcwd(), args.output)
+
+    # 传入 main 函数
+    main(args.url, args.config, args.output)

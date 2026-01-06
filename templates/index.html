@@ -32,13 +32,15 @@
     label {
       margin-bottom: 0.3rem;
       font-size: 0.95rem;
+      font-weight: bold;
     }
 
-    input[type="text"] {
+    input[type="text"], select {
       padding: 0.6rem;
       font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 4px;
+      background-color: #fff;
     }
 
     .button-group {
@@ -83,11 +85,11 @@
       }
 
       label {
-        width: 80px;
+        width: 110px;
         margin-bottom: 0;
       }
 
-      input[type="text"] {
+      input[type="text"], select {
         flex: 1;
         margin-right: 10px;
       }
@@ -132,9 +134,27 @@
       />
     </div>
 
+    <div class="form-group">
+      <label for="mihomo_tpl">Mihomo 模板</label>
+      <select name="mihomo_tpl" id="mihomo_tpl">
+        {% for cfg in mihomo_configs %}
+          <option value="{{ cfg }}" {% if cfg == sel_mihomo %}selected{% endif %}>{{ cfg }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="singbox_tpl">Singbox 模板</label>
+      <select name="singbox_tpl" id="singbox_tpl">
+        {% for cfg in singbox_configs %}
+          <option value="{{ cfg }}" {% if cfg == sel_singbox %}selected{% endif %}>{{ cfg }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
     <div class="button-group">
-      <button type="submit">生成</button>
-      <button type="button" onclick="window.location='{{ url_for('index') }}'">清空</button>
+      <button type="submit">生成配置</button>
+      <button type="button" onclick="window.location='{{ url_for('index') }}'">清空重置</button>
     </div>
   </form>
 
