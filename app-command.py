@@ -170,8 +170,8 @@ if __name__ == "__main__":
     parser.add_argument("--url", help="订阅地址")
     
     # 增加对不同模板路径的支持
-    parser.add_argument("--mihomo-dir", default="../mihomo", help="Mihomo 配置输出目录")
-    parser.add_argument("--singbox-dir", default="../singbox", help="Singbox 配置输出目录")
+    parser.add_argument("--mihomo-dir", default="mihomo", help="Mihomo 配置输出目录")
+    parser.add_argument("--singbox-dir", default="singbox", help="Singbox 配置输出目录")
     parser.add_argument(
         "--mihomo-config", 
         default="mihomo-config/config-android.yaml", 

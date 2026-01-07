@@ -13,8 +13,8 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 # === 命令行参数解析 ===
 parser = argparse.ArgumentParser(description="Flask 后端 + SubStore 配置生成器")
-parser.add_argument("--mihomo-dir", default="../mihomo", help="Mihomo 输出目录")
-parser.add_argument("--singbox-dir", default="../singbox", help="Singbox 输出目录")
+parser.add_argument("--mihomo-dir", default="mihomo", help="Mihomo 输出目录")
+parser.add_argument("--singbox-dir", default="singbox", help="Singbox 输出目录")
 args, _ = parser.parse_known_args()
 
 MIHOMO_DIR = args.mihomo_dir
