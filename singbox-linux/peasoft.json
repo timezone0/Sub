@@ -1,0 +1,735 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_keyword": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "auto_redirect": true,
+      "strict_route": true
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "3m",
+      "outbounds": [
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "fcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "udp",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇰🇷 韩国 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "vmess",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vmess",
+      "server": "v9.hdacd.com",
+      "server_port": 30809,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "trojan",
+      "server": "58.152.110.104",
+      "server_port": 443,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 04",
+      "type": "trojan",
+      "server": "58.152.25.86",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%2Fripaojiedian",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 05",
+      "type": "trojan",
+      "server": "58.152.25.236",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%2Fripaojiedian",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 06",
+      "type": "vmess",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "tag": "🇭🇰 香港 07",
+      "type": "vmess",
+      "server": "v9.hdacd.com",
+      "server_port": 30809,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "trojan",
+      "server": "13.114.175.199",
+      "server_port": 2595,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%252Fripaojiedian",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "trojan",
+      "server": "160.16.196.59",
+      "server_port": 4006,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "trojan",
+      "server": "160.16.196.59",
+      "server_port": 1933,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇰🇷 韩国 01",
+      "type": "shadowsocks",
+      "server": "221.150.109.92",
+      "server_port": 21215,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "trojan",
+      "server": "160.16.196.59",
+      "server_port": 3901,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "trojan",
+      "server": "160.16.63.16",
+      "server_port": 3901,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 03",
+      "type": "trojan",
+      "server": "95.40.73.131",
+      "server_port": 804,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%252Fripaojiedian",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "trojan",
+      "server": "160.16.196.59",
+      "server_port": 1281,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "trojan",
+      "server": "160.16.63.16",
+      "server_port": 1281,
+      "password": "381f2e86233720eacda26d50e9aa26da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "trojan",
+      "server": "16.163.98.169",
+      "server_port": 2173,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%2Fripaojiedian",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "fcm"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-spotify"
+        ],
+        "outbound": "spotify"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}

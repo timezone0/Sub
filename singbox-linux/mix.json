@@ -1,0 +1,1551 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_keyword": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "auto_redirect": true,
+      "strict_route": true
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "3m",
+      "outbounds": [
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "fcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "udp",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇹🇭 泰国 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "vless",
+      "server": "103.148.72.147",
+      "server_port": 2443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.site",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.site"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vless",
+      "server": "14.102.228.22",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.ccwu.cc",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.ccwu.cc"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 03",
+      "type": "vless",
+      "server": "185.176.26.61",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.eu.org",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.eu.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 04",
+      "type": "vless",
+      "server": "175.29.22.42",
+      "server_port": 31035,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.gfw.hidns.co",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.gfw.hidns.co"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 05",
+      "type": "vless",
+      "server": "64.120.88.82",
+      "server_port": 50013,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.gv.uy",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.gv.uy"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 06",
+      "type": "vless",
+      "server": "38.207.172.203",
+      "server_port": 56870,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.cc.cd",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.cc.cd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 07",
+      "type": "vless",
+      "server": "175.29.22.81",
+      "server_port": 31030,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.443888.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.443888.xyz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 08",
+      "type": "vless",
+      "server": "202.85.53.160",
+      "server_port": 7000,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.ccwu.cc",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.ccwu.cc"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 09",
+      "type": "vless",
+      "server": "175.29.22.75",
+      "server_port": 31035,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.de5.net",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.de5.net"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 10",
+      "type": "vless",
+      "server": "8.217.101.195",
+      "server_port": 39738,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.ccwu.cc",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.ccwu.cc"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 11",
+      "type": "vless",
+      "server": "175.29.22.42",
+      "server_port": 21034,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.gv.uy",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.gv.uy"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 12",
+      "type": "vless",
+      "server": "45.136.12.68",
+      "server_port": 60002,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.443888.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.443888.xyz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 01",
+      "type": "vless",
+      "server": "166.0.198.81",
+      "server_port": 28010,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.de5.net",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.de5.net"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇨🇳 台湾 02",
+      "type": "vless",
+      "server": "166.0.198.81",
+      "server_port": 28142,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vless",
+      "server": "54.250.229.57",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.frii.site",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.frii.site"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vless",
+      "server": "52.69.102.187",
+      "server_port": 10015,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.us.ci",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.us.ci"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 03",
+      "type": "vless",
+      "server": "47.79.90.37",
+      "server_port": 49153,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.theworkpc.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.theworkpc.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 04",
+      "type": "vless",
+      "server": "54.64.40.97",
+      "server_port": 10020,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.de5.net",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.de5.net"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 05",
+      "type": "vless",
+      "server": "13.159.12.37",
+      "server_port": 10005,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 06",
+      "type": "vless",
+      "server": "191.96.29.131",
+      "server_port": 53555,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.ccwu.cc",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.ccwu.cc"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 07",
+      "type": "vless",
+      "server": "52.69.102.187",
+      "server_port": 10005,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.eu.org",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.eu.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 08",
+      "type": "vless",
+      "server": "54.178.209.246",
+      "server_port": 10035,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.cc.cd",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.cc.cd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 09",
+      "type": "vless",
+      "server": "43.165.133.183",
+      "server_port": 17628,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.443888.xyz",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.443888.xyz"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "82.23.177.51",
+      "server_port": 18470,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.gfw.hidns.co",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.gfw.hidns.co"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vless",
+      "server": "103.167.151.182",
+      "server_port": 18098,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.us.ci",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.us.ci"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇹🇭 泰国 01",
+      "type": "vless",
+      "server": "38.60.200.62",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.dedyn.io",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.dedyn.io"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "154.21.86.48",
+      "server_port": 27507,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.gleeze.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.gleeze.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vless",
+      "server": "209.146.114.108",
+      "server_port": 17960,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.site",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.site"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vless",
+      "server": "154.26.188.60",
+      "server_port": 20004,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.cc.cd",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.cc.cd"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vless",
+      "server": "172.96.194.124",
+      "server_port": 34555,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.mywire.org",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.mywire.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "vless",
+      "server": "199.19.104.63",
+      "server_port": 666,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.dedyn.io",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.dedyn.io"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "vless",
+      "server": "104.194.82.107",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.frii.site",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.frii.site"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 07",
+      "type": "vless",
+      "server": "47.254.86.102",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.dedyn.io",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.dedyn.io"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "fcm"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-spotify"
+        ],
+        "outbound": "spotify"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090"
+    }
+  }
+}
