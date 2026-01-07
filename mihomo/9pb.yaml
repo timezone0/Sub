@@ -134,6 +134,7 @@ proxies:
 - {name: "🇦🇺 澳大利亚 03", type: "anytls", server: "zz.9966663.xyz", port: 50043, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "auoci.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
 - {name: "🇦🇺 澳大利亚 04", type: "anytls", server: "zz.9966663.xyz", port: 50044, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "auoci.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
 - {name: "🇦🇺 澳大利亚 05", type: "anytls", server: "zz.9966663.xyz", port: 50045, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "auoci.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
+- {name: "🇦🇺 澳大利亚 06", type: "ss", server: "1.1.1.1", port: 8888, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", cipher: "aes-128-gcm", udp: true, skip-cert-verify: true, client-fingerprint: "chrome"}
 - {name: "🇧🇬 保加利亚 01", type: "anytls", server: "zz.9966663.xyz", port: 50051, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "bg.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
 - {name: "🇧🇬 保加利亚 02", type: "anytls", server: "zz.9966663.xyz", port: 50052, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "bg.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
 - {name: "🇧🇬 保加利亚 03", type: "anytls", server: "zz.9966663.xyz", port: 50053, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "bg.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
@@ -244,7 +245,6 @@ proxies:
 - {name: "🇲🇽 墨西哥 03", type: "anytls", server: "co-7be4b6-20.9966663.xyz", port: 20133, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "co-7be4b6-20.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
 - {name: "🇲🇽 墨西哥 04", type: "anytls", server: "co-7be4b6-20.9966663.xyz", port: 20134, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "co-7be4b6-20.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
 - {name: "🇲🇽 墨西哥 05", type: "anytls", server: "co-7be4b6-20.9966663.xyz", port: 20135, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", sni: "co-7be4b6-20.9966663.xyz", skip-cert-verify: true, client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"]}
-- {name: "🇭🇰 香港 01", type: "ss", server: "1.1.1.1", port: 8888, password: "a7c5d30b-ce9b-4e34-b5cb-66f8308790ef", cipher: "aes-128-gcm", udp: true, skip-cert-verify: true, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -300,6 +300,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -410,7 +411,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -467,6 +467,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -577,7 +578,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -632,6 +632,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -742,7 +743,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -799,6 +799,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -909,7 +910,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -965,6 +965,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -1075,7 +1076,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -1131,6 +1131,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -1241,7 +1242,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -1296,6 +1296,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -1406,7 +1407,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 - name: "UDP"
   type: "select"
   proxies:
@@ -1462,6 +1462,7 @@ proxy-groups:
   - "🇦🇺 澳大利亚 03"
   - "🇦🇺 澳大利亚 04"
   - "🇦🇺 澳大利亚 05"
+  - "🇦🇺 澳大利亚 06"
   - "🇧🇬 保加利亚 01"
   - "🇧🇬 保加利亚 02"
   - "🇧🇬 保加利亚 03"
@@ -1572,7 +1573,6 @@ proxy-groups:
   - "🇲🇽 墨西哥 03"
   - "🇲🇽 墨西哥 04"
   - "🇲🇽 墨西哥 05"
-  - "🇭🇰 香港 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
