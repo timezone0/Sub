@@ -2,6 +2,9 @@ log-level: "debug"
 mixed-port: 7890
 allow-lan: true
 external-controller: "127.0.0.1:9090"
+external-ui: "ui"
+external-ui-name: "yacd"
+external-ui-url: "https://ghfast.top/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
 unified-delay: true
 tcp-concurrent: true
 geodata-mode: true
@@ -82,26 +85,16 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 01", server: "cloudflare-dns.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev"}}, udp: true}
-- {name: "🇭🇰 香港 02", server: "www.fbi.gov", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev"}}, udp: true}
-- {name: "🇸🇬 新加坡 01", server: "www.shopify.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev"}}, udp: true}
-- {name: "🇸🇬 新加坡 02", server: "aws-1.aikunapp.com", port: 6002, type: "anytls", password: "2ce44386-e96c-445b-bab9-c48d1772628e", client-fingerprint: "chrome", skip-cert-verify: true, sni: "aws-1.aikunapp.com", udp: true}
-- {name: "🇸🇬 新加坡 03", server: "158.178.236.104", port: 443, type: "hysteria2", password: "e343471a-aad3-40da-9dea-72cc8c7dce5f", auth: "e343471a-aad3-40da-9dea-72cc8c7dce5f", sni: "api.push.apple.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
-- {name: "🇲🇾 马来 01", server: "202.122.145.125", port: 11201, type: "ss", cipher: "chacha20-ietf-poly1305", password: "46d46fd902d485e8", udp: true, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 01", server: "pq.us2.globals-download.com", port: 443, type: "hysteria2", password: "e343471a-aad3-40da-9dea-72cc8c7dce5f", auth: "e343471a-aad3-40da-9dea-72cc8c7dce5f", sni: "www.apple.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 01", server: "unamecf.xn--ghqu5fm27b67w.com", port: 443, type: "vless", uuid: "e343471a-aad3-40da-9dea-72cc8c7dce5f", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/pq/jp1", headers: {Host: "ujp1.xn--ghqu5fm27b67w.com"}}, udp: true, servername: "ujp1.xn--ghqu5fm27b67w.com"}
+- {name: "🇸🇬 新加坡 01", server: "158.178.236.104", port: 443, type: "hysteria2", password: "e343471a-aad3-40da-9dea-72cc8c7dce5f", auth: "e343471a-aad3-40da-9dea-72cc8c7dce5f", sni: "api.push.apple.com", skip-cert-verify: true, udp: true, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -109,25 +102,15 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -135,64 +118,39 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 - name: "UDP"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
-  - "🇲🇾 马来 01"
-  - "🇺🇸 美国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
