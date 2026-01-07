@@ -87,6 +87,11 @@ def handle_one(name, url, mihomo_dir, singbox_dir, mihomo_config, singbox_config
     """处理单个订阅并传递所有必要参数"""
     log(f"▶ 开始处理订阅：{name}")
 
+    # --- 新增：将模板路径转换为绝对路径 ---
+    mihomo_config_abs = os.path.abspath(mihomo_config)
+    singbox_config_abs = os.path.abspath(singbox_config)
+    # ------------------------------------
+
     encoded_url = (
         encode_gitlab_url(url)
         if url.startswith("https://gitlab.com/api/")
@@ -96,30 +101,30 @@ def handle_one(name, url, mihomo_dir, singbox_dir, mihomo_config, singbox_config
 
     mihomo_out, singbox_out = get_output_paths(name, mihomo_dir, singbox_dir)
 
-    # 生成 Mihomo 配置，显式传递 -u, -o, -c 参数
+    # 生成 Mihomo 配置
     try:
-        log(f"▶ 正在生成 Mihomo 配置 (模板: {mihomo_config})...")
+        log(f"▶ 正在生成 Mihomo 配置 (模板: {mihomo_config_abs})...") # 这里打印绝对路径方便排查
         subprocess.run(
             [
                 "python", "scripts/mihomo-remote-generate.py",
                 "-u", local_url,
                 "-o", mihomo_out,
-                "-c", mihomo_config
+                "-c", mihomo_config_abs  # 使用绝对路径
             ],
             check=True,
         )
     except subprocess.CalledProcessError as e:
         log(f"❌ 生成 Mihomo 配置失败：{e}")
 
-    # 生成 Singbox 配置，显式传递 -u, -o, -c 参数
+    # 生成 Singbox 配置
     try:
-        log(f"▶ 正在生成 Singbox 配置 (模板: {singbox_config})...")
+        log(f"▶ 正在生成 Singbox 配置 (模板: {singbox_config_abs})...") # 这里打印绝对路径方便排查
         subprocess.run(
             [
                 "python", "scripts/singbox-remote-generate.py",
                 "-u", local_url,
                 "-o", singbox_out,
-                "-c", singbox_config
+                "-c", singbox_config_abs  # 使用绝对路径
             ],
             check=True,
         )
