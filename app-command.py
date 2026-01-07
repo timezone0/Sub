@@ -179,12 +179,12 @@ if __name__ == "__main__":
     parser.add_argument("--singbox-dir", default="singbox", help="Singbox 配置输出目录")
     parser.add_argument(
         "--mihomo-config", 
-        default="mihomo-config/config-android.yaml", 
+        default="scripts/mihomo-config/config-android.yaml", 
         help="Mihomo 基础模板路径"
     )
     parser.add_argument(
         "--singbox-config", 
-        default="singbox-config/config-android.json", 
+        default="scripts/singbox-config/config-android.json", 
         help="Singbox 基础模板路径"
     )
 
