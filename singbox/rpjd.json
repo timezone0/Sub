@@ -78,11 +78,7 @@
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
-      "strict_route": true,
-      "route_exclude_address": [
-        "192.168.0.0/16",
-        "fc00::/7"
-      ]
+      "strict_route": true
     }
   ],
   "outbounds": [
@@ -100,10 +96,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -123,10 +119,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -146,10 +142,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -171,10 +167,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -195,10 +191,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -219,10 +215,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -242,10 +238,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -266,10 +262,10 @@
         "🇭🇰 香港 03",
         "🇭🇰 香港 04",
         "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
         "🇯🇵 日本 01",
         "🇯🇵 日本 02",
         "🇯🇵 日本 03",
-        "🇰🇷 韩国 01",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
@@ -364,10 +360,18 @@
       }
     },
     {
+      "tag": "🇭🇰 香港 06",
+      "type": "shadowsocks",
+      "server": "103.109.23.165",
+      "server_port": 33007,
+      "method": "chacha20-ietf-poly1305",
+      "password": "sxnCPKb70DGRo62-goXFVHrjzF-5oMbD"
+    },
+    {
       "tag": "🇯🇵 日本 01",
       "type": "trojan",
-      "server": "13.114.175.199",
-      "server_port": 2595,
+      "server": "3.112.45.28",
+      "server_port": 3194,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
@@ -378,7 +382,7 @@
     {
       "tag": "🇯🇵 日本 02",
       "type": "trojan",
-      "server": "160.16.196.59",
+      "server": "160.16.144.208",
       "server_port": 4006,
       "password": "381f2e86233720eacda26d50e9aa26da",
       "tls": {
@@ -390,7 +394,7 @@
     {
       "tag": "🇯🇵 日本 03",
       "type": "trojan",
-      "server": "160.16.196.59",
+      "server": "160.16.144.208",
       "server_port": 1933,
       "password": "381f2e86233720eacda26d50e9aa26da",
       "tls": {
@@ -400,17 +404,9 @@
       }
     },
     {
-      "tag": "🇰🇷 韩国 01",
-      "type": "shadowsocks",
-      "server": "221.150.109.92",
-      "server_port": 21215,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "tag": "🇸🇬 新加坡 01",
       "type": "trojan",
-      "server": "160.16.196.59",
+      "server": "160.16.116.227",
       "server_port": 3901,
       "password": "381f2e86233720eacda26d50e9aa26da",
       "tls": {
@@ -422,7 +418,7 @@
     {
       "tag": "🇸🇬 新加坡 02",
       "type": "trojan",
-      "server": "160.16.63.16",
+      "server": "160.16.144.208",
       "server_port": 3901,
       "password": "381f2e86233720eacda26d50e9aa26da",
       "tls": {
@@ -434,8 +430,8 @@
     {
       "tag": "🇸🇬 新加坡 03",
       "type": "trojan",
-      "server": "95.40.73.131",
-      "server_port": 804,
+      "server": "43.199.160.78",
+      "server_port": 2673,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
@@ -446,7 +442,7 @@
     {
       "tag": "🇺🇸 美国 01",
       "type": "trojan",
-      "server": "160.16.196.59",
+      "server": "160.16.144.208",
       "server_port": 1281,
       "password": "381f2e86233720eacda26d50e9aa26da",
       "tls": {
@@ -458,7 +454,7 @@
     {
       "tag": "🇺🇸 美国 02",
       "type": "trojan",
-      "server": "160.16.63.16",
+      "server": "160.16.116.227",
       "server_port": 1281,
       "password": "381f2e86233720eacda26d50e9aa26da",
       "tls": {
@@ -470,8 +466,8 @@
     {
       "tag": "🇺🇸 美国 03",
       "type": "trojan",
-      "server": "16.163.98.169",
-      "server_port": 2173,
+      "server": "43.199.160.78",
+      "server_port": 3127,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
@@ -585,56 +581,56 @@
         "type": "remote",
         "tag": "geoip-cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify-ads",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
         "download_detour": "select"
       }
     ],
