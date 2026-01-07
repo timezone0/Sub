@@ -78,6 +78,7 @@
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
+      "auto_redirect": true,
       "strict_route": true
     }
   ],
@@ -93,10 +94,12 @@
         "auto",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,10 +110,12 @@
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -121,10 +126,12 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,10 +144,12 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -152,10 +161,12 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,10 +178,12 @@
         "direct",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -181,10 +194,12 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -196,10 +211,12 @@
         "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇸🇬 新加坡 01",
         "🇸🇬 新加坡 02",
         "🇸🇬 新加坡 03",
-        "🇸🇬 新加坡 04"
+        "🇲🇾 马来 01",
+        "🇺🇸 美国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -242,25 +259,6 @@
       "tls": {
         "enabled": true,
         "server_name": "snippets.kkii.eu.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippets.kkii.eu.org"
-        },
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "vless",
-      "server": "104.19.39.97",
-      "server_port": 443,
-      "uuid": "5a2c16f9-e365-4080-8d38-6924c3835586",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -276,79 +274,93 @@
       }
     },
     {
-      "tag": "🇸🇬 新加坡 01",
+      "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "nrtcfdns.zone.id",
-      "server_port": 443,
-      "uuid": "5a2c16f9-e365-4080-8d38-6924c3835586",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
-        "insecure": true
-      },
+      "server": "cloudflare-dns.com",
+      "server_port": 2095,
+      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "snippets.kkii.eu.org"
+          "Host": "fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "vless",
+      "server": "www.fbi.gov",
+      "server_port": 2095,
+      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "www.shopify.com",
+      "server_port": 2095,
+      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "fuckingfangbinxing.cnm-fangbinxing-wcnm.workers.dev"
         },
         "path": "/"
       }
     },
     {
       "tag": "🇸🇬 新加坡 02",
-      "type": "trojan",
-      "server": "172.64.144.144",
-      "server_port": 2096,
-      "password": "5a2c16f9",
+      "type": "anytls",
+      "server": "aws-1.aikunapp.com",
+      "server_port": 6002,
+      "password": "2ce44386-e96c-445b-bab9-c48d1772628e",
       "tls": {
         "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippets.kkii.eu.org"
-        },
-        "path": "/Telegram🇨🇳WangCai2"
+        "server_name": "aws-1.aikunapp.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "tag": "🇸🇬 新加坡 03",
-      "type": "trojan",
-      "server": "172.64.146.180",
-      "server_port": 2096,
-      "password": "5a2c16f9",
+      "type": "hysteria2",
+      "server": "158.178.236.104",
+      "server_port": 443,
+      "password": "e343471a-aad3-40da-9dea-72cc8c7dce5f",
       "tls": {
         "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
+        "server_name": "api.push.apple.com",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippets.kkii.eu.org"
-        },
-        "path": "/Telegram🇨🇳WangCai2"
       }
     },
     {
-      "tag": "🇸🇬 新加坡 04",
-      "type": "trojan",
-      "server": "172.64.145.196",
-      "server_port": 2096,
-      "password": "5a2c16f9",
+      "tag": "🇲🇾 马来 01",
+      "type": "shadowsocks",
+      "server": "202.122.145.125",
+      "server_port": 11201,
+      "method": "chacha20-ietf-poly1305",
+      "password": "46d46fd902d485e8"
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "hysteria2",
+      "server": "pq.us2.globals-download.com",
+      "server_port": 443,
+      "password": "e343471a-aad3-40da-9dea-72cc8c7dce5f",
       "tls": {
         "enabled": true,
-        "server_name": "snippets.kkii.eu.org",
+        "server_name": "www.apple.com",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippets.kkii.eu.org"
-        },
-        "path": "/Telegram🇨🇳WangCai2"
       }
     }
   ],
