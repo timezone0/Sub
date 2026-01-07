@@ -78,11 +78,8 @@
         "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
-      "strict_route": true,
-      "route_exclude_address": [
-        "192.168.0.0/16",
-        "fc00::/7"
-      ]
+      "auto_redirect": true,
+      "strict_route": true
     }
   ],
   "outbounds": [
@@ -352,8 +349,8 @@
     {
       "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "119.247.51.61",
-      "server_port": 32102,
+      "server": "47.57.182.141",
+      "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -444,8 +441,8 @@
     {
       "tag": "🇨🇳 台湾 01",
       "type": "vless",
-      "server": "210.61.97.241",
-      "server_port": 81,
+      "server": "122.116.43.253",
+      "server_port": 995,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -720,8 +717,8 @@
     {
       "tag": "🇺🇸 美国 01",
       "type": "vless",
-      "server": "45.130.125.184",
-      "server_port": 2053,
+      "server": "172.64.153.193",
+      "server_port": 2083,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -789,8 +786,8 @@
     {
       "tag": "🇺🇸 美国 04",
       "type": "vless",
-      "server": "45.192.223.189",
-      "server_port": 8443,
+      "server": "198.52.244.111",
+      "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -915,56 +912,56 @@
         "type": "remote",
         "tag": "geoip-cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify-ads",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
         "download_detour": "select"
       }
     ],
