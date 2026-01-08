@@ -101,6 +101,7 @@ proxies:
 - {name: "🇺🇸 美国 01", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 1281, server: "160.16.68.250", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇺🇸 美国 02", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 1281, server: "160.16.138.24", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇺🇸 美国 03", network: "tcp", password: "BxceQaOe", port: 1112, server: "18.162.123.56", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
+- {name: "🇺🇸 美国 04", network: "ws", password: "f52d0a04-94ad-4f9e-9945-4c3d43374e36", port: 2096, server: "www.shopify.com", skip-cert-verify: true, sni: "ts888.yumige.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "ts888.yumige.dpdns.org"}, path: "/http://45.32.19.198:30005"}, client-fingerprint: "chrome"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇲🇾 马来 01", password: "46d46fd902d485e8", port: 11201, server: "202.122.145.125", type: "ss", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
@@ -124,6 +125,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "AUTO"
   type: "url-test"
@@ -148,6 +150,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "AI"
   type: "select"
@@ -170,6 +173,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "FCM"
   type: "select"
@@ -194,6 +198,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "HOYO"
   type: "select"
@@ -217,6 +222,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "SPOTIFY"
   type: "select"
@@ -240,6 +246,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "TIKTOK"
   type: "select"
@@ -262,6 +269,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 - name: "UDP"
   type: "select"
@@ -285,6 +293,7 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
   - "🇲🇾 马来 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
