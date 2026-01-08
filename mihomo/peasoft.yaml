@@ -94,7 +94,7 @@ proxies:
 - {name: "🇯🇵 日本 01", network: "tcp", password: "BxceQaOe", port: 3194, server: "54.250.239.2", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇯🇵 日本 02", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 4006, server: "160.16.138.24", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇯🇵 日本 03", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 1933, server: "160.16.138.24", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {cipher: "aes-256-cfb", name: "🇰🇷 韩国 01", password: "qwerREWQ@@", port: 5206, server: "27.255.82.134", type: "ss", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {cipher: "aes-256-cfb", name: "🇰🇷 韩国 01", password: "qwerREWQ@@", port: 5206, server: "27.255.82.134", type: "ss", udp: true, skip-cert-verify: true}
 - {name: "🇸🇬 新加坡 01", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 3901, server: "160.16.68.250", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇸🇬 新加坡 02", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 3901, server: "160.16.138.24", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇸🇬 新加坡 03", network: "tcp", password: "BxceQaOe", port: 381, server: "95.40.79.104", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
@@ -102,7 +102,7 @@ proxies:
 - {name: "🇺🇸 美国 02", network: "tcp", password: "381f2e86233720eacda26d50e9aa26da", port: 1281, server: "160.16.138.24", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇺🇸 美国 03", network: "tcp", password: "BxceQaOe", port: 1112, server: "18.162.123.56", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇺🇸 美国 04", network: "ws", password: "f52d0a04-94ad-4f9e-9945-4c3d43374e36", port: 2096, server: "www.shopify.com", skip-cert-verify: true, sni: "ts888.yumige.dpdns.org", type: "trojan", udp: true, ws-opts: {headers: {Host: "ts888.yumige.dpdns.org"}, path: "/http://45.32.19.198:30005"}, client-fingerprint: "chrome"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇲🇾 马来 01", password: "46d46fd902d485e8", port: 11201, server: "202.122.145.125", type: "ss", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {cipher: "chacha20-ietf-poly1305", name: "🇲🇾 马来 01", password: "46d46fd902d485e8", port: 11201, server: "202.122.145.125", type: "ss", udp: true, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
