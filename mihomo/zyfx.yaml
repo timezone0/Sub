@@ -329,9 +329,9 @@ proxies:
 - {name: "🇭🇰 香港 167", type: "ss", server: "hklinkenter03.cloud-links.org", port: 603, cipher: "aes-128-gcm", password: "2502da81-8636-42b7-a78b-e306221fe920", udp: true, skip-cert-verify: true}
 - {name: "🇭🇰 香港 168", type: "vless", server: "hk1-r.link-t7.com", port: 10126, uuid: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, packet-encoding: "xudp", cipher: "auto", client-fingerprint: "chrome", tls: true, skip-cert-verify: true, reality-opts: {public-key: "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE", short-id: "686c0ef0"}, network: "grpc", grpc-opts: {grpc-service-name: "update"}, servername: "s0.awsstatic.com"}
 - {name: "🇭🇰 香港 169", type: "vless", server: "hk2-r.link-t7.com", port: 10127, uuid: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, packet-encoding: "xudp", cipher: "auto", client-fingerprint: "chrome", tls: true, skip-cert-verify: true, reality-opts: {public-key: "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE", short-id: "686c0ef0"}, network: "grpc", grpc-opts: {grpc-service-name: "update"}, servername: "s0.awsstatic.com"}
-- {name: "🇭🇰 香港 170", type: "hysteria2", server: "hk3.dexlos.com", ports: "5000-6000", password: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, skip-cert-verify: true, sni: "hk3.dexlos.com", mtu: 1350, up: "40 Mbps", down: "500 Mbps", port: 5520}
-- {name: "🇭🇰 香港 171", type: "hysteria2", server: "hk4.dexlos.com", ports: "7000-8000", password: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, skip-cert-verify: true, sni: "hk4.dexlos.com", mtu: 1350, up: "40 Mbps", down: "500 Mbps", port: 7740}
-- {name: "🇭🇰 香港 172", type: "hysteria2", server: "hk5.dexlos.com", ports: "9000-10000", password: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, skip-cert-verify: true, sni: "hk5.dexlos.com", mtu: 1350, up: "40 Mbps", down: "500 Mbps", port: 9466}
+- {name: "🇭🇰 香港 170", type: "hysteria2", server: "hk3.dexlos.com", ports: "5000-6000", password: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, skip-cert-verify: true, sni: "hk3.dexlos.com", mtu: 1350, up: "40 Mbps", down: "500 Mbps", port: 5361}
+- {name: "🇭🇰 香港 171", type: "hysteria2", server: "hk4.dexlos.com", ports: "7000-8000", password: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, skip-cert-verify: true, sni: "hk4.dexlos.com", mtu: 1350, up: "40 Mbps", down: "500 Mbps", port: 7595}
+- {name: "🇭🇰 香港 172", type: "hysteria2", server: "hk5.dexlos.com", ports: "9000-10000", password: "57FDBC72-ADB3-4BEC-8988-7D1880C8A57C", udp: true, skip-cert-verify: true, sni: "hk5.dexlos.com", mtu: 1350, up: "40 Mbps", down: "500 Mbps", port: 9363}
 - {name: "🇭🇰 香港 173", type: "ss", server: "kunlunaq.dnsv1.gov-com-cn.govb.net", port: 46901, cipher: "chacha20-ietf-poly1305", password: "82fa4907-bbd8-4f30-86fa-e46d702e3f45", udp: true, skip-cert-verify: true}
 - {name: "🇭🇰 香港 174", type: "ss", server: "kunlunaq.dnsv1.gov-com-cn.govb.net", port: 46902, cipher: "chacha20-ietf-poly1305", password: "82fa4907-bbd8-4f30-86fa-e46d702e3f45", udp: true, skip-cert-verify: true}
 - {name: "🇭🇰 香港 175", type: "ss", server: "kunlunaq.dnsv1.gov-com-cn.govb.net", port: 46903, cipher: "chacha20-ietf-poly1305", password: "82fa4907-bbd8-4f30-86fa-e46d702e3f45", udp: true, skip-cert-verify: true}
@@ -502,31 +502,32 @@ proxies:
 - {name: "🇩🇪 德国 15", server: "185.181.10.175", port: 8443, type: "hysteria2", password: "bc9ab391-a6fc-4d7a-8698-291d77dbf578", auth: "bc9ab391-a6fc-4d7a-8698-291d77dbf578", up: 2, down: 2, skip-cert-verify: true, obfs: "salamander", obfs-password: "NDhhNmY5YTY0MGYzOTgxYQ==", udp: true}
 - {name: "🇩🇪 德国 16", server: "51.250.16.178", port: 1488, type: "vless", uuid: "cc5be457-024a-4bd1-b769-90973ba5b06e", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"}, client-fingerprint: "chrome", network: "tcp", udp: true, skip-cert-verify: true, servername: "ads.x5.ru"}
 - {name: "🇩🇪 德国 17", type: "ss", server: "kunlunaq.dnsv4.gov-com-cn.govb.net", port: 46972, cipher: "chacha20-ietf-poly1305", password: "82fa4907-bbd8-4f30-86fa-e46d702e3f45", udp: true, skip-cert-verify: true}
-- {name: "🇩🇪 德国 18", type: "ss", server: "daxo.owwoedu.com", port: 38314, cipher: "aes-128-gcm", password: "616f822e-a757-48ff-af67-23eec0df70d7", udp: true, skip-cert-verify: true}
-- {name: "🇩🇪 德国 19", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 20", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 21", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", auth: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 22", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 23", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 24", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 25", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "65e645d2-fc68-46d9-87e0-307bccd0f21b", auth: "65e645d2-fc68-46d9-87e0-307bccd0f21b", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 26", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 27", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 28", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 29", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 30", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", auth: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 31", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 32", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 33", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 34", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 35", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 36", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", auth: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 37", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 38", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", auth: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 39", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "a8391ac7-5ece-4843-860e-e993f2ca7a68", auth: "a8391ac7-5ece-4843-860e-e993f2ca7a68", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇩🇪 德国 40", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 41", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇩🇪 德国 42", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 18", type: "vless", server: "api.dark-coffe.com", port: 2096, uuid: "7e58699f-1d5d-4f6b-b181-cb74f0ad9509", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "TzS7v35LfD.sMaRtTeChZaAl.InFo"}}, servername: "TzS7v35LfD.sMaRtTeChZaAl.InFo"}
+- {name: "🇩🇪 德国 19", type: "ss", server: "daxo.owwoedu.com", port: 38314, cipher: "aes-128-gcm", password: "616f822e-a757-48ff-af67-23eec0df70d7", udp: true, skip-cert-verify: true}
+- {name: "🇩🇪 德国 20", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 21", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 22", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", auth: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 23", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 24", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 25", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 26", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "65e645d2-fc68-46d9-87e0-307bccd0f21b", auth: "65e645d2-fc68-46d9-87e0-307bccd0f21b", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 27", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 28", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 29", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 30", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 31", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", auth: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 32", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 33", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 34", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 35", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 36", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 37", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", auth: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 38", server: "netcp3.616626.xyz", port: 22307, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 39", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", auth: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 40", server: "banmabanmabanmabanmabanmabanma2.wanlidag.top", port: 54265, type: "hysteria2", password: "a8391ac7-5ece-4843-860e-e993f2ca7a68", auth: "a8391ac7-5ece-4843-860e-e993f2ca7a68", sni: "banmabanmabanmabanmabanmabanma2.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇩🇪 德国 41", server: "netcp1.616626.xyz", port: 22305, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 42", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇩🇪 德国 43", server: "netcp2.616626.xyz", port: 22306, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
 - {name: "🇵🇹 葡萄牙 01", type: "ss", server: "185.231.233.112", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", udp: true, skip-cert-verify: true}
 - {name: "🇱🇻 拉脱维亚 01", type: "hysteria2", server: "channel4.saghetalaie.homes", port: 46914, password: "yhqy5AHofQq", sni: "www.google.com", skip-cert-verify: true, udp: true}
 - {name: "🇱🇻 拉脱维亚 02", type: "hysteria2", server: "channel4.saghetalaie.homes", port: 46914, password: "yhqy5AHofQq", sni: "www.google.com", skip-cert-verify: true, udp: true}
@@ -623,107 +624,106 @@ proxies:
 - {name: "🇺🇸 美国 77", type: "anytls", server: "usa.lyhycloud.org", port: 12003, password: "c43ad036-c91f-4b42-91dc-72120bc51112", client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"], sni: "www.bing.com", skip-cert-verify: true}
 - {name: "🇺🇸 美国 78", type: "anytls", server: "usa.lyhycloud.org", port: 12003, password: "c43ad036-c91f-4b42-91dc-72120bc51112", client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"], sni: "www.bing.com", skip-cert-verify: true}
 - {name: "🇺🇸 美国 79", type: "ss", server: "gw.liangyuandianwan.com", port: 35604, cipher: "chacha20-ietf-poly1305", password: "c43ad036-c91f-4b42-91dc-72120bc51112", udp: true, skip-cert-verify: true}
-- {name: "🇺🇸 美国 80", type: "trojan", server: "109.234.211.66", port: 2087, password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", udp: true, network: "ws", ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: "store.timimi.dpdns.org"}}, sni: "store.timimi.dpdns.org", skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 81", type: "trojan", server: "vip1.kaixincloud.top", port: 443, password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", udp: true, network: "ws", ws-opts: {path: "/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN", headers: {Host: "kfjdi.pages.dev"}}, sni: "kfjdi.pages.dev", skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 82", type: "trojan", server: "v2.dabache.top", port: 2087, password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", udp: true, network: "ws", ws-opts: {path: "/azadnet-bdr.pages.dev/?ed=2560&PROT_TYPE=trojan", headers: {Host: "azadnet-bdr.pages.dev"}}, sni: "azadnet-bdr.pages.dev", skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 83", type: "vless", server: "75.102.51.220", port: 443, uuid: "be2d41c0-50d5-49f8-d309-f6fd923063f7", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/ustc_dysen_20206", headers: {Host: "ustc.dysenv2ray.top"}}, servername: "ustc.dysenv2ray.top"}
-- {name: "🇺🇸 美国 84", type: "ss", server: "daxo.owwoedu.com", port: 38305, cipher: "aes-128-gcm", password: "616f822e-a757-48ff-af67-23eec0df70d7", udp: true, skip-cert-verify: true}
-- {name: "🇺🇸 美国 85", type: "ss", server: "daxo.owwoedu.com", port: 38321, cipher: "aes-128-gcm", password: "616f822e-a757-48ff-af67-23eec0df70d7", udp: true, skip-cert-verify: true}
-- {name: "🇺🇸 美国 86", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇺🇸 美国 87", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "cdff75d1-4864-455a-bc04-4031f0a06ce3", auth: "cdff75d1-4864-455a-bc04-4031f0a06ce3", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 88", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "dc8e3d8d-3827-41f1-b832-ba2656c9da77", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "safari", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 89", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 90", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "fe6eae40-94da-4c80-9f23-5e3d4402d52b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 91", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "eee726b8-04d1-461e-a041-1f3a0fe7050a", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 92", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "dc8e3d8d-3827-41f1-b832-ba2656c9da77", auth: "dc8e3d8d-3827-41f1-b832-ba2656c9da77", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 93", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "1b55988c-ba9d-4203-b4fb-6afb7353c4f6", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 94", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 95", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 96", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "6843b488-2db1-4617-9b50-a2d6492398ed", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 97", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "40991964-b3be-4458-8bc7-5b1774552acf", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 98", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 99", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇺🇸 美国 100", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", auth: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 101", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "843bcd0b-f2ab-482f-8262-6d09cf97f4b8", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 102", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "22ea83da-6dc8-40d0-b44c-5ea6fd6c42d2", auth: "22ea83da-6dc8-40d0-b44c-5ea6fd6c42d2", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 103", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "63f38b42-76e4-403f-af6a-9a6fe8171b46", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 104", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "9862f533-4b34-4a72-a9ee-230cd2303ea8", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "safari", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 105", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "f5c8924f-a096-4d8d-ac4b-3680f0019bf5", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 106", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "8d8d3ad2-5236-4191-9660-d891699ac577", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "firefox", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 107", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "65e645d2-fc68-46d9-87e0-307bccd0f21b", auth: "65e645d2-fc68-46d9-87e0-307bccd0f21b", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 108", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 109", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "87a08b2d-7f83-41c4-85c7-ac021d1493fd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 110", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "54ed09b4-87ef-45ad-b96a-6e76c32d1d97", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 111", server: "slur.izenny.com", port: 40063, type: "ss", cipher: "chacha20-ietf-poly1305", password: "3048967e-34f5-495c-869d-94d4c071e2dd", udp: true, skip-cert-verify: true}
-- {name: "🇺🇸 美国 112", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "22ea83da-6dc8-40d0-b44c-5ea6fd6c42d2", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "qq", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 113", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "40991964-b3be-4458-8bc7-5b1774552acf", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 114", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "87a08b2d-7f83-41c4-85c7-ac021d1493fd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 115", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "54ed09b4-87ef-45ad-b96a-6e76c32d1d97", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 116", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇺🇸 美国 117", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 118", server: "advin.189.ovh", port: 10027, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 119", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "154e3552-cd70-4b43-a906-121b5ba29bbd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 120", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 121", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "95a3415c-f626-4c0b-a79f-a3b1d1ef5b4f", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "ios", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 122", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "7ce4327c-43d3-404b-ad66-283a9f6b6eb4", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 123", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 124", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 125", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 126", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 127", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 128", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "f5c8924f-a096-4d8d-ac4b-3680f0019bf5", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 129", server: "vmess3.vn9987.top", port: 51002, type: "vmess", uuid: "a8664b1e-29ef-4b18-970c-6bced4df1c80", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bbbb", headers: {Host: "vmess3.vn9987.top"}}, udp: true, client-fingerprint: "chrome", servername: "vmess3.vn9987.top"}
-- {name: "🇺🇸 美国 130", server: "advin.189.ovh", port: 10027, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 131", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇺🇸 美国 132", server: "advin.189.ovh", port: 10027, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 133", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇺🇸 美国 134", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 135", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "843bcd0b-f2ab-482f-8262-6d09cf97f4b8", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 136", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "15aaa31b-c26b-45d4-8ed7-5ef25eff4b8f", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "ios", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 137", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "fe6eae40-94da-4c80-9f23-5e3d4402d52b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 138", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "8d8d3ad2-5236-4191-9660-d891699ac577", auth: "8d8d3ad2-5236-4191-9660-d891699ac577", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 139", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "7ce4327c-43d3-404b-ad66-283a9f6b6eb4", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 140", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "eee726b8-04d1-461e-a041-1f3a0fe7050a", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 141", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 142", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "9862f533-4b34-4a72-a9ee-230cd2303ea8", auth: "9862f533-4b34-4a72-a9ee-230cd2303ea8", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 143", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", auth: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 144", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 145", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 146", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 147", server: "advin.189.ovh", port: 10027, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 148", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 149", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 150", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "94d177ac-4a72-4433-b84a-9851df95325f", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "ios", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 151", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "23f45c05-f8ef-432d-8e25-4d0af50afe3c", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 152", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "23f45c05-f8ef-432d-8e25-4d0af50afe3c", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 153", server: "advin.189.ovh", port: 10027, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 154", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 155", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "1b55988c-ba9d-4203-b4fb-6afb7353c4f6", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 156", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 157", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "63f38b42-76e4-403f-af6a-9a6fe8171b46", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 158", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", auth: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 159", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "94d177ac-4a72-4433-b84a-9851df95325f", auth: "94d177ac-4a72-4433-b84a-9851df95325f", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 160", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", auth: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 161", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "cdff75d1-4864-455a-bc04-4031f0a06ce3", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "qq", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 162", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "d290565d-681b-459d-838e-dc7ea877ce4e", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "chrome", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 163", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
-- {name: "🇺🇸 美国 164", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 165", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "bef821af-2e48-4fae-a03a-36646cec9ced", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "qq", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 166", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "2a25272e-6028-415b-bf75-89e2da326076", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "firefox", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
-- {name: "🇺🇸 美国 167", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "154e3552-cd70-4b43-a906-121b5ba29bbd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 168", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "15aaa31b-c26b-45d4-8ed7-5ef25eff4b8f", auth: "15aaa31b-c26b-45d4-8ed7-5ef25eff4b8f", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 169", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 170", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "d290565d-681b-459d-838e-dc7ea877ce4e", auth: "d290565d-681b-459d-838e-dc7ea877ce4e", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 171", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "95a3415c-f626-4c0b-a79f-a3b1d1ef5b4f", auth: "95a3415c-f626-4c0b-a79f-a3b1d1ef5b4f", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 172", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "bef821af-2e48-4fae-a03a-36646cec9ced", auth: "bef821af-2e48-4fae-a03a-36646cec9ced", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 173", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 174", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "6843b488-2db1-4617-9b50-a2d6492398ed", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 175", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 176", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "a8391ac7-5ece-4843-860e-e993f2ca7a68", auth: "a8391ac7-5ece-4843-860e-e993f2ca7a68", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
-- {name: "🇺🇸 美国 177", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 178", server: "vmess2.vn9987.top", port: 51002, type: "vmess", uuid: "a8664b1e-29ef-4b18-970c-6bced4df1c80", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bbbb", headers: {Host: "vmess2.vn9987.top"}}, udp: true, client-fingerprint: "chrome", servername: "vmess2.vn9987.top"}
-- {name: "🇺🇸 美国 179", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "2a25272e-6028-415b-bf75-89e2da326076", auth: "2a25272e-6028-415b-bf75-89e2da326076", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
-- {name: "🇺🇸 美国 180", server: "advin.189.ovh", port: 10027, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 80", type: "trojan", server: "v2.dabache.top", port: 443, password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", udp: true, network: "ws", ws-opts: {path: "/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN", headers: {Host: "kfjdi.pages.dev"}}, sni: "kfjdi.pages.dev", skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 81", type: "vless", server: "75.102.51.220", port: 443, uuid: "be2d41c0-50d5-49f8-d309-f6fd923063f7", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/ustc_dysen_20206", headers: {Host: "ustc.dysenv2ray.top"}}, servername: "ustc.dysenv2ray.top"}
+- {name: "🇺🇸 美国 82", type: "vless", server: "v1.dabache.top", port: 443, uuid: "3f9c8463-8610-3ed8-86c8-a26713067825", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/db10240eb751d6ab", headers: {Host: "dabaius2.sylu.net"}}, servername: "dabaius2.sylu.net"}
+- {name: "🇺🇸 美国 83", type: "ss", server: "daxo.owwoedu.com", port: 38305, cipher: "aes-128-gcm", password: "616f822e-a757-48ff-af67-23eec0df70d7", udp: true, skip-cert-verify: true}
+- {name: "🇺🇸 美国 84", type: "ss", server: "daxo.owwoedu.com", port: 38321, cipher: "aes-128-gcm", password: "616f822e-a757-48ff-af67-23eec0df70d7", udp: true, skip-cert-verify: true}
+- {name: "🇺🇸 美国 85", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "6e37640c-bbae-4877-8e79-7c3e677228a2", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇺🇸 美国 86", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "cdff75d1-4864-455a-bc04-4031f0a06ce3", auth: "cdff75d1-4864-455a-bc04-4031f0a06ce3", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 87", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "dc8e3d8d-3827-41f1-b832-ba2656c9da77", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "safari", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 88", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 89", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "fe6eae40-94da-4c80-9f23-5e3d4402d52b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 90", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "eee726b8-04d1-461e-a041-1f3a0fe7050a", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 91", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "dc8e3d8d-3827-41f1-b832-ba2656c9da77", auth: "dc8e3d8d-3827-41f1-b832-ba2656c9da77", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 92", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "1b55988c-ba9d-4203-b4fb-6afb7353c4f6", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 93", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 94", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 95", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "6843b488-2db1-4617-9b50-a2d6492398ed", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 96", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "40991964-b3be-4458-8bc7-5b1774552acf", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 97", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 98", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇺🇸 美国 99", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", auth: "dee9897e-3bd0-4a31-a345-22d7a9a30dc4", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 100", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "843bcd0b-f2ab-482f-8262-6d09cf97f4b8", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 101", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "22ea83da-6dc8-40d0-b44c-5ea6fd6c42d2", auth: "22ea83da-6dc8-40d0-b44c-5ea6fd6c42d2", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 102", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "63f38b42-76e4-403f-af6a-9a6fe8171b46", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 103", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "9862f533-4b34-4a72-a9ee-230cd2303ea8", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "safari", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 104", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "f5c8924f-a096-4d8d-ac4b-3680f0019bf5", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 105", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "8d8d3ad2-5236-4191-9660-d891699ac577", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "firefox", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 106", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "65e645d2-fc68-46d9-87e0-307bccd0f21b", auth: "65e645d2-fc68-46d9-87e0-307bccd0f21b", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 107", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 108", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "87a08b2d-7f83-41c4-85c7-ac021d1493fd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 109", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "54ed09b4-87ef-45ad-b96a-6e76c32d1d97", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 110", server: "slur.izenny.com", port: 40063, type: "ss", cipher: "chacha20-ietf-poly1305", password: "3048967e-34f5-495c-869d-94d4c071e2dd", udp: true, skip-cert-verify: true}
+- {name: "🇺🇸 美国 111", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "22ea83da-6dc8-40d0-b44c-5ea6fd6c42d2", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "qq", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 112", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "40991964-b3be-4458-8bc7-5b1774552acf", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 113", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "87a08b2d-7f83-41c4-85c7-ac021d1493fd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 114", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "54ed09b4-87ef-45ad-b96a-6e76c32d1d97", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 115", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "e273e5b2-9271-4cec-9a4b-501bf77a2648", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇺🇸 美国 116", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 117", server: "advin.189.ovh", port: 10027, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 118", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "154e3552-cd70-4b43-a906-121b5ba29bbd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 119", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 120", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "95a3415c-f626-4c0b-a79f-a3b1d1ef5b4f", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "ios", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 121", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "7ce4327c-43d3-404b-ad66-283a9f6b6eb4", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 122", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 123", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 124", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 125", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 126", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 127", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "f5c8924f-a096-4d8d-ac4b-3680f0019bf5", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 128", server: "vmess3.vn9987.top", port: 51002, type: "vmess", uuid: "a8664b1e-29ef-4b18-970c-6bced4df1c80", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bbbb", headers: {Host: "vmess3.vn9987.top"}}, udp: true, client-fingerprint: "chrome", servername: "vmess3.vn9987.top"}
+- {name: "🇺🇸 美国 129", server: "advin.189.ovh", port: 10027, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 130", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "e054509c-0031-427c-a38e-1810ef623b41", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇺🇸 美国 131", server: "advin.189.ovh", port: 10027, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 132", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "da918f44-9c58-4954-a357-688b37c50ec9", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇺🇸 美国 133", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 134", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "843bcd0b-f2ab-482f-8262-6d09cf97f4b8", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 135", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "15aaa31b-c26b-45d4-8ed7-5ef25eff4b8f", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "ios", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 136", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "fe6eae40-94da-4c80-9f23-5e3d4402d52b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 137", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "8d8d3ad2-5236-4191-9660-d891699ac577", auth: "8d8d3ad2-5236-4191-9660-d891699ac577", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 138", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "7ce4327c-43d3-404b-ad66-283a9f6b6eb4", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 139", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "eee726b8-04d1-461e-a041-1f3a0fe7050a", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 140", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 141", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "9862f533-4b34-4a72-a9ee-230cd2303ea8", auth: "9862f533-4b34-4a72-a9ee-230cd2303ea8", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 142", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", auth: "e4ee04b0-eb26-4c48-8f47-e232e445b1b8", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 143", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 144", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 145", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 146", server: "advin.189.ovh", port: 10027, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 147", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "e054509c-0031-427c-a38e-1810ef623b41", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 148", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "478759ea-5fc5-4420-ad58-dfbd71e5e012", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 149", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "94d177ac-4a72-4433-b84a-9851df95325f", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "ios", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 150", server: "cdnfire.xiaomispeed.com", port: 25501, type: "trojan", password: "23f45c05-f8ef-432d-8e25-4d0af50afe3c", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 151", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "23f45c05-f8ef-432d-8e25-4d0af50afe3c", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 152", server: "advin.189.ovh", port: 10027, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 153", server: "vir694.189.ovh", port: 10021, type: "trojan", password: "f82f1345-5a80-4c5b-b30a-d05f0d3667cc", sni: "vir694.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 154", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "1b55988c-ba9d-4203-b4fb-6afb7353c4f6", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 155", server: "green2.cdntencentmusic.com", port: 35501, type: "trojan", password: "cde8eda2-9c2e-4fae-b308-2fed2cc33e4b", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 156", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "63f38b42-76e4-403f-af6a-9a6fe8171b46", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 157", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", auth: "4fec5425-a2d8-4c7c-bea9-22d500b97baf", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 158", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "94d177ac-4a72-4433-b84a-9851df95325f", auth: "94d177ac-4a72-4433-b84a-9851df95325f", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 159", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", auth: "6d3e4978-88eb-4abb-bae7-e231b3afd3a1", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 160", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "cdff75d1-4864-455a-bc04-4031f0a06ce3", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "qq", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 161", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "d290565d-681b-459d-838e-dc7ea877ce4e", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "chrome", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 162", server: "crun6.668918.xyz", port: 22308, type: "vmess", uuid: "478759ea-5fc5-4420-ad58-dfbd71e5e012", alterId: 0, cipher: "auto", tls: false, udp: true, network: "tcp", client-fingerprint: "chrome", skip-cert-verify: true}
+- {name: "🇺🇸 美国 163", server: "vir11.189.ovh", port: 10022, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "vir11.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 164", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "bef821af-2e48-4fae-a03a-36646cec9ced", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "qq", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 165", server: "1002.952326.xyz", port: 10001, type: "vless", uuid: "2a25272e-6028-415b-bf75-89e2da326076", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "T-5Ud3XMnRKHZ_iDiDh1DA-LcsMd_3j-fmD4OjUVgC4"}, client-fingerprint: "firefox", network: "tcp", udp: true, skip-cert-verify: true, servername: "www.python.org"}
+- {name: "🇺🇸 美国 166", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "154e3552-cd70-4b43-a906-121b5ba29bbd", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 167", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "15aaa31b-c26b-45d4-8ed7-5ef25eff4b8f", auth: "15aaa31b-c26b-45d4-8ed7-5ef25eff4b8f", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 168", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 169", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "d290565d-681b-459d-838e-dc7ea877ce4e", auth: "d290565d-681b-459d-838e-dc7ea877ce4e", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 170", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "95a3415c-f626-4c0b-a79f-a3b1d1ef5b4f", auth: "95a3415c-f626-4c0b-a79f-a3b1d1ef5b4f", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 171", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "bef821af-2e48-4fae-a03a-36646cec9ced", auth: "bef821af-2e48-4fae-a03a-36646cec9ced", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 172", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "6e37640c-bbae-4877-8e79-7c3e677228a2", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 173", server: "green2.cdntencentmusic.com", port: 35502, type: "trojan", password: "6843b488-2db1-4617-9b50-a2d6492398ed", sni: "green2.cdntencentmusic.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 174", server: "layercloud.189.ovh", port: 10021, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "layercloud.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 175", server: "banmabanmabanmabanmabanmabanma1.wanlidag.top", port: 54265, type: "hysteria2", password: "a8391ac7-5ece-4843-860e-e993f2ca7a68", auth: "a8391ac7-5ece-4843-860e-e993f2ca7a68", sni: "banmabanmabanmabanmabanmabanma1.wanlidag.top", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 176", server: "vir732.189.ovh", port: 10026, type: "trojan", password: "e273e5b2-9271-4cec-9a4b-501bf77a2648", sni: "vir732.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 177", server: "vmess2.vn9987.top", port: 51002, type: "vmess", uuid: "a8664b1e-29ef-4b18-970c-6bced4df1c80", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/bbbb", headers: {Host: "vmess2.vn9987.top"}}, udp: true, client-fingerprint: "chrome", servername: "vmess2.vn9987.top"}
+- {name: "🇺🇸 美国 178", server: "1002.952326.xyz", port: 10000, type: "hysteria2", password: "2a25272e-6028-415b-bf75-89e2da326076", auth: "2a25272e-6028-415b-bf75-89e2da326076", sni: "1002.kingfisher.us.kg", skip-cert-verify: true, obfs: "salamander", obfs-password: "VAYpRqMdlHDFG7EA", udp: true}
+- {name: "🇺🇸 美国 179", server: "advin.189.ovh", port: 10027, type: "trojan", password: "da918f44-9c58-4954-a357-688b37c50ec9", sni: "advin.189.ovh", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
 - {name: "🇲🇾 马来 01", type: "vmess", server: "23.27.28.103", port: 80, cipher: "auto", uuid: "rootface-@pwn1337-🎄", alterId: 0, tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/𒉭𓆩@rootface𒆜 Merry Christmas 🎄🥳🎁𒉭 @pwn_1337 TELEGRAM?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}, disable-sni: true, client-fingerprint: "chrome", udp: true, servername: ""}
 - {name: "🇲🇾 马来 02", type: "vmess", server: "23.27.28.103", port: 80, cipher: "auto", uuid: "rootface-@pwn1337-🎄", alterId: 0, tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/𒉭𓆩@rootface𒆜 Merry Christmas 🎄🥳🎁𒉭 @pwn_1337 TELEGRAM"}, disable-sni: true, client-fingerprint: "chrome", udp: true, servername: ""}
 - {name: "🇲🇾 马来 03", type: "vmess", server: "23.27.28.103", port: 80, cipher: "auto", uuid: "rootface-@pwn1337-🎄", alterId: 0, tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/𒉭𓆩@rootface𒆜 Merry Christmas 🎄🥳🎁𒉭 @pwn_1337 TELEGRAM?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}, disable-sni: true, client-fingerprint: "chrome", udp: true, servername: ""}
@@ -958,7 +958,6 @@ proxies:
 - {name: "🇧🇷 巴西 02", server: "slur.izenny.com", port: 57577, type: "ss", cipher: "chacha20-ietf-poly1305", password: "3048967e-34f5-495c-869d-94d4c071e2dd", udp: true, skip-cert-verify: true}
 - {name: "🇫🇮 芬兰 01", server: "146.75.119.82", port: 80, type: "vless", uuid: "74542945-0d84-4797-a56e-e7f31b84c5be", tls: false, network: "ws", ws-opts: {path: "/ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048", headers: {Host: "welcomtofreeboarders.com"}}, udp: true, client-fingerprint: "chrome", skip-cert-verify: true}
 - {name: "🇪🇸 西班牙 01", server: "5.188.181.201", port: 9019, type: "ss", cipher: "aes-256-cfb", password: "GA9KzeEgvfxNrgmM", udp: true, skip-cert-verify: true}
-- {name: "🇪🇸 西班牙 02", type: "trojan", server: "109.234.211.66", port: 2087, password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0", udp: true, network: "ws", ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: "store.timimi.dpdns.org"}}, sni: "store.timimi.dpdns.org", skip-cert-verify: true, client-fingerprint: "chrome"}
 - {name: "🇰🇿 哈萨克斯坦 01", server: "109.61.39.150", port: 11201, type: "ss", cipher: "chacha20-ietf-poly1305", password: "01dc0d7cbb650bc3", udp: true, skip-cert-verify: true}
 - {name: "🇹🇷 土耳其 01", type: "ss", server: "udrlink.orbit7net.com", port: 1059, cipher: "aes-128-gcm", password: "2502da81-8636-42b7-a78b-e306221fe920", udp: true, skip-cert-verify: true}
 - {name: "🇹🇷 土耳其 02", server: "slur.izenny.com", port: 54693, type: "ss", cipher: "chacha20-ietf-poly1305", password: "3048967e-34f5-495c-869d-94d4c071e2dd", udp: true, skip-cert-verify: true}
@@ -970,8 +969,8 @@ proxies:
 - {name: "🇱🇺 卢森堡 01", type: "anytls", server: "lu.lyhycloud.org", port: 12004, password: "c43ad036-c91f-4b42-91dc-72120bc51112", client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"], sni: "www.bing.com", skip-cert-verify: true}
 - {name: "🇱🇺 卢森堡 02", type: "anytls", server: "lu.lyhycloud.org", port: 12004, password: "c43ad036-c91f-4b42-91dc-72120bc51112", client-fingerprint: "chrome", udp: true, alpn: ["h2", "http/1.1"], sni: "www.bing.com", skip-cert-verify: true}
 - {name: "🇱🇺 卢森堡 03", type: "ss", server: "gw.liangyuandianwan.com", port: 35607, cipher: "chacha20-ietf-poly1305", password: "c43ad036-c91f-4b42-91dc-72120bc51112", udp: true, skip-cert-verify: true}
-- {name: "🏴‍☠️ 布隆迪 01", server: "www.fbi.gov", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "fuckingfangbinxing.cnm-fangbinxing-nmsl-hahaha.workers.dev"}}, udp: true}
-- {name: "🏴‍☠️ 汤加 01", server: "www.wto.org", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "fuckingfangbinxing.cnm-fangbinxing-nmsl-hahaha.workers.dev"}}, udp: true}
+- {name: "🏴‍☠️ 布隆迪 01", server: "www.fbi.gov", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing.fangbinxing--nmsl.workers.dev"}}, udp: true}
+- {name: "🏴‍☠️ 汤加 01", server: "www.wto.org", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing.fangbinxing--nmsl.workers.dev"}}, udp: true}
 - {name: "🇮🇸 冰岛 01", server: "slur.izenny.com", port: 32009, type: "ss", cipher: "chacha20-ietf-poly1305", password: "3048967e-34f5-495c-869d-94d4c071e2dd", udp: true, skip-cert-verify: true}
 - {name: "🇲🇽 墨西哥 01", server: "empty.node", port: 443, type: "trojan", password: "e2c3db6e-1d09-4236-87f4-322dc338e90a", sni: "empty.node", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
 - {name: "🇲🇽 墨西哥 02", server: "slur.izenny.com", port: 48907, type: "ss", cipher: "chacha20-ietf-poly1305", password: "3048967e-34f5-495c-869d-94d4c071e2dd", udp: true, skip-cert-verify: true}
@@ -1426,6 +1425,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -1622,7 +1622,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -1857,7 +1856,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -2326,6 +2324,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -2522,7 +2521,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -2757,7 +2755,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -3224,6 +3221,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -3420,7 +3418,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -3655,7 +3652,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -4124,6 +4120,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -4320,7 +4317,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -4555,7 +4551,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -5023,6 +5018,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -5219,7 +5215,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -5454,7 +5449,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -5922,6 +5916,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -6118,7 +6113,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -6353,7 +6347,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -6820,6 +6813,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -7016,7 +7010,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -7251,7 +7244,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
@@ -7719,6 +7711,7 @@ proxy-groups:
   - "🇩🇪 德国 40"
   - "🇩🇪 德国 41"
   - "🇩🇪 德国 42"
+  - "🇩🇪 德国 43"
   - "🇵🇹 葡萄牙 01"
   - "🇱🇻 拉脱维亚 01"
   - "🇱🇻 拉脱维亚 02"
@@ -7915,7 +7908,6 @@ proxy-groups:
   - "🇺🇸 美国 177"
   - "🇺🇸 美国 178"
   - "🇺🇸 美国 179"
-  - "🇺🇸 美国 180"
   - "🇲🇾 马来 01"
   - "🇲🇾 马来 02"
   - "🇲🇾 马来 03"
@@ -8150,7 +8142,6 @@ proxy-groups:
   - "🇧🇷 巴西 02"
   - "🇫🇮 芬兰 01"
   - "🇪🇸 西班牙 01"
-  - "🇪🇸 西班牙 02"
   - "🇰🇿 哈萨克斯坦 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
