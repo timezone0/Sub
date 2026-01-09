@@ -85,22 +85,16 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 01", server: "developers.cloudflare.com", port: 2095, type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "randomized", network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.cnm-fangbinxing-nmsl.workers.dev"}}, udp: true}
-- {name: "🇯🇵 日本 01", server: "tokyo01.zgjok.com", port: 443, type: "vmess", uuid: "e6d5d668-2091-41d9-9bff-df0a1c5107ec", alterId: 0, cipher: "auto", tls: true, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "tokyo01.zgjok.com"}}, udp: true, client-fingerprint: "chrome", servername: "tokyo01.zgjok.com"}
+- {name: "🇯🇵 日本 01", server: "162.159.45.232", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}}, udp: true, servername: "l.ayovo.netlib.re"}
 - {name: "🇰🇷 韩国 01", server: "125.141.26.12", port: 52713, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", udp: true, skip-cert-verify: true}
-- {name: "🇰🇷 韩国 02", server: "27.255.82.135", port: 3733, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", udp: true, skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "104.16.2.59", port: 8080, type: "vless", uuid: "964891e6-d09e-480c-b041-c7f3207953d3", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/eyJqdW5rIjoibzE1WnlVYklpUVdtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==", headers: {Host: "weathered-firefly-8a0f.41c3bce2b6.workers.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -108,21 +102,15 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -130,54 +118,39 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 - name: "UDP"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇰🇷 韩国 01"
-  - "🇰🇷 韩国 02"
-  - "🇺🇸 美国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"

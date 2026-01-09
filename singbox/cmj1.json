@@ -93,11 +93,8 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,11 +104,8 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -121,11 +115,8 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,11 +128,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -152,11 +140,8 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,11 +152,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -181,11 +163,8 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -196,11 +175,8 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
         "🇯🇵 日本 01",
-        "🇰🇷 韩国 01",
-        "🇰🇷 韩国 02",
-        "🇺🇸 美国 01"
+        "🇰🇷 韩国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -258,30 +234,14 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "vless",
-      "server": "developers.cloudflare.com",
-      "server_port": 2095,
-      "uuid": "86c50e3a-5b87-49dd-bd20-03c7f2735e40",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cnmfangbinxing-nmsl.cnm-fangbinxing-nmsl.workers.dev"
-        },
-        "path": "/"
-      }
-    },
-    {
       "tag": "🇯🇵 日本 01",
-      "type": "vmess",
-      "server": "tokyo01.zgjok.com",
+      "type": "vless",
+      "server": "162.159.45.232",
       "server_port": 443,
-      "uuid": "e6d5d668-2091-41d9-9bff-df0a1c5107ec",
-      "security": "auto",
-      "alter_id": 0,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
       "tls": {
         "enabled": true,
-        "server_name": "tokyo01.zgjok.com",
+        "server_name": "l.ayovo.netlib.re",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -291,7 +251,7 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "tokyo01.zgjok.com"
+          "Host": "l.ayovo.netlib.re"
         },
         "path": "/"
       }
@@ -303,30 +263,6 @@
       "server_port": 52713,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
-    },
-    {
-      "tag": "🇰🇷 韩国 02",
-      "type": "shadowsocks",
-      "server": "27.255.82.135",
-      "server_port": 3733,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "tag": "🇺🇸 美国 01",
-      "type": "vless",
-      "server": "104.16.2.59",
-      "server_port": 8080,
-      "uuid": "964891e6-d09e-480c-b041-c7f3207953d3",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "weathered-firefly-8a0f.41c3bce2b6.workers.dev"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/eyJqdW5rIjoibzE1WnlVYklpUVdtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
-      }
     }
   ],
   "route": {
