@@ -84,132 +84,164 @@ proxies:
     max-connections: 1
     min-streams: 4
     padding: true
-- {name: "🇦🇺 澳大利亚 01", type: "vless", server: "v2.dabache.top", port: 443, uuid: "b61ce65d-cad5-4d31-a0a8-4fe5b9355b3c", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/announcement", headers: {Host: "do-syd1.025713.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, delay: 2790, servername: "do-syd1.025713.xyz"}
-- {name: "🇦🇺 澳大利亚 02", type: "vless", server: "v3.dabache.top", port: 443, uuid: "b61ce65d-cad5-4d31-a0a8-4fe5b9355b3c", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/announcement", headers: {Host: "do-syd1.025713.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, delay: 2552, servername: "do-syd1.025713.xyz"}
-- {name: "🇩🇰 丹麦 01", server: "192.36.27.94", type: "ss", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 1539, udp: true, skip-cert-verify: true}
-- {name: "🇩🇪 德国 01", type: "socks5", server: "193.233.254.7", port: 1080, username: "Og@193.233.254.7", password: "@193.233.254.7:", delay: 2474, udp: true, skip-cert-verify: true}
-- {name: "🇩🇪 德国 02", server: "91.107.190.166", port: 8443, type: "hysteria2", password: "xtGIM7iEx9", auth: "xtGIM7iEx9", sni: "dash.cloudflare.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "KLSADFIU43#$", udp: true, delay: 2166}
-- {name: "🇷🇺 俄罗斯 01", server: "195.58.49.100", port: 10912, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-gcm", password: "9f3d1a6d31468599", tfo: true, udp: true, delay: 2180, skip-cert-verify: true}
-- {name: "🇫🇷 法国 01", server: "15.224.1.8", type: "trojan", country: "🇺🇸US", port: 22223, udp: true, password: "telegram-id-directvpn", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, delay: 1012, network: "tcp", client-fingerprint: "chrome"}
-- {name: "🇫🇮 芬兰 01", server: "173.245.59.254", port: 8080, type: "vless", uuid: "5583f734-f94c-45f8-9339-21d1eed95da7", tls: false, network: "ws", ws-opts: {path: "/cdn", headers: {Host: "Fanla0.ghAfGh.Ir."}}, udp: true, client-fingerprint: "chrome", delay: 1654, skip-cert-verify: true}
-- {name: "🇰🇷 韩国 01", server: "kr1.miyazono-kaori.com", port: 42574, type: "hysteria2", password: "274691f9-e6c0-46ff-82f2-3a9062872a04", auth: "274691f9-e6c0-46ff-82f2-3a9062872a04", sni: "kr1.miyazono-kaori.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "MKsqfibVxwhZ3pCf", ports: "40000-50000", udp: true, delay: 1504}
-- {name: "🇰🇷 韩国 02", server: "168.126.234.233", port: 28860, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 1414, skip-cert-verify: true}
-- {name: "🇰🇷 韩国 03", server: "221.139.79.57", port: 13979, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 1355, skip-cert-verify: true}
-- {name: "🇰🇷 韩国 04", server: "221.139.79.20", port: 45833, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 1380, skip-cert-verify: true}
-- {name: "🇰🇷 韩国 05", server: "221.139.79.41", port: 41240, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 2112, skip-cert-verify: true}
-- {name: "🇰🇷 韩国 06", server: "218.38.103.150", port: 39502, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 1980, skip-cert-verify: true}
-- {name: "🇳🇱 荷兰 01", server: "45.87.175.200", port: 8080, type: "ss", cipher: "chacha20-ietf-poly1305", password: "cvII85TrW6n0OGyfpHVS1u", udp: true, delay: 694, skip-cert-verify: true}
-- {name: "🇱🇺 卢森堡 01", server: "delilah.ns.cloudflare.com", port: 443, type: "vless", uuid: "8f654717-4009-4417-af5a-8b9bf7853e79", tls: true, network: "ws", ws-opts: {path: "/yirpvnws", headers: {Host: "639034354143079886.defender-amsjs.info"}}, udp: true, client-fingerprint: "chrome", delay: 2516, skip-cert-verify: true, servername: "639034354143079886.defender-amsjs.info"}
-- {name: "🇲🇰 马其顿 01", server: "46.183.185.37", type: "ss", country: "🇲🇰MK", port: 989, password: "f8f7aCzcPKbsF8p3", cipher: "aes-256-cfb", delay: 1578, udp: true, skip-cert-verify: true}
-- {name: "🇺🇸 美国 01", server: "37.19.198.236", port: 443, type: "ss", cipher: "aes-128-gcm", password: "shadowsocks", udp: true, delay: 796, skip-cert-verify: true}
-- {name: "🇺🇸 美国 02", server: "convera.com", port: 2053, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "news3.f1w.de5.net"}}, udp: true, delay: 1650, skip-cert-verify: true, servername: "news3.f1w.de5.net"}
-- {name: "🇯🇵 日本 01", type: "vless", server: "162.159.45.232", port: 443, uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", delay: 1000, udp: true, skip-cert-verify: true, servername: "l.ayovo.netlib.re"}
-- {name: "🇯🇵 日本 02", server: "nrt.xxxxxxxx.nyc.mn", port: 2053, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "news3.f1w.de5.net"}}, udp: true, delay: 1056, skip-cert-verify: true, servername: "news3.f1w.de5.net"}
-- {name: "🇯🇵 日本 03", server: "tokyo01.zgjok.com", type: "vmess", country: "🇯🇵JP", port: 443, uuid: "e6d5d668-2091-41d9-9bff-df0a1c5107ec", alterId: 0, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, tls: true, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "tokyo01.zgjok.com"}}, delay: 2123, udp: true, client-fingerprint: "chrome", servername: "tokyo01.zgjok.com"}
-- {name: "🇸🇬 新加坡 01", server: "162.159.16.63", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, delay: 398, skip-cert-verify: true, servername: "l.ayovo.netlib.re"}
-- {name: "🇦🇲 亚美尼亚 01", server: "85.90.207.104", type: "ss", country: "🇦🇲AM", port: 18792, password: "e716d7bbae4bdd14", cipher: "chacha20-ietf-poly1305", delay: 1913, udp: true, skip-cert-verify: true}
-- {name: "🇦🇲 亚美尼亚 02", server: "85.90.207.104", type: "ss", country: "🇦🇲AM", port: 18791, password: "e716d7bbae4bdd14", cipher: "chacha20-ietf-poly1305", delay: 1746, udp: true, skip-cert-verify: true}
-- {name: "🇮🇩 印尼 01", type: "vless", server: "vip3.kaixincloud.top", port: 443, uuid: "b61ce65d-cad5-4d31-a0a8-4fe5b9355b3c", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/announcement", headers: {Host: "oracle-id-batam.025713.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, delay: 609, servername: "oracle-id-batam.025713.xyz"}
-- {name: "🇮🇩 印尼 02", type: "vless", server: "vip2.kaixincloud.top", port: 443, uuid: "b61ce65d-cad5-4d31-a0a8-4fe5b9355b3c", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/announcement", headers: {Host: "oracle-id-batam.025713.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2048}, delay: 2560, servername: "oracle-id-batam.025713.xyz"}
-- {name: "🇬🇧 英国 01", server: "141.98.101.178", type: "ss", country: "🇬🇧 GB", port: 443, password: "shadowsocks", cipher: "aes-128-gcm", delay: 1666, udp: true, skip-cert-verify: true}
-- {name: "🇯🇴 约旦 01", server: "91.106.109.73", port: 11201, type: "ss", cipher: "chacha20-ietf-poly1305", password: "be5ee3c62f0aae96", udp: true, delay: 2160, skip-cert-verify: true}
-- {name: "🇻🇳 越南 01", server: "103.186.154.153", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1016, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 02", server: "103.186.154.16", type: "ss", port: 38388, udp: true, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1555, skip-cert-verify: true}
-- {name: "🇻🇳 越南 03", server: "103.186.154.17", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1114, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 04", server: "103.186.154.165", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2983, skip-cert-verify: true}
-- {name: "🇻🇳 越南 05", server: "103.186.154.161", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1651, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 06", server: "103.186.154.160", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1050, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 07", server: "103.186.155.50", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1049, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 08", server: "103.186.155.44", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 813, skip-cert-verify: true}
-- {name: "🇻🇳 越南 09", server: "103.186.154.31", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1618, skip-cert-verify: true}
-- {name: "🇻🇳 越南 10", server: "103.186.154.38", type: "ss", country: "🏁 ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2100, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 11", server: "103.186.154.21", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2273, skip-cert-verify: true}
-- {name: "🇻🇳 越南 12", server: "103.186.155.225", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 2165, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 13", server: "103.186.154.64", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1825, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 14", server: "103.186.155.13", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1208, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 15", server: "103.186.155.203", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1480, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 16", server: "103.186.155.110", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 835, skip-cert-verify: true}
-- {name: "🇻🇳 越南 17", server: "103.186.154.191", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 778, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 18", server: "103.186.154.235", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1310, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 19", server: "103.186.155.104", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1317, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 20", server: "103.186.154.201", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1342, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 21", server: "103.186.155.229", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 777, udp: true, skip-cert-verify: true}
-- {name: "🇻🇳 越南 22", server: "103.186.155.131", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1716, udp: true, skip-cert-verify: true}
-- {name: "🇭🇰 香港 01", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 998, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 02", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "e168c43e-c6d9-11ed-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome", delay: 2629, servername: "hkt.gotochinatown.net"}
-- {name: "🇭🇰 香港 03", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "4b9ca118-7fab-11eb-bd3a-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 2223, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 04", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "34f0cf42-0f8a-11ec-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 2516, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 05", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "55cce5a4-56b7-11ee-af82-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1309, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 06", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "3be8cba8-b721-11ec-8b04-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 2806, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 07", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "32315324-cf6b-11ed-979b-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 2002, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 08", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 476, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 09", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 1052, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 10", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "d70a9508-5477-11ef-bf61-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 427, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 11", server: "9ef7d9d8-t8pj40-tr9h64-1f1f1.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "61c4be90-6235-11ec-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2813, skip-cert-verify: true}
-- {name: "🇭🇰 香港 12", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "21a70fd2-c69c-11eb-8673-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 433, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 13", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "336501b6-51d2-11ee-a993-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 1547, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 14", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 2348, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 15", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "48e51dfa-db8f-11ed-a23f-f23c91369f2d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 1594, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 16", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "47e91fb6-25b8-df52-bc18-3cdc8548192f", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "hkt.gotochinatown.net", Host: "hkt.gotochinatown.net"}}, delay: 888, udp: true, client-fingerprint: "chrome", servername: "hkt.gotochinatown.net"}
-- {name: "🇭🇰 香港 17", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "40fb1315-191a-11ed-b0ca-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 804, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
-- {name: "🇭🇰 香港 18", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 2990, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 19", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰 HK", port: 80, uuid: "f7d95364-607b-11ee-93af-f23c91369f2d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, delay: 2250, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 20", server: "0a023e52-t8pj40-tifnix-1ro8s.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "a18ef18e-293a-11ef-b76e-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2309, skip-cert-verify: true}
-- {name: "🇭🇰 香港 21", server: "0bba3742-t8nog0-tlvq5w-1jcwu.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "f93486ce-cc84-11ed-9e98-f23c913c8d2b", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2588, skip-cert-verify: true}
-- {name: "🇭🇰 香港 22", server: "a9f49859-t8pj40-tbe46y-1la7v.hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "460749c2-bcef-11ee-89fc-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 2522, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 23", server: "7d1c5b1e-t8nog0-ta42cg-1phla.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "467f2940-77cd-11ee-b5ed-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2969, skip-cert-verify: true}
-- {name: "🇭🇰 香港 24", server: "61dbc334-t8nog0-tl09la-1q91p.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "c11ff50c-f582-11ee-94df-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2315, skip-cert-verify: true}
-- {name: "🇭🇰 香港 25", server: "0312be33-t8pj40-t9zvpd-f1v1.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1223, skip-cert-verify: true}
-- {name: "🇭🇰 香港 26", server: "e542f5ac-t8pj40-td95qh-1isea.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "d6abdbda-fe9d-11ec-bb74-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1747, skip-cert-verify: true}
-- {name: "🇭🇰 香港 27", server: "256a53b2-t8pj40-tm3dx0-1r9dt.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "de003c72-0157-11ef-86da-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1649, skip-cert-verify: true}
-- {name: "🇭🇰 香港 28", server: "e6c543b9-t8pj40-tan99f-1rdqg.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "2b57ec48-0da4-11ef-8f35-f23c913c8d2b", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 805, skip-cert-verify: true}
-- {name: "🇭🇰 香港 29", server: "a1f79498-t8pj40-tc67m2-1tjc4.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "fac704ae-0304-11f0-a2ef-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2642, skip-cert-verify: true}
-- {name: "🇭🇰 香港 30", server: "4d887cd1-t8pj40-t9hghw-1sdoq.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "7c077572-6da9-11ef-b786-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1646, skip-cert-verify: true}
-- {name: "🇭🇰 香港 31", server: "584ebfbe-t8pj40-tc5odo-1mh85.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "cf7331fa-bfeb-11ed-a807-f23c913c8d2b", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1434, skip-cert-verify: true}
-- {name: "🇭🇰 香港 32", server: "e3c7f60e-t8pj40-t9b2j8-11p9g.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "384d1b42-655f-11ed-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1694, skip-cert-verify: true}
-- {name: "🇭🇰 香港 33", server: "f098ccea-t8lts0-thzbn1-1gxvd.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "398e0d38-8649-11ef-959c-f23c9164ca5d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 2476, skip-cert-verify: true}
-- {name: "🇭🇰 香港 34", server: "2fdb089e-t8nog0-tcr97d-2b2n.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "fcd39788-ca23-11ed-86e2-f23c913c8d2b", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 930, skip-cert-verify: true}
-- {name: "🇭🇰 香港 35", server: "293beaf2-t8nog0-tk4rx8-1n7d9.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "48e51dfa-db8f-11ed-a23f-f23c91369f2d", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1315, skip-cert-verify: true}
-- {name: "🇭🇰 香港 36", server: "be1ca0db-t8pj40-tbnlwl-1qaek.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "98cedeca-99a0-11ef-bb64-f23c913c8d2b", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1149, skip-cert-verify: true}
-- {name: "🇭🇰 香港 37", server: "908a74e2-t8pj40-t9so47-1pr35.hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "6b7c1278-ff9d-11ee-84ca-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 2463, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 38", server: "365083fc-t8lts0-t8zdpa-1swry.hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "8a5d58a0-c50e-11ef-a46e-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 2625, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 39", server: "7d833b55-t8pj40-thd0h1-1rz5s.hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "40e084d6-0316-11f0-90e2-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 2908, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 40", server: "6d3b5b9f-t8pj40-trg4wh-z65w.hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "a2313fba-74a6-11ed-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, udp: true, client-fingerprint: "chrome", delay: 1899, skip-cert-verify: true}
-- {name: "🇭🇰 香港 41", server: "5bb26bb0-t8lts0-t9pc69-mv7m.hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "94d40708-8273-11ea-8fc9-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 2595, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇩🇪 德国 01", type: "vless", server: "5.10.214.5", port: 443, uuid: "7e58699f-1d5d-4f6b-b181-cb74f0ad9509", udp: true, tls: true, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "GfV5t2331T.sMaRtTeChZaAl.InFo"}}, delay: 2026, servername: "GfV5t2331T.sMaRtTeChZaAl.InFo"}
+- {name: "🇩🇪 德国 02", server: "singapore.com", port: 2053, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "ss1.f1w.de5.net"}}, udp: true, delay: 2846, skip-cert-verify: true, servername: "ss1.f1w.de5.net"}
+- {name: "🇫🇷 法国 01", server: "15.236.102.248", type: "trojan", country: "🇫🇷FR", port: 22222, password: "telegram-id-privatevpns", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, udp: true, delay: 2559, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇫🇷 法国 02", server: "15.236.102.248", type: "trojan", country: "🇫🇷FR", port: 22223, udp: true, password: "telegram-id-directvpn", sni: "trojan.burgerip.co.uk", skip-cert-verify: true, delay: 1743, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇰🇷 韩国 01", server: "168.126.234.247", port: 51978, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 2566, skip-cert-verify: true}
+- {name: "🇰🇷 韩国 02", server: "221.139.79.41", port: 41240, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 524, skip-cert-verify: true}
+- {name: "🇰🇷 韩国 03", server: "218.234.149.9", port: 4483, client-fingerprint: "chrome", type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@", tfo: true, udp: true, delay: 678, skip-cert-verify: true}
+- {name: "🇳🇱 荷兰 01", server: "1357900.xyz", port: 2053, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "ss1.f1w.de5.net"}}, udp: true, delay: 2976, skip-cert-verify: true, servername: "ss1.f1w.de5.net"}
+- {name: "🇳🇱 荷兰 02", server: "itarmy.com.ua", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1167, udp: true}
+- {name: "🇳🇱 荷兰 03", server: "www.whatismyip.net", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 987, udp: true}
+- {name: "🇳🇱 荷兰 04", server: "77.246.97.187", type: "ss", country: "🇷🇺 RU", port: 7749, password: "7kJQs2RYHhViTYWaf1RobB", cipher: "chacha20-ietf-poly1305", delay: 871, udp: true, skip-cert-verify: true}
+- {name: "🇺🇸 美国 01", server: "docs.cloudflare.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1633, udp: true}
+- {name: "🇺🇸 美国 02", server: "www.epicgames.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1005, udp: true}
+- {name: "🇺🇸 美国 03", server: "blog.cloudflare.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1926, udp: true}
+- {name: "🇺🇸 美国 04", server: "104.168.94.41", type: "vmess", port: 32301, uuid: "a2235b72-fd9c-404f-be5a-53b2de0cb798", alterId: 0, cipher: "auto", network: "http", http-opts: {method: "GET", path: ["/"]}, h2-opts: {}, delay: 2034, udp: true, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 05", server: "developers.cloudflare.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 2087, udp: true}
+- {name: "🇺🇸 美国 06", server: "www.npmjs.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1373, udp: true}
+- {name: "🇺🇸 美国 07", server: "www.udemy.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1967, udp: true}
+- {name: "🇺🇸 美国 08", server: "cfxr.eu.org", port: 2053, type: "vless", uuid: "d342d11e-d424-4583-b36e-524ab1f0afa4", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/proxyip=sjc.o00o.ooo", headers: {Host: "ss1.f1w.de5.net"}}, udp: true, delay: 1769, skip-cert-verify: true, servername: "ss1.f1w.de5.net"}
+- {name: "🇺🇸 美国 09", server: "104.16.250.22", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, delay: 1446, skip-cert-verify: true, servername: "l.ayovo.netlib.re"}
+- {name: "🇺🇸 美国 10", server: "cloudflare-dns.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1493, udp: true}
+- {name: "🇺🇸 美国 11", server: "www.temu.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 2024, udp: true}
+- {name: "🇺🇸 美国 12", server: "support.cloudflare.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 1598, udp: true}
+- {name: "🇳🇴 挪威 01", server: "51.15.23.63", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true, delay: 1815, skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", type: "vless", server: "162.159.44.142", port: 443, uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", delay: 532, udp: true, skip-cert-verify: true, servername: "l.ayovo.netlib.re"}
+- {name: "🇯🇵 日本 02", type: "vless", server: "162.159.45.232", port: 443, uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome", delay: 526, udp: true, skip-cert-verify: true, servername: "l.ayovo.netlib.re"}
+- {name: "🇸🇪 瑞典 01", server: "gurvpn-bot.outlinekeys.net", type: "ss", country: "🇪🇸ES", port: 4443, password: "phIc0b2uJfdEgdfg0Wm5AK", cipher: "chacha20-ietf-poly1305", delay: 1148, udp: true, skip-cert-verify: true}
+- {name: "🇨🇭 瑞士 01", server: "clyde.ns.cloudflare.com", port: 443, type: "vless", uuid: "1ad3c76d-d96c-41c6-a7a5-c070b60b2794", tls: true, network: "ws", ws-opts: {path: "/lnjukqws", headers: {Host: "639034354142363014.defender-amsjs.info"}}, udp: true, client-fingerprint: "chrome", delay: 2151, skip-cert-verify: true, servername: "639034354142363014.defender-amsjs.info"}
+- {name: "🇬🇷 希腊 01", server: "192.71.166.100", port: 989, type: "ss", cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true, delay: 1786, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 01", server: "www.shopify.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 485, udp: true}
+- {name: "🇸🇬 新加坡 02", server: "www.wto.org", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 800, udp: true}
+- {name: "🇸🇬 新加坡 03", server: "ns.cloudflare.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 562, udp: true}
+- {name: "🇸🇬 新加坡 04", server: "openai.com", port: 2095, client-fingerprint: "randomized", type: "vless", uuid: "86c50e3a-5b87-49dd-bd20-03c7f2735e40", tls: false, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "cnmfangbinxing-nmsl.nmslfangbinxing.workers.dev"}}, delay: 571, udp: true}
+- {name: "🇦🇲 亚美尼亚 01", server: "85.90.207.104", port: 18792, type: "ss", cipher: "chacha20-ietf-poly1305", password: "e716d7bbae4bdd14", udp: true, delay: 1339, skip-cert-verify: true}
+- {name: "🇦🇲 亚美尼亚 02", server: "85.90.207.104", port: 18790, type: "ss", cipher: "rc4-md5", password: "6c325435b2176c2d", udp: true, delay: 2507, skip-cert-verify: true}
+- {name: "🇻🇳 越南 01", server: "103.186.155.37", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 833, skip-cert-verify: true}
+- {name: "🇻🇳 越南 02", server: "103.186.155.131", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1650, skip-cert-verify: true}
+- {name: "🇻🇳 越南 03", server: "103.186.154.236", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1309, skip-cert-verify: true}
+- {name: "🇻🇳 越南 04", server: "103.186.155.126", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 785, skip-cert-verify: true}
+- {name: "🇻🇳 越南 05", server: "103.186.154.62", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1048, skip-cert-verify: true}
+- {name: "🇻🇳 越南 06", server: "103.186.155.8", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1061, skip-cert-verify: true}
+- {name: "🇻🇳 越南 07", server: "103.186.155.62", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1792, skip-cert-verify: true}
+- {name: "🇻🇳 越南 08", server: "103.186.155.224", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 828, skip-cert-verify: true}
+- {name: "🇻🇳 越南 09", server: "103.186.154.243", type: "ss", port: 38388, udp: true, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 815, skip-cert-verify: true}
+- {name: "🇻🇳 越南 10", server: "103.186.154.253", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1694, skip-cert-verify: true}
+- {name: "🇻🇳 越南 11", server: "103.186.154.14", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1106, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 12", server: "103.186.154.197", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 758, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 13", server: "103.186.154.43", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1027, skip-cert-verify: true}
+- {name: "🇻🇳 越南 14", server: "103.186.155.43", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 759, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 15", server: "103.186.154.53", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 1064, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 16", server: "103.186.155.64", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1060, skip-cert-verify: true}
+- {name: "🇻🇳 越南 17", server: "103.186.155.226", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 762, skip-cert-verify: true}
+- {name: "🇻🇳 越南 18", server: "103.186.154.51", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 877, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 19", server: "103.186.155.119", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2065, skip-cert-verify: true}
+- {name: "🇻🇳 越南 20", server: "103.186.155.76", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1944, skip-cert-verify: true}
+- {name: "🇻🇳 越南 21", server: "103.186.154.49", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2569, skip-cert-verify: true}
+- {name: "🇻🇳 越南 22", server: "103.186.154.251", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2573, skip-cert-verify: true}
+- {name: "🇻🇳 越南 23", server: "103.186.155.38", type: "ss", country: "🇻🇳VN", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 805, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 24", server: "103.186.154.202", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2488, skip-cert-verify: true}
+- {name: "🇻🇳 越南 25", server: "103.186.154.76", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 801, skip-cert-verify: true}
+- {name: "🇻🇳 越南 26", server: "103.186.154.139", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2064, skip-cert-verify: true}
+- {name: "🇻🇳 越南 27", server: "103.186.155.120", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1098, skip-cert-verify: true}
+- {name: "🇻🇳 越南 28", server: "103.186.155.227", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 1780, skip-cert-verify: true}
+- {name: "🇻🇳 越南 29", server: "103.186.154.221", type: "ss", country: "🏁ZZ", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb", delay: 844, udp: true, skip-cert-verify: true}
+- {name: "🇻🇳 越南 30", server: "103.186.155.49", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, delay: 2438, skip-cert-verify: true}
+- {name: "🇨🇳 台湾 01", server: "38.54.107.101", type: "ss", country: "🇹🇼TW", port: 990, password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=", cipher: "chacha20-ietf-poly1305", delay: 1757, udp: true, skip-cert-verify: true}
+- {name: "🇭🇰 香港 01", server: "347adbbc-t70f40-tbicd9-1go3q.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "19dd9c70-e4a5-11ed-8347-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "347adbbc-t70f40-tbicd9-1go3q.hkt.gotochinatown.net"}}, delay: 2458, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 02", server: "95930bfa-t70f40-t83bw1-1f596.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "e3975a05-b89e-11ec-a50d-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "95930bfa-t70f40-t83bw1-1f596.hkt.gotochinatown.net"}}, delay: 1004, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 03", server: "2f3f0883-t6wps0-tifnix-1ro8s.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "a18ef18e-293a-11ef-b76e-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "2f3f0883-t6wps0-tifnix-1ro8s.hkt.gotochinatown.net", Host: "2f3f0883-t6wps0-tifnix-1ro8s.hkt.gotochinatown.net"}}, delay: 2388, udp: true, client-fingerprint: "chrome", servername: "2f3f0883-t6wps0-tifnix-1ro8s.hkt.gotochinatown.net"}
+- {name: "🇭🇰 香港 04", server: "b1438b68-t70f40-tb74a6-1q9g2.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "9d80dd14-ac44-11ee-a116-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "b1438b68-t70f40-tb74a6-1q9g2.hkt.gotochinatown.net"}}, delay: 1955, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 05", server: "44a1b64f-t77ts0-tb592v-4lg6.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "44a1b64f-t77ts0-tb592v-4lg6.hkt.gotochinatown.net"}}, delay: 2377, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 06", server: "3ef1531d-t70f40-t6z0et-1t60o.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "ce481c6e-f4c8-11ef-bbb0-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "3ef1531d-t70f40-t6z0et-1t60o.hkt.gotochinatown.net"}}, delay: 2612, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 07", server: "e9c33324-t70f40-tcdlur-1qwom.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "e9c33324-t70f40-tcdlur-1qwom.hkt.gotochinatown.net"}}, delay: 2578, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 08", server: "fa45464b-t70f40-taz53d-1j0y6.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "1cce7df2-251c-11ee-9409-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "fa45464b-t70f40-taz53d-1j0y6.hkt.gotochinatown.net"}}, delay: 2555, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 09", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 2049, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 10", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "91df5a86-fcdd-11ef-94aa-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 1503, udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 11", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "fd224a6c-addc-11ed-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 739, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 12", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "94d40708-8273-11ea-8fc9-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 2385, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 13", server: "2ce6219a-t6r5s0-tiaexf-ufc0.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "22308988-8548-11ea-a22e-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "2ce6219a-t6r5s0-tiaexf-ufc0.hkt.gotochinatown.net"}}, delay: 2231, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 14", server: "1eca9439-t6r5s0-taklwz-12bd.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "1eca9439-t6r5s0-taklwz-12bd.hkt.gotochinatown.net"}}, delay: 2161, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 15", server: "52a88ced-t6r5s0-tgzvop-hns7.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "6857f1bc-f27b-11ea-87ad-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "52a88ced-t6r5s0-tgzvop-hns7.hkt.gotochinatown.net"}}, delay: 2016, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 16", server: "84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "5f091cbe-fb34-11ea-9777-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "84146e14-t6r5s0-tiuovf-v3c2.hkt.gotochinatown.net"}}, delay: 1549, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 17", server: "d90d72cd-t6r5s0-t95ncr-1slop.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "520b9126-9870-11ef-81b0-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "d90d72cd-t6r5s0-t95ncr-1slop.hkt.gotochinatown.net"}}, delay: 1276, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 18", server: "7e67e9c5-t6r5s0-t7pmvm-17xo8.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "7e67e9c5-t6r5s0-t7pmvm-17xo8.hkt.gotochinatown.net"}}, delay: 925, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 19", server: "be9884d0-t6r5s0-t7dv8l-1szgv.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "448aff24-b2e6-11ef-97e0-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "be9884d0-t6r5s0-t7dv8l-1szgv.hkt.gotochinatown.net"}}, delay: 2007, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 20", server: "448072be-t6r5s0-taksay-1tcuf.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "3952a514-eaa7-11ef-97da-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "448072be-t6r5s0-taksay-1tcuf.hkt.gotochinatown.net"}}, delay: 2929, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 21", server: "b7810513-t6r5s0-t7j1ub-g3b3.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "9ad05870-d8c5-11ef-9f1c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "b7810513-t6r5s0-t7j1ub-g3b3.hkt.gotochinatown.net"}}, delay: 2115, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 22", server: "4a04bd31-t70f40-th9kx9-1os43.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "96c798f6-4645-11ee-b8a1-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "4a04bd31-t70f40-th9kx9-1os43.hkt.gotochinatown.net"}}, delay: 1237, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 23", server: "189f87a1-t6r5s0-tcop2n-tl32.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "189f87a1-t6r5s0-tcop2n-tl32.hkt.gotochinatown.net"}}, delay: 796, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 24", server: "f8d6a0ad-t6r5s0-t8hh31-amya.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "ee1b9e94-9b95-11ef-8967-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "f8d6a0ad-t6r5s0-t8hh31-amya.hkt.gotochinatown.net"}}, delay: 2510, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 25", server: "faafb8c9-t6r5s0-t7dy6t-jx5r.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "73bfcc1c-5814-5f2a-b43a-3ef6af011db8", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "faafb8c9-t6r5s0-t7dy6t-jx5r.hkt.gotochinatown.net"}}, delay: 2336, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 26", server: "2ba4eb78-t6r5s0-taxf6m-ieln.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "2ba4eb78-t6r5s0-taxf6m-ieln.hkt.gotochinatown.net"}}, delay: 1995, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 27", server: "eabe4766-t6r5s0-tds6bp-1hzyr.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "3be8cba8-b721-11ec-8b04-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "eabe4766-t6r5s0-tds6bp-1hzyr.hkt.gotochinatown.net"}}, delay: 1691, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 28", server: "eb552654-t6r5s0-te0v28-1mh67.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "e1c7fbbc-96b6-11ef-8563-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "eb552654-t6r5s0-te0v28-1mh67.hkt.gotochinatown.net"}}, delay: 1112, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 29", server: "03199e4c-t6r5s0-tbnucr-1thfv.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "03199e4c-t6r5s0-tbnucr-1thfv.hkt.gotochinatown.net"}}, delay: 2861, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 30", server: "c90e7d9b-t6r5s0-tlm64c-xm0q.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "3437f34e-1b77-11eb-8684-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "c90e7d9b-t6r5s0-tlm64c-xm0q.hkt.gotochinatown.net"}}, delay: 923, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 31", server: "f5596b30-t6pb40-tpaqgu-1smhu.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "62f2374c-891b-11ef-a3f6-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "f5596b30-t6pb40-tpaqgu-1smhu.hkt.gotochinatown.net"}}, delay: 1574, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 32", server: "ec130d51-t6pb40-t72h4q-1spnr.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "127e3f92-f714-11ef-bbb0-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "ec130d51-t6pb40-t72h4q-1spnr.hkt.gotochinatown.net"}}, delay: 1335, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 33", server: "1713846f-t70f40-t9eu8q-tlhh.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "bdf3e15e-c64c-11ea-82ef-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "1713846f-t70f40-t9eu8q-tlhh.hkt.gotochinatown.net"}}, delay: 1012, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 34", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "55cce5a4-56b7-11ee-af82-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 1423, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 35", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "b58095f0-52dc-11ef-bc74-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 1297, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 36", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 1105, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 37", server: "hkt.gotochinatown.net", type: "vmess", port: 80, udp: true, uuid: "fcd39788-ca23-11ed-86e2-f23c913c8d2b", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, ws-opts: {path: "/", headers: {Host: "broadcastlv.chat.bilibili.com"}}, delay: 723, skip-cert-verify: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 38", server: "hkt.gotochinatown.net", type: "vmess", port: 80, uuid: "5a4c13ae-6673-11ee-a149-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 440, udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 39", server: "4d565c78-t7bj40-tgr32b-wj6v.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "4d565c78-t7bj40-tgr32b-wj6v.hkt.gotochinatown.net"}}, delay: 1984, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 40", server: "hkt.gotochinatown.net", port: 80, type: "vmess", uuid: "3be8cba8-b721-11ec-8b04-f23c91cfbbc9", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, udp: true, client-fingerprint: "chrome", delay: 451, servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 41", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "21a70fd2-c69c-11eb-8673-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 2370, udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 42", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "f609abb4-ed17-11ee-9fa2-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 1214, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 43", server: "f723b78e-t6r5s0-tgl02u-1jr1u.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "2c01eae6-0b6a-11ee-a058-f23c91369f2d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "f723b78e-t6r5s0-tgl02u-1jr1u.hkt.gotochinatown.net"}}, delay: 1503, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 44", server: "320ede8b-t70f40-tfi5fd-1imi4.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "40fb1315-191a-11ed-b0ca-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "320ede8b-t70f40-tfi5fd-1imi4.hkt.gotochinatown.net"}}, delay: 916, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 45", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "96c798f6-4645-11ee-b8a1-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 496, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 46", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "6ce63b80-8b5b-11ef-b635-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "hkt.gotochinatown.net"}}, delay: 1618, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 47", server: "hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "99129cef-f705-11ee-ada6-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {Host: "hkt.gotochinatown.net"}}, delay: 932, udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 48", server: "bcc4c365-t70f40-tpaqgu-1smhu.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "62f2374c-891b-11ef-a3f6-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "bcc4c365-t70f40-tpaqgu-1smhu.hkt.gotochinatown.net"}}, delay: 1535, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 49", server: "b735d1f0-t70f40-t7dy6t-jx5r.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "73bfcc1c-5814-5f2a-b43a-3ef6af011db8", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "b735d1f0-t70f40-t7dy6t-jx5r.hkt.gotochinatown.net"}}, delay: 1872, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 50", server: "9eef437c-t70f40-tiaexf-ufc0.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "22308988-8548-11ea-a22e-f23c91cfbbc9", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "9eef437c-t70f40-tiaexf-ufc0.hkt.gotochinatown.net"}}, delay: 1114, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 51", server: "cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net", type: "vmess", country: "🇭🇰HK", port: 80, uuid: "448aff24-b2e6-11ef-97e0-f23c9164ca5d", alterId: 2, cipher: "auto", network: "ws", http-opts: {}, h2-opts: {}, skip-cert-verify: true, ws-opts: {path: "/", headers: {HOST: "broadcastlv.chat.bilibili.com", Host: "cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net"}}, delay: 2312, udp: true, client-fingerprint: "chrome", servername: "broadcastlv.chat.bilibili.com"}
+- {name: "🇭🇰 香港 52", server: "103.141.221.124", type: "ss", port: 8388, password: "asd123456", cipher: "chacha20-ietf", delay: 182, udp: true, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -232,6 +264,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -273,41 +314,58 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -330,6 +388,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -371,39 +438,56 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -426,6 +510,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -467,41 +560,58 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "FCM"
   type: "select"
   proxies:
   - "✨ fcm"
   - "PROXY"
   - "DIRECT"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -524,6 +634,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -565,40 +684,57 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -621,6 +757,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -662,40 +807,57 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -718,6 +880,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -759,39 +930,56 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -814,6 +1002,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -855,40 +1052,57 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 - name: "UDP"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇦🇺 澳大利亚 01"
-  - "🇦🇺 澳大利亚 02"
-  - "🇩🇰 丹麦 01"
   - "🇩🇪 德国 01"
   - "🇩🇪 德国 02"
-  - "🇷🇺 俄罗斯 01"
   - "🇫🇷 法国 01"
-  - "🇫🇮 芬兰 01"
+  - "🇫🇷 法国 02"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇰🇷 韩国 05"
-  - "🇰🇷 韩国 06"
   - "🇳🇱 荷兰 01"
-  - "🇱🇺 卢森堡 01"
-  - "🇲🇰 马其顿 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇺🇸 美国 05"
+  - "🇺🇸 美国 06"
+  - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
+  - "🇺🇸 美国 10"
+  - "🇺🇸 美国 11"
+  - "🇺🇸 美国 12"
+  - "🇳🇴 挪威 01"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
-  - "🇯🇵 日本 03"
+  - "🇸🇪 瑞典 01"
+  - "🇨🇭 瑞士 01"
+  - "🇬🇷 希腊 01"
   - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
   - "🇦🇲 亚美尼亚 01"
   - "🇦🇲 亚美尼亚 02"
-  - "🇮🇩 印尼 01"
-  - "🇮🇩 印尼 02"
-  - "🇬🇧 英国 01"
-  - "🇯🇴 约旦 01"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -911,6 +1125,15 @@ proxy-groups:
   - "🇻🇳 越南 20"
   - "🇻🇳 越南 21"
   - "🇻🇳 越南 22"
+  - "🇻🇳 越南 23"
+  - "🇻🇳 越南 24"
+  - "🇻🇳 越南 25"
+  - "🇻🇳 越南 26"
+  - "🇻🇳 越南 27"
+  - "🇻🇳 越南 28"
+  - "🇻🇳 越南 29"
+  - "🇻🇳 越南 30"
+  - "🇨🇳 台湾 01"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -952,6 +1175,17 @@ proxy-groups:
   - "🇭🇰 香港 39"
   - "🇭🇰 香港 40"
   - "🇭🇰 香港 41"
+  - "🇭🇰 香港 42"
+  - "🇭🇰 香港 43"
+  - "🇭🇰 香港 44"
+  - "🇭🇰 香港 45"
+  - "🇭🇰 香港 46"
+  - "🇭🇰 香港 47"
+  - "🇭🇰 香港 48"
+  - "🇭🇰 香港 49"
+  - "🇭🇰 香港 50"
+  - "🇭🇰 香港 51"
+  - "🇭🇰 香港 52"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
