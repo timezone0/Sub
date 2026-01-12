@@ -86,7 +86,6 @@ proxies:
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 01", server: "162.159.45.232", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}}, udp: true, servername: "l.ayovo.netlib.re"}
-- {name: "🇸🇬 新加坡 01", server: "151.101.3.8", port: 80, type: "vless", uuid: "dd0cfef0-fda9-47ec-8a65-49d7bc004f82", tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN", headers: {Host: "mitivpn.global.ssl.fastly.net"}}, udp: true, servername: "mitivpn.global.ssl.fastly.net"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -94,7 +93,6 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -103,14 +101,12 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -119,7 +115,6 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -127,7 +122,6 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -135,14 +129,12 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 - name: "UDP"
   type: "select"
   proxies:
@@ -150,7 +142,6 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇯🇵 日本 01"
-  - "🇸🇬 新加坡 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "GEOSITE,SPOTIFY-ADS,REJECT"
