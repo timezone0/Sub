@@ -29,16 +29,8 @@
             "query_type": "HTTPS"
           },
           {
-            "domain_keyword": [
-              "mcdn.bilivideo.com",
-              "mcdn.bilivideo.cn",
-              "szbdyd.com"
-            ]
-          },
-          {
             "rule_set": [
-              "geosite-category-ads-all",
-              "geosite-spotify-ads"
+              "geosite-category-ads-all"
             ]
           }
         ],
@@ -139,18 +131,6 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "hoyo",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "select",
         "🏴‍☠️ 喀麦隆 01",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02"
@@ -343,30 +323,17 @@
         "mode": "or",
         "rules": [
           {
+            "rule_set": [
+              "geosite-hoyoverse"
+            ]
+          },
+          {
             "domain_keyword": [
-              "public-operation-hkrpg-sg.hoyoverse.com",
-              "public-operation-hk4e-sg.hoyoverse.com",
-              "public-operation-nap-sg.hoyoverse.com",
               "autopatchhk.yuanshen.com",
               "autopatchos.starrails.com",
               "autopatchos.zenlesszonezero.com"
             ]
-          },
-          {
-            "port_range": [
-              "23301:23301",
-              "22101:22102",
-              "20501:20501",
-              "21601:21606",
-              "21101:21101"
-            ]
           }
-        ],
-        "outbound": "hoyo"
-      },
-      {
-        "domain_keyword": [
-          "hoyoverse.com"
         ],
         "outbound": "select"
       },
@@ -457,6 +424,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-hoyoverse",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
@@ -467,13 +441,6 @@
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "select"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-spotify-ads",
-        "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {

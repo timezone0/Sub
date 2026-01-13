@@ -29,16 +29,8 @@
             "query_type": "HTTPS"
           },
           {
-            "domain_keyword": [
-              "mcdn.bilivideo.com",
-              "mcdn.bilivideo.cn",
-              "szbdyd.com"
-            ]
-          },
-          {
             "rule_set": [
-              "geosite-category-ads-all",
-              "geosite-spotify-ads"
+              "geosite-category-ads-all"
             ]
           }
         ],
@@ -299,58 +291,6 @@
       "outbounds": [
         "select",
         "direct",
-        "🇦🇲 亚美尼亚 01",
-        "🇷🇺 俄罗斯 01",
-        "🇷🇺 俄罗斯 02",
-        "🇷🇺 俄罗斯 03",
-        "🇷🇺 俄罗斯 04",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03",
-        "🇺🇸 美国 04",
-        "🇺🇸 美国 05",
-        "🇺🇸 美国 06",
-        "🇺🇸 美国 07",
-        "🇺🇸 美国 08",
-        "🇺🇸 美国 09",
-        "🇭🇰 香港 01",
-        "🇭🇰 香港 02",
-        "🇭🇰 香港 03",
-        "🇭🇰 香港 04",
-        "🇭🇰 香港 05",
-        "🇭🇰 香港 06",
-        "🇭🇰 香港 07",
-        "🇭🇰 香港 08",
-        "🇭🇰 香港 09",
-        "🇭🇰 香港 10",
-        "🇭🇰 香港 11",
-        "🇭🇰 香港 12",
-        "🇱🇺 卢森堡 01",
-        "🇱🇺 卢森堡 02",
-        "🇱🇺 卢森堡 03",
-        "🇯🇴 约旦 01",
-        "🇸🇮 斯洛文尼亚 01",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02",
-        "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇳🇱 荷兰 01",
-        "🇲🇩 摩尔多瓦 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇵🇭 菲律宾 01",
-        "🇰🇭 柬埔寨 01",
-        "🇫🇷 法国 01",
-        "🇹🇷 土耳其 01"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "tag": "hoyo",
-      "type": "selector",
-      "outbounds": [
-        "direct",
-        "select",
         "🇦🇲 亚美尼亚 01",
         "🇷🇺 俄罗斯 01",
         "🇷🇺 俄罗斯 02",
@@ -1371,30 +1311,17 @@
         "mode": "or",
         "rules": [
           {
+            "rule_set": [
+              "geosite-hoyoverse"
+            ]
+          },
+          {
             "domain_keyword": [
-              "public-operation-hkrpg-sg.hoyoverse.com",
-              "public-operation-hk4e-sg.hoyoverse.com",
-              "public-operation-nap-sg.hoyoverse.com",
               "autopatchhk.yuanshen.com",
               "autopatchos.starrails.com",
               "autopatchos.zenlesszonezero.com"
             ]
-          },
-          {
-            "port_range": [
-              "23301:23301",
-              "22101:22102",
-              "20501:20501",
-              "21601:21606",
-              "21101:21101"
-            ]
           }
-        ],
-        "outbound": "hoyo"
-      },
-      {
-        "domain_keyword": [
-          "hoyoverse.com"
         ],
         "outbound": "select"
       },
@@ -1485,6 +1412,13 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-hoyoverse",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
@@ -1495,13 +1429,6 @@
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "select"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-spotify-ads",
-        "format": "binary",
-        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
         "download_detour": "select"
       },
       {
