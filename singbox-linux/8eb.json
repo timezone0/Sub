@@ -214,11 +214,75 @@
       "interrupt_exist_connections": true
     },
     {
+      "tag": "google",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇪🇸 西班牙 01",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇩🇪 德国 01",
+        "🇨🇳 台湾 01",
+        "🇰🇷 韩国 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
       "tag": "hoyo",
       "type": "selector",
       "outbounds": [
         "direct",
         "select",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇧🇷 巴西 01",
+        "🇧🇷 巴西 02",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇪🇸 西班牙 01",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇩🇪 德国 01",
+        "🇨🇳 台湾 01",
+        "🇰🇷 韩国 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "microsoft",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
         "🇺🇸 美国 03",
@@ -782,6 +846,12 @@
         "outbound": "direct"
       },
       {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
+      },
+      {
         "rule_set": [
           "geosite-category-ai-!cn"
         ],
@@ -792,6 +862,13 @@
           "geosite-googlefcm"
         ],
         "outbound": "fcm"
+      },
+      {
+        "rule_set": [
+          "geosite-google",
+          "geoip-google"
+        ],
+        "outbound": "google"
       },
       {
         "type": "logical",
@@ -827,6 +904,12 @@
       },
       {
         "rule_set": [
+          "geosite-microsoft"
+        ],
+        "outbound": "microsoft"
+      },
+      {
+        "rule_set": [
           "geosite-spotify"
         ],
         "outbound": "spotify"
@@ -836,12 +919,6 @@
           "geosite-tiktok"
         ],
         "outbound": "tiktok"
-      },
-      {
-        "network": [
-          "udp"
-        ],
-        "outbound": "udp"
       },
       {
         "type": "logical",
@@ -870,6 +947,13 @@
       },
       {
         "type": "remote",
+        "tag": "geoip-google",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
@@ -891,9 +975,23 @@
       },
       {
         "type": "remote",
+        "tag": "geosite-google",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-microsoft",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
         "download_detour": "select"
       },
       {

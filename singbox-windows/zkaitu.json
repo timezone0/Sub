@@ -1,0 +1,1030 @@
+{
+  "log": {},
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns_proxy",
+        "type": "https",
+        "server": "8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "dns_direct",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "dns_fakeip",
+        "type": "fakeip",
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18"
+      }
+    ],
+    "rules": [
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "query_type": "HTTPS"
+          },
+          {
+            "domain_keyword": [
+              "mcdn.bilivideo.com",
+              "mcdn.bilivideo.cn",
+              "szbdyd.com"
+            ]
+          },
+          {
+            "rule_set": [
+              "geosite-category-ads-all",
+              "geosite-spotify-ads"
+            ]
+          }
+        ],
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "clash_mode": "Global",
+        "server": "dns_proxy"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "dns_direct"
+      },
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns_direct"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "address": [
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "interval": "3m",
+      "outbounds": [
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "ai",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "fcm",
+      "type": "selector",
+      "outbounds": [
+        "✨ fcm",
+        "select",
+        "direct",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "google",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "microsoft",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "spotify",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "direct",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "tiktok",
+      "type": "selector",
+      "outbounds": [
+        "select",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "udp",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇮🇷 伊朗 01",
+        "🇮🇹 意大利 01",
+        "🇷🇺 俄罗斯 01",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇮 斯洛文尼亚 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "✨ fcm",
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "Vhk9Vt3YW7bgLJpAnKxK4w==",
+      "detour": "BWH-ShadowTLS",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "yamux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": true
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "BWH-ShadowTLS",
+      "server": "45.62.119.122",
+      "server_port": 9443,
+      "version": 3,
+      "password": "R9vnbCLnYTtAitd",
+      "tls": {
+        "enabled": true,
+        "server_name": "board.zuoye.win",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇬🇧 英国 01",
+      "type": "vless",
+      "server": "25.129.197.138",
+      "server_port": 2053,
+      "uuid": "8a07740f-b932-4372-a3a2-ed91f184cd33",
+      "tls": {
+        "enabled": true,
+        "server_name": "KhAmeneI.DPdNs.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "khamenei.dpdns.org"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      }
+    },
+    {
+      "tag": "🇬🇧 英国 02",
+      "type": "vless",
+      "server": "25.129.197.138",
+      "server_port": 2053,
+      "uuid": "8a07740f-b932-4372-a3a2-ed91f184cd33",
+      "tls": {
+        "enabled": true,
+        "server_name": "KhAmeneI.DPdNs.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "KhAmeneI.DPdNs.OrG"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      }
+    },
+    {
+      "tag": "🇬🇧 英国 03",
+      "type": "vless",
+      "server": "25.129.197.138",
+      "server_port": 2053,
+      "uuid": "8a07740f-b932-4372-a3a2-ed91f184cd33",
+      "tls": {
+        "enabled": true,
+        "server_name": "KhAmeneI.DPdNs.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "khamenei.dpdns.org"
+        },
+        "path": "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      }
+    },
+    {
+      "tag": "🇬🇧 英国 04",
+      "type": "vless",
+      "server": "25.129.197.138",
+      "server_port": 2053,
+      "uuid": "8a07740f-b932-4372-a3a2-ed91f184cd33",
+      "tls": {
+        "enabled": true,
+        "server_name": "KhAmeneI.DPdNs.OrG",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "KhAmeneI.DPdNs.OrG"
+        },
+        "path": "/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+      }
+    },
+    {
+      "tag": "🇮🇷 伊朗 01",
+      "type": "shadowsocks",
+      "server": "151.242.251.131",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj"
+    },
+    {
+      "tag": "🇮🇹 意大利 01",
+      "type": "vless",
+      "server": "5.39.253.14",
+      "server_port": 443,
+      "uuid": "db912ae7-7c2e-4777-897c-c49201e48cb9",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "VRZ6ZwSsMA9K5f7aoJ9KvQgQ4xoSaF792mcNbeh-TQ4",
+          "short_id": "f12d61f4"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇷🇺 俄罗斯 01",
+      "type": "vless",
+      "server": "217.16.16.251",
+      "server_port": 8443,
+      "uuid": "d63129ab-04a5-4797-8a70-84f4ab610ca9",
+      "tls": {
+        "enabled": true,
+        "server_name": "eh.vk.vom",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "bPN2gQ-96uG3DZONnduotvwViMDsUsN2XZnRkzXcMxk",
+          "short_id": "edc87d796657fbe5"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "shadowsocks",
+      "server": "68.183.227.4",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "tag": "🇸🇬 新加坡 02",
+      "type": "vless",
+      "server": "146.190.89.69",
+      "server_port": 25863,
+      "uuid": "58f206da-752d-4750-a2ac-b72d0cab8032",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "LLou1BsPSrrNXOJOb7-YZ159F_MAdrTSmP8loWG6GhE"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇸🇮 斯洛文尼亚 01",
+      "type": "vless",
+      "server": "45.144.52.37",
+      "server_port": 443,
+      "uuid": "d684cb56-e4b8-4453-8a7b-a1ad8c81935a",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi.reality.tv123.ru",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "cloudflare.182682.xyz",
+      "server_port": 443,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
+      "tls": {
+        "enabled": true,
+        "server_name": "l.ayovo.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "l.ayovo.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vless",
+      "server": "104.18.185.26",
+      "server_port": 443,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
+      "tls": {
+        "enabled": true,
+        "server_name": "l.ayovo.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "l.ayovo.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vless",
+      "server": "104.17.25.173",
+      "server_port": 443,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
+      "tls": {
+        "enabled": true,
+        "server_name": "l.ayovo.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "l.ayovo.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vless",
+      "server": "142.91.106.176",
+      "server_port": 443,
+      "uuid": "a11ab9c5-4155-430b-9efc-7a7122531382",
+      "tls": {
+        "enabled": true,
+        "server_name": "japan.geodema.network",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+          "short_id": "1ed136481e0ede74"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "tag": "🇻🇳 越南 01",
+      "type": "shadowsocks",
+      "server": "103.186.154.219",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 02",
+      "type": "shadowsocks",
+      "server": "103.186.154.47",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 03",
+      "type": "shadowsocks",
+      "server": "103.186.155.65",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 04",
+      "type": "shadowsocks",
+      "server": "103.186.155.142",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 05",
+      "type": "shadowsocks",
+      "server": "103.186.155.143",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 06",
+      "type": "shadowsocks",
+      "server": "103.186.155.58",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 07",
+      "type": "shadowsocks",
+      "server": "103.186.155.78",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 08",
+      "type": "shadowsocks",
+      "server": "103.186.154.176",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 09",
+      "type": "shadowsocks",
+      "server": "103.186.154.61",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    },
+    {
+      "tag": "🇻🇳 越南 10",
+      "type": "shadowsocks",
+      "server": "103.186.154.24",
+      "server_port": 38388,
+      "method": "aes-256-cfb",
+      "password": "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "action": "resolve",
+        "strategy": "ipv4_only"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
+      },
+      {
+        "rule_set": [
+          "geosite-category-ai-!cn"
+        ],
+        "outbound": "ai"
+      },
+      {
+        "rule_set": [
+          "geosite-googlefcm"
+        ],
+        "outbound": "fcm"
+      },
+      {
+        "rule_set": [
+          "geosite-google",
+          "geoip-google"
+        ],
+        "outbound": "google"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
+              "autopatchhk.yuanshen.com",
+              "autopatchos.starrails.com",
+              "autopatchos.zenlesszonezero.com"
+            ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
+          }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "domain_keyword": [
+          "hoyoverse.com"
+        ],
+        "outbound": "select"
+      },
+      {
+        "rule_set": [
+          "geosite-microsoft"
+        ],
+        "outbound": "microsoft"
+      },
+      {
+        "rule_set": [
+          "geosite-spotify"
+        ],
+        "outbound": "spotify"
+      },
+      {
+        "rule_set": [
+          "geosite-tiktok"
+        ],
+        "outbound": "tiktok"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "rule_set": [
+              "geosite-cn",
+              "geoip-cn"
+            ]
+          }
+        ],
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geoip-cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geoip-google",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ads-all",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-ai-!cn",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-google",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-googlefcm",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-microsoft",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-spotify-ads",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify-ads.srs",
+        "download_detour": "select"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-tiktok",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
+        "download_detour": "select"
+      }
+    ],
+    "final": "select",
+    "default_domain_resolver": {
+      "server": "dns_direct",
+      "strategy": "ipv4_only"
+    },
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://ghfast.top/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
+    }
+  }
+}
