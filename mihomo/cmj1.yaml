@@ -88,7 +88,6 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 01", server: "104.16.250.22", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}}, udp: true, servername: "l.ayovo.netlib.re"}
 - {name: "🇯🇵 日本 01", server: "162.159.45.232", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "l.ayovo.netlib.re"}
 proxy-groups:
 - name: "PROXY"
@@ -96,7 +95,6 @@ proxy-groups:
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "AUTO"
   type: "url-test"
@@ -105,14 +103,12 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "FCM"
   type: "select"
@@ -121,7 +117,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "GOOGLE"
   type: "select"
@@ -129,7 +124,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "HOYO"
   type: "select"
@@ -137,7 +131,6 @@ proxy-groups:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "MICROSOFT"
   type: "select"
@@ -145,7 +138,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "SPOTIFY"
   type: "select"
@@ -153,14 +145,12 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 - name: "UDP"
   type: "select"
@@ -168,7 +158,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
