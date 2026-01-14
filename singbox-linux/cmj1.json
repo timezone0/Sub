@@ -83,8 +83,8 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -94,8 +94,8 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -105,8 +105,8 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,8 +118,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -130,8 +130,8 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -142,8 +142,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -154,8 +154,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -166,8 +166,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -177,8 +177,8 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -189,8 +189,8 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01"
+        "🇭🇰 香港 01",
+        "🇯🇵 日本 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -248,6 +248,29 @@
       }
     },
     {
+      "tag": "🇭🇰 香港 01",
+      "type": "vless",
+      "server": "104.16.250.22",
+      "server_port": 443,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
+      "tls": {
+        "enabled": true,
+        "server_name": "l.ayovo.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "l.ayovo.netlib.re"
+        },
+        "path": "/"
+      }
+    },
+    {
       "tag": "🇯🇵 日本 01",
       "type": "vless",
       "server": "162.159.45.232",
@@ -270,20 +293,6 @@
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560,
         "path": "/"
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "151.101.3.8",
-      "server_port": 80,
-      "uuid": "dd0cfef0-fda9-47ec-8a65-49d7bc004f82",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn.global.ssl.fastly.net"
-        },
-        "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN"
       }
     }
   ],
