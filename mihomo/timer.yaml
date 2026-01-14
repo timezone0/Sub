@@ -26,6 +26,7 @@ sniffer:
       ports:
       - 80
       - "8080-8880"
+      override-destination: true
     TLS:
       ports:
       - 443
@@ -49,6 +50,9 @@ dns:
   ipv6: false
   enhanced-mode: "fake-ip"
   fake-ip-range: "198.18.0.1/16"
+  fake-ip-filter:
+  - "geosite:cn"
+  - "geosite:private"
   respect-rules: true
   default-nameserver:
   - "https://223.5.5.5/dns-query"
@@ -230,6 +234,31 @@ proxy-groups:
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
   - "🇺🇸 美国 04"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇭🇰 香港 04"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇨🇳 台湾 03"
+  - "🇨🇳 台湾 04"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇯🇵 日本 04"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇸🇬 新加坡 03"
+  - "🇸🇬 新加坡 04"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
 - name: "MICROSOFT"
   type: "select"
   proxies:
@@ -307,8 +336,8 @@ proxy-groups:
 - name: "UDP"
   type: "select"
   proxies:
-  - "DIRECT"
   - "PROXY"
+  - "DIRECT"
   - "🇭🇰 香港 01"
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
@@ -331,15 +360,20 @@ proxy-groups:
   - "🇺🇸 美国 04"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
-- "NETWORK,udp,UDP"
+- "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+- "DST-PORT,853,REJECT"
 - "GEOSITE,CATEGORY-AI-!CN,AI"
 - "GEOSITE,GOOGLEFCM,FCM"
 - "GEOSITE,GOOGLE,GOOGLE"
 - "GEOIP,GOOGLE,GOOGLE"
+- "DOMAIN-KEYWORD,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.starrails.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606/21101,HOYO"
 - "GEOSITE,HOYOVERSE,PROXY"
-- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,PROXY"
-- "DOMAIN-KEYWORD,autopatchos.starrails.com,PROXY"
-- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,PROXY"
 - "GEOSITE,MICROSOFT,MICROSOFT"
 - "GEOSITE,SPOTIFY,SPOTIFY"
 - "GEOSITE,TIKTOK,TIKTOK"
@@ -347,4 +381,5 @@ rules:
 - "GEOIP,PRIVATE,DIRECT,no-resolve"
 - "GEOSITE,CN,DIRECT"
 - "GEOIP,CN,DIRECT"
+- "NETWORK,udp,UDP"
 - "MATCH,PROXY"
