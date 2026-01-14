@@ -16,8 +16,7 @@
       {
         "tag": "dns_fakeip",
         "type": "fakeip",
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
+        "inet4_range": "198.18.0.0/15"
       }
     ],
     "rules": [
@@ -37,14 +36,6 @@
         "action": "reject"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "dns_fakeip",
-        "rewrite_ttl": 1
-      },
-      {
         "clash_mode": "Global",
         "server": "dns_proxy"
       },
@@ -57,6 +48,14 @@
           "geosite-cn"
         ],
         "server": "dns_direct"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
       }
     ],
     "strategy": "ipv4_only",
@@ -66,8 +65,7 @@
     {
       "type": "tun",
       "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.18.0.1/30"
       ],
       "auto_route": true,
       "auto_redirect": true,
@@ -323,6 +321,86 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇨🇳 台湾 08",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇸🇬 新加坡 06",
+        "🇸🇬 新加坡 07",
+        "🇸🇬 新加坡 08",
+        "🇸🇬 新加坡 09",
+        "🇸🇬 新加坡 10",
+        "🇸🇬 新加坡 11",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇯🇵 日本 10",
+        "🇯🇵 日本 11",
+        "🇯🇵 日本 12",
+        "🇯🇵 日本 13",
+        "🇯🇵 日本 14",
+        "🇯🇵 日本 15",
+        "🇯🇵 日本 16",
+        "🇯🇵 日本 17",
+        "🇯🇵 日本 18",
+        "🇯🇵 日本 19",
+        "🇯🇵 日本 20",
+        "🇯🇵 日本 21",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇭🇰 香港 13",
+        "🇭🇰 香港 14",
+        "🇭🇰 香港 15",
+        "🇭🇰 香港 16",
+        "🇭🇰 香港 17",
+        "🇭🇰 香港 18",
+        "🇭🇰 香港 19",
+        "🇭🇰 香港 20"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇨🇳 台湾 03",
@@ -720,8 +798,8 @@
       "tag": "udp",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select",
+        "direct",
         "🇨🇳 台湾 01",
         "🇨🇳 台湾 02",
         "🇨🇳 台湾 03",
@@ -1543,12 +1621,38 @@
         "action": "sniff"
       },
       {
-        "protocol": "dns",
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
         "action": "hijack-dns"
       },
       {
-        "action": "resolve",
-        "strategy": "ipv4_only"
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": "stun"
+          }
+        ],
+        "action": "reject"
       },
       {
         "clash_mode": "Global",
@@ -1559,10 +1663,8 @@
         "outbound": "direct"
       },
       {
-        "network": [
-          "udp"
-        ],
-        "outbound": "udp"
+        "action": "resolve",
+        "strategy": "ipv4_only"
       },
       {
         "rule_set": [
@@ -1588,17 +1690,30 @@
         "mode": "or",
         "rules": [
           {
-            "rule_set": [
-              "geosite-hoyoverse"
-            ]
-          },
-          {
             "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
               "autopatchhk.yuanshen.com",
               "autopatchos.starrails.com",
               "autopatchos.zenlesszonezero.com"
             ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
           }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "rule_set": [
+          "geosite-hoyoverse"
         ],
         "outbound": "select"
       },
@@ -1625,9 +1740,6 @@
         "mode": "or",
         "rules": [
           {
-            "ip_is_private": true
-          },
-          {
             "rule_set": [
               "geosite-cn",
               "geoip-cn"
@@ -1635,6 +1747,12 @@
           }
         ],
         "outbound": "direct"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
       }
     ],
     "rule_set": [
@@ -1643,77 +1761,77 @@
         "tag": "geoip-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-hoyoverse",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       }
     ],
     "final": "select",

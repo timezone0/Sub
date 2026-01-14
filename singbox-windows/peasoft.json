@@ -16,8 +16,7 @@
       {
         "tag": "dns_fakeip",
         "type": "fakeip",
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
+        "inet4_range": "198.18.0.0/15"
       }
     ],
     "rules": [
@@ -37,14 +36,6 @@
         "action": "reject"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "dns_fakeip",
-        "rewrite_ttl": 1
-      },
-      {
         "clash_mode": "Global",
         "server": "dns_proxy"
       },
@@ -57,6 +48,14 @@
           "geosite-cn"
         ],
         "server": "dns_direct"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
       }
     ],
     "strategy": "ipv4_only",
@@ -66,8 +65,7 @@
     {
       "type": "tun",
       "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.18.0.1/30"
       ],
       "auto_route": true,
       "strict_route": true
@@ -796,6 +794,244 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇭🇰 香港 11",
+        "🇭🇰 香港 12",
+        "🇭🇰 香港 13",
+        "🇭🇰 香港 14",
+        "🇭🇰 香港 15",
+        "🇭🇰 香港 16",
+        "🇭🇰 香港 17",
+        "🇭🇰 香港 18",
+        "🇭🇰 香港 19",
+        "🇭🇰 香港 20",
+        "🇭🇰 香港 21",
+        "🇭🇰 香港 22",
+        "🇭🇰 香港 23",
+        "🇭🇰 香港 24",
+        "🇭🇰 香港 25",
+        "🇭🇰 香港 26",
+        "🇭🇰 香港 27",
+        "🇭🇰 香港 28",
+        "🇭🇰 香港 29",
+        "🇭🇰 香港 30",
+        "🇭🇰 香港 31",
+        "🇭🇰 香港 32",
+        "🇭🇰 香港 33",
+        "🇭🇰 香港 34",
+        "🇭🇰 香港 35",
+        "🇭🇰 香港 36",
+        "🇭🇰 香港 37",
+        "🇭🇰 香港 38",
+        "🇭🇰 香港 39",
+        "🇭🇰 香港 40",
+        "🇭🇰 香港 41",
+        "🇭🇰 香港 42",
+        "🇭🇰 香港 43",
+        "🇭🇰 香港 44",
+        "🇭🇰 香港 45",
+        "🇭🇰 香港 46",
+        "🇭🇰 香港 47",
+        "🇭🇰 香港 48",
+        "🇭🇰 香港 49",
+        "🇭🇰 香港 50",
+        "🇭🇰 香港 51",
+        "🇭🇰 香港 52",
+        "🇭🇰 香港 53",
+        "🇭🇰 香港 54",
+        "🇭🇰 香港 55",
+        "🇭🇰 香港 56",
+        "🇭🇰 香港 57",
+        "🇭🇰 香港 58",
+        "🇭🇰 香港 59",
+        "🇭🇰 香港 60",
+        "🇭🇰 香港 61",
+        "🇭🇰 香港 62",
+        "🇭🇰 香港 63",
+        "🇭🇰 香港 64",
+        "🇭🇰 香港 65",
+        "🇭🇰 香港 66",
+        "🇭🇰 香港 67",
+        "🇭🇰 香港 68",
+        "🇭🇰 香港 69",
+        "🇭🇰 香港 70",
+        "🇭🇰 香港 71",
+        "🇭🇰 香港 72",
+        "🇭🇰 香港 73",
+        "🇭🇰 香港 74",
+        "🇭🇰 香港 75",
+        "🇭🇰 香港 76",
+        "🇭🇰 香港 77",
+        "🇭🇰 香港 78",
+        "🇭🇰 香港 79",
+        "🇭🇰 香港 80",
+        "🇭🇰 香港 81",
+        "🇭🇰 香港 82",
+        "🇭🇰 香港 83",
+        "🇭🇰 香港 84",
+        "🇭🇰 香港 85",
+        "🇭🇰 香港 86",
+        "🇭🇰 香港 87",
+        "🇭🇰 香港 88",
+        "🇭🇰 香港 89",
+        "🇭🇰 香港 90",
+        "🇭🇰 香港 91",
+        "🇭🇰 香港 92",
+        "🇭🇰 香港 93",
+        "🇭🇰 香港 94",
+        "🇭🇰 香港 95",
+        "🇭🇰 香港 96",
+        "🇭🇰 香港 97",
+        "🇭🇰 香港 98",
+        "🇭🇰 香港 99",
+        "🇭🇰 香港 100",
+        "🇭🇰 香港 101",
+        "🇭🇰 香港 102",
+        "🇭🇰 香港 103",
+        "🇭🇰 香港 104",
+        "🇭🇰 香港 105",
+        "🇭🇰 香港 106",
+        "🇭🇰 香港 107",
+        "🇭🇰 香港 108",
+        "🇭🇰 香港 109",
+        "🇭🇰 香港 110",
+        "🇭🇰 香港 111",
+        "🇭🇰 香港 112",
+        "🇭🇰 香港 113",
+        "🇭🇰 香港 114",
+        "🇭🇰 香港 115",
+        "🇭🇰 香港 116",
+        "🇭🇰 香港 117",
+        "🇭🇰 香港 118",
+        "🇭🇰 香港 119",
+        "🇭🇰 香港 120",
+        "🇭🇰 香港 121",
+        "🇭🇰 香港 122",
+        "🇭🇰 香港 123",
+        "🇭🇰 香港 124",
+        "🇭🇰 香港 125",
+        "🇭🇰 香港 126",
+        "🇭🇰 香港 127",
+        "🇭🇰 香港 128",
+        "🇭🇰 香港 129",
+        "🇭🇰 香港 130",
+        "🇭🇰 香港 131",
+        "🇭🇰 香港 132",
+        "🇭🇰 香港 133",
+        "🇭🇰 香港 134",
+        "🇭🇰 香港 135",
+        "🇭🇰 香港 136",
+        "🇭🇰 香港 137",
+        "🇭🇰 香港 138",
+        "🇭🇰 香港 139",
+        "🇭🇰 香港 140",
+        "🇭🇰 香港 141",
+        "🇭🇰 香港 142",
+        "🇭🇰 香港 143",
+        "🇭🇰 香港 144",
+        "🇭🇰 香港 145",
+        "🇭🇰 香港 146",
+        "🇭🇰 香港 147",
+        "🇭🇰 香港 148",
+        "🇭🇰 香港 149",
+        "🇭🇰 香港 150",
+        "🇭🇰 香港 151",
+        "🇭🇰 香港 152",
+        "🇭🇰 香港 153",
+        "🇭🇰 香港 154",
+        "🇭🇰 香港 155",
+        "🇭🇰 香港 156",
+        "🇭🇰 香港 157",
+        "🇭🇰 香港 158",
+        "🇭🇰 香港 159",
+        "🇭🇰 香港 160",
+        "🇭🇰 香港 161",
+        "🇭🇰 香港 162",
+        "🇭🇰 香港 163",
+        "🇭🇰 香港 164",
+        "🇭🇰 香港 165",
+        "🇭🇰 香港 166",
+        "🇭🇰 香港 167",
+        "🇭🇰 香港 168",
+        "🇭🇰 香港 169",
+        "🇭🇰 香港 170",
+        "🇭🇰 香港 171",
+        "🇭🇰 香港 172",
+        "🇭🇰 香港 173",
+        "🇭🇰 香港 174",
+        "🇭🇰 香港 175",
+        "🇭🇰 香港 176",
+        "🇭🇰 香港 177",
+        "🇭🇰 香港 178",
+        "🇭🇰 香港 179",
+        "🇭🇰 香港 180",
+        "🇭🇰 香港 181",
+        "🇭🇰 香港 182",
+        "🇭🇰 香港 183",
+        "🇭🇰 香港 184",
+        "🇭🇰 香港 185",
+        "🇭🇰 香港 186",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇺🇸 美国 11",
+        "🇺🇸 美国 12",
+        "🇺🇸 美国 13",
+        "🇺🇸 美国 14",
+        "🇺🇸 美国 15",
+        "🇺🇸 美国 16",
+        "🇺🇸 美国 17",
+        "🇺🇸 美国 18",
+        "🇺🇸 美国 19",
+        "🇺🇸 美国 20",
+        "🇺🇸 美国 21",
+        "🇺🇸 美国 22",
+        "🇺🇸 美国 23",
+        "🇺🇸 美国 24",
+        "🇺🇸 美国 25",
+        "🇺🇸 美国 26",
+        "🇺🇸 美国 27",
+        "🇺🇸 美国 28",
+        "🇺🇸 美国 29",
+        "🇮🇳 印度 01",
+        "🇰🇷 韩国 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 03",
+        "🇩🇪 德国 04",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -1983,8 +2219,8 @@
       "tag": "udp",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select",
+        "direct",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -5932,12 +6168,38 @@
         "action": "sniff"
       },
       {
-        "protocol": "dns",
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
         "action": "hijack-dns"
       },
       {
-        "action": "resolve",
-        "strategy": "ipv4_only"
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": "stun"
+          }
+        ],
+        "action": "reject"
       },
       {
         "clash_mode": "Global",
@@ -5948,10 +6210,8 @@
         "outbound": "direct"
       },
       {
-        "network": [
-          "udp"
-        ],
-        "outbound": "udp"
+        "action": "resolve",
+        "strategy": "ipv4_only"
       },
       {
         "rule_set": [
@@ -5977,17 +6237,30 @@
         "mode": "or",
         "rules": [
           {
-            "rule_set": [
-              "geosite-hoyoverse"
-            ]
-          },
-          {
             "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
               "autopatchhk.yuanshen.com",
               "autopatchos.starrails.com",
               "autopatchos.zenlesszonezero.com"
             ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
           }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "rule_set": [
+          "geosite-hoyoverse"
         ],
         "outbound": "select"
       },
@@ -6014,9 +6287,6 @@
         "mode": "or",
         "rules": [
           {
-            "ip_is_private": true
-          },
-          {
             "rule_set": [
               "geosite-cn",
               "geoip-cn"
@@ -6024,6 +6294,12 @@
           }
         ],
         "outbound": "direct"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
       }
     ],
     "rule_set": [
@@ -6032,77 +6308,77 @@
         "tag": "geoip-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-hoyoverse",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       }
     ],
     "final": "select",

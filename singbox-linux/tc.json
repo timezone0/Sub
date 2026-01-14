@@ -16,8 +16,7 @@
       {
         "tag": "dns_fakeip",
         "type": "fakeip",
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
+        "inet4_range": "198.18.0.0/15"
       }
     ],
     "rules": [
@@ -37,14 +36,6 @@
         "action": "reject"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "dns_fakeip",
-        "rewrite_ttl": 1
-      },
-      {
         "clash_mode": "Global",
         "server": "dns_proxy"
       },
@@ -57,6 +48,14 @@
           "geosite-cn"
         ],
         "server": "dns_direct"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
       }
     ],
     "strategy": "ipv4_only",
@@ -66,8 +65,7 @@
     {
       "type": "tun",
       "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.18.0.1/30"
       ],
       "auto_route": true,
       "auto_redirect": true,
@@ -311,6 +309,82 @@
         "✨ fcm",
         "select",
         "direct",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇭🇰 香港 07",
+        "🇭🇰 香港 08",
+        "🇭🇰 香港 09",
+        "🇭🇰 香港 10",
+        "🇸🇬 新加坡 01",
+        "🇸🇬 新加坡 02",
+        "🇸🇬 新加坡 03",
+        "🇸🇬 新加坡 04",
+        "🇸🇬 新加坡 05",
+        "🇸🇬 新加坡 06",
+        "🇸🇬 新加坡 07",
+        "🇸🇬 新加坡 08",
+        "🇸🇬 新加坡 09",
+        "🇸🇬 新加坡 10",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02",
+        "🇯🇵 日本 03",
+        "🇯🇵 日本 04",
+        "🇯🇵 日本 05",
+        "🇯🇵 日本 06",
+        "🇯🇵 日本 07",
+        "🇯🇵 日本 08",
+        "🇯🇵 日本 09",
+        "🇯🇵 日本 10",
+        "🇨🇳 台湾 01",
+        "🇨🇳 台湾 02",
+        "🇨🇳 台湾 03",
+        "🇨🇳 台湾 04",
+        "🇨🇳 台湾 05",
+        "🇨🇳 台湾 06",
+        "🇨🇳 台湾 07",
+        "🇰🇷 韩国 01",
+        "🇰🇷 韩国 02",
+        "🇰🇷 韩国 03",
+        "🇰🇷 韩国 04",
+        "🇰🇷 韩国 05",
+        "🇰🇷 韩国 06",
+        "🇰🇷 韩国 07",
+        "🇰🇷 韩国 08",
+        "🇰🇷 韩国 09",
+        "🇰🇷 韩国 10",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇺🇸 美国 07",
+        "🇺🇸 美国 08",
+        "🇺🇸 美国 09",
+        "🇺🇸 美国 10",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇬🇧 英国 04",
+        "🇬🇧 英国 05",
+        "🇬🇧 英国 06",
+        "🇬🇧 英国 07",
+        "🇬🇧 英国 08",
+        "🇬🇧 英国 09",
+        "🇬🇧 英国 10"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -688,8 +762,8 @@
       "tag": "udp",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select",
+        "direct",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
         "🇭🇰 香港 03",
@@ -795,7 +869,7 @@
       "type": "vless",
       "server": "43.161.222.233",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -821,7 +895,7 @@
       "type": "vless",
       "server": "149.104.31.235",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -847,7 +921,7 @@
       "type": "vless",
       "server": "149.104.30.56",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -873,7 +947,7 @@
       "type": "vless",
       "server": "83.229.121.12",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -899,7 +973,7 @@
       "type": "vless",
       "server": "103.30.78.94",
       "server_port": 555,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -925,7 +999,7 @@
       "type": "vless",
       "server": "154.64.251.12",
       "server_port": 442,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -951,7 +1025,7 @@
       "type": "vless",
       "server": "47.239.69.137",
       "server_port": 8440,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -977,7 +1051,7 @@
       "type": "vless",
       "server": "8.223.63.150",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1003,7 +1077,7 @@
       "type": "vless",
       "server": "206.237.8.183",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1029,7 +1103,7 @@
       "type": "vless",
       "server": "119.8.29.112",
       "server_port": 32389,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1055,7 +1129,7 @@
       "type": "vless",
       "server": "27.50.48.142",
       "server_port": 2083,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1081,7 +1155,7 @@
       "type": "vless",
       "server": "27.50.48.59",
       "server_port": 2096,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1107,7 +1181,7 @@
       "type": "vless",
       "server": "27.50.48.72",
       "server_port": 2087,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1133,7 +1207,7 @@
       "type": "vless",
       "server": "27.50.48.29",
       "server_port": 2096,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1159,7 +1233,7 @@
       "type": "vless",
       "server": "27.50.48.50",
       "server_port": 2053,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1185,7 +1259,7 @@
       "type": "vless",
       "server": "92.243.74.4",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1211,7 +1285,7 @@
       "type": "vless",
       "server": "47.236.12.110",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1237,7 +1311,7 @@
       "type": "vless",
       "server": "43.128.111.158",
       "server_port": 4439,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1263,7 +1337,7 @@
       "type": "vless",
       "server": "27.50.48.69",
       "server_port": 2083,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1289,7 +1363,7 @@
       "type": "vless",
       "server": "134.185.88.235",
       "server_port": 2096,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1315,7 +1389,7 @@
       "type": "vless",
       "server": "8.209.255.241",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1341,7 +1415,7 @@
       "type": "vless",
       "server": "8.209.231.19",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1367,7 +1441,7 @@
       "type": "vless",
       "server": "35.78.229.176",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1393,7 +1467,7 @@
       "type": "vless",
       "server": "45.66.130.58",
       "server_port": 51002,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1419,7 +1493,7 @@
       "type": "vless",
       "server": "176.119.150.38",
       "server_port": 44388,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1445,7 +1519,7 @@
       "type": "vless",
       "server": "153.121.45.101",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1471,7 +1545,7 @@
       "type": "vless",
       "server": "43.165.188.165",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1497,7 +1571,7 @@
       "type": "vless",
       "server": "140.245.82.206",
       "server_port": 4433,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1523,7 +1597,7 @@
       "type": "vless",
       "server": "64.110.104.30",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1549,7 +1623,7 @@
       "type": "vless",
       "server": "152.70.101.24",
       "server_port": 16073,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1575,7 +1649,7 @@
       "type": "vless",
       "server": "203.69.248.40",
       "server_port": 10443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1601,7 +1675,7 @@
       "type": "vless",
       "server": "220.128.110.108",
       "server_port": 43,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1627,7 +1701,7 @@
       "type": "vless",
       "server": "60.248.139.106",
       "server_port": 10428,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1653,7 +1727,7 @@
       "type": "vless",
       "server": "114.32.9.249",
       "server_port": 16443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1679,7 +1753,7 @@
       "type": "vless",
       "server": "60.248.139.106",
       "server_port": 32770,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1705,7 +1779,7 @@
       "type": "vless",
       "server": "114.32.9.249",
       "server_port": 51443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1731,7 +1805,7 @@
       "type": "vless",
       "server": "220.130.58.230",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1757,7 +1831,7 @@
       "type": "vless",
       "server": "123.111.169.70",
       "server_port": 2053,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1783,7 +1857,7 @@
       "type": "vless",
       "server": "123.111.169.70",
       "server_port": 2096,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1809,7 +1883,7 @@
       "type": "vless",
       "server": "123.111.169.70",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1835,7 +1909,7 @@
       "type": "vless",
       "server": "182.210.59.164",
       "server_port": 50001,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1861,7 +1935,7 @@
       "type": "vless",
       "server": "1.251.255.16",
       "server_port": 50001,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1887,7 +1961,7 @@
       "type": "vless",
       "server": "59.16.213.86",
       "server_port": 12001,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1913,7 +1987,7 @@
       "type": "vless",
       "server": "59.28.117.87",
       "server_port": 12306,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1939,7 +2013,7 @@
       "type": "vless",
       "server": "115.94.122.118",
       "server_port": 50001,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1965,7 +2039,7 @@
       "type": "vless",
       "server": "59.16.86.130",
       "server_port": 32303,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -1991,7 +2065,7 @@
       "type": "vless",
       "server": "119.192.158.53",
       "server_port": 32779,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2017,7 +2091,7 @@
       "type": "vless",
       "server": "154.26.184.194",
       "server_port": 4433,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2043,7 +2117,7 @@
       "type": "vless",
       "server": "144.34.230.39",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2069,7 +2143,7 @@
       "type": "vless",
       "server": "172.64.229.220",
       "server_port": 2096,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2095,7 +2169,7 @@
       "type": "vless",
       "server": "144.34.228.162",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2121,7 +2195,7 @@
       "type": "vless",
       "server": "192.227.237.81",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2147,7 +2221,7 @@
       "type": "vless",
       "server": "80.209.242.177",
       "server_port": 2053,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2173,7 +2247,7 @@
       "type": "vless",
       "server": "154.26.186.159",
       "server_port": 444,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2199,7 +2273,7 @@
       "type": "vless",
       "server": "107.174.198.228",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2225,7 +2299,7 @@
       "type": "vless",
       "server": "172.66.42.200",
       "server_port": 2087,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2251,7 +2325,7 @@
       "type": "vless",
       "server": "50.228.203.26",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2277,7 +2351,7 @@
       "type": "vless",
       "server": "57.129.137.207",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2303,7 +2377,7 @@
       "type": "vless",
       "server": "57.129.137.212",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2329,7 +2403,7 @@
       "type": "vless",
       "server": "51.89.22.80",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2355,7 +2429,7 @@
       "type": "vless",
       "server": "57.129.137.215",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2381,7 +2455,7 @@
       "type": "vless",
       "server": "57.129.137.198",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2407,7 +2481,7 @@
       "type": "vless",
       "server": "57.129.137.57",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2433,7 +2507,7 @@
       "type": "vless",
       "server": "78.129.253.144",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2459,7 +2533,7 @@
       "type": "vless",
       "server": "57.129.131.164",
       "server_port": 8443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2485,7 +2559,7 @@
       "type": "vless",
       "server": "57.129.137.223",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2511,7 +2585,7 @@
       "type": "vless",
       "server": "57.129.137.49",
       "server_port": 443,
-      "uuid": "69671ed8-282b-99f2-a6f8-00c690506ebe",
+      "uuid": "696727da-103f-eb6d-7887-e37ef00f13da",
       "tls": {
         "enabled": true,
         "server_name": "ss.sooos.eu.cc",
@@ -2539,12 +2613,38 @@
         "action": "sniff"
       },
       {
-        "protocol": "dns",
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
         "action": "hijack-dns"
       },
       {
-        "action": "resolve",
-        "strategy": "ipv4_only"
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": "stun"
+          }
+        ],
+        "action": "reject"
       },
       {
         "clash_mode": "Global",
@@ -2555,10 +2655,8 @@
         "outbound": "direct"
       },
       {
-        "network": [
-          "udp"
-        ],
-        "outbound": "udp"
+        "action": "resolve",
+        "strategy": "ipv4_only"
       },
       {
         "rule_set": [
@@ -2584,17 +2682,30 @@
         "mode": "or",
         "rules": [
           {
-            "rule_set": [
-              "geosite-hoyoverse"
-            ]
-          },
-          {
             "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
               "autopatchhk.yuanshen.com",
               "autopatchos.starrails.com",
               "autopatchos.zenlesszonezero.com"
             ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
           }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "rule_set": [
+          "geosite-hoyoverse"
         ],
         "outbound": "select"
       },
@@ -2621,9 +2732,6 @@
         "mode": "or",
         "rules": [
           {
-            "ip_is_private": true
-          },
-          {
             "rule_set": [
               "geosite-cn",
               "geoip-cn"
@@ -2631,6 +2739,12 @@
           }
         ],
         "outbound": "direct"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
       }
     ],
     "rule_set": [
@@ -2639,77 +2753,77 @@
         "tag": "geoip-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-hoyoverse",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       }
     ],
     "final": "select",

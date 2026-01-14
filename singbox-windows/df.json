@@ -16,8 +16,7 @@
       {
         "tag": "dns_fakeip",
         "type": "fakeip",
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
+        "inet4_range": "198.18.0.0/15"
       }
     ],
     "rules": [
@@ -37,14 +36,6 @@
         "action": "reject"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "dns_fakeip",
-        "rewrite_ttl": 1
-      },
-      {
         "clash_mode": "Global",
         "server": "dns_proxy"
       },
@@ -57,6 +48,14 @@
           "geosite-cn"
         ],
         "server": "dns_direct"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "dns_fakeip",
+        "rewrite_ttl": 1
       }
     ],
     "strategy": "ipv4_only",
@@ -66,8 +65,7 @@
     {
       "type": "tun",
       "address": [
-        "172.18.0.1/30",
-        "fdfe:dcba:9876::1/126"
+        "172.18.0.1/30"
       ],
       "auto_route": true,
       "strict_route": true
@@ -84,28 +82,28 @@
       "outbounds": [
         "auto",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -115,28 +113,28 @@
       "interval": "3m",
       "outbounds": [
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -146,28 +144,28 @@
       "outbounds": [
         "select",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -179,28 +177,60 @@
         "select",
         "direct",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select",
+        "🇹🇬 多哥 01",
+        "🇨🇳 台湾 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 03",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -211,28 +241,28 @@
         "select",
         "direct",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -243,28 +273,28 @@
         "select",
         "direct",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -275,28 +305,28 @@
         "select",
         "direct",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -306,28 +336,28 @@
       "outbounds": [
         "select",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -335,31 +365,31 @@
       "tag": "udp",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select",
+        "direct",
         "🇹🇬 多哥 01",
-        "🇹🇬 多哥 02",
-        "🇹🇬 多哥 03",
         "🇨🇳 台湾 01",
         "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02",
         "🇭🇰 香港 01",
         "🇭🇰 香港 02",
-        "🇯🇵 日本 01",
         "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇺🇸 美国 06",
         "🇩🇪 德国 01",
         "🇩🇪 德国 02",
         "🇩🇪 德国 03",
-        "🇩🇪 德国 04",
-        "🇩🇪 德国 05",
         "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
         "🇬🇧 英国 01",
         "🇬🇧 英国 02",
         "🇬🇧 英国 03",
         "🇳🇱 荷兰 01",
         "🇳🇱 荷兰 02",
-        "🇳🇱 荷兰 03",
-        "🇵🇱 波兰 01"
+        "🇸🇪 瑞典 01",
+        "🇸🇪 瑞典 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -398,56 +428,6 @@
       "type": "vless",
       "server": "cmcmcm.cf.090227.xyz",
       "server_port": 2053,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇹🇬 多哥 02",
-      "type": "vless",
-      "server": "167.17.40.28",
-      "server_port": 8443,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇹🇬 多哥 03",
-      "type": "vless",
-      "server": "195.135.253.189",
-      "server_port": 39738,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -519,35 +499,10 @@
       }
     },
     {
-      "tag": "🇸🇬 新加坡 02",
-      "type": "vless",
-      "server": "43.160.251.110",
-      "server_port": 443,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
       "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "103.69.129.71",
-      "server_port": 51198,
+      "server": "47.76.218.163",
+      "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -571,33 +526,8 @@
     {
       "tag": "🇭🇰 香港 02",
       "type": "vless",
-      "server": "8.217.191.57",
-      "server_port": 39738,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇯🇵 日本 01",
-      "type": "vless",
-      "server": "8.209.231.19",
-      "server_port": 8443,
+      "server": "47.76.227.105",
+      "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -621,7 +551,132 @@
     {
       "tag": "🇺🇸 美国 01",
       "type": "vless",
-      "server": "148.153.157.59",
+      "server": "91.239.157.92",
+      "server_port": 8443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 02",
+      "type": "vless",
+      "server": "34.136.112.104",
+      "server_port": 443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 03",
+      "type": "vless",
+      "server": "143.20.213.22",
+      "server_port": 8443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 04",
+      "type": "vless",
+      "server": "64.238.203.118",
+      "server_port": 8443,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 05",
+      "type": "vless",
+      "server": "38.244.5.27",
+      "server_port": 39738,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸 美国 06",
+      "type": "vless",
+      "server": "107.174.202.20",
       "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
@@ -646,8 +701,8 @@
     {
       "tag": "🇩🇪 德国 01",
       "type": "vless",
-      "server": "57.129.47.56",
-      "server_port": 2053,
+      "server": "37.120.186.205",
+      "server_port": 2083,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -671,8 +726,8 @@
     {
       "tag": "🇩🇪 德国 02",
       "type": "vless",
-      "server": "139.162.133.162",
-      "server_port": 11285,
+      "server": "91.107.157.253",
+      "server_port": 20531,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -696,58 +751,8 @@
     {
       "tag": "🇩🇪 德国 03",
       "type": "vless",
-      "server": "83.147.192.189",
-      "server_port": 8443,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇩🇪 德国 04",
-      "type": "vless",
-      "server": "91.108.245.163",
-      "server_port": 8443,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇩🇪 德国 05",
-      "type": "vless",
-      "server": "135.125.190.13",
-      "server_port": 8443,
+      "server": "91.107.180.122",
+      "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -771,8 +776,33 @@
     {
       "tag": "🇫🇷 法国 01",
       "type": "vless",
-      "server": "194.116.217.120",
+      "server": "51.83.45.59",
       "server_port": 2053,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇫🇷 法国 02",
+      "type": "vless",
+      "server": "141.94.70.24",
+      "server_port": 8443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -796,7 +826,7 @@
     {
       "tag": "🇬🇧 英国 01",
       "type": "vless",
-      "server": "192.0.63.78",
+      "server": "37.0.6.56",
       "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
@@ -821,7 +851,7 @@
     {
       "tag": "🇬🇧 英国 02",
       "type": "vless",
-      "server": "192.0.63.96",
+      "server": "192.0.63.25",
       "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
@@ -846,7 +876,7 @@
     {
       "tag": "🇬🇧 英国 03",
       "type": "vless",
-      "server": "37.0.6.25",
+      "server": "37.0.6.176",
       "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
@@ -871,8 +901,8 @@
     {
       "tag": "🇳🇱 荷兰 01",
       "type": "vless",
-      "server": "178.130.40.109",
-      "server_port": 8443,
+      "server": "91.132.58.85",
+      "server_port": 443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -896,8 +926,8 @@
     {
       "tag": "🇳🇱 荷兰 02",
       "type": "vless",
-      "server": "185.14.30.166",
-      "server_port": 8443,
+      "server": "45.136.125.134",
+      "server_port": 444,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -919,35 +949,35 @@
       }
     },
     {
-      "tag": "🇳🇱 荷兰 03",
+      "tag": "🇸🇪 瑞典 01",
       "type": "vless",
-      "server": "185.247.143.104",
+      "server": "109.248.163.102",
+      "server_port": 2053,
+      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
+      "tls": {
+        "enabled": true,
+        "server_name": "snippet.danfeng.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "snippet.danfeng.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇸🇪 瑞典 02",
+      "type": "vless",
+      "server": "65.21.16.186",
       "server_port": 443,
-      "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
-      "tls": {
-        "enabled": true,
-        "server_name": "snippet.danfeng.netlib.re",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "snippet.danfeng.netlib.re"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇵🇱 波兰 01",
-      "type": "vless",
-      "server": "70.34.252.113",
-      "server_port": 9443,
       "uuid": "00a85603-d8c6-437d-a8bd-ea521107bd87",
       "tls": {
         "enabled": true,
@@ -975,12 +1005,38 @@
         "action": "sniff"
       },
       {
-        "protocol": "dns",
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
         "action": "hijack-dns"
       },
       {
-        "action": "resolve",
-        "strategy": "ipv4_only"
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": "stun"
+          }
+        ],
+        "action": "reject"
       },
       {
         "clash_mode": "Global",
@@ -991,10 +1047,8 @@
         "outbound": "direct"
       },
       {
-        "network": [
-          "udp"
-        ],
-        "outbound": "udp"
+        "action": "resolve",
+        "strategy": "ipv4_only"
       },
       {
         "rule_set": [
@@ -1020,17 +1074,30 @@
         "mode": "or",
         "rules": [
           {
-            "rule_set": [
-              "geosite-hoyoverse"
-            ]
-          },
-          {
             "domain_keyword": [
+              "public-operation-hkrpg-sg.hoyoverse.com",
+              "public-operation-hk4e-sg.hoyoverse.com",
+              "public-operation-nap-sg.hoyoverse.com",
               "autopatchhk.yuanshen.com",
               "autopatchos.starrails.com",
               "autopatchos.zenlesszonezero.com"
             ]
+          },
+          {
+            "port_range": [
+              "23301:23301",
+              "22101:22102",
+              "20501:20501",
+              "21601:21606",
+              "21101:21101"
+            ]
           }
+        ],
+        "outbound": "hoyo"
+      },
+      {
+        "rule_set": [
+          "geosite-hoyoverse"
         ],
         "outbound": "select"
       },
@@ -1057,9 +1124,6 @@
         "mode": "or",
         "rules": [
           {
-            "ip_is_private": true
-          },
-          {
             "rule_set": [
               "geosite-cn",
               "geoip-cn"
@@ -1067,6 +1131,12 @@
           }
         ],
         "outbound": "direct"
+      },
+      {
+        "network": [
+          "udp"
+        ],
+        "outbound": "udp"
       }
     ],
     "rule_set": [
@@ -1075,77 +1145,77 @@
         "tag": "geoip-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geoip-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geoip/geoip-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ads-all",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ads-all.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-google",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-google.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-googlefcm",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-googlefcm.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-hoyoverse",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-microsoft",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-microsoft.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-spotify",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-spotify.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       },
       {
         "type": "remote",
         "tag": "geosite-tiktok",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-tiktok.srs",
-        "download_detour": "select"
+        "download_detour": "direct"
       }
     ],
     "final": "select",
