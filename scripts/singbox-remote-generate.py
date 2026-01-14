@@ -47,6 +47,8 @@ def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
         # 更新 selector 或 urltest 等组中的节点列表
         for outbound in target_data["outbounds"]:
             if "outbounds" in outbound:
+                if outbound["outbounds"] is None:
+                    outbound["outbounds"] = []
                 for new_outbound in new_outbounds:
                     if new_outbound["tag"] not in outbound["outbounds"]:
                         outbound["outbounds"].append(new_outbound["tag"])
