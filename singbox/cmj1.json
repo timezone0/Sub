@@ -310,15 +310,26 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "vless",
-      "server": "151.101.3.8",
-      "server_port": 80,
-      "uuid": "dd0cfef0-fda9-47ec-8a65-49d7bc004f82",
+      "server": "store.ubi.com",
+      "server_port": 443,
+      "uuid": "b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d",
+      "tls": {
+        "enabled": true,
+        "server_name": "kb.as129394.me",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "mitivpn.global.ssl.fastly.net"
+          "Host": "kb.as129394.me"
         },
-        "path": "/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN"
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
       }
     }
   ],
