@@ -6,7 +6,7 @@ import ruamel.yaml
 from ruamel.yaml.scalarstring import DoubleQuotedScalarString
 
 # 设置工作目录为脚本所在目录
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def download_yaml(url):
     try:
@@ -148,16 +148,22 @@ def save_result(config_data, result_path):
         print(f"🎃保存结果时发生未知错误：{e}")
         raise
 
-def main(url, config_path, result_path):
+def main(path_or_url, config_path, result_path):
     try:
         print(f"正在从模板加载：{config_path}")
-        print(f"正在下载 YAML 文件：{url}")
         
-        yaml_content = download_yaml(url)
+        # --- 修改部分：支持本地文件检测 ---
+        if os.path.isfile(path_or_url):
+            print(f"检测到本地文件，正在读取：{path_or_url}")
+            with open(path_or_url, "r", encoding="utf-8") as f:
+                yaml_content = f.read()
+        else:
+            print(f"正在下载 YAML 文件：{path_or_url}")
+            yaml_content = download_yaml(path_or_url)
+        # --------------------------------
+
         proxies = extract_proxies(yaml_content)
-
         config_data = load_config(config_path)
-
         updated_config = insert_proxies_to_config(config_data, proxies)
         updated_config = insert_names_into_proxy_groups(updated_config)
 
@@ -165,36 +171,15 @@ def main(url, config_path, result_path):
         print(f"✅处理完成，文件已保存至：{ os.path.abspath(result_path) }")
     except Exception as e:
         print(f"🎃执行脚本时发生错误：{e}")
-    
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="通过 URL 下载 YAML 文件并合并到本地 Mihomo 配置")
-    
-    # 将订阅链接改为可选参数 --url, 简写 -u
-    parser.add_argument(
-        "-u", "--url", 
-        required=True, 
-        help="订阅链接 (YAML 格式的 URL)"
-    )
-    
-    # 将输出路径改为可选参数 --output, 简写 -o
-    parser.add_argument(
-        "-o", "--output", 
-        required=True, 
-        help="生成后的配置文件保存路径"
-    )
-    
-    # 基础模板配置路径保持不变
-    parser.add_argument(
-        "-c", "--config", 
-        default="mihomo-config/config-android-open.yaml", 
-        help="基础模板配置文件路径 (默认: mihomo-config/config-android-open.yaml)"
-    )
+    parser = argparse.ArgumentParser(description="通过 URL 或本地文件合并到本地 Mihomo 配置")
+    parser.add_argument("-u", "--url", required=True, help="订阅链接 (URL) 或本地 YAML 文件路径")
+    parser.add_argument("-o", "--output", required=True, help="生成后的配置文件保存路径")
+    parser.add_argument("-c", "--config", default="mihomo-config/config-android-open.yaml", help="基础模板路径")
     
     args = parser.parse_args()
-
-    # 处理输出路径（现在使用 args.output）
     if not os.path.isabs(args.output):
         args.output = os.path.join(os.getcwd(), args.output)
 
-    # 传入 main 函数
     main(args.url, args.config, args.output)

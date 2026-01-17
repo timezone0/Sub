@@ -4,7 +4,7 @@ import os
 import requests
 
 # 设置工作目录为脚本所在目录
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def download_json_from_url(url):
     try:
@@ -71,40 +71,29 @@ def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
         raise
 
 def main():
-    parser = argparse.ArgumentParser(description="通过 URL 下载 JSON 并合并到本地 sing-box 配置")
-    
-    # 将 url 改为可选参数 -u/--url，设置为必填
-    parser.add_argument(
-        "-u", "--url", 
-        required=True, 
-        help="订阅链接 (JSON 格式的 URL)"
-    )
-    
-    # 将 output 改为可选参数 -o/--output，设置为必填
-    parser.add_argument(
-        "-o", "--output", 
-        required=True, 
-        help="生成后的配置文件保存路径"
-    )
-    
-    # 基础模板配置路径保持不变
-    parser.add_argument(
-        "-c", "--config", 
-        default="singbox-config/config-android-open.json", 
-        help="基础模板配置文件路径 (默认: singbox-config/config-android-open.json)"
-    )
+    parser = argparse.ArgumentParser(description="通过 URL 或本地文件合并到本地 sing-box 配置")
+    parser.add_argument("-u", "--url", required=True, help="订阅链接 (JSON URL) 或本地 JSON 文件路径")
+    parser.add_argument("-o", "--output", required=True, help="生成后的配置文件保存路径")
+    parser.add_argument("-c", "--config", default="singbox-config/config-android-open.json", help="基础模板路径")
     
     args = parser.parse_args()
 
-    # 处理输出路径，如果不是绝对路径则基于当前工作目录
     if not os.path.isabs(args.output):
         args.output = os.path.join(os.getcwd(), args.output)
 
     try:
         print(f"正在从模板加载：{args.config}")
-        print(f"正在下载订阅数据：{args.url}")
         
-        source_data = download_json_from_url(args.url)
+        # --- 修改部分：支持本地文件检测 ---
+        if os.path.isfile(args.url):
+            print(f"检测到本地文件，正在读取：{args.url}")
+            with open(args.url, "r", encoding="utf-8") as f:
+                source_data = json.load(f)
+        else:
+            print(f"正在下载订阅数据：{args.url}")
+            source_data = download_json_from_url(args.url)
+        # --------------------------------
+
         replace_outbounds_in_fixed_target(source_data, args.config, args.output)
         
     except Exception as e:

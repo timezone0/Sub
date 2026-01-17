@@ -1,33 +1,40 @@
 import csv
 import sys
 import os
+import argparse
 
 def main():
-    # 获取脚本所在目录
-    # base_dir = os.path.dirname(os.path.abspath(__file__))
+    # 创建参数解析器
+    parser = argparse.ArgumentParser(description="根据 CSV 数据和 TXT 模板生成配置文件。")
+    
+    # 定义可选参数，使用 -- 前缀
+    parser.add_argument("--csv", required=True, help="输入的 CSV 配置文件路径")
+    parser.add_argument("--txt", required=True, help="输入的模板 TXT 文件路径")
+    parser.add_argument("--output", required=True, help="生成的输出文件路径")
 
-    if len(sys.argv) != 4:
-        print("用法: python app.py <config.csv> <config.txt> <output.txt>")
-        sys.exit(1)
+    args = parser.parse_args()
 
-    # 拼接 CSV 和模板路径
-    # csv_path = os.path.join(base_dir, sys.argv[1])
-    # txt_path = os.path.join(base_dir, sys.argv[2])
-    csv_path = os.path.abspath(sys.argv[1])
-    txt_path = os.path.abspath(sys.argv[2])
-    output_path = os.path.abspath(sys.argv[3])  # 输出路径可以是任意目录
+    # 获取绝对路径
+    csv_path = os.path.abspath(args.csv)
+    txt_path = os.path.abspath(args.txt)
+    output_path = os.path.abspath(args.output)
 
+    # 检查文件是否存在
     if not os.path.exists(csv_path):
-        print(f"错误: 找不到文件 {csv_path}")
+        print(f"❌ 错误: 找不到 CSV 文件 {csv_path}")
         sys.exit(1)
     if not os.path.exists(txt_path):
-        print(f"错误: 找不到文件 {txt_path}")
+        print(f"❌ 错误: 找不到模板文件 {txt_path}")
         sys.exit(1)
 
     # 读取 CSV 文件
-    with open(csv_path, "r", encoding="utf-8") as csv_file:
-        reader = csv.DictReader(csv_file)
-        rows = list(reader)
+    try:
+        with open(csv_path, "r", encoding="utf-8") as csv_file:
+            reader = csv.DictReader(csv_file)
+            rows = list(reader)
+    except Exception as e:
+        print(f"❌ 读取 CSV 出错: {e}")
+        sys.exit(1)
 
     # 读取模板文件
     with open(txt_path, "r", encoding="utf-8") as template_file:
@@ -36,25 +43,28 @@ def main():
     # 生成结果
     output_lines = []
     for row in rows:
+        # 使用 .get() 匹配 CSV 的表头字段
         ip = (row.get("IP地址") or "0.0.0.0").strip()
         port = (row.get("端口") or "0").strip()
         name = (row.get("地区") or "未知").strip()
+        
         line = (
-            template
-            .replace("%IP%", ip)
-            .replace("%PORT%", port)
-            .replace("%NAME%", name)
+            template.replace("%IP%", ip)
+                    .replace("%PORT%", port)
+                    .replace("%NAME%", name)
         )
         output_lines.append(line)
 
     # 确保输出目录存在
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    output_dir = os.path.dirname(output_path)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
 
     # 写入输出文件
     with open(output_path, "w", encoding="utf-8") as out_file:
         out_file.write("\n".join(output_lines))
 
-    print(f"✅ 已生成 {len(output_lines)} 条记录到 {output_path}")
+    print(f"✅ 处理完成！已生成 {len(output_lines)} 条记录到: {output_path}")
 
 if __name__ == "__main__":
     main()
