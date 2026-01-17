@@ -15,10 +15,32 @@ jobs:
         with:
           ref: sub
 
-      - name: Deploy to Gist
-        uses: actions-js/push-to-gist@master
+      - name: Push Directory to Gist
+        uses: actions/github-script@v7
         with:
-          github_user_name: ${{ secrets.GIST_USERNAME }}
-          github_token: ${{ secrets.GIST_TOKEN }}
-          gist_id: ${{ secrets.GIST_ID }}
-          file_path: 'open/'
+          github-token: ${{ secrets.GIST_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const targetDir = './open';
+            const files = {};
+            const dirFiles = fs.readdirSync(targetDir);
+
+            dirFiles.forEach(fileName => {
+              const filePath = path.join(targetDir, fileName);
+              if (fs.lstatSync(filePath).isFile()) {
+                const content = fs.readFileSync(filePath, 'utf8');
+               files[fileName] = { content: content };
+              }
+            });
+
+            if (Object.keys(files).length === 0) {
+              core.setFailed("未找到可推送的文件");
+              return;
+            }
+
+            await github.rest.gists.update({
+              gist_id: '${{ secrets.GIST_ID }}',
+              files: files
+            });
+            console.log(`成功推送了 ${Object.keys(files).length} 个文件`);
