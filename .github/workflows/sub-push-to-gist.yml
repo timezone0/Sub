@@ -1,0 +1,24 @@
+name: SubAutoUpdate
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout sub branch
+        uses: actions/checkout@v4
+        with:
+          ref: sub
+
+      - name: Deploy to Gist
+        uses: actions-js/push-to-gist@master
+        with:
+          github_user_name: ${{ secrets.GIST_USERNAME }}
+          github_token: ${{ secrets.GIST_TOKEN }}
+          gist_id: ${{ secrets.GIST_ID }}
+          file_path: 'open/'
