@@ -88,14 +88,18 @@ proxies:
     min-streams: 4
     padding: true
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "5a2c16f9", sni: "snippets.kkii.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "snippets.kkii.eu.org"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇯🇵 日本 01", server: "162.159.45.232", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}}, udp: true, servername: "l.ayovo.netlib.re"}
+- {name: "🇭🇰 香港 01", server: "104.16.250.22", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "l.ayovo.netlib.re"}
+- {name: "🇭🇰 香港 02", server: "staticdelivery.nexusmods.com", port: 443, type: "vless", uuid: "b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "kb.as129394.me"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "kb.as129394.me"}
+- {name: "🇺🇸 美国 01", server: "116.80.44.144", port: 27724, type: "vless", uuid: "ebd8539d-e249-4a39-8f90-e8585e8cc35e", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w"}, client-fingerprint: "chrome", network: "tcp", udp: true, servername: "www.yahoo.co.jp"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -103,13 +107,17 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -117,48 +125,62 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "MICROSOFT"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 - name: "UDP"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇯🇵 日本 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇺🇸 美国 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
