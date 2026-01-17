@@ -1,0 +1,197 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+external-ui: "ui"
+external-ui-name: "yacd"
+external-ui-url: "https://ghfast.top/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  fake-ip-filter:
+  - "geosite:cn,private"
+  respect-rules: true
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  nameserver:
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
+- {name: "🇺🇸 美国 01", type: "vless", server: "154.17.227.127", port: 65310, uuid: "cbbae268-e129-41fa-80d5-9f115f5a0a4b", alterId: 0, cipher: "auto", udp: true, flow: "xtls-rprx-vision", tls: true, reality-opts: {public-key: "UwObpjthXR56McGdJewxXsrNYygmiPl6cZxN84OVRTY", short-id: "0c08d8ba"}, client-fingerprint: "chrome", network: "tcp", skip-cert-verify: true, servername: "gamedownloads-rockstargames-com.akamaized.net"}
+- {name: "🇸🇬 新加坡 01", type: "vless", server: "172.99.138.107", port: 65300, uuid: "cbbae268-e129-41fa-80d5-9f115f5a0a4b", alterId: 0, cipher: "auto", udp: true, flow: "xtls-rprx-vision", tls: true, reality-opts: {public-key: "UwObpjthXR56McGdJewxXsrNYygmiPl6cZxN84OVRTY", short-id: "0c08d8ba"}, client-fingerprint: "chrome", network: "tcp", skip-cert-verify: true, servername: "gamedownloads-rockstargames-com.akamaized.net"}
+- {name: "🇭🇰 香港 01", type: "vless", server: "46.3.104.171", port: 65301, uuid: "cbbae268-e129-41fa-80d5-9f115f5a0a4b", alterId: 0, cipher: "auto", udp: true, flow: "xtls-rprx-vision", tls: true, reality-opts: {public-key: "8pADMaHlmWnajzNQMpekmxc8fnWKEDH_-zm2nDio7lM", short-id: "f1fc6e76"}, client-fingerprint: "ios", network: "tcp", skip-cert-verify: true, servername: "gamedownloads-rockstargames-com.akamaized.net"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 180
+  tolerance: 50
+  proxies:
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "FCM"
+  type: "select"
+  proxies:
+  - "✨ fcm"
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "GOOGLE"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "MICROSOFT"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "SPOTIFY"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "TIKTOK"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+- name: "UDP"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇸🇬 新加坡 01"
+  - "🇭🇰 香港 01"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+- "DST-PORT,853,REJECT"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,FCM"
+- "GEOSITE,GOOGLE,GOOGLE"
+- "GEOIP,GOOGLE,GOOGLE"
+- "DOMAIN-KEYWORD,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.starrails.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606/21101,HOYO"
+- "GEOSITE,HOYOVERSE,PROXY"
+- "GEOSITE,MICROSOFT,MICROSOFT"
+- "GEOSITE,SPOTIFY,SPOTIFY"
+- "GEOSITE,TIKTOK,TIKTOK"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,CN,DIRECT"
+- "NETWORK,udp,UDP"
+- "MATCH,PROXY"

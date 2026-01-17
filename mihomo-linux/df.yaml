@@ -1,0 +1,398 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+external-ui: "ui"
+external-ui-name: "yacd"
+external-ui-url: "https://ghfast.top/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  fake-ip-filter:
+  - "geosite:cn,private"
+  respect-rules: true
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  nameserver:
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- {name: "🇹🇬 多哥 01", server: "cmcmcm.cf.090227.xyz", port: 2053, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇹🇬 多哥 02", server: "37.27.184.127", port: 2053, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇹🇬 多哥 03", server: "188.253.17.9", port: 8443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇨🇳 台湾 01", server: "saas.sin.fan", port: 2087, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇸🇬 新加坡 01", server: "cfsaas.080112.xyz", port: 2096, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇰🇷 韩国 01", server: "221.165.212.251", port: 32400, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇺🇸 美国 01", server: "47.88.106.117", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇺🇸 美国 02", server: "38.105.29.228", port: 33825, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇺🇸 美国 03", server: "104.168.248.86", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇩🇪 德国 01", server: "51.75.75.132", port: 8443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇩🇪 德国 02", server: "89.58.15.243", port: 2007, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇩🇪 德国 03", server: "162.19.246.248", port: 2053, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇩🇪 德国 04", server: "213.108.198.116", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇫🇷 法国 01", server: "141.94.207.218", port: 2053, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇫🇷 法国 02", server: "162.19.65.2", port: 8443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇬🇧 英国 01", server: "192.0.63.254", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇬🇧 英国 02", server: "192.0.54.115", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇬🇧 英国 03", server: "192.0.54.182", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇬🇧 英国 04", server: "57.128.183.6", port: 8443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇳🇱 荷兰 01", server: "185.243.112.197", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇳🇱 荷兰 02", server: "87.249.50.217", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇳🇱 荷兰 03", server: "2.59.38.185", port: 2053, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+- {name: "🇳🇱 荷兰 04", server: "81.31.245.204", port: 443, type: "vless", uuid: "00a85603-d8c6-437d-a8bd-ea521107bd87", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "random", network: "ws", ws-opts: {path: "/", headers: {Host: "snippet.danfeng.netlib.re"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "snippet.danfeng.netlib.re"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 180
+  tolerance: 50
+  proxies:
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "FCM"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "GOOGLE"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "MICROSOFT"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "SPOTIFY"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "TIKTOK"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+- name: "UDP"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇹🇬 多哥 01"
+  - "🇹🇬 多哥 02"
+  - "🇹🇬 多哥 03"
+  - "🇨🇳 台湾 01"
+  - "🇸🇬 新加坡 01"
+  - "🇰🇷 韩国 01"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇬🇧 英国 01"
+  - "🇬🇧 英国 02"
+  - "🇬🇧 英国 03"
+  - "🇬🇧 英国 04"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+- "DST-PORT,853,REJECT"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,GOOGLEFCM,FCM"
+- "GEOSITE,GOOGLE,GOOGLE"
+- "GEOIP,GOOGLE,GOOGLE"
+- "DOMAIN-KEYWORD,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.starrails.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606/21101,HOYO"
+- "GEOSITE,HOYOVERSE,PROXY"
+- "GEOSITE,MICROSOFT,MICROSOFT"
+- "GEOSITE,SPOTIFY,SPOTIFY"
+- "GEOSITE,TIKTOK,TIKTOK"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,CN,DIRECT"
+- "NETWORK,udp,UDP"
+- "MATCH,PROXY"
