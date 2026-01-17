@@ -90,8 +90,8 @@ def main():
     # 基础模板配置路径保持不变
     parser.add_argument(
         "-c", "--config", 
-        default="singbox-config/config-android.json", 
-        help="基础模板配置文件路径 (默认: singbox-config/config-android.json)"
+        default="singbox-config/config-android-open.json", 
+        help="基础模板配置文件路径 (默认: singbox-config/config-android-open.json)"
     )
     
     args = parser.parse_args()

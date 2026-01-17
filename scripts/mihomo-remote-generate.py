@@ -186,8 +186,8 @@ if __name__ == "__main__":
     # 基础模板配置路径保持不变
     parser.add_argument(
         "-c", "--config", 
-        default="mihomo-config/config-android.yaml", 
-        help="基础模板配置文件路径 (默认: mihomo-config/config-android.yaml)"
+        default="mihomo-config/config-android-open.yaml", 
+        help="基础模板配置文件路径 (默认: mihomo-config/config-android-open.yaml)"
     )
     
     args = parser.parse_args()

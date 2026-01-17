@@ -165,8 +165,8 @@ def index():
         logs=temp_data.get("logs", []),
         mihomo_configs=mihomo_configs,
         singbox_configs=singbox_configs,
-        sel_mihomo=temp_data.get("mihomo_tpl", "config-android.yaml"),
-        sel_singbox=temp_data.get("singbox_tpl", "config-android.json")
+        sel_mihomo=temp_data.get("mihomo_tpl", "config-android-open.yaml"),
+        sel_singbox=temp_data.get("singbox_tpl", "config-android-open.json")
     )
 
 if __name__ == "__main__":
