@@ -3,8 +3,6 @@ import argparse
 import os
 import requests
 
-# 设置工作目录为脚本所在目录
-# os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def download_json_from_url(url):
     try:
@@ -16,14 +14,16 @@ def download_json_from_url(url):
         print(f"🎃下载 JSON 文件时发生网络错误 (URL：{url})：{e}")
         raise
     except json.JSONDecodeError:
-        print(f"🎃解析 JSON 文件时发生错误，请确保 URL 提供的是有效的 JSON 数据 (URL：{url})")
+        print(
+            f"🎃解析 JSON 文件时发生错误，请确保 URL 提供的是有效的 JSON 数据 (URL：{url})"
+        )
         raise
 
+
 def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
-    # 检查传入的模板配置文件是否存在
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"基础配置文件 '{config_path}' 未找到")
-    
+
     try:
         with open(config_path, "r", encoding="utf-8") as f:
             target_data = json.load(f)
@@ -32,7 +32,6 @@ def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
         raise
 
     try:
-        # 过滤掉不需要的类型和特定的加密方法
         skip_types = {"direct", "block", "dns", "urltest", "selector"}
         new_outbounds = [
             o
@@ -40,11 +39,9 @@ def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
             if o.get("type") not in skip_types and o.get("method") != "chacha20"
         ]
 
-        # 合并出站代理
         existing_outbounds = target_data.get("outbounds", [])
         target_data["outbounds"] = existing_outbounds + new_outbounds
 
-        # 更新 selector 或 urltest 等组中的节点列表
         for outbound in target_data["outbounds"]:
             if "outbounds" in outbound:
                 if outbound["outbounds"] is None:
@@ -57,7 +54,6 @@ def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
         print(f"🎃替换 outbounds 时发生错误：{e}")
         raise
 
-    # 确保输出目录存在
     output_dir = os.path.dirname(output_file)
     if output_dir and not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -70,12 +66,24 @@ def replace_outbounds_in_fixed_target(source_data, config_path, output_file):
         print(f"🎃保存文件时发生错误：{e}")
         raise
 
+
 def main():
-    parser = argparse.ArgumentParser(description="通过 URL 或本地文件合并到本地 sing-box 配置")
-    parser.add_argument("-u", "--url", required=True, help="订阅链接 (JSON URL) 或本地 JSON 文件路径")
-    parser.add_argument("-o", "--output", required=True, help="生成后的配置文件保存路径")
-    parser.add_argument("-c", "--config", default="singbox-config/config-android-open.json", help="基础模板路径")
-    
+    parser = argparse.ArgumentParser(
+        description="通过 URL 或本地文件合并到本地 sing-box 配置"
+    )
+    parser.add_argument(
+        "-u", "--url", required=True, help="订阅链接 (JSON URL) 或本地 JSON 文件路径"
+    )
+    parser.add_argument(
+        "-o", "--output", required=True, help="生成后的配置文件保存路径"
+    )
+    parser.add_argument(
+        "-c",
+        "--config",
+        default="singbox-config/config-android-open.json",
+        help="基础模板路径",
+    )
+
     args = parser.parse_args()
 
     if not os.path.isabs(args.output):
@@ -83,8 +91,7 @@ def main():
 
     try:
         print(f"正在从模板加载：{args.config}")
-        
-        # --- 修改部分：支持本地文件检测 ---
+
         if os.path.isfile(args.url):
             print(f"检测到本地文件，正在读取：{args.url}")
             with open(args.url, "r", encoding="utf-8") as f:
@@ -92,12 +99,12 @@ def main():
         else:
             print(f"正在下载订阅数据：{args.url}")
             source_data = download_json_from_url(args.url)
-        # --------------------------------
 
         replace_outbounds_in_fixed_target(source_data, args.config, args.output)
-        
+
     except Exception as e:
         print(f"🎃运行出错：{e}")
+
 
 if __name__ == "__main__":
     main()

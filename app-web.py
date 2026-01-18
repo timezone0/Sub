@@ -10,7 +10,6 @@ import argparse
 from http.server import SimpleHTTPRequestHandler, HTTPServer
 from typing import Optional
 
-# === 基础目录与变量定义 ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -19,7 +18,6 @@ MIHOMO_CONFIG_REL_DIR = "scripts/mihomo-config"
 SINGBOX_CONFIG_REL_DIR = "scripts/singbox-config"
 
 
-# === 新增：清理逻辑 ===
 def cleanup_uploads(max_age_seconds: int = 60):
     """清理上传目录中超过指定时间的旧文件（默认1分钟）"""
     try:
@@ -33,7 +31,6 @@ def cleanup_uploads(max_age_seconds: int = 60):
         print(f"⚠️ 清理上传目录失败: {e}")
 
 
-# === 参数解析 ===
 parser = argparse.ArgumentParser()
 parser.add_argument("--mihomo-dir", default="mihomo")
 parser.add_argument("--singbox-dir", default="singbox")
@@ -44,7 +41,6 @@ SINGBOX_DIR = os.path.abspath(os.path.join(BASE_DIR, args.singbox_dir))
 os.makedirs(MIHOMO_DIR, exist_ok=True)
 os.makedirs(SINGBOX_DIR, exist_ok=True)
 
-# === 配置 ===
 SUBSTORE_PORT = 3002
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
@@ -54,7 +50,6 @@ app = Flask(__name__)
 app.secret_key = "final_stable_key"
 
 
-# === 实用工具 ===
 def encode_gitlab_url(raw_url: str) -> str:
     """处理 GitLab API URL 的特殊编码需求"""
     return raw_url.replace("%", "%25").replace("%", "%25")
@@ -70,7 +65,6 @@ def refresh_backend() -> str:
         return f"⚠️ 缓存刷新失败 (不影响生成): {e}"
 
 
-# === 临时 HTTP 服务（闭包版本） ===
 def run_temporary_server(file_path: str, port: int) -> Optional[HTTPServer]:
     """开启一个只提供单个文件下载的轻量级 HTTP 服务器"""
 
@@ -100,7 +94,6 @@ def run_temporary_server(file_path: str, port: int) -> Optional[HTTPServer]:
         return None
 
 
-# === 其他工具函数 ===
 def get_config_files(directory_rel: str, extension: str) -> list[str]:
     abs_dir = os.path.join(BASE_DIR, directory_rel)
     if not os.path.exists(abs_dir):
@@ -144,7 +137,6 @@ def generate_configs(
     logs: list[str] = [f"▶ 正在处理: {name}"]
     temp_server: Optional[HTTPServer] = None
 
-    # 判断是本地文件还是 URL
     if os.path.isfile(url_or_path):
         temp_server = run_temporary_server(os.path.abspath(url_or_path), TEMP_HTTP_PORT)
         if temp_server:
@@ -221,7 +213,6 @@ def generate_configs(
     return logs
 
 
-# === Flask 路由 ===
 @app.route("/", methods=["GET", "POST"])
 def index():
     mihomo_configs = get_config_files(MIHOMO_CONFIG_REL_DIR, ".yaml")
@@ -246,7 +237,6 @@ def index():
             target_input = path
             url = ""
             if not name:
-                # 确保 filename 为 str
                 filename_only = file.filename or "upload"
                 name = os.path.splitext(filename_only)[0]
             logs.append(f"✅ 使用上传文件: {file.filename}")
@@ -286,7 +276,6 @@ def index():
     )
 
 
-# === 启动入口 ===
 if __name__ == "__main__":
     os.chdir(BASE_DIR)
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":

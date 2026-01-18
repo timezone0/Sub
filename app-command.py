@@ -9,18 +9,16 @@ import threading
 from urllib.parse import quote
 from http.server import SimpleHTTPRequestHandler, HTTPServer
 
-# === 配置 ===
 SUBSTORE_PORT = 3003
 SUBSTORE_HOST = "127.0.0.1"
 API_BASE = f"http://{SUBSTORE_HOST}:{SUBSTORE_PORT}"
-TEMP_HTTP_PORT = 18888  # 临时 HTTP 服务的端口，用于让 SubStore 读取本地文件
+TEMP_HTTP_PORT = 18888
 
 
 def log(msg):
     print(f"[{time.strftime('%H:%M:%S')}] {msg}")
 
 
-# === 临时 HTTP 服务（用于将本地文件映射为 URL） ===
 def run_temporary_server(file_path, port):
     """开启一个只提供单个文件下载的轻量级 HTTP 服务器"""
 
@@ -50,7 +48,6 @@ def run_temporary_server(file_path, port):
         return None
 
 
-# === 实用函数 ===
 def encode_gitlab_url(raw_url):
     return raw_url.replace("%", "%25")
 
@@ -195,7 +192,6 @@ def handle_json(json_path, mihomo_dir, singbox_dir, mihomo_config, singbox_confi
         log(f"❌ 解析 JSON 列表失败: {e}")
 
 
-# === 主程序入口 ===
 if __name__ == "__main__":
     start_substore_backend()
 
