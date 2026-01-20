@@ -70,17 +70,15 @@ dns:
   - "https://doh.pub/dns-query"
 proxies:
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a", sni: "sni.latonyamadeline.ndjp.net", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sni.latonyamadeline.ndjp.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 01", server: "104.19.150.163", port: 8443, type: "vless", uuid: "55d9ec38-1b8a-454b-981a-6acfe8f56d8c", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sni.meibidi.pp.ua"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "sni.meibidi.pp.ua"}
 - {name: "🇯🇵 日本 01", server: "172.64.229.220", port: 2096, type: "vless", uuid: "55d9ec38-1b8a-454b-981a-6acfe8f56d8c", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "sni.meibidi.pp.ua"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "sni.meibidi.pp.ua"}
-- {name: "🇸🇬 新加坡 01", server: "172.64.157.136", port: 8443, type: "vless", uuid: "b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "kb.as129394.me"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "kb.as129394.me"}
-- {name: "🇸🇬 新加坡 02", server: "104.18.45.223", port: 443, type: "vless", uuid: "55d9ec38-1b8a-454b-981a-6acfe8f56d8c", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "sni.meibidi.pp.ua"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "sni.meibidi.pp.ua"}
+- {name: "🇸🇬 新加坡 01", server: "104.18.45.223", port: 443, type: "vless", uuid: "55d9ec38-1b8a-454b-981a-6acfe8f56d8c", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "sni.meibidi.pp.ua"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, servername: "sni.meibidi.pp.ua"}
+- {name: "🇸🇬 新加坡 02", server: "172.64.157.136", port: 8443, type: "vless", uuid: "b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d", tls: true, tfo: false, skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "kb.as129394.me"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, udp: true, client-fingerprint: "chrome", servername: "kb.as129394.me"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -91,7 +89,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -100,7 +97,6 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -110,7 +106,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -120,7 +115,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -130,7 +124,6 @@ proxy-groups:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -140,7 +133,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -150,7 +142,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -159,7 +150,6 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
@@ -169,7 +159,6 @@ proxy-groups:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇭🇰 香港 01"
   - "🇯🇵 日本 01"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
