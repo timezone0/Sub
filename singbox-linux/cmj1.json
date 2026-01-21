@@ -83,9 +83,10 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -95,9 +96,10 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -107,9 +109,10 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -120,9 +123,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -133,9 +137,10 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -146,9 +151,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -159,9 +165,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -172,9 +179,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -184,9 +192,10 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -197,9 +206,10 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
         "🇯🇵 日本 01",
-        "🇸🇬 新加坡 01",
-        "🇸🇬 新加坡 02"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -227,14 +237,14 @@
       }
     },
     {
-      "tag": "🇯🇵 日本 01",
+      "tag": "🇭🇰 香港 01",
       "type": "vless",
-      "server": "172.64.229.220",
-      "server_port": 2096,
-      "uuid": "55d9ec38-1b8a-454b-981a-6acfe8f56d8c",
+      "server": "104.16.250.22",
+      "server_port": 443,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
       "tls": {
         "enabled": true,
-        "server_name": "sni.meibidi.pp.ua",
+        "server_name": "l.ayovo.netlib.re",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -244,7 +254,48 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "sni.meibidi.pp.ua"
+          "Host": "l.ayovo.netlib.re"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 02",
+      "type": "trojan",
+      "server": "16.162.252.215",
+      "server_port": 3042,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me%2Fripaojiedian",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vless",
+      "server": "162.159.45.232",
+      "server_port": 443,
+      "uuid": "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97",
+      "tls": {
+        "enabled": true,
+        "server_name": "l.ayovo.netlib.re",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "l.ayovo.netlib.re"
         },
         "early_data_header_name": "Sec-WebSocket-Protocol",
         "max_early_data": 2560,
@@ -253,31 +304,6 @@
     },
     {
       "tag": "🇸🇬 新加坡 01",
-      "type": "vless",
-      "server": "104.18.45.223",
-      "server_port": 443,
-      "uuid": "55d9ec38-1b8a-454b-981a-6acfe8f56d8c",
-      "tls": {
-        "enabled": true,
-        "server_name": "sni.meibidi.pp.ua",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "sni.meibidi.pp.ua"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol",
-        "max_early_data": 2560,
-        "path": "/"
-      }
-    },
-    {
-      "tag": "🇸🇬 新加坡 02",
       "type": "vless",
       "server": "172.64.157.136",
       "server_port": 8443,
