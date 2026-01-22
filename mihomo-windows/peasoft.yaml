@@ -100,13 +100,11 @@ proxies:
 - {name: "🇭🇰 香港 28", password: "29042ca8-e873-461c-a933-ecfda6c5e907", port: 21101, server: "cdnfire.xiaomispeed.com", skip-cert-verify: true, sni: "cdnfire.xiaomispeed.com", type: "trojan", client-fingerprint: "chrome", network: "tcp", udp: true}
 - {name: "🇭🇰 香港 29", password: "29042ca8-e873-461c-a933-ecfda6c5e907", port: 21103, server: "cdnfire.xiaomispeed.com", skip-cert-verify: true, sni: "cdnfire.xiaomispeed.com", type: "trojan", client-fingerprint: "chrome", network: "tcp", udp: true}
 - {name: "🇭🇰 香港 30", password: "29042ca8-e873-461c-a933-ecfda6c5e907", port: 21102, server: "cdnfire.xiaomispeed.com", skip-cert-verify: true, sni: "cdnfire.xiaomispeed.com", type: "trojan", client-fingerprint: "chrome", network: "tcp", udp: true}
-- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 31", port: 30807, server: "v10.hdacd.com", skip-cert-verify: true, tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", network: "tcp", udp: true}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 32", port: 52080, server: "61.15.60.153", skip-cert-verify: true, tls: false, type: "vmess", uuid: "bfb47846-aedb-4ea3-a81f-27895a4ec1bb", client-fingerprint: "chrome", network: "tcp", udp: true}
-- {name: "🇭🇰 香港 33", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 443, server: "58.152.18.98", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇭🇰 香港 34", network: "tcp", password: "BxceQaOe", port: 3292, server: "13.114.140.34", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
+- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 31", network: "tcp", port: 30807, server: "v10.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", disable-sni: true, udp: true, skip-cert-verify: true, servername: ""}
+- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 32", network: "tcp", port: 34659, server: "47.242.192.233", tls: false, type: "vmess", uuid: "8482671e-846f-45c7-aec4-531c79f775ec", client-fingerprint: "chrome", disable-sni: true, udp: true, skip-cert-verify: true, servername: ""}
+- {name: "🇭🇰 香港 33", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 443, server: "58.152.18.124", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {name: "🇭🇰 香港 34", network: "tcp", password: "BxceQaOe", port: 3292, server: "13.159.22.132", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {name: "🇭🇰 香港 35", network: "tcp", password: "BxceQaOe", port: 3042, server: "16.162.252.215", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {alterId: 2, cipher: "auto", name: "🇭🇰 香港 36", network: "tcp", port: 30807, server: "v10.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", disable-sni: true, udp: true, skip-cert-verify: true, servername: ""}
-- {alterId: 0, cipher: "auto", name: "🇭🇰 香港 37", network: "tcp", port: 52080, server: "61.15.60.153", tls: false, type: "vmess", uuid: "bfb47846-aedb-4ea3-a81f-27895a4ec1bb", client-fingerprint: "chrome", disable-sni: true, udp: true, skip-cert-verify: true, servername: ""}
 - {alterId: 2, cipher: "auto", name: "🇺🇸 美国 01", network: "tcp", port: 30804, server: "v4.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
 - {name: "🇺🇸 美国 02", password: "1f86e372-1ee6-47eb-8c33-72bfc310dee6", port: 35501, server: "green2.cdntencentmusic.com", skip-cert-verify: true, sni: "green2.cdntencentmusic.com", type: "trojan", client-fingerprint: "chrome", network: "tcp", udp: true}
 - {alterId: 0, cipher: "auto", name: "🇺🇸 美国 03", network: "tcp", port: 42507, server: "23.138.148.47", tls: false, type: "vmess", uuid: "4db07b13-6524-49d2-b432-1f312c0e9c7c", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
@@ -131,9 +129,9 @@ proxies:
 - {alpn: ["http/1.1"], name: "🇺🇸 美国 22", network: "ws", password: "123456", port: 443, server: "bpbg.anguswen.top", skip-cert-verify: true, sni: "bPbg.aNGUSWeN.Top", type: "trojan", ws-opts: {path: "/%2FeyJqdW5rIjoiUzNoaFZ2Q3hRIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiYnBiLnlvdXNlZi5pc2VnYXJvLmNvbSJdfQ%3D%3D"}, client-fingerprint: "chrome", udp: true}
 - {alterId: 2, cipher: "auto", name: "🇺🇸 美国 23", network: "tcp", port: 30824, server: "v24.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
 - {alpn: ["http/1.1"], name: "🇺🇸 美国 24", network: "ws", password: "123456", port: 2053, server: "bpbg.anguswen.top", skip-cert-verify: true, sni: "bpBG.anGusWen.TOp", type: "trojan", ws-opts: {path: "/%2FeyJqdW5rIjoiZkdPanhyQWgiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19"}, client-fingerprint: "chrome", udp: true}
-- {name: "🇺🇸 美国 25", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 5076, server: "160.16.57.238", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇺🇸 美国 26", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 5076, server: "160.16.117.182", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇺🇸 美国 27", network: "tcp", password: "BxceQaOe", port: 4569, server: "16.162.22.195", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
+- {name: "🇺🇸 美国 25", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 5076, server: "160.16.89.176", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {name: "🇺🇸 美国 26", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 5076, server: "160.16.81.84", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {name: "🇺🇸 美国 27", network: "tcp", password: "BxceQaOe", port: 2173, server: "16.162.252.227", skip-cert-verify: true, sni: "t.me%2Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
 - {alterId: 0, cipher: "auto", name: "🇩🇪 德国 01", network: "tcp", port: 180, server: "82.198.246.97", tls: false, type: "vmess", uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
 - {alterId: 2, cipher: "auto", name: "🇩🇪 德国 02", network: "tcp", port: 30833, server: "v33.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
 - {alterId: 0, cipher: "auto", name: "🇹🇭 泰国 01", network: "tcp", port: 8080, server: "m.modzard.com", tls: false, type: "vmess", uuid: "f2e17b4d-22fd-44a4-90db-40649717be8e", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
@@ -141,13 +139,13 @@ proxies:
 - {name: "🇨🇳 台湾 01", password: "30077070-596e-48ea-9400-14c8ed07bd97", port: 40130, server: "tuntro011.instconn.com", skip-cert-verify: true, sni: "cntwbta.686911.xyz", type: "trojan", client-fingerprint: "chrome", network: "tcp", udp: true}
 - {alterId: 2, cipher: "auto", name: "🇫🇷 法国 01", network: "tcp", port: 30835, server: "v35.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
 - {alterId: 0, cipher: "auto", name: "🇸🇬 新加坡 01", network: "tcp", port: 30812, server: "v12.hdacd.com", tls: false, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
-- {name: "🇸🇬 新加坡 02", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 544, server: "153.121.65.107", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇸🇬 新加坡 03", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 3901, server: "160.16.124.55", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇸🇬 新加坡 04", network: "tcp", password: "BxceQaOe", port: 1196, server: "13.114.140.34", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇯🇵 日本 01", network: "tcp", password: "BxceQaOe", port: 2053, server: "18.181.201.166", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇯🇵 日本 02", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 1933, server: "160.16.57.238", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {name: "🇯🇵 日本 03", network: "tcp", password: "4843e94d205f3893f588255a591abe94", port: 4006, server: "160.16.117.182", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
-- {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.155.125", type: "ss", udp: true, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 02", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 3076, server: "160.16.89.176", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {name: "🇸🇬 新加坡 03", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 544, server: "160.16.106.99", skip-cert-verify: true, sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true}
+- {name: "🇸🇬 新加坡 04", network: "tcp", password: "BxceQaOe", port: 2673, server: "43.198.16.69", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
+- {name: "🇯🇵 日本 01", network: "tcp", password: "BxceQaOe", port: 2053, server: "54.238.172.125", skip-cert-verify: true, sni: "t.me%252Fripaojiedian", type: "trojan", client-fingerprint: "chrome", udp: true}
+- {name: "🇯🇵 日本 02", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 2053, server: "54.238.172.125", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {name: "🇯🇵 日本 03", network: "tcp", password: "869e9086806483ca4744a4cb0f3d6e16", port: 1933, server: "160.16.89.176", sni: "www.nintendogames.net", type: "trojan", client-fingerprint: "chrome", udp: true, skip-cert-verify: true}
+- {cipher: "aes-256-cfb", name: "🇻🇳 越南 01", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", port: 38388, server: "103.186.155.51", type: "ss", udp: true, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -189,8 +187,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -274,8 +270,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -357,8 +351,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -441,8 +433,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -525,8 +515,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -609,8 +597,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -693,8 +679,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -777,8 +761,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -860,8 +842,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -944,8 +924,6 @@ proxy-groups:
   - "🇭🇰 香港 33"
   - "🇭🇰 香港 34"
   - "🇭🇰 香港 35"
-  - "🇭🇰 香港 36"
-  - "🇭🇰 香港 37"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
