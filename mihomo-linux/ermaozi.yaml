@@ -69,9 +69,9 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇯🇵 日本 01", type: "trojan", server: "36.156.102.115", port: 26876, password: "BxceQaOe", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 01", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2, udp: true, skip-cert-verify: true, client-fingerprint: "chrome"}
-- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "185.153.197.5", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3", udp: true, skip-cert-verify: true}
+- {name: "🇯🇵 日本 01", type: "trojan", server: "36.156.102.115", port: 26876, password: "BxceQaOe", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 01", type: "vmess", server: "v29.heduian.link", port: 30829, uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", cipher: "auto", network: "ws", ws-opts: {path: "/oooo", headers: {Host: "ocbc.com"}}, alterId: 2, client-fingerprint: "chrome"}
+- {name: "🇲🇩 摩尔多瓦 01", type: "ss", server: "185.153.197.5", port: 989, cipher: "aes-256-cfb", password: "f8f7aCzcPKbsF8p3"}
 proxy-groups:
 - name: "PROXY"
   type: "select"

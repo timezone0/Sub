@@ -69,16 +69,16 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {type: "ss", skip-cert-verify: true, udp: true, server: "34.245.24.98", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "54.234.234.193", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇦 加拿大 01"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "52.215.48.159", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 01"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "16.170.227.18", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 02"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "54.147.61.18", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 01"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "34.207.210.3", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 02"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "54.196.208.165", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 03"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "176.34.66.206", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇸🇬 新加坡 01"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "35.180.21.182", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
-- {type: "ss", skip-cert-verify: true, udp: true, server: "54.75.113.96", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "34.245.24.98", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "54.234.234.193", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇦 加拿大 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "52.215.48.159", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "16.170.227.18", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "54.147.61.18", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "34.207.210.3", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "54.196.208.165", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 03"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "176.34.66.206", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇸🇬 新加坡 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "35.180.21.182", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "54.75.113.96", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
 proxy-groups:
 - name: "PROXY"
   type: "select"

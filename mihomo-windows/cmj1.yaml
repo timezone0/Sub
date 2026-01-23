@@ -69,10 +69,10 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a", sni: "sni.latonyamadeline.ndjp.net", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sni.latonyamadeline.ndjp.net"}}, udp: true, client-fingerprint: "chrome"}
-- {name: "🇯🇵 日本 01", server: "162.159.45.232", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}}, udp: true, servername: "l.ayovo.netlib.re"}
-- {name: "🇵🇹 葡萄牙 01", server: "27.150.132.73", port: 15009, type: "ssr", cipher: "chacha20-ietf", password: "NaikoCloud", protocol: "auth_aes128_md5", obfs: "plain", protocol-param: "", obfs-param: "1fa5048573.microsoft.com", udp: true, skip-cert-verify: true}
-- {name: "🇵🇹 葡萄牙 02", server: "27.150.132.73", port: 15402, type: "ssr", cipher: "chacha20-ietf", password: "NaikoCloud", protocol: "auth_aes128_md5", obfs: "plain", protocol-param: "", obfs-param: "1fa5048573.microsoft.com", udp: true, skip-cert-verify: true}
+- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "1a25f8ad-cad2-4e93-b5bf-34e42bcac02a", sni: "sni.latonyamadeline.ndjp.net", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "sni.latonyamadeline.ndjp.net"}}, client-fingerprint: "chrome"}
+- {name: "🇯🇵 日本 01", server: "162.159.45.232", port: 443, type: "vless", uuid: "3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "l.ayovo.netlib.re"}}, servername: "l.ayovo.netlib.re"}
+- {name: "🇵🇹 葡萄牙 01", server: "27.150.132.73", port: 15009, type: "ssr", cipher: "chacha20-ietf", password: "NaikoCloud", protocol: "auth_aes128_md5", obfs: "plain", protocol-param: "", obfs-param: "1fa5048573.microsoft.com"}
+- {name: "🇵🇹 葡萄牙 02", server: "27.150.132.73", port: 15402, type: "ssr", cipher: "chacha20-ietf", password: "NaikoCloud", protocol: "auth_aes128_md5", obfs: "plain", protocol-param: "", obfs-param: "1fa5048573.microsoft.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
