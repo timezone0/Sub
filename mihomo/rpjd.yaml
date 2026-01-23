@@ -70,10 +70,9 @@ dns:
   - "https://doh.pub/dns-query"
 proxies:
 - {name: "🇭🇰 香港 01", server: "v10.hdacd.com", port: 30807, type: "vmess", uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484", alterId: 2, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 02", server: "47.242.192.233", port: 34659, type: "vmess", uuid: "8482671e-846f-45c7-aec4-531c79f775ec", alterId: 0, cipher: "auto", tls: false, skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 03", server: "58.152.18.124", port: 443, type: "trojan", password: "869e9086806483ca4744a4cb0f3d6e16", sni: "www.nintendogames.net", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 04", server: "13.159.22.132", port: 3292, type: "trojan", password: "BxceQaOe", sni: "t.me%2Fripaojiedian", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 05", server: "16.162.252.215", port: 3042, type: "trojan", password: "BxceQaOe", sni: "t.me%2Fripaojiedian", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 02", server: "58.152.18.124", port: 443, type: "trojan", password: "869e9086806483ca4744a4cb0f3d6e16", sni: "www.nintendogames.net", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 03", server: "13.159.22.132", port: 3292, type: "trojan", password: "BxceQaOe", sni: "t.me%2Fripaojiedian", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 04", server: "16.162.252.215", port: 3042, type: "trojan", password: "BxceQaOe", sni: "t.me%2Fripaojiedian", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 01", server: "54.238.172.125", port: 2053, type: "trojan", password: "BxceQaOe", sni: "t.me%252Fripaojiedian", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 02", server: "54.238.172.125", port: 2053, type: "trojan", password: "869e9086806483ca4744a4cb0f3d6e16", sni: "www.nintendogames.net", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
 - {name: "🇯🇵 日本 03", server: "160.16.89.176", port: 1933, type: "trojan", password: "869e9086806483ca4744a4cb0f3d6e16", sni: "www.nintendogames.net", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
@@ -83,7 +82,6 @@ proxies:
 - {name: "🇺🇸 美国 01", server: "160.16.89.176", port: 5076, type: "trojan", password: "869e9086806483ca4744a4cb0f3d6e16", sni: "www.nintendogames.net", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 02", server: "160.16.81.84", port: 5076, type: "trojan", password: "869e9086806483ca4744a4cb0f3d6e16", sni: "www.nintendogames.net", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 03", server: "16.162.252.227", port: 2173, type: "trojan", password: "BxceQaOe", sni: "t.me%2Fripaojiedian", skip-cert-verify: true, network: "tcp", udp: true, client-fingerprint: "chrome"}
-- {name: "🇻🇳 越南 01", server: "103.186.155.51", port: 38388, type: "ss", cipher: "aes-256-cfb", password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", udp: true, skip-cert-verify: true}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -93,7 +91,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -103,7 +100,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -114,7 +110,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -124,7 +119,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -133,7 +127,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -143,7 +136,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -153,7 +145,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -163,7 +154,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "GOOGLE"
   type: "select"
   proxies:
@@ -173,7 +163,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -183,7 +172,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -193,7 +181,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -203,7 +190,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "MICROSOFT"
   type: "select"
   proxies:
@@ -213,7 +199,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -223,7 +208,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -233,7 +217,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -243,7 +226,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -252,7 +234,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -262,7 +243,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 - name: "UDP"
   type: "select"
   proxies:
@@ -272,7 +252,6 @@ proxy-groups:
   - "🇭🇰 香港 02"
   - "🇭🇰 香港 03"
   - "🇭🇰 香港 04"
-  - "🇭🇰 香港 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -282,7 +261,6 @@ proxy-groups:
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
-  - "🇻🇳 越南 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
