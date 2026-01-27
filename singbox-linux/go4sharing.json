@@ -171,10 +171,9 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "hoyo",
+      "tag": "github",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select",
         "🇳🇱 荷兰 01",
         "🇬🇧 英国 01",
@@ -199,7 +198,30 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇳🇱 荷兰 01",
+        "🇬🇧 英国 01",
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03",
+        "🇻🇳 越南 04",
+        "🇻🇳 越南 05",
+        "🇻🇳 越南 06",
+        "🇻🇳 越南 07",
+        "🇻🇳 越南 08",
+        "🇻🇳 越南 09",
+        "🇻🇳 越南 10",
+        "🇻🇳 越南 11",
+        "🇻🇳 越南 12",
+        "🇻🇳 越南 13"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
         "direct",
+        "select",
         "🇳🇱 荷兰 01",
         "🇬🇧 英国 01",
         "🇻🇳 越南 01",
@@ -493,6 +515,12 @@
       },
       {
         "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "github"
+      },
+      {
+        "rule_set": [
           "geosite-googlefcm"
         ],
         "outbound": "fcm"
@@ -608,6 +636,13 @@
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-github",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-github.srs",
         "download_detour": "direct"
       },
       {

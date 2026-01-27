@@ -222,10 +222,9 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "hoyo",
+      "tag": "github",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select",
         "🇯🇵 日本 01",
         "🇺🇸 美国 01",
@@ -263,7 +262,43 @@
       "type": "selector",
       "outbounds": [
         "select",
+        "🇯🇵 日本 01",
+        "🇺🇸 美国 01",
+        "🇺🇸 美国 02",
+        "🇺🇸 美国 03",
+        "🇺🇸 美国 04",
+        "🇺🇸 美国 05",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01",
+        "🇭🇰 香港 02",
+        "🇭🇰 香港 03",
+        "🇭🇰 香港 04",
+        "🇭🇰 香港 05",
+        "🇭🇰 香港 06",
+        "🇬🇧 英国 01",
+        "🇬🇧 英国 02",
+        "🇬🇧 英国 03",
+        "🏴‍☠️ 毛里求斯 01",
+        "🏴‍☠️ 毛里求斯 02",
+        "🇨🇳 台湾 01",
+        "🇩🇪 德国 01",
+        "🇩🇪 德国 02",
+        "🇩🇪 德国 03",
+        "🇩🇪 德国 04",
+        "🇩🇪 德国 05",
+        "🇩🇪 德国 06",
+        "🇨🇭 瑞士 01",
+        "🇹🇷 土耳其 01",
+        "🇻🇳 越南 01"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
         "direct",
+        "select",
         "🇯🇵 日本 01",
         "🇺🇸 美国 01",
         "🇺🇸 美国 02",
@@ -968,6 +1003,12 @@
       },
       {
         "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "github"
+      },
+      {
+        "rule_set": [
           "geosite-googlefcm"
         ],
         "outbound": "fcm"
@@ -1083,6 +1124,13 @@
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-github",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-github.srs",
         "download_detour": "direct"
       },
       {
