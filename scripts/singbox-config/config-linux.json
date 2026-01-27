@@ -111,10 +111,9 @@
       "interrupt_exist_connections": true
     },
     {
-      "tag": "hoyo",
+      "tag": "github",
       "type": "selector",
       "outbounds": [
-        "direct",
         "select"
       ],
       "interrupt_exist_connections": true
@@ -123,8 +122,16 @@
       "tag": "google",
       "type": "selector",
       "outbounds": [
-        "select",
-        "direct"
+        "select"
+      ],
+      "interrupt_exist_connections": true
+    },
+    {
+      "tag": "hoyo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select"
       ],
       "interrupt_exist_connections": true
     },
@@ -253,6 +260,12 @@
       },
       {
         "rule_set": [
+          "geosite-github"
+        ],
+        "outbound": "github"
+      },
+      {
+        "rule_set": [
           "geosite-googlefcm"
         ],
         "outbound": "fcm"
@@ -368,6 +381,13 @@
         "tag": "geosite-category-ai-!cn",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-category-ai-!cn.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-github",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-github.srs",
         "download_detour": "direct"
       },
       {

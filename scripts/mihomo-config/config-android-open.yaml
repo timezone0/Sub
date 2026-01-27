@@ -82,11 +82,14 @@ proxy-groups:
     proxies:
       - PROXY
       - DIRECT
+  - name: GITHUB
+    type: select
+    proxies:
+      - PROXY
   - name: GOOGLE
     type: select
     proxies:
       - PROXY
-      - DIRECT
   - name: HOYO
     type: select
     proxies:
@@ -116,6 +119,7 @@ rules:
   - AND,((NETWORK,udp),(DST-PORT,443)),REJECT
   - DST-PORT,853,REJECT
   - GEOSITE,CATEGORY-AI-!CN,AI
+  - GEOSITE,GITHUB,GITHUB
   - GEOSITE,GOOGLEFCM,FCM
   - GEOSITE,GOOGLE,GOOGLE
   - GEOIP,GOOGLE,GOOGLE
