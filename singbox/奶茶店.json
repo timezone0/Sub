@@ -250,7 +250,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "edge"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -294,7 +294,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -353,7 +353,8 @@
       },
       {
         "rule_set": [
-          "geosite-category-ai-!cn"
+          "geosite-category-ai-!cn",
+          "geosite-jetbrains-ai"
         ],
         "outbound": "ai"
       },
@@ -508,6 +509,13 @@
         "tag": "geosite-hoyoverse",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-jetbrains-ai",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-jetbrains-ai.srs",
         "download_detour": "direct"
       },
       {

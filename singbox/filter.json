@@ -1664,7 +1664,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "edge"
         }
       },
       "transport": {
@@ -2380,7 +2380,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         }
       },
       "transport": {
@@ -2422,7 +2422,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         }
       },
       "transport": {
@@ -2728,7 +2728,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "transport": {
@@ -2753,7 +2753,7 @@
         },
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         }
       },
       "transport": {
@@ -2806,8 +2806,8 @@
     {
       "tag": "🇸🇬 新加坡 01",
       "type": "tuic",
-      "server": "64.56.71.108",
-      "server_port": 47859,
+      "server": "194.233.79.195",
+      "server_port": 5829,
       "uuid": "a1102edc-f382-4720-99f5-ecc0a74507af",
       "password": "a1102edc-f382-4720-99f5-ecc0a74507af",
       "tls": {
@@ -2925,7 +2925,8 @@
       },
       {
         "rule_set": [
-          "geosite-category-ai-!cn"
+          "geosite-category-ai-!cn",
+          "geosite-jetbrains-ai"
         ],
         "outbound": "ai"
       },
@@ -3080,6 +3081,13 @@
         "tag": "geosite-hoyoverse",
         "format": "binary",
         "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-hoyoverse.srs",
+        "download_detour": "direct"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-jetbrains-ai",
+        "format": "binary",
+        "url": "https://ghfast.top/https://raw.githubusercontent.com/lyc8503/sing-box-rules/rule-set-geosite/geosite-jetbrains-ai.srs",
         "download_detour": "direct"
       },
       {
