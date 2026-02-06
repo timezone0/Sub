@@ -423,7 +423,10 @@
       "tls": {
         "enabled": true,
         "server_name": "bedrid.denizhosting.me",
-        "insecure": true,
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -607,7 +610,12 @@
       "server_port": 443,
       "uuid": "ac6e19f8-4852-41e1-c120-c7261ee8f6e5",
       "security": "auto",
-      "alter_id": 0
+      "alter_id": 0,
+      "transport": {
+        "type": "http",
+        "headers": {},
+        "path": "/"
+      }
     },
     {
       "tag": "🇭🇰 香港 04",
@@ -616,7 +624,12 @@
       "server_port": 80,
       "uuid": "47eefac2-9767-49e1-c8e6-524e39d8765f",
       "security": "auto",
-      "alter_id": 0
+      "alter_id": 0,
+      "transport": {
+        "type": "http",
+        "headers": {},
+        "path": "/"
+      }
     },
     {
       "tag": "🇭🇰 香港 05",
@@ -787,7 +800,7 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "60a22220-8a8F-46E7-82Ba-76D42df68C34.661.qzz.IO"
+          "Host": "60a22220-8a8F-46E7-82bA-76D42DF68C34.661.QZz.Io"
         },
         "path": "/QMV9N8sI6UlesbbZ1wwDhJ3"
       }
@@ -801,7 +814,7 @@
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "EeeEfRt5.7777198.XYz"
+          "Host": "EEeEfrT5.7777198.xyZ"
         },
         "path": "/v4mECBsrKh5tvsvinsGGg"
       }
