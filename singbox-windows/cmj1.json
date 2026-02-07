@@ -375,7 +375,7 @@
         "server_name": "ds1-mx-fn154-protection.iranlease.com",
         "insecure": true,
         "alpn": [
-          "http%2F1.1"
+          "http/1.1"
         ],
         "utls": {
           "enabled": true,
@@ -401,7 +401,8 @@
         "server_name": "stiky.clinicst.ir",
         "insecure": true,
         "alpn": [
-          "h2%2Chttp%2F1.1"
+          "h2",
+          "http/1.1"
         ],
         "utls": {
           "enabled": true,
@@ -435,9 +436,7 @@
       },
       "transport": {
         "type": "ws",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        },
+        "headers": {},
         "path": "/assignment"
       }
     },
