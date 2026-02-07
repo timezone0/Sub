@@ -1,0 +1,469 @@
+log-level: "debug"
+mixed-port: 7890
+allow-lan: true
+external-controller: "127.0.0.1:9090"
+external-ui: "ui"
+external-ui-name: "yacd"
+external-ui-url: "https://ghfast.top/https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip"
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geox-url:
+  geoip: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+find-process-mode: "strict"
+global-client-fingerprint: "chrome"
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - "8080-8880"
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+tun:
+  enable: true
+  stack: "mixed"
+  dns-hijack:
+  - "any:53"
+  - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: "fake-ip"
+  fake-ip-range: "198.18.0.1/16"
+  fake-ip-filter:
+  - "geosite:cn,private"
+  respect-rules: true
+  default-nameserver:
+  - "https://223.5.5.5/dns-query"
+  - "https://120.53.53.53/dns-query"
+  nameserver:
+  - "https://dns.google/dns-query"
+  nameserver-policy:
+    geosite:cn,private:
+    - "https://dns.alidns.com/dns-query"
+    - "https://doh.pub/dns-query"
+  direct-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+  proxy-server-nameserver:
+  - "https://dns.alidns.com/dns-query"
+  - "https://doh.pub/dns-query"
+proxies:
+- name: "✨ fcm"
+  type: "ss"
+  server: "45.62.119.122"
+  port: 9443
+  cipher: "2022-blake3-aes-128-gcm"
+  password: "Vhk9Vt3YW7bgLJpAnKxK4w=="
+  plugin: "shadow-tls"
+  client-fingerprint: "chrome"
+  plugin-opts:
+    host: "board.zuoye.win"
+    password: "R9vnbCLnYTtAitd"
+    version: 3
+  smux:
+    enabled: true
+    protocol: "yamux"
+    max-connections: 1
+    min-streams: 4
+    padding: true
+- {type: "ss", skip-cert-verify: false, udp: false, server: "3.254.142.177", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇯🇵 日本 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "185.141.219.158", port: 8388, cipher: "aes-256-gcm", password: "ksf7G5ZeeTFvxe9O", name: "🇯🇵 日本 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "167.17.179.197", port: 19018, cipher: "aes-256-gcm", password: "0690659746980c46", name: "🇯🇵 日本 03"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "54.175.131.70", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "3.94.191.127", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "44.223.62.57", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇺🇸 美国 03"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.44.76", port: 20212, cipher: "aes-256-gcm", password: "7ae4e68cf77f6089", name: "🇺🇸 美国 04"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "13.53.47.95", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇭🇰 香港 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "212.192.12.201", port: 8388, cipher: "aes-256-gcm", password: "TjWj6hhm0XXkWvKL", name: "🇭🇰 香港 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "212.192.15.59", port: 20129, cipher: "aes-256-gcm", password: "7e1dd4c55bf85da5", name: "🇭🇰 香港 03"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "51.20.128.200", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇰🇷 韩国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "203.32.26.157", port: 50512, cipher: "aes-256-gcm", password: "63d7c17506d1f48b", name: "🇰🇷 韩国 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "51.20.255.177", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇳 台湾 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "45.140.169.225", port: 30312, cipher: "aes-256-gcm", password: "c5fcdf7829112cb4", name: "🇨🇳 台湾 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "13.39.161.254", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇸🇬 新加坡 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "194.87.10.95", port: 8388, cipher: "aes-256-gcm", password: "DieHAwCk++tqYxq3", name: "🇸🇬 新加坡 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "52.90.139.126", port: 443, cipher: "aes-256-cfb", password: "amazonskr05", name: "🇨🇦 加拿大 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "195.58.49.100", port: 10910, cipher: "aes-256-gcm", password: "9f3d1a6d31468599", name: "🇨🇦 加拿大 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "194.87.68.7", port: 60120, cipher: "aes-256-gcm", password: "83acf69edb4e5453", name: "🇫🇷 法国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.42.45", port: 20219, cipher: "aes-256-gcm", password: "9ca2803c16de72cd", name: "🇫🇷 法国 02"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.41.87", port: 10081, cipher: "aes-256-gcm", password: "d989ff3d46a63f63", name: "🇹🇭 泰国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.41.87", port: 10081, cipher: "aes-256-gcm", password: "d989ff3d46a63f63", name: "🇦🇺 澳大利亚 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.43.143", port: 19012, cipher: "aes-256-gcm", password: "f34579d0148b2581", name: "🇬🇧 英国 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.43.143", port: 19012, cipher: "aes-256-gcm", password: "f34579d0148b2581", name: "🇪🇸 西班牙 01"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "46.17.42.45", port: 20219, cipher: "aes-256-gcm", password: "9ca2803c16de72cd", name: "🇷🇺 俄罗斯 01"}
+proxy-groups:
+- name: "PROXY"
+  type: "select"
+  proxies:
+  - "AUTO"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "AUTO"
+  type: "url-test"
+  url: "http://www.gstatic.com/generate_204"
+  interval: 180
+  tolerance: 50
+  proxies:
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "AI"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "FCM"
+  type: "select"
+  proxies:
+  - "✨ fcm"
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "GITHUB"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "GOOGLE"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "HOYO"
+  type: "select"
+  proxies:
+  - "DIRECT"
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "MICROSOFT"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "SPOTIFY"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "TIKTOK"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+- name: "UDP"
+  type: "select"
+  proxies:
+  - "PROXY"
+  - "DIRECT"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇯🇵 日本 03"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇺🇸 美国 03"
+  - "🇺🇸 美国 04"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
+  - "🇰🇷 韩国 01"
+  - "🇰🇷 韩国 02"
+  - "🇨🇳 台湾 01"
+  - "🇨🇳 台湾 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
+  - "🇨🇦 加拿大 01"
+  - "🇨🇦 加拿大 02"
+  - "🇫🇷 法国 01"
+  - "🇫🇷 法国 02"
+  - "🇹🇭 泰国 01"
+  - "🇦🇺 澳大利亚 01"
+  - "🇬🇧 英国 01"
+  - "🇪🇸 西班牙 01"
+  - "🇷🇺 俄罗斯 01"
+rules:
+- "GEOSITE,CATEGORY-ADS-ALL,REJECT"
+- "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
+- "DST-PORT,853,REJECT"
+- "GEOSITE,CATEGORY-AI-!CN,AI"
+- "GEOSITE,JETBRAINS-AI,AI"
+- "GEOSITE,GITHUB,GITHUB"
+- "GEOSITE,GOOGLEFCM,FCM"
+- "GEOSITE,GOOGLE,GOOGLE"
+- "GEOIP,GOOGLE,GOOGLE"
+- "DOMAIN-KEYWORD,public-operation-hkrpg-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-hk4e-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,public-operation-nap-sg.hoyoverse.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchhk.yuanshen.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.starrails.com,HOYO"
+- "DOMAIN-KEYWORD,autopatchos.zenlesszonezero.com,HOYO"
+- "DST-PORT,23301/22101-22102/20501/21601-21606/21101,HOYO"
+- "GEOSITE,HOYOVERSE,PROXY"
+- "GEOSITE,MICROSOFT,MICROSOFT"
+- "GEOSITE,SPOTIFY,SPOTIFY"
+- "GEOSITE,TIKTOK,TIKTOK"
+- "GEOSITE,PRIVATE,DIRECT"
+- "GEOIP,PRIVATE,DIRECT,no-resolve"
+- "GEOSITE,CN,DIRECT"
+- "GEOIP,CN,DIRECT"
+- "NETWORK,udp,UDP"
+- "MATCH,PROXY"
