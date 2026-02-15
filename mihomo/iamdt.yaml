@@ -69,6 +69,10 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
+- {name: "🇺🇸 美国 01", server: "xausvtxrxosjzzxdxv.bukavpn.cc", port: 29133, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4419fe4e-64e5-4d29-8aa0-b171988e26d4"}
+- {name: "🇺🇸 美国 02", server: "ncgfralbtm2ic6ilc.xcdoo.com", port: 38775, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4419fe4e-64e5-4d29-8aa0-b171988e26d4"}
+- {name: "🇭🇰 香港 01", server: "ncgfralbtm2ic6ilc.xcdoo.com", port: 47282, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4419fe4e-64e5-4d29-8aa0-b171988e26d4"}
+- {name: "🇭🇰 香港 02", server: "xausvtxrxosjzzxdxv.bukavpn.cc", port: 20024, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4419fe4e-64e5-4d29-8aa0-b171988e26d4"}
 - {name: "🇹🇬 多哥 01", server: "220.128.110.108", port: 43, type: "trojan", password: "5a2c16f9", sni: "5c.hhhhh.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/220.128.110.108:43", headers: {Host: "5c.hhhhh.eu.org"}}, client-fingerprint: "chrome"}
 - {name: "🇨🇳 台湾 01", server: "125.228.141.233", port: 443, type: "trojan", password: "5a2c16f9", sni: "5c.hhhhh.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/125.228.141.233:443", headers: {Host: "5c.hhhhh.eu.org"}}, client-fingerprint: "chrome"}
 - {name: "🇨🇳 台湾 02", server: "103.137.63.227", port: 8443, type: "trojan", password: "5a2c16f9", sni: "5c.hhhhh.eu.org", skip-cert-verify: true, network: "ws", ws-opts: {path: "/103.137.63.227:8443", headers: {Host: "5c.hhhhh.eu.org"}}, client-fingerprint: "chrome"}
@@ -78,6 +82,10 @@ proxy-groups:
   type: "select"
   proxies:
   - "AUTO"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -88,6 +96,10 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -96,6 +108,10 @@ proxy-groups:
   type: "select"
   proxies:
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -105,6 +121,10 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -113,6 +133,10 @@ proxy-groups:
   type: "select"
   proxies:
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -121,6 +145,10 @@ proxy-groups:
   type: "select"
   proxies:
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -130,6 +158,10 @@ proxy-groups:
   proxies:
   - "DIRECT"
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -139,6 +171,10 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -148,6 +184,10 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -156,6 +196,10 @@ proxy-groups:
   type: "select"
   proxies:
   - "PROXY"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
@@ -165,6 +209,10 @@ proxy-groups:
   proxies:
   - "PROXY"
   - "DIRECT"
+  - "🇺🇸 美国 01"
+  - "🇺🇸 美国 02"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
   - "🇹🇬 多哥 01"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
