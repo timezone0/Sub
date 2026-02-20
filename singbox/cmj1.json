@@ -82,9 +82,7 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -94,9 +92,7 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -106,9 +102,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -119,9 +113,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -131,9 +123,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -143,9 +133,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -156,9 +144,7 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -169,9 +155,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -182,9 +166,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -194,9 +176,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -207,9 +187,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇺🇸 美国 01",
-        "🇺🇸 美国 02",
-        "🇺🇸 美国 03"
+        "🇩🇪 德国 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -237,55 +215,30 @@
       }
     },
     {
-      "tag": "🇺🇸 美国 01",
+      "tag": "🇩🇪 德国 01",
       "type": "vless",
-      "server": "us01-gmn-vlr01.tcp-reset-club.net",
-      "server_port": 443,
-      "uuid": "762ac78b-0d9d-4d3e-aee5-e2597e7f3f6d",
+      "server": "104.18.32.47",
+      "server_port": 8443,
+      "uuid": "6e4db98d-0a7b-4e2b-9fa9-59795144b3dd",
       "tls": {
         "enabled": true,
-        "server_name": "hls-svod.itunes.apple.com",
+        "server_name": "nbx.parsfast.ir",
         "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
-          "short_id": "8453e5fd9af927"
-        },
+        "alpn": [
+          "h2%2Chttp%2F1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "tag": "🇺🇸 美国 02",
-      "type": "shadowsocks",
-      "server": "174.35.123.165",
-      "server_port": 26524,
-      "method": "rc4-md5",
-      "password": "f433ac2b27fd694f"
-    },
-    {
-      "tag": "🇺🇸 美国 03",
-      "type": "vless",
-      "server": "142.248.80.157",
-      "server_port": 443,
-      "uuid": "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "insecure": true,
-        "reality": {
-          "enabled": true,
-          "public_key": "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "nbx.parsfast.ir"
         },
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "flow": "xtls-rprx-vision"
+        "path": "/"
+      }
     }
   ],
   "route": {
