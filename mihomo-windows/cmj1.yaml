@@ -69,11 +69,11 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.sb.cloudns.biz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, client-fingerprint: "chrome"}
-- {name: "🇩🇪 德国 01", server: "chatgpt.com", port: 2083, type: "vless", uuid: "777f2e94-0f81-469c-a4a4-cfeb073c20ba", tls: true, alpn: ["h2%2Chttp%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "datisde2.rahagp.ir"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "datisde2.rahagp.ir"}
-- {name: "🇺🇸 美国 01", server: "185.189.160.105", port: 41632, type: "ss", cipher: "aes-256-cfb", password: "qwerREWQ@@"}
-- {name: "🇺🇸 美国 02", server: "142.248.80.157", port: 443, type: "vless", uuid: "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"}, client-fingerprint: "chrome", network: "tcp", servername: "apple.com"}
-- {name: "🇺🇸 美国 03", server: "us.jljd.xyz", port: 12345, type: "hysteria2", password: "6dfbef3b-f718-4053-806f-c9657e2fd943", auth: "6dfbef3b-f718-4053-806f-c9657e2fd943", sni: "us.jljd.xyz", skip-cert-verify: true, obfs: "salamander", obfs-password: "ZDQxZDhjZDk4ZjAwYjIwNA%3D%3D"}
+- {skip-cert-verify: true, sni: "_acme-challenge.sb.cloudns.biz", client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, name: "🏴‍☠️ 喀麦隆 01"}
+- {type: "vless", name: "🇩🇪 德国 01", server: "chatgpt.com", port: 2083, uuid: "777f2e94-0f81-469c-a4a4-cfeb073c20ba", tls: true, client-fingerprint: "chrome", alpn: ["h2", "http/1.1"], skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "datisde2.rahagp.ir"}, path: "/", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "datisde2.rahagp.ir"}
+- {type: "ss", skip-cert-verify: false, udp: false, server: "185.189.160.105", port: 41632, cipher: "aes-256-cfb", password: "qwerREWQ@@", name: "🇨🇳 台湾 01"}
+- {type: "vless", name: "🇺🇸 美国 01", server: "142.248.80.157", port: 443, uuid: "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"}, network: "tcp", servername: "apple.com"}
+- {type: "hysteria2", name: "🇺🇸 美国 02", server: "us.jljd.xyz", port: 12345, password: "6dfbef3b-f718-4053-806f-c9657e2fd943", sni: "us.jljd.xyz", obfs: "salamander", obfs-password: "ZDQxZDhjZDk4ZjAwYjIwNA==", skip-cert-verify: true, tfo: false}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -81,9 +81,9 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -92,18 +92,18 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "FCM"
   type: "select"
   proxies:
@@ -111,27 +111,27 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "GITHUB"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -139,9 +139,9 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "MICROSOFT"
   type: "select"
   proxies:
@@ -149,9 +149,9 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -159,18 +159,18 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 - name: "UDP"
   type: "select"
   proxies:
@@ -178,9 +178,9 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇩🇪 德国 01"
+  - "🇨🇳 台湾 01"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
-  - "🇺🇸 美国 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
