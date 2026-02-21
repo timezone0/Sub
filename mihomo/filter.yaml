@@ -69,74 +69,70 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇩🇪 德国 01", type: "tuic", server: "185.244.195.86", port: 47977, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 02", type: "tuic", server: "143.20.37.17", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 03", type: "vless", server: "143.20.37.17", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "qq", grpc-opts: {grpc-service-name: "jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "ETSpJ3bDQKKqN_iVmikA0ga_2rPobkV_OgEDgusQ3TI", short-id: "67f026556706"}, servername: "omni.rizing.app"}
-- {name: "🇩🇪 德国 04", type: "tuic", server: "195.128.102.110", port: 63145, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 05", type: "tuic", server: "195.128.102.110", port: 46985, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 06", type: "tuic", server: "37.114.48.20", port: 61000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 07", type: "tuic", server: "37.114.48.20", port: 43697, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 08", type: "vless", server: "germany.usdone.one", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "ws", skip-cert-verify: true, ws-opts: {path: "/jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, client-fingerprint: "chrome", servername: "germany.usdone.one"}
-- {name: "🇩🇪 德国 09", type: "tuic", server: "82.27.2.253", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇩🇪 德国 10", type: "vless", server: "82.27.2.253", port: 8443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "firefox", grpc-opts: {grpc-service-name: "jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "lEWynlfK4M8dqclYOqwQlMIy3XIMsnY8l19ST3rTqgQ", short-id: "21f49ebca30975"}, servername: "omni.rizing.app"}
-- {name: "🇧🇪 比利时 01", type: "tuic", server: "143.20.37.17", port: 20000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇳🇱 荷兰 01", type: "tuic", server: "185.34.144.18", port: 39001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇳🇱 荷兰 02", type: "tuic", server: "185.34.144.18", port: 39004, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇳🇱 荷兰 03", type: "tuic", server: "146.0.74.104", port: 39781, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇳🇱 荷兰 04", type: "tuic", server: "62.84.172.51", port: 42156, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.apple.com", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇳🇱 荷兰 05", type: "tuic", server: "62.84.172.51", port: 60024, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.apple.com", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 01", type: "tuic", server: "38.45.89.44", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 01", type: "tuic", server: "151.245.32.32", port: 56841, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇺🇸 美国 02", type: "tuic", server: "166.0.192.239", port: 46961, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇺🇸 美国 03", type: "tuic", server: "166.0.192.239", port: 64276, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇺🇸 美国 04", type: "tuic", server: "2602:f9f3:0000:0002:0000:0000:0000:0926", port: 46951, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 05", type: "tuic", server: "2602:f9f3:0000:0002:0000:0000:0000:0926", port: 47691, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 06", type: "tuic", server: "107.150.1.135", port: 45000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 07", type: "tuic", server: "151.245.32.32", port: 46981, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 08", type: "tuic", server: "151.245.32.32", port: 56841, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 09", type: "tuic", server: "166.88.142.143", port: 61200, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 10", type: "tuic", server: "166.88.142.143", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 11", type: "hysteria2", server: "194.113.37.75", port: 61237, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.apple.com", skip-cert-verify: true}
-- {name: "🇺🇸 美国 12", type: "tuic", server: "193.124.24.31", port: 41008, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 13", type: "hysteria2", server: "2602:f6f6:2:a819::1", port: 50089, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, obfs: "salamander", obfs-password: "7GINH1LD6c5kcT69"}
-- {name: "🇺🇸 美国 14", type: "tuic", server: "136.0.41.47", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 15", type: "tuic", server: "136.0.41.47", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 16", type: "tuic", server: "136.0.41.47", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 17", type: "hysteria2", server: "2602:f9f3:0000:0002:0000:0000:0000:0421", port: 64752, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "apple.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "4BHhEgLAO0sgEHJv"}
-- {name: "🇺🇸 美国 18", type: "vless", server: "107.175.51.245", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: true, client-fingerprint: "edge", grpc-opts: {grpc-service-name: "jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "0OqBuLLVHwpP3NOL99EFMmL0p7PEMVoYvFulgM0Auic", short-id: "5812bd8d6722f1"}, servername: "www.python.org"}
-- {name: "🇺🇸 美国 19", type: "vless", server: "194.113.37.75", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "edge", grpc-opts: {grpc-service-name: "dfw"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "susXbe6rSBJVVGMeXtEKh59ZH4W_zNoSFyY3qmeyYhE", short-id: "4f317ec7"}, servername: "thehubdayton.officernd.com"}
-- {name: "🇺🇸 美国 20", type: "tuic", server: "2602:f9f3:0000:0002:0000:0000:0000:0926", port: 20000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 21", type: "tuic", server: "2602:f9f3:0000:0002:0000:0000:0000:0926", port: 30000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 22", type: "tuic", server: "107.150.1.135", port: 35000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 23", type: "hysteria2", server: "207.174.28.26", port: 51372, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "apple.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "nDneuR2isso8k79O"}
-- {name: "🇺🇸 美国 24", type: "tuic", server: "38.135.25.44", port: 43675, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 25", type: "tuic", server: "204.152.198.183", port: 40572, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 26", type: "tuic", server: "204.152.198.183", port: 40001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 27", type: "tuic", server: "38.135.25.44", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 28", type: "tuic", server: "38.135.25.44", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 29", type: "tuic", server: "108.165.122.82", port: 43602, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 30", type: "tuic", server: "166.0.192.229", port: 8080, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 31", type: "tuic", server: "166.0.192.229", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 32", type: "tuic", server: "23.94.175.162", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 33", type: "tuic", server: "108.165.120.141", port: 43602, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 34", type: "tuic", server: "108.165.120.141", port: 61000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 35", type: "tuic", server: "209.141.58.4", port: 61000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 36", type: "tuic", server: "209.141.58.4", port: 51364, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 37", type: "tuic", server: "209.141.58.4", port: 34587, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 38", type: "tuic", server: "23.94.175.162", port: 43652, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 39", type: "tuic", server: "207.174.28.26", port: 31851, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "apple.com", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 40", type: "tuic", server: "107.175.6.66", port: 40001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 41", type: "tuic", server: "107.175.51.245", port: 40001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 42", type: "tuic", server: "107.175.51.245", port: 60003, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 43", type: "tuic", server: "107.172.250.191", port: 20000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 44", type: "tuic", server: "107.172.250.191", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 45", type: "tuic", server: "192.227.153.87", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 46", type: "tuic", server: "192.227.153.87", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 47", type: "tuic", server: "108.165.121.116", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 48", type: "tuic", server: "108.165.121.116", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 49", type: "tuic", server: "107.148.225.224", port: 41519, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇺🇸 美国 50", type: "tuic", server: "107.148.225.224", port: 61451, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇭🇰 香港 01", type: "tuic", server: "45.38.42.204", port: 47413, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇭🇰 香港 02", type: "tuic", server: "45.38.42.204", port: 47954, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 05", type: "tuic", server: "151.245.32.32", port: 46981, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 06", type: "hysteria2", server: "2602:f9f3:0000:0002:0000:0000:0000:0421", port: 64752, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "apple.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "4BHhEgLAO0sgEHJv"}
+- {name: "🇺🇸 美国 07", type: "tuic", server: "166.88.142.143", port: 61200, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 08", type: "hysteria2", server: "194.113.37.75", port: 61237, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.apple.com", skip-cert-verify: true}
+- {name: "🇺🇸 美国 09", type: "tuic", server: "166.88.142.143", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 10", type: "tuic", server: "193.124.24.31", port: 41008, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 11", type: "hysteria2", server: "2602:f6f6:2:a819::1", port: 50089, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, obfs: "salamander", obfs-password: "7GINH1LD6c5kcT69"}
+- {name: "🇺🇸 美国 12", type: "tuic", server: "136.0.41.47", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 13", type: "tuic", server: "136.0.41.47", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 14", type: "tuic", server: "136.0.41.47", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 15", type: "tuic", server: "38.45.89.44", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 16", type: "vless", server: "107.175.51.245", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: true, client-fingerprint: "chrome", grpc-opts: {grpc-service-name: "jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "0OqBuLLVHwpP3NOL99EFMmL0p7PEMVoYvFulgM0Auic", short-id: "5812bd8d6722f1"}, servername: "www.python.org"}
+- {name: "🇺🇸 美国 17", type: "vless", server: "194.113.37.75", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "edge", grpc-opts: {grpc-service-name: "dfw"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "susXbe6rSBJVVGMeXtEKh59ZH4W_zNoSFyY3qmeyYhE", short-id: "4f317ec7"}, servername: "thehubdayton.officernd.com"}
+- {name: "🇺🇸 美国 18", type: "tuic", server: "2602:f9f3:0000:0002:0000:0000:0000:0926", port: 20000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 19", type: "tuic", server: "107.150.1.135", port: 35000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 20", type: "tuic", server: "107.150.1.135", port: 45000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 21", type: "hysteria2", server: "207.174.28.26", port: 51372, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "apple.com", skip-cert-verify: true, obfs: "salamander", obfs-password: "nDneuR2isso8k79O"}
+- {name: "🇺🇸 美国 22", type: "tuic", server: "204.152.198.183", port: 40001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 23", type: "tuic", server: "166.0.192.229", port: 8080, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 24", type: "tuic", server: "107.175.51.245", port: 60003, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 25", type: "tuic", server: "38.135.25.44", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 26", type: "tuic", server: "38.135.25.44", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 27", type: "tuic", server: "107.175.51.245", port: 40001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 28", type: "tuic", server: "107.175.6.66", port: 40001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 29", type: "tuic", server: "38.135.25.44", port: 43675, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 30", type: "tuic", server: "204.152.198.183", port: 40572, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 31", type: "tuic", server: "108.165.121.116", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 32", type: "tuic", server: "207.174.28.26", port: 31851, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "apple.com", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 33", type: "tuic", server: "108.165.122.82", port: 43602, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 34", type: "tuic", server: "108.165.120.141", port: 43602, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 35", type: "tuic", server: "108.165.120.141", port: 61000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 36", type: "tuic", server: "209.141.58.4", port: 61000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 37", type: "tuic", server: "209.141.58.4", port: 51364, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 38", type: "tuic", server: "209.141.58.4", port: 34587, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 39", type: "tuic", server: "23.94.175.162", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 40", type: "tuic", server: "107.148.225.224", port: 41519, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 41", type: "tuic", server: "107.148.225.224", port: 61451, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 42", type: "tuic", server: "108.165.121.116", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 43", type: "tuic", server: "192.227.153.87", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 44", type: "tuic", server: "192.227.153.87", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 45", type: "tuic", server: "107.172.250.191", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 46", type: "tuic", server: "107.172.250.191", port: 20000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 47", type: "tuic", server: "23.94.175.162", port: 43652, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇺🇸 美国 48", type: "tuic", server: "166.0.192.229", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇧🇪 比利时 01", type: "tuic", server: "143.20.37.17", port: 20000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 01", type: "vless", server: "143.20.37.17", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "ios", grpc-opts: {grpc-service-name: "jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "ETSpJ3bDQKKqN_iVmikA0ga_2rPobkV_OgEDgusQ3TI", short-id: "67f026556706"}, servername: "omni.rizing.app"}
+- {name: "🇩🇪 德国 02", type: "tuic", server: "37.114.48.20", port: 61000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 03", type: "tuic", server: "37.114.48.20", port: 43697, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 04", type: "tuic", server: "185.244.195.86", port: 47977, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 05", type: "tuic", server: "143.20.37.17", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 06", type: "tuic", server: "195.128.102.110", port: 46985, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 07", type: "vless", server: "germany.usdone.one", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "ws", skip-cert-verify: true, ws-opts: {path: "/jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, client-fingerprint: "chrome", servername: "germany.usdone.one"}
+- {name: "🇩🇪 德国 08", type: "tuic", server: "195.128.102.110", port: 63145, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 09", type: "tuic", server: "82.27.2.253", port: 50000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇩🇪 德国 10", type: "vless", server: "82.27.2.253", port: 8443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "edge", grpc-opts: {grpc-service-name: "jss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "lEWynlfK4M8dqclYOqwQlMIy3XIMsnY8l19ST3rTqgQ", short-id: "21f49ebca30975"}, servername: "omni.rizing.app"}
+- {name: "🇳🇱 荷兰 01", type: "tuic", server: "185.34.144.18", port: 39001, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇳🇱 荷兰 02", type: "tuic", server: "185.34.144.18", port: 39004, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇳🇱 荷兰 03", type: "tuic", server: "146.0.74.104", port: 39781, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇳🇱 荷兰 04", type: "tuic", server: "62.84.172.51", port: 60024, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.apple.com", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇳🇱 荷兰 05", type: "tuic", server: "62.84.172.51", port: 42156, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.apple.com", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇯🇵 日本 01", type: "tuic", server: "212.192.221.153", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇯🇵 日本 02", type: "tuic", server: "212.192.221.153", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇯🇵 日本 03", type: "tuic", server: "115.187.16.7", port: 61425, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
@@ -147,35 +143,22 @@ proxies:
 - {name: "🇨🇦 加拿大 04", type: "tuic", server: "104.223.85.121", port: 40000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇨🇦 加拿大 05", type: "tuic", server: "104.223.85.121", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇲🇾 马来 01", type: "tuic", server: "202.155.10.21", port: 47513, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇭🇰 香港 01", type: "hysteria2", server: "2a0c:8a41:6100::353", port: 43658, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, obfs: "salamander", obfs-password: "wofFdCiPxmBnuhzV"}
+- {name: "🇭🇰 香港 02", type: "tuic", server: "45.38.42.204", port: 47413, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
+- {name: "🇭🇰 香港 03", type: "tuic", server: "45.38.42.204", port: 47954, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇫🇷 法国 01", type: "hysteria2", server: "31.56.48.133", port: 50005, password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, obfs: "salamander", obfs-password: "CIsRKi5rK49pIRAl"}
-- {name: "🇫🇷 法国 02", type: "vless", server: "31.56.48.133", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "chrome", grpc-opts: {grpc-service-name: "imgjss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "SG3AOJxrXRyK9h_dlfycIKYUWcDDHlEuHsLGsoGAT00", short-id: "944a"}, servername: "gaius.fr"}
+- {name: "🇫🇷 法国 02", type: "vless", server: "31.56.48.133", port: 443, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "edge", grpc-opts: {grpc-service-name: "imgjss"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "SG3AOJxrXRyK9h_dlfycIKYUWcDDHlEuHsLGsoGAT00", short-id: "944a"}, servername: "gaius.fr"}
 - {name: "🇫🇮 芬兰 01", type: "vless", server: "31.56.113.145", port: 3256, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "safari", grpc-opts: {grpc-service-name: "dfw"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "7NfDLpSL1yzlW_ZM_3dR-3DqzxuGzdmEIFaNsgiJJXA", short-id: "b054414a"}, servername: "www.hun.fi"}
-- {name: "🇫🇮 芬兰 02", type: "vless", server: "31.56.113.145", port: 49861, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "safari", grpc-opts: {grpc-service-name: "dfw"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "d-LG_ns3Nrh5GeWnEMpn2zbzD2TT8f8KhKnHU8z9XxE", short-id: "58d89cd76d58"}, servername: "www.hun.fi"}
+- {name: "🇫🇮 芬兰 02", type: "vless", server: "31.56.113.145", port: 49861, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", network: "grpc", skip-cert-verify: false, client-fingerprint: "edge", grpc-opts: {grpc-service-name: "dfw"}, alterId: 0, cipher: "auto", udp: true, tls: true, reality-opts: {public-key: "d-LG_ns3Nrh5GeWnEMpn2zbzD2TT8f8KhKnHU8z9XxE", short-id: "58d89cd76d58"}, servername: "www.hun.fi"}
+- {name: "🇸🇬 新加坡 01", type: "tuic", server: "194.233.79.195", port: 5829, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇹🇷 土耳其 01", type: "tuic", server: "103.83.86.167", port: 30000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇹🇷 土耳其 02", type: "tuic", server: "103.83.86.167", port: 60000, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
-- {name: "🇸🇬 新加坡 01", type: "tuic", server: "194.233.79.195", port: 5829, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 - {name: "🇧🇷 巴西 01", type: "tuic", server: "194.58.38.116", port: 53614, uuid: "a1102edc-f382-4720-99f5-ecc0a74507af", password: "a1102edc-f382-4720-99f5-ecc0a74507af", sni: "www.python.org", skip-cert-verify: true, udp: true, alpn: ["h3"], congestion-controller: "bbr", udp-relay-mode: "native", version: 5}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -224,10 +207,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -238,13 +233,16 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "AUTO"
   type: "url-test"
@@ -252,22 +250,6 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -316,10 +298,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -330,34 +324,21 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -406,10 +387,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -420,35 +413,22 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "FCM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -497,10 +477,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -511,34 +503,21 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "GITHUB"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -587,10 +566,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -601,34 +592,21 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -677,10 +655,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -691,35 +681,22 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -768,10 +745,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -782,35 +771,22 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "MICROSOFT"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -859,10 +835,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -873,35 +861,22 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -950,10 +925,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -964,34 +951,21 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1040,10 +1014,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1054,35 +1040,22 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 - name: "UDP"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇩🇪 德国 01"
-  - "🇩🇪 德国 02"
-  - "🇩🇪 德国 03"
-  - "🇩🇪 德国 04"
-  - "🇩🇪 德国 05"
-  - "🇩🇪 德国 06"
-  - "🇩🇪 德国 07"
-  - "🇩🇪 德国 08"
-  - "🇩🇪 德国 09"
-  - "🇩🇪 德国 10"
-  - "🇧🇪 比利时 01"
-  - "🇳🇱 荷兰 01"
-  - "🇳🇱 荷兰 02"
-  - "🇳🇱 荷兰 03"
-  - "🇳🇱 荷兰 04"
-  - "🇳🇱 荷兰 05"
   - "🇺🇸 美国 01"
   - "🇺🇸 美国 02"
   - "🇺🇸 美国 03"
@@ -1131,10 +1104,22 @@ proxy-groups:
   - "🇺🇸 美国 46"
   - "🇺🇸 美国 47"
   - "🇺🇸 美国 48"
-  - "🇺🇸 美国 49"
-  - "🇺🇸 美国 50"
-  - "🇭🇰 香港 01"
-  - "🇭🇰 香港 02"
+  - "🇧🇪 比利时 01"
+  - "🇩🇪 德国 01"
+  - "🇩🇪 德国 02"
+  - "🇩🇪 德国 03"
+  - "🇩🇪 德国 04"
+  - "🇩🇪 德国 05"
+  - "🇩🇪 德国 06"
+  - "🇩🇪 德国 07"
+  - "🇩🇪 德国 08"
+  - "🇩🇪 德国 09"
+  - "🇩🇪 德国 10"
+  - "🇳🇱 荷兰 01"
+  - "🇳🇱 荷兰 02"
+  - "🇳🇱 荷兰 03"
+  - "🇳🇱 荷兰 04"
+  - "🇳🇱 荷兰 05"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -1145,13 +1130,16 @@ proxy-groups:
   - "🇨🇦 加拿大 04"
   - "🇨🇦 加拿大 05"
   - "🇲🇾 马来 01"
+  - "🇭🇰 香港 01"
+  - "🇭🇰 香港 02"
+  - "🇭🇰 香港 03"
   - "🇫🇷 法国 01"
   - "🇫🇷 法国 02"
   - "🇫🇮 芬兰 01"
   - "🇫🇮 芬兰 02"
+  - "🇸🇬 新加坡 01"
   - "🇹🇷 土耳其 01"
   - "🇹🇷 土耳其 02"
-  - "🇸🇬 新加坡 01"
   - "🇧🇷 巴西 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
