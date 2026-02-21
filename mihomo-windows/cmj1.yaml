@@ -69,8 +69,8 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.sb.cloudns.biz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 01", server: "139.196.41.153", port: 443, type: "vless", uuid: "14b02e2a-8930-4afb-8412-ea4a4954ca5b", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/gs5=6666:6666@47.239.178.125:6666", headers: {Host: "ylnhh.cc.cd"}}, servername: "ylnhh.cc.cd"}
+- {skip-cert-verify: true, sni: "_acme-challenge.sb.cloudns.biz", client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, name: "🏴‍☠️ 喀麦隆 01"}
+- {type: "vless", name: "🇭🇰 香港 01", server: "139.196.41.153", port: 443, uuid: "14b02e2a-8930-4afb-8412-ea4a4954ca5b", tls: true, client-fingerprint: "chrome", skip-cert-verify: true, network: "ws", ws-opts: {headers: {Host: "ylnhh.cc.cd"}, path: "/gs5=6666:6666@47.239.178.125:6666"}, servername: "ylnhh.cc.cd"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
