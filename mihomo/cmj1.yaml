@@ -69,8 +69,8 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {skip-cert-verify: true, sni: "_acme-challenge.sb.cloudns.biz", client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, name: "🏴‍☠️ 喀麦隆 01"}
-- {type: "vless", name: "🇺🇸 美国 01", server: "142.248.80.157", port: 443, uuid: "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: true, reality-opts: {public-key: "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"}, network: "tcp", servername: "apple.com"}
+- {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.sb.cloudns.biz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 01", server: "142.248.80.157", port: 443, type: "vless", uuid: "4aff5de5-83dc-43c9-a33e-10e6fdb90ed2", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "Wvt6tuMcFY9rWF2BsdAD4DXgLAoxQJxHWlao2BPR23Y"}, client-fingerprint: "chrome", network: "tcp", servername: "apple.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
