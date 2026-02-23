@@ -83,7 +83,7 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -93,7 +93,7 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -103,7 +103,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -114,7 +114,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -124,7 +124,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -134,7 +134,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -145,7 +145,7 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -156,7 +156,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -167,7 +167,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -177,7 +177,7 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -188,7 +188,7 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇭🇰 香港 01"
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -216,13 +216,30 @@
       }
     },
     {
-      "tag": "🇭🇰 香港 01",
-      "type": "vmess",
-      "server": "45.196.235.171",
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "8.39.125.25",
       "server_port": 443,
-      "uuid": "ac6e19f8-4852-41e1-c120-c7261ee8f6e5",
-      "security": "auto",
-      "alter_id": 0
+      "uuid": "699c1857-75dd-7331-6693-b8944fc52bb9",
+      "tls": {
+        "enabled": true,
+        "server_name": "35eb1c4a.lfree.ccwu.cc",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "35eb1c4a.lfree.ccwu.cc"
+        },
+        "path": "/socks5=44fa737d:1bab4a4504ca@38.96.191.150:21719"
+      }
     }
   ],
   "route": {
