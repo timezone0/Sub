@@ -69,130 +69,94 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {client-fingerprint: "chrome", fingerprint: "", name: "🇬🇧 英国 01", network: "ws", port: 443, server: "198.62.62.248", tls: true, type: "vless", udp: false, uuid: "5a4abb78-ecd7-4d68-ab2a-c11a3842f261", ws-opts: {headers: {Host: "tar.alabama-tigr.info"}, path: "/love"}, servername: "tar.alabama-tigr.info"}
-- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 01", network: "ws", port: 26354, server: "211.238.83.146", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
-- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 02", network: "ws", port: 12134, server: "218.157.145.120", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
-- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 03", network: "ws", port: 10903, server: "14.37.103.127", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
-- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 04", network: "ws", port: 11681, server: "183.104.233.94", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
-- {client-fingerprint: "chrome", encryption: "none", name: "🇳🇱 荷兰 01", network: "ws", port: 2053, server: "195.200.16.70", tls: true, type: "vless", udp: true, uuid: "Telegram", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
+- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 01", network: "ws", port: 10903, server: "14.37.103.127", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
+- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 02", network: "ws", port: 11681, server: "183.104.233.94", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
+- {client-fingerprint: "chrome", encryption: "none", name: "🇰🇷 韩国 03", network: "ws", port: 12134, server: "218.157.145.120", tls: true, type: "vless", udp: true, uuid: "Telegram🇨🇳 @WangCai2", ws-opts: {headers: {Host: "tn1rr.qzz.io", User-Agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"}, path: "/sg-lnd"}, xudp: true, servername: "tn1rr.qzz.io"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
   interval: 180
   tolerance: 50
   proxies:
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "FCM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "GITHUB"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "MICROSOFT"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 - name: "UDP"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
-  - "🇬🇧 英国 01"
   - "🇰🇷 韩国 01"
   - "🇰🇷 韩国 02"
   - "🇰🇷 韩国 03"
-  - "🇰🇷 韩国 04"
-  - "🇳🇱 荷兰 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
