@@ -81,7 +81,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -90,7 +92,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -99,7 +103,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,7 +115,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,7 +126,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,7 +137,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,7 +149,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,7 +161,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,7 +173,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -166,7 +184,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -176,7 +196,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇯🇵 日本 01",
+        "🇯🇵 日本 02"
       ],
       "interrupt_exist_connections": true
     },
@@ -199,6 +221,56 @@
         "type": "ws",
         "headers": {
           "Host": "_acme-challenge.sb.cloudns.biz"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 01",
+      "type": "vmess",
+      "server": "sg.ok12345.ggff.net",
+      "server_port": 443,
+      "uuid": "367c4849-3d82-4496-839c-db16f3168165",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "jp006.japansb3.ggff.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sg.ok12345.ggff.net"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇯🇵 日本 02",
+      "type": "vmess",
+      "server": "sg.ok12345.ggff.net",
+      "server_port": 443,
+      "uuid": "ee7c100b-6b9a-4a0b-8deb-3e8ccd6ae430",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "jp006.japansb3.ggff.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sg.ok12345.ggff.net"
         },
         "path": "/"
       }
