@@ -70,18 +70,12 @@ dns:
   - "https://doh.pub/dns-query"
 proxies:
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.sb.cloudns.biz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 01", server: "zf.sg1000.eu.cc", port: 50000, type: "vless", uuid: "35249ead-311e-4cb9-ab36-17406ccf6b84", tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: "XcaJjk49Yof0-ZTuwFlFvBqd_QJC_uabiIWC1g6rvAk", short-id: "1f7bfe"}, client-fingerprint: "chrome", network: "tcp", servername: "yahoo.com"}
-- {name: "🇸🇬 新加坡 02", server: "zf.sg1000.eu.cc", port: 50000, type: "vless", uuid: "7473f95b-5a12-4972-b882-9fcd41ceff72", tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: "XcaJjk49Yof0-ZTuwFlFvBqd_QJC_uabiIWC1g6rvAk", short-id: "1f7bfe"}, client-fingerprint: "chrome", network: "tcp", servername: "yahoo.com"}
-- {name: "🇸🇬 新加坡 03", server: "zf.sg1000.eu.cc", port: 50000, type: "vless", uuid: "613b8baf-f848-43b6-9055-63a37160f203", tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: "XcaJjk49Yof0-ZTuwFlFvBqd_QJC_uabiIWC1g6rvAk", short-id: "1f7bfe"}, client-fingerprint: "chrome", network: "tcp", servername: "yahoo.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -89,86 +83,56 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "FCM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "GITHUB"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "MICROSOFT"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 - name: "UDP"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
-  - "🇸🇬 新加坡 01"
-  - "🇸🇬 新加坡 02"
-  - "🇸🇬 新加坡 03"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
