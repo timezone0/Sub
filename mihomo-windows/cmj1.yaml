@@ -70,16 +70,18 @@ dns:
   - "https://doh.pub/dns-query"
 proxies:
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.sb.cloudns.biz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, client-fingerprint: "chrome"}
-- {name: "🇸🇬 新加坡 01", server: "chatgpt.com", port: 443, type: "vless", uuid: "2ad80cff-5ef8-416a-a663-22c147264faa", tls: true, alpn: ["http%2F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/eyJqdW5rIjoiRnpna0hyZFRQRmNqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==", headers: {Host: "sonya-3nl.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "sonya-3nl.pages.dev"}
-- {name: "🇭🇰 香港 01", server: "hd117-xg-jd.huidu51.com", port: 46602, type: "ss", cipher: "chacha20-ietf-poly1305", password: "b4b78f5d-f4ec-4eae-8f83-9e4ed9e16326"}
+- {name: "🇺🇸 美国 01", server: "104.18.32.47", port: 2053, type: "vless", uuid: "f81fac6d-88e7-45e3-b19e-084527859fba", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/api/v1/events", headers: {Host: "apex.marfanet.com"}}, servername: "apex.marfanet.com"}
+- {name: "🇮🇳 印度 01", server: "139.59.3.70", port: 24725, type: "vless", uuid: "48ddd7e3-5d31-46ab-9153-16c0e4d92adc", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "PAAYOscWvc6-DIWjJ8cHWpgX-xkMUVmu8Nz24itmo34"}, client-fingerprint: "chrome", network: "tcp", servername: "dash.cloudflare.com"}
+- {name: "🇸🇬 新加坡 01", server: "chatgpt.com", port: 443, type: "vless", uuid: "2ad80cff-5ef8-416a-a663-22c147264faa", tls: true, alpn: ["http%252F1.1"], tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/eyJqdW5rIjoiRnpna0hyZFRQRmNqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==", headers: {Host: "sonya-3nl.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, servername: "sonya-3nl.pages.dev"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
   proxies:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -87,76 +89,86 @@ proxy-groups:
   tolerance: 50
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "FCM"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "GITHUB"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "HOYO"
   type: "select"
   proxies:
   - "DIRECT"
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "MICROSOFT"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 - name: "UDP"
   type: "select"
   proxies:
   - "PROXY"
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
+  - "🇺🇸 美国 01"
+  - "🇮🇳 印度 01"
   - "🇸🇬 新加坡 01"
-  - "🇭🇰 香港 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"

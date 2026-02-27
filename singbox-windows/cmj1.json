@@ -82,8 +82,9 @@
       "outbounds": [
         "auto",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -93,8 +94,9 @@
       "interval": "3m",
       "outbounds": [
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -104,8 +106,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -116,8 +119,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,8 +131,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -138,8 +143,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -150,8 +156,9 @@
         "direct",
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -162,8 +169,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -174,8 +182,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -185,8 +194,9 @@
       "outbounds": [
         "select",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -197,8 +207,9 @@
         "select",
         "direct",
         "🏴‍☠️ 喀麦隆 01",
-        "🇸🇬 新加坡 01",
-        "🇭🇰 香港 01"
+        "🇺🇸 美国 01",
+        "🇮🇳 印度 01",
+        "🇸🇬 新加坡 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -226,6 +237,50 @@
       }
     },
     {
+      "tag": "🇺🇸 美国 01",
+      "type": "vless",
+      "server": "104.18.32.47",
+      "server_port": 2053,
+      "uuid": "f81fac6d-88e7-45e3-b19e-084527859fba",
+      "tls": {
+        "enabled": true,
+        "server_name": "apex.marfanet.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "apex.marfanet.com"
+        },
+        "path": "/api/v1/events"
+      }
+    },
+    {
+      "tag": "🇮🇳 印度 01",
+      "type": "vless",
+      "server": "139.59.3.70",
+      "server_port": 24725,
+      "uuid": "48ddd7e3-5d31-46ab-9153-16c0e4d92adc",
+      "tls": {
+        "enabled": true,
+        "server_name": "dash.cloudflare.com",
+        "insecure": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "PAAYOscWvc6-DIWjJ8cHWpgX-xkMUVmu8Nz24itmo34"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
       "tag": "🇸🇬 新加坡 01",
       "type": "vless",
       "server": "chatgpt.com",
@@ -236,7 +291,7 @@
         "server_name": "sonya-3nl.pages.dev",
         "insecure": true,
         "alpn": [
-          "http%2F1.1"
+          "http%252F1.1"
         ],
         "utls": {
           "enabled": true,
@@ -252,14 +307,6 @@
         "max_early_data": 2560,
         "path": "/eyJqdW5rIjoiRnpna0hyZFRQRmNqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
       }
-    },
-    {
-      "tag": "🇭🇰 香港 01",
-      "type": "shadowsocks",
-      "server": "hd117-xg-jd.huidu51.com",
-      "server_port": 46602,
-      "method": "chacha20-ietf-poly1305",
-      "password": "b4b78f5d-f4ec-4eae-8f83-9e4ed9e16326"
     }
   ],
   "route": {
