@@ -81,7 +81,9 @@
       "type": "selector",
       "outbounds": [
         "auto",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -90,7 +92,9 @@
       "type": "urltest",
       "interval": "3m",
       "outbounds": [
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -99,7 +103,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -109,7 +115,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -118,7 +126,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -127,7 +137,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -137,7 +149,9 @@
       "outbounds": [
         "direct",
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -147,7 +161,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -157,7 +173,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -166,7 +184,9 @@
       "type": "selector",
       "outbounds": [
         "select",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -176,7 +196,9 @@
       "outbounds": [
         "select",
         "direct",
-        "🏴‍☠️ 喀麦隆 01"
+        "🏴‍☠️ 喀麦隆 01",
+        "🇸🇬 新加坡 01",
+        "🇭🇰 香港 01"
       ],
       "interrupt_exist_connections": true
     },
@@ -202,6 +224,42 @@
         },
         "path": "/"
       }
+    },
+    {
+      "tag": "🇸🇬 新加坡 01",
+      "type": "vless",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "2ad80cff-5ef8-416a-a663-22c147264faa",
+      "tls": {
+        "enabled": true,
+        "server_name": "sonya-3nl.pages.dev",
+        "insecure": true,
+        "alpn": [
+          "http%2F1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "sonya-3nl.pages.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2560,
+        "path": "/eyJqdW5rIjoiRnpna0hyZFRQRmNqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+      }
+    },
+    {
+      "tag": "🇭🇰 香港 01",
+      "type": "shadowsocks",
+      "server": "hd117-xg-jd.huidu51.com",
+      "server_port": 46602,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b4b78f5d-f4ec-4eae-8f83-9e4ed9e16326"
     }
   ],
   "route": {
