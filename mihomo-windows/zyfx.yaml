@@ -106,7 +106,6 @@ proxies:
 - {type: "trojan", server: "bgp1.stimaysmhy8.com", port: 14011, password: "984c7793-1447-4af5-9200-d514ad6fe329", sni: "jsygouer.weixin-baidu-qq.com", skip-cert-verify: true, name: "🇭🇰 香港 35", network: "tcp", client-fingerprint: "chrome"}
 - {name: "🇭🇰 香港 36", server: "c.cdn-bilibili.cn", port: 10201, type: "ss", cipher: "chacha20-ietf-poly1305", password: "26f936c5-e088-4fed-a72b-8a40e8a222d0", udp: true}
 - {name: "🇭🇰 香港 37", server: "a808.earthdraft.onezz.top", port: 20009, type: "vmess", uuid: "35840f0d-a42e-3a11-be5a-d1202773af54", alterId: 0, cipher: "auto", tls: false, network: "ws", ws-opts: {path: "/chat", headers: {Host: "ithome.com"}}, udp: true, client-fingerprint: "chrome"}
-- {type: "hysteria2", name: "🇭🇰 香港 38", server: "34.96.136.44", port: 55555, password: "e3a5bb40be52de65", sni: "apps.apple.com", skip-cert-verify: true, tfo: false}
 - {name: "🇨🇳 台湾 01", type: "ss", server: "cc1.l8inn.com", port: 10790, cipher: "chacha20-ietf-poly1305", password: "e7a50911-d882-4b07-81a1-a71713e40e17", udp: true}
 - {name: "🇨🇳 台湾 02", server: "c.cdn-bilibili.cn", port: 10789, type: "ss", cipher: "chacha20-ietf-poly1305", password: "4475c5fb-c4d3-444c-8822-c2e32e1c272c", tfo: false}
 - {name: "🇨🇳 台湾 03", type: "vmess", server: "a808.earthdraft.onezz.top", port: 40002, uuid: "35840f0d-a42e-3a11-be5a-d1202773af54", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/chat", headers: {Host: "ithome.com"}}, client-fingerprint: "chrome"}
@@ -124,7 +123,6 @@ proxies:
 - {name: "🇨🇳 台湾 15", server: "114.32.9.249", port: 16443, type: "vless", uuid: "3e974f9e-f568-4c2a-a4db-e9b666b4ea9e", tls: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/114.32.9.249:16443", headers: {Host: "63.hhhhh.eu.org"}}, udp: true, servername: "63.hhhhh.eu.org"}
 - {name: "🇨🇳 台湾 16", server: "ldu.izenny.com", port: 25612, type: "ss", cipher: "chacha20-ietf-poly1305", password: "c6d61cd1-d3dc-405e-afb2-d67815f4e4da", udp: true}
 - {name: "🇨🇳 台湾 17", server: "kbgs.hinet.tw1.yydjc.top", port: 443, type: "vless", uuid: "dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "TMwVM6Se3KqnJX6ArrqsFyr5wDIuk9weurW38h8zIjQ", short-id: "5a337f9f"}, client-fingerprint: "chrome", network: "tcp", udp: true, servername: "gopro.com"}
-- {type: "vless", name: "🇨🇳 台湾 18", server: "35.229.193.80", port: 22233, uuid: "2ed93971-7824-4581-93bc-a5ef22a56ac5", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "VUHSYTbTxk4yaUnYOnZ3_t2GtzPKobBTNDHqvHgZBw4", short-id: "16926c59"}, network: "tcp", encryption: "none", servername: "apps.apple.com"}
 - {name: "🇸🇬 新加坡 01", server: "hd117-xjp-jd.huidu51.com", port: 46614, type: "ss", cipher: "chacha20-ietf-poly1305", password: "b4b78f5d-f4ec-4eae-8f83-9e4ed9e16326", tfo: false}
 - {name: "🇸🇬 新加坡 02", type: "vmess", server: "a808.earthdraft.onezz.top", port: 22017, uuid: "35840f0d-a42e-3a11-be5a-d1202773af54", alterId: 0, cipher: "auto", udp: true, network: "ws", ws-opts: {path: "/chat", headers: {Host: "ithome.com"}}, client-fingerprint: "chrome"}
 - {type: "http", server: "8.219.97.248", port: 80, name: "🇸🇬 新加坡 03"}
@@ -316,13 +314,21 @@ proxies:
 - {name: "🇺🇸 美国 77", server: "cdnfire.xiaomispeed.com", port: 25502, type: "trojan", password: "fa2ec2fb-1723-47d6-92a7-56ee73018f58", sni: "cdnfire.xiaomispeed.com", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
 - {name: "🇺🇸 美国 78", server: "208.87.242.77", port: 35000, type: "hysteria2", password: "dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa", auth: "dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", udp: true}
 - {name: "🇺🇸 美国 79", server: "dcvb5yu.0wu.ccwu.cc", port: 80, type: "vless", uuid: "8ea1b89f-21d5-49b9-9bcd-1ad9ac39b4ba", tls: false, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/Iq3945ZsqJBAQ5Ah", headers: {Host: "dcvb5yu.0wu.ccwu.cc"}}, udp: true, servername: "dcvb5yu.0wu.ccwu.cc"}
-- {type: "vless", name: "🇺🇸 美国 80", server: "144.31.130.58", port: 23335, uuid: "e384913f-8863-47b4-8858-a84b68abb4a6", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "qq", skip-cert-verify: false, reality-opts: {public-key: "7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik", short-id: "67b1e94e4dd1ef90"}, network: "tcp", encryption: "none", servername: "icloud.com"}
-- {type: "vless", name: "🇺🇸 美国 81", server: "144.31.130.59", port: 23335, uuid: "e384913f-8863-47b4-8858-a84b68abb4a6", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik", short-id: "67b1e94e4dd1ef90"}, network: "tcp", encryption: "none", servername: "icloud.com"}
-- {type: "vless", name: "🇺🇸 美国 82", server: "207.244.199.59", port: 2053, uuid: "Telegram", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tn1rr.qzz.io"}, path: "/sg-lnd"}, encryption: "none", servername: "tn1rr.qzz.io"}
-- {type: "vless", name: "🇺🇸 美国 83", server: "store.ubi.com", port: 443, uuid: "203d9487-1656-4824-bb09-99c73ecd36c6", tls: true, client-fingerprint: "random", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "zrf-czr.pages.dev"}, path: "/zrf", early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, encryption: "none", servername: "zrf-czr.pages.dev"}
-- {type: "vless", name: "🇺🇸 美国 84", server: "139.196.41.153", port: 443, uuid: "14b02e2a-8930-4afb-8412-ea4a4954ca5b", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "ylnhh.cc.cd"}, path: "/gs5=6666:6666@47.239.178.125:6666"}, encryption: "none", servername: "ylnhh.cc.cd"}
-- {type: "vless", name: "🇺🇸 美国 85", server: "198.62.62.248", port: 443, uuid: "5a4abb78-ecd7-4d68-ab2a-c11a3842f261", tls: true, client-fingerprint: "chrome", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "tar.alabama-tigr.info"}, path: "/love"}, encryption: "none", servername: "tar.alabama-tigr.info"}
-- {type: "vless", name: "🇺🇸 美国 86", server: "www.ptnk.sry-vpn.com", port: 80, uuid: "4dc817f7-2595-4330-a1b0-e35e7c6b803a", skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "www.ptnk.sry-vpn.com"}, path: "/vless"}, encryption: "none", client-fingerprint: "chrome"}
+- {type: "vless", name: "🇺🇸 美国 80", server: "v.as.x10.mx", port: 443, uuid: "07440580-c04f-4025-a84d-e6ff1b140c74", tls: true, skip-cert-verify: false, network: "ws", ws-opts: {headers: {Host: "openlist.ikun6.dpdns.org"}, path: "/MY2026"}, encryption: "none", client-fingerprint: "chrome", servername: "openlist.ikun6.dpdns.org"}
+- {name: "🇺🇸 美国 81", server: "us01zl.poke-mon.xyz", port: 443, udp: true, skip-cert-verify: true, sni: "bing.com", type: "hysteria2", password: "79337612-0182-4a50-bf43-e0bb3aae3618"}
+- {name: "🇺🇸 美国 82", server: "us01zl.poke-mon.xyz", port: 443, udp: true, skip-cert-verify: true, sni: "bing.com", type: "hysteria2", password: "79337612-0182-4a50-bf43-e0bb3aae3618"}
+- {name: "🇺🇸 美国 83", server: "us02zl.poke-mon.xyz", port: 20000, ports: "20000-50000", mport: "20000-50000", udp: true, skip-cert-verify: true, sni: "bing.com", type: "hysteria2", password: "79337612-0182-4a50-bf43-e0bb3aae3618"}
+- {name: "🇺🇸 美国 84", server: "us02zl.poke-mon.xyz", port: 20000, ports: "20000-50000", mport: "20000-50000", udp: true, skip-cert-verify: true, sni: "bing.com", type: "hysteria2", password: "79337612-0182-4a50-bf43-e0bb3aae3618"}
+- {name: "🇺🇸 美国 85", type: "trojan", server: "01643afc-5ce0-4ddf-96a7-7c20300e0142.waimaosass.icu", port: 56115, password: "79337612-0182-4a50-bf43-e0bb3aae3618", udp: true, sni: "www.volcengine.com", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 86", type: "trojan", server: "01643afc-5ce0-4ddf-96a7-7c20300e0142.waimaosass.icu", port: 56115, password: "79337612-0182-4a50-bf43-e0bb3aae3618", udp: true, sni: "www.volcengine.com", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 87", type: "trojan", server: "01643afc-5ce0-4ddf-96a7-7c20300e0142.waimaosass.icu", port: 56017, password: "79337612-0182-4a50-bf43-e0bb3aae3618", udp: true, sni: "www.volcengine.com", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 88", type: "trojan", server: "01643afc-5ce0-4ddf-96a7-7c20300e0142.waimaosass.icu", port: 56017, password: "79337612-0182-4a50-bf43-e0bb3aae3618", udp: true, sni: "www.volcengine.com", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 89", type: "ss", server: "aws9dfd9-f96e-4f81-ba3b-cd1f47cc973c.waimaosass.icu", port: 54263, cipher: "2022-blake3-aes-128-gcm", password: "MjA0YzgwZjBlM2ZkNmRlNA==:NzkzMzc2MTItMDE4Mi00YQ==", udp: true}
+- {name: "🇺🇸 美国 90", type: "ss", server: "aws9dfd9-f96e-4f81-ba3b-cd1f47cc973c.waimaosass.icu", port: 54263, cipher: "2022-blake3-aes-128-gcm", password: "MjA0YzgwZjBlM2ZkNmRlNA==:NzkzMzc2MTItMDE4Mi00YQ==", udp: true}
+- {name: "🇺🇸 美国 91", type: "ss", server: "v601.yunjnet.com", port: 54273, cipher: "2022-blake3-aes-128-gcm", password: "MjA0YzgwZjBlM2ZkNmRlNA==:NzkzMzc2MTItMDE4Mi00YQ==", udp: true}
+- {name: "🇺🇸 美国 92", type: "ss", server: "v601.yunjnet.com", port: 54273, cipher: "2022-blake3-aes-128-gcm", password: "MjA0YzgwZjBlM2ZkNmRlNA==:NzkzMzc2MTItMDE4Mi00YQ==", udp: true}
+- {name: "🇺🇸 美国 93", type: "trojan", server: "0279dfd9-f96e-4f81-ba3b-cd1f47cc973c.waimaosass.icu", port: 56019, password: "79337612-0182-4a50-bf43-e0bb3aae3618", udp: true, sni: "www.volcengine.com", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
+- {name: "🇺🇸 美国 94", type: "trojan", server: "0279dfd9-f96e-4f81-ba3b-cd1f47cc973c.waimaosass.icu", port: 56019, password: "79337612-0182-4a50-bf43-e0bb3aae3618", udp: true, sni: "www.volcengine.com", skip-cert-verify: true, network: "tcp", client-fingerprint: "chrome"}
 - {type: "vless", server: "blog.811520.xyz", port: 443, uuid: "203d9487-1656-4824-bb09-99c73ecd36c6", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/zrf", headers: {Host: "zrf-czr.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", extra-params: {fragment: "1,40-60,30-50,tlshello"}, name: "🏴‍☠️ 中非共和国 01", servername: "zrf-czr.pages.dev"}
 - {type: "vless", server: "cf.877774.xyz", port: 443, uuid: "203d9487-1656-4824-bb09-99c73ecd36c6", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/zrf", headers: {Host: "zrf-czr.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", extra-params: {fragment: "1,40-60,30-50,tlshello"}, name: "🏴‍☠️ 中非共和国 02", servername: "zrf-czr.pages.dev"}
 - {type: "vless", server: "store.ubi.com", port: 443, uuid: "203d9487-1656-4824-bb09-99c73ecd36c6", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/zrf", headers: {Host: "zrf-czr.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", extra-params: {fragment: "1,40-60,30-50,tlshello"}, name: "🏴‍☠️ 中非共和国 03", servername: "zrf-czr.pages.dev"}
@@ -433,8 +439,6 @@ proxies:
 - {type: "vless", server: "84.201.131.144", port: 443, uuid: "d7e0cd97-a245-48aa-87b0-8539068e36ba", flow: "xtls-rprx-vision", network: "tcp", encryption: "none", tls: true, reality-opts: {public-key: "mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0", short-id: "d1579a8745398e34"}, client-fingerprint: "qq", name: "🇷🇺 俄罗斯 12", servername: "sun6-22.userapi.com"}
 - {type: "vless", server: "89.169.13.214", port: 443, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇷🇺 俄罗斯 13", servername: "_acme-challenge.443888.xyz"}
 - {type: "vless", server: "185.231.204.173", port: 81, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇷🇺 俄罗斯 14", servername: "_acme-challenge.443888.xyz"}
-- {type: "vless", name: "🇷🇺 俄罗斯 15", server: "91.225.219.81", port: 443, uuid: "92d75dc4-c432-43d0-a624-fd504929bc51", tls: true, flow: "", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "7gMEoki4NxLdx_BIOG6rwcsFvWfEVqBMlkyQ4L9TymM", short-id: "6627"}, network: "tcp", encryption: "none", servername: "yahoo.com"}
-- {type: "vless", name: "🇷🇺 俄罗斯 16", server: "31.129.22.64", port: 47910, uuid: "f651b25b-0a6a-4954-910f-7c07a1f6f664", tls: true, flow: "", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "UfNUyUPOiqRvjHvk4d5M1x8MTzYxDzb810fGH9CB_kQ", short-id: "d194cf18101d98de"}, network: "tcp", encryption: "none", servername: "yandex.ru"}
 - {name: "🇮🇩 印尼 01", server: "e849382a-tb6f40-ttyyk7-1h0r9.id.oshuawei.com", port: 32233, type: "http", username: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", password: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", tls: true, skip-cert-verify: true, tfo: false, sni: "e849382a-tb6f40-ttyyk7-1h0r9.id.oshuawei.com"}
 - {name: "🇮🇩 印尼 02", server: "c8d81050-tb6f40-ttxkqc-e06r.id.oshuawei.com", port: 32233, type: "http", username: "861726bb-c61a-b0e0-99fa-5ddfdcf21902", password: "861726bb-c61a-b0e0-99fa-5ddfdcf21902", tls: true, skip-cert-verify: true, tfo: false, sni: "c8d81050-tb6f40-ttxkqc-e06r.id.oshuawei.com"}
 - {type: "http", server: "202.152.44.18", port: 8081, name: "🇮🇩 印尼 03"}
@@ -481,7 +485,6 @@ proxies:
 - {name: "🇳🇱 荷兰 40", server: "5.181.177.119", port: 10191, type: "vless", uuid: "78d0a329-7299-4272-8e9b-9bce507d5587", tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "4TFV3PXkZY1wdb3RnRBJUJ4NGV4uq3S6cqWirO041GE", short-id: "549f01ef"}, client-fingerprint: "chrome", network: "tcp", udp: true, servername: "support.apple.com"}
 - {name: "🇳🇱 荷兰 41", server: "s678.ccgfw.top", port: 443, type: "vless", uuid: "8c6118b9-78a8-3b3b-a49a-6aa9cb5b1d4e", tls: true, client-fingerprint: "ios", network: "grpc", grpc-opts: {grpc-mode: "gun", grpc-service-name: "ssp"}, udp: true, servername: "u708330u6ad7s678.ccgfw.top"}
 - {name: "🇳🇱 荷兰 42", server: "104.20.1.252", port: 80, type: "vless", uuid: "7d4a519b-d270-434e-a42d-d39624577a92", tls: false, network: "ws", ws-opts: {path: "/?ed", headers: {Host: "bright-organizationauhuddhesz.sportland.company."}}, udp: true, client-fingerprint: "chrome"}
-- {type: "vless", name: "🇳🇱 荷兰 43", server: "nl02-vlr01.tcp-reset-club.net", port: 443, uuid: "1c4aceb6-bff7-4737-8c5d-43afb3dc350b", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg", short-id: "86e999a2cdc2"}, network: "tcp", encryption: "none", servername: "hls-svod.itunes.apple.com"}
 - {type: "hysteria2", server: "h-vn.csyx.xyz", port: 443, password: "fa553c20-9b2f-4e25-b675-3e0bfc2f4106", sni: "s0.awsstatic.com", skip-cert-verify: true, tfo: true, obfs: "salamander", name: "🇻🇳 越南 01", obfs-password: "none"}
 - {type: "anytls", server: "h-vn.csyx.xyz", port: 6659, password: "fa553c20-9b2f-4e25-b675-3e0bfc2f4106", sni: "h-vn.csyx.xyz", skip-cert-verify: true, extra-params: {security: "tls", type: "tcp"}, name: "🇻🇳 越南 02"}
 - {name: "🇻🇳 越南 03", type: "ss", server: "103.186.154.11", port: 38388, password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV", cipher: "aes-256-cfb"}
@@ -520,7 +523,6 @@ proxies:
 - {name: "🇬🇧 英国 12", server: "57.128.176.90", type: "vless", port: 8443, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", tls: true, client-fingerprint: "random", ws-opts: {path: "/danfeng", headers: {Host: "cyuxj212pnq.chinat.indevs.in"}}, packet-encoding: "", servername: "cyuxj212pnq.chinat.indevs.in"}
 - {type: "vless", server: "185.245.83.41", port: 31687, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇬🇧 英国 13", servername: "_acme-challenge.443888.xyz"}
 - {name: "🇬🇧 英国 14", server: "bf1a91e3-tb6f40-ttyyk7-1h0r9.uk.oshuawei.com", port: 443, type: "http", username: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", password: "9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9", tls: true, skip-cert-verify: true, tfo: false, sni: "bf1a91e3-tb6f40-ttyyk7-1h0r9.uk.oshuawei.com"}
-- {type: "vless", name: "🇬🇧 英国 15", server: "ita01-vlr02.tcp-reset-club.net", port: 443, uuid: "1c4aceb6-bff7-4737-8c5d-43afb3dc350b", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", skip-cert-verify: false, reality-opts: {public-key: "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg", short-id: "31"}, network: "tcp", encryption: "none", servername: "hls-svod.itunes.apple.com"}
 - {name: "🇮🇹 意大利 01", type: "ss", server: "cc1.l8inn.com", port: 20303, cipher: "chacha20-ietf-poly1305", password: "e7a50911-d882-4b07-81a1-a71713e40e17", udp: true}
 - {type: "http", server: "104.238.30.50", port: 59741, name: "🇮🇹 意大利 02"}
 - {type: "vless", server: "158.180.231.216", port: 443, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇮🇹 意大利 03", servername: "_acme-challenge.443888.xyz"}
@@ -532,7 +534,6 @@ proxies:
 - {type: "vless", server: "62.182.196.132", port: 8443, uuid: "9a63b59c-5e54-437a-b7a1-2788780a7c13", flow: "xtls-rprx-vision", network: "tcp", encryption: "none", tls: true, reality-opts: {public-key: "qBcUlVqkzWxGORpDCj_FcNHACi3mrAYTCZeJyVQa5yU", short-id: "6b374e33af12fd1e"}, client-fingerprint: "chrome", name: "🇸🇪 瑞典 01", servername: "retn.net"}
 - {type: "vless", server: "51.20.99.157", port: 443, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇸🇪 瑞典 02", servername: "_acme-challenge.443888.xyz"}
 - {type: "vless", server: "193.188.21.181", port: 443, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇸🇪 瑞典 03", servername: "_acme-challenge.443888.xyz"}
-- {type: "ss", skip-cert-verify: false, udp: false, server: "195.93.253.245", port: 49137, cipher: "chacha20-ietf-poly1305", password: "eGeS7710Fq2DIru91s0gGe", name: "🇸🇪 瑞典 04"}
 - {name: "🇷🇴 罗马尼亚 01", type: "vless", server: "crghxqxyoy-518237151-direct.bahame.co", port: 443, uuid: "crghxqxyoy", tls: true, flow: "xtls-rprx-vision", client-fingerprint: "chrome", network: "tcp", servername: "crghxqxyoy-518237151-direct.bahame.co"}
 - {type: "vless", server: "194.68.44.27", port: 81, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇷🇴 罗马尼亚 02", servername: "_acme-challenge.443888.xyz"}
 - {name: "🇹🇷 土耳其 01", server: "sd.youtu1.top", port: 34081, type: "ss", cipher: "chacha20-ietf-poly1305", password: "2939a5b4-43fe-4392-a2a4-7bc4a4b5bac5", tfo: false}
@@ -619,7 +620,6 @@ proxies:
 - {type: "vless", server: "212.227.144.37", port: 8443, uuid: "26524cce-d514-4014-a426-365fb266a14d", network: "ws", encryption: "none", tls: true, ws-opts: {path: "/danfeng", headers: {Host: "_acme-challenge.443888.xyz"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "random", name: "🇪🇸 西班牙 01", servername: "_acme-challenge.443888.xyz"}
 - {name: "🇧🇭 巴林 01", server: "blaab.wsone.icu", port: 443, type: "trojan", password: "M7v%w11Se*", sni: "blaab.wsone.icu", skip-cert-verify: true, udp: true, network: "tcp", client-fingerprint: "chrome"}
 - {name: "🇲🇽 墨西哥 01", server: "140.84.171.236", port: 50000, type: "hysteria2", password: "767ed51d-2358-4981-9447-a807c1419e93", auth: "767ed51d-2358-4981-9447-a807c1419e93", sni: "fastcdn.hoyoverse.com", skip-cert-verify: true, ports: "50000-53000", udp: true}
-- {skip-cert-verify: true, sni: "jsygouer.weixin-baidu-qq.com", network: "tcp", type: "trojan", password: "984c7793-1447-4af5-9200-d514ad6fe329", server: "sg05.stimaysmhy8.com", port: 45005, name: "🇮🇷 伊朗 01", client-fingerprint: "chrome"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -662,7 +662,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -680,7 +679,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -879,6 +877,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -989,8 +995,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -1037,7 +1041,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -1076,7 +1079,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -1088,7 +1090,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -1175,7 +1176,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -1219,7 +1219,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -1237,7 +1236,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -1436,6 +1434,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -1546,8 +1552,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -1594,7 +1598,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -1633,7 +1636,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -1645,7 +1647,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -1732,7 +1733,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "AI"
   type: "select"
   proxies:
@@ -1774,7 +1774,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -1792,7 +1791,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -1991,6 +1989,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -2101,8 +2107,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -2149,7 +2153,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -2188,7 +2191,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -2200,7 +2202,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -2287,7 +2288,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "FCM"
   type: "select"
   proxies:
@@ -2330,7 +2330,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -2348,7 +2347,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -2547,6 +2545,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -2657,8 +2663,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -2705,7 +2709,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -2744,7 +2747,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -2756,7 +2758,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -2843,7 +2844,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "GITHUB"
   type: "select"
   proxies:
@@ -2885,7 +2885,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -2903,7 +2902,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -3102,6 +3100,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -3212,8 +3218,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -3260,7 +3264,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -3299,7 +3302,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -3311,7 +3313,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -3398,7 +3399,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "GOOGLE"
   type: "select"
   proxies:
@@ -3440,7 +3440,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -3458,7 +3457,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -3657,6 +3655,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -3767,8 +3773,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -3815,7 +3819,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -3854,7 +3857,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -3866,7 +3868,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -3953,7 +3954,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -3996,7 +3996,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -4014,7 +4013,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -4213,6 +4211,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -4323,8 +4329,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -4371,7 +4375,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -4410,7 +4413,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -4422,7 +4424,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -4509,7 +4510,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "MICROSOFT"
   type: "select"
   proxies:
@@ -4552,7 +4552,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -4570,7 +4569,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -4769,6 +4767,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -4879,8 +4885,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -4927,7 +4931,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -4966,7 +4969,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -4978,7 +4980,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -5065,7 +5066,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -5108,7 +5108,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -5126,7 +5125,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -5325,6 +5323,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -5435,8 +5441,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -5483,7 +5487,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -5522,7 +5525,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -5534,7 +5536,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -5621,7 +5622,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "TIKTOK"
   type: "select"
   proxies:
@@ -5663,7 +5663,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -5681,7 +5680,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -5880,6 +5878,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -5990,8 +5996,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -6038,7 +6042,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -6077,7 +6080,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -6089,7 +6091,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -6176,7 +6177,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 - name: "UDP"
   type: "select"
   proxies:
@@ -6219,7 +6219,6 @@ proxy-groups:
   - "🇭🇰 香港 35"
   - "🇭🇰 香港 36"
   - "🇭🇰 香港 37"
-  - "🇭🇰 香港 38"
   - "🇨🇳 台湾 01"
   - "🇨🇳 台湾 02"
   - "🇨🇳 台湾 03"
@@ -6237,7 +6236,6 @@ proxy-groups:
   - "🇨🇳 台湾 15"
   - "🇨🇳 台湾 16"
   - "🇨🇳 台湾 17"
-  - "🇨🇳 台湾 18"
   - "🇸🇬 新加坡 01"
   - "🇸🇬 新加坡 02"
   - "🇸🇬 新加坡 03"
@@ -6436,6 +6434,14 @@ proxy-groups:
   - "🇺🇸 美国 84"
   - "🇺🇸 美国 85"
   - "🇺🇸 美国 86"
+  - "🇺🇸 美国 87"
+  - "🇺🇸 美国 88"
+  - "🇺🇸 美国 89"
+  - "🇺🇸 美国 90"
+  - "🇺🇸 美国 91"
+  - "🇺🇸 美国 92"
+  - "🇺🇸 美国 93"
+  - "🇺🇸 美国 94"
   - "🏴‍☠️ 中非共和国 01"
   - "🏴‍☠️ 中非共和国 02"
   - "🏴‍☠️ 中非共和国 03"
@@ -6546,8 +6552,6 @@ proxy-groups:
   - "🇷🇺 俄罗斯 12"
   - "🇷🇺 俄罗斯 13"
   - "🇷🇺 俄罗斯 14"
-  - "🇷🇺 俄罗斯 15"
-  - "🇷🇺 俄罗斯 16"
   - "🇮🇩 印尼 01"
   - "🇮🇩 印尼 02"
   - "🇮🇩 印尼 03"
@@ -6594,7 +6598,6 @@ proxy-groups:
   - "🇳🇱 荷兰 40"
   - "🇳🇱 荷兰 41"
   - "🇳🇱 荷兰 42"
-  - "🇳🇱 荷兰 43"
   - "🇻🇳 越南 01"
   - "🇻🇳 越南 02"
   - "🇻🇳 越南 03"
@@ -6633,7 +6636,6 @@ proxy-groups:
   - "🇬🇧 英国 12"
   - "🇬🇧 英国 13"
   - "🇬🇧 英国 14"
-  - "🇬🇧 英国 15"
   - "🇮🇹 意大利 01"
   - "🇮🇹 意大利 02"
   - "🇮🇹 意大利 03"
@@ -6645,7 +6647,6 @@ proxy-groups:
   - "🇸🇪 瑞典 01"
   - "🇸🇪 瑞典 02"
   - "🇸🇪 瑞典 03"
-  - "🇸🇪 瑞典 04"
   - "🇷🇴 罗马尼亚 01"
   - "🇷🇴 罗马尼亚 02"
   - "🇹🇷 土耳其 01"
@@ -6732,7 +6733,6 @@ proxy-groups:
   - "🇪🇸 西班牙 01"
   - "🇧🇭 巴林 01"
   - "🇲🇽 墨西哥 01"
-  - "🇮🇷 伊朗 01"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
