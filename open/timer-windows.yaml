@@ -69,13 +69,15 @@ dns:
   - "https://dns.alidns.com/dns-query"
   - "https://doh.pub/dns-query"
 proxies:
-- {name: "🇺🇸 美国 01", type: "hysteria2", server: "208.87.242.77", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
-- {name: "🇺🇸 美国 02", type: "hysteria2", server: "208.87.242.77", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
-- {name: "🇺🇸 美国 03", type: "hysteria2", server: "208.87.242.77", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
-- {name: "🇺🇸 美国 04", type: "hysteria2", server: "208.87.242.77", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
-- {name: "🇺🇸 美国 05", type: "hysteria2", server: "129.153.25.59", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.lamer.com.hk", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
-- {name: "🇺🇸 美国 06", type: "vless", server: "104.19.58.118", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", network: "ws", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/kbjc/us1", headers: {Host: "us1-us1.aiopen.sbs"}}, udp: true, tls: true, servername: "us1-us1.aiopen.sbs"}
-- {name: "🇺🇸 美国 07", type: "vless", server: "104.19.58.118", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", network: "ws", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/kbjc/us1", headers: {Host: "us1-us1.aiopen.sbs"}}, udp: true, tls: true, servername: "us1-us1.aiopen.sbs"}
+- {name: "🇺🇸 美国 01", type: "hysteria2", server: "134.195.101.199", port: 443, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 02", type: "hysteria2", server: "134.195.101.199", port: 443, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 03", type: "hysteria2", server: "134.195.101.199", port: 443, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 04", type: "hysteria2", server: "134.195.101.199", port: 443, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 05", type: "hysteria2", server: "134.195.101.199", port: 443, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, udp: true}
+- {name: "🇺🇸 美国 06", type: "hysteria2", server: "208.87.242.77", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
+- {name: "🇺🇸 美国 07", type: "hysteria2", server: "129.153.25.59", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.lamer.com.hk", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
+- {name: "🇺🇸 美国 08", type: "vless", server: "104.19.58.118", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", network: "ws", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/kbjc/us1", headers: {Host: "us1-us1.aiopen.sbs"}}, udp: true, tls: true, servername: "us1-us1.aiopen.sbs"}
+- {name: "🇺🇸 美国 09", type: "vless", server: "104.19.58.118", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", network: "ws", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/kbjc/us1", headers: {Host: "us1-us1.aiopen.sbs"}}, udp: true, tls: true, servername: "us1-us1.aiopen.sbs"}
 - {name: "🇯🇵 日本 01", type: "hysteria2", server: "103.62.49.76", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
 - {name: "🇯🇵 日本 02", type: "hysteria2", server: "103.62.49.76", port: 35000, password: "38428a74-c651-47a5-b2c9-4bec5a1809cf", sni: "www.apple.com", skip-cert-verify: true, ports: "35000-39000", mport: "35000-39000", udp: true}
 - {name: "🇯🇵 日本 03", type: "vless", server: "kb.vmjp2.yydjc.top", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", skip-cert-verify: false, client-fingerprint: "safari", udp: true, tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4", short-id: "bb9ab0d5242d53e9"}, network: "tcp", servername: "iosapps.itunes.apple.com"}
@@ -91,7 +93,7 @@ proxies:
 - {name: "🇫🇷 法国 02", type: "vless", server: "69.84.182.13", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", network: "ws", skip-cert-verify: false, client-fingerprint: "chrome", ws-opts: {path: "/kbjc/fr1", headers: {Host: "fr-1-fr-1.aiopen.sbs"}}, udp: true, tls: true, servername: "fr-1-fr-1.aiopen.sbs"}
 - {name: "🇩🇪 德国 01", type: "vless", server: "130.162.220.137", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", skip-cert-verify: false, client-fingerprint: "safari", udp: true, tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "UV34T0S_VyVcChA2Tb9MIbg4tr1mHGMr_Lw5Gvb17F8", short-id: "66ed2fdd"}, network: "tcp", servername: "www.lamer.com"}
 - {name: "🇨🇳 台湾 01", type: "vless", server: "kbgs.hinet.tw1.yydjc.top", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", skip-cert-verify: false, client-fingerprint: "chrome", udp: true, tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "TMwVM6Se3KqnJX6ArrqsFyr5wDIuk9weurW38h8zIjQ", short-id: "5a337f9f"}, network: "tcp", servername: "gopro.com"}
-- {name: "🇰🇷 韩国 01", type: "vless", server: "146.56.158.145", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", skip-cert-verify: false, client-fingerprint: "chrome", udp: true, tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "j5tsCQhMqefjOq-shVxsZS195S4R7Ce_prmT8yFsvm8", short-id: "d02456fe"}, network: "tcp", servername: "www.lamer.com"}
+- {name: "🇰🇷 韩国 01", type: "vless", server: "193.122.120.203", port: 443, uuid: "38428a74-c651-47a5-b2c9-4bec5a1809cf", skip-cert-verify: false, client-fingerprint: "chrome", udp: true, tls: true, flow: "xtls-rprx-vision", reality-opts: {public-key: "j5tsCQhMqefjOq-shVxsZS195S4R7Ce_prmT8yFsvm8", short-id: "d02456fe"}, network: "tcp", servername: "www.lamer.com"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -104,6 +106,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -133,6 +137,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -160,6 +166,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -188,6 +196,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -215,6 +225,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -242,6 +254,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -270,6 +284,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -298,6 +314,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -326,6 +344,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -353,6 +373,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
@@ -381,6 +403,8 @@ proxy-groups:
   - "🇺🇸 美国 05"
   - "🇺🇸 美国 06"
   - "🇺🇸 美国 07"
+  - "🇺🇸 美国 08"
+  - "🇺🇸 美国 09"
   - "🇯🇵 日本 01"
   - "🇯🇵 日本 02"
   - "🇯🇵 日本 03"
