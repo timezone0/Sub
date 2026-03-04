@@ -70,8 +70,11 @@ dns:
   - "https://doh.pub/dns-query"
 proxies:
 - {name: "🏴‍☠️ 喀麦隆 01", server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz", port: 443, type: "trojan", password: "87d1bfd4-574e-4c96-ad42-0426f27461ff", sni: "_acme-challenge.sb.cloudns.biz", skip-cert-verify: true, network: "ws", ws-opts: {path: "/", headers: {Host: "_acme-challenge.sb.cloudns.biz"}}, client-fingerprint: "chrome"}
-- {name: "🇭🇰 香港 01", server: "mfa.gov.ua", port: 2096, type: "trojan", password: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91", sni: "cm22-bgphhh.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/dl/ep/page/proxyip=45.196.239.151,167.253.153.161,45.196.239.238,45.196.238.248,45.196.238.145,223.165.4.57,85.237.207.19,167.253.153.80", headers: {Host: "cm22-bgphhh.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
-- {name: "🇺🇸 美国 01", server: "cmcc.877774.xyz", port: 443, type: "trojan", password: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91", sni: "cm22-bgphhh.pages.dev", skip-cert-verify: true, network: "ws", ws-opts: {path: "/buy/proxyip=45.196.239.151,167.253.153.161,45.196.239.238,45.196.238.248,45.196.238.145,223.165.4.57,85.237.207.19,167.253.153.80", headers: {Host: "cm22-bgphhh.pages.dev"}, early-data-header-name: "Sec-WebSocket-Protocol", max-early-data: 2560}, client-fingerprint: "chrome"}
+- {name: "🇭🇰 香港 01", server: "104.19.59.39", port: 8443, type: "vless", uuid: "ac84e665-e4f4-5c3e-691a-505b017be859", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "qrc8.ygk.edukg.dpdns.org"}}, servername: "qrc8.ygk.edukg.dpdns.org"}
+- {name: "🇯🇵 日本 01", server: "172.64.52.251", port: 443, type: "vless", uuid: "ac84e665-e4f4-5c3e-691a-505b017be859", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "ja4e.fev.snl.cc.cd"}}, servername: "ja4e.fev.snl.cc.cd"}
+- {name: "🇯🇵 日本 02", server: "cdn.jp2.cocoduck.org", port: 25642, type: "vless", uuid: "6a62060e-3f1f-4254-8faa-2c2f4f0fa28b", tls: true, tfo: false, flow: "xtls-rprx-vision", skip-cert-verify: true, reality-opts: {public-key: "VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE", short-id: "693b25e06841ac7f"}, client-fingerprint: "chrome", network: "tcp", servername: "www.apple.com"}
+- {name: "🇸🇬 新加坡 01", server: "172.64.38.201", port: 443, type: "vless", uuid: "ac84e665-e4f4-5c3e-691a-505b017be859", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "zdso.1lt.edueu.dpdns.org"}}, servername: "zdso.1lt.edueu.dpdns.org"}
+- {name: "🇸🇬 新加坡 02", server: "104.18.36.211", port: 443, type: "vless", uuid: "ac84e665-e4f4-5c3e-691a-505b017be859", tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: "chrome", network: "ws", ws-opts: {path: "/", headers: {Host: "ja4e.fev.snl.cc.cd"}}, servername: "ja4e.fev.snl.cc.cd"}
 proxy-groups:
 - name: "PROXY"
   type: "select"
@@ -79,7 +82,10 @@ proxy-groups:
   - "AUTO"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "AUTO"
   type: "url-test"
   url: "http://www.gstatic.com/generate_204"
@@ -88,14 +94,20 @@ proxy-groups:
   proxies:
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "AI"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "FCM"
   type: "select"
   proxies:
@@ -103,21 +115,30 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "GITHUB"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "GOOGLE"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "HOYO"
   type: "select"
   proxies:
@@ -125,7 +146,10 @@ proxy-groups:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "MICROSOFT"
   type: "select"
   proxies:
@@ -133,7 +157,10 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "SPOTIFY"
   type: "select"
   proxies:
@@ -141,14 +168,20 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "TIKTOK"
   type: "select"
   proxies:
   - "PROXY"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 - name: "UDP"
   type: "select"
   proxies:
@@ -156,7 +189,10 @@ proxy-groups:
   - "DIRECT"
   - "🏴‍☠️ 喀麦隆 01"
   - "🇭🇰 香港 01"
-  - "🇺🇸 美国 01"
+  - "🇯🇵 日本 01"
+  - "🇯🇵 日本 02"
+  - "🇸🇬 新加坡 01"
+  - "🇸🇬 新加坡 02"
 rules:
 - "GEOSITE,CATEGORY-ADS-ALL,REJECT"
 - "AND,((NETWORK,udp),(DST-PORT,443)),REJECT"
