@@ -23,21 +23,24 @@ jobs:
         run: |
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc
           df -h
-
+          
       - name: 2. 执行高速下载
         id: download
         run: |
-          URL="${{ github.event.inputs.file_url }}"
-          # 如果用户没写文件名，从 URL 中提取
+          URL='${{ github.event.inputs.file_url }}'
+          
           if [ -z "${{ github.event.inputs.file_name }}" ]; then
-            FNAME=$(basename "${URL%%?*}")
+            CLEAN_URL=$(echo "$URL" | cut -d'?' -f1)
+            FNAME=$(basename "$CLEAN_URL")
           else
             FNAME="${{ github.event.inputs.file_name }}"
           fi
-          echo "FILENAME=$FNAME" >> $GITHUB_ENV
           
-          # 使用 wget 下载，带重试机制
+          echo "FILENAME=$FNAME" >> $GITHUB_ENV
+          echo "正在下载文件: $FNAME"
+
           wget -c -t 15 --show-progress "$URL" -O "$FNAME"
+          
           echo "FILE_PATH=$FNAME" >> $GITHUB_ENV
 
       - name: 3. 生成校验码 (SHA256)
