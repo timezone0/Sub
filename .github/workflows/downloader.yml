@@ -1,0 +1,69 @@
+name: Universal Remote Downloader
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_url:
+        description: '输入远程下载链接 (HTTP/HTTPS/Direct Link)'
+        required: true
+      file_name:
+        description: '保存的文件名 (可选，留空则自动识别)'
+        required: false
+        default: ''
+      split_size:
+        description: '切分大小 (例如 1G, 500M, 0表示不切分)'
+        required: true
+        default: '2G'
+
+jobs:
+  download_and_transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. 环境准备与磁盘清理
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc
+          df -h
+
+      - name: 2. 执行高速下载
+        id: download
+        run: |
+          URL="${{ github.event.inputs.file_url }}"
+          # 如果用户没写文件名，从 URL 中提取
+          if [ -z "${{ github.event.inputs.file_name }}" ]; then
+            FNAME=$(basename "${URL%%?*}")
+          else
+            FNAME="${{ github.event.inputs.file_name }}"
+          fi
+          echo "FILENAME=$FNAME" >> $GITHUB_ENV
+          
+          # 使用 wget 下载，带重试机制
+          wget -c -t 15 --show-progress "$URL" -O "$FNAME"
+          echo "FILE_PATH=$FNAME" >> $GITHUB_ENV
+
+      - name: 3. 生成校验码 (SHA256)
+        run: |
+          sha256sum "${{ env.FILENAME }}" > checksum.txt
+          echo "文件 SHA256："
+          cat checksum.txt
+
+      - name: 4. 处理切分逻辑
+        run: |
+          SIZE=${{ github.event.inputs.split_size }}
+          if [ "$SIZE" != "0" ]; then
+            echo "开始切分文件，每份 $SIZE ..."
+            split -b $SIZE -d "${{ env.FILENAME }}" "part_"
+            echo "IS_SPLIT=true" >> $GITHUB_ENV
+          else
+            echo "跳过切分"
+            echo "IS_SPLIT=false" >> $GITHUB_ENV
+          fi
+
+      - name: 5. 上传至 GitHub Artifacts (官方存储)
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ env.FILENAME }}-Pack"
+          path: |
+            part_*
+            ${{ env.IS_SPLIT == 'false' && env.FILENAME || '' }}
+            checksum.txt
+          retention-days: 1
