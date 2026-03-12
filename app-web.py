@@ -275,9 +275,7 @@ def index():
         singbox_configs=singbox_configs,
     )
 
-
 if __name__ == "__main__":
     os.chdir(BASE_DIR)
-    if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
-        start_substore_backend()
-    app.run(debug=False, port=5002, host="0.0.0.0")
+    start_substore_backend()
+    app.run(debug=False, port=5002, host="0.0.0.0", use_reloader=False)
